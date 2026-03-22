@@ -180,7 +180,7 @@ function CategoryCard({ category, trend, color, icon }: CategoryCardProps) {
               WebkitBoxOrient: 'vertical',
             }}
           >
-            {trend.keyword}
+            {trend.keywordEn || trend.keyword}
           </div>
 
           <div

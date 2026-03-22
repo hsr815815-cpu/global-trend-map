@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { formatUpdatedAgo, getNextUpdateTime } from '@/lib/trend-utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface HeaderProps {
   lastUpdated: string;
@@ -21,10 +22,10 @@ export default function Header({
   totalCountries,
   totalTrends,
 }: HeaderProps) {
+  const { lang: activeLang, setLang: setActiveLang } = useLanguage();
   const [updatedAgo, setUpdatedAgo] = useState('');
   const [nextUpdate, setNextUpdate] = useState('');
   const [showLangMenu, setShowLangMenu] = useState(false);
-  const [activeLang, setActiveLang] = useState('en');
   const [showShareModal, setShowShareModal] = useState(false);
   const [showEmbedModal, setShowEmbedModal] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -237,7 +238,7 @@ export default function Header({
                   <button
                     key={lang.code}
                     onClick={() => {
-                      setActiveLang(lang.code);
+                      setActiveLang(lang.code as 'en' | 'ko' | 'ja');
                       setShowLangMenu(false);
                     }}
                     style={{
