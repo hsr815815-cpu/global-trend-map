@@ -24,7 +24,7 @@ REPORT_DIR  = BASE_DIR / "public" / "report"
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 REPORT_FILE = REPORT_DIR / "broken-links-report.txt"
 
-DEFAULT_BASE_URL = "https://global-trend-map.vercel.app"
+DEFAULT_BASE_URL = "https://global-trend-map-web.vercel.app"
 MAX_PAGES        = 200
 REQUEST_DELAY    = 0.5   # seconds between requests
 TIMEOUT          = 15

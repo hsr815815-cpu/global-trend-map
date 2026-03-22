@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
-const SITE_URL = 'https://global-trend-map.vercel.app';
+const SITE_URL = 'https://global-trend-map-web.vercel.app';
 const SITE_NAME = 'TrendPulse';
 
 export async function GET(request: Request) {

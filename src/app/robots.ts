@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const SITE_URL = 'https://global-trend-map.vercel.app';
+const SITE_URL = 'https://global-trend-map-web.vercel.app';
 
 export default function robots(): MetadataRoute.Robots {
   return {

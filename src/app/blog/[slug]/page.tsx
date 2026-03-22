@@ -233,7 +233,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       title: post.title,
       description: post.excerpt,
-      url: `https://global-trend-map.vercel.app/blog/${post.slug}`,
+      url: `https://global-trend-map-web.vercel.app/blog/${post.slug}`,
       publishedTime: post.date,
       modifiedTime: post.lastUpdated || post.date,
       authors: ['Global Trends Editorial Team'],
@@ -245,7 +245,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
     },
     alternates: {
-      canonical: `https://global-trend-map.vercel.app/blog/${post.slug}`,
+      canonical: `https://global-trend-map-web.vercel.app/blog/${post.slug}`,
     },
   };
 }
@@ -270,17 +270,17 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       '@type': 'Organization',
       name: 'Global Trends Editorial Team',
-      url: 'https://global-trend-map.vercel.app/about',
+      url: 'https://global-trend-map-web.vercel.app/about',
     },
     publisher: {
       '@type': 'Organization',
       name: 'TrendPulse',
-      url: 'https://global-trend-map.vercel.app',
-      logo: { '@type': 'ImageObject', url: 'https://global-trend-map.vercel.app/logo.png' },
+      url: 'https://global-trend-map-web.vercel.app',
+      logo: { '@type': 'ImageObject', url: 'https://global-trend-map-web.vercel.app/logo.png' },
     },
     datePublished: post.date,
     dateModified: post.lastUpdated || post.date,
-    url: `https://global-trend-map.vercel.app/blog/${post.slug}`,
+    url: `https://global-trend-map-web.vercel.app/blog/${post.slug}`,
     keywords: post.tags?.join(', '),
   };
 
@@ -414,9 +414,9 @@ export default async function BlogPostPage({ params }: Props) {
                 {/* Social share */}
                 <div style={{ display: 'flex', gap: '6px', marginLeft: 'auto' }}>
                   {[
-                    { label: 'X', href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent('https://global-trend-map.vercel.app/blog/' + post.slug)}` },
-                    { label: 'FB', href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://global-trend-map.vercel.app/blog/' + post.slug)}` },
-                    { label: 'Reddit', href: `https://reddit.com/submit?url=${encodeURIComponent('https://global-trend-map.vercel.app/blog/' + post.slug)}&title=${encodeURIComponent(post.title)}` },
+                    { label: 'X', href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent('https://global-trend-map-web.vercel.app/blog/' + post.slug)}` },
+                    { label: 'FB', href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://global-trend-map-web.vercel.app/blog/' + post.slug)}` },
+                    { label: 'Reddit', href: `https://reddit.com/submit?url=${encodeURIComponent('https://global-trend-map-web.vercel.app/blog/' + post.slug)}&title=${encodeURIComponent(post.title)}` },
                   ].map((btn) => (
                     <a
                       key={btn.label}

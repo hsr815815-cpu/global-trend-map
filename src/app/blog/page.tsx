@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Trend Insights Blog — TrendPulse',
     description: 'Deep dives into global search trends and viral topics from 142 countries.',
-    url: 'https://global-trend-map.vercel.app/blog',
+    url: 'https://global-trend-map-web.vercel.app/blog',
   },
-  alternates: { canonical: 'https://global-trend-map.vercel.app/blog' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/blog' },
 };
 
 interface PostMeta {

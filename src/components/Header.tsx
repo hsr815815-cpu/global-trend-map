@@ -65,7 +65,7 @@ export default function Header({
   };
 
   const embedCode = `<iframe
-  src="${typeof window !== 'undefined' ? window.location.origin : 'https://global-trend-map.vercel.app'}/embed"
+  src="${typeof window !== 'undefined' ? window.location.origin : 'https://global-trend-map-web.vercel.app'}/embed"
   width="800"
   height="500"
   frameborder="0"

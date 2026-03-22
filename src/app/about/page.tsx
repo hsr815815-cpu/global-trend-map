@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'About TrendPulse — Real-Time Global Trend Map',
   description:
     'Learn about TrendPulse, the real-time global trend visualization platform that tracks trending searches across 142 countries. Meet the editorial team and discover our methodology.',
-  alternates: { canonical: 'https://global-trend-map.vercel.app/about' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/about' },
 };
 
 export default function AboutPage() {

@@ -45,10 +45,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${country.flag} ${country.name} — Live Trends`,
       description: `See what's trending in ${country.name} right now. Current trend temperature: ${avgTemp}°T.`,
-      url: `https://global-trend-map.vercel.app/country/${params.code}`,
+      url: `https://global-trend-map-web.vercel.app/country/${params.code}`,
     },
     alternates: {
-      canonical: `https://global-trend-map.vercel.app/country/${params.code}`,
+      canonical: `https://global-trend-map-web.vercel.app/country/${params.code}`,
     },
   };
 }
@@ -73,7 +73,7 @@ export default async function CountryPage({ params }: Props) {
     '@type': 'WebPage',
     name: `${country.name} Trending Searches`,
     description: `Real-time trending searches in ${country.name}`,
-    url: `https://global-trend-map.vercel.app/country/${params.code}`,
+    url: `https://global-trend-map-web.vercel.app/country/${params.code}`,
     about: {
       '@type': 'Country',
       name: country.name,

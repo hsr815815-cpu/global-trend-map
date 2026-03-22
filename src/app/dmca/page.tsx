@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'DMCA Policy | TrendPulse',
   description: 'TrendPulse DMCA copyright takedown policy. How to submit a copyright infringement notice.',
-  alternates: { canonical: 'https://global-trend-map.vercel.app/dmca' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/dmca' },
 };
 
 export default function DMCAPage() {

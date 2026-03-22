@@ -76,9 +76,9 @@ TARGETS = [
     },
     {
         "name": "TrendPulse (Our Site)",
-        "domain": "global-trend-map.vercel.app",
+        "domain": "global-trend-map-web.vercel.app",
         "rss": None,
-        "sitemap": "https://global-trend-map.vercel.app/sitemap.xml",
+        "sitemap": "https://global-trend-map-web.vercel.app/sitemap.xml",
     },
 ]
 
@@ -505,7 +505,7 @@ def main():
             time.sleep(SLEEP_BETWEEN)
 
         # Common Crawl (우리 사이트 제외 — 너무 새로워서 인덱싱 안 됨)
-        if target["domain"] != "global-trend-map.vercel.app":
+        if target["domain"] != "global-trend-map-web.vercel.app":
             log.info("  Common Crawl 분석: %s", target["domain"])
             site_result["commoncrawl"] = analyze_commoncrawl(target["domain"])
             time.sleep(SLEEP_BETWEEN)

@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Editorial Policy | TrendPulse',
   description: 'TrendPulse editorial standards, content policies, and guidelines for the Trend Insights Blog.',
-  alternates: { canonical: 'https://global-trend-map.vercel.app/editorial-policy' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/editorial-policy' },
 };
 
 export default function EditorialPolicyPage() {

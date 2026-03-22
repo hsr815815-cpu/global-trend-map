@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { promises as fs } from 'fs';
 import path from 'path';
 
-const SITE_URL = 'https://global-trend-map.vercel.app';
+const SITE_URL = 'https://global-trend-map-web.vercel.app';
 
 interface PostMeta {
   slug: string;

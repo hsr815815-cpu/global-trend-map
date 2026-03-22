@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | TrendPulse',
   description: 'TrendPulse Privacy Policy. Learn how we collect, use, and protect your data in compliance with GDPR and CCPA.',
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://global-trend-map.vercel.app/privacy-policy' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/privacy-policy' },
 };
 
 export default function PrivacyPolicyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
         <h1>Privacy Policy</h1>
         <p className="last-updated">Last updated: March 23, 2026 · Effective date: March 23, 2026</p>
 
-        <p>TrendPulse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at global-trend-map.vercel.app (the "Site"). Please read this policy carefully. If you disagree with its terms, please discontinue use of the Site.</p>
+        <p>TrendPulse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at global-trend-map-web.vercel.app (the "Site"). Please read this policy carefully. If you disagree with its terms, please discontinue use of the Site.</p>
 
         <h2>1. Information We Collect</h2>
         <p>We collect information in the following ways:</p>

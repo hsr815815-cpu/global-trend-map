@@ -19,7 +19,7 @@ const spaceMono = Space_Mono({
 });
 
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
-const SITE_URL = 'https://global-trend-map.vercel.app';
+const SITE_URL = 'https://global-trend-map-web.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

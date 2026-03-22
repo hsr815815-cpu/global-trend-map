@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Terms of Service | TrendPulse',
   description: 'TrendPulse Terms of Service. Read our terms and conditions for using the TrendPulse global trend map platform.',
-  alternates: { canonical: 'https://global-trend-map.vercel.app/terms' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/terms' },
 };
 
 export default function TermsPage() {
@@ -24,7 +24,7 @@ export default function TermsPage() {
         <p>Please read these Terms of Service ("Terms") carefully before using TrendPulse ("the Site," "we," "us," or "our"). By accessing or using the Site, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the Site.</p>
 
         <h2>1. Acceptance of Terms</h2>
-        <p>By accessing and using TrendPulse at global-trend-map.vercel.app, you accept and agree to be bound by these Terms and our <Link href="/privacy-policy">Privacy Policy</Link>, which is incorporated herein by reference. These Terms constitute a legally binding agreement between you and TrendPulse.</p>
+        <p>By accessing and using TrendPulse at global-trend-map-web.vercel.app, you accept and agree to be bound by these Terms and our <Link href="/privacy-policy">Privacy Policy</Link>, which is incorporated herein by reference. These Terms constitute a legally binding agreement between you and TrendPulse.</p>
 
         <h2>2. Description of Service</h2>
         <p>TrendPulse provides a real-time visualization of global search trends, aggregated from publicly available data sources. The Service includes:</p>

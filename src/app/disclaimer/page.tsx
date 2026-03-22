@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Disclaimer | TrendPulse',
   description: 'TrendPulse disclaimer regarding the accuracy and use of trend data displayed on the platform.',
-  alternates: { canonical: 'https://global-trend-map.vercel.app/disclaimer' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/disclaimer' },
 };
 
 export default function DisclaimerPage() {
@@ -22,7 +22,7 @@ export default function DisclaimerPage() {
         <p className="last-updated">Last updated: March 23, 2026</p>
 
         <h2>1. General Disclaimer</h2>
-        <p>The information provided by TrendPulse ("we," "us," or "our") on global-trend-map.vercel.app (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+        <p>The information provided by TrendPulse ("we," "us," or "our") on global-trend-map-web.vercel.app (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
 
         <p><strong>UNDER NO CIRCUMSTANCE SHALL TRENDPULSE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE.</strong></p>
 

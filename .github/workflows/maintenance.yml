@@ -78,7 +78,7 @@ jobs:
         continue-on-error: true   # Don't fail the whole workflow for broken links
         run: |
           echo "=== Checking for broken links on live site ==="
-          python scripts/check_broken_links.py https://global-trend-map.vercel.app
+          python scripts/check_broken_links.py https://global-trend-map-web.vercel.app
           echo "=== Link check complete ==="
 
       - name: Upload link report as artifact

@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Cookie Policy | TrendPulse',
   description: 'TrendPulse Cookie Policy. Full details on the cookies we use and how to manage your cookie preferences.',
-  alternates: { canonical: 'https://global-trend-map.vercel.app/cookie-policy' },
+  alternates: { canonical: 'https://global-trend-map-web.vercel.app/cookie-policy' },
 };
 
 export default function CookiePolicyPage() {
@@ -21,7 +21,7 @@ export default function CookiePolicyPage() {
         <h1>Cookie Policy</h1>
         <p className="last-updated">Last updated: March 23, 2026</p>
 
-        <p>This Cookie Policy explains how TrendPulse ("we," "us," or "our") uses cookies and similar tracking technologies on our website at global-trend-map.vercel.app. It explains what these technologies are, why we use them, and your rights to control our use of them.</p>
+        <p>This Cookie Policy explains how TrendPulse ("we," "us," or "our") uses cookies and similar tracking technologies on our website at global-trend-map-web.vercel.app. It explains what these technologies are, why we use them, and your rights to control our use of them.</p>
 
         <h2>1. What Are Cookies?</h2>
         <p>Cookies are small data files placed on your computer or mobile device when you visit a website. They are widely used to make websites work, to work more efficiently, and to provide reporting information to website owners.</p>

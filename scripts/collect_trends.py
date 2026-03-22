@@ -123,7 +123,7 @@ CATEGORY_KEYWORDS = {
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; GlobalTrendBot/1.0; "
-        "+https://global-trend-map.vercel.app)"
+        "+https://global-trend-map-web.vercel.app)"
     )
 }
 
