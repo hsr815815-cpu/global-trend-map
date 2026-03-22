@@ -95,8 +95,8 @@ def main():
 
     # --- Load data ---
     trends  = load_json(TRENDS_FILE, {})
-    index   = load_json(INDEX_FILE, {"posts": []})
-    posts   = index.get("posts", [])
+    _index  = load_json(INDEX_FILE, [])
+    posts   = _index if isinstance(_index, list) else _index.get("posts", [])
 
     # Template file
     if not TEMPLATE_FILE.exists():
@@ -257,13 +257,13 @@ def main():
     print()
     print("=" * 45)
     print("=== VERCEL MANAGER DAILY REPORT ===")
-    print(f"📅  Date: {report_date} {report_time}")
-    print(f"📊  Data: {total_countries} countries | {total_trends:,} trends | Temp: {global_temp}°T ({global_temp_label})")
-    print(f"📝  Content: {posts_today} posts today | {posts_total} total")
-    print(f"⚙️   Pipeline: {duration}s | {success_count} success | {error_count} errors")
-    print(f"⚠️   Alerts: {alerts_str}")
+    print(f"[DATE]  Date: {report_date} {report_time}")
+    print(f"[DATA]  Data: {total_countries} countries | {total_trends:,} trends | Temp: {global_temp}T ({global_temp_label})")
+    print(f"[BLOG]  Content: {posts_today} posts today | {posts_total} total")
+    print(f"[PIPE]   Pipeline: {duration}s | {success_count} success | {error_count} errors")
+    print(f"[WARN]   Alerts: {alerts_str}")
     print("=" * 45)
-    print(f"Report saved → {OUTPUT_FILE}")
+    print(f"Report saved -> {OUTPUT_FILE}")
     print()
 
     # Open in browser
