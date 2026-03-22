@@ -44,6 +44,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Global Trends Editorial Team', url: SITE_URL }],
   creator: 'TrendPulse',
   publisher: 'TrendPulse',
+  verification: {
+    google: 'u1CEFl-YCOe2kKB-43GzPxwKT87gFstteaUbv3nYpbs',
+  },
   robots: {
     index: true,
     follow: true,
