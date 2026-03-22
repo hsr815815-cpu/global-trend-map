@@ -19,6 +19,25 @@ import CountryPopup from './CountryPopup';
 const GEO_URL =
   'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
 
+const COUNTRY_CENTROIDS: Record<string, [number, number]> = {
+  'US': [-95, 38], 'KR': [128, 36], 'JP': [138, 36], 'GB': [-2, 54],
+  'DE': [10, 51], 'IN': [78, 22], 'BR': [-52, -10], 'FR': [2, 46],
+  'AU': [133, -25], 'MX': [-102, 24], 'CA': [-95, 60], 'CN': [105, 35],
+  'RU': [60, 60], 'IT': [12, 43], 'ES': [-4, 40], 'AR': [-64, -34],
+  'ZA': [25, -29], 'NG': [8, 10], 'EG': [30, 27], 'TR': [35, 39],
+  'SA': [45, 25], 'ID': [118, -2], 'PH': [122, 13], 'TH': [101, 15],
+  'VN': [108, 16], 'PL': [20, 52], 'NL': [5, 52], 'SE': [18, 60],
+  'NO': [10, 62], 'CH': [8, 47], 'AT': [14, 47], 'BE': [4, 51],
+  'PT': [-8, 39], 'GR': [22, 39], 'CZ': [16, 50], 'HU': [19, 47],
+  'RO': [25, 46], 'UA': [32, 49], 'MY': [110, 4], 'SG': [104, 1],
+  'NZ': [172, -42], 'CO': [-74, 4], 'PE': [-76, -10], 'CL': [-71, -30],
+  'IL': [35, 31], 'AE': [54, 24], 'QA': [51, 25], 'KW': [48, 29],
+  'ZA': [25, -29], 'KE': [38, -1], 'ET': [40, 9], 'GH': [-1, 8],
+  'DZ': [3, 28], 'MA': [-6, 32], 'PK': [70, 30], 'BD': [90, 24],
+  'LK': [81, 8], 'MM': [96, 17], 'KH': [105, 12], 'VN': [108, 16],
+  'SK': [19, 48], 'FI': [26, 64], 'DK': [10, 56], 'IE': [-8, 53],
+};
+
 // ISO numeric → ISO alpha-2 mapping for major countries
 const NUMERIC_TO_ALPHA2: Record<string, string> = {
   '840': 'US', '410': 'KR', '392': 'JP', '826': 'GB', '276': 'DE',
@@ -89,6 +108,13 @@ export default function WorldMap({ data }: WorldMapProps) {
 
       const countryData = data.countries[code];
       if (!countryData) return;
+
+      // Center map on clicked country
+      const centroid = COUNTRY_CENTROIDS[code];
+      if (centroid) {
+        setCenter(centroid);
+        setZoom((prev) => (prev < 2 ? 3 : prev));
+      }
 
       setPopup({
         countryCode: code,
@@ -206,7 +232,6 @@ export default function WorldMap({ data }: WorldMapProps) {
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
-            center: center,
             scale: 140,
           }}
           style={{ width: '100%', height: '100%', background: 'transparent' }}

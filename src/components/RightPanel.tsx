@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import {
   TrendsData,
   TrendCategory,
@@ -25,8 +24,6 @@ const CATEGORIES: { key: TrendCategory; label: string }[] = [
 ];
 
 export default function RightPanel({ data }: RightPanelProps) {
-  const [activeCategory, setActiveCategory] = useState<TrendCategory | null>(null);
-
   const globalTemp = data.global.temperature;
   const tempLabel = getTemperatureLabel(globalTemp);
   const tempColor = getTemperatureColor(globalTemp);
@@ -270,20 +267,6 @@ export default function RightPanel({ data }: RightPanelProps) {
       >
         <div className="panel-header">
           <span className="panel-title">Categories</span>
-          {activeCategory && (
-            <button
-              onClick={() => setActiveCategory(null)}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: 'var(--text-muted)',
-                cursor: 'pointer',
-                fontSize: '11px',
-              }}
-            >
-              Clear ✕
-            </button>
-          )}
         </div>
 
         <div
@@ -299,23 +282,18 @@ export default function RightPanel({ data }: RightPanelProps) {
             const total = Object.values(categoryBreakdown).reduce((a, b) => a + b, 0);
             const pct = total > 0 ? Math.round((count / total) * 100) : 0;
             const color = CATEGORY_COLORS[cat.key] || '#6366f1';
-            const isActive = activeCategory === cat.key;
 
             return (
-              <button
+              <div
                 key={cat.key}
-                onClick={() => setActiveCategory(isActive ? null : cat.key)}
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '6px',
                   padding: '10px',
-                  background: isActive ? `${color}18` : 'var(--bg-surface)',
-                  border: `1px solid ${isActive ? color + '44' : 'var(--border-subtle)'}`,
+                  background: 'var(--bg-surface)',
+                  border: '1px solid var(--border-subtle)',
                   borderRadius: '10px',
-                  cursor: 'pointer',
-                  textAlign: 'left',
-                  transition: 'all 0.15s ease',
                 }}
               >
                 <div
@@ -330,7 +308,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                     style={{
                       fontFamily: 'Space Mono, monospace',
                       fontSize: '10px',
-                      color: isActive ? color : 'var(--text-muted)',
+                      color: 'var(--text-muted)',
                       fontWeight: 700,
                     }}
                   >
@@ -342,7 +320,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                     style={{
                       fontSize: '11px',
                       fontWeight: 600,
-                      color: isActive ? color : 'var(--text-secondary)',
+                      color: 'var(--text-secondary)',
                       marginBottom: '4px',
                     }}
                   >
@@ -367,7 +345,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                     />
                   </div>
                 </div>
-              </button>
+              </div>
             );
           })}
         </div>

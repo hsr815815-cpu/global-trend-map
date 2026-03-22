@@ -94,9 +94,17 @@ function CategoryCard({ category, trend, color, icon }: CategoryCardProps) {
         gap: '8px',
         flexShrink: 0,
         transition: 'all 0.15s ease',
-        cursor: 'pointer',
+        cursor: trend ? 'pointer' : 'default',
         position: 'relative',
         overflow: 'hidden',
+      }}
+      onClick={() => {
+        if (trend) {
+          window.open(
+            `https://www.google.com/search?q=${encodeURIComponent(trend.keyword)}&tbm=nws`,
+            '_blank'
+          );
+        }
       }}
       onMouseEnter={(e) => {
         (e.currentTarget as HTMLDivElement).style.borderColor = `${color}66`;

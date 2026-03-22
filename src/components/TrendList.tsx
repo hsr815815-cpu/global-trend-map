@@ -147,8 +147,7 @@ export default function TrendList({ data }: TrendListProps) {
           style={{
             display: 'flex',
             gap: '6px',
-            overflowX: 'auto',
-            paddingBottom: '2px',
+            flexWrap: 'wrap',
           }}
         >
           {CATEGORIES.map((cat) => (
