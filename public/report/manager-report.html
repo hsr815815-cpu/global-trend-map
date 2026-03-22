@@ -561,7 +561,7 @@
   <div class="header-inner">
     <div class="header-logo">🌐 Vercel Manager — 일일 보고서</div>
     <div class="header-meta">
-      <strong>2026-03-22</strong> &nbsp;·&nbsp; 17:01 UTC<br>
+      <strong>2026-03-22</strong> &nbsp;·&nbsp; 17:08 UTC<br>
       마지막 데이터: 2026-03-23T00:00:00Z
     </div>
   </div>
@@ -575,7 +575,7 @@
     <div class="status-pill pill-green"><span class="dot"></span> Vercel: 배포 중</div>
     <div class="status-pill pill-blue"><span class="dot"></span> GitHub Actions: 활성</div>
     <div class="status-pill pill-cyan"><span class="dot"></span> 142개국</div>
-    <div class="status-pill pill-yellow"><span class="dot"></span> Data: -418분 전 업데이트</div>
+    <div class="status-pill pill-yellow"><span class="dot"></span> Data: -411분 전 업데이트</div>
     <div class="status-pill pill-green"><span class="dot"></span> 1 오늘 포스팅</div>
   </div>
 </div>
@@ -607,7 +607,7 @@
           </div>
           <div class="info-item">
             <div class="info-key">데이터 신선도</div>
-            <div class="info-val status-ok">-418 분 전</div>
+            <div class="info-val status-ok">-411 분 전</div>
           </div>
           <div class="info-item">
             <div class="info-key">다음 업데이트</div>
@@ -1126,8 +1126,53 @@
       </div>
       <div class="section-body">
 
+        
+<div class="sub-section" style="margin-top:14px;">
+  <div class="sub-title">📡 실측 벤치마크 데이터 (자동 수집)</div>
+  <div class="note-box">
+    <span class="note-icon">🕐</span>
+    <span>마지막 수집: <strong>미수집</strong> &nbsp;·&nbsp; 매주 일요일 자동 업데이트</span>
+  </div>
+  <div class="metrics-grid" style="margin-top:12px;">
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">N/A</div>
+      <div class="metric-label">우리 주간 포스팅</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">N/A</div>
+      <div class="metric-label">경쟁사 평균</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">N/A</div>
+      <div class="metric-label">우리 총 페이지</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">N/A</div>
+      <div class="metric-label">경쟁사 평균 페이지</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">N/A</div>
+      <div class="metric-label">콘텐츠 속도 비율</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">0</div>
+      <div class="metric-label">분석 경쟁사 수</div>
+    </div>
+  </div>
+  <div class="health-indicator health-yellow" style="margin-top:12px;">
+    📊 &nbsp;데이터 없음 — 다음 주 일요일 자동 수집
+  </div>
+  <div class="table-wrap" style="margin-top:14px;">
+    <div class="sub-title">🏆 Tranco 글로벌 랭킹 (경쟁사)</div>
+    <table class="data-table">
+      <thead><tr><th>도메인</th><th>순위</th><th>기준일</th></tr></thead>
+      <tbody><tr><td colspan="3" style="color:var(--dim);">벤치마크 미실행 — 매주 일요일 자동 수집</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
         <div class="sub-section" style="margin-top:0;">
-          <div class="sub-title">🏆 벤치마크: 상위 트렌드 사이트 비교</div>
+          <div class="sub-title">🏆 벤치마크: 상위 트렌드 사이트 비교 (정적 기준표)</div>
           <div class="table-wrap">
             <table class="data-table">
               <thead>
@@ -1586,7 +1631,7 @@
   });
 
   // Highlight stale data
-  const dataAgeMin = parseInt('-418', 10) || 0;
+  const dataAgeMin = parseInt('-411', 10) || 0;
   if (dataAgeMin > 120) {
     document.querySelectorAll('.status-ok').forEach(el => {
       el.style.color = 'var(--yellow)';

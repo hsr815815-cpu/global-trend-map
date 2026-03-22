@@ -94,9 +94,10 @@ def main():
     now_utc = datetime.now(timezone.utc)
 
     # --- Load data ---
-    trends  = load_json(TRENDS_FILE, {})
-    _index  = load_json(INDEX_FILE, [])
-    posts   = _index if isinstance(_index, list) else _index.get("posts", [])
+    trends     = load_json(TRENDS_FILE, {})
+    _index     = load_json(INDEX_FILE, [])
+    posts      = _index if isinstance(_index, list) else _index.get("posts", [])
+    benchmark  = load_json(DATA_DIR / "benchmark.json", {})
 
     # Template file
     if not TEMPLATE_FILE.exists():
@@ -182,6 +183,74 @@ def main():
     # YouTube quota progress %
     yt_quota_pct = min(100, int(yt_quota_used / 10000 * 100))
 
+    # --- Benchmark data injection ---
+    bm_score = benchmark.get("benchmark_score", {})
+    bm_generated = benchmark.get("generated_at", "N/A")
+    bm_our_posts  = bm_score.get("our_posts_per_week", "N/A")
+    bm_avg_posts  = bm_score.get("avg_competitor_posts_per_week", "N/A")
+    bm_our_pages  = bm_score.get("our_total_pages", "N/A")
+    bm_avg_pages  = bm_score.get("avg_competitor_pages", "N/A")
+    bm_ratio      = bm_score.get("content_velocity_ratio", "N/A")
+    bm_interp     = bm_score.get("interpretation", "데이터 없음 — 다음 주 일요일 자동 수집")
+    bm_competitors = benchmark.get("summary", {}).get("competitors_analyzed", 0)
+
+    # Tranco ranking for our closest competitor
+    tranco = benchmark.get("tranco_rankings", {})
+    bm_tranco_rows = ""
+    for domain, info in tranco.items():
+        rank = info.get("rank", "N/A")
+        date = info.get("date", "")
+        bm_tranco_rows += f'<tr><td>{domain}</td><td style="color:var(--cyan);">#{rank:,}</td><td>{date}</td></tr>' if isinstance(rank, int) else f'<tr><td>{domain}</td><td style="color:var(--dim);">N/A</td><td>{date}</td></tr>'
+
+    if not bm_tranco_rows:
+        bm_tranco_rows = '<tr><td colspan="3" style="color:var(--dim);">벤치마크 미실행 — 매주 일요일 자동 수집</td></tr>'
+
+    # Build benchmark HTML block
+    bm_html = f"""
+<div class="sub-section" style="margin-top:14px;">
+  <div class="sub-title">📡 실측 벤치마크 데이터 (자동 수집)</div>
+  <div class="note-box">
+    <span class="note-icon">🕐</span>
+    <span>마지막 수집: <strong>{bm_generated[:10] if bm_generated != 'N/A' else '미수집'}</strong> &nbsp;·&nbsp; 매주 일요일 자동 업데이트</span>
+  </div>
+  <div class="metrics-grid" style="margin-top:12px;">
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">{bm_our_posts}</div>
+      <div class="metric-label">우리 주간 포스팅</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">{bm_avg_posts}</div>
+      <div class="metric-label">경쟁사 평균</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">{bm_our_pages}</div>
+      <div class="metric-label">우리 총 페이지</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">{bm_avg_pages}</div>
+      <div class="metric-label">경쟁사 평균 페이지</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">{bm_ratio}</div>
+      <div class="metric-label">콘텐츠 속도 비율</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value" style="font-size:1.3rem;">{bm_competitors}</div>
+      <div class="metric-label">분석 경쟁사 수</div>
+    </div>
+  </div>
+  <div class="health-indicator health-yellow" style="margin-top:12px;">
+    📊 &nbsp;{bm_interp}
+  </div>
+  <div class="table-wrap" style="margin-top:14px;">
+    <div class="sub-title">🏆 Tranco 글로벌 랭킹 (경쟁사)</div>
+    <table class="data-table">
+      <thead><tr><th>도메인</th><th>순위</th><th>기준일</th></tr></thead>
+      <tbody>{bm_tranco_rows}</tbody>
+    </table>
+  </div>
+</div>"""
+
     # Automation maturity (rough scoring)
     auto_items = sum([
         sources.get("googleTrends", False),
@@ -231,6 +300,7 @@ def main():
         "{{DAYS_OPERATING}}":       str(days_operating),
         "{{YT_QUOTA_PCT}}":         str(yt_quota_pct),
         "{{AUTO_SCORE}}":           str(auto_score),
+        "{{BENCHMARK_SECTION}}":    bm_html,
         "{{ERROR_COUNT_CLASS}}":    "status-error" if error_count > 0 else "status-ok",
         "{{DATA_AGE_CLASS}}":       "status-warn" if data_age > 120 else "status-ok",
         "{{QUOTA_CLASS}}":          "status-warn" if yt_quota_used > 8000 else "status-ok",

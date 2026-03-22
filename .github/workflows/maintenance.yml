@@ -102,6 +102,48 @@ jobs:
         run: |
           echo "::warning title=Broken Links Detected::One or more broken links were found on the site. Download the artifact 'broken-links-report' for details."
 
+  benchmark-research:
+    name: Weekly Benchmark Research
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: cleanup
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests==2.31.0 feedparser==6.0.11
+
+      - name: Run benchmark research
+        run: |
+          echo "=== 경쟁 사이트 벤치마크 리서치 시작 ==="
+          python scripts/benchmark_research.py
+          echo "=== 벤치마크 완료 ==="
+
+      - name: Commit benchmark data
+        run: |
+          git config user.name "Vercel Manager Bot"
+          git config user.email "hsr815815@gmail.com"
+          git add public/data/benchmark.json
+          git diff --staged --quiet || git commit -m "📊 Auto: Weekly benchmark research update"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   dependency-audit:
     name: Dependency Security Audit
     runs-on: ubuntu-latest
