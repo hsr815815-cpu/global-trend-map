@@ -76,7 +76,7 @@ export default function WorldMap({ data }: WorldMapProps) {
       if (alpha2) return alpha2;
     }
     // Try ISO alpha-2
-    const a2 = geo.properties?.['iso_a2'] || geo.properties?.['ISO_A2'];
+    const a2 = (geo.properties?.['iso_a2'] || geo.properties?.['ISO_A2']) as string | undefined;
     if (a2 && a2 !== '-99') return a2;
     // Try name lookup
     return null;
@@ -105,7 +105,7 @@ export default function WorldMap({ data }: WorldMapProps) {
       setHoveredCountry(code);
       if (code) {
         const countryData = data.countries[code];
-        const name = countryData?.name || geo.properties?.name || code;
+        const name = countryData?.name || (geo.properties?.name as string | undefined) || code;
         const temp = getCountryTemperature(data, code);
         setTooltipCountry(countryData ? `${countryData.flag} ${name} — ${temp}°T` : name);
         setTooltipPos({ x: event.clientX, y: event.clientY });
