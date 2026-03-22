@@ -109,13 +109,6 @@ export default function WorldMap({ data }: WorldMapProps) {
       const countryData = data.countries[code];
       if (!countryData) return;
 
-      // Center map on clicked country
-      const centroid = COUNTRY_CENTROIDS[code];
-      if (centroid) {
-        setCenter(centroid);
-        setZoom((prev) => (prev < 2 ? 3 : prev));
-      }
-
       setPopup({
         countryCode: code,
         countryData,
