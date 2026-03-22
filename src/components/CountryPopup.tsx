@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import {
   CountryData,
@@ -49,7 +50,7 @@ export default function CountryPopup({
   const tempLabel = getTemperatureLabel(avgTemp);
   const tempColor = getTemperatureColor(avgTemp);
 
-  return (
+  return createPortal(
     <>
       {/* Backdrop (invisible, for click-outside) */}
       <div
@@ -329,6 +330,7 @@ export default function CountryPopup({
           </button>
         </div>
       </div>
-    </>
+    </>,
+    document.body
   );
 }
