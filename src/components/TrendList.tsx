@@ -12,6 +12,7 @@ import {
   CATEGORY_ICONS,
   getTrendBadge,
 } from '@/lib/trend-utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface TrendListProps {
   data: TrendsData;
@@ -28,6 +29,7 @@ const CATEGORIES: { key: TrendCategory; label: string; icon: string }[] = [
 ];
 
 export default function TrendList({ data }: TrendListProps) {
+  const { kw } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<TrendCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -187,7 +189,7 @@ export default function TrendList({ data }: TrendListProps) {
                 color: 'var(--text-primary)',
               }}
             >
-              {(data.global.topTrend as { keyword: string; keywordEn?: string }).keywordEn || data.global.topTrend.keyword}
+              {kw(data.global.topTrend.keyword, (data.global.topTrend as { keyword: string; keywordEn?: string }).keywordEn)}
             </div>
             <div
               style={{
@@ -244,6 +246,7 @@ export default function TrendList({ data }: TrendListProps) {
                   globalRank={index + 1}
                   badge={badge}
                   isTop3={isTop3}
+                  displayKeyword={kw(trend.keyword, trend.keywordEn)}
                 />
               );
             })}
@@ -259,9 +262,10 @@ interface TrendRowProps {
   globalRank: number;
   badge: 'GLOBAL' | 'FIRE' | 'NEW' | null;
   isTop3: boolean;
+  displayKeyword: string;
 }
 
-function TrendRow({ trend, globalRank, badge, isTop3 }: TrendRowProps) {
+function TrendRow({ trend, globalRank, badge, isTop3, displayKeyword }: TrendRowProps) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -324,7 +328,7 @@ function TrendRow({ trend, globalRank, badge, isTop3 }: TrendRowProps) {
               whiteSpace: 'nowrap',
             }}
           >
-            {trend.keywordEn || trend.keyword}
+            {displayKeyword}
           </span>
           {badge && (
             <span

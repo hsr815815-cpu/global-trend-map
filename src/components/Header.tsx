@@ -238,7 +238,7 @@ export default function Header({
                   <button
                     key={lang.code}
                     onClick={() => {
-                      setActiveLang(lang.code as 'en' | 'ko' | 'ja');
+                      setActiveLang(lang.code as import('@/contexts/LanguageContext').Lang);
                       setShowLangMenu(false);
                     }}
                     style={{
