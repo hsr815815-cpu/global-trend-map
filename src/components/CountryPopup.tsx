@@ -27,10 +27,11 @@ export default function CountryPopup({
 }: CountryPopupProps) {
   const popupRef = useRef<HTMLDivElement>(null);
 
-  // Auto-adjust position to stay in viewport
+  // X는 클릭 위치 기준, Y는 뷰포트 세로 중앙 고정
+  const popupHeight = 430;
   const adjustedPosition = {
     x: Math.min(position.x + 16, (typeof window !== 'undefined' ? window.innerWidth : 1200) - 360),
-    y: Math.min(position.y - 10, (typeof window !== 'undefined' ? window.innerHeight : 800) - 400),
+    y: typeof window !== 'undefined' ? Math.max(20, (window.innerHeight - popupHeight) / 2) : 200,
   };
 
   useEffect(() => {
