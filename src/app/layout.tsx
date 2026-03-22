@@ -156,25 +156,21 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebSite) }}
         />
 
-        {/* GA4 — only loads after cookie consent (handled by CookieBanner) */}
+        {/* GA4 — direct script injection for reliable detection */}
         {GA4_ID && (
           <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
-              strategy="afterInteractive"
-              id="ga4-script"
+            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA4_ID}', { anonymize_ip: true });
+                `,
+              }}
             />
-            <Script id="ga4-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA4_ID}', {
-                  page_path: window.location.pathname,
-                  anonymize_ip: true,
-                });
-              `}
-            </Script>
           </>
         )}
       </head>
