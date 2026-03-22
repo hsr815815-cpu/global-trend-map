@@ -391,10 +391,10 @@ body {
 .category-chip {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px 10px;
+  gap: 3px;
+  padding: 4px 5px;
   border-radius: 100px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);

@@ -156,7 +156,7 @@ export default function TrendList({ data }: TrendListProps) {
               onClick={() => setActiveCategory(cat.key)}
               className={`category-chip${activeCategory === cat.key ? ' active' : ''}`}
             >
-              {cat.label}
+              {cat.icon} {cat.label}
             </button>
           ))}
         </div>

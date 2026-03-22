@@ -70,7 +70,7 @@ export default async function HomePage() {
         style={{
           flex: 1,
           display: 'grid',
-          gridTemplateColumns: '380px 1fr 270px',
+          gridTemplateColumns: '560px 1fr 270px',
           gridTemplateRows: '1fr 148px',
           gap: '10px',
           padding: '10px 12px 12px',
