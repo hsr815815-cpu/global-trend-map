@@ -9,7 +9,6 @@ import {
   getTemperatureGradient,
   CATEGORY_ICONS,
   CATEGORY_COLORS,
-  getVelocityColor,
 } from '@/lib/trend-utils';
 
 interface RightPanelProps {
@@ -35,14 +34,6 @@ export default function RightPanel({ data }: RightPanelProps) {
 
   const categoryBreakdown = data.global.categoryBreakdown;
   const risingFast = data.global.risingFast || [];
-
-  const getTempStatusColor = () => {
-    if (globalTemp >= 90) return '#ea580c';
-    if (globalTemp >= 75) return '#dc2626';
-    if (globalTemp >= 60) return '#7c3aed';
-    if (globalTemp >= 40) return '#1d4ed8';
-    return '#1e3a5f';
-  };
 
   return (
     <div

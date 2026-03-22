@@ -5,13 +5,6 @@ export const dynamic = 'force-dynamic';
 const SITE_URL = 'https://global-trend-map.vercel.app';
 const SITE_NAME = 'TrendPulse';
 
-interface ShareParams {
-  type?: 'page' | 'country' | 'trend';
-  countryCode?: string;
-  keyword?: string;
-  url?: string;
-}
-
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
@@ -96,7 +89,7 @@ export async function GET(request: Request) {
   );
 }
 
-export async function OPTIONS(request: Request) {
+export async function OPTIONS(_request: Request) {
   return new NextResponse(null, {
     status: 200,
     headers: {

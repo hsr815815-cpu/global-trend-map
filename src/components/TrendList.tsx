@@ -6,7 +6,6 @@ import {
   TrendCategory,
   TrendItem,
   getTopGlobalTrends,
-  filterTrendsByCategory,
   getTemperatureColor,
   getVelocityIcon,
   getVelocityColor,

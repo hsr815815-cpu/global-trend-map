@@ -89,7 +89,7 @@ function checkEnvironmentVariables(): DataStatus {
   };
 }
 
-export async function GET(request: Request) {
+export async function GET(_request: Request) {
   const startTime = Date.now();
 
   const [trendsStatus, postsStatus] = await Promise.all([
@@ -101,7 +101,6 @@ export async function GET(request: Request) {
 
   const checks = [trendsStatus, postsStatus, envStatus];
 
-  const allOk = checks.every((c) => c.status === 'ok');
   const hasErrors = checks.some((c) => c.status === 'error');
   const hasStale = checks.some((c) => c.status === 'stale');
 

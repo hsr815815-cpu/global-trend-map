@@ -24,19 +24,25 @@ declare module 'react-simple-maps' {
     onMoveStart?: (position: { coordinates: [number, number]; zoom: number }) => void;
     onMove?: (position: { coordinates: [number, number]; zoom: number }) => void;
     onMoveEnd?: (position: { coordinates: [number, number]; zoom: number }) => void;
-    filterZoomEvent?: (event: any) => boolean;
+    filterZoomEvent?: (event: Event) => boolean;
     translateExtent?: [[number, number], [number, number]];
     children?: ReactNode;
   }
 
+  export interface GeoFeature {
+    rsmKey: string;
+    properties: Record<string, unknown>;
+    [key: string]: unknown;
+  }
+
   export interface GeographiesProps {
     geography: string | object;
-    parseGeographies?: (geographies: any[]) => any[];
-    children: (args: { geographies: any[] }) => ReactNode;
+    parseGeographies?: (geographies: GeoFeature[]) => GeoFeature[];
+    children: (args: { geographies: GeoFeature[] }) => ReactNode;
   }
 
   export interface GeographyProps extends SVGProps<SVGPathElement> {
-    geography: any;
+    geography: GeoFeature;
     style?: {
       default?: React.CSSProperties;
       hover?: React.CSSProperties;
@@ -96,8 +102,8 @@ declare module 'react-simple-maps' {
   export const Graticule: ComponentType<GraticuleProps>;
 
   export function useGeographies(args: { geography: string | object }): {
-    geographies: any[];
-    path: any;
-    projection: any;
+    geographies: GeoFeature[];
+    path: (geo: GeoFeature) => string;
+    projection: (coordinates: [number, number]) => [number, number];
   };
 }

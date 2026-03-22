@@ -226,28 +226,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return { title: 'Article Not Found | TrendPulse Blog' };
 
-  const faqs = post.faqs || [];
-
-  const schema: any = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.excerpt,
-    author: {
-      '@type': 'Organization',
-      name: 'Global Trends Editorial Team',
-      url: 'https://global-trend-map.vercel.app/about',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'TrendPulse',
-      url: 'https://global-trend-map.vercel.app',
-    },
-    datePublished: post.date,
-    dateModified: post.lastUpdated || post.date,
-    url: `https://global-trend-map.vercel.app/blog/${post.slug}`,
-  };
-
   return {
     title: `${post.title} | TrendPulse Blog`,
     description: post.excerpt,

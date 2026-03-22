@@ -1,18 +1,18 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import {
   ComposableMap,
   Geographies,
   Geography,
   ZoomableGroup,
+  GeoFeature,
 } from 'react-simple-maps';
 import {
   TrendsData,
   CountryData,
   getMapFillColor,
   getCountryTemperature,
-  getTemperatureLabel,
 } from '@/lib/trend-utils';
 import CountryPopup from './CountryPopup';
 
@@ -68,7 +68,7 @@ export default function WorldMap({ data }: WorldMapProps) {
   const [zoom, setZoom] = useState(1);
   const [center, setCenter] = useState<[number, number]>([0, 20]);
 
-  const getAlpha2FromGeo = useCallback((geo: any): string | null => {
+  const getAlpha2FromGeo = useCallback((geo: GeoFeature): string | null => {
     // Try ISO numeric first
     const numericId = geo.id || geo.properties?.['numeric-code'] || geo.properties?.iso_n3;
     if (numericId) {
@@ -83,7 +83,7 @@ export default function WorldMap({ data }: WorldMapProps) {
   }, []);
 
   const handleCountryClick = useCallback(
-    (geo: any, event: React.MouseEvent) => {
+    (geo: GeoFeature, event: React.MouseEvent) => {
       const code = getAlpha2FromGeo(geo);
       if (!code) return;
 
@@ -100,7 +100,7 @@ export default function WorldMap({ data }: WorldMapProps) {
   );
 
   const handleMouseEnter = useCallback(
-    (geo: any, event: React.MouseEvent) => {
+    (geo: GeoFeature, event: React.MouseEvent) => {
       const code = getAlpha2FromGeo(geo);
       setHoveredCountry(code);
       if (code) {
@@ -124,7 +124,7 @@ export default function WorldMap({ data }: WorldMapProps) {
   }, []);
 
   const getFillColor = useCallback(
-    (geo: any): string => {
+    (geo: GeoFeature): string => {
       const code = getAlpha2FromGeo(geo);
       if (!code) return '#1a1a3a';
 
@@ -141,7 +141,7 @@ export default function WorldMap({ data }: WorldMapProps) {
   );
 
   const getStrokeColor = useCallback(
-    (geo: any): string => {
+    (geo: GeoFeature): string => {
       const code = getAlpha2FromGeo(geo);
       if (code && hoveredCountry === code) return '#a78bfa';
       if (code && data.countries[code]) return '#2d2d5a';
@@ -218,8 +218,7 @@ export default function WorldMap({ data }: WorldMapProps) {
               setCenter(coordinates);
               setZoom(z);
             }}
-            filterZoomEvent={(e) => {
-              // Allow zoom only if not clicking a country
+            filterZoomEvent={() => {
               return true;
             }}
           >
@@ -233,9 +232,6 @@ export default function WorldMap({ data }: WorldMapProps) {
                   const strokeColor = getStrokeColor(geo);
                   const code = getAlpha2FromGeo(geo);
                   const hasData = code ? !!data.countries[code] : false;
-                  const isHot = code
-                    ? getCountryTemperature(data, code) >= 80
-                    : false;
 
                   return (
                     <Geography

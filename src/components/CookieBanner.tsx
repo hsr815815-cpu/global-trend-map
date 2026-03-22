@@ -29,8 +29,8 @@ export default function CookieBanner() {
     }
     setVisible(false);
     // Enable GA4 tracking
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('consent', 'update', {
+    if (typeof window !== 'undefined' && (window as Window & { gtag?: (...args: unknown[]) => void }).gtag) {
+      (window as Window & { gtag?: (...args: unknown[]) => void }).gtag('consent', 'update', {
         analytics_storage: 'granted',
         ad_storage: 'granted',
       });
@@ -45,8 +45,8 @@ export default function CookieBanner() {
     }
     setVisible(false);
     // Deny analytics
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('consent', 'update', {
+    if (typeof window !== 'undefined' && (window as Window & { gtag?: (...args: unknown[]) => void }).gtag) {
+      (window as Window & { gtag?: (...args: unknown[]) => void }).gtag('consent', 'update', {
         analytics_storage: 'denied',
         ad_storage: 'denied',
       });
