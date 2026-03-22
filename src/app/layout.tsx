@@ -18,7 +18,7 @@ const spaceMono = Space_Mono({
   weight: ['400', '700'],
 });
 
-const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || 'G-7MK156YMMH';
 const SITE_URL = 'https://global-trend-map-web.vercel.app';
 
 export const metadata: Metadata = {
