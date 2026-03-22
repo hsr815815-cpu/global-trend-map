@@ -207,7 +207,7 @@ def slug(text: str) -> str:
 def fetch_google_trends(country_code: str, meta: dict) -> list[dict]:
     geo  = meta["geo"]
     hl   = meta["hl"]
-    url  = f"https://trends.google.com/trends/trendingsearches/daily/rss?geo={geo}&hl={hl}"
+    url  = f"https://trends.google.com/trending/rss?geo={geo}&hl={hl}"
     resp = safe_get(url, timeout=20)
     if resp is None:
         return []
@@ -220,17 +220,18 @@ def fetch_google_trends(country_code: str, meta: dict) -> list[dict]:
         if not keyword or is_blocked(keyword):
             continue
 
-        # traffic tag: <ht:approx_traffic>5,000,000+</ht:approx_traffic>
-        traffic_raw = ""
-        for tag in entry.get("tags", []):
-            if "approx_traffic" in tag.get("term", ""):
-                traffic_raw = tag["term"]
+        # ht:approx_traffic is now a direct attribute on entry
+        traffic_raw = getattr(entry, "ht_approx_traffic", "") or ""
         if not traffic_raw:
-            traffic_raw = getattr(entry, "ht_approx_traffic", "") or ""
+            for tag in entry.get("tags", []):
+                if "approx_traffic" in tag.get("term", ""):
+                    traffic_raw = tag["term"]
 
-        # Parse volume from title or tags
+        # Parse volume — only use real data, no fallback estimates
         vol_match = re.search(r"([\d,]+)", traffic_raw.replace("+", ""))
-        volume_raw = int(vol_match.group(1).replace(",", "")) if vol_match else max(10_000, 500_000 - rank * 20_000)
+        if not vol_match:
+            continue  # Skip entries without real traffic data
+        volume_raw = int(vol_match.group(1).replace(",", ""))
 
         # Related news from entry summary
         related_news = []
@@ -508,10 +509,7 @@ def enrich_trends(
         enriched = []
         for new_rank, t in enumerate(merged[:20], start=1):
             t["rank"] = new_rank
-            # Wikipedia
-            if not t.get("description"):
-                t["description"] = fetch_wikipedia_description(t["keyword"])
-            # GDELT related news
+            # GDELT related news only (skip slow Wikipedia enrichment)
             if not t.get("relatedNews"):
                 t["relatedNews"] = get_gdelt_headlines_for_keyword(t["keyword"], gdelt_headlines)
             # Track keyword spread

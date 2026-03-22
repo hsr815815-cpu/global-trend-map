@@ -1,139 +1,3752 @@
 {
-  "lastUpdated": "2026-03-23T00:00:00Z",
+  "lastUpdated": "2026-03-22T19:40:55.606047+00:00",
   "countries": {
     "US": {
       "name": "United States",
       "flag": "🇺🇸",
       "trends": [
-        { "rank": 1, "keyword": "March Madness 2026", "volume": "5.2M", "category": "sports", "temperature": 92, "velocity": "rising" },
-        { "rank": 2, "keyword": "AI Agents breakthrough", "volume": "3.1M", "category": "tech", "temperature": 88, "velocity": "rising" },
-        { "rank": 3, "keyword": "Spring break destinations", "volume": "2.8M", "category": "travel", "temperature": 80, "velocity": "steady" },
-        { "rank": 4, "keyword": "Stock market rally", "volume": "2.2M", "category": "finance", "temperature": 75, "velocity": "rising" },
-        { "rank": 5, "keyword": "Grammy nominations 2027", "volume": "1.9M", "category": "music", "temperature": 68, "velocity": "new" }
+        {
+          "rank": 1,
+          "keyword": "mortgages",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "wilmer flores",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "50K+",
+          "volumeRaw": 50000,
+          "category": "news",
+          "temperature": 44,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "lsu women's basketball",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "sports",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "izombie",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "otega oweh",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "tamin lipsey",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "alex ovechkin",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "denzel aberdeen",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "women's march madness",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "KR": {
       "name": "South Korea",
       "flag": "🇰🇷",
       "trends": [
-        { "rank": 1, "keyword": "K-pop 월드투어", "volume": "2.4M", "category": "music", "temperature": 90, "velocity": "rising" },
-        { "rank": 2, "keyword": "삼성 갤럭시 신제품", "volume": "1.8M", "category": "tech", "temperature": 84, "velocity": "new" },
-        { "rank": 3, "keyword": "축구 국가대표", "volume": "1.5M", "category": "sports", "temperature": 79, "velocity": "steady" },
-        { "rank": 4, "keyword": "드라마 시청률", "volume": "1.2M", "category": "movies", "temperature": 72, "velocity": "rising" },
-        { "rank": 5, "keyword": "코스피 급등", "volume": "980K", "category": "finance", "temperature": 65, "velocity": "rising" }
+        {
+          "rank": 1,
+          "keyword": "อาร์เซนอล พบ แมนซิตี",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 43,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "arsenal đấu với man city",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 41,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "g2 blg",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "arsenal vs man city",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "아스널 대 맨 시티",
+          "volume": "20K+",
+          "volumeRaw": 20000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "프리미어리그",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "epl",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "아스톤빌라",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "웨스트햄",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "문정희",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "JP": {
       "name": "Japan",
       "flag": "🇯🇵",
       "trends": [
-        { "rank": 1, "keyword": "桜前線 2026", "volume": "3.2M", "category": "news", "temperature": 91, "velocity": "rising" },
-        { "rank": 2, "keyword": "Nintendo Switch 新作", "volume": "2.1M", "category": "tech", "temperature": 86, "velocity": "new" },
-        { "rank": 3, "keyword": "プロ野球開幕", "volume": "1.9M", "category": "sports", "temperature": 81, "velocity": "steady" },
-        { "rank": 4, "keyword": "アニメ新シーズン", "volume": "1.6M", "category": "movies", "temperature": 76, "velocity": "rising" },
-        { "rank": 5, "keyword": "日経平均株価", "volume": "1.3M", "category": "finance", "temperature": 70, "velocity": "steady" }
+        {
+          "rank": 1,
+          "keyword": "rマドリード 対 アトレティコ",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "福岡",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "ホンダ・フィット",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "冨安 怪我",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "林ゆめ",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "arsenal đấu với man city",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "乃木坂46",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "ペッパーランチ",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "ニコ生",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "プレミアリーグ",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "GB": {
       "name": "United Kingdom",
       "flag": "🇬🇧",
       "trends": [
-        { "rank": 1, "keyword": "Premier League title race", "volume": "2.8M", "category": "sports", "temperature": 89, "velocity": "rising" },
-        { "rank": 2, "keyword": "Budget announcement", "volume": "2.1M", "category": "news", "temperature": 83, "velocity": "new" },
-        { "rank": 3, "keyword": "Glastonbury 2026 lineup", "volume": "1.7M", "category": "music", "temperature": 77, "velocity": "rising" },
-        { "rank": 4, "keyword": "BAFTA winners", "volume": "1.4M", "category": "movies", "temperature": 71, "velocity": "new" },
-        { "rank": 5, "keyword": "FTSE 100 record", "volume": "1.1M", "category": "finance", "temperature": 64, "velocity": "steady" }
+        {
+          "rank": 1,
+          "keyword": "nantes vs strasbourg",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 43,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "sebastian korda",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 44,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "hailey baptiste",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "tech",
+          "temperature": 32,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "last one laughing uk season 2",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "nantes fc",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 28,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "ryan searle",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "indoor athletics 2026",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "pentathlon events",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "world indoor athletics championships 2026 medal table",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "DE": {
       "name": "Germany",
       "flag": "🇩🇪",
       "trends": [
-        { "rank": 1, "keyword": "Bundesliga Meisterschaft", "volume": "2.2M", "category": "sports", "temperature": 87, "velocity": "rising" },
-        { "rank": 2, "keyword": "Oktoberfest Tickets", "volume": "1.8M", "category": "news", "temperature": 82, "velocity": "steady" },
-        { "rank": 3, "keyword": "E-Auto Förderung", "volume": "1.5M", "category": "tech", "temperature": 76, "velocity": "rising" },
-        { "rank": 4, "keyword": "Rammstein Tour 2026", "volume": "1.2M", "category": "music", "temperature": 70, "velocity": "new" },
-        { "rank": 5, "keyword": "DAX Allzeithoch", "volume": "980K", "category": "finance", "temperature": 63, "velocity": "rising" }
+        {
+          "rank": 1,
+          "keyword": "john wayne",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "kings league",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "rwe",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "pierce brosnan",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "real madrid – atlético madrid",
+          "volume": "10K+",
+          "volumeRaw": 10000,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "الريال ضد أتلتيكو مدريد",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "реал мадрид – атлетико мадрид",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "real madryt – atlético madryt",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "scharrenbach",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "IN": {
       "name": "India",
       "flag": "🇮🇳",
       "trends": [
-        { "rank": 1, "keyword": "IPL 2026 auction", "volume": "8.4M", "category": "sports", "temperature": 95, "velocity": "rising" },
-        { "rank": 2, "keyword": "Bollywood blockbuster", "volume": "5.2M", "category": "movies", "temperature": 88, "velocity": "new" },
-        { "rank": 3, "keyword": "Union Budget reaction", "volume": "4.1M", "category": "finance", "temperature": 83, "velocity": "steady" },
-        { "rank": 4, "keyword": "Jio 5G expansion", "volume": "3.3M", "category": "tech", "temperature": 77, "velocity": "rising" },
-        { "rank": 5, "keyword": "Holi festival 2026", "volume": "2.9M", "category": "news", "temperature": 72, "velocity": "steady" }
+        {
+          "rank": 1,
+          "keyword": "oneplus 15t price",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "maldives speedboat accident hari singh",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "elvish yadav",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "real madrid vs atlético madrid lineups",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "jana nayagan",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "ashok kharat viral cctv",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "fiorentina vs inter",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "pep guardiola",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "saumya tandon",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "apple tv",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "tech",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "BR": {
       "name": "Brazil",
       "flag": "🇧🇷",
       "trends": [
-        { "rank": 1, "keyword": "Carnaval 2026", "volume": "6.1M", "category": "news", "temperature": 93, "velocity": "rising" },
-        { "rank": 2, "keyword": "Flamengo campeão", "volume": "4.2M", "category": "sports", "temperature": 87, "velocity": "rising" },
-        { "rank": 3, "keyword": "Lula economia", "volume": "3.1M", "category": "news", "temperature": 80, "velocity": "steady" },
-        { "rank": 4, "keyword": "Anitta feat novo", "volume": "2.4M", "category": "music", "temperature": 74, "velocity": "new" },
-        { "rank": 5, "keyword": "Ibovespa máxima", "volume": "1.8M", "category": "finance", "temperature": 67, "velocity": "rising" }
+        {
+          "rank": 1,
+          "keyword": "dudu",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "caio paulista",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "tech",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "gabriel taliari",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "amistosos da seleção",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "guto ferreira",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "minnesota united x seattle sounders",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "hailey baptiste",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "tech",
+          "temperature": 26,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "globoplay ao vivo",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "cap",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "FR": {
       "name": "France",
       "flag": "🇫🇷",
       "trends": [
-        { "rank": 1, "keyword": "Roland Garros 2026", "volume": "2.6M", "category": "sports", "temperature": 86, "velocity": "steady" },
-        { "rank": 2, "keyword": "Élections régionales", "volume": "2.0M", "category": "news", "temperature": 81, "velocity": "rising" },
-        { "rank": 3, "keyword": "Cannes film festival", "volume": "1.6M", "category": "movies", "temperature": 75, "velocity": "new" },
-        { "rank": 4, "keyword": "Taylor Swift Paris", "volume": "1.3M", "category": "music", "temperature": 69, "velocity": "new" },
-        { "rank": 5, "keyword": "CAC 40 record", "volume": "1.0M", "category": "finance", "temperature": 62, "velocity": "steady" }
+        {
+          "rank": 1,
+          "keyword": "bruno retailleau",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "tech",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "montpellier",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "jean philippe tanguy",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "bayonne",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "charles hittler",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "montargis",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "dijon",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "resultat election municipal",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "tondelier",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "aix en provence",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "tech",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "AU": {
       "name": "Australia",
       "flag": "🇦🇺",
       "trends": [
-        { "rank": 1, "keyword": "AFL grand final odds", "volume": "1.9M", "category": "sports", "temperature": 84, "velocity": "rising" },
-        { "rank": 2, "keyword": "Cyclone warning QLD", "volume": "1.5M", "category": "news", "temperature": 79, "velocity": "new" },
-        { "rank": 3, "keyword": "RBA interest rates", "volume": "1.2M", "category": "finance", "temperature": 73, "velocity": "steady" },
-        { "rank": 4, "keyword": "Australian Idol 2026", "volume": "980K", "category": "music", "temperature": 66, "velocity": "rising" },
-        { "rank": 5, "keyword": "ASX 200 record high", "volume": "780K", "category": "finance", "temperature": 60, "velocity": "rising" }
+        {
+          "rank": 1,
+          "keyword": "athletic club vs real betis",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "easter 2026",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 44,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "talia gibson",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "weatherzone",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "strait of hormuz",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "tech",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "sydney weather",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "bbc football",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "bbc sport",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "sports",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "premier league table",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "sports",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
       ]
     },
     "MX": {
       "name": "Mexico",
       "flag": "🇲🇽",
       "trends": [
-        { "rank": 1, "keyword": "Liga MX Clausura", "volume": "3.4M", "category": "sports", "temperature": 89, "velocity": "rising" },
-        { "rank": 2, "keyword": "Semana Santa 2026", "volume": "2.7M", "category": "news", "temperature": 83, "velocity": "steady" },
-        { "rank": 3, "keyword": "Bad Bunny tour México", "volume": "2.1M", "category": "music", "temperature": 77, "velocity": "new" },
-        { "rank": 4, "keyword": "Peso dólar tipo cambio", "volume": "1.6M", "category": "finance", "temperature": 71, "velocity": "rising" },
-        { "rank": 5, "keyword": "Netflix serie mexicana", "volume": "1.2M", "category": "movies", "temperature": 64, "velocity": "new" }
+        {
+          "rank": 1,
+          "keyword": "anselmi",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "nantes vs",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 46,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "iva jovic",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "50K+",
+          "volumeRaw": 50000,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "sky sports",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "sports",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "fiorentina - inter",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "vasco da gama - grêmio",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "mcdonalds mario galaxy",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "puebla vs america femenil",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "clima morelia",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "CA": {
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "dhurandhar movie ranveer singh",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "movies",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "seattle sounders vs minnesota",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "paris",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "sebastian korda",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 32,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "grand theft auto vi",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "pep guardiola",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "cruzeiro vs santos",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "iva jovic",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 24,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "real madrid – atlético madrid",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 32,
+          "velocity": "steady",
+          "isGlobal": true
+        },
+        {
+          "rank": 10,
+          "keyword": "darrell waltrip",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "IT": {
+      "name": "Italy",
+      "flag": "🇮🇹",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "canterbury",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "poste tim",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "notte prima degli esami 3.0",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "hawaii",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "tech",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "الريال ضد أتلتيكو مدريد",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "le iene inside stasera",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "modena volley",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 32,
+          "velocity": "steady",
+          "isGlobal": true
+        },
+        {
+          "rank": 10,
+          "keyword": "freddo marzo",
+          "volume": "10K+",
+          "volumeRaw": 10000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "ES": {
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "pablo fornals",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "vanessa hudgens",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "la roca",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "mohamed attaoui",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "korda",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "racing de ferrol",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "munuera montero",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "barça basquet",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "100K+",
+          "volumeRaw": 100000,
+          "category": "news",
+          "temperature": 32,
+          "velocity": "steady",
+          "isGlobal": true
+        },
+        {
+          "rank": 10,
+          "keyword": "real madrid - atlètic de madrid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "NL": {
+      "name": "Netherlands",
+      "flag": "🇳🇱",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "gorssel",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "الريال ضد أتلتيكو مدريد",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 46,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "sevilla",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "legia warszawa – raków częstochowa",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "donau",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "fiorentina - inter",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "gen z",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "wk indoor atletiek 2026",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "SE": {
+      "name": "Sweden",
+      "flag": "🇸🇪",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 48,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "devynne charlton",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "jonna sundling",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "real madrid mot atlético madrid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "fiorentina mot inter",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 30,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "världsrekord längdhopp",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "stifel",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "pep guardiola",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "new york city mot inter miami",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "jessie diggins",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "steady",
+          "isGlobal": true
+        }
+      ]
+    },
+    "PL": {
+      "name": "Poland",
+      "flag": "🇵🇱",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "scarlett johansson",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "kamil nożyński",
+          "volume": "10K+",
+          "volumeRaw": 10000,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "реал мадрид – атлетико мадрид",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 39,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "tomasz wygoda",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "charlton",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "mls",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "senegal",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "cruzeiro – santos fc",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "fiorentina – inter",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "TR": {
+      "name": "Turkey",
+      "flag": "🇹🇷",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "رئال مادرید مقابل اتلتیکو",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "реал мадрид – атлетико мадрид",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 41,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "şevval ayı ne zaman",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "augsburg",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "körfez ülkeleri",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "الريال ضد أتلتيكو مدريد",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "menenjit",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "havelsan",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "fiorentina - inter",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 30,
+          "velocity": "steady",
+          "isGlobal": true
+        }
+      ]
+    },
+    "ID": {
+      "name": "Indonesia",
+      "flag": "🇮🇩",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "raal la louviére vs genk",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "autódromo internacional ayrton senna",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "real murcia",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "viborg vs midtjylland",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "harga emas anjlok",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "robinio vaz",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "fabio di giannantonio",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "nantes vs",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "ben white",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "braga vs porto",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "PH": {
+      "name": "Philippines",
+      "flag": "🇵🇭",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "777",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "leylah fernandez",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "transport strike tomorrow",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "sports",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "arsenal vs man city",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "jasmine paolini",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "savvy games group moonton",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "march 22 moon",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "la liga",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "sports",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "tottenham vs nottm forest",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 22,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "cookie run new world",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "NG": {
+      "name": "Nigeria",
+      "flag": "🇳🇬",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "wydad ac vs olympique club de safi",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "paok fc",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "cruzeiro vs santos",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 39,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "stuttgart",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "nantes vs strasbourg",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 35,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "premier league table 2025/26",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "augsburg vs vfb stuttgart",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 26,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "arsenal fixtures",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "stuttgart fc",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "cherki",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "ZA": {
+      "name": "South Africa",
+      "flag": "🇿🇦",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "nantes vs strasbourg",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 43,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "real madrid vs atlético madrid stats",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "braga vs porto",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "fiorentina vs inter",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "elina svitolina",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "cherki",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 28,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "greece super league",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "iranian",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "nantes fc",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 22,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "augsburg vs vfb stuttgart",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "AR": {
+      "name": "Argentina",
+      "flag": "🇦🇷",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "suipacha",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "alvarado",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "federal a",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "dj guilherme peixoto",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "20K+",
+          "volumeRaw": 20000,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "fiorentina - inter",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "a que hora juega river",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "inter miami",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 24,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "patronato - colegiales",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "9z",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "CO": {
+      "name": "Colombia",
+      "flag": "🇨🇴",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "banksy",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "finance",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "20K+",
+          "volumeRaw": 20000,
+          "category": "news",
+          "temperature": 46,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "nantes vs",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 44,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "fiorentina - inter",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "primeira liga",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "fiorentina vs inter",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "sarmiento - aldosivi",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "estudiante",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "colombia",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "taylor fritz",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "EG": {
+      "name": "Egypt",
+      "flag": "🇪🇬",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "انستاباي",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "mls",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 41,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 44,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "فيورنتينا ضد الإنتر",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "fiorentina vs inter",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "الاتحاد السكندري ضد فاركو",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "ترتيب الدوري الانجليزي",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "الريال ضد أتلتيكو مدريد",
+          "volume": "10K+",
+          "volumeRaw": 10000,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "البطاقة التموينية",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "roma vs lecce",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "TH": {
+      "name": "Thailand",
+      "flag": "🇹🇭",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 48,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "เรอัลมาดริด พบ อัตเลติโกมาดริด",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "ฟีออเรนตีนา พบ อินเตอร์",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "บอลวันนี้ สด",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "ดูทีวีออนไลน์",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "บิลเบา",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "โมนาโก",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "อาร์เซนอล พบ แมนซิตี",
+          "volume": "100K+",
+          "volumeRaw": 100000,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 9,
+          "keyword": "clavicular slap",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "ตารางคะแนนไทยลีก",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "MY": {
+      "name": "Malaysia",
+      "flag": "🇲🇾",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "cruzeiro vs santos",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 43,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "bts comeback concert arirang",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "music",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "athletic club vs real betis",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 34,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "james trafford",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 32,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "roma vs lecce",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 30,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "football match today",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "sports",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "piala liga",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "new york city vs inter miami",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 24,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "marseille vs losc",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "gold",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "SG": {
+      "name": "Singapore",
+      "flag": "🇸🇬",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "real madrid vs atlético madrid",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 48,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "new york city vs inter miami",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "lyon vs monaco",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "australian fuel shortage",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "haze singapore",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "tottenham vs nottm forest",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 28,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "aston villa vs west ham",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "barcelona vs rayo vallecano",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "como vs pisa",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "arsenal vs man city",
+          "volume": "20K+",
+          "volumeRaw": 20000,
+          "category": "news",
+          "temperature": 30,
+          "velocity": "steady",
+          "isGlobal": true
+        }
+      ]
+    },
+    "VN": {
+      "name": "Vietnam",
+      "flag": "🇻🇳",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "vô địch tây ban nha",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "real madrid đấu với atlético madrid",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "fiorentina đấu với inter",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "real madrid – atlético madrid",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "man c",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "navy team",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "nico o'reilly",
+          "volume": "5K+",
+          "volumeRaw": 5000,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "inter miami",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 24,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "abdukodir khusanov",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "james trafford",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "TW": {
+      "name": "Taiwan",
+      "flag": "🇹🇼",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "อาร์เซนอล พบ แมนซิตี",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 43,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "motogp",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "arsenal đấu với man city",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 39,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "曼城",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "premier league",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "sports",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "英聯盃",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "arsenal vs man city",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "project hail mary",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "tech",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "兵工廠 對 曼城",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "平日住宿補助",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "RU": {
+      "name": "Russia",
+      "flag": "🇷🇺",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "mls",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 43,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "фиорентина – интер",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "овечкин",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "вашингтон колорадо",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "аугсбург – штутгарт",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "волга",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "титаны битва сезонов 9 выпуск",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "апл таблица",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "крузейро – сантос",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "марсель лилль",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "NO": {
+      "name": "Norway",
+      "flag": "🇳🇴",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "cupen",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "fiorentina mot inter",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 36,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "spellemann",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "bodø/glimt mot lillestrøm",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "lars løkke rasmussen",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "ligacupen",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "jessie diggins",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 8,
+          "keyword": "andrew yogan",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "lake placid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "pl",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "DK": {
+      "name": "Denmark",
+      "flag": "🇩🇰",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "lars boje mathiesen",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "inger støjberg",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 31,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 3,
+          "keyword": "fcm viborg",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "borgernes parti",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 40,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 6,
+          "keyword": "radikale venstre",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "moderaterne",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "finance",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "danmarksdemokraterne",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "finance",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "message",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "demokratiets aften",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "FI": {
+      "name": "Finland",
+      "flag": "🇫🇮",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "real madrid – atlético madrid",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 48,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "jessie diggins",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 41,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "julma henri",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "revontulet",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 27,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 5,
+          "keyword": "anniina valtonen",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "jessi pierce",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "pellegrino",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "uusi päivä",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "emil larmi",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "kadonnut sini",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "CL": {
+      "name": "Chile",
+      "flag": "🇨🇱",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "actor nicholas brendon",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "movies",
+          "temperature": 33,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 2,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "10K+",
+          "volumeRaw": 10000,
+          "category": "news",
+          "temperature": 46,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "golfo di napoli",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "sports",
+          "temperature": 29,
+          "velocity": "rising",
+          "isGlobal": false
+        },
+        {
+          "rank": 4,
+          "keyword": "vasco da gama - grêmio",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 37,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "uc vs u de conce",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "fiorentina - inter",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 38,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 7,
+          "keyword": "tomás martín etcheverry",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "stuttgart vs",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "cruzeiro - santos",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "rafael jódar",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "steady",
+          "isGlobal": false
+        }
+      ]
+    },
+    "PE": {
+      "name": "Peru",
+      "flag": "🇵🇪",
+      "trends": [
+        {
+          "rank": 1,
+          "keyword": "real madrid - atlético madrid",
+          "volume": "20K+",
+          "volumeRaw": 20000,
+          "category": "news",
+          "temperature": 48,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 2,
+          "keyword": "fiorentina - inter",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 46,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 3,
+          "keyword": "fiorentina vs inter",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 44,
+          "velocity": "rising",
+          "isGlobal": true
+        },
+        {
+          "rank": 4,
+          "keyword": "nantes vs",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 42,
+          "velocity": "new",
+          "isGlobal": true
+        },
+        {
+          "rank": 5,
+          "keyword": "olympiacos",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 6,
+          "keyword": "roma",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 23,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 7,
+          "keyword": "onpe donde votar",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 21,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 8,
+          "keyword": "técnico universitario - independiente del valle",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false
+        },
+        {
+          "rank": 9,
+          "keyword": "utc cajamarca - alianza atlético",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 17,
+          "velocity": "steady",
+          "isGlobal": false
+        },
+        {
+          "rank": 10,
+          "keyword": "vasco da gama - grêmio",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 25,
+          "velocity": "steady",
+          "isGlobal": true
+        }
       ]
     }
   },
   "global": {
-    "temperature": 84,
+    "temperature": 27,
     "topTrend": {
-      "keyword": "IPL 2026 auction",
-      "country": "IN",
-      "volume": "8.4M",
-      "category": "sports"
+      "keyword": "real madrid - atlético madrid",
+      "country": "PE",
+      "volume": "20K+",
+      "flag": "🇵🇪",
+      "category": "news"
     },
-    "totalCountries": 142,
-    "totalTrends": 8742,
+    "totalCountries": 35,
+    "totalTrends": 350,
     "risingFast": [
-      { "keyword": "AI Agents breakthrough", "country": "US", "change": "+340%" },
-      { "keyword": "IPL 2026 auction", "country": "IN", "change": "+280%" },
-      { "keyword": "桜前線 2026", "country": "JP", "change": "+210%" }
+      {
+        "keyword": "real madrid - atlético madrid",
+        "country": "PE",
+        "change": "20K+"
+      },
+      {
+        "keyword": "real madrid – atlético madrid",
+        "country": "FI",
+        "change": "500"
+      },
+      {
+        "keyword": "real madrid vs atlético madrid",
+        "country": "SE",
+        "change": "200"
+      }
     ],
     "categoryBreakdown": {
-      "sports": 28,
-      "tech": 22,
-      "music": 18,
-      "news": 16,
-      "movies": 10,
-      "finance": 6
+      "news": 91,
+      "sports": 5,
+      "tech": 3,
+      "finance": 1,
+      "movies": 1,
+      "music": 0
     }
   }
 }
