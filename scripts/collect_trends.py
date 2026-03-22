@@ -14,7 +14,7 @@ import shutil
 import hashlib
 import logging
 from datetime import datetime, timezone, timedelta
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, quote as url_quote
 from pathlib import Path
 
 try:
@@ -200,6 +200,20 @@ def now_iso() -> str:
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
+
+def translate_to_english(text: str) -> str:
+    """Translate non-ASCII text to English using Google Translate (free, no key)."""
+    if all(ord(c) < 128 for c in text):
+        return text  # Already ASCII
+    try:
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q={url_quote(text)}"
+        r = SESSION.get(url, timeout=5)
+        data = r.json()
+        translated = ''.join([item[0] for item in data[0] if item[0]])
+        return translated.strip() or text
+    except Exception:
+        return text
+
 # ---------------------------------------------------------------------------
 # Source: Google Trends RSS
 # ---------------------------------------------------------------------------
@@ -244,6 +258,7 @@ def fetch_google_trends(country_code: str, meta: dict) -> list[dict]:
         trends.append({
             "rank":        rank,
             "keyword":     keyword,
+            "keywordEn":   translate_to_english(keyword),
             "volume":      format_volume(volume_raw),
             "volumeRaw":   volume_raw,
             "category":    classify_category(keyword),

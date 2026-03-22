@@ -237,7 +237,7 @@ export default function CountryPopup({
                     whiteSpace: 'nowrap',
                   }}
                 >
-                  {trend.keyword}
+                  {trend.keywordEn || trend.keyword}
                 </div>
                 <div
                   style={{

@@ -38,6 +38,7 @@ export default function TrendList({ data }: TrendListProps) {
       result = result.filter(
         (t) =>
           t.keyword.toLowerCase().includes(q) ||
+          (t.keywordEn || '').toLowerCase().includes(q) ||
           t.countryName.toLowerCase().includes(q)
       );
     }
@@ -186,7 +187,7 @@ export default function TrendList({ data }: TrendListProps) {
                 color: 'var(--text-primary)',
               }}
             >
-              {data.global.topTrend.keyword}
+              {(data.global.topTrend as { keyword: string; keywordEn?: string }).keywordEn || data.global.topTrend.keyword}
             </div>
             <div
               style={{
@@ -323,7 +324,7 @@ function TrendRow({ trend, globalRank, badge, isTop3 }: TrendRowProps) {
               whiteSpace: 'nowrap',
             }}
           >
-            {trend.keyword}
+            {trend.keywordEn || trend.keyword}
           </span>
           {badge && (
             <span

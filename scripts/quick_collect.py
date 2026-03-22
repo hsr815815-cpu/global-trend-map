@@ -3,6 +3,7 @@
 import sys, json, time, re, shutil, logging
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote as url_quote
 import requests, feedparser
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -74,6 +75,20 @@ S = requests.Session()
 S.headers.update(HEADERS)
 
 
+def translate_to_english(text: str) -> str:
+    """Translate non-ASCII text to English using Google Translate (free, no key)."""
+    if all(ord(c) < 128 for c in text):
+        return text  # Already ASCII
+    try:
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q={url_quote(text)}"
+        r = S.get(url, timeout=5)
+        data = r.json()
+        translated = ''.join([item[0] for item in data[0] if item[0]])
+        return translated.strip() or text
+    except Exception:
+        return text
+
+
 def classify(kw):
     k = kw.lower()
     for cat, words in CATEGORY_KW.items():
@@ -129,6 +144,7 @@ for code, meta in COUNTRIES.items():
                 'category':    classify(kw),
                 'temperature': 0,
                 'velocity':    velocity(rank),
+                'keywordEn':   translate_to_english(kw),
                 'isGlobal':    False,
             })
             keyword_country_map.setdefault(kw.lower(), []).append(code)

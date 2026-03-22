@@ -419,7 +419,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                       whiteSpace: 'nowrap',
                     }}
                   >
-                    {item.keyword}
+                    {item.keywordEn || item.keyword}
                   </div>
                   <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
                     {data.countries[item.country]?.flag} {item.country}

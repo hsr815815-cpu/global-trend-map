@@ -19,6 +19,7 @@ export type TrendVelocity = 'rising' | 'steady' | 'falling' | 'new';
 export interface TrendItem {
   rank: number;
   keyword: string;
+  keywordEn?: string;
   volume: string;
   category: TrendCategory;
   temperature: number;
@@ -41,7 +42,7 @@ export interface GlobalData {
   };
   totalCountries: number;
   totalTrends: number;
-  risingFast: Array<{ keyword: string; country: string; change: string }>;
+  risingFast: Array<{ keyword: string; keywordEn?: string; country: string; change: string }>;
   categoryBreakdown: Record<string, number>;
 }
 
