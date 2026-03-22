@@ -50,11 +50,10 @@ export default async function HomePage() {
 
   return (
     <div
+      className="page-wrapper"
       style={{
         display: 'flex',
         flexDirection: 'column',
-        height: '100vh',
-        overflow: 'hidden',
         background: 'var(--bg-base)',
       }}
     >
@@ -67,61 +66,32 @@ export default async function HomePage() {
 
       {/* Main Command Center */}
       <div
+        className="main-grid"
         style={{
-          flex: 1,
-          display: 'grid',
-          gridTemplateColumns: '560px 1fr 270px',
-          gridTemplateRows: '1fr 148px',
           gap: '10px',
           padding: '10px 12px 12px',
-          overflow: 'hidden',
           minHeight: 0,
         }}
       >
         {/* Left Panel — Trend Rankings */}
-        <div
-          style={{
-            gridRow: '1 / 2',
-            overflow: 'hidden',
-          }}
-          className="animate-slide-left"
-        >
+        <div className="panel-list animate-slide-left">
           <TrendList data={data} />
         </div>
 
         {/* Center — World Map */}
-        <div
-          style={{
-            gridRow: '1 / 2',
-            overflow: 'hidden',
-          }}
-          className="animate-fade-in"
-        >
+        <div className="panel-map animate-fade-in">
           <Suspense fallback={<MapSkeleton />}>
             <WorldMap data={data} />
           </Suspense>
         </div>
 
         {/* Right Panel */}
-        <div
-          style={{
-            gridRow: '1 / 2',
-            overflow: 'hidden',
-          }}
-          className="animate-slide-right"
-        >
+        <div className="panel-right animate-slide-right">
           <RightPanel data={data} />
         </div>
 
         {/* Bottom Cards — spans all columns */}
-        <div
-          style={{
-            gridColumn: '1 / -1',
-            gridRow: '2 / 3',
-            overflow: 'hidden',
-          }}
-          className="animate-slide-up"
-        >
+        <div className="panel-bottom animate-slide-up">
           <BottomCards data={data} />
         </div>
       </div>

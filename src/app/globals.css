@@ -702,3 +702,54 @@ body {
     text-wrap: balance;
   }
 }
+
+/* ============================================================
+   RESPONSIVE LAYOUT
+   ============================================================ */
+
+.page-wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 560px 1fr 270px;
+  grid-template-rows: 1fr 148px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.panel-list  { grid-row: 1 / 2; overflow: hidden; }
+.panel-map   { grid-row: 1 / 2; overflow: hidden; }
+.panel-right { grid-row: 1 / 2; overflow: hidden; }
+.panel-bottom { grid-column: 1 / -1; grid-row: 2 / 3; overflow: hidden; }
+
+@media (max-width: 900px) {
+  .page-wrapper {
+    height: auto;
+    min-height: 100dvh;
+    overflow-y: auto;
+  }
+
+  .main-grid {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    min-height: unset;
+    padding: 8px !important;
+    gap: 10px;
+  }
+
+  /* 모바일 순서: 지도 → 랭킹 → 우측패널 → 하단카드 */
+  .panel-map    { order: 1; height: 380px; overflow: hidden; }
+  .panel-list   { order: 2; height: 560px; overflow: hidden; }
+  .panel-right  { order: 3; height: auto; overflow: visible; }
+  .panel-bottom { order: 4; height: auto; overflow-x: auto; grid-column: unset; grid-row: unset; }
+
+  /* 하단 카드 모바일: 가로 스크롤 */
+  .panel-bottom > * {
+    min-width: 700px;
+  }
+}
