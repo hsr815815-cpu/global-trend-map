@@ -145,9 +145,9 @@ export default function TrendList({ data }: TrendListProps) {
         {/* Category chips */}
         <div
           style={{
-            display: 'flex',
-            gap: '6px',
-            flexWrap: 'wrap',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(7, 1fr)',
+            gap: '4px',
           }}
         >
           {CATEGORIES.map((cat) => (
@@ -156,7 +156,7 @@ export default function TrendList({ data }: TrendListProps) {
               onClick={() => setActiveCategory(cat.key)}
               className={`category-chip${activeCategory === cat.key ? ' active' : ''}`}
             >
-              {cat.icon} {cat.label}
+              {cat.label}
             </button>
           ))}
         </div>
