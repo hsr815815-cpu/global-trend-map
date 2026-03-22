@@ -3,7 +3,7 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "regions": ["icn1", "hnd1", "lhr1", "iad1"],
+  "regions": ["icn1"],
   "headers": [
     {
       "source": "/ads.txt",
