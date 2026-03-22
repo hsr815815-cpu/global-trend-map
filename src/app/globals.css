@@ -748,8 +748,12 @@ body {
   .panel-right  { order: 3; height: auto; overflow: visible; }
   .panel-bottom { order: 4; height: auto; overflow-x: auto; grid-column: unset; grid-row: unset; }
 
-  /* 하단 카드 모바일: 가로 스크롤 */
-  .panel-bottom > * {
-    min-width: 700px;
+  /* 하단 카드 모바일: 2열 그리드 */
+  .bottom-cards-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    height: auto !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
   }
 }

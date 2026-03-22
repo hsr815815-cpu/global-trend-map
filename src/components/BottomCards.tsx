@@ -40,6 +40,7 @@ export default function BottomCards({ data }: BottomCardsProps) {
 
   return (
     <div
+      className="bottom-cards-container"
       style={{
         display: 'flex',
         gap: '10px',
