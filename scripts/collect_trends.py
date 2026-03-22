@@ -46,42 +46,42 @@ log = logging.getLogger("collect_trends")
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
 
 COUNTRIES = {
-    "US": {"name": "United States",       "flag": "🇺🇸", "hl": "en-US", "geo": "US"},
-    "KR": {"name": "South Korea",         "flag": "🇰🇷", "hl": "ko",    "geo": "KR"},
-    "JP": {"name": "Japan",               "flag": "🇯🇵", "hl": "ja",    "geo": "JP"},
-    "GB": {"name": "United Kingdom",      "flag": "🇬🇧", "hl": "en-GB", "geo": "GB"},
-    "DE": {"name": "Germany",             "flag": "🇩🇪", "hl": "de",    "geo": "DE"},
-    "IN": {"name": "India",               "flag": "🇮🇳", "hl": "en-IN", "geo": "IN"},
-    "BR": {"name": "Brazil",              "flag": "🇧🇷", "hl": "pt-BR", "geo": "BR"},
-    "FR": {"name": "France",              "flag": "🇫🇷", "hl": "fr",    "geo": "FR"},
-    "AU": {"name": "Australia",           "flag": "🇦🇺", "hl": "en-AU", "geo": "AU"},
-    "MX": {"name": "Mexico",              "flag": "🇲🇽", "hl": "es-419","geo": "MX"},
-    "CA": {"name": "Canada",              "flag": "🇨🇦", "hl": "en-CA", "geo": "CA"},
-    "RU": {"name": "Russia",              "flag": "🇷🇺", "hl": "ru",    "geo": "RU"},
-    "IT": {"name": "Italy",               "flag": "🇮🇹", "hl": "it",    "geo": "IT"},
-    "ES": {"name": "Spain",               "flag": "🇪🇸", "hl": "es",    "geo": "ES"},
-    "NL": {"name": "Netherlands",         "flag": "🇳🇱", "hl": "nl",    "geo": "NL"},
-    "SE": {"name": "Sweden",              "flag": "🇸🇪", "hl": "sv",    "geo": "SE"},
-    "NO": {"name": "Norway",              "flag": "🇳🇴", "hl": "no",    "geo": "NO"},
-    "DK": {"name": "Denmark",             "flag": "🇩🇰", "hl": "da",    "geo": "DK"},
-    "FI": {"name": "Finland",             "flag": "🇫🇮", "hl": "fi",    "geo": "FI"},
-    "PL": {"name": "Poland",              "flag": "🇵🇱", "hl": "pl",    "geo": "PL"},
-    "TR": {"name": "Turkey",              "flag": "🇹🇷", "hl": "tr",    "geo": "TR"},
-    "TH": {"name": "Thailand",            "flag": "🇹🇭", "hl": "th",    "geo": "TH"},
-    "ID": {"name": "Indonesia",           "flag": "🇮🇩", "hl": "id",    "geo": "ID"},
-    "MY": {"name": "Malaysia",            "flag": "🇲🇾", "hl": "ms",    "geo": "MY"},
-    "SG": {"name": "Singapore",           "flag": "🇸🇬", "hl": "en-SG", "geo": "SG"},
-    "VN": {"name": "Vietnam",             "flag": "🇻🇳", "hl": "vi",    "geo": "VN"},
-    "PH": {"name": "Philippines",         "flag": "🇵🇭", "hl": "en-PH", "geo": "PH"},
-    "TW": {"name": "Taiwan",              "flag": "🇹🇼", "hl": "zh-TW", "geo": "TW"},
-    "HK": {"name": "Hong Kong",           "flag": "🇭🇰", "hl": "zh-HK", "geo": "HK"},
-    "NG": {"name": "Nigeria",             "flag": "🇳🇬", "hl": "en-NG", "geo": "NG"},
-    "ZA": {"name": "South Africa",        "flag": "🇿🇦", "hl": "en-ZA", "geo": "ZA"},
-    "EG": {"name": "Egypt",               "flag": "🇪🇬", "hl": "ar",    "geo": "EG"},
-    "AR": {"name": "Argentina",           "flag": "🇦🇷", "hl": "es-419","geo": "AR"},
-    "CL": {"name": "Chile",               "flag": "🇨🇱", "hl": "es-419","geo": "CL"},
-    "CO": {"name": "Colombia",            "flag": "🇨🇴", "hl": "es-419","geo": "CO"},
-    "PE": {"name": "Peru",               "flag": "🇵🇪", "hl": "es-419","geo": "PE"},
+    "US": {"name": "United States",       "flag": "🇺🇸", "hl": "en", "geo": "US"},
+    "KR": {"name": "South Korea",         "flag": "🇰🇷", "hl": "en", "geo": "KR"},
+    "JP": {"name": "Japan",               "flag": "🇯🇵", "hl": "en", "geo": "JP"},
+    "GB": {"name": "United Kingdom",      "flag": "🇬🇧", "hl": "en", "geo": "GB"},
+    "DE": {"name": "Germany",             "flag": "🇩🇪", "hl": "en", "geo": "DE"},
+    "IN": {"name": "India",               "flag": "🇮🇳", "hl": "en", "geo": "IN"},
+    "BR": {"name": "Brazil",              "flag": "🇧🇷", "hl": "en", "geo": "BR"},
+    "FR": {"name": "France",              "flag": "🇫🇷", "hl": "en", "geo": "FR"},
+    "AU": {"name": "Australia",           "flag": "🇦🇺", "hl": "en", "geo": "AU"},
+    "MX": {"name": "Mexico",              "flag": "🇲🇽", "hl": "en", "geo": "MX"},
+    "CA": {"name": "Canada",              "flag": "🇨🇦", "hl": "en", "geo": "CA"},
+    "RU": {"name": "Russia",              "flag": "🇷🇺", "hl": "en", "geo": "RU"},
+    "IT": {"name": "Italy",               "flag": "🇮🇹", "hl": "en", "geo": "IT"},
+    "ES": {"name": "Spain",               "flag": "🇪🇸", "hl": "en", "geo": "ES"},
+    "NL": {"name": "Netherlands",         "flag": "🇳🇱", "hl": "en", "geo": "NL"},
+    "SE": {"name": "Sweden",              "flag": "🇸🇪", "hl": "en", "geo": "SE"},
+    "NO": {"name": "Norway",              "flag": "🇳🇴", "hl": "en", "geo": "NO"},
+    "DK": {"name": "Denmark",             "flag": "🇩🇰", "hl": "en", "geo": "DK"},
+    "FI": {"name": "Finland",             "flag": "🇫🇮", "hl": "en", "geo": "FI"},
+    "PL": {"name": "Poland",              "flag": "🇵🇱", "hl": "en", "geo": "PL"},
+    "TR": {"name": "Turkey",              "flag": "🇹🇷", "hl": "en", "geo": "TR"},
+    "TH": {"name": "Thailand",            "flag": "🇹🇭", "hl": "en", "geo": "TH"},
+    "ID": {"name": "Indonesia",           "flag": "🇮🇩", "hl": "en", "geo": "ID"},
+    "MY": {"name": "Malaysia",            "flag": "🇲🇾", "hl": "en", "geo": "MY"},
+    "SG": {"name": "Singapore",           "flag": "🇸🇬", "hl": "en", "geo": "SG"},
+    "VN": {"name": "Vietnam",             "flag": "🇻🇳", "hl": "en", "geo": "VN"},
+    "PH": {"name": "Philippines",         "flag": "🇵🇭", "hl": "en", "geo": "PH"},
+    "TW": {"name": "Taiwan",              "flag": "🇹🇼", "hl": "en", "geo": "TW"},
+    "HK": {"name": "Hong Kong",           "flag": "🇭🇰", "hl": "en", "geo": "HK"},
+    "NG": {"name": "Nigeria",             "flag": "🇳🇬", "hl": "en", "geo": "NG"},
+    "ZA": {"name": "South Africa",        "flag": "🇿🇦", "hl": "en", "geo": "ZA"},
+    "EG": {"name": "Egypt",               "flag": "🇪🇬", "hl": "en", "geo": "EG"},
+    "AR": {"name": "Argentina",           "flag": "🇦🇷", "hl": "en", "geo": "AR"},
+    "CL": {"name": "Chile",               "flag": "🇨🇱", "hl": "en", "geo": "CL"},
+    "CO": {"name": "Colombia",            "flag": "🇨🇴", "hl": "en", "geo": "CO"},
+    "PE": {"name": "Peru",               "flag": "🇵🇪", "hl": "en", "geo": "PE"},
 }
 
 APPLE_RSS_COUNTRIES = ["US", "KR", "JP"]
@@ -184,8 +184,13 @@ def calculate_temperature(volume: int, rank: int, spread: int) -> int:
 
 
 def calculate_velocity(rank: int) -> str:
-    base = max(100, 5000 - rank * 300)
-    return f"+{base:,}%"
+    if rank <= 3:
+        return "rising"
+    if rank <= 8:
+        return "new"
+    if rank <= 14:
+        return "steady"
+    return "falling"
 
 
 def now_iso() -> str:
@@ -577,6 +582,30 @@ def build_global_section(
 
     next_update = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
 
+    # risingFast: top 3 trends by temperature
+    rising_fast = []
+    seen_rf = set()
+    for t in all_trends[:10]:
+        kw = t["keyword"]
+        if kw not in seen_rf and len(rising_fast) < 3:
+            rising_fast.append({
+                "keyword": kw,
+                "country": t["_country"],
+                "change": t["volume"],
+            })
+            seen_rf.add(kw)
+
+    # categoryBreakdown: % of trends per category
+    cat_counts: dict[str, int] = {}
+    for t in all_trends:
+        cat = t.get("category", "news")
+        cat_counts[cat] = cat_counts.get(cat, 0) + 1
+    total_cat = max(len(all_trends), 1)
+    category_breakdown = {
+        cat: round(count / total_cat * 100)
+        for cat, count in sorted(cat_counts.items(), key=lambda x: -x[1])
+    }
+
     return {
         "temperature":     global_temp,
         "temperatureLabel": temp_label(global_temp),
@@ -590,6 +619,8 @@ def build_global_section(
         "totalCountries": len(countries_data),
         "totalTrends":    total_trends,
         "nextUpdate":     next_update,
+        "risingFast":        rising_fast,
+        "categoryBreakdown": category_breakdown,
     }
 
 # ---------------------------------------------------------------------------
