@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorldPulse — Global Trends Magazine</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+  :root {
+    --bg: #fafaf8;
+    --surface: #ffffff;
+    --dark: #0f0f0f;
+    --accent: #e63946;
+    --accent2: #2563eb;
+    --accent3: #059669;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --warm: #fef3c7;
+    --warm-border: #fcd34d;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ====== MASTHEAD ====== */
+  .masthead {
+    background: var(--dark);
+    color: white;
+    padding: 0;
+  }
+
+  .masthead-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1px;
+  }
+
+  .masthead-date { color: rgba(255,255,255,0.5); }
+
+  .masthead-live {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  .live-dot {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .live-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+
+  .masthead-nav { display: flex; gap: 4px; color: rgba(255,255,255,0.4); }
+  .masthead-nav-item { padding: 0 8px; cursor: pointer; transition: color 0.2s; }
+  .masthead-nav-item:hover { color: white; }
+  .masthead-nav-item + .masthead-nav-item { border-left: 1px solid rgba(255,255,255,0.15); }
+
+  .masthead-main {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 32px;
+  }
+
+  .brand {
+    flex-shrink: 0;
+  }
+
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  .brand-name span { color: var(--accent); }
+
+  .brand-tagline {
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .masthead-ticker {
+    flex: 1;
+    overflow: hidden;
+    border-left: 2px solid var(--accent);
+    padding-left: 16px;
+  }
+
+  .ticker-label {
+    font-size: 9px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+
+  .ticker-track {
+    display: flex;
+    gap: 32px;
+    animation: ticker 30s linear infinite;
+    white-space: nowrap;
+  }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .ticker-flag { font-size: 14px; }
+  .ticker-sep { color: rgba(255,255,255,0.2); }
+
+  .masthead-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .ctrl-btn {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.7);
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .ctrl-btn:hover { background: rgba(255,255,255,0.15); color: white; }
+  .ctrl-btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+  .ctrl-btn.primary:hover { background: #c1121f; }
+
+  /* ====== MAIN LAYOUT ====== */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    min-height: calc(100vh - 120px);
+  }
+
+  /* LEFT CONTENT (Map + Grid) */
+  .content-area {
+    border-right: 1px solid var(--border);
+  }
+
+  /* Section headers */
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    border-bottom: 2px solid var(--dark);
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .section-title .accent { color: var(--accent); }
+
+  .section-meta {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Map + spotlight row */
+  .map-row {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    border-bottom: 2px solid var(--dark);
+  }
+
+  .map-section {
+    border-right: 1px solid var(--border);
+    padding: 20px;
+    position: relative;
+    min-height: 320px;
+    background: linear-gradient(135deg, #f8f9fa, #fff);
+  }
+
+  .map-label {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* SVG Map */
+  .svg-map {
+    width: 100%;
+    height: 260px;
+    margin-top: 8px;
+  }
+
+  /* Counter badges on map */
+  .map-badge {
+    position: absolute;
+    background: white;
+    border: 2px solid var(--dark);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 2px 3px 0 var(--dark);
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+
+  .map-badge:hover { transform: translate(-1px, -2px); box-shadow: 3px 5px 0 var(--dark); }
+  .map-badge.hot { border-color: var(--accent); background: #fff5f5; }
+
+  /* Spotlight panel */
+  .spotlight-panel {
+    padding: 20px;
+    background: var(--dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .sp-globe {
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+  }
+
+  .sp-main-keyword {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .sp-highlight {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, var(--accent), #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .sp-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .sp-divider { height: 1px; background: rgba(255,255,255,0.1); margin: 12px 0; }
+
+  .sp-list { flex: 1; }
+
+  .sp-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .sp-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    width: 16px;
+  }
+
+  .sp-flag { font-size: 16px; }
+
+  .sp-content { flex: 1; min-width: 0; }
+
+  .sp-keyword-text {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+  }
+
+  .sp-vol { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: rgba(255,255,255,0.35); }
+
+  /* Temperature widget */
+  .sp-temp-widget {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+  }
+
+  .sp-temp-label { font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 2px; margin-bottom: 8px; }
+
+  .sp-temp-row { display: flex; align-items: center; gap: 12px; }
+
+  .sp-temp-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #f59e0b;
+  }
+
+  .sp-temp-info { flex: 1; }
+
+  .sp-temp-emoji { font-size: 24px; margin-bottom: 4px; }
+  .sp-temp-status { font-size: 11px; font-weight: 700; color: #f59e0b; }
+  .sp-temp-desc { font-size: 10px; color: rgba(255,255,255,0.35); margin-top: 2px; }
+
+  /* Categories row */
+  .categories-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .cat-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid var(--border);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .cat-pill.active { background: var(--dark); color: white; border-color: var(--dark); }
+  .cat-pill:not(.active):hover { border-color: var(--dark); }
+
+  /* Trend grid (newspaper layout) */
+  .trend-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .trend-cell {
+    padding: 16px 20px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+  }
+
+  .trend-cell:last-child { border-right: none; }
+  .trend-cell:hover { background: #f9fafb; }
+
+  .trend-cell.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #fff, #fef9f0);
+  }
+
+  .cell-rank {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: rgba(0,0,0,0.06);
+    line-height: 1;
+  }
+
+  .cell-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .cell-keyword {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  .trend-cell.featured .cell-keyword { font-size: 22px; }
+
+  .cell-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .cell-flag { font-size: 14px; }
+  .cell-country { font-size: 11px; color: var(--muted); font-weight: 500; }
+  .cell-vol { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent2); font-weight: 700; }
+  .cell-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 700; }
+  .badge-hot { background: #fee2e2; color: var(--accent); }
+  .badge-global { background: #dbeafe; color: var(--accent2); }
+  .badge-new { background: #d1fae5; color: var(--accent3); }
+
+  .cell-temp-bar {
+    margin-top: 10px;
+    height: 3px;
+    background: #f3f4f6;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .cell-temp-fill {
+    height: 100%;
+    border-radius: 2px;
+  }
+
+  .fill-red { background: linear-gradient(90deg, #fca5a5, var(--accent)); }
+  .fill-blue { background: linear-gradient(90deg, #93c5fd, var(--accent2)); }
+  .fill-green { background: linear-gradient(90deg, #6ee7b7, var(--accent3)); }
+
+  /* Bottom cards */
+  .bottom-strip {
+    display: flex;
+    border-top: 2px solid var(--dark);
+    background: var(--dark);
+    overflow-x: auto;
+  }
+
+  .strip-card {
+    flex: 1;
+    min-width: 160px;
+    padding: 14px 18px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .strip-card:hover { background: rgba(255,255,255,0.04); }
+
+  .strip-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.08);
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    line-height: 1;
+  }
+
+  .strip-cat {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .strip-keyword {
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .strip-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .strip-flag-country { font-size: 11px; color: rgba(255,255,255,0.4); }
+  .strip-volume { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; }
+
+  /* ====== RIGHT SIDEBAR ====== */
+  .sidebar {
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-section {
+    padding: 20px;
+    border-bottom: 2px solid var(--dark);
+  }
+
+  .sidebar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sidebar-title .icon { font-size: 16px; }
+
+  /* Country ranking list */
+  .country-rank-list { display: flex; flex-direction: column; gap: 2px; }
+
+  .cr-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .cr-item:hover { background: #f9fafb; }
+  .cr-item.selected { background: #f9fafb; border-left: 3px solid var(--accent); }
+
+  .cr-rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .cr-rank.top { color: var(--accent); }
+
+  .cr-flag { font-size: 18px; flex-shrink: 0; }
+
+  .cr-content { flex: 1; min-width: 0; }
+
+  .cr-country { font-size: 12px; font-weight: 700; color: var(--text); }
+
+  .cr-keyword {
+    font-size: 11px;
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cr-temp {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+  }
+
+  .cr-temp-val { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: var(--accent); }
+
+  .cr-bar {
+    width: 40px;
+    height: 3px;
+    background: #f3f4f6;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .cr-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #fca5a5, var(--accent));
+    border-radius: 2px;
+  }
+
+  /* Update info */
+  .update-section {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    background: #fefce8;
+    border-left: 3px solid #fbbf24;
+  }
+
+  .update-title { font-size: 11px; font-weight: 700; color: #92400e; letter-spacing: 1px; margin-bottom: 4px; }
+  .update-time { font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; color: #b45309; }
+  .update-sub { font-size: 11px; color: #92400e; margin-top: 4px; }
+
+  /* Stats */
+  .stats-section { padding: 16px 20px; }
+
+  .stats-row { display: flex; gap: 12px; margin-top: 12px; }
+
+  .stat-box {
+    flex: 1;
+    background: var(--dark);
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .sb-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .sb-label { font-size: 10px; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* Categories sidebar */
+  .cat-sidebar { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+
+  .cat-sidebar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 12px; }
+
+  .cs-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .cs-item:hover { border-color: var(--dark); }
+  .cs-item.active { border-color: var(--dark); background: var(--dark); color: white; }
+
+  .cs-icon { font-size: 16px; }
+  .cs-info { min-width: 0; }
+  .cs-name { font-size: 11px; font-weight: 700; }
+  .cs-count { font-size: 10px; color: var(--muted); }
+  .cs-item.active .cs-count { color: rgba(255,255,255,0.5); }
+</style>
+</head>
+<body>
+
+<!-- ====== MASTHEAD ====== -->
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="masthead-date">Sunday, March 22, 2026 · EST 09:47</div>
+    <div class="masthead-live">
+      <div class="live-indicator">
+        <span class="live-dot"></span>
+        <span class="live-label">LIVE DATA</span>
+      </div>
+      <span>Updated every 1 hour via Google Trends RSS</span>
+    </div>
+    <nav class="masthead-nav">
+      <span class="masthead-nav-item">Sports</span>
+      <span class="masthead-nav-item">Tech</span>
+      <span class="masthead-nav-item">Music</span>
+      <span class="masthead-nav-item">Politics</span>
+      <span class="masthead-nav-item">Finance</span>
+    </nav>
+  </div>
+
+  <div class="masthead-main">
+    <div class="brand">
+      <div class="brand-name">World<span>Pulse</span></div>
+      <div class="brand-tagline">Global Trend Intelligence</div>
+    </div>
+
+    <div class="masthead-ticker">
+      <div class="ticker-label">TRENDING NOW</div>
+      <div class="ticker-track">
+        <div class="ticker-item"><span class="ticker-flag">🇺🇸</span><span>Super Bowl LVIX · 12.4M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇯🇵</span><span>桜開花予報 · 6.8M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇬🇧</span><span>AI Regulation Summit · 8.1M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇰🇷</span><span>K-POP Awards · 4.9M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇧🇷</span><span>Carnaval Rio · 3.9M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🌐</span><span>SpaceX Starship · 3.5M</span></div>
+        <span class="ticker-sep">·</span>
+        <!-- duplicate for seamless loop -->
+        <div class="ticker-item"><span class="ticker-flag">🇺🇸</span><span>Super Bowl LVIX · 12.4M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇯🇵</span><span>桜開花予報 · 6.8M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇬🇧</span><span>AI Regulation Summit · 8.1M</span></div>
+        <span class="ticker-sep">·</span>
+        <div class="ticker-item"><span class="ticker-flag">🇰🇷</span><span>K-POP Awards · 4.9M</span></div>
+      </div>
+    </div>
+
+    <div class="masthead-controls">
+      <button class="ctrl-btn">🌍 EN</button>
+      <button class="ctrl-btn">⬆ Share</button>
+      <button class="ctrl-btn">🔗 Embed</button>
+    </div>
+  </div>
+</header>
+
+<!-- ====== MAIN ====== -->
+<main>
+  <!-- LEFT: Map + Trends -->
+  <div class="content-area">
+
+    <!-- Section header -->
+    <div class="section-header">
+      <div class="section-title">🗺 <span class="accent">Live</span> World Map</div>
+      <span class="section-meta">142 countries · 8,700+ trends tracked</span>
+    </div>
+
+    <!-- Map + Spotlight row -->
+    <div class="map-row">
+      <!-- Map -->
+      <div class="map-section">
+        <div class="map-label">Click any country for top trends</div>
+
+        <!-- Map badges -->
+        <div class="map-badge hot" style="top:38%;left:18%">🇺🇸 Super Bowl · 12.4M</div>
+        <div class="map-badge" style="top:25%;left:47%">🇬🇧 AI Summit · 8.1M</div>
+        <div class="map-badge" style="top:32%;left:75%">🇯🇵 桜予報 · 6.8M</div>
+        <div class="map-badge" style="top:55%;left:72%">🇰🇷 K-POP · 4.9M</div>
+        <div class="map-badge" style="top:65%;left:26%">🇧🇷 Carnaval · 3.9M</div>
+
+        <svg class="svg-map" viewBox="0 0 1000 450" xmlns="http://www.w3.org/2000/svg">
+          <!-- Grid lines -->
+          <line x1="0" y1="225" x2="1000" y2="225" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="4,4"/>
+          <line x1="500" y1="0" x2="500" y2="450" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+          <!-- North America -->
+          <path d="M 100 70 L 270 60 L 290 100 L 280 170 L 240 210 L 200 240 L 165 230 L 145 195 L 100 175 L 75 135 L 85 100 Z"
+            fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+
+          <!-- South America -->
+          <path d="M 200 270 L 265 260 L 285 300 L 275 380 L 250 420 L 218 428 L 196 398 L 186 345 L 192 300 Z"
+            fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+
+          <!-- Europe -->
+          <path d="M 435 75 L 515 65 L 545 95 L 540 135 L 510 155 L 468 150 L 440 128 L 428 98 Z"
+            fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+
+          <!-- Africa -->
+          <path d="M 455 178 L 535 165 L 562 215 L 555 320 L 525 378 L 492 388 L 458 355 L 447 295 L 440 235 Z"
+            fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+
+          <!-- Asia -->
+          <path d="M 545 55 L 760 45 L 810 78 L 825 118 L 808 158 L 766 198 L 706 218 L 645 208 L 602 188 L 565 158 L 545 128 L 535 98 Z"
+            fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+
+          <!-- Japan highlight -->
+          <ellipse cx="804" cy="158" rx="16" ry="26"
+            fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+
+          <!-- Korea highlight -->
+          <ellipse cx="778" cy="163" rx="9" ry="16"
+            fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+
+          <!-- USA highlight -->
+          <rect x="110" y="110" width="140" height="90" rx="8"
+            fill="rgba(220,38,38,0.2)" stroke="#dc2626" stroke-width="2"/>
+
+          <!-- Australia -->
+          <path d="M 748 308 L 868 298 L 888 355 L 860 405 L 800 416 L 758 388 L 738 348 Z"
+            fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+
+          <!-- Pulsing circles -->
+          <circle cx="180" cy="155" r="8" fill="rgba(220,38,38,0.8)">
+            <animate attributeName="r" values="8;18;8" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="804" cy="158" r="6" fill="rgba(220,38,38,0.8)">
+            <animate attributeName="r" values="6;14;6" dur="2.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.8;0;0.8" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="468" cy="108" r="6" fill="rgba(220,38,38,0.8)">
+            <animate attributeName="r" values="6;14;6" dur="2.2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.8;0;0.8" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+
+      <!-- Spotlight Panel -->
+      <div class="spotlight-panel">
+        <div class="sp-label">🏆 Global #1 Right Now</div>
+        <div class="sp-globe">🌍 Worldwide · All Categories</div>
+        <div class="sp-main-keyword">Super Bowl LVIX</div>
+        <div class="sp-highlight">12.4M</div>
+        <div class="sp-sub">Searches in the last 24 hours across 38 countries. This is the most viral trend globally right now.</div>
+
+        <div class="sp-divider"></div>
+
+        <div class="sp-list">
+          <div class="sp-item">
+            <span class="sp-num">1</span>
+            <span class="sp-flag">🇺🇸</span>
+            <div class="sp-content">
+              <div class="sp-keyword-text">Super Bowl LVIX</div>
+              <div class="sp-vol">12.4M searches</div>
+            </div>
+          </div>
+          <div class="sp-item">
+            <span class="sp-num">2</span>
+            <span class="sp-flag">🇬🇧</span>
+            <div class="sp-content">
+              <div class="sp-keyword-text">AI Regulation Summit</div>
+              <div class="sp-vol">8.1M searches</div>
+            </div>
+          </div>
+          <div class="sp-item">
+            <span class="sp-num">3</span>
+            <span class="sp-flag">🇯🇵</span>
+            <div class="sp-content">
+              <div class="sp-keyword-text">桜開花予報 2026</div>
+              <div class="sp-vol">6.8M searches</div>
+            </div>
+          </div>
+          <div class="sp-item">
+            <span class="sp-num">4</span>
+            <span class="sp-flag">🇺🇸</span>
+            <div class="sp-content">
+              <div class="sp-keyword-text">Bitcoin ETF Approval</div>
+              <div class="sp-vol">5.2M searches</div>
+            </div>
+          </div>
+          <div class="sp-item">
+            <span class="sp-num">5</span>
+            <span class="sp-flag">🇰🇷</span>
+            <div class="sp-content">
+              <div class="sp-keyword-text">K-POP Awards 2026</div>
+              <div class="sp-vol">4.9M searches</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Temperature widget -->
+        <div class="sp-temp-widget">
+          <div class="sp-temp-label">🌡 TREND TEMPERATURE</div>
+          <div class="sp-temp-row">
+            <div class="sp-temp-val">94°T</div>
+            <div class="sp-temp-info">
+              <div class="sp-temp-emoji">🔥</div>
+              <div class="sp-temp-status">SUPER HOT</div>
+              <div class="sp-temp-desc">Multiple viral events</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category filter -->
+    <div class="categories-row">
+      <div class="cat-pill active">All Categories</div>
+      <div class="cat-pill">⚽ Sports</div>
+      <div class="cat-pill">🎵 Music</div>
+      <div class="cat-pill">💻 Tech</div>
+      <div class="cat-pill">📰 News</div>
+      <div class="cat-pill">🎬 Movies</div>
+      <div class="cat-pill">💰 Finance</div>
+      <div class="cat-pill">🌸 Lifestyle</div>
+    </div>
+
+    <!-- Newspaper trend grid -->
+    <div class="trend-grid">
+      <!-- Featured (spans 2 cols) -->
+      <div class="trend-cell featured">
+        <span class="cell-rank">01</span>
+        <div class="cell-category">⚽ Sports</div>
+        <div class="cell-keyword">Super Bowl LVIX Breaks All Records</div>
+        <div class="cell-meta">
+          <span class="cell-flag">🇺🇸</span>
+          <span class="cell-country">United States</span>
+          <span class="cell-vol">12.4M</span>
+          <span class="cell-badge badge-hot">🔥 FIRE</span>
+        </div>
+        <div class="cell-temp-bar"><div class="cell-temp-fill fill-red" style="width:98%"></div></div>
+      </div>
+
+      <div class="trend-cell">
+        <span class="cell-rank">02</span>
+        <div class="cell-category">💻 Tech</div>
+        <div class="cell-keyword">AI Regulation Summit</div>
+        <div class="cell-meta">
+          <span class="cell-flag">🇬🇧</span>
+          <span class="cell-country">United Kingdom</span>
+          <span class="cell-vol">8.1M</span>
+          <span class="cell-badge badge-global">🌐 GLOBAL</span>
+        </div>
+        <div class="cell-temp-bar"><div class="cell-temp-fill fill-blue" style="width:82%"></div></div>
+      </div>
+
+      <div class="trend-cell">
+        <span class="cell-rank">03</span>
+        <div class="cell-category">🌸 Lifestyle</div>
+        <div class="cell-keyword">桜開花予報 2026</div>
+        <div class="cell-meta">
+          <span class="cell-flag">🇯🇵</span>
+          <span class="cell-country">Japan</span>
+          <span class="cell-vol">6.8M</span>
+        </div>
+        <div class="cell-temp-bar"><div class="cell-temp-fill fill-green" style="width:70%"></div></div>
+      </div>
+
+      <div class="trend-cell">
+        <span class="cell-rank">04</span>
+        <div class="cell-category">💰 Finance</div>
+        <div class="cell-keyword">Bitcoin ETF Approval</div>
+        <div class="cell-meta">
+          <span class="cell-flag">🇺🇸</span>
+          <span class="cell-country">United States</span>
+          <span class="cell-vol">5.2M</span>
+          <span class="cell-badge badge-new">⬆ RISING</span>
+        </div>
+        <div class="cell-temp-bar"><div class="cell-temp-fill fill-red" style="width:53%"></div></div>
+      </div>
+
+      <div class="trend-cell">
+        <span class="cell-rank">05</span>
+        <div class="cell-category">🎵 Music</div>
+        <div class="cell-keyword">K-POP Awards 2026</div>
+        <div class="cell-meta">
+          <span class="cell-flag">🇰🇷</span>
+          <span class="cell-country">South Korea</span>
+          <span class="cell-vol">4.9M</span>
+        </div>
+        <div class="cell-temp-bar"><div class="cell-temp-fill fill-blue" style="width:50%"></div></div>
+      </div>
+
+      <div class="trend-cell">
+        <span class="cell-rank">06</span>
+        <div class="cell-category">⚽ Sports</div>
+        <div class="cell-keyword">Champions League Final</div>
+        <div class="cell-meta">
+          <span class="cell-flag">🇩🇪</span>
+          <span class="cell-country">Germany</span>
+          <span class="cell-vol">4.3M</span>
+        </div>
+        <div class="cell-temp-bar"><div class="cell-temp-fill fill-green" style="width:44%"></div></div>
+      </div>
+    </div>
+
+    <!-- Bottom strip cards -->
+    <div class="bottom-strip">
+      <div class="strip-card">
+        <span class="strip-num">7</span>
+        <div class="strip-cat" style="color:#f59e0b">🎉 Festivals</div>
+        <div class="strip-keyword">Carnaval Rio 2026</div>
+        <div class="strip-meta">
+          <span class="strip-flag-country">🇧🇷 Brazil</span>
+          <span class="strip-volume" style="color:#f59e0b">3.9M</span>
+        </div>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">8</span>
+        <div class="strip-cat" style="color:#60a5fa">🚀 Science</div>
+        <div class="strip-keyword">SpaceX Starship Launch</div>
+        <div class="strip-meta">
+          <span class="strip-flag-country">🌐 Global</span>
+          <span class="strip-volume" style="color:#60a5fa">3.5M</span>
+        </div>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">9</span>
+        <div class="strip-cat" style="color:#f472b6">🎵 Music</div>
+        <div class="strip-keyword">Taylor Swift Eras Tour</div>
+        <div class="strip-meta">
+          <span class="strip-flag-country">🇦🇺 Australia</span>
+          <span class="strip-volume" style="color:#f472b6">3.1M</span>
+        </div>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">10</span>
+        <div class="strip-cat" style="color:#34d399">📰 Politics</div>
+        <div class="strip-keyword">G20 Summit Delhi</div>
+        <div class="strip-meta">
+          <span class="strip-flag-country">🇮🇳 India</span>
+          <span class="strip-volume" style="color:#34d399">2.8M</span>
+        </div>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">11</span>
+        <div class="strip-cat" style="color:#a78bfa">⚡ Formula E</div>
+        <div class="strip-keyword">Formula E Seoul ePrix</div>
+        <div class="strip-meta">
+          <span class="strip-flag-country">🇰🇷 South Korea</span>
+          <span class="strip-volume" style="color:#a78bfa">2.4M</span>
+        </div>
+      </div>
+      <div class="strip-card">
+        <span class="strip-num">12</span>
+        <div class="strip-cat" style="color:#fb923c">⚽ Euro 2026</div>
+        <div class="strip-keyword">Euro 2026 Group Draw</div>
+        <div class="strip-meta">
+          <span class="strip-flag-country">🇫🇷 France</span>
+          <span class="strip-volume" style="color:#fb923c">2.1M</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== RIGHT SIDEBAR ====== -->
+  <div class="sidebar">
+
+    <!-- Update timer -->
+    <div class="update-section">
+      <div class="update-title">⏱ NEXT UPDATE IN</div>
+      <div class="update-time">00:47:23</div>
+      <div class="update-sub">Data from Google Trends RSS · Updated hourly</div>
+    </div>
+
+    <!-- Country rankings -->
+    <div class="sidebar-section">
+      <div class="sidebar-title"><span class="icon">🏳️</span> Top Countries</div>
+      <div class="country-rank-list">
+        <div class="cr-item selected">
+          <span class="cr-rank top">1</span>
+          <span class="cr-flag">🇺🇸</span>
+          <div class="cr-content">
+            <div class="cr-country">United States</div>
+            <div class="cr-keyword">Super Bowl LVIX</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">96°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:96%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank top">2</span>
+          <span class="cr-flag">🇬🇧</span>
+          <div class="cr-content">
+            <div class="cr-country">United Kingdom</div>
+            <div class="cr-keyword">AI Regulation Summit</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">88°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank top">3</span>
+          <span class="cr-flag">🇯🇵</span>
+          <div class="cr-content">
+            <div class="cr-country">Japan</div>
+            <div class="cr-keyword">桜開花予報 2026</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">82°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank">4</span>
+          <span class="cr-flag">🇧🇷</span>
+          <div class="cr-content">
+            <div class="cr-country">Brazil</div>
+            <div class="cr-keyword">Carnaval Rio 2026</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">75°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:75%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank">5</span>
+          <span class="cr-flag">🇰🇷</span>
+          <div class="cr-content">
+            <div class="cr-country">South Korea</div>
+            <div class="cr-keyword">K-POP Awards 2026</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">71°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:71%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank">6</span>
+          <span class="cr-flag">🇩🇪</span>
+          <div class="cr-content">
+            <div class="cr-country">Germany</div>
+            <div class="cr-keyword">Champions League</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">68°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:68%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank">7</span>
+          <span class="cr-flag">🇮🇳</span>
+          <div class="cr-content">
+            <div class="cr-country">India</div>
+            <div class="cr-keyword">G20 Summit Delhi</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">62°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:62%"></div></div>
+          </div>
+        </div>
+        <div class="cr-item">
+          <span class="cr-rank">8</span>
+          <span class="cr-flag">🇦🇺</span>
+          <div class="cr-content">
+            <div class="cr-country">Australia</div>
+            <div class="cr-keyword">Taylor Swift Eras Tour</div>
+          </div>
+          <div class="cr-temp">
+            <span class="cr-temp-val">58°T</span>
+            <div class="cr-bar"><div class="cr-bar-fill" style="width:58%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-section">
+      <div class="sidebar-title"><span class="icon">📊</span> Live Stats</div>
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="sb-val">142</div>
+          <div class="sb-label">Countries</div>
+        </div>
+        <div class="stat-box">
+          <div class="sb-val">8.7K</div>
+          <div class="sb-label">Trends</div>
+        </div>
+        <div class="stat-box">
+          <div class="sb-val">2.1B</div>
+          <div class="sb-label">Searches</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories sidebar -->
+    <div class="cat-sidebar">
+      <div class="sidebar-title"><span class="icon">📂</span> Browse by Category</div>
+      <div class="cat-sidebar-grid">
+        <div class="cs-item active">
+          <span class="cs-icon">⚽</span>
+          <div class="cs-info">
+            <div class="cs-name">Sports</div>
+            <div class="cs-count">342 trends</div>
+          </div>
+        </div>
+        <div class="cs-item">
+          <span class="cs-icon">🎵</span>
+          <div class="cs-info">
+            <div class="cs-name">Music</div>
+            <div class="cs-count">218 trends</div>
+          </div>
+        </div>
+        <div class="cs-item">
+          <span class="cs-icon">💻</span>
+          <div class="cs-info">
+            <div class="cs-name">Tech</div>
+            <div class="cs-count">195 trends</div>
+          </div>
+        </div>
+        <div class="cs-item">
+          <span class="cs-icon">📰</span>
+          <div class="cs-info">
+            <div class="cs-name">News</div>
+            <div class="cs-count">412 trends</div>
+          </div>
+        </div>
+        <div class="cs-item">
+          <span class="cs-icon">🎬</span>
+          <div class="cs-info">
+            <div class="cs-name">Movies</div>
+            <div class="cs-count">87 trends</div>
+          </div>
+        </div>
+        <div class="cs-item">
+          <span class="cs-icon">💰</span>
+          <div class="cs-info">
+            <div class="cs-name">Finance</div>
+            <div class="cs-count">134 trends</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

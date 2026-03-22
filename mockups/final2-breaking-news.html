@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Mockup 2 - Breaking News</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0e1a; color:#e0e0e0; font-family:'Segoe UI',sans-serif; height:100vh; overflow:hidden; display:flex; flex-direction:column; font-size:13px; }
+
+/* BREAKING BANNER */
+.breaking {
+  height:36px; background:linear-gradient(90deg,#e94560,#c0392b);
+  display:flex; align-items:center; gap:0; flex-shrink:0; overflow:hidden;
+}
+.breaking-label { background:#fff; color:#e94560; font-size:11px; font-weight:900; padding:0 14px; height:100%; display:flex; align-items:center; white-space:nowrap; letter-spacing:1px; flex-shrink:0; }
+.breaking-ticker { overflow:hidden; flex:1; padding:0 16px; }
+.ticker-inner { display:flex; gap:40px; animation:tick 25s linear infinite; white-space:nowrap; }
+@keyframes tick { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+.ti { display:flex; align-items:center; gap:8px; font-size:12px; font-weight:600; }
+.ti-flag { font-size:15px; }
+.ti-badge { font-size:9px; background:rgba(255,255,255,0.2); padding:1px 5px; border-radius:3px; }
+
+/* HEADER */
+header { height:52px; background:#0d1528; border-bottom:1px solid rgba(255,255,255,0.07); display:flex; align-items:center; padding:0 20px; gap:12px; flex-shrink:0; }
+.logo { font-size:20px; font-weight:800; letter-spacing:1px; }
+.logo em { color:#e94560; font-style:normal; }
+
+/* Temp pill */
+.temp-pill { display:flex; align-items:center; gap:8px; background:#12213a; border:1px solid rgba(233,69,96,0.2); border-radius:10px; padding:6px 14px; }
+.temp-circle { width:40px; height:40px; border-radius:50%; background:conic-gradient(#e94560 313deg, rgba(255,255,255,0.08) 0); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; color:#e94560; }
+.temp-info { }
+.temp-val { font-size:16px; font-weight:800; color:#e94560; line-height:1; }
+.temp-status { font-size:10px; color:#888; margin-top:1px; }
+
+/* Global #1 */
+.spotlight { flex:1; background:#12213a; border:1px solid rgba(255,215,0,0.15); border-radius:10px; padding:6px 16px; display:flex; align-items:center; gap:10px; cursor:pointer; }
+.sp-crown { font-size:20px; }
+.sp-label { font-size:9px; color:#f1c40f; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.sp-text { font-size:14px; font-weight:800; color:#fff; }
+.sp-meta { font-size:10px; color:#888; }
+.sp-badge { background:#e94560; color:#fff; font-size:10px; padding:2px 7px; border-radius:4px; font-weight:700; margin-left:auto; }
+
+.header-right { display:flex; align-items:center; gap:8px; }
+.search { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; padding:5px 10px; border-radius:8px; width:140px; font-size:12px; }
+.search::placeholder { color:#555; }
+.lang-sel { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; padding:5px 8px; border-radius:6px; font-size:11px; }
+.live-chip { display:flex; align-items:center; gap:5px; font-size:11px; color:#34c759; }
+.dot { width:7px; height:7px; background:#34c759; border-radius:50%; animation:pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* CAT BAR */
+.catbar { height:36px; background:#080d1a; border-bottom:1px solid rgba(255,255,255,0.05); display:flex; align-items:center; padding:0 20px; gap:6px; flex-shrink:0; }
+.cat { padding:4px 12px; border-radius:14px; font-size:11px; cursor:pointer; color:#666; border:1px solid transparent; transition:all 0.2s; }
+.cat.active { background:rgba(233,69,96,0.15); border-color:rgba(233,69,96,0.3); color:#e94560; }
+.sep { flex:1; }
+.time-btn { padding:4px 10px; font-size:11px; border-radius:6px; cursor:pointer; color:#666; border:1px solid transparent; transition:all 0.2s; }
+.time-btn.active { border-color:rgba(255,255,255,0.15); color:#ccc; }
+
+/* MAIN */
+.main { display:flex; flex:1; overflow:hidden; }
+
+/* Map */
+.map-wrap { flex:1; position:relative; overflow:hidden; }
+.map-bg { width:100%; height:100%; background:radial-gradient(ellipse,#0e1c38,#060c18); display:flex; align-items:center; justify-content:center; position:relative; }
+.map-img { width:90%; max-width:900px; opacity:0.18; filter:sepia(1) hue-rotate(185deg) saturate(3); }
+.heat { position:absolute; border-radius:50%; pointer-events:none; animation:glow 3s ease-in-out infinite; }
+@keyframes glow { 0%,100%{opacity:0.45;transform:scale(1)} 50%{opacity:0.65;transform:scale(1.15)} }
+.pin { position:absolute; cursor:pointer; }
+.pin:hover .pc { transform:scale(1.08); box-shadow:0 4px 20px rgba(233,69,96,0.4); }
+.pd { width:9px; height:9px; border-radius:50%; border:2px solid #fff; position:absolute; top:0; left:50%; transform:translateX(-50%); }
+.pc { background:#0d1836; border:1px solid rgba(255,255,255,0.12); border-radius:8px; padding:5px 9px; margin-top:14px; transition:all 0.2s; min-width:88px; }
+.pc-c { font-size:10px; color:#777; }
+.pc-k { font-size:11px; font-weight:700; color:#fff; }
+.pc-s { display:flex; align-items:center; gap:4px; margin-top:2px; }
+.gb { font-size:9px; background:#e94560; color:#fff; padding:1px 4px; border-radius:3px; font-weight:700; }
+
+/* Right sidebar */
+.sidebar { width:250px; background:#0b1120; border-left:1px solid rgba(255,255,255,0.05); display:flex; flex-direction:column; flex-shrink:0; overflow:hidden; }
+.sb-section { border-bottom:1px solid rgba(255,255,255,0.05); }
+.sb-title { font-size:10px; font-weight:700; color:#666; letter-spacing:1px; text-transform:uppercase; padding:10px 16px 6px; }
+.rank-item { display:flex; align-items:center; gap:8px; padding:8px 16px; cursor:pointer; border-bottom:1px solid rgba(255,255,255,0.03); transition:background 0.15s; }
+.rank-item:hover { background:rgba(233,69,96,0.05); }
+.rk-n { font-size:14px; font-weight:800; color:#e94560; width:18px; }
+.rk-info { flex:1; min-width:0; }
+.rk-name { font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.rk-meta { font-size:10px; color:#666; display:flex; gap:4px; align-items:center; margin-top:1px; }
+.rk-vol { font-size:10px; color:#e94560; }
+
+/* Bottom */
+.bottom { height:115px; background:#060c18; border-top:1px solid rgba(255,255,255,0.05); display:flex; align-items:center; gap:10px; padding:0 16px; overflow-x:auto; flex-shrink:0; }
+.bottom::-webkit-scrollbar { height:3px; }
+.bottom::-webkit-scrollbar-thumb { background:#1a1a2e; border-radius:2px; }
+.bl { font-size:11px; font-weight:800; color:#e94560; flex-shrink:0; line-height:1.5; }
+.bc { min-width:128px; height:88px; border-radius:12px; padding:10px 12px; cursor:pointer; flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.2s; }
+.bc:hover { transform:translateY(-3px); }
+.bc-f { font-size:18px; }
+.bc-k { font-size:11px; font-weight:700; color:#fff; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+.bc-m { font-size:10px; opacity:0.7; display:flex; justify-content:space-between; }
+
+/* popup same as before */
+.po { position:fixed;inset:0;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;z-index:100;backdrop-filter:blur(6px); }
+.pp { background:#0d1528;border:1px solid rgba(233,69,96,0.2);border-radius:16px;width:440px;max-width:95vw;overflow:hidden; }
+.ph { padding:18px 20px;background:rgba(233,69,96,0.05);border-bottom:1px solid rgba(233,69,96,0.12);display:flex;justify-content:space-between;align-items:flex-start; }
+.pc2 { font-size:20px;font-weight:800; }
+.pm { font-size:11px;color:#666;margin-top:3px; }
+.pa { display:flex;gap:6px;align-items:center; }
+.ps { background:#e94560;border:none;color:#fff;padding:5px 12px;border-radius:6px;cursor:pointer;font-size:11px; }
+.pe { background:rgba(255,255,255,0.07);border:none;color:#aaa;padding:5px 10px;border-radius:6px;cursor:pointer;font-size:11px; }
+.cb { background:rgba(255,255,255,0.06);border:none;color:#aaa;width:28px;height:28px;border-radius:50%;cursor:pointer; }
+.pt { display:flex;background:#080d1a; }
+.ta { flex:1;padding:9px 0;text-align:center;font-size:11px;cursor:pointer;color:#555; }
+.ta.on { color:#e94560;border-bottom:2px solid #e94560; }
+.pb { padding:14px 20px 18px;max-height:300px;overflow-y:auto; }
+.ti2 { display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04); }
+.tn { font-size:15px;font-weight:800;color:#e94560;width:20px;text-align:center; }
+.ti2 .inf { flex:1; }
+.tn2 { font-size:13px;font-weight:600; }
+.tc { font-size:10px;color:#666;margin-top:2px; }
+.tb { height:2px;background:rgba(255,255,255,0.06);border-radius:1px;margin-top:4px; }
+.tf { height:100%;background:#e94560;border-radius:1px; }
+.tr { text-align:right; }
+.tv { font-size:11px;color:#e94560;font-weight:600; }
+</style>
+</head>
+<body>
+
+<!-- BREAKING TICKER -->
+<div class="breaking">
+  <div class="breaking-label">⚡ BREAKING</div>
+  <div class="breaking-ticker">
+    <div class="ticker-inner">
+      <div class="ti"><span class="ti-flag">🇺🇸</span> Trump Trial <span class="ti-badge">GLOBAL 🚀</span></div>
+      <div class="ti"><span class="ti-flag">🇰🇷</span> 부동산 대책 <span class="ti-badge">🚀</span></div>
+      <div class="ti"><span class="ti-flag">🇯🇵</span> 桜前線 2025 <span class="ti-badge">📈</span></div>
+      <div class="ti"><span class="ti-flag">🇮🇳</span> IPL Final <span class="ti-badge">GLOBAL</span></div>
+      <div class="ti"><span class="ti-flag">🇬🇧</span> Premier League <span class="ti-badge">➡️</span></div>
+      <div class="ti"><span class="ti-flag">🇧🇷</span> Carnaval Rio <span class="ti-badge">📉</span></div>
+      <div class="ti"><span class="ti-flag">🇩🇪</span> Bundesliga <span class="ti-badge">➡️</span></div>
+      <!-- duplicate -->
+      <div class="ti"><span class="ti-flag">🇺🇸</span> Trump Trial <span class="ti-badge">GLOBAL 🚀</span></div>
+      <div class="ti"><span class="ti-flag">🇰🇷</span> 부동산 대책 <span class="ti-badge">🚀</span></div>
+      <div class="ti"><span class="ti-flag">🇯🇵</span> 桜前線 2025 <span class="ti-badge">📈</span></div>
+      <div class="ti"><span class="ti-flag">🇮🇳</span> IPL Final <span class="ti-badge">GLOBAL</span></div>
+      <div class="ti"><span class="ti-flag">🇬🇧</span> Premier League <span class="ti-badge">➡️</span></div>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="logo">TREND<em>HEAT</em> 🌡️</div>
+  <div class="temp-pill">
+    <div class="temp-circle">87°</div>
+    <div class="temp-info"><div class="temp-val">🌋 폭발</div><div class="temp-status">52개국 동시 활성</div></div>
+  </div>
+  <div class="spotlight" onclick="openPopup('미국','🇺🇸')">
+    <span class="sp-crown">👑</span>
+    <div><div class="sp-label">지금 전세계 #1</div><div class="sp-text">🇺🇸 Trump Trial</div><div class="sp-meta">950,000 검색 · 🚀 급상승</div></div>
+    <span class="sp-badge">GLOBAL</span>
+  </div>
+  <div class="header-right">
+    <input class="search" placeholder="🔍 나라 검색..."/>
+    <select class="lang-sel"><option>🇰🇷 한국어</option><option>🇺🇸 EN</option><option>🇯🇵 JP</option></select>
+    <div class="live-chip"><div class="dot"></div><span id="timer">방금 전</span></div>
+  </div>
+</header>
+
+<div class="catbar">
+  <div class="cat active">전체</div>
+  <div class="cat">🔥 실시간</div>
+  <div class="cat">⚽ 스포츠</div>
+  <div class="cat">🎬 연예</div>
+  <div class="cat">🏛️ 정치</div>
+  <div class="cat">💻 기술</div>
+  <div class="cat">📰 뉴스</div>
+  <div class="sep"></div>
+  <div class="time-btn active">오늘</div>
+  <div class="time-btn">1주</div>
+  <div class="time-btn">1달</div>
+</div>
+
+<div class="main">
+  <div class="map-wrap">
+    <div class="map-bg">
+      <img class="map-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BlankMap-World.svg/1280px-BlankMap-World.svg.png"/>
+      <div class="heat" style="left:13%;top:22%;width:140px;height:95px;background:radial-gradient(circle,rgba(233,69,96,0.55),transparent)"></div>
+      <div class="heat" style="left:70%;top:24%;width:110px;height:75px;background:radial-gradient(circle,rgba(233,69,96,0.5),transparent)"></div>
+      <div class="heat" style="left:58%;top:37%;width:95px;height:65px;background:radial-gradient(circle,rgba(232,160,32,0.45),transparent)"></div>
+      <div class="heat" style="left:44%;top:20%;width:85px;height:58px;background:radial-gradient(circle,rgba(232,160,32,0.4),transparent)"></div>
+      <div class="heat" style="left:47%;top:50%;width:75px;height:52px;background:radial-gradient(circle,rgba(29,127,196,0.4),transparent)"></div>
+      <div class="pin" style="left:16%;top:27%" onclick="openPopup('미국','🇺🇸')"><div class="pd" style="background:#e94560"></div><div class="pc"><div class="pc-c">🇺🇸 미국</div><div class="pc-k">Trump Trial</div><div class="pc-s"><span class="gb">GLOBAL</span><span>🚀</span></div></div></div>
+      <div class="pin" style="left:71%;top:26%" onclick="openPopup('한국','🇰🇷')"><div class="pd" style="background:#e94560"></div><div class="pc"><div class="pc-c">🇰🇷 한국</div><div class="pc-k">부동산 대책</div><div class="pc-s"><span>🚀 급상승</span></div></div></div>
+      <div class="pin" style="left:74%;top:36%" onclick="openPopup('일본','🇯🇵')"><div class="pd" style="background:#e8a020"></div><div class="pc"><div class="pc-c">🇯🇵 일본</div><div class="pc-k">桜前線</div><div class="pc-s"><span>📈 상승중</span></div></div></div>
+      <div class="pin" style="left:59%;top:40%" onclick="openPopup('인도','🇮🇳')"><div class="pd" style="background:#e8a020"></div><div class="pc"><div class="pc-c">🇮🇳 인도</div><div class="pc-k">IPL Final</div><div class="pc-s"><span class="gb">GLOBAL</span><span>📈</span></div></div></div>
+      <div class="pin" style="left:48%;top:52%" onclick="openPopup('브라질','🇧🇷')"><div class="pd" style="background:#1d7fc4"></div><div class="pc"><div class="pc-c">🇧🇷 브라질</div><div class="pc-k">Carnaval</div><div class="pc-s"><span>📉</span></div></div></div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="sb-section">
+      <div class="sb-title">🔥 글로벌 순위</div>
+      <div class="rank-item" onclick="openPopup('미국','🇺🇸')"><div class="rk-n">1</div><div class="rk-info"><div class="rk-name">Trump Trial</div><div class="rk-meta"><span>🇺🇸</span><span class="gb">GLOBAL</span><span>🚀</span></div></div><div class="rk-vol">950K</div></div>
+      <div class="rank-item" onclick="openPopup('한국','🇰🇷')"><div class="rk-n">2</div><div class="rk-info"><div class="rk-name">부동산 대책</div><div class="rk-meta"><span>🇰🇷</span><span>🚀</span></div></div><div class="rk-vol">780K</div></div>
+      <div class="rank-item" onclick="openPopup('일본','🇯🇵')"><div class="rk-n">3</div><div class="rk-info"><div class="rk-name">桜前線 2025</div><div class="rk-meta"><span>🇯🇵</span><span>📈</span></div></div><div class="rk-vol">650K</div></div>
+      <div class="rank-item" onclick="openPopup('인도','🇮🇳')"><div class="rk-n">4</div><div class="rk-info"><div class="rk-name">IPL Final</div><div class="rk-meta"><span>🇮🇳</span><span class="gb">GLOBAL</span></div></div><div class="rk-vol">580K</div></div>
+      <div class="rank-item" onclick="openPopup('영국','🇬🇧')"><div class="rk-n">5</div><div class="rk-info"><div class="rk-name">Premier League</div><div class="rk-meta"><span>🇬🇧</span><span>➡️</span></div></div><div class="rk-vol">520K</div></div>
+      <div class="rank-item" onclick="openPopup('브라질','🇧🇷')"><div class="rk-n">6</div><div class="rk-info"><div class="rk-name">Carnaval Rio</div><div class="rk-meta"><span>🇧🇷</span><span>📉</span></div></div><div class="rk-vol">480K</div></div>
+      <div class="rank-item" onclick="openPopup('독일','🇩🇪')"><div class="rk-n">7</div><div class="rk-info"><div class="rk-name">Bundesliga</div><div class="rk-meta"><span>🇩🇪</span><span>➡️</span></div></div><div class="rk-vol">420K</div></div>
+    </div>
+    <div class="sb-title" style="padding-top:10px">📊 국가 강도</div>
+    <div style="padding:6px 16px 12px;flex:1;overflow-y:auto">
+      <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span>🇺🇸 미국</span><span style="color:#e94560;font-weight:700">94</span></div><div style="height:3px;background:rgba(255,255,255,0.06);border-radius:2px"><div style="width:94%;height:100%;background:#e94560;border-radius:2px"></div></div></div>
+      <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span>🇰🇷 한국</span><span style="color:#e94560;font-weight:700">88</span></div><div style="height:3px;background:rgba(255,255,255,0.06);border-radius:2px"><div style="width:88%;height:100%;background:#e94560;border-radius:2px"></div></div></div>
+      <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span>🇮🇳 인도</span><span style="color:#e8a020;font-weight:700">72</span></div><div style="height:3px;background:rgba(255,255,255,0.06);border-radius:2px"><div style="width:72%;height:100%;background:#e8a020;border-radius:2px"></div></div></div>
+      <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span>🇯🇵 일본</span><span style="color:#e8a020;font-weight:700">65</span></div><div style="height:3px;background:rgba(255,255,255,0.06);border-radius:2px"><div style="width:65%;height:100%;background:#e8a020;border-radius:2px"></div></div></div>
+      <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span>🇬🇧 영국</span><span style="color:#1d7fc4;font-weight:700">58</span></div><div style="height:3px;background:rgba(255,255,255,0.06);border-radius:2px"><div style="width:58%;height:100%;background:#1d7fc4;border-radius:2px"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="bl">🔥 TODAY'S<br>HOT</div>
+  <div class="bc" style="background:linear-gradient(135deg,#5c0a17,#a01428)" onclick="openPopup('미국','🇺🇸')"><div class="bc-f">🇺🇸</div><div class="bc-k">Trump Trial Verdict</div><div class="bc-m"><span>950K</span><span>🚀</span></div></div>
+  <div class="bc" style="background:linear-gradient(135deg,#0a2040,#143060)" onclick="openPopup('한국','🇰🇷')"><div class="bc-f">🇰🇷</div><div class="bc-k">부동산 대책 2025</div><div class="bc-m"><span>780K</span><span>🚀</span></div></div>
+  <div class="bc" style="background:linear-gradient(135deg,#2a1205,#5a2a10)" onclick="openPopup('일본','🇯🇵')"><div class="bc-f">🇯🇵</div><div class="bc-k">桜前線 2025年</div><div class="bc-m"><span>650K</span><span>📈</span></div></div>
+  <div class="bc" style="background:linear-gradient(135deg,#0a2a15,#105025)" onclick="openPopup('인도','🇮🇳')"><div class="bc-f">🇮🇳</div><div class="bc-k">IPL 2025 Final</div><div class="bc-m"><span>580K</span><span>📈</span></div></div>
+  <div class="bc" style="background:linear-gradient(135deg,#150a2a,#2a1050)" onclick="openPopup('영국','🇬🇧')"><div class="bc-f">🇬🇧</div><div class="bc-k">Premier League</div><div class="bc-m"><span>520K</span><span>➡️</span></div></div>
+  <div class="bc" style="background:linear-gradient(135deg,#0a1a2a,#103050)" onclick="openPopup('브라질','🇧🇷')"><div class="bc-f">🇧🇷</div><div class="bc-k">Carnaval Rio</div><div class="bc-m"><span>480K</span><span>📉</span></div></div>
+  <div class="bc" style="background:linear-gradient(135deg,#1a1a0a,#303015)" onclick="openPopup('독일','🇩🇪')"><div class="bc-f">🇩🇪</div><div class="bc-k">Bundesliga Finale</div><div class="bc-m"><span>420K</span><span>➡️</span></div></div>
+</div>
+
+<div class="po" id="popup" style="display:none" onclick="if(event.target===this)closePopup()">
+  <div class="pp">
+    <div class="ph"><div><div class="pc2" id="pop-c">🇰🇷 한국</div><div class="pm">🌡️ 강도 88 · 아시아 · 1시간 전 업데이트</div></div><div class="pa"><button class="ps">📤 공유</button><button class="pe">&lt;/&gt; 임베드</button><button class="cb" onclick="closePopup()">✕</button></div></div>
+    <div class="pt"><div class="ta on">🔍 검색어</div><div class="ta">📺 유튜브</div><div class="ta">📰 뉴스</div><div class="ta">📱 앱</div><div class="ta">🎮 게임</div></div>
+    <div class="pb">
+      <div class="ti2"><div class="tn">1</div><div class="inf"><div class="tn2">부동산 대책 2025</div><div class="tc">정치·경제 <span class="gb">GLOBAL</span></div><div class="tb"><div class="tf" style="width:95%"></div></div></div><div class="tr"><div class="tv">950K</div><div>🚀</div></div></div>
+      <div class="ti2"><div class="tn">2</div><div class="inf"><div class="tn2">아이유 콘서트</div><div class="tc">연예·음악</div><div class="tb"><div class="tf" style="width:78%"></div></div></div><div class="tr"><div class="tv">780K</div><div>📈</div></div></div>
+      <div class="ti2"><div class="tn">3</div><div class="inf"><div class="tn2">내일 날씨</div><div class="tc">날씨</div><div class="tb"><div class="tf" style="width:65%"></div></div></div><div class="tr"><div class="tv">650K</div><div>➡️</div></div></div>
+      <div class="ti2"><div class="tn">4</div><div class="inf"><div class="tn2">손흥민 골</div><div class="tc">스포츠</div><div class="tb"><div class="tf" style="width:52%"></div></div></div><div class="tr"><div class="tv">520K</div><div>📈</div></div></div>
+      <div class="ti2"><div class="tn">5</div><div class="inf"><div class="tn2">ChatGPT 업데이트</div><div class="tc">기술</div><div class="tb"><div class="tf" style="width:40%"></div></div></div><div class="tr"><div class="tv">400K</div><div>📉</div></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let s=0;setInterval(()=>{s++;document.getElementById('timer').textContent=s<60?`${s}초 전`:s<3600?`${Math.floor(s/60)}분 전`:`${Math.floor(s/3600)}시간 전`;},1000);
+function openPopup(c,f){document.getElementById('pop-c').textContent=`${f} ${c}`;document.getElementById('popup').style.display='flex';}
+function closePopup(){document.getElementById('popup').style.display='none';}
+setTimeout(()=>openPopup('한국','🇰🇷'),1500);
+</script>
+</body>
+</html>

@@ -1,101 +1,178 @@
-import Image from "next/image";
+import { Suspense } from 'react';
+import { loadTrendsData } from '@/lib/trends';
+import Header from '@/components/Header';
+import TrendList from '@/components/TrendList';
+import WorldMap from '@/components/WorldMap';
+import RightPanel from '@/components/RightPanel';
+import BottomCards from '@/components/BottomCards';
 
-export default function Home() {
+// Revalidate every 60 minutes (data updates hourly)
+export const revalidate = 3600;
+
+function MapSkeleton() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div
+      style={{
+        height: '100%',
+        background: 'var(--bg-card)',
+        border: '1px solid var(--border-subtle)',
+        borderRadius: '16px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '12px',
+          color: 'var(--text-muted)',
+        }}
+      >
+        <div
+          style={{
+            fontSize: '40px',
+            animation: 'spin-slow 4s linear infinite',
+          }}
+        >
+          🌍
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div style={{ fontSize: '13px' }}>Loading world map…</div>
+      </div>
+    </div>
+  );
+}
+
+export default async function HomePage() {
+  const data = await loadTrendsData();
+
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100vh',
+        overflow: 'hidden',
+        background: 'var(--bg-base)',
+      }}
+    >
+      {/* Header */}
+      <Header
+        lastUpdated={data.lastUpdated}
+        totalCountries={data.global.totalCountries}
+        totalTrends={data.global.totalTrends}
+      />
+
+      {/* Main Command Center */}
+      <div
+        style={{
+          flex: 1,
+          display: 'grid',
+          gridTemplateColumns: '300px 1fr 270px',
+          gridTemplateRows: '1fr 148px',
+          gap: '10px',
+          padding: '10px 12px 12px',
+          overflow: 'hidden',
+          minHeight: 0,
+        }}
+      >
+        {/* Left Panel — Trend Rankings */}
+        <div
+          style={{
+            gridRow: '1 / 2',
+            overflow: 'hidden',
+          }}
+          className="animate-slide-left"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <TrendList data={data} />
+        </div>
+
+        {/* Center — World Map */}
+        <div
+          style={{
+            gridRow: '1 / 2',
+            overflow: 'hidden',
+          }}
+          className="animate-fade-in"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <Suspense fallback={<MapSkeleton />}>
+            <WorldMap data={data} />
+          </Suspense>
+        </div>
+
+        {/* Right Panel */}
+        <div
+          style={{
+            gridRow: '1 / 2',
+            overflow: 'hidden',
+          }}
+          className="animate-slide-right"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <RightPanel data={data} />
+        </div>
+
+        {/* Bottom Cards — spans all columns */}
+        <div
+          style={{
+            gridColumn: '1 / -1',
+            gridRow: '2 / 3',
+            overflow: 'hidden',
+          }}
+          className="animate-slide-up"
+        >
+          <BottomCards data={data} />
+        </div>
+      </div>
+
+      {/* Footer nav */}
+      <nav
+        style={{
+          borderTop: '1px solid var(--border-subtle)',
+          padding: '6px 16px',
+          display: 'flex',
+          gap: '16px',
+          alignItems: 'center',
+          background: 'var(--bg-surface)',
+          flexShrink: 0,
+        }}
+      >
+        {[
+          { href: '/blog', label: 'Blog' },
+          { href: '/about', label: 'About' },
+          { href: '/contact', label: 'Contact' },
+          { href: '/privacy-policy', label: 'Privacy' },
+          { href: '/terms', label: 'Terms' },
+          { href: '/cookie-policy', label: 'Cookies' },
+          { href: '/dmca', label: 'DMCA' },
+          { href: '/disclaimer', label: 'Disclaimer' },
+          { href: '/editorial-policy', label: 'Editorial' },
+        ].map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            className="footer-nav-link"
+            style={{
+              fontSize: '11px',
+              color: 'var(--text-muted)',
+              textDecoration: 'none',
+            }}
+          >
+            {link.label}
+          </a>
+        ))}
+        <span
+          style={{
+            marginLeft: 'auto',
+            fontSize: '11px',
+            color: 'var(--text-muted)',
+            fontFamily: 'Space Mono, monospace',
+          }}
+        >
+          © {new Date().getFullYear()} TrendPulse
+        </span>
+      </nav>
     </div>
   );
 }

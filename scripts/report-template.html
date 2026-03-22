@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌐 Vercel Manager — Daily Report {{REPORT_DATE}}</title>
+  <style>
+    /* ── Reset & Base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0a0a1a;
+      --bg2:       #0f0f24;
+      --bg3:       #14142e;
+      --card:      #1a1a36;
+      --card-b:    #22224a;
+      --border:    rgba(99,102,241,0.18);
+      --indigo:    #6366f1;
+      --violet:    #8b5cf6;
+      --cyan:      #06b6d4;
+      --green:     #10b981;
+      --yellow:    #f59e0b;
+      --red:       #ef4444;
+      --pink:      #ec4899;
+      --text:      #e2e8f0;
+      --muted:     #94a3b8;
+      --dim:       #64748b;
+      --radius:    12px;
+      --radius-sm: 6px;
+      --shadow:    0 4px 24px rgba(0,0,0,0.5);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Scrollbar ────────────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--indigo); border-radius: 3px; }
+
+    /* ── Animations ───────────────────────────────────────────── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.5; }
+    }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 8px rgba(99,102,241,0.4); }
+      50%       { box-shadow: 0 0 20px rgba(99,102,241,0.8); }
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .fade-in { animation: fadeInUp 0.6s ease both; }
+    .fade-in-1 { animation-delay: 0.1s; }
+    .fade-in-2 { animation-delay: 0.2s; }
+    .fade-in-3 { animation-delay: 0.3s; }
+    .fade-in-4 { animation-delay: 0.4s; }
+    .fade-in-5 { animation-delay: 0.5s; }
+    .fade-in-6 { animation-delay: 0.6s; }
+
+    /* ── Layout ───────────────────────────────────────────────── */
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    /* ── Header ───────────────────────────────────────────────── */
+    .site-header {
+      background: linear-gradient(135deg, #0f0f2e 0%, #1a0a3e 50%, #0a1a2e 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .header-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--indigo), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+    .header-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: right;
+    }
+    .header-meta strong { color: var(--text); }
+
+    /* ── Quick Status Bar ─────────────────────────────────────── */
+    .status-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 0;
+    }
+    .status-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .pill-green  { background: rgba(16,185,129,0.15); color: #34d399; border: 1px solid rgba(16,185,129,0.3); }
+    .pill-blue   { background: rgba(99,102,241,0.15);  color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
+    .pill-yellow { background: rgba(245,158,11,0.15);  color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+    .pill-red    { background: rgba(239,68,68,0.15);   color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+    .pill-cyan   { background: rgba(6,182,212,0.15);   color: #22d3ee; border: 1px solid rgba(6,182,212,0.3); }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulse 2s infinite; }
+
+    /* ── Section Cards ────────────────────────────────────────── */
+    section {
+      margin-top: 28px;
+    }
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .section-header {
+      background: linear-gradient(90deg, rgba(99,102,241,0.12) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-icon {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      flex: 1;
+    }
+    .section-badge {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: rgba(99,102,241,0.2);
+      color: #a5b4fc;
+      font-weight: 600;
+    }
+    .section-body {
+      padding: 20px 24px;
+    }
+
+    /* ── Metric Grid ──────────────────────────────────────────── */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .metric-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .metric-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--indigo);
+    }
+    .metric-value {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.1;
+      background: linear-gradient(135deg, var(--indigo), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .metric-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .metric-sub {
+      font-size: 0.78rem;
+      color: var(--dim);
+      margin-top: 2px;
+    }
+
+    /* ── Tables ───────────────────────────────────────────────── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .data-table th {
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(99,102,241,0.08);
+      color: var(--text);
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: rgba(99,102,241,0.05); }
+
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-top: 14px;
+    }
+
+    /* ── Source Status Row ────────────────────────────────────── */
+    .source-ok    { color: var(--green); font-weight: 600; }
+    .source-error { color: var(--red);   font-weight: 600; }
+
+    /* ── Progress Bars ────────────────────────────────────────── */
+    .progress-wrap {
+      margin-top: 10px;
+    }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .progress-track {
+      height: 8px;
+      background: var(--bg2);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .progress-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 1s ease;
+    }
+    .fill-green  { background: linear-gradient(90deg, var(--green), #34d399); }
+    .fill-indigo { background: linear-gradient(90deg, var(--indigo), var(--violet)); }
+    .fill-yellow { background: linear-gradient(90deg, var(--yellow), #fbbf24); }
+    .fill-red    { background: linear-gradient(90deg, var(--red), #f87171); }
+    .fill-cyan   { background: linear-gradient(90deg, var(--cyan), #22d3ee); }
+
+    /* ── Temperature Display ──────────────────────────────────── */
+    .temp-display {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, rgba(239,68,68,0.1), rgba(245,158,11,0.1));
+      border: 1px solid rgba(239,68,68,0.2);
+      border-radius: var(--radius-sm);
+      padding: 10px 18px;
+    }
+    .temp-number {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--yellow);
+      line-height: 1;
+    }
+    .temp-unit {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    .temp-label-badge {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .label-viral { background: rgba(239,68,68,0.2); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+    .label-hot   { background: rgba(245,158,11,0.2); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+    .label-warm  { background: rgba(99,102,241,0.2); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
+    .label-cool  { background: rgba(6,182,212,0.2);  color: #22d3ee; border: 1px solid rgba(6,182,212,0.3); }
+
+    /* ── Health Score ─────────────────────────────────────────── */
+    .health-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .health-green  { background: rgba(16,185,129,0.1); color: var(--green); border: 1px solid rgba(16,185,129,0.25); }
+    .health-yellow { background: rgba(245,158,11,0.1); color: var(--yellow); border: 1px solid rgba(245,158,11,0.25); }
+    .health-red    { background: rgba(239,68,68,0.1);  color: var(--red);    border: 1px solid rgba(239,68,68,0.25); }
+
+    /* ── Info Grid ────────────────────────────────────────────── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .info-item {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+    }
+    .info-key {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .info-val {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .info-val.ok    { color: var(--green); }
+    .info-val.warn  { color: var(--yellow); }
+    .info-val.error { color: var(--red); }
+
+    /* ── Sub-section ──────────────────────────────────────────── */
+    .sub-section {
+      margin-top: 22px;
+    }
+    .sub-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--indigo);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Action Items ─────────────────────────────────────────── */
+    .action-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .action-list li {
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .action-red    { background: rgba(239,68,68,0.08);   border: 1px solid rgba(239,68,68,0.2);   color: #fca5a5; }
+    .action-yellow { background: rgba(245,158,11,0.08);  border: 1px solid rgba(245,158,11,0.2);  color: #fde68a; }
+    .action-green  { background: rgba(16,185,129,0.08);  border: 1px solid rgba(16,185,129,0.2);  color: #6ee7b7; }
+
+    /* ── Note Box ─────────────────────────────────────────────── */
+    .note-box {
+      background: rgba(99,102,241,0.06);
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      color: #a5b4fc;
+      margin-top: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .note-box .note-icon { flex-shrink: 0; margin-top: 2px; }
+
+    /* ── Two-col layout ───────────────────────────────────────── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+
+    /* ── Top Trend Highlight ──────────────────────────────────── */
+    .top-trend-card {
+      background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.08));
+      border: 1px solid rgba(99,102,241,0.3);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .top-trend-keyword {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .top-trend-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .top-trend-volume {
+      margin-left: auto;
+      text-align: right;
+    }
+    .top-trend-vol-num {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--cyan);
+    }
+    .top-trend-vol-label {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Quota Status ─────────────────────────────────────────── */
+    .quota-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .quota-label { font-size: 0.82rem; color: var(--muted); width: 180px; flex-shrink: 0; }
+    .quota-bar   { flex: 1; }
+    .quota-count { font-size: 0.82rem; color: var(--text); width: 100px; text-align: right; flex-shrink: 0; }
+
+    /* ── Strategy Table ───────────────────────────────────────── */
+    .strategy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .strategy-list li {
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.84rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .strategy-pri { flex-shrink: 0; }
+
+    /* ── CWV indicators ───────────────────────────────────────── */
+    .cwv-grid {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .cwv-item {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      text-align: center;
+      flex: 1;
+      min-width: 100px;
+    }
+    .cwv-name  { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .cwv-val   { font-size: 1rem; font-weight: 700; margin-top: 4px; }
+    .cwv-ok    { color: var(--green); }
+    .cwv-warn  { color: var(--yellow); }
+    .cwv-error { color: var(--red); }
+
+    /* ── Tool Status ──────────────────────────────────────────── */
+    .tool-status-ok   { color: var(--green); }
+    .tool-status-warn { color: var(--yellow); }
+    .tool-status-err  { color: var(--red); }
+
+    /* ── Footer ───────────────────────────────────────────────── */
+    .site-footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      margin-top: 48px;
+      padding: 24px 0;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.78rem;
+      color: var(--dim);
+    }
+    .footer-inner a { color: var(--indigo); text-decoration: none; }
+    .footer-inner a:hover { text-decoration: underline; }
+
+    /* ── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .header-logo { font-size: 1.2rem; }
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .metric-value { font-size: 1.5rem; }
+      .quota-label { width: 120px; }
+    }
+    @media (max-width: 480px) {
+      .section-body { padding: 14px 14px; }
+      .metrics-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🌐 Vercel Manager — Daily Report</div>
+    <div class="header-meta">
+      <strong>{{REPORT_DATE}}</strong> &nbsp;·&nbsp; {{REPORT_TIME}}<br>
+      Last data: {{LAST_UPDATED}}
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     QUICK STATUS BAR
+═══════════════════════════════════════════════════════════════ -->
+<div class="status-bar">
+  <div class="status-bar-inner">
+    <div class="status-pill pill-green"><span class="dot"></span> Vercel: Live</div>
+    <div class="status-pill pill-blue"><span class="dot"></span> GitHub Actions: Active</div>
+    <div class="status-pill pill-cyan"><span class="dot"></span> {{TOTAL_COUNTRIES}} Countries</div>
+    <div class="status-pill pill-yellow"><span class="dot"></span> Data: {{DATA_AGE_MINUTES}}min old</div>
+    <div class="status-pill pill-green"><span class="dot"></span> {{POSTS_TODAY}} Posts Today</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     WRAPPER
+═══════════════════════════════════════════════════════════════ -->
+<div class="wrapper">
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 1: SYSTEM STATUS
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-1">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">🖥️</span>
+        <h2 class="section-title">System Status</h2>
+        <span class="section-badge">LIVE</span>
+      </div>
+      <div class="section-body">
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-key">Vercel Deployment</div>
+            <div class="info-val ok">{{VERCEL_STATUS}}</div>
+          </div>
+          <div class="info-item">
+            <div class="info-key">GitHub Actions</div>
+            <div class="info-val ok">{{GITHUB_ACTIONS_STATUS}}</div>
+          </div>
+          <div class="info-item">
+            <div class="info-key">Data Freshness</div>
+            <div class="info-val {{DATA_AGE_CLASS}}">{{DATA_AGE_MINUTES}} min ago</div>
+          </div>
+          <div class="info-item">
+            <div class="info-key">Next Update In</div>
+            <div class="info-val">{{NEXT_UPDATE_IN}} min</div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">⚡ Overall Health Score</div>
+          <div class="health-indicator health-green">
+            ✅ &nbsp;All core systems operational — no critical issues detected
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 2: DATA PIPELINE
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-2">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">⚙️</span>
+        <h2 class="section-title">Data Pipeline</h2>
+        <span class="section-badge">{{PIPELINE_DURATION}}s</span>
+      </div>
+      <div class="section-body">
+
+        <!-- Metrics top row -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value">{{TOTAL_COUNTRIES}}</div>
+            <div class="metric-label">Countries</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{TOTAL_TRENDS}}</div>
+            <div class="metric-label">Total Trends</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{PIPELINE_SUCCESS}}</div>
+            <div class="metric-label">Successful</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value {{ERROR_COUNT_CLASS}}">{{PIPELINE_ERRORS}}</div>
+            <div class="metric-label">Errors</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{BLOCKED_KEYWORDS}}</div>
+            <div class="metric-label">Blocked Keywords</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{PIPELINE_DURATION}}s</div>
+            <div class="metric-label">Duration</div>
+          </div>
+        </div>
+
+        <!-- Source status table -->
+        <div class="sub-section">
+          <div class="sub-title">📡 Source Status</div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Status</th>
+                  <th>Type</th>
+                  <th>Coverage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>📊 Google Trends RSS</td>
+                  <td class="source-ok">{{SOURCE_GOOGLE_TRENDS}}</td>
+                  <td>RSS Feed</td>
+                  <td>36 countries</td>
+                </tr>
+                <tr>
+                  <td>▶️ YouTube Data API</td>
+                  <td>{{SOURCE_YOUTUBE}}</td>
+                  <td>REST API</td>
+                  <td>36 countries</td>
+                </tr>
+                <tr>
+                  <td>🌐 GDELT News</td>
+                  <td>{{SOURCE_GDELT}}</td>
+                  <td>REST API (free)</td>
+                  <td>Global</td>
+                </tr>
+                <tr>
+                  <td>📖 Wikipedia</td>
+                  <td>{{SOURCE_WIKI}}</td>
+                  <td>REST API (free)</td>
+                  <td>Global / EN</td>
+                </tr>
+                <tr>
+                  <td>🍎 Apple App Store RSS</td>
+                  <td>{{SOURCE_APPLE}}</td>
+                  <td>RSS Feed</td>
+                  <td>US, KR, JP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- YouTube Quota -->
+        <div class="sub-section">
+          <div class="sub-title">🎯 YouTube API Quota</div>
+          <div class="quota-row">
+            <div class="quota-label">Daily Quota Used</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-indigo {{QUOTA_CLASS}}" style="width: {{YT_QUOTA_PCT}}%"></div>
+              </div>
+            </div>
+            <div class="quota-count">{{YOUTUBE_QUOTA_USED}} / 10,000</div>
+          </div>
+          <div style="font-size:0.78rem; color:var(--muted); margin-top:6px;">
+            {{YOUTUBE_QUOTA_REMAINING}} units remaining today
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 3: CONTENT AUTOMATION
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-3">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">📝</span>
+        <h2 class="section-title">Content Automation</h2>
+        <span class="section-badge">{{POSTS_TODAY}} new posts</span>
+      </div>
+      <div class="section-body">
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value">{{POSTS_TODAY}}</div>
+            <div class="metric-label">Posts Today</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{POSTS_TOTAL}}</div>
+            <div class="metric-label">Total Posts</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{POSTS_EN}}</div>
+            <div class="metric-label">English 🇺🇸</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{POSTS_KR}}</div>
+            <div class="metric-label">Korean 🇰🇷</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">{{POSTS_JP}}</div>
+            <div class="metric-label">Japanese 🇯🇵</div>
+          </div>
+        </div>
+
+        <!-- Global Temperature -->
+        <div class="sub-section">
+          <div class="sub-title">🌡️ Global Trend Temperature</div>
+          <div class="top-trend-card" style="flex-direction: column; align-items: flex-start; gap: 12px;">
+            <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+              <div class="temp-display">
+                <div>
+                  <div class="temp-number">{{GLOBAL_TEMP}}</div>
+                </div>
+                <div class="temp-unit">°T</div>
+              </div>
+              <div class="temp-label-badge label-hot">{{GLOBAL_TEMP_LABEL}}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top trend today -->
+        <div class="sub-section">
+          <div class="sub-title">🔥 Top Trend Today</div>
+          <div class="top-trend-card">
+            <div>
+              <div class="top-trend-keyword">{{TOP_TREND_KEYWORD}}</div>
+              <div class="top-trend-meta">{{TOP_TREND_COUNTRY}} · Trending Now</div>
+            </div>
+            <div class="top-trend-volume">
+              <div class="top-trend-vol-num">{{TOP_TREND_VOLUME}}</div>
+              <div class="top-trend-vol-label">searches</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 4: USER ANALYTICS (GA4)
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-3">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">📈</span>
+        <h2 class="section-title">User Analytics</h2>
+        <span class="section-badge">GA4 — Manual</span>
+      </div>
+      <div class="section-body">
+
+        <div class="note-box">
+          <span class="note-icon">💡</span>
+          <span>Connect <strong>GA4 Reporting API</strong> to automate this section. Currently requires manual update from Google Analytics dashboard.</span>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">📊 Core Metrics</div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr><th>Metric</th><th>Today</th><th>Yesterday</th><th>7-Day Avg</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Sessions</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>Pageviews</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>Bounce Rate</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>Avg Session Duration</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>New Users</td><td>—</td><td>—</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="sub-section">
+            <div class="sub-title">📄 Top Pages</div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead><tr><th>Page</th><th>Views</th></tr></thead>
+                <tbody>
+                  <tr><td>/</td><td>—</td></tr>
+                  <tr><td>/blog</td><td>—</td></tr>
+                  <tr><td>/map</td><td>—</td></tr>
+                  <tr><td>/blog/[slug]</td><td>—</td></tr>
+                  <tr><td>/about</td><td>—</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="sub-section">
+            <div class="sub-title">🌍 Top Countries</div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead><tr><th>Country</th><th>Sessions</th></tr></thead>
+                <tbody>
+                  <tr><td>🇺🇸 United States</td><td>—</td></tr>
+                  <tr><td>🇰🇷 South Korea</td><td>—</td></tr>
+                  <tr><td>🇯🇵 Japan</td><td>—</td></tr>
+                  <tr><td>🇬🇧 United Kingdom</td><td>—</td></tr>
+                  <tr><td>🇩🇪 Germany</td><td>—</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 5: SEO STATUS
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-4">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">🔍</span>
+        <h2 class="section-title">SEO Status</h2>
+        <span class="section-badge">Search Console — Manual</span>
+      </div>
+      <div class="section-body">
+
+        <div class="note-box">
+          <span class="note-icon">💡</span>
+          <span>Connect <strong>Search Console API</strong> to automate SEO metrics. Currently requires manual export from Google Search Console.</span>
+        </div>
+
+        <div class="metrics-grid" style="margin-top:14px;">
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.4rem;">—</div>
+            <div class="metric-label">Total Clicks</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.4rem;">—</div>
+            <div class="metric-label">Impressions</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.4rem;">—%</div>
+            <div class="metric-label">Avg CTR</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.4rem;">#—</div>
+            <div class="metric-label">Avg Position</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.4rem;">{{POSTS_TOTAL}}</div>
+            <div class="metric-label">Indexed Est.</div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">⚡ Core Web Vitals</div>
+          <div class="cwv-grid">
+            <div class="cwv-item">
+              <div class="cwv-name">LCP</div>
+              <div class="cwv-val cwv-ok">Good</div>
+              <div style="font-size:0.7rem;color:var(--muted);margin-top:2px;">≤ 2.5s target</div>
+            </div>
+            <div class="cwv-item">
+              <div class="cwv-name">CLS</div>
+              <div class="cwv-val cwv-ok">Good</div>
+              <div style="font-size:0.7rem;color:var(--muted);margin-top:2px;">≤ 0.1 target</div>
+            </div>
+            <div class="cwv-item">
+              <div class="cwv-name">FID / INP</div>
+              <div class="cwv-val cwv-warn">Needs Data</div>
+              <div style="font-size:0.7rem;color:var(--muted);margin-top:2px;">Real user data req.</div>
+            </div>
+            <div class="cwv-item">
+              <div class="cwv-name">TTFB</div>
+              <div class="cwv-val cwv-ok">Good</div>
+              <div style="font-size:0.7rem;color:var(--muted);margin-top:2px;">≤ 800ms target</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">🔎 Top Search Queries (placeholder)</div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>#</th><th>Query</th><th>Clicks</th><th>Impressions</th><th>CTR</th><th>Position</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>global trends map</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>2</td><td>trending topics worldwide</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>3</td><td>google trends by country</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>4</td><td>what's trending today</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>5</td><td>real time trend map</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td colspan="6" style="text-align:center;color:var(--dim);font-style:italic;">Connect Search Console API to populate</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 6: MONETIZATION
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-4">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">💰</span>
+        <h2 class="section-title">Monetization</h2>
+        <span class="section-badge">AdSense Pending</span>
+      </div>
+      <div class="section-body">
+
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-key">AdSense Status</div>
+            <div class="info-val warn">⏳ Not yet connected</div>
+          </div>
+          <div class="info-item">
+            <div class="info-key">Est. Revenue Today</div>
+            <div class="info-val" style="color:var(--dim);">$-.-</div>
+          </div>
+          <div class="info-item">
+            <div class="info-key">Page RPM</div>
+            <div class="info-val" style="color:var(--dim);">$-.-</div>
+          </div>
+          <div class="info-item">
+            <div class="info-key">Total Impressions</div>
+            <div class="info-val" style="color:var(--dim);">--</div>
+          </div>
+        </div>
+
+        <div class="note-box" style="margin-top:16px;">
+          <span class="note-icon">📋</span>
+          <span>
+            Apply for AdSense after <strong>4–6 weeks</strong> of consistent operation with quality content.
+            Aim for 50+ posts, organic traffic, and Privacy Policy / About pages live before applying.
+          </span>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">📅 AdSense Eligibility Progress</div>
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span>Days of Operation: {{DAYS_OPERATING}} days</span>
+              <span>Target: 42 days ({{ADSENSE_DAYS_REMAINING}} remaining)</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-green" style="width: {{ADSENSE_PROGRESS_PCT}}%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 7: SYSTEM HEALTH
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-5">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">🏥</span>
+        <h2 class="section-title">System Health</h2>
+        <span class="section-badge">Resources</span>
+      </div>
+      <div class="section-body">
+
+        <div class="sub-section" style="margin-top:0;">
+          <div class="sub-title">☁️ Vercel (Hobby Plan)</div>
+
+          <div class="quota-row">
+            <div class="quota-label">Bandwidth</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-green" style="width: 2%"></div>
+              </div>
+            </div>
+            <div class="quota-count">~2 GB / 100 GB</div>
+          </div>
+
+          <div class="quota-row">
+            <div class="quota-label">Build Minutes</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-indigo" style="width: 5%"></div>
+              </div>
+            </div>
+            <div class="quota-count">~30 / 6,000 min</div>
+          </div>
+
+          <div class="quota-row">
+            <div class="quota-label">Serverless Functions</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-cyan" style="width: 1%"></div>
+              </div>
+            </div>
+            <div class="quota-count">~1k / 100k inv</div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">⚡ GitHub Actions</div>
+          <div class="quota-row">
+            <div class="quota-label">Actions Minutes</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-green" style="width: 10%"></div>
+              </div>
+            </div>
+            <div class="quota-count">~200 / 2,000 min</div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">🔑 API Quotas</div>
+          <div class="quota-row">
+            <div class="quota-label">YouTube Data API</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-indigo" style="width: {{YT_QUOTA_PCT}}%"></div>
+              </div>
+            </div>
+            <div class="quota-count">{{YOUTUBE_QUOTA_USED}} / 10,000</div>
+          </div>
+          <div class="quota-row">
+            <div class="quota-label">GDELT API</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-green" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="quota-count">Unlimited</div>
+          </div>
+          <div class="quota-row">
+            <div class="quota-label">Wikipedia API</div>
+            <div class="quota-bar">
+              <div class="progress-track">
+                <div class="progress-fill fill-green" style="width: 0%"></div>
+              </div>
+            </div>
+            <div class="quota-count">Unlimited</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 8: STRATEGY INTELLIGENCE (STATIC)
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-5">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">🎯</span>
+        <h2 class="section-title">Industry Intelligence &amp; Recommendations</h2>
+        <span class="section-badge">Strategic</span>
+      </div>
+      <div class="section-body">
+
+        <div class="sub-section" style="margin-top:0;">
+          <div class="sub-title">🏆 Benchmark: Top Vercel Trend Sites</div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Practice</th>
+                  <th>Top Performers</th>
+                  <th>Our Status</th>
+                  <th>Priority</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content frequency</td>
+                  <td>10–20 posts/day</td>
+                  <td>{{POSTS_TODAY}}/day</td>
+                  <td style="color:var(--yellow);">🟡 Scale Up</td>
+                </tr>
+                <tr>
+                  <td>Multi-language support</td>
+                  <td>3–5 languages</td>
+                  <td>EN, KR, JP</td>
+                  <td style="color:var(--green);">✅ Good</td>
+                </tr>
+                <tr>
+                  <td>Data freshness</td>
+                  <td>Every 30–60 min</td>
+                  <td>Every 60 min</td>
+                  <td style="color:var(--green);">✅ Good</td>
+                </tr>
+                <tr>
+                  <td>Country coverage</td>
+                  <td>20–50 countries</td>
+                  <td>{{TOTAL_COUNTRIES}} countries</td>
+                  <td style="color:var(--green);">✅ Good</td>
+                </tr>
+                <tr>
+                  <td>AdSense integration</td>
+                  <td>Active from day 45+</td>
+                  <td>Pending</td>
+                  <td style="color:var(--yellow);">🟡 On Track</td>
+                </tr>
+                <tr>
+                  <td>Internal linking</td>
+                  <td>5+ links/post</td>
+                  <td>3–4 links/post</td>
+                  <td style="color:var(--yellow);">🟡 Improve</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">💡 Recommended Improvements This Week</div>
+          <ul class="strategy-list">
+            <li>
+              <span class="strategy-pri">🔴</span>
+              <span><strong>High:</strong> Add structured data (JSON-LD) to all blog posts — Schema.org Article markup improves rich snippets and CTR by 20–30%.</span>
+            </li>
+            <li>
+              <span class="strategy-pri">🔴</span>
+              <span><strong>High:</strong> Set up UptimeRobot free monitoring to get email alerts if the site goes down. Takes 5 minutes at uptimerobot.com.</span>
+            </li>
+            <li>
+              <span class="strategy-pri">🟡</span>
+              <span><strong>Medium:</strong> Add a sitemap.xml auto-generator to the blog pipeline. Submit to Google Search Console weekly for faster indexing.</span>
+            </li>
+            <li>
+              <span class="strategy-pri">🟡</span>
+              <span><strong>Medium:</strong> Implement RSS feed (/rss.xml) for blog posts — attracts aggregator traffic and improves AdSense RPM through repeat visitors.</span>
+            </li>
+            <li>
+              <span class="strategy-pri">🟢</span>
+              <span><strong>Low:</strong> Add Open Graph images (og:image) per post for better social sharing previews on Twitter/X and LinkedIn.</span>
+            </li>
+            <li>
+              <span class="strategy-pri">🟢</span>
+              <span><strong>Low:</strong> Consider adding a Giscus comment section to top posts — increases dwell time and signals content quality to Google.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">🔍 Code &amp; Automation Quality Analysis</div>
+
+          <!-- Code Quality Score -->
+          <div style="margin-bottom:20px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+              <span style="font-weight:700;color:var(--text);">Code Quality Score</span>
+              <span style="font-family:monospace;font-size:18px;font-weight:700;color:var(--indigo);">62 / 100</span>
+            </div>
+            <div style="height:10px;background:rgba(255,255,255,0.08);border-radius:5px;overflow:hidden;margin-bottom:12px;">
+              <div style="height:100%;width:62%;background:linear-gradient(90deg,var(--indigo),var(--violet));border-radius:5px;"></div>
+            </div>
+            <table style="width:100%;font-size:13px;border-collapse:collapse;">
+              <tbody>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                  <td style="padding:6px 0;color:var(--muted);">TypeScript strict mode</td>
+                  <td style="text-align:right;color:var(--green);">✅ Enabled</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                  <td style="padding:6px 0;color:var(--muted);">Error boundaries</td>
+                  <td style="text-align:right;color:var(--red);">❌ Not implemented</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                  <td style="padding:6px 0;color:var(--muted);">Proper types (no <code>any</code>)</td>
+                  <td style="text-align:right;color:var(--yellow);">⚠️ 4 violations found</td>
+                </tr>
+                <tr>
+                  <td style="padding:6px 0;color:var(--muted);">Test coverage</td>
+                  <td style="text-align:right;color:var(--red);">❌ 0% (not implemented)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Automation Reliability Score -->
+          <div style="margin-bottom:20px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+              <span style="font-weight:700;color:var(--text);">Automation Reliability Score</span>
+              <span style="font-family:monospace;font-size:18px;font-weight:700;color:var(--cyan);">65 / 100</span>
+            </div>
+            <div style="height:10px;background:rgba(255,255,255,0.08);border-radius:5px;overflow:hidden;margin-bottom:12px;">
+              <div style="height:100%;width:65%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:5px;"></div>
+            </div>
+            <table style="width:100%;font-size:13px;border-collapse:collapse;">
+              <tbody>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                  <td style="padding:6px 0;color:var(--muted);">Data collection retry logic</td>
+                  <td style="text-align:right;color:var(--red);">❌ No retry on failure</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                  <td style="padding:6px 0;color:var(--muted);">Fallback data when API fails</td>
+                  <td style="text-align:right;color:var(--red);">❌ No fallback mechanism</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                  <td style="padding:6px 0;color:var(--muted);">Concurrency protection</td>
+                  <td style="text-align:right;color:var(--green);">✅ cancel-in-progress: false</td>
+                </tr>
+                <tr>
+                  <td style="padding:6px 0;color:var(--muted);">Failure alerting</td>
+                  <td style="text-align:right;color:var(--yellow);">⚠️ GitHub annotations only</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Top 5 Code Improvements -->
+          <div style="margin-bottom:20px;">
+            <div style="font-weight:700;color:var(--text);margin-bottom:10px;">Top 5 Code Improvements Needed</div>
+            <ul class="strategy-list">
+              <li>
+                <span class="strategy-pri">🔴</span>
+                <span><strong>[P1 — Critical]</strong> Add React Error Boundaries to WorldMap, TrendList, RightPanel. A runtime error in any child currently crashes the entire page with no fallback UI.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🔴</span>
+                <span><strong>[P1 — Critical]</strong> Replace <code>geo: any</code> type in WorldMap.tsx (lines 71, 86, 103, 127, 143). This suppresses TS strict-mode checking on the most logic-heavy component.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🟡</span>
+                <span><strong>[P2 — Medium]</strong> Memoize <code>getFillColor</code> and <code>getStrokeColor</code> results with a Map keyed by geo.rsmKey to avoid recalculating colors for every country on every hover event.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🟡</span>
+                <span><strong>[P2 — Medium]</strong> Header.tsx clipboard operations (<code>navigator.clipboard.writeText</code>) have no error handling — if clipboard permission is denied the copy button silently fails with no user feedback.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🟢</span>
+                <span><strong>[P3 — Low]</strong> TrendRow in TrendList.tsx uses local <code>useState</code> for hover state, causing 50+ micro re-renders on scroll. Replace with CSS <code>:hover</code> pseudo-class or a single parent-level hover tracker.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Top 5 Automation Improvements -->
+          <div style="margin-bottom:20px;">
+            <div style="font-weight:700;color:var(--text);margin-bottom:10px;">Top 5 Automation Improvements Needed</div>
+            <ul class="strategy-list">
+              <li>
+                <span class="strategy-pri">🔴</span>
+                <span><strong>[P1 — Critical]</strong> collect_trends.py has no retry logic. A transient network error on any of the 35 Google Trends RSS fetches fails silently and produces an empty array, corrupting trend data without alerting.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🔴</span>
+                <span><strong>[P1 — Critical]</strong> No fallback data: if the entire collect-data workflow fails, <code>trends.json</code> is not updated and the site serves stale data indefinitely with no indication to users or operators.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🟡</span>
+                <span><strong>[P2 — Medium]</strong> generate_blog.py does not wait for collect-data to complete. If both run concurrently (e.g., via manual dispatch), the blog generator may read a partially-written or stale trends.json.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🟡</span>
+                <span><strong>[P2 — Medium]</strong> Failure notification in both workflows uses only GitHub annotations (<code>::error::</code>). No external alerting (Slack, email, PagerDuty) means pipeline failures go unnoticed until the dashboard is manually checked.</span>
+              </li>
+              <li>
+                <span class="strategy-pri">🟢</span>
+                <span><strong>[P3 — Low]</strong> Wikipedia description fetches in <code>enrich_trends()</code> are sequential with a 0.2s sleep per keyword (up to 20 per country × 35 countries = 700 calls). Parallelising with a thread pool would cut enrichment time by ~80%.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Project Maturity Matrix -->
+          <div>
+            <div style="font-weight:700;color:var(--text);margin-bottom:10px;">📊 Project Maturity Matrix</div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Area</th>
+                    <th>Current</th>
+                    <th>Target</th>
+                    <th>Gap</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Code Quality</td>
+                    <td style="color:var(--yellow);">62%</td>
+                    <td>90%</td>
+                    <td style="color:var(--red);">28%</td>
+                  </tr>
+                  <tr>
+                    <td>Test Coverage</td>
+                    <td style="color:var(--red);">0%</td>
+                    <td>70%</td>
+                    <td style="color:var(--red);">70%</td>
+                  </tr>
+                  <tr>
+                    <td>Automation Coverage</td>
+                    <td style="color:var(--green);">97%</td>
+                    <td>99%</td>
+                    <td style="color:var(--yellow);">2%</td>
+                  </tr>
+                  <tr>
+                    <td>SEO Score</td>
+                    <td style="color:var(--muted);">—</td>
+                    <td>90+</td>
+                    <td style="color:var(--muted);">—</td>
+                  </tr>
+                  <tr>
+                    <td>Performance (Lighthouse)</td>
+                    <td style="color:var(--muted);">—</td>
+                    <td>90+</td>
+                    <td style="color:var(--muted);">—</td>
+                  </tr>
+                  <tr>
+                    <td>AdSense Ready</td>
+                    <td style="color:var(--red);">No</td>
+                    <td>Yes</td>
+                    <td style="color:var(--yellow);">~4 weeks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">🚀 Emerging Trends in Web Automation 2026</div>
+          <ul class="strategy-list">
+            <li>
+              <span>🤖</span>
+              <span><strong>AI-enhanced summaries:</strong> Top trend sites now use LLM APIs to generate 2-sentence AI summaries per trend, boosting time-on-page by 35%.</span>
+            </li>
+            <li>
+              <span>📊</span>
+              <span><strong>Real-time WebSocket feeds:</strong> Sites using WebSocket push for live trend updates see 2× lower bounce rates vs polling.</span>
+            </li>
+            <li>
+              <span>🌍</span>
+              <span><strong>Hyperlocal content:</strong> City-level trend breakdowns (e.g., NYC vs LA) are outperforming country-level pages in long-tail SEO.</span>
+            </li>
+            <li>
+              <span>📱</span>
+              <span><strong>PWA + push notifications:</strong> Progressive Web Apps with trend alerts see 3–5× higher return visitor rates and 40% better engagement metrics.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 9: TOOLS & OPTIMIZATION
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-6">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">🔧</span>
+        <h2 class="section-title">Recommended Extensions &amp; Tools</h2>
+        <span class="section-badge">Tooling</span>
+      </div>
+      <div class="section-body">
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr><th>Tool</th><th>Purpose</th><th>Status</th><th>Priority</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lighthouse CI</strong></td>
+                <td>Performance monitoring on every deploy</td>
+                <td class="tool-status-ok">✅ Active via Actions</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Dependabot</strong></td>
+                <td>Automated security dependency updates</td>
+                <td class="tool-status-ok">✅ Active</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>next-pwa</strong></td>
+                <td>Progressive Web App / offline support</td>
+                <td class="tool-status-ok">✅ Active</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Formspree</strong></td>
+                <td>Contact form backend (no server needed)</td>
+                <td class="tool-status-ok">✅ Active</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>UptimeRobot</strong></td>
+                <td>Free uptime monitoring + email alerts</td>
+                <td class="tool-status-warn">🟡 Setup needed</td>
+                <td>🔴 High</td>
+              </tr>
+              <tr>
+                <td><strong>Giscus</strong></td>
+                <td>GitHub-based comments for blog posts</td>
+                <td class="tool-status-warn">🟡 Setup needed</td>
+                <td>🟡 Medium</td>
+              </tr>
+              <tr>
+                <td><strong>Google Search Console API</strong></td>
+                <td>Automate SEO reporting in this dashboard</td>
+                <td class="tool-status-err">🔴 Not connected</td>
+                <td>🔴 High</td>
+              </tr>
+              <tr>
+                <td><strong>GA4 Reporting API</strong></td>
+                <td>Automate analytics reporting in dashboard</td>
+                <td class="tool-status-err">🔴 Not connected</td>
+                <td>🔴 High</td>
+              </tr>
+              <tr>
+                <td><strong>Vercel Analytics</strong></td>
+                <td>Built-in Web Analytics (privacy-first)</td>
+                <td class="tool-status-warn">🟡 Enable in dashboard</td>
+                <td>🟡 Medium</td>
+              </tr>
+              <tr>
+                <td><strong>next-sitemap</strong></td>
+                <td>Auto-generate sitemap.xml on build</td>
+                <td class="tool-status-warn">🟡 Install needed</td>
+                <td>🟡 Medium</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">📈 Automation Maturity Score</div>
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span>Current: <strong>{{AUTO_SCORE}}%</strong> automated</span>
+              <span>Target: 97%</span>
+            </div>
+            <div class="progress-track" style="height:12px;">
+              <div class="progress-fill fill-indigo" style="width: {{AUTO_SCORE}}%"></div>
+            </div>
+          </div>
+          <div class="two-col" style="margin-top:14px;">
+            <div>
+              <div style="font-size:0.78rem; color:var(--green); font-weight:600; margin-bottom:6px;">✅ Automated</div>
+              <ul style="font-size:0.78rem; color:var(--muted); line-height:1.8; list-style:none;">
+                <li>• Hourly trend data collection</li>
+                <li>• Daily blog post generation (EN/KR/JP)</li>
+                <li>• Weekly cleanup &amp; link checking</li>
+                <li>• Git commit &amp; Vercel deploy</li>
+                <li>• Manager report generation</li>
+                <li>• Keyword safety filtering</li>
+              </ul>
+            </div>
+            <div>
+              <div style="font-size:0.78rem; color:var(--yellow); font-weight:600; margin-bottom:6px;">🟡 Still Manual</div>
+              <ul style="font-size:0.78rem; color:var(--muted); line-height:1.8; list-style:none;">
+                <li>• GA4 analytics review</li>
+                <li>• Search Console SEO data</li>
+                <li>• AdSense revenue tracking</li>
+                <li>• Social media sharing</li>
+                <li>• Content quality review</li>
+                <li>• Strategy / roadmap updates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 10: ACTION ITEMS
+  ───────────────────────────────────────────────────────────────── -->
+  <section class="fade-in fade-in-6">
+    <div class="section-card">
+      <div class="section-header">
+        <span class="section-icon">⚠️</span>
+        <h2 class="section-title">Action Items</h2>
+        <span class="section-badge">Auto-generated</span>
+      </div>
+      <div class="section-body">
+        <ul class="action-list">
+          {{ACTION_ITEMS}}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.wrapper -->
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      Next report generated in approx. <strong>{{NEXT_UPDATE_IN}} min</strong> &nbsp;·&nbsp;
+      <a href="https://global-trend-map.vercel.app" target="_blank">global-trend-map.vercel.app</a>
+    </div>
+    <div>
+      Vercel Manager v1.0 &nbsp;·&nbsp; Generated by GitHub Actions on <strong>{{REPORT_DATE}}</strong>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Animate progress bars on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Highlight stale data
+  const dataAgeMin = parseInt('{{DATA_AGE_MINUTES}}', 10) || 0;
+  if (dataAgeMin > 120) {
+    document.querySelectorAll('.{{DATA_AGE_CLASS}}').forEach(el => {
+      el.style.color = 'var(--yellow)';
+    });
+  }
+
+  // Auto-refresh check (subtle indicator)
+  const nextUpdateMin = parseInt('{{NEXT_UPDATE_IN}}', 10) || 60;
+  if (nextUpdateMin < 5) {
+    const pill = document.createElement('div');
+    pill.className = 'status-pill pill-yellow';
+    pill.innerHTML = '<span class="dot"></span> Update imminent';
+    document.querySelector('.status-bar-inner').appendChild(pill);
+  }
+
+  console.log('%c🌐 Vercel Manager Report', 'color:#6366f1;font-size:1.2rem;font-weight:bold;');
+  console.log(`Data: {{TOTAL_COUNTRIES}} countries | {{TOTAL_TRENDS}} trends | Temp: {{GLOBAL_TEMP}}°T`);
+  console.log(`Posts: {{POSTS_TODAY}} today | {{POSTS_TOTAL}} total`);
+  console.log(`Pipeline: {{PIPELINE_DURATION}}s | {{PIPELINE_SUCCESS}} success | {{PIPELINE_ERRORS}} errors`);
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 5 - Minimal iOS</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#ffffff; color:#1c1c1e; font-family:-apple-system,'SF Pro Display','Segoe UI',sans-serif; height:100vh; overflow:hidden; display:flex; flex-direction:column; }
+
+  /* Top status bar */
+  .status-bar {
+    background:#f9f9fb; border-bottom:1px solid rgba(0,0,0,0.06);
+    padding:8px 24px; display:flex; align-items:center; justify-content:space-between;
+    font-size:12px; color:#8e8e93;
+  }
+  .status-left { display:flex; align-items:center; gap:6px; }
+  .live-dot { width:7px; height:7px; background:#34c759; border-radius:50%; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  /* Header */
+  header {
+    padding:16px 24px 12px;
+    display:flex; align-items:center; justify-content:space-between;
+    background:#fff;
+  }
+  .logo { font-size:22px; font-weight:700; letter-spacing:-0.5px; color:#1c1c1e; }
+  .logo span { color:#007aff; }
+  .search-bar {
+    background:#f2f2f7; border-radius:12px; padding:8px 14px;
+    font-size:13px; color:#8e8e93; display:flex; align-items:center; gap:6px;
+    width:220px; cursor:text;
+  }
+  .lang-toggle {
+    display:flex; background:#f2f2f7; border-radius:10px; padding:2px;
+  }
+  .lang-option {
+    padding:5px 10px; border-radius:8px; font-size:12px; cursor:pointer;
+    color:#8e8e93; transition:all 0.2s;
+  }
+  .lang-option.active { background:#fff; color:#1c1c1e; font-weight:600; box-shadow:0 1px 4px rgba(0,0,0,0.12); }
+
+  /* Map */
+  .map-wrapper {
+    flex:1; position:relative; overflow:hidden;
+    background:linear-gradient(180deg,#f9f9fb 0%,#f0f4ff 100%);
+  }
+  .map-img { position:absolute; width:92%; left:4%; top:50%; transform:translateY(-50%); opacity:0.18; }
+
+  /* Minimal pins */
+  .m-pin {
+    position:absolute; cursor:pointer;
+    display:flex; flex-direction:column; align-items:center;
+    transition:all 0.2s;
+  }
+  .m-pin:hover .pin-card { box-shadow:0 8px 30px rgba(0,0,0,0.15); transform:scale(1.04); }
+  .pin-dot-sm { width:10px; height:10px; background:#007aff; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 3px rgba(0,122,255,0.2); }
+  .pin-card {
+    background:#fff; border-radius:14px; padding:8px 12px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+    margin-top:6px; min-width:110px;
+    transition:all 0.2s;
+  }
+  .pin-country { font-size:11px; font-weight:600; color:#8e8e93; margin-bottom:2px; }
+  .pin-trend { font-size:12px; font-weight:600; color:#1c1c1e; }
+  .pin-vol { font-size:10px; color:#007aff; margin-top:1px; }
+
+  /* Bottom drawer */
+  .drawer {
+    background:#fff; border-radius:20px 20px 0 0;
+    box-shadow:0 -2px 20px rgba(0,0,0,0.08);
+    padding:0;
+  }
+  .drawer-handle { display:flex; justify-content:center; padding:10px; }
+  .handle-bar { width:36px; height:4px; background:#e0e0e0; border-radius:2px; }
+  .drawer-content { padding:0 20px 16px; display:flex; gap:10px; overflow-x:auto; }
+  .drawer-content::-webkit-scrollbar { display:none; }
+  .drawer-card {
+    min-width:130px; padding:14px; border-radius:16px;
+    background:#f9f9fb; cursor:pointer; transition:all 0.2s; flex-shrink:0;
+  }
+  .drawer-card:hover { background:#f0f0f5; transform:scale(1.02); }
+  .dc-flag { font-size:20px; margin-bottom:6px; }
+  .dc-kw { font-size:12px; font-weight:700; color:#1c1c1e; margin-bottom:2px; }
+  .dc-meta { font-size:10px; color:#8e8e93; }
+  .dc-badge {
+    display:inline-block; font-size:10px; padding:2px 6px; border-radius:6px;
+    font-weight:600; margin-top:4px;
+  }
+  .dc-hot { background:rgba(255,59,48,0.1); color:#ff3b30; }
+  .dc-warm { background:rgba(255,149,0,0.1); color:#ff9500; }
+  .dc-cool { background:rgba(0,122,255,0.1); color:#007aff; }
+
+  /* Popup */
+  .popup-overlay { position:fixed;inset:0;background:rgba(0,0,0,0.3);display:flex;align-items:flex-end;justify-content:center;z-index:100;backdrop-filter:blur(8px); }
+  .popup {
+    background:#fff; border-radius:28px 28px 0 0;
+    width:100%; max-width:480px;
+    box-shadow:0 -4px 40px rgba(0,0,0,0.15);
+    overflow:hidden;
+    animation:slideUp 0.3s ease-out;
+  }
+  @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} }
+  .popup-handle { display:flex;justify-content:center;padding:10px; }
+  .popup-head { padding:4px 24px 16px; display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f2f2f7; }
+  .p-left { }
+  .p-country { font-size:22px;font-weight:700;letter-spacing:-0.5px; }
+  .p-sub { font-size:12px;color:#8e8e93;margin-top:3px; }
+  .close-btn { background:#f2f2f7;border:none;color:#8e8e93;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center; }
+  .popup-tabs { display:flex;padding:4px 12px;gap:4px;background:#f9f9fb; }
+  .tab { flex:1;padding:8px 0;text-align:center;font-size:12px;cursor:pointer;color:#8e8e93;border-radius:10px;transition:all 0.2s; }
+  .tab.active { background:#fff;color:#007aff;font-weight:600;box-shadow:0 1px 4px rgba(0,0,0,0.1); }
+  .popup-body { padding:12px 20px 32px;max-height:320px;overflow-y:auto; }
+  .t-item { display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f2f2f7; }
+  .t-num { width:28px;height:28px;background:#f2f2f7;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#007aff; }
+  .t-info { flex:1; }
+  .t-name { font-size:14px;font-weight:600;color:#1c1c1e; }
+  .t-cat { font-size:11px;color:#8e8e93;margin-top:2px; }
+  .t-bar { height:3px;background:#f2f2f7;border-radius:2px;margin-top:5px; }
+  .t-fill { height:100%;background:#007aff;border-radius:2px; }
+  .t-vol { font-size:11px;color:#007aff;font-weight:600;white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="status-left">
+    <div class="live-dot"></div>
+    <span id="timer">방금 업데이트됨</span>
+  </div>
+  <div>68개국 · 12,430건 트렌드</div>
+</div>
+
+<header>
+  <div class="logo">trend<span>·</span>map</div>
+  <div class="search-bar">🔍 나라 검색...</div>
+  <div class="lang-toggle">
+    <div class="lang-option active">KR</div>
+    <div class="lang-option">EN</div>
+    <div class="lang-option">JP</div>
+  </div>
+</header>
+
+<div class="map-wrapper">
+  <img class="map-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BlankMap-World.svg/1280px-BlankMap-World.svg.png"/>
+
+  <div class="m-pin" style="left:17%;top:28%" onclick="openPopup('미국','🇺🇸')">
+    <div class="pin-dot-sm" style="background:#ff3b30;box-shadow:0 0 0 3px rgba(255,59,48,0.2)"></div>
+    <div class="pin-card"><div class="pin-country">🇺🇸 미국</div><div class="pin-trend">Trump Trial</div><div class="pin-vol">950K 검색</div></div>
+  </div>
+  <div class="m-pin" style="left:46%;top:22%" onclick="openPopup('독일','🇩🇪')">
+    <div class="pin-dot-sm" style="background:#ff9500;box-shadow:0 0 0 3px rgba(255,149,0,0.2)"></div>
+    <div class="pin-card"><div class="pin-country">🇩🇪 독일</div><div class="pin-trend">Bundesliga</div><div class="pin-vol">420K 검색</div></div>
+  </div>
+  <div class="m-pin" style="left:73%;top:28%" onclick="openPopup('한국','🇰🇷')">
+    <div class="pin-dot-sm" style="background:#ff3b30;box-shadow:0 0 0 3px rgba(255,59,48,0.2)"></div>
+    <div class="pin-card"><div class="pin-country">🇰🇷 한국</div><div class="pin-trend">부동산 대책</div><div class="pin-vol">780K 검색</div></div>
+  </div>
+  <div class="m-pin" style="left:77%;top:37%" onclick="openPopup('일본','🇯🇵')">
+    <div class="pin-dot-sm" style="background:#ff9500;box-shadow:0 0 0 3px rgba(255,149,0,0.2)"></div>
+    <div class="pin-card"><div class="pin-country">🇯🇵 일본</div><div class="pin-trend">桜前線 2025</div><div class="pin-vol">650K 검색</div></div>
+  </div>
+  <div class="m-pin" style="left:60%;top:42%" onclick="openPopup('인도','🇮🇳')">
+    <div class="pin-dot-sm"></div>
+    <div class="pin-card"><div class="pin-country">🇮🇳 인도</div><div class="pin-trend">IPL Final</div><div class="pin-vol">580K 검색</div></div>
+  </div>
+  <div class="m-pin" style="left:49%;top:55%" onclick="openPopup('브라질','🇧🇷')">
+    <div class="pin-dot-sm"></div>
+    <div class="pin-card"><div class="pin-country">🇧🇷 브라질</div><div class="pin-trend">Carnaval</div><div class="pin-vol">480K 검색</div></div>
+  </div>
+</div>
+
+<div class="drawer">
+  <div class="drawer-handle"><div class="handle-bar"></div></div>
+  <div class="drawer-content">
+    <div class="drawer-card" onclick="openPopup('미국','🇺🇸')"><div class="dc-flag">🇺🇸</div><div class="dc-kw">Trump Trial</div><div class="dc-meta">미국 · 검색어</div><div class="dc-badge dc-hot">🔥 급상승</div></div>
+    <div class="drawer-card" onclick="openPopup('한국','🇰🇷')"><div class="dc-flag">🇰🇷</div><div class="dc-kw">부동산 대책</div><div class="dc-meta">한국 · 검색어</div><div class="dc-badge dc-hot">🔥 급상승</div></div>
+    <div class="drawer-card" onclick="openPopup('일본','🇯🇵')"><div class="dc-flag">🇯🇵</div><div class="dc-kw">桜前線 2025</div><div class="dc-meta">일본 · 검색어</div><div class="dc-badge dc-warm">↑ 상승중</div></div>
+    <div class="drawer-card" onclick="openPopup('인도','🇮🇳')"><div class="dc-flag">🇮🇳</div><div class="dc-kw">IPL 2025 Final</div><div class="dc-meta">인도 · 스포츠</div><div class="dc-badge dc-warm">↑ 상승중</div></div>
+    <div class="drawer-card" onclick="openPopup('영국','🇬🇧')"><div class="dc-flag">🇬🇧</div><div class="dc-kw">Premier League</div><div class="dc-meta">영국 · 스포츠</div><div class="dc-badge dc-cool">• 활성</div></div>
+    <div class="drawer-card" onclick="openPopup('브라질','🇧🇷')"><div class="dc-flag">🇧🇷</div><div class="dc-kw">Carnaval Rio</div><div class="dc-meta">브라질 · 문화</div><div class="dc-badge dc-cool">• 활성</div></div>
+  </div>
+</div>
+
+<!-- Popup - iOS sheet style -->
+<div class="popup-overlay" id="popup" style="display:none" onclick="if(event.target===this)closePopup()">
+  <div class="popup">
+    <div class="popup-handle"><div class="handle-bar" style="background:#e0e0e0"></div></div>
+    <div class="popup-head">
+      <div><div class="p-country" id="popup-country">🇰🇷 한국</div><div class="p-sub">아시아 · 1시간 12분 전 업데이트</div></div>
+      <button class="close-btn" onclick="closePopup()">✕</button>
+    </div>
+    <div class="popup-tabs" style="margin:8px 12px;border-radius:12px">
+      <div class="tab active">🔍 검색어</div><div class="tab">📺 유튜브</div><div class="tab">📰 뉴스</div><div class="tab">📱 앱</div>
+    </div>
+    <div class="popup-body">
+      <div class="t-item"><div class="t-num">1</div><div class="t-info"><div class="t-name">부동산 대책 2025</div><div class="t-cat">정치 · 경제</div><div class="t-bar"><div class="t-fill" style="width:95%"></div></div></div><div class="t-vol">950K</div></div>
+      <div class="t-item"><div class="t-num">2</div><div class="t-info"><div class="t-name">아이유 콘서트</div><div class="t-cat">연예 · 음악</div><div class="t-bar"><div class="t-fill" style="width:78%"></div></div></div><div class="t-vol">780K</div></div>
+      <div class="t-item"><div class="t-num">3</div><div class="t-info"><div class="t-name">내일 날씨</div><div class="t-cat">날씨</div><div class="t-bar"><div class="t-fill" style="width:65%"></div></div></div><div class="t-vol">650K</div></div>
+      <div class="t-item"><div class="t-num">4</div><div class="t-info"><div class="t-name">손흥민 골</div><div class="t-cat">스포츠</div><div class="t-bar"><div class="t-fill" style="width:52%"></div></div></div><div class="t-vol">520K</div></div>
+      <div class="t-item"><div class="t-num">5</div><div class="t-info"><div class="t-name">ChatGPT 업데이트</div><div class="t-cat">기술</div><div class="t-bar"><div class="t-fill" style="width:40%"></div></div></div><div class="t-vol">400K</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let s=0;
+  setInterval(()=>{s++;document.getElementById('timer').textContent=s<60?`${s}초 전 업데이트됨`:s<3600?`${Math.floor(s/60)}분 전 업데이트됨`:`${Math.floor(s/3600)}시간 전 업데이트됨`;},1000);
+  function openPopup(c,f){document.getElementById('popup-country').textContent=`${f} ${c}`;document.getElementById('popup').style.display='flex';}
+  function closePopup(){document.getElementById('popup').style.display='none';}
+  setTimeout(()=>openPopup('한국','🇰🇷'),1500);
+</script>
+</body>
+</html>

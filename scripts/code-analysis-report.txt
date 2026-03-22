@@ -1,0 +1,255 @@
+================================================================================
+GLOBAL TREND MAP — CODE & AUTOMATION QUALITY ANALYSIS REPORT
+Generated: 2026-03-23
+Analyzer: Claude Code (claude-sonnet-4-6)
+================================================================================
+
+OVERALL SCORES
+──────────────
+  Code Quality Score       : 62 / 100
+  Automation Reliability   : 65 / 100
+
+================================================================================
+SECTION 1: TypeScript / Code Quality
+================================================================================
+
+[FINDING CQ-01] CRITICAL — 'any' types in WorldMap.tsx
+  File   : src/components/WorldMap.tsx
+  Lines  : 71, 86, 103, 127, 143
+  Detail : The `getAlpha2FromGeo`, `handleCountryClick`, `handleMouseEnter`,
+           `getFillColor`, and `getStrokeColor` callbacks all accept `geo: any`.
+           Despite strict: true in tsconfig.json, these any-typed parameters
+           suppress all type checking on the most complex component in the app.
+  Impact : Runtime errors if the geography GeoJSON schema changes; TS strict
+           mode provides zero protection for this code path.
+  Fix    : Define an interface for the geo object shape from react-simple-maps
+           (e.g., `interface GeoFeature { rsmKey: string; id?: string|number;
+           properties: Record<string, string|number|undefined>; }`) and replace
+           all `geo: any` annotations.
+
+[FINDING CQ-02] CRITICAL — No React Error Boundaries
+  Files  : src/app/page.tsx, src/components/WorldMap.tsx,
+           src/components/TrendList.tsx, src/components/RightPanel.tsx
+  Detail : No ErrorBoundary component exists anywhere in the codebase.
+           - WorldMap.tsx is wrapped in <Suspense> for loading states but has
+             no error boundary; a runtime error crashes the entire map section.
+           - TrendList.tsx and RightPanel.tsx have no protection at all.
+           - page.tsx as the root server component has no error.tsx sibling.
+  Impact : Any unhandled JS error in a client component causes a full white
+           screen (WSOD) with no fallback UI and no user messaging.
+  Fix    : Create src/components/ErrorBoundary.tsx, wrap WorldMap, TrendList,
+           and RightPanel in it. Also add src/app/error.tsx for the root layout.
+
+[FINDING CQ-03] MEDIUM — Hover state causing excessive re-renders in TrendList
+  File   : src/components/TrendList.tsx
+  Lines  : 265–268 (TrendRow component)
+  Detail : Each TrendRow is a separate component with its own `useState(false)`
+           for hover tracking. When the trend list contains 50 items, scrolling
+           and mouse movement triggers up to 50 individual React state updates
+           and re-renders simultaneously.
+  Impact : Visible jank on lower-end devices; unnecessary React reconciliation
+           work on every mouse event.
+  Fix    : Replace per-row hover state with CSS `:hover` pseudo-classes, or
+           hoist a single `hoveredIndex: number | null` state to the parent
+           TrendList component and pass it down.
+
+[FINDING CQ-04] MEDIUM — Clipboard API used without error handling
+  File   : src/components/Header.tsx
+  Lines  : 61–65 (copyShareLink), 76–80 (copyEmbedCode)
+  Detail : `navigator.clipboard.writeText(...)` is called with `.then()` but
+           no `.catch()`. If the browser denies clipboard permission (e.g., in
+           non-HTTPS environments, certain mobile browsers, or with strict
+           permissions policies), the Promise rejects silently. The button
+           appears to do nothing.
+  Impact : Silent failure on clipboard access denied — no user feedback, no
+           fallback (e.g., `document.execCommand('copy')`).
+  Fix    : Add `.catch(err => { /* show error toast or fallback */ })` to both
+           clipboard calls.
+
+[FINDING CQ-05] LOW — Language switcher UI is non-functional
+  File   : src/components/Header.tsx
+  Lines  : 239–243 (setActiveLang)
+  Detail : The language selector updates `activeLang` state and closes the
+           dropdown, but `activeLang` is never used to actually change the
+           page language, fetch translated content, or navigate to a different
+           locale route. The feature is visually complete but does nothing.
+  Impact : User confusion; clicking KR or JP appears to work but the page
+           content remains in English.
+  Fix    : Connect `activeLang` to Next.js i18n routing or pass it to a
+           context that controls which translation strings are rendered.
+
+[FINDING CQ-06] LOW — Missing 'key' prop stability in WorldMap geography loop
+  File   : src/components/WorldMap.tsx
+  Lines  : 231–270 (geographies.map)
+  Detail : `geo.rsmKey` is used as the React key, which is correct. However,
+           `getFillColor(geo)` and `getStrokeColor(geo)` are called inside the
+           render function during the map — they each call `getAlpha2FromGeo(geo)`
+           internally, meaning the same lookup runs 3 times per country per
+           render cycle (once for fill, once for stroke, once for hasData check).
+  Impact : ~570 redundant function calls per render (190 countries × 3 calls).
+  Fix    : Call `getAlpha2FromGeo(geo)` once per iteration, store in a const,
+           and pass the resolved code into the color functions.
+
+[FINDING CQ-07] INFO — TypeScript strict mode confirmed enabled
+  File   : tsconfig.json
+  Line   : 6
+  Detail : `"strict": true` is set. This enables strictNullChecks,
+           noImplicitAny, strictFunctionTypes, etc. The any-type violations in
+           WorldMap.tsx are therefore explicit bypasses, not accidents.
+
+================================================================================
+SECTION 2: Automation / Workflow Quality
+================================================================================
+
+[FINDING AU-01] CRITICAL — No retry logic in collect_trends.py
+  File   : scripts/collect_trends.py
+  Lines  : 137–145 (safe_get), 251–263 (collect_google_trends)
+  Detail : `safe_get()` makes a single attempt and returns None on any failure.
+           The caller in `collect_google_trends()` records an empty list and sets
+           `success = False`, but the pipeline continues without retrying.
+           Google Trends RSS is known to return 429 (rate limit) or 5xx errors
+           transiently. With 35 countries fetched sequentially, any one failure
+           silently produces an empty trend array for that country.
+  Impact : Countries can appear on the map with zero trends due to a transient
+           network hiccup, with no human-visible alert.
+  Fix    : Implement exponential backoff retry in safe_get() — e.g., 3 attempts
+           with delays of 1s, 5s, 15s before giving up.
+
+[FINDING AU-02] CRITICAL — No fallback / stale-data safety net
+  File   : scripts/collect_trends.py, .github/workflows/collect-data.yml
+  Lines  : collect_trends.py:672–673 (unconditional overwrite of OUTPUT_FILE)
+  Detail : If the entire pipeline produces zero valid trends (all sources fail),
+           the script still writes the output JSON, replacing the previous
+           good data with an empty or near-empty dataset. The workflow has a
+           "Verify output file" step that checks the file exists but does NOT
+           check whether totalTrends > 0 before committing.
+  Impact : A total API outage causes the live site to show an empty map and
+           zero trend count, breaking user experience until the next hourly run.
+  Fix    : Before overwriting trends.json, validate that totalTrends >= minimum
+           threshold (e.g., 50). If below threshold, keep the existing file and
+           exit with a warning rather than overwriting.
+
+[FINDING AU-03] MEDIUM — Race condition between collect-data and generate-blog
+  Files  : .github/workflows/collect-data.yml,
+           .github/workflows/generate-blog.yml
+  Detail : collect-data runs every hour (cron '0 * * * *'). generate-blog runs
+           daily at midnight (cron '0 0 * * *'). At midnight, both workflows
+           trigger simultaneously. generate-blog has a fallback to run
+           collect_trends.py if trends.json is missing, but if collect-data is
+           mid-run and has partially committed, generate-blog may read an
+           incomplete JSON file or an older backup.
+  Impact : Blog posts generated at midnight may be based on stale or
+           partially-written trend data.
+  Fix    : Add `needs: [collect]` dependency in generate-blog.yml (via
+           workflow_call) or use a repository_dispatch event from collect-data
+           to trigger blog generation only after a successful data commit.
+
+[FINDING AU-04] MEDIUM — Failure alerting is GitHub-annotations-only
+  Files  : .github/workflows/collect-data.yml (lines 75–79),
+           .github/workflows/generate-blog.yml (lines 103–106)
+  Detail : Both workflows use `echo "::error title=..."` on failure, which only
+           creates GitHub annotations visible in the Actions UI. There is no
+           external notification (email, Slack webhook, PagerDuty).
+  Impact : If nobody checks the GitHub Actions dashboard, pipeline failures go
+           undetected. With hourly runs, data could be stale for many hours
+           before discovery.
+  Fix    : Add a failure notification step using a Slack incoming webhook
+           (stored as a GitHub secret) or GitHub's built-in email notifications
+           for workflow failures.
+
+[FINDING AU-05] MEDIUM — Wikipedia enrichment is bottlenecked by sequential I/O
+  File   : scripts/collect_trends.py
+  Lines  : 381–399 (fetch_wikipedia_description), 499–503 (enrich_trends loop)
+  Detail : For each country's top-20 trends, if a description is missing, a
+           Wikipedia API call is made synchronously with a 0.2s sleep.
+           In the worst case: 35 countries × 20 trends × 0.2s = 140 seconds
+           of pure sleep (plus actual network latency). This makes the
+           collection pipeline potentially take 3–5 minutes on cold runs.
+  Impact : The pipeline runs close to its 20-minute timeout in worst-case
+           scenarios. Under heavy load or slow network, it may time out and
+           produce no output.
+  Fix    : Use concurrent.futures.ThreadPoolExecutor to fetch Wikipedia
+           descriptions in parallel (10–20 threads). Reduce individual sleep
+           to 0.05s. Add the _wiki_cache to avoid duplicate fetches.
+
+[FINDING AU-06] LOW — generate_blog.py makes direct HTTP calls without a session
+  File   : scripts/generate_blog.py
+  Lines  : 221 (fetch_wiki_description), 232 (fetch_gdelt_headlines)
+  Detail : Unlike collect_trends.py which uses a shared requests.Session(),
+           generate_blog.py calls requests.get() directly each time, creating
+           a new TCP connection per call. This is less efficient and bypasses
+           any connection pooling.
+  Impact : Slower execution and higher resource usage for blog generation runs
+           that make many Wikipedia/GDELT calls.
+  Fix    : Create a module-level SESSION = requests.Session() and use it for
+           all outbound HTTP calls in generate_blog.py.
+
+[FINDING AU-07] LOW — Git email in workflows contains a personal address
+  Files  : .github/workflows/collect-data.yml (line 67),
+           .github/workflows/generate-blog.yml (line 94)
+  Detail : Both workflows hard-code `git config user.email "hsr815815@gmail.com"`.
+           This exposes a personal email address in a public repository's
+           commit history and workflow file.
+  Impact : Privacy concern; also ties the automation to a personal account
+           rather than an organization/bot account.
+  Fix    : Use a GitHub Actions bot email: `github-actions[bot]@users.noreply.github.com`
+           or a dedicated service account email stored as a GitHub secret.
+
+================================================================================
+SECTION 3: Security
+================================================================================
+
+[FINDING SEC-01] LOW — YouTube API key exposed in workflow run logs
+  File   : .github/workflows/collect-data.yml
+  Lines  : 46–47
+  Detail : YOUTUBE_API_KEY is correctly stored as a GitHub secret and passed as
+           an environment variable. However, collect_trends.py logs the fact
+           that the key is missing/present (line 270) but does not log the key
+           value itself. This is correctly handled.
+  Status : PASS — no secret exposure found.
+
+[FINDING SEC-02] LOW — No Content Security Policy headers
+  File   : src/app/ (layout or next.config)
+  Detail : No CSP, X-Frame-Options, or other security headers are configured.
+           The WorldMap loads an external CDN URL
+           (cdn.jsdelivr.net/npm/world-atlas) without SRI (Subresource Integrity)
+           hash verification.
+  Impact : If the CDN is compromised, malicious GeoJSON could be injected.
+           Also, XSS via injected scripts is possible without CSP.
+  Fix    : Add security headers in next.config.js (headers() function) and add
+           an `integrity` attribute to the GEO_URL fetch if possible (or host
+           the file locally).
+
+================================================================================
+SECTION 4: Critical Issues Fixed
+================================================================================
+
+No build-breaking errors or security vulnerabilities requiring immediate code
+edits were found. The 'any' type violations are present but do not cause build
+failures (they suppress checking rather than produce errors). All identified
+issues are logged above with recommended fixes.
+
+================================================================================
+SECTION 5: Summary Statistics
+================================================================================
+
+  Files analyzed          : 9
+  TypeScript files        : 5 (page.tsx, WorldMap.tsx, Header.tsx,
+                               TrendList.tsx, RightPanel.tsx)
+  Python scripts          : 2 (collect_trends.py, generate_blog.py)
+  GitHub workflow files   : 2 (collect-data.yml, generate-blog.yml)
+
+  Findings by severity    :
+    Critical              : 4  (CQ-01, CQ-02, AU-01, AU-02)
+    Medium                : 5  (CQ-03, CQ-04, AU-03, AU-04, AU-05)
+    Low / Info            : 5  (CQ-05, CQ-06, CQ-07, AU-06, AU-07, SEC-01, SEC-02)
+
+  TypeScript 'any' violations : 4 locations (all in WorldMap.tsx)
+  Error boundaries            : 0 (none implemented)
+  Test files                  : 0 (0% coverage)
+  Retry logic in scripts      : 0 of 5 HTTP fetchers have retry
+  External failure alerting   : 0 of 2 workflows
+
+================================================================================
+END OF REPORT
+================================================================================

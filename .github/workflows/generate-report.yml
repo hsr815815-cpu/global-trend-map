@@ -1,0 +1,102 @@
+name: Generate Manager Report
+
+on:
+  schedule:
+    - cron: '30 1 * * *'  # Daily at 01:30 UTC (after blog generation)
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+concurrency:
+  group: report-pipeline
+  cancel-in-progress: false
+
+jobs:
+  report:
+    name: Generate Daily Manager Report
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests==2.31.0 feedparser==6.0.11
+
+      - name: Ensure report directory exists
+        run: mkdir -p public/report
+
+      - name: Verify required data files exist
+        run: |
+          MISSING=0
+
+          if [ ! -f public/data/trends.json ]; then
+            echo "::warning::trends.json not found — report will use defaults"
+            MISSING=1
+          else
+            echo "✅ trends.json found"
+          fi
+
+          if [ ! -f public/data/posts-index.json ]; then
+            echo "::warning::posts-index.json not found — blog stats will be empty"
+          else
+            echo "✅ posts-index.json found"
+          fi
+
+          if [ ! -f scripts/report-template.html ]; then
+            echo "::error::report-template.html not found — cannot generate report"
+            exit 1
+          fi
+          echo "✅ report-template.html found"
+
+      - name: Generate manager report
+        run: |
+          echo "=== Generating manager report ==="
+          # Run without opening browser (CI environment)
+          python scripts/generate_report.py
+          echo "=== Report generation complete ==="
+
+      - name: Verify report output
+        run: |
+          if [ -f public/report/manager-report.html ]; then
+            echo "✅ manager-report.html generated"
+            echo "File size: $(wc -c < public/report/manager-report.html) bytes"
+          else
+            echo "❌ manager-report.html not found"
+            exit 1
+          fi
+
+      - name: Commit and push manager report
+        run: |
+          git config user.name "Vercel Manager Bot"
+          git config user.email "hsr815815@gmail.com"
+          git add public/report/manager-report.html
+          git diff --staged --quiet || git commit -m "📊 Auto: Update manager report $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: manager-report-${{ github.run_id }}
+          path: public/report/manager-report.html
+          retention-days: 30
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error title=Report Generation Failed::The manager report generation failed. Check generate_report.py logs."

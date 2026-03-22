@@ -1,0 +1,141 @@
+name: Weekly Maintenance
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'   # Every Sunday at 02:00 UTC
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+concurrency:
+  group: maintenance
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    name: Clean Up Old Archive Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run archive cleanup
+        run: |
+          echo "=== Running archive cleanup (removing files older than 30 days) ==="
+          python scripts/cleanup_old_data.py
+          echo "=== Cleanup complete ==="
+
+      - name: Commit cleaned archive
+        run: |
+          git config user.name "Vercel Manager Bot"
+          git config user.email "hsr815815@gmail.com"
+          git add public/data/archive/
+          git diff --staged --quiet || git commit -m "🧹 Auto: Clean archive data older than 30 days"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  check-links:
+    name: Check for Broken Links
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: cleanup   # Run after cleanup
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests==2.31.0 feedparser==6.0.11
+
+      - name: Ensure report directory exists
+        run: mkdir -p public/report
+
+      - name: Run broken link checker
+        id: link-check
+        continue-on-error: true   # Don't fail the whole workflow for broken links
+        run: |
+          echo "=== Checking for broken links on live site ==="
+          python scripts/check_broken_links.py https://global-trend-map.vercel.app
+          echo "=== Link check complete ==="
+
+      - name: Upload link report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: broken-links-report-${{ github.run_id }}
+          path: public/report/broken-links-report.txt
+          retention-days: 90
+
+      - name: Print link report summary
+        run: |
+          if [ -f public/report/broken-links-report.txt ]; then
+            echo "=== BROKEN LINKS REPORT ==="
+            cat public/report/broken-links-report.txt
+          else
+            echo "No report file generated"
+          fi
+
+      - name: Warn if broken links found
+        if: steps.link-check.outcome == 'failure'
+        run: |
+          echo "::warning title=Broken Links Detected::One or more broken links were found on the site. Download the artifact 'broken-links-report' for details."
+
+  dependency-audit:
+    name: Dependency Security Audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run npm audit
+        continue-on-error: true
+        run: |
+          echo "=== npm audit ==="
+          npm audit --audit-level=high || echo "::warning::High-severity vulnerabilities found — review npm audit output"
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pip-audit
+        run: pip install pip-audit
+
+      - name: Run pip audit
+        continue-on-error: true
+        run: |
+          echo "=== pip-audit for Python dependencies ==="
+          pip-audit -r requirements.txt || echo "::warning::Python dependency vulnerabilities found"

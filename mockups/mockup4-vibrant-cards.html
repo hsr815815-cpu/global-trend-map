@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 4 - Vibrant Cards</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#f0f2f5; color:#1a1a1a; font-family:'Segoe UI',sans-serif; height:100vh; overflow:hidden; display:flex; flex-direction:column; }
+
+  header {
+    background:#fff; padding:0 24px; height:58px;
+    display:flex; align-items:center; justify-content:space-between;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+  }
+  .logo { font-size:21px; font-weight:900; background:linear-gradient(135deg,#f7971e,#ff6b6b,#c471f5); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .update-pill {
+    display:flex; align-items:center; gap:6px;
+    background:linear-gradient(135deg,rgba(247,151,30,0.1),rgba(196,113,245,0.1));
+    border:1px solid rgba(247,151,30,0.2); padding:6px 14px; border-radius:20px; font-size:12px;
+  }
+  .dot { width:8px; height:8px; background:#ff6b6b; border-radius:50%; animation:pulse 1.2s infinite; }
+  @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.4);opacity:0.5} }
+  .lang-group { display:flex; gap:4px; }
+  .lang-btn { padding:5px 10px; border-radius:8px; border:1px solid #e0e0e0; font-size:12px; cursor:pointer; transition:all 0.2s; }
+  .lang-btn.active { background:linear-gradient(135deg,#f7971e,#ff6b6b); color:#fff; border-color:transparent; }
+
+  .main { display:flex; flex:1; overflow:hidden; gap:0; }
+
+  /* Map section - takes up 60% */
+  .map-section { flex:1; position:relative; display:flex; flex-direction:column; }
+  .map-wrapper {
+    flex:1; position:relative; overflow:hidden;
+    background:linear-gradient(180deg,#e8f4fd 0%,#d1ecf1 100%);
+  }
+  .map-img { width:100%; height:100%; object-fit:cover; opacity:0.4; }
+  /* Floating badges on map */
+  .float-badge {
+    position:absolute; background:#fff;
+    border-radius:12px; padding:6px 10px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.12);
+    cursor:pointer; transition:all 0.25s;
+    display:flex; align-items:center; gap:6px;
+    min-width:100px;
+  }
+  .float-badge:hover { transform:translateY(-3px); box-shadow:0 8px 28px rgba(0,0,0,0.18); }
+  .badge-flag { font-size:18px; }
+  .badge-info { }
+  .badge-country { font-size:11px; font-weight:700; color:#333; }
+  .badge-keyword { font-size:10px; color:#888; white-space:nowrap; max-width:100px; overflow:hidden; text-overflow:ellipsis; }
+  .badge-rank {
+    font-size:10px; font-weight:800; padding:2px 5px; border-radius:4px;
+    margin-left:auto;
+  }
+  .rank-hot { background:rgba(255,107,107,0.15); color:#ff6b6b; }
+  .rank-warm { background:rgba(247,151,30,0.15); color:#f7971e; }
+  .rank-cool { background:rgba(100,181,246,0.15); color:#42a5f5; }
+
+  /* Bottom cards strip */
+  .cards-strip {
+    height:130px; background:#fff;
+    border-top:1px solid #eee;
+    display:flex; align-items:center;
+    padding:0 16px; gap:12px;
+    overflow-x:auto;
+  }
+  .cards-strip::-webkit-scrollbar { height:4px; }
+  .cards-strip::-webkit-scrollbar-thumb { background:#e0e0e0; border-radius:2px; }
+  .card {
+    min-width:140px; height:100px; border-radius:14px; padding:12px;
+    cursor:pointer; transition:all 0.2s; flex-shrink:0;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .card:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,0.15); }
+  .card-1 { background:linear-gradient(135deg,#667eea,#764ba2); color:#fff; }
+  .card-2 { background:linear-gradient(135deg,#f7971e,#ffd200); color:#fff; }
+  .card-3 { background:linear-gradient(135deg,#f953c6,#b91d73); color:#fff; }
+  .card-4 { background:linear-gradient(135deg,#43e97b,#38f9d7); color:#fff; }
+  .card-5 { background:linear-gradient(135deg,#4facfe,#00f2fe); color:#fff; }
+  .card-6 { background:linear-gradient(135deg,#fa709a,#fee140); color:#fff; }
+  .card-7 { background:linear-gradient(135deg,#30cfd0,#330867); color:#fff; }
+  .card-flag { font-size:22px; }
+  .card-kw { font-size:12px; font-weight:700; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+  .card-meta { font-size:10px; opacity:0.8; display:flex; justify-content:space-between; }
+
+  /* Popup */
+  .popup-overlay { position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;z-index:100;backdrop-filter:blur(5px); }
+  .popup { background:#fff;border-radius:24px;width:400px;max-width:95vw;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,0.2); }
+  .popup-head { padding:24px; background:linear-gradient(135deg,#f7971e,#ff6b6b,#c471f5); color:#fff; display:flex;justify-content:space-between;align-items:flex-start; }
+  .p-country { font-size:22px;font-weight:800; }
+  .p-sub { font-size:12px;opacity:0.85;margin-top:3px; }
+  .close-btn { background:rgba(255,255,255,0.25);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:15px; }
+  .popup-tabs { display:flex;background:#f8f8f8;border-bottom:1px solid #f0f0f0; }
+  .tab { flex:1;padding:11px 0;text-align:center;font-size:12px;cursor:pointer;color:#aaa;transition:all 0.2s; }
+  .tab.active { color:#ff6b6b;border-bottom:2px solid #ff6b6b;font-weight:600; }
+  .popup-body { padding:16px 20px 20px;max-height:340px;overflow-y:auto; }
+  .t-item { display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #f5f5f5; }
+  .t-num { width:26px;text-align:center;font-size:16px;font-weight:800;background:linear-gradient(135deg,#f7971e,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+  .t-info { flex:1; }
+  .t-name { font-size:13px;font-weight:600;color:#1a1a1a; }
+  .t-cat { font-size:11px;color:#aaa;margin-top:2px; }
+  .t-bar { height:3px;background:#f0f0f0;border-radius:2px;margin-top:5px; }
+  .t-fill { height:100%;background:linear-gradient(135deg,#f7971e,#ff6b6b);border-radius:2px; }
+  .t-vol { font-size:11px;color:#f7971e;font-weight:700;white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌏 TrendVibe</div>
+  <div class="update-pill">
+    <div class="dot"></div>
+    <span id="timer">방금 업데이트</span>
+  </div>
+  <div class="lang-group">
+    <button class="lang-btn active">🇰🇷 KR</button>
+    <button class="lang-btn">🇺🇸 EN</button>
+    <button class="lang-btn">🇯🇵 JP</button>
+    <button class="lang-btn">🇨🇳 CN</button>
+  </div>
+</header>
+
+<div class="main">
+  <div class="map-section">
+    <div class="map-wrapper">
+      <img class="map-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BlankMap-World.svg/1280px-BlankMap-World.svg.png" style="position:absolute;width:100%;height:100%;object-fit:cover;"/>
+
+      <!-- Floating badges -->
+      <div class="float-badge" style="left:16%;top:32%" onclick="openPopup('미국','🇺🇸')">
+        <div class="badge-flag">🇺🇸</div>
+        <div class="badge-info"><div class="badge-country">미국</div><div class="badge-keyword">Trump Trial</div></div>
+        <div class="badge-rank rank-hot">HOT</div>
+      </div>
+      <div class="float-badge" style="left:44%;top:22%" onclick="openPopup('독일','🇩🇪')">
+        <div class="badge-flag">🇩🇪</div>
+        <div class="badge-info"><div class="badge-country">독일</div><div class="badge-keyword">Bundesliga</div></div>
+        <div class="badge-rank rank-warm">TOP</div>
+      </div>
+      <div class="float-badge" style="left:54%;top:28%" onclick="openPopup('프랑스','🇫🇷')">
+        <div class="badge-flag">🇫🇷</div>
+        <div class="badge-info"><div class="badge-country">프랑스</div><div class="badge-keyword">Roland Garros</div></div>
+        <div class="badge-rank rank-warm">TOP</div>
+      </div>
+      <div class="float-badge" style="left:73%;top:30%" onclick="openPopup('한국','🇰🇷')">
+        <div class="badge-flag">🇰🇷</div>
+        <div class="badge-info"><div class="badge-country">한국</div><div class="badge-keyword">부동산 대책</div></div>
+        <div class="badge-rank rank-hot">HOT</div>
+      </div>
+      <div class="float-badge" style="left:76%;top:40%" onclick="openPopup('일본','🇯🇵')">
+        <div class="badge-flag">🇯🇵</div>
+        <div class="badge-info"><div class="badge-country">일본</div><div class="badge-keyword">桜前線 2025</div></div>
+        <div class="badge-rank rank-warm">TOP</div>
+      </div>
+      <div class="float-badge" style="left:60%;top:42%" onclick="openPopup('인도','🇮🇳')">
+        <div class="badge-flag">🇮🇳</div>
+        <div class="badge-info"><div class="badge-country">인도</div><div class="badge-keyword">IPL Final</div></div>
+        <div class="badge-rank rank-cool">NEW</div>
+      </div>
+      <div class="float-badge" style="left:48%;top:55%" onclick="openPopup('브라질','🇧🇷')">
+        <div class="badge-flag">🇧🇷</div>
+        <div class="badge-info"><div class="badge-country">브라질</div><div class="badge-keyword">Carnaval</div></div>
+        <div class="badge-rank rank-cool">NEW</div>
+      </div>
+      <div class="float-badge" style="left:82%;top:62%" onclick="openPopup('호주','🇦🇺')">
+        <div class="badge-flag">🇦🇺</div>
+        <div class="badge-info"><div class="badge-country">호주</div><div class="badge-keyword">AFL Season</div></div>
+        <div class="badge-rank rank-cool">NEW</div>
+      </div>
+    </div>
+
+    <!-- Bottom Cards -->
+    <div class="cards-strip">
+      <div style="font-size:12px;font-weight:700;color:#aaa;white-space:nowrap;flex-shrink:0">🔥 TODAY'S<br>HOT</div>
+      <div class="card card-1" onclick="openPopup('미국','🇺🇸')"><div class="card-flag">🇺🇸</div><div class="card-kw">Trump Trial Verdict</div><div class="card-meta"><span>미국</span><span>950K</span></div></div>
+      <div class="card card-2" onclick="openPopup('한국','🇰🇷')"><div class="card-flag">🇰🇷</div><div class="card-kw">부동산 대책 2025</div><div class="card-meta"><span>한국</span><span>780K</span></div></div>
+      <div class="card card-3" onclick="openPopup('일본','🇯🇵')"><div class="card-flag">🇯🇵</div><div class="card-kw">桜前線 2025年</div><div class="card-meta"><span>일본</span><span>650K</span></div></div>
+      <div class="card card-4" onclick="openPopup('인도','🇮🇳')"><div class="card-flag">🇮🇳</div><div class="card-kw">IPL 2025 Final</div><div class="card-meta"><span>인도</span><span>580K</span></div></div>
+      <div class="card card-5" onclick="openPopup('영국','🇬🇧')"><div class="card-flag">🇬🇧</div><div class="card-kw">Premier League</div><div class="card-meta"><span>영국</span><span>520K</span></div></div>
+      <div class="card card-6" onclick="openPopup('브라질','🇧🇷')"><div class="card-flag">🇧🇷</div><div class="card-kw">Carnaval Rio</div><div class="card-meta"><span>브라질</span><span>480K</span></div></div>
+      <div class="card card-7" onclick="openPopup('독일','🇩🇪')"><div class="card-flag">🇩🇪</div><div class="card-kw">Bundesliga Finale</div><div class="card-meta"><span>독일</span><span>420K</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Popup -->
+<div class="popup-overlay" id="popup" style="display:none" onclick="if(event.target===this)closePopup()">
+  <div class="popup">
+    <div class="popup-head">
+      <div><div class="p-country" id="popup-country">🇰🇷 한국</div><div class="p-sub">📍 아시아 · 1시간 12분 전 업데이트</div></div>
+      <button class="close-btn" onclick="closePopup()">✕</button>
+    </div>
+    <div class="popup-tabs">
+      <div class="tab active">🔍 검색어</div><div class="tab">📺 유튜브</div><div class="tab">📰 뉴스</div><div class="tab">📱 앱</div>
+    </div>
+    <div class="popup-body">
+      <div class="t-item"><div class="t-num">1</div><div class="t-info"><div class="t-name">부동산 대책 2025</div><div class="t-cat">정치 · 경제</div><div class="t-bar"><div class="t-fill" style="width:95%"></div></div></div><div class="t-vol">950K</div></div>
+      <div class="t-item"><div class="t-num">2</div><div class="t-info"><div class="t-name">아이유 콘서트</div><div class="t-cat">연예 · 음악</div><div class="t-bar"><div class="t-fill" style="width:78%"></div></div></div><div class="t-vol">780K</div></div>
+      <div class="t-item"><div class="t-num">3</div><div class="t-info"><div class="t-name">내일 날씨</div><div class="t-cat">날씨</div><div class="t-bar"><div class="t-fill" style="width:65%"></div></div></div><div class="t-vol">650K</div></div>
+      <div class="t-item"><div class="t-num">4</div><div class="t-info"><div class="t-name">손흥민 골</div><div class="t-cat">스포츠</div><div class="t-bar"><div class="t-fill" style="width:52%"></div></div></div><div class="t-vol">520K</div></div>
+      <div class="t-item"><div class="t-num">5</div><div class="t-info"><div class="t-name">ChatGPT 업데이트</div><div class="t-cat">기술</div><div class="t-bar"><div class="t-fill" style="width:40%"></div></div></div><div class="t-vol">400K</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let s=0;
+  setInterval(()=>{s++;document.getElementById('timer').textContent=s<60?`${s}초 전 업데이트`:s<3600?`${Math.floor(s/60)}분 전 업데이트`:`${Math.floor(s/3600)}시간 전 업데이트`;},1000);
+  function openPopup(c,f){document.getElementById('popup-country').textContent=`${f} ${c}`;document.getElementById('popup').style.display='flex';}
+  function closePopup(){document.getElementById('popup').style.display='none';}
+  setTimeout(()=>openPopup('한국','🇰🇷'),1500);
+</script>
+</body>
+</html>

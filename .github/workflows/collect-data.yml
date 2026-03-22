@@ -1,0 +1,79 @@
+name: Collect Trend Data
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Every hour at :00
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false  # Never cancel an in-progress collection run
+
+jobs:
+  collect:
+    name: Collect Global Trend Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests==2.31.0 feedparser==6.0.11
+
+      - name: Ensure output directories exist
+        run: |
+          mkdir -p public/data/archive
+          mkdir -p public/blog
+          mkdir -p public/report
+
+      - name: Run data collection
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          echo "=== Starting trend data collection ==="
+          python scripts/collect_trends.py
+          echo "=== Collection complete ==="
+
+      - name: Verify output file
+        run: |
+          if [ -f public/data/trends.json ]; then
+            echo "✅ trends.json generated successfully"
+            echo "File size: $(wc -c < public/data/trends.json) bytes"
+            python -c "import json; d=json.load(open('public/data/trends.json')); print(f\"Countries: {d['global']['totalCountries']} | Trends: {d['global']['totalTrends']} | Temp: {d['global']['temperature']}°T\")"
+          else
+            echo "❌ trends.json not found!"
+            exit 1
+          fi
+
+      - name: Commit and push updated trends data
+        run: |
+          git config user.name "Vercel Manager Bot"
+          git config user.email "hsr815815@gmail.com"
+          git add public/data/trends.json
+          git add public/data/archive/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "🤖 Auto: Update trends data $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error title=Data Collection Failed::The trend data collection pipeline failed. Check the logs for details."
+          echo "::warning::Check that YOUTUBE_API_KEY secret is set (optional but improves data quality)"

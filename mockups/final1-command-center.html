@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final Mockup 1 - Command Center</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0e1a; color:#e0e0e0; font-family:'Segoe UI',sans-serif; height:100vh; overflow:hidden; display:flex; flex-direction:column; font-size:13px; }
+
+/* ── TOP BAR ── */
+.topbar {
+  height:48px; background:#0d1528; border-bottom:1px solid rgba(255,255,255,0.07);
+  display:flex; align-items:center; padding:0 16px; gap:12px; flex-shrink:0;
+}
+.logo { font-size:18px; font-weight:800; letter-spacing:1px; margin-right:8px; }
+.logo span { color:#e94560; }
+
+/* Temperature */
+.temp-widget {
+  display:flex; align-items:center; gap:6px;
+  background:rgba(233,69,96,0.1); border:1px solid rgba(233,69,96,0.25);
+  padding:4px 10px; border-radius:20px;
+}
+.temp-val { font-size:15px; font-weight:800; color:#e94560; }
+.temp-label { font-size:10px; color:#888; }
+.temp-bar-wrap { width:60px; height:4px; background:rgba(255,255,255,0.08); border-radius:2px; }
+.temp-bar { height:100%; width:87%; background:linear-gradient(to right,#1d7fc4,#e8a020,#e94560); border-radius:2px; }
+
+/* Global #1 spotlight */
+.global-1 {
+  display:flex; align-items:center; gap:6px;
+  background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
+  padding:4px 12px; border-radius:20px; cursor:pointer;
+}
+.g1-badge { background:#e94560; color:#fff; font-size:9px; font-weight:800; padding:2px 5px; border-radius:4px; }
+.g1-text { font-size:12px; color:#fff; font-weight:600; }
+.g1-flag { font-size:14px; }
+
+/* Live dot */
+.live { display:flex; align-items:center; gap:5px; font-size:11px; color:#888; margin-left:auto; }
+.dot-live { width:7px; height:7px; background:#34c759; border-radius:50%; animation:pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* Search */
+.search { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; padding:5px 12px; border-radius:8px; width:160px; font-size:12px; }
+.search::placeholder { color:#555; }
+
+/* Lang */
+.lang-sel { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; padding:4px 8px; border-radius:6px; font-size:11px; cursor:pointer; }
+
+/* Share btn */
+.share-btn { background:rgba(233,69,96,0.15); border:1px solid rgba(233,69,96,0.3); color:#e94560; padding:4px 10px; border-radius:6px; cursor:pointer; font-size:11px; }
+
+/* ── SECOND BAR (categories + tabs) ── */
+.secondbar {
+  height:38px; background:#0b1120; border-bottom:1px solid rgba(255,255,255,0.05);
+  display:flex; align-items:center; padding:0 16px; gap:6px; flex-shrink:0;
+}
+.cat-btn { padding:4px 12px; border-radius:16px; font-size:11px; cursor:pointer; border:1px solid rgba(255,255,255,0.1); color:#888; transition:all 0.2s; }
+.cat-btn.active { background:#e94560; border-color:#e94560; color:#fff; }
+.divider { width:1px; height:20px; background:rgba(255,255,255,0.08); margin:0 4px; }
+.time-tab { padding:4px 12px; border-radius:16px; font-size:11px; cursor:pointer; color:#888; border:1px solid transparent; }
+.time-tab.active { border-color:rgba(255,255,255,0.15); color:#fff; }
+
+/* ── MAIN LAYOUT ── */
+.main { display:flex; flex:1; overflow:hidden; }
+
+/* Left panel */
+.left-panel { width:220px; background:#0b1120; border-right:1px solid rgba(255,255,255,0.05); display:flex; flex-direction:column; overflow:hidden; flex-shrink:0; }
+.lp-header { padding:12px 16px 8px; }
+.lp-title { font-size:11px; font-weight:700; color:#888; letter-spacing:1px; text-transform:uppercase; }
+.trend-list { overflow-y:auto; flex:1; }
+.trend-row { display:flex; align-items:center; gap:8px; padding:8px 16px; cursor:pointer; border-bottom:1px solid rgba(255,255,255,0.03); transition:background 0.15s; }
+.trend-row:hover { background:rgba(233,69,96,0.06); }
+.tr-rank { font-size:13px; font-weight:800; color:#e94560; width:18px; }
+.tr-info { flex:1; min-width:0; }
+.tr-name { font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.tr-meta { font-size:10px; color:#666; display:flex; align-items:center; gap:4px; margin-top:1px; }
+.speed { font-size:10px; }
+.global-badge { font-size:9px; background:#e94560; color:#fff; padding:1px 4px; border-radius:3px; font-weight:700; }
+
+/* Map */
+.map-section { flex:1; position:relative; overflow:hidden; }
+.map-bg { width:100%; height:100%; background:radial-gradient(ellipse,#111c35,#080d1a); display:flex; align-items:center; justify-content:center; position:relative; }
+.map-img { width:88%; max-width:860px; opacity:0.2; filter:sepia(1) hue-rotate(190deg) saturate(3); }
+
+/* Heat overlays */
+.heat { position:absolute; border-radius:50%; pointer-events:none; animation:breathe 3s ease-in-out infinite; }
+@keyframes breathe { 0%,100%{transform:scale(1);opacity:0.5} 50%{transform:scale(1.2);opacity:0.7} }
+
+/* Country pins */
+.cpin { position:absolute; cursor:pointer; display:flex; flex-direction:column; align-items:center; }
+.cpin:hover .cp-card { transform:scale(1.08); box-shadow:0 6px 20px rgba(233,69,96,0.3); }
+.cp-dot { width:8px; height:8px; background:#e94560; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 3px rgba(233,69,96,0.3); }
+.cp-card { background:#0d1528; border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:5px 8px; margin-top:4px; transition:all 0.2s; min-width:90px; }
+.cp-country { font-size:10px; color:#888; }
+.cp-kw { font-size:11px; font-weight:700; color:#fff; white-space:nowrap; }
+.cp-speed { font-size:10px; }
+
+/* Right panel */
+.right-panel { width:240px; background:#0b1120; border-left:1px solid rgba(255,255,255,0.05); display:flex; flex-direction:column; overflow:hidden; flex-shrink:0; }
+.rp-header { padding:12px 16px 8px; border-bottom:1px solid rgba(255,255,255,0.05); }
+.rp-title { font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px; }
+
+/* Temp gauge */
+.temp-gauge { padding:12px 16px; border-bottom:1px solid rgba(255,255,255,0.05); }
+.gauge-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.gauge-num { font-size:28px; font-weight:800; color:#e94560; }
+.gauge-status { font-size:11px; color:#888; }
+.gauge-bar { height:6px; background:rgba(255,255,255,0.06); border-radius:3px; }
+.gauge-fill { height:100%; width:87%; background:linear-gradient(to right,#1d7fc4,#e8a020,#e94560); border-radius:3px; }
+.gauge-labels { display:flex; justify-content:space-between; font-size:9px; color:#555; margin-top:3px; }
+
+/* Region list */
+.region-list { flex:1; overflow-y:auto; }
+.region-item { padding:10px 16px; border-bottom:1px solid rgba(255,255,255,0.03); cursor:pointer; transition:background 0.15s; }
+.region-item:hover { background:rgba(233,69,96,0.05); }
+.ri-top { display:flex; justify-content:space-between; align-items:center; }
+.ri-name { font-size:12px; font-weight:600; }
+.ri-score { font-size:11px; font-weight:700; color:#e94560; }
+.ri-kw { font-size:10px; color:#666; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ri-bar { height:2px; background:rgba(255,255,255,0.06); border-radius:1px; margin-top:5px; }
+.ri-fill { height:100%; border-radius:1px; background:linear-gradient(to right,#1d7fc4,#e94560); }
+
+/* Bottom cards */
+.bottom-strip { height:120px; background:#080d1a; border-top:1px solid rgba(255,255,255,0.05); display:flex; align-items:center; gap:10px; padding:0 16px; overflow-x:auto; flex-shrink:0; }
+.bottom-strip::-webkit-scrollbar { height:3px; }
+.bottom-strip::-webkit-scrollbar-thumb { background:#222; border-radius:2px; }
+.b-label { font-size:11px; font-weight:700; color:#e94560; white-space:nowrap; flex-shrink:0; line-height:1.4; }
+.b-card { min-width:130px; height:90px; border-radius:12px; padding:10px 12px; cursor:pointer; flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.2s; }
+.b-card:hover { transform:translateY(-3px); }
+.bc-flag { font-size:18px; }
+.bc-kw { font-size:12px; font-weight:700; color:#fff; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+.bc-meta { font-size:10px; opacity:0.75; display:flex; justify-content:space-between; }
+.bc-speed { font-size:10px; }
+
+/* Popup */
+.pop-overlay { position:fixed;inset:0;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;z-index:100;backdrop-filter:blur(6px); }
+.popup { background:#0d1528; border:1px solid rgba(233,69,96,0.25); border-radius:16px; width:440px; max-width:95vw; overflow:hidden; box-shadow:0 0 60px rgba(233,69,96,0.1); }
+.pop-head { padding:18px 20px; background:rgba(233,69,96,0.06); border-bottom:1px solid rgba(233,69,96,0.15); display:flex; justify-content:space-between; align-items:center; }
+.pop-country { font-size:20px; font-weight:800; }
+.pop-meta { font-size:11px; color:#888; margin-top:3px; }
+.pop-actions { display:flex; gap:6px; }
+.pop-share { background:#e94560; border:none; color:#fff; padding:5px 12px; border-radius:6px; cursor:pointer; font-size:11px; }
+.pop-embed { background:rgba(255,255,255,0.08); border:none; color:#aaa; padding:5px 10px; border-radius:6px; cursor:pointer; font-size:11px; }
+.close-btn { background:rgba(255,255,255,0.06);border:none;color:#aaa;width:28px;height:28px;border-radius:50%;cursor:pointer;margin-left:8px; }
+.pop-tabs { display:flex; background:#080d1a; }
+.tab { flex:1;padding:9px 0;text-align:center;font-size:11px;cursor:pointer;color:#555;transition:all 0.2s; }
+.tab.active { color:#e94560; border-bottom:2px solid #e94560; }
+.pop-body { padding:14px 20px 18px; max-height:320px; overflow-y:auto; }
+.t-item { display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04); }
+.t-num { font-size:15px;font-weight:800;color:#e94560;width:22px;text-align:center; }
+.t-info { flex:1; }
+.t-name { font-size:13px;font-weight:600; }
+.t-cat { font-size:10px;color:#666;margin-top:2px;display:flex;align-items:center;gap:4px; }
+.t-bar { height:2px;background:rgba(255,255,255,0.06);border-radius:1px;margin-top:4px; }
+.t-fill { height:100%;background:#e94560;border-radius:1px; }
+.t-right { text-align:right; }
+.t-vol { font-size:11px;color:#e94560;white-space:nowrap;font-weight:600; }
+.t-spd { font-size:11px; }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo">TREND<span>HEAT</span></div>
+  <div class="temp-widget">
+    <span>🌡️</span>
+    <span class="temp-val">87°</span>
+    <span class="temp-label">뜨거움</span>
+    <div class="temp-bar-wrap"><div class="temp-bar"></div></div>
+  </div>
+  <div class="global-1" onclick="openPopup('전세계','🌍')">
+    <span class="g1-badge">🌍 #1</span>
+    <span class="g1-flag">🇺🇸</span>
+    <span class="g1-text">Trump Trial</span>
+    <span style="font-size:10px;color:#e94560">🚀</span>
+  </div>
+  <input class="search" placeholder="🔍 나라 검색..."/>
+  <div class="live"><div class="dot-live"></div><span id="timer">방금 전</span></div>
+  <select class="lang-sel"><option>🇰🇷 한국어</option><option>🇺🇸 English</option><option>🇯🇵 日本語</option></select>
+  <button class="share-btn">📤 공유</button>
+</div>
+
+<!-- SECOND BAR -->
+<div class="secondbar">
+  <span style="font-size:10px;color:#555;margin-right:4px">카테고리</span>
+  <button class="cat-btn active">전체</button>
+  <button class="cat-btn">🔥 실시간</button>
+  <button class="cat-btn">⚽ 스포츠</button>
+  <button class="cat-btn">🎬 연예</button>
+  <button class="cat-btn">🏛️ 정치</button>
+  <button class="cat-btn">💻 기술</button>
+  <button class="cat-btn">📰 뉴스</button>
+  <div class="divider"></div>
+  <span style="font-size:10px;color:#555;margin-right:4px">기간</span>
+  <button class="time-tab active">오늘</button>
+  <button class="time-tab">1주</button>
+  <button class="time-tab">1달</button>
+</div>
+
+<div class="main">
+  <!-- LEFT PANEL -->
+  <div class="left-panel">
+    <div class="lp-header"><div class="lp-title">🔥 글로벌 순위</div></div>
+    <div class="trend-list">
+      <div class="trend-row" onclick="openPopup('미국','🇺🇸')">
+        <div class="tr-rank">1</div><div class="tr-info"><div class="tr-name">Trump Trial</div><div class="tr-meta"><span>🇺🇸</span><span class="global-badge">GLOBAL</span><span class="speed">🚀</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('한국','🇰🇷')">
+        <div class="tr-rank">2</div><div class="tr-info"><div class="tr-name">부동산 대책</div><div class="tr-meta"><span>🇰🇷</span><span class="speed">🚀</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('일본','🇯🇵')">
+        <div class="tr-rank">3</div><div class="tr-info"><div class="tr-name">桜前線 2025</div><div class="tr-meta"><span>🇯🇵</span><span class="speed">📈</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('인도','🇮🇳')">
+        <div class="tr-rank">4</div><div class="tr-info"><div class="tr-name">IPL Final</div><div class="tr-meta"><span>🇮🇳</span><span class="global-badge">GLOBAL</span><span class="speed">📈</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('영국','🇬🇧')">
+        <div class="tr-rank">5</div><div class="tr-info"><div class="tr-name">Premier League</div><div class="tr-meta"><span>🇬🇧</span><span class="speed">➡️</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('브라질','🇧🇷')">
+        <div class="tr-rank">6</div><div class="tr-info"><div class="tr-name">Carnaval Rio</div><div class="tr-meta"><span>🇧🇷</span><span class="speed">📉</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('독일','🇩🇪')">
+        <div class="tr-rank">7</div><div class="tr-info"><div class="tr-name">Bundesliga</div><div class="tr-meta"><span>🇩🇪</span><span class="speed">➡️</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('프랑스','🇫🇷')">
+        <div class="tr-rank">8</div><div class="tr-info"><div class="tr-name">Roland Garros</div><div class="tr-meta"><span>🇫🇷</span><span class="global-badge">GLOBAL</span><span class="speed">📈</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('호주','🇦🇺')">
+        <div class="tr-rank">9</div><div class="tr-info"><div class="tr-name">AFL Season</div><div class="tr-meta"><span>🇦🇺</span><span class="speed">➡️</span></div></div>
+      </div>
+      <div class="trend-row" onclick="openPopup('멕시코','🇲🇽')">
+        <div class="tr-rank">10</div><div class="tr-info"><div class="tr-name">Liga MX</div><div class="tr-meta"><span>🇲🇽</span><span class="speed">📈</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-section">
+    <div class="map-bg">
+      <img class="map-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BlankMap-World.svg/1280px-BlankMap-World.svg.png"/>
+      <div class="heat" style="left:14%;top:25%;width:130px;height:90px;background:radial-gradient(circle,rgba(233,69,96,0.6),transparent)"></div>
+      <div class="heat" style="left:70%;top:25%;width:110px;height:75px;background:radial-gradient(circle,rgba(233,69,96,0.5),transparent)"></div>
+      <div class="heat" style="left:57%;top:37%;width:100px;height:70px;background:radial-gradient(circle,rgba(232,160,32,0.5),transparent)"></div>
+      <div class="heat" style="left:43%;top:20%;width:90px;height:60px;background:radial-gradient(circle,rgba(232,160,32,0.4),transparent)"></div>
+      <div class="heat" style="left:45%;top:50%;width:80px;height:55px;background:radial-gradient(circle,rgba(29,127,196,0.4),transparent)"></div>
+
+      <div class="cpin" style="left:17%;top:28%" onclick="openPopup('미국','🇺🇸')"><div class="cp-dot" style="background:#e94560"></div><div class="cp-card"><div class="cp-country">🇺🇸 미국</div><div class="cp-kw">Trump Trial</div><div><span class="global-badge">GLOBAL</span> <span class="cp-speed">🚀</span></div></div></div>
+      <div class="cpin" style="left:71%;top:27%" onclick="openPopup('한국','🇰🇷')"><div class="cp-dot" style="background:#e94560"></div><div class="cp-card"><div class="cp-country">🇰🇷 한국</div><div class="cp-kw">부동산 대책</div><div><span class="cp-speed">🚀</span></div></div></div>
+      <div class="cpin" style="left:74%;top:35%" onclick="openPopup('일본','🇯🇵')"><div class="cp-dot" style="background:#e8a020"></div><div class="cp-card"><div class="cp-country">🇯🇵 일본</div><div class="cp-kw">桜前線</div><div><span class="cp-speed">📈</span></div></div></div>
+      <div class="cpin" style="left:44%;top:22%" onclick="openPopup('독일','🇩🇪')"><div class="cp-dot" style="background:#e8a020"></div><div class="cp-card"><div class="cp-country">🇩🇪 독일</div><div class="cp-kw">Bundesliga</div><div><span class="cp-speed">➡️</span></div></div></div>
+      <div class="cpin" style="left:57%;top:40%" onclick="openPopup('인도','🇮🇳')"><div class="cp-dot"></div><div class="cp-card"><div class="cp-country">🇮🇳 인도</div><div class="cp-kw">IPL Final</div><div><span class="global-badge">GLOBAL</span></div></div></div>
+      <div class="cpin" style="left:47%;top:53%" onclick="openPopup('브라질','🇧🇷')"><div class="cp-dot" style="background:#1d7fc4"></div><div class="cp-card"><div class="cp-country">🇧🇷 브라질</div><div class="cp-kw">Carnaval</div><div><span class="cp-speed">📉</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel">
+    <div class="rp-header"><div class="rp-title">🌡️ 트렌드 온도</div></div>
+    <div class="temp-gauge">
+      <div class="gauge-row"><div class="gauge-num">87°</div><div><div style="font-size:12px;color:#e94560;font-weight:700">🌋 매우 뜨거움</div><div class="gauge-status">52개국 동시 활성</div></div></div>
+      <div class="gauge-bar"><div class="gauge-fill"></div></div>
+      <div class="gauge-labels"><span>🧊 조용</span><span>🔥 뜨거움</span><span>🌋 폭발</span></div>
+    </div>
+    <div class="rp-header" style="padding:10px 16px 6px"><div class="rp-title">📊 국가별 강도</div></div>
+    <div class="region-list">
+      <div class="region-item" onclick="openPopup('미국','🇺🇸')"><div class="ri-top"><div class="ri-name">🇺🇸 미국</div><div class="ri-score">94</div></div><div class="ri-kw">Trump · AI Act · Economy</div><div class="ri-bar"><div class="ri-fill" style="width:94%"></div></div></div>
+      <div class="region-item" onclick="openPopup('한국','🇰🇷')"><div class="ri-top"><div class="ri-name">🇰🇷 한국</div><div class="ri-score">88</div></div><div class="ri-kw">부동산 · 아이유 · 손흥민</div><div class="ri-bar"><div class="ri-fill" style="width:88%"></div></div></div>
+      <div class="region-item" onclick="openPopup('인도','🇮🇳')"><div class="ri-top"><div class="ri-name">🇮🇳 인도</div><div class="ri-score">72</div></div><div class="ri-kw">IPL · Modi · Bollywood</div><div class="ri-bar"><div class="ri-fill" style="width:72%"></div></div></div>
+      <div class="region-item" onclick="openPopup('일본','🇯🇵')"><div class="ri-top"><div class="ri-name">🇯🇵 일본</div><div class="ri-score">65</div></div><div class="ri-kw">桜 · 大谷 · Nintendo</div><div class="ri-bar"><div class="ri-fill" style="width:65%"></div></div></div>
+      <div class="region-item" onclick="openPopup('영국','🇬🇧')"><div class="ri-top"><div class="ri-name">🇬🇧 영국</div><div class="ri-score">58</div></div><div class="ri-kw">Premier · King · Brexit</div><div class="ri-bar"><div class="ri-fill" style="width:58%"></div></div></div>
+      <div class="region-item" onclick="openPopup('독일','🇩🇪')"><div class="ri-top"><div class="ri-name">🇩🇪 독일</div><div class="ri-score">42</div></div><div class="ri-kw">Bundesliga · Scholz</div><div class="ri-bar"><div class="ri-fill" style="width:42%"></div></div></div>
+      <div class="region-item" onclick="openPopup('브라질','🇧🇷')"><div class="ri-top"><div class="ri-name">🇧🇷 브라질</div><div class="ri-score">38</div></div><div class="ri-kw">Carnaval · Neymar</div><div class="ri-bar"><div class="ri-fill" style="width:38%"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM CARDS -->
+<div class="bottom-strip">
+  <div class="b-label">🔥 TODAY'S<br>HOT</div>
+  <div class="b-card" style="background:linear-gradient(135deg,#4a0e1a,#8b1a2e)" onclick="openPopup('미국','🇺🇸')"><div><div class="bc-flag">🇺🇸</div></div><div class="bc-kw">Trump Trial Verdict</div><div class="bc-meta"><span>미국 · 950K</span><span class="bc-speed">🚀</span></div></div>
+  <div class="b-card" style="background:linear-gradient(135deg,#0e2a4a,#1a5285)" onclick="openPopup('한국','🇰🇷')"><div><div class="bc-flag">🇰🇷</div></div><div class="bc-kw">부동산 대책 2025</div><div class="bc-meta"><span>한국 · 780K</span><span class="bc-speed">🚀</span></div></div>
+  <div class="b-card" style="background:linear-gradient(135deg,#2a1a0e,#5c3a1e)" onclick="openPopup('일본','🇯🇵')"><div><div class="bc-flag">🇯🇵</div></div><div class="bc-kw">桜前線 2025年</div><div class="bc-meta"><span>일본 · 650K</span><span class="bc-speed">📈</span></div></div>
+  <div class="b-card" style="background:linear-gradient(135deg,#0e2a1a,#1a5c3a)" onclick="openPopup('인도','🇮🇳')"><div><div class="bc-flag">🇮🇳</div></div><div class="bc-kw">IPL 2025 Final</div><div class="bc-meta"><span>인도 · 580K</span><span class="bc-speed">📈</span></div></div>
+  <div class="b-card" style="background:linear-gradient(135deg,#1a0e2a,#3a1a5c)" onclick="openPopup('영국','🇬🇧')"><div><div class="bc-flag">🇬🇧</div></div><div class="bc-kw">Premier League</div><div class="bc-meta"><span>영국 · 520K</span><span class="bc-speed">➡️</span></div></div>
+  <div class="b-card" style="background:linear-gradient(135deg,#1a1a0e,#3a3a1a)" onclick="openPopup('브라질','🇧🇷')"><div><div class="bc-flag">🇧🇷</div></div><div class="bc-kw">Carnaval Rio</div><div class="bc-meta"><span>브라질 · 480K</span><span class="bc-speed">📉</span></div></div>
+  <div class="b-card" style="background:linear-gradient(135deg,#0e1a2a,#1a3a5c)" onclick="openPopup('독일','🇩🇪')"><div><div class="bc-flag">🇩🇪</div></div><div class="bc-kw">Bundesliga Finale</div><div class="bc-meta"><span>독일 · 420K</span><span class="bc-speed">➡️</span></div></div>
+</div>
+
+<!-- POPUP -->
+<div class="pop-overlay" id="popup" style="display:none" onclick="if(event.target===this)closePopup()">
+  <div class="popup">
+    <div class="pop-head">
+      <div><div class="pop-country" id="pop-country">🇰🇷 한국</div><div class="pop-meta">아시아 · 🌡️강도 88 · 1시간 12분 전 업데이트</div></div>
+      <div class="pop-actions">
+        <button class="pop-share">📤 공유</button>
+        <button class="pop-embed">&lt;/&gt; 임베드</button>
+        <button class="close-btn" onclick="closePopup()">✕</button>
+      </div>
+    </div>
+    <div class="pop-tabs">
+      <div class="tab active">🔍 검색어</div><div class="tab">📺 유튜브</div><div class="tab">📰 뉴스</div><div class="tab">📱 앱</div><div class="tab">🎮 게임</div>
+    </div>
+    <div class="pop-body">
+      <div class="t-item"><div class="t-num">1</div><div class="t-info"><div class="t-name">부동산 대책 2025</div><div class="t-cat"><span>정치·경제</span><span class="global-badge">GLOBAL</span></div><div class="t-bar"><div class="t-fill" style="width:95%"></div></div></div><div class="t-right"><div class="t-vol">950K</div><div class="t-spd">🚀</div></div></div>
+      <div class="t-item"><div class="t-num">2</div><div class="t-info"><div class="t-name">아이유 콘서트</div><div class="t-cat">연예·음악</div><div class="t-bar"><div class="t-fill" style="width:78%"></div></div></div><div class="t-right"><div class="t-vol">780K</div><div class="t-spd">📈</div></div></div>
+      <div class="t-item"><div class="t-num">3</div><div class="t-info"><div class="t-name">내일 날씨</div><div class="t-cat">날씨</div><div class="t-bar"><div class="t-fill" style="width:65%"></div></div></div><div class="t-right"><div class="t-vol">650K</div><div class="t-spd">➡️</div></div></div>
+      <div class="t-item"><div class="t-num">4</div><div class="t-info"><div class="t-name">손흥민 골</div><div class="t-cat">스포츠</div><div class="t-bar"><div class="t-fill" style="width:52%"></div></div></div><div class="t-right"><div class="t-vol">520K</div><div class="t-spd">📈</div></div></div>
+      <div class="t-item"><div class="t-num">5</div><div class="t-info"><div class="t-name">ChatGPT 업데이트</div><div class="t-cat">기술</div><div class="t-bar"><div class="t-fill" style="width:40%"></div></div></div><div class="t-right"><div class="t-vol">400K</div><div class="t-spd">📉</div></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let s=0; setInterval(()=>{s++;const e=document.getElementById('timer');e.textContent=s<60?`${s}초 전`:s<3600?`${Math.floor(s/60)}분 전`:`${Math.floor(s/3600)}시간 전`;},1000);
+function openPopup(c,f){document.getElementById('pop-country').textContent=`${f} ${c}`;document.getElementById('popup').style.display='flex';}
+function closePopup(){document.getElementById('popup').style.display='none';}
+setTimeout(()=>openPopup('한국','🇰🇷'),1500);
+</script>
+</body>
+</html>

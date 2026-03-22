@@ -1,0 +1,139 @@
+{
+  "lastUpdated": "2026-03-23T00:00:00Z",
+  "countries": {
+    "US": {
+      "name": "United States",
+      "flag": "🇺🇸",
+      "trends": [
+        { "rank": 1, "keyword": "March Madness 2026", "volume": "5.2M", "category": "sports", "temperature": 92, "velocity": "rising" },
+        { "rank": 2, "keyword": "AI Agents breakthrough", "volume": "3.1M", "category": "tech", "temperature": 88, "velocity": "rising" },
+        { "rank": 3, "keyword": "Spring break destinations", "volume": "2.8M", "category": "travel", "temperature": 80, "velocity": "steady" },
+        { "rank": 4, "keyword": "Stock market rally", "volume": "2.2M", "category": "finance", "temperature": 75, "velocity": "rising" },
+        { "rank": 5, "keyword": "Grammy nominations 2027", "volume": "1.9M", "category": "music", "temperature": 68, "velocity": "new" }
+      ]
+    },
+    "KR": {
+      "name": "South Korea",
+      "flag": "🇰🇷",
+      "trends": [
+        { "rank": 1, "keyword": "K-pop 월드투어", "volume": "2.4M", "category": "music", "temperature": 90, "velocity": "rising" },
+        { "rank": 2, "keyword": "삼성 갤럭시 신제품", "volume": "1.8M", "category": "tech", "temperature": 84, "velocity": "new" },
+        { "rank": 3, "keyword": "축구 국가대표", "volume": "1.5M", "category": "sports", "temperature": 79, "velocity": "steady" },
+        { "rank": 4, "keyword": "드라마 시청률", "volume": "1.2M", "category": "movies", "temperature": 72, "velocity": "rising" },
+        { "rank": 5, "keyword": "코스피 급등", "volume": "980K", "category": "finance", "temperature": 65, "velocity": "rising" }
+      ]
+    },
+    "JP": {
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "trends": [
+        { "rank": 1, "keyword": "桜前線 2026", "volume": "3.2M", "category": "news", "temperature": 91, "velocity": "rising" },
+        { "rank": 2, "keyword": "Nintendo Switch 新作", "volume": "2.1M", "category": "tech", "temperature": 86, "velocity": "new" },
+        { "rank": 3, "keyword": "プロ野球開幕", "volume": "1.9M", "category": "sports", "temperature": 81, "velocity": "steady" },
+        { "rank": 4, "keyword": "アニメ新シーズン", "volume": "1.6M", "category": "movies", "temperature": 76, "velocity": "rising" },
+        { "rank": 5, "keyword": "日経平均株価", "volume": "1.3M", "category": "finance", "temperature": 70, "velocity": "steady" }
+      ]
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "trends": [
+        { "rank": 1, "keyword": "Premier League title race", "volume": "2.8M", "category": "sports", "temperature": 89, "velocity": "rising" },
+        { "rank": 2, "keyword": "Budget announcement", "volume": "2.1M", "category": "news", "temperature": 83, "velocity": "new" },
+        { "rank": 3, "keyword": "Glastonbury 2026 lineup", "volume": "1.7M", "category": "music", "temperature": 77, "velocity": "rising" },
+        { "rank": 4, "keyword": "BAFTA winners", "volume": "1.4M", "category": "movies", "temperature": 71, "velocity": "new" },
+        { "rank": 5, "keyword": "FTSE 100 record", "volume": "1.1M", "category": "finance", "temperature": 64, "velocity": "steady" }
+      ]
+    },
+    "DE": {
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "trends": [
+        { "rank": 1, "keyword": "Bundesliga Meisterschaft", "volume": "2.2M", "category": "sports", "temperature": 87, "velocity": "rising" },
+        { "rank": 2, "keyword": "Oktoberfest Tickets", "volume": "1.8M", "category": "news", "temperature": 82, "velocity": "steady" },
+        { "rank": 3, "keyword": "E-Auto Förderung", "volume": "1.5M", "category": "tech", "temperature": 76, "velocity": "rising" },
+        { "rank": 4, "keyword": "Rammstein Tour 2026", "volume": "1.2M", "category": "music", "temperature": 70, "velocity": "new" },
+        { "rank": 5, "keyword": "DAX Allzeithoch", "volume": "980K", "category": "finance", "temperature": 63, "velocity": "rising" }
+      ]
+    },
+    "IN": {
+      "name": "India",
+      "flag": "🇮🇳",
+      "trends": [
+        { "rank": 1, "keyword": "IPL 2026 auction", "volume": "8.4M", "category": "sports", "temperature": 95, "velocity": "rising" },
+        { "rank": 2, "keyword": "Bollywood blockbuster", "volume": "5.2M", "category": "movies", "temperature": 88, "velocity": "new" },
+        { "rank": 3, "keyword": "Union Budget reaction", "volume": "4.1M", "category": "finance", "temperature": 83, "velocity": "steady" },
+        { "rank": 4, "keyword": "Jio 5G expansion", "volume": "3.3M", "category": "tech", "temperature": 77, "velocity": "rising" },
+        { "rank": 5, "keyword": "Holi festival 2026", "volume": "2.9M", "category": "news", "temperature": 72, "velocity": "steady" }
+      ]
+    },
+    "BR": {
+      "name": "Brazil",
+      "flag": "🇧🇷",
+      "trends": [
+        { "rank": 1, "keyword": "Carnaval 2026", "volume": "6.1M", "category": "news", "temperature": 93, "velocity": "rising" },
+        { "rank": 2, "keyword": "Flamengo campeão", "volume": "4.2M", "category": "sports", "temperature": 87, "velocity": "rising" },
+        { "rank": 3, "keyword": "Lula economia", "volume": "3.1M", "category": "news", "temperature": 80, "velocity": "steady" },
+        { "rank": 4, "keyword": "Anitta feat novo", "volume": "2.4M", "category": "music", "temperature": 74, "velocity": "new" },
+        { "rank": 5, "keyword": "Ibovespa máxima", "volume": "1.8M", "category": "finance", "temperature": 67, "velocity": "rising" }
+      ]
+    },
+    "FR": {
+      "name": "France",
+      "flag": "🇫🇷",
+      "trends": [
+        { "rank": 1, "keyword": "Roland Garros 2026", "volume": "2.6M", "category": "sports", "temperature": 86, "velocity": "steady" },
+        { "rank": 2, "keyword": "Élections régionales", "volume": "2.0M", "category": "news", "temperature": 81, "velocity": "rising" },
+        { "rank": 3, "keyword": "Cannes film festival", "volume": "1.6M", "category": "movies", "temperature": 75, "velocity": "new" },
+        { "rank": 4, "keyword": "Taylor Swift Paris", "volume": "1.3M", "category": "music", "temperature": 69, "velocity": "new" },
+        { "rank": 5, "keyword": "CAC 40 record", "volume": "1.0M", "category": "finance", "temperature": 62, "velocity": "steady" }
+      ]
+    },
+    "AU": {
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "trends": [
+        { "rank": 1, "keyword": "AFL grand final odds", "volume": "1.9M", "category": "sports", "temperature": 84, "velocity": "rising" },
+        { "rank": 2, "keyword": "Cyclone warning QLD", "volume": "1.5M", "category": "news", "temperature": 79, "velocity": "new" },
+        { "rank": 3, "keyword": "RBA interest rates", "volume": "1.2M", "category": "finance", "temperature": 73, "velocity": "steady" },
+        { "rank": 4, "keyword": "Australian Idol 2026", "volume": "980K", "category": "music", "temperature": 66, "velocity": "rising" },
+        { "rank": 5, "keyword": "ASX 200 record high", "volume": "780K", "category": "finance", "temperature": 60, "velocity": "rising" }
+      ]
+    },
+    "MX": {
+      "name": "Mexico",
+      "flag": "🇲🇽",
+      "trends": [
+        { "rank": 1, "keyword": "Liga MX Clausura", "volume": "3.4M", "category": "sports", "temperature": 89, "velocity": "rising" },
+        { "rank": 2, "keyword": "Semana Santa 2026", "volume": "2.7M", "category": "news", "temperature": 83, "velocity": "steady" },
+        { "rank": 3, "keyword": "Bad Bunny tour México", "volume": "2.1M", "category": "music", "temperature": 77, "velocity": "new" },
+        { "rank": 4, "keyword": "Peso dólar tipo cambio", "volume": "1.6M", "category": "finance", "temperature": 71, "velocity": "rising" },
+        { "rank": 5, "keyword": "Netflix serie mexicana", "volume": "1.2M", "category": "movies", "temperature": 64, "velocity": "new" }
+      ]
+    }
+  },
+  "global": {
+    "temperature": 84,
+    "topTrend": {
+      "keyword": "IPL 2026 auction",
+      "country": "IN",
+      "volume": "8.4M",
+      "category": "sports"
+    },
+    "totalCountries": 142,
+    "totalTrends": 8742,
+    "risingFast": [
+      { "keyword": "AI Agents breakthrough", "country": "US", "change": "+340%" },
+      { "keyword": "IPL 2026 auction", "country": "IN", "change": "+280%" },
+      { "keyword": "桜前線 2026", "country": "JP", "change": "+210%" }
+    ],
+    "categoryBreakdown": {
+      "sports": 28,
+      "tech": 22,
+      "music": 18,
+      "news": 16,
+      "movies": 10,
+      "finance": 6
+    }
+  }
+}

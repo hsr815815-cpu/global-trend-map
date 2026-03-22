@@ -1,0 +1,106 @@
+name: Generate Blog Posts
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Daily at 00:30 UTC (30 min after data collection)
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+concurrency:
+  group: content-pipeline
+  cancel-in-progress: false  # Never cancel a blog generation run
+
+jobs:
+  generate:
+    name: Generate MDX Blog Posts
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests==2.31.0 feedparser==6.0.11
+
+      - name: Ensure output directories exist
+        run: |
+          mkdir -p public/blog
+          mkdir -p public/data
+          mkdir -p public/report
+
+      - name: Verify trends.json is fresh
+        run: |
+          if [ ! -f public/data/trends.json ]; then
+            echo "❌ trends.json not found — running data collection first"
+            pip install requests feedparser
+            python scripts/collect_trends.py
+          fi
+
+          # Check data freshness (warn if older than 3 hours)
+          python3 - <<'EOF'
+          import json
+          from datetime import datetime, timezone, timedelta
+
+          with open("public/data/trends.json") as f:
+              data = json.load(f)
+
+          last_updated = data.get("lastUpdated", "")
+          if last_updated:
+              dt = datetime.fromisoformat(last_updated.replace("Z", "+00:00"))
+              age_hours = (datetime.now(timezone.utc) - dt).total_seconds() / 3600
+              print(f"Data age: {age_hours:.1f} hours")
+              if age_hours > 3:
+                  print("::warning::trends.json is more than 3 hours old — consider running collect-data workflow first")
+              else:
+                  print("✅ Data is fresh")
+          EOF
+
+      - name: Run blog generation
+        run: |
+          echo "=== Starting blog post generation ==="
+          python scripts/generate_blog.py
+          echo "=== Blog generation complete ==="
+
+      - name: Count new posts
+        run: |
+          NEW_MDX=$(git status --short public/blog/ | grep -c "^?" 2>/dev/null || echo 0)
+          echo "New MDX files: $NEW_MDX"
+
+          if [ -f public/data/posts-index.json ]; then
+            python3 -c "
+          import json
+          idx = json.load(open('public/data/posts-index.json'))
+          print(f\"Total posts in index: {len(idx.get('posts', []))}\")
+            "
+          fi
+
+      - name: Commit and push generated blog posts
+        run: |
+          git config user.name "Vercel Manager Bot"
+          git config user.email "hsr815815@gmail.com"
+          git add public/blog/
+          git add public/data/posts-index.json
+          git add public/data/trends.json
+          git diff --staged --quiet || git commit -m "📝 Auto: Generate blog posts $(date -u '+%Y-%m-%d')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error title=Blog Generation Failed::The blog post generation pipeline failed. Check generate_blog.py logs."
