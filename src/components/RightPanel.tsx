@@ -266,7 +266,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">Categories</span>
+          <span className="panel-title">Trend Share</span>
         </div>
 
         <div
