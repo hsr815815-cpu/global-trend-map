@@ -102,22 +102,20 @@ BLOCKED_KEYWORDS = {
 }
 
 CATEGORY_KEYWORDS = {
-    "sports":      ["nfl", "nba", "mlb", "nhl", "soccer", "football", "basketball", "baseball",
-                    "tennis", "golf", "f1", "formula 1", "olympics", "world cup", "liga", "premier",
-                    "championship", "tournament", "match", "game", "athlete", "player", "team"],
-    "music":       ["album", "song", "concert", "tour", "grammy", "billboard", "single", "music",
-                    "singer", "rapper", "band", "spotify", "chart", "release", "mv", "kpop"],
-    "tech":        ["ai", "artificial intelligence", "chatgpt", "openai", "apple", "google", "microsoft",
-                    "samsung", "iphone", "android", "app", "software", "hardware", "startup", "crypto",
-                    "bitcoin", "blockchain", "meta", "tesla", "spacex"],
-    "entertainment": ["movie", "film", "series", "netflix", "disney", "hbo", "tv show", "trailer",
-                      "actor", "actress", "celebrity", "award", "oscar", "emmy", "box office"],
-    "news":        ["election", "president", "government", "war", "conflict", "economy", "stock",
-                    "inflation", "weather", "hurricane", "earthquake", "disaster", "policy", "law"],
-    "health":      ["covid", "vaccine", "cancer", "heart", "mental health", "diet", "fitness",
-                    "drug", "medicine", "hospital", "doctor", "treatment", "research"],
-    "gaming":      ["game", "xbox", "playstation", "nintendo", "steam", "esports", "twitch",
-                    "fortnite", "minecraft", "valorant", "league of legends"],
+    "sports":  ["nfl", "nba", "mlb", "nhl", "soccer", "football", "basketball", "baseball",
+                "tennis", "golf", "formula 1", "olympics", "world cup", "liga", "premier",
+                "championship", "tournament", "athlete", "player"],
+    "music":   ["album", "song", "concert", "tour", "grammy", "billboard", "single", "music",
+                "singer", "rapper", "band", "spotify", "chart", "release", "official mv", "kpop", "k-pop"],
+    "movies":  ["movie", "film", "series", "netflix", "disney", "hbo", "tv show", "trailer",
+                "teaser", "actor", "actress", "celebrity", "award", "oscar", "emmy", "box office", "anime"],
+    "tech":    ["artificial intelligence", "chatgpt", "openai", "apple", "google", "microsoft",
+                "samsung", "iphone", "android", "software", "hardware", "startup", "crypto",
+                "bitcoin", "blockchain", "meta", "tesla", "spacex"],
+    "finance": ["stock", "market", "economy", "gdp", "inflation", "interest rate", "bank",
+                "fund", "invest", "dow", "nasdaq", "nikkei", "kospi", "dax", "ftse", "asx", "s&p"],
+    "news":    ["election", "president", "government", "war", "conflict", "hurricane",
+                "earthquake", "disaster", "policy", "law", "protest", "summit"],
 }
 
 HEADERS = {
@@ -159,10 +157,12 @@ def is_blocked(keyword: str) -> bool:
 
 
 def classify_category(keyword: str) -> str:
+    import re
     kw = keyword.lower()
     for cat, words in CATEGORY_KEYWORDS.items():
         for w in words:
-            if w in kw:
+            # Use word boundary matching to avoid false positives like "ai" in "trailer"
+            if re.search(r'\b' + re.escape(w) + r'\b', kw):
                 return cat
     return "news"
 
@@ -331,6 +331,7 @@ def collect_youtube(country_codes: list[str]) -> tuple[dict, int, bool]:
             trends.append({
                 "rank":        rank,
                 "keyword":     title,
+                "keywordEn":   translate_to_english(title),
                 "volume":      format_volume(view_count),
                 "volumeRaw":   view_count,
                 "category":    classify_category(title),

@@ -57,16 +57,16 @@ BLOCKED = {'porn', 'xxx', 'nude', 'naked', 'sex tape', 'murder how to', 'bomb ma
 
 CATEGORY_KW = {
     'sports':  ['nfl','nba','mlb','soccer','football','basketball','baseball','tennis','golf',
-                'f1','formula','olympics','world cup','liga','premier','championship','tournament',
-                'match','athlete','player','sport','hockey','cricket','rugby'],
+                'formula 1','olympics','world cup','liga','premier','championship','tournament',
+                'athlete','player','hockey','cricket','rugby'],
     'music':   ['album','song','concert','tour','grammy','billboard','single','music','singer',
-                'rapper','band','spotify','chart','release','kpop','k-pop'],
-    'tech':    ['ai','artificial intelligence','chatgpt','openai','apple','google','microsoft',
-                'samsung','iphone','android','app','software','startup','crypto','bitcoin',
+                'rapper','band','spotify','chart','release','official mv','kpop','k-pop'],
+    'movies':  ['movie','film','series','netflix','disney','hbo','tv show','trailer','teaser',
+                'actor','actress','celebrity','award','oscar','emmy','box office','anime'],
+    'tech':    ['artificial intelligence','chatgpt','openai','apple','google','microsoft',
+                'samsung','iphone','android','software','startup','crypto','bitcoin',
                 'blockchain','meta','tesla','spacex'],
-    'movies':  ['movie','film','series','netflix','disney','hbo','tv show','trailer','actor',
-                'actress','celebrity','award','oscar','emmy','box office','anime'],
-    'finance': ['stock','market','economy','gdp','inflation','rate','bank','fund','invest',
+    'finance': ['stock','market','economy','gdp','inflation','interest rate','bank','fund','invest',
                 'dow','nasdaq','dax','nikkei','kospi','ibovespa','cac','ftse','asx'],
 }
 
@@ -90,10 +90,11 @@ def translate_to_english(text: str) -> str:
 
 
 def classify(kw):
+    import re
     k = kw.lower()
     for cat, words in CATEGORY_KW.items():
         for w in words:
-            if w in k:
+            if re.search(r'\b' + re.escape(w) + r'\b', k):
                 return cat
     return 'news'
 
