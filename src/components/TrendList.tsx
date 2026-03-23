@@ -338,6 +338,27 @@ function TrendRow({ trend, globalRank, badge, isTop3, displayKeyword }: TrendRow
               {badge}
             </span>
           )}
+          {trend.source === 'youtube' && trend.youtubeId && (
+            <a
+              href={`https://www.youtube.com/watch?v=${trend.youtubeId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              style={{ flexShrink: 0, textDecoration: 'none' }}
+            >
+              <span style={{
+                padding: '1px 5px',
+                background: 'rgba(255,0,0,0.15)',
+                border: '1px solid rgba(255,0,0,0.35)',
+                borderRadius: '4px',
+                fontSize: '9px',
+                fontWeight: 700,
+                color: '#ff4444',
+              }}>
+                ▶ YT
+              </span>
+            </a>
+          )}
         </div>
 
         <div

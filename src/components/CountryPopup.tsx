@@ -259,6 +259,20 @@ export default function CountryPopup({
                     {trend.volume}
                   </span>
                 </div>
+                {trend.relatedNews && trend.relatedNews.length > 0 && (
+                  <div
+                    style={{
+                      marginTop: '3px',
+                      fontSize: '10px',
+                      color: 'var(--text-muted)',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    📰 {trend.relatedNews[0]}
+                  </div>
+                )}
               </div>
 
               {/* Velocity */}

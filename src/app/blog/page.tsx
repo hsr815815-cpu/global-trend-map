@@ -46,7 +46,7 @@ async function loadPostsIndex(): Promise<PostMeta[]> {
     const raw = await fs.readFile(filePath, 'utf-8');
     const data = JSON.parse(raw);
     const posts: PostMeta[] = Array.isArray(data) ? data : (data.posts ?? []);
-    return posts.filter((p) => !p.language || p.language === 'en');
+    return posts;
   } catch { return []; }
 }
 
@@ -56,8 +56,20 @@ function formatDate(dateStr: string): string {
   });
 }
 
-export default async function BlogPage() {
-  const posts = await loadPostsIndex();
+const LANG_LABELS: Record<string, { flag: string; label: string }> = {
+  en: { flag: '🇺🇸', label: 'EN' },
+  kr: { flag: '🇰🇷', label: 'KR' },
+  jp: { flag: '🇯🇵', label: 'JP' },
+};
+
+export default async function BlogPage({ searchParams }: { searchParams: { lang?: string } }) {
+  const lang = searchParams.lang && ['en', 'kr', 'jp'].includes(searchParams.lang) ? searchParams.lang : 'en';
+  const allPosts = await loadPostsIndex();
+  const posts = allPosts.filter((p) => {
+    if (lang === 'kr') return p.language === 'kr';
+    if (lang === 'jp') return p.language === 'jp';
+    return !p.language || p.language === 'en';
+  });
   const featured = posts.filter((p) => p.featured);
   const rest = posts.filter((p) => !p.featured);
 
@@ -67,6 +79,9 @@ export default async function BlogPage() {
         .blog-card { transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease; }
         .blog-card:hover { background: var(--bg-elevated) !important; border-color: var(--border-normal) !important; }
         .featured-card:hover { transform: translateY(-2px); }
+        .lang-tab { display: inline-flex; align-items: center; gap: 5px; padding: 6px 16px; border-radius: 100px; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid var(--border-normal); color: var(--text-secondary); background: var(--bg-surface); transition: all 0.15s ease; }
+        .lang-tab.active { background: rgba(99,102,241,0.2); border-color: rgba(99,102,241,0.5); color: #818cf8; }
+        .lang-tab:hover:not(.active) { border-color: var(--border-normal); background: var(--bg-elevated); }
       `}</style>
 
       <header style={{ background: 'var(--bg-surface)', borderBottom: '1px solid var(--border-subtle)', padding: '14px 24px' }}>
@@ -77,16 +92,24 @@ export default async function BlogPage() {
       </header>
 
       <main style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 24px' }}>
-        <div style={{ marginBottom: '40px', textAlign: 'center' }}>
+        <div style={{ marginBottom: '32px', textAlign: 'center' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '4px 14px', background: 'rgba(99,102,241,0.15)', border: '1px solid rgba(99,102,241,0.3)', borderRadius: '100px', fontSize: '11px', fontWeight: 700, color: '#818cf8', letterSpacing: '0.1em', marginBottom: '16px' }}>
             📊 TREND INSIGHTS
           </div>
           <h1 style={{ fontSize: '2.25rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '12px', lineHeight: 1.2 }}>
             Global Trend Analysis
           </h1>
-          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 20px' }}>
             Deep dives into what 36 countries are searching for — written by the Global Trends Editorial Team.
           </p>
+          {/* Language tabs */}
+          <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
+            {Object.entries(LANG_LABELS).map(([code, { flag, label }]) => (
+              <Link key={code} href={`?lang=${code}`} className={`lang-tab${lang === code ? ' active' : ''}`}>
+                {flag} {label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         {featured.length > 0 && (

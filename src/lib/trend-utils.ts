@@ -24,6 +24,10 @@ export interface TrendItem {
   category: TrendCategory;
   temperature: number;
   velocity: TrendVelocity;
+  source?: string;
+  youtubeId?: string;
+  channelTitle?: string;
+  relatedNews?: string[];
 }
 
 export interface CountryData {
