@@ -56,18 +56,59 @@ COUNTRIES = {
 BLOCKED = {'porn', 'xxx', 'nude', 'naked', 'sex tape', 'murder how to', 'bomb making'}
 
 CATEGORY_KW = {
-    'sports':  ['nfl','nba','mlb','soccer','football','basketball','baseball','tennis','golf',
-                'formula 1','olympics','world cup','liga','premier','championship','tournament',
-                'athlete','player','hockey','cricket','rugby'],
-    'music':   ['album','song','concert','tour','grammy','billboard','single','music','singer',
-                'rapper','band','spotify','chart','release','official mv','kpop','k-pop'],
-    'movies':  ['movie','film','series','netflix','disney','hbo','tv show','trailer','teaser',
-                'actor','actress','celebrity','award','oscar','emmy','box office','anime'],
+    'sports':  ['nfl','nba','mlb','nhl','soccer','football','basketball','baseball','tennis','golf',
+                'formula 1','f1 grand prix','olympics','world cup','liga','premier league',
+                'championship','tournament','playoff','draft','standings','roster','trade',
+                'athlete','player','coach','manager','striker','goalkeeper','quarterback',
+                'hockey','cricket','rugby','volleyball','swimming','athletics','marathon',
+                'miami open','indian wells','australian open','us open','french open',
+                'grand slam','wimbledon','masters','superbowl','super bowl',
+                'march madness','ncaa','mls','ufc','boxing','wrestling','cycling','ski',
+                'defeats','wins match','beats in','scores goal','hat trick','transfer fee',
+                'signing','transferred','relegated','promoted','race winner','podium'],
+    'music':   ['album','song','concert','concert tour','world tour','grammy','billboard',
+                'music video','official mv','singer','rapper','spotify','music chart',
+                'kpop','k-pop','mv teaser','debut album','music awards',
+                'music festival','coachella','lollapalooza','hot 100',
+                'streaming record','listening party','music release'],
+    'movies':  ['movie','movies','film','films','series','netflix','disney','hbo','amazon prime',
+                'tv show','trailer','teaser','actor','actress','actors','celebrity',
+                'award','oscar','emmy','golden globe','bafta','box office','anime',
+                'streaming','new season','episode','premiere','sitcom',
+                'documentary','director','blockbuster','cinemas','theaters',
+                'returns to movies','returns to films','new film'],
     'tech':    ['artificial intelligence','chatgpt','openai','apple','google','microsoft',
                 'samsung','iphone','android','software','startup','crypto','bitcoin',
-                'blockchain','meta','tesla','spacex'],
-    'finance': ['stock','market','economy','gdp','inflation','interest rate','bank','fund','invest',
-                'dow','nasdaq','dax','nikkei','kospi','ibovespa','cac','ftse','asx'],
+                'blockchain','meta','tesla','spacex','nvidia','amazon','aws','cloud',
+                'app store','app launch','update released','cybersecurity','hack','breach',
+                'data leak','autonomous','electric vehicle','ev'],
+    'finance': ['stock price','stock market','share price','gdp','inflation','interest rate',
+                'stock exchange','hedge fund','mutual fund','investment fund',
+                'dow jones','nasdaq','dax','nikkei','kospi','ibovespa','cac 40','ftse','asx','s&p 500',
+                'federal reserve','ecb','rate hike','recession','ipo','earnings report',
+                'quarterly earnings','bonds','forex','currency exchange','exchange rate',
+                '株価','주가','bolsa','bourse'],
+}
+
+# News source → category mapping (most reliable signal)
+SOURCE_CATS = {
+    'sports': ['espn', 'sports illustrated', 'si.com', 'bleacher report', 'the athletic',
+               'sky sports', 'goal.com', 'marca', 'gazzetta', 'sportswire', 'sport bild',
+               "l'equipe", 'transfermarkt', 'cbssports', 'fox sports', 'nfl.com', 'nba.com',
+               'mlb.com', 'nhl.com', 'tennis', 'golf digest', 'cycling', 'athletics weekly',
+               'fight sports', 'mma', 'ufc', 'formula1', 'motorsport'],
+    'music':  ['billboard', 'rolling stone', 'pitchfork', 'nme', 'genius', 'music week',
+               'consequence', 'allmusic', 'spin', 'loudwire', 'kerrang', 'clash music',
+               'musicweek', 'uproxx music'],
+    'movies': ['variety', 'hollywood reporter', 'deadline', 'imdb', 'screen rant',
+               'collider', 'rotten tomatoes', 'indiewire', 'box office mojo', 'cinemablend',
+               'den of geek', 'empire', 'total film', 'movieweb'],
+    'tech':   ['techcrunch', 'the verge', 'wired', 'engadget', 'ars technica', 'gizmodo',
+               'cnet', 'zdnet', "tom's guide", '9to5mac', '9to5google', 'macrumors',
+               'android authority', 'gsmarena', 'pcmag', 'tomsguide'],
+    'finance':['wall street journal', 'wsj', 'financial times', 'ft.com',
+               'marketwatch', 'seeking alpha', 'investopedia', 'barrons',
+               'morningstar', 'moneywise', 'thestreet'],
 }
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; GlobalTrendBot/1.0)'}
@@ -89,13 +130,19 @@ def translate_to_english(text: str) -> str:
         return text
 
 
-def classify(kw):
+def classify(kw, news_title='', source=''):
     import re
-    k = kw.lower()
+    # Keyword + news title context first (more precise)
+    ctx = (kw + ' ' + news_title).lower()
     for cat, words in CATEGORY_KW.items():
         for w in words:
-            if re.search(r'\b' + re.escape(w) + r'\b', k):
+            if re.search(r'\b' + re.escape(w) + r'\b', ctx):
                 return cat
+    # Source-based as fallback (only when keyword matching fails)
+    src = source.lower()
+    for cat, srcs in SOURCE_CATS.items():
+        if any(s in src for s in srcs):
+            return cat
     return 'news'
 
 
@@ -137,15 +184,18 @@ for code, meta in COUNTRIES.items():
             if not m:
                 continue
             vol = int(m.group(1).replace(',', ''))
+            news_title = (getattr(e, 'ht_news_item_title', '') or '').strip()
+            source = (getattr(e, 'ht_news_item_source', '') or '').strip()
+            keyword_en = translate_to_english(kw)
             trends.append({
                 'rank':        rank,
                 'keyword':     kw,
                 'volume':      fmt_vol(vol),
                 'volumeRaw':   vol,
-                'category':    classify(kw),
+                'category':    classify(keyword_en, news_title, source),
                 'temperature': 0,
                 'velocity':    velocity(rank),
-                'keywordEn':   translate_to_english(kw),
+                'keywordEn':   keyword_en,
                 'isGlobal':    False,
             })
             keyword_country_map.setdefault(kw.lower(), []).append(code)
