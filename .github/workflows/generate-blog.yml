@@ -2,8 +2,8 @@ name: Generate Blog Posts
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # Daily at 00:30 UTC (30 min after data collection)
-  workflow_dispatch:        # Manual trigger from GitHub UI
+    - cron: '0 0 * * *'   # Daily at 00:00 UTC = 09:00 KST (backup — cron-job.org is primary trigger)
+  workflow_dispatch:        # Triggered by cron-job.org via /api/trigger-blog
 
 concurrency:
   group: content-pipeline
