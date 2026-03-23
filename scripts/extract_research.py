@@ -35,7 +35,7 @@ def normalize_kw(text: str) -> str:
 
 def slugify(text: str) -> str:
     text = text.lower().strip()
-    text = re.sub(r"[^\w\s-]", "", text)
+    text = re.sub(r"[^a-z0-9\s-]", "", text)  # ASCII only (비ASCII 제거)
     text = re.sub(r"[\s_]+", "-", text)
     text = re.sub(r"-+", "-", text)
     return text[:60].strip("-")
