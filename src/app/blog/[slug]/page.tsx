@@ -129,6 +129,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const LANG_META: Record<string, { label: string; flag: string }> = {
+  en: { label: 'English', flag: '🇺🇸' },
+  kr: { label: '한국어',  flag: '🇰🇷' },
+  jp: { label: '日本語',  flag: '🇯🇵' },
+};
+
 export default async function BlogPostPage({ params }: Props) {
   const posts = await loadPostsIndex();
   const post = posts.find((p) => p.slug === params.slug);
@@ -138,7 +144,21 @@ export default async function BlogPostPage({ params }: Props) {
   const content = await getPostContent(params.slug, post);
   const readingTime = post.readingTime || estimateReadingTime(content);
   const headings = extractHeadings(content);
-  const relatedPosts = posts.filter((p) => p.slug !== params.slug).slice(0, 3);
+
+  // Language variants: replace trailing -en / -kr / -jp
+  const currentLang = post.language || 'en';
+  const baseSlug = params.slug.replace(/-(?:en|kr|jp)$/, '');
+  const langVariants = (['en', 'kr', 'jp'] as const).map((lang) => {
+    const variantSlug = `${baseSlug}-${lang}`;
+    const exists = posts.some((p) => p.slug === variantSlug);
+    return { lang, slug: variantSlug, exists };
+  }).filter((v) => v.exists);
+
+  // Related posts: exclude current post and its language variants
+  const variantSlugs = new Set(langVariants.map((v) => v.slug));
+  const relatedPosts = posts
+    .filter((p) => p.language === 'en' && !variantSlugs.has(p.slug))
+    .slice(0, 3);
 
   // Structured data
   const articleSchema = {
@@ -241,11 +261,52 @@ export default async function BlogPostPage({ params }: Props) {
                   fontWeight: 800,
                   color: 'var(--text-primary)',
                   lineHeight: 1.25,
-                  marginBottom: '16px',
+                  marginBottom: '12px',
                 }}
               >
                 {post.title}
               </h1>
+
+              {/* Language switcher */}
+              {langVariants.length > 1 && (
+                <div style={{ display: 'flex', gap: '6px', marginBottom: '16px', flexWrap: 'wrap' }}>
+                  {langVariants.map(({ lang, slug }) => {
+                    const meta = LANG_META[lang];
+                    const isCurrent = lang === currentLang;
+                    return isCurrent ? (
+                      <span
+                        key={lang}
+                        style={{
+                          display: 'inline-flex', alignItems: 'center', gap: '4px',
+                          padding: '4px 12px',
+                          background: 'rgba(99,102,241,0.2)',
+                          border: '1px solid rgba(99,102,241,0.5)',
+                          borderRadius: '100px',
+                          fontSize: '12px', fontWeight: 700, color: '#818cf8',
+                        }}
+                      >
+                        {meta.flag} {meta.label}
+                      </span>
+                    ) : (
+                      <Link
+                        key={lang}
+                        href={`/blog/${slug}`}
+                        style={{
+                          display: 'inline-flex', alignItems: 'center', gap: '4px',
+                          padding: '4px 12px',
+                          background: 'var(--bg-elevated)',
+                          border: '1px solid var(--border-subtle)',
+                          borderRadius: '100px',
+                          fontSize: '12px', fontWeight: 600, color: 'var(--text-secondary)',
+                          textDecoration: 'none',
+                        }}
+                      >
+                        {meta.flag} {meta.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
 
               <p style={{ fontSize: '16px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '20px' }}>
                 {post.excerpt}
