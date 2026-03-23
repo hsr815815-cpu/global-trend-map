@@ -80,17 +80,30 @@ function extractHeadings(content: string): Array<{ id: string; text: string; lev
 }
 
 function renderMarkdown(content: string): string {
-  return content
+  // Convert markdown tables to HTML tables
+  const tableRegex = /(\|.+\|\n\|[-| :]+\|\n(?:\|.+\|\n?)+)/gm;
+  let processed = content.replace(tableRegex, (table) => {
+    const rows = table.trim().split('\n');
+    const header = rows[0].split('|').filter(Boolean).map((c) => `<th>${c.trim()}</th>`).join('');
+    const body = rows.slice(2).map((row) =>
+      '<tr>' + row.split('|').filter(Boolean).map((c) => `<td>${c.trim()}</td>`).join('') + '</tr>'
+    ).join('\n');
+    return `<table><thead><tr>${header}</tr></thead><tbody>${body}</tbody></table>`;
+  });
+
+  return processed
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')
     .replace(/^# (.+)$/gm, '<h1>$1</h1>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/`(.+?)`/g, '<code>$1</code>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/^---$/gm, '<hr />')
     .replace(/^\- (.+)$/gm, '<li>$1</li>')
     .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
     .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
-    .replace(/^(?!<[hul]|<li|<\/ul|<p>|\n)(.*\S.*)$/gm, '<p>$1</p>')
+    .replace(/^(?!<[hultap]|<li|<\/[ultap]|<hr|\n)(.*\S.*)$/gm, '<p>$1</p>')
     .replace(/\n{2,}/g, '\n');
 }
 
@@ -130,10 +143,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const LANG_META: Record<string, { label: string; flag: string }> = {
-  en: { label: 'English', flag: '🇺🇸' },
-  kr: { label: '한국어',  flag: '🇰🇷' },
-  jp: { label: '日本語',  flag: '🇯🇵' },
+  en: { label: 'English',    flag: '🇺🇸' },
+  zh: { label: '中文',        flag: '🇨🇳' },
+  es: { label: 'Español',    flag: '🇪🇸' },
+  pt: { label: 'Português',  flag: '🇧🇷' },
+  fr: { label: 'Français',   flag: '🇫🇷' },
+  de: { label: 'Deutsch',    flag: '🇩🇪' },
+  kr: { label: '한국어',       flag: '🇰🇷' },
+  jp: { label: '日本語',       flag: '🇯🇵' },
 };
+
+const ALL_LANGS = ['en', 'zh', 'es', 'pt', 'fr', 'de', 'kr', 'jp'] as const;
 
 export default async function BlogPostPage({ params }: Props) {
   const posts = await loadPostsIndex();
@@ -145,10 +165,10 @@ export default async function BlogPostPage({ params }: Props) {
   const readingTime = post.readingTime || estimateReadingTime(content);
   const headings = extractHeadings(content);
 
-  // Language variants: replace trailing -en / -kr / -jp
+  // Language variants: replace trailing lang suffix
   const currentLang = post.language || 'en';
-  const baseSlug = params.slug.replace(/-(?:en|kr|jp)$/, '');
-  const langVariants = (['en', 'kr', 'jp'] as const).map((lang) => {
+  const baseSlug = params.slug.replace(/-(?:en|zh|es|pt|fr|de|kr|jp)$/, '');
+  const langVariants = ALL_LANGS.map((lang) => {
     const variantSlug = `${baseSlug}-${lang}`;
     const exists = posts.some((p) => p.slug === variantSlug);
     return { lang, slug: variantSlug, exists };

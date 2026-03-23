@@ -596,6 +596,38 @@ body {
   margin: 2em 0;
 }
 
+.prose-dark table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 14px;
+}
+
+.prose-dark th,
+.prose-dark td {
+  padding: 10px 14px;
+  text-align: left;
+  border: 1px solid var(--border-subtle);
+}
+
+.prose-dark th {
+  background: var(--bg-elevated);
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prose-dark td {
+  color: var(--text-secondary);
+}
+
+.prose-dark tr:nth-child(even) td {
+  background: var(--bg-surface);
+}
+
 /* ============================================================
    LEGAL PAGE STYLES
    ============================================================ */
