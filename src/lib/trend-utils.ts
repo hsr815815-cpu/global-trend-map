@@ -36,6 +36,7 @@ export interface GlobalData {
   temperature: number;
   topTrend: {
     keyword: string;
+    keywordEn?: string;
     country: string;
     volume: string;
     category: string;

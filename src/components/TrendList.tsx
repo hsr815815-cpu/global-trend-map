@@ -189,7 +189,7 @@ export default function TrendList({ data }: TrendListProps) {
                 color: 'var(--text-primary)',
               }}
             >
-              {kw(data.global.topTrend.keyword, (data.global.topTrend as { keyword: string; keywordEn?: string }).keywordEn)}
+              {kw(data.global.topTrend.keyword, data.global.topTrend.keywordEn)}
             </div>
             <div
               style={{
