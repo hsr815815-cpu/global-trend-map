@@ -2,9 +2,11 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { NextResponse } from 'next/server';
 
-export const dynamic = 'force-dynamic';
+// Revalidate every hour — no force-dynamic, no per-request variance
+export const revalidate = 3600;
 
 const SITE_URL = 'https://global-trend-map-web.vercel.app';
+const STATIC_DATE = '2026-03-23T00:00:00Z';
 
 async function getCountryCodes(): Promise<string[]> {
   try {
@@ -36,20 +38,19 @@ function url(loc: string, lastmod: string, changefreq: string, priority: string)
 }
 
 export async function GET() {
-  const now = new Date().toISOString();
   const [countryCodes, posts] = await Promise.all([getCountryCodes(), getPostSlugs()]);
 
   const staticUrls = [
-    url(SITE_URL, now, 'hourly', '1.0'),
-    url(`${SITE_URL}/blog`, now, 'hourly', '0.9'),
-    url(`${SITE_URL}/about`, '2026-03-23T00:00:00Z', 'monthly', '0.7'),
-    url(`${SITE_URL}/contact`, '2026-03-23T00:00:00Z', 'monthly', '0.6'),
-    url(`${SITE_URL}/privacy-policy`, '2026-03-23T00:00:00Z', 'yearly', '0.3'),
-    url(`${SITE_URL}/terms`, '2026-03-23T00:00:00Z', 'yearly', '0.3'),
-    url(`${SITE_URL}/cookie-policy`, '2026-03-23T00:00:00Z', 'yearly', '0.3'),
-    url(`${SITE_URL}/dmca`, '2026-03-23T00:00:00Z', 'yearly', '0.2'),
-    url(`${SITE_URL}/disclaimer`, '2026-03-23T00:00:00Z', 'yearly', '0.2'),
-    url(`${SITE_URL}/editorial-policy`, '2026-03-23T00:00:00Z', 'yearly', '0.3'),
+    url(SITE_URL,                          STATIC_DATE, 'hourly',  '1.0'),
+    url(`${SITE_URL}/blog`,                STATIC_DATE, 'hourly',  '0.9'),
+    url(`${SITE_URL}/about`,               STATIC_DATE, 'monthly', '0.7'),
+    url(`${SITE_URL}/contact`,             STATIC_DATE, 'monthly', '0.6'),
+    url(`${SITE_URL}/privacy-policy`,      STATIC_DATE, 'yearly',  '0.3'),
+    url(`${SITE_URL}/terms`,               STATIC_DATE, 'yearly',  '0.3'),
+    url(`${SITE_URL}/cookie-policy`,       STATIC_DATE, 'yearly',  '0.3'),
+    url(`${SITE_URL}/dmca`,                STATIC_DATE, 'yearly',  '0.2'),
+    url(`${SITE_URL}/disclaimer`,          STATIC_DATE, 'yearly',  '0.2'),
+    url(`${SITE_URL}/editorial-policy`,    STATIC_DATE, 'yearly',  '0.3'),
   ];
 
   const postUrls = posts.map((p) =>
@@ -57,7 +58,7 @@ export async function GET() {
   );
 
   const countryUrls = countryCodes.map((c) =>
-    url(`${SITE_URL}/country/${c}`, now, 'hourly', '0.85')
+    url(`${SITE_URL}/country/${c}`, STATIC_DATE, 'hourly', '0.85')
   );
 
   const xml = [
@@ -73,8 +74,7 @@ export async function GET() {
     status: 200,
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'no-cache, no-store, must-revalidate',
-      'X-Robots-Tag': 'noindex',
+      'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
     },
   });
 }
