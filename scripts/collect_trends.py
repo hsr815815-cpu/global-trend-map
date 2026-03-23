@@ -794,6 +794,68 @@ def main():
     SITEMAP_FILE.write_text(sitemap_xml, encoding="utf-8")
     log.info("Sitemap written → %s (%d URLs)", SITEMAP_FILE, len(sitemap_urls))
 
+    # ----------------------------------------------------------------
+    # GENERATE STATIC RSS FEED
+    # ----------------------------------------------------------------
+    from email.utils import formatdate
+    import calendar
+
+    RSS_FILE = BASE_DIR / "public" / "rss.xml"
+
+    def _rfc822(date_str: str) -> str:
+        """Convert YYYY-MM-DD or ISO string to RFC 822 date for RSS."""
+        try:
+            dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        except Exception:
+            dt = datetime.now(timezone.utc)
+        return formatdate(calendar.timegm(dt.timetuple()), usegmt=True)
+
+    def _escape(s: str) -> str:
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+    try:
+        raw = json.loads(POSTS_INDEX_FILE.read_text(encoding="utf-8"))
+        all_posts = raw.get("posts", raw) if isinstance(raw, dict) else raw
+        en_posts = [p for p in all_posts if p.get("language", "en") == "en"]
+        en_posts = sorted(en_posts, key=lambda p: p.get("date", ""), reverse=True)[:20]
+    except Exception:
+        en_posts = []
+
+    items = []
+    for p in en_posts:
+        slug  = p.get("slug", "")
+        title = _escape(p.get("title", slug))
+        link  = f"{SITE_URL}/blog/{slug}"
+        desc  = _escape(p.get("description", p.get("excerpt", title)))
+        pub   = _rfc822(p.get("date", today))
+        items.append(
+            f"    <item>\n"
+            f"      <title>{title}</title>\n"
+            f"      <link>{link}</link>\n"
+            f"      <description>{desc}</description>\n"
+            f"      <pubDate>{pub}</pubDate>\n"
+            f"      <guid isPermaLink=\"true\">{link}</guid>\n"
+            f"    </item>"
+        )
+
+    build_date = formatdate(usegmt=True)
+    rss_xml = "\n".join([
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+        '  <channel>',
+        '    <title>Global Trend Map — World Trending Topics</title>',
+        f'    <link>{SITE_URL}</link>',
+        '    <description>Real-time global trend analysis across 40+ countries. Hourly updates.</description>',
+        '    <language>en-us</language>',
+        f'    <lastBuildDate>{build_date}</lastBuildDate>',
+        f'    <atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>',
+        *items,
+        '  </channel>',
+        '</rss>',
+    ])
+    RSS_FILE.write_text(rss_xml, encoding="utf-8")
+    log.info("RSS feed written → %s (%d items)", RSS_FILE, len(items))
+
 
 if __name__ == "__main__":
     main()

@@ -88,7 +88,7 @@ jobs:
             "
           fi
 
-      - name: Regenerate sitemap after blog update
+      - name: Regenerate sitemap and RSS after blog update
         run: |
           python3 - <<'EOF'
           import json, sys
@@ -139,6 +139,27 @@ jobs:
           xml = '\n'.join(['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', *urls, '</urlset>'])
           SITEMAP_FILE.write_text(xml, encoding='utf-8')
           print(f'Sitemap updated: {len(urls)} URLs')
+
+          # RSS feed
+          from email.utils import formatdate
+          import calendar
+          RSS_FILE = BASE_DIR / 'public' / 'rss.xml'
+          def rfc822(d):
+              try:
+                  dt = __import__('datetime').datetime.fromisoformat(d.replace('Z','+00:00'))
+              except Exception:
+                  dt = __import__('datetime').datetime.now(__import__('datetime').timezone.utc)
+              return formatdate(calendar.timegm(dt.timetuple()), usegmt=True)
+          def esc(s): return s.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
+          en_posts = sorted([p for p in posts if p.get('language','en')=='en'], key=lambda p: p.get('date',''), reverse=True)[:20]
+          items = []
+          for p in en_posts:
+              slug = p.get('slug','')
+              link = f"{SITE_URL}/blog/{slug}"
+              items.append(f"    <item>\n      <title>{esc(p.get('title',slug))}</title>\n      <link>{link}</link>\n      <description>{esc(p.get('description',p.get('excerpt',slug)))}</description>\n      <pubDate>{rfc822(p.get('date',today))}</pubDate>\n      <guid isPermaLink=\"true\">{link}</guid>\n    </item>")
+          rss = '\n'.join(['<?xml version="1.0" encoding="UTF-8"?>','<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">','  <channel>',f'    <title>Global Trend Map — World Trending Topics</title>',f'    <link>{SITE_URL}</link>','    <description>Real-time global trend analysis across 40+ countries. Hourly updates.</description>','    <language>en-us</language>',f'    <lastBuildDate>{formatdate(usegmt=True)}</lastBuildDate>',f'    <atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>',*items,'  </channel>','</rss>'])
+          RSS_FILE.write_text(rss, encoding='utf-8')
+          print(f'RSS feed updated: {len(items)} items')
           EOF
 
       - name: Commit and push generated blog posts
@@ -149,6 +170,7 @@ jobs:
           git add public/data/posts-index.json
           git add public/data/trends.json
           git add public/sitemap.xml 2>/dev/null || true
+          git add public/rss.xml 2>/dev/null || true
           git diff --staged --quiet || git commit -m "📝 Auto: Generate blog posts $(date -u '+%Y-%m-%d')"
           git push
         env:
