@@ -2238,7 +2238,7 @@ def build_context(trends_data: dict, lang: str) -> dict:
 # MDX builder
 # ---------------------------------------------------------------------------
 
-def build_mdx(lang: str, ctx: dict) -> tuple[str, str]:
+def build_mdx(lang: str, ctx: dict, rt: int = None) -> tuple[str, str]:
     tmpl  = TEMPLATES[lang]
     title   = tmpl["title"](ctx)
     excerpt = tmpl["excerpt"](ctx)
@@ -2246,7 +2246,8 @@ def build_mdx(lang: str, ctx: dict) -> tuple[str, str]:
     locale  = LANG_META[lang]["locale"]
 
     slug = f"{ctx['date_iso']}-spotlight-{ctx['slug_en']}-{lang}"
-    rt   = reading_time(body)
+    if rt is None:
+        rt = reading_time(body)
 
     alts_yaml = "\n".join(
         f'  {LANG_META[l]["hreflang"]}: /blog/{ctx["date_iso"]}-spotlight-{ctx["slug_en"]}-{l}'
@@ -2315,13 +2316,17 @@ def main():
     log.info(f"  Category: {en_ctx['category_label']}, Temp: {en_ctx['top_temperature']}°T")
     log.info(f"  Countries: {len(en_ctx['countries_list'])}, YouTube: {bool(en_ctx['youtube_url'])}")
 
+    # Use EN reading time for all languages (same article = same reading time)
+    shared_rt = reading_time(TEMPLATES["en"]["body"](en_ctx))
+    log.info(f"  Reading time (all langs): {shared_rt} min")
+
     new_posts = []
     for lang in ALL_LANGS:
         ctx  = build_context(trends_data, lang)
-        slug, mdx_content = build_mdx(lang, ctx)
+        slug, mdx_content = build_mdx(lang, ctx, rt=shared_rt)
         out_path = BLOG_DIR / f"{slug}.mdx"
         out_path.write_text(mdx_content, encoding="utf-8")
-        log.info(f"  Written: {out_path.name}  ({reading_time(TEMPLATES[lang]['body'](ctx))} min read)")
+        log.info(f"  Written: {out_path.name}  ({shared_rt} min read)")
 
         new_posts.append({
             "slug":        slug,
@@ -2331,7 +2336,7 @@ def main():
             "excerpt":     TEMPLATES[lang]["excerpt"](ctx),
             "category":    ctx["category"] or "news",
             "language":    lang,
-            "readingTime": reading_time(TEMPLATES[lang]["body"](ctx)),
+            "readingTime": shared_rt,
             "featured":    True,
             "tags":        [ctx["slug_en"], ctx["category"] or "news", "global-trends", "trending"],
         })
