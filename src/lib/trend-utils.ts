@@ -47,11 +47,33 @@ export interface GlobalData {
   categoryBreakdown: Record<string, number>;
 }
 
+export interface ChartItem {
+  rank: number;
+  keyword: string;
+  keywordEn?: string;
+  volume: string;
+  volumeRaw: number;
+  category: TrendCategory;
+  temperature: number;
+  velocity: TrendVelocity;
+  source: string;
+}
+
 export interface TrendsData {
   lastUpdated: string;
   countries: Record<string, CountryData>;
   global: GlobalData;
+  categoryCharts?: Record<string, ChartItem[]>;
 }
+
+const CHART_SOURCE_META: Record<string, { flag: string; name: string }> = {
+  'Apple Music': { flag: '🎵', name: 'Apple Music' },
+  'iTunes Movies': { flag: '🎬', name: 'iTunes Movies' },
+  'Hacker News': { flag: '💻', name: 'Hacker News' },
+  'MarketWatch': { flag: '📈', name: 'MarketWatch' },
+  'ESPN': { flag: '⚽', name: 'ESPN' },
+  'BBC Sport': { flag: '🏅', name: 'BBC Sport' },
+};
 
 // ============================================================
 // TEMPERATURE
@@ -148,9 +170,13 @@ export function getTopGlobalTrends(
   limit: number = 10,
   category: TrendCategory = 'all'
 ): Array<TrendItem & { countryCode: string; countryName: string; flag: string }> {
+  type ResultItem = TrendItem & { countryCode: string; countryName: string; flag: string };
+
   if (category === 'all') {
-    // All: deduplicate by keyword, keep highest-temperature per keyword
-    const best = new Map<string, TrendItem & { countryCode: string; countryName: string; flag: string }>();
+    // All: Google Trends + all category charts, deduplicated by keyword, sorted by temperature
+    const best = new Map<string, ResultItem>();
+
+    // Google Trends
     Object.entries(data.countries).forEach(([code, country]) => {
       country.trends.forEach((trend) => {
         const key = (trend.keywordEn || trend.keyword).toLowerCase().trim();
@@ -160,12 +186,47 @@ export function getTopGlobalTrends(
         }
       });
     });
+
+    // Category charts
+    Object.values(data.categoryCharts || {}).forEach((items) => {
+      items.forEach((item) => {
+        const key = (item.keywordEn || item.keyword).toLowerCase().trim();
+        const existing = best.get(key);
+        if (!existing || item.temperature > existing.temperature) {
+          const meta = CHART_SOURCE_META[item.source] || { flag: '📊', name: item.source };
+          best.set(key, {
+            ...item,
+            keywordEn: item.keywordEn || item.keyword,
+            countryCode: 'CHART',
+            countryName: meta.name,
+            flag: meta.flag,
+          });
+        }
+      });
+    });
+
     return Array.from(best.values())
       .sort((a, b) => b.temperature - a.temperature)
       .slice(0, limit);
+
   } else {
-    // Category view: collect all matching trends from every country, no deduplication
-    const results: Array<TrendItem & { countryCode: string; countryName: string; flag: string }> = [];
+    // Category view: category chart items first, then Google Trends for that category
+    const results: ResultItem[] = [];
+
+    // Category-specific chart (primary source)
+    const chartItems = data.categoryCharts?.[category] || [];
+    chartItems.forEach((item) => {
+      const meta = CHART_SOURCE_META[item.source] || { flag: '📊', name: item.source };
+      results.push({
+        ...item,
+        keywordEn: item.keywordEn || item.keyword,
+        countryCode: 'CHART',
+        countryName: meta.name,
+        flag: meta.flag,
+      });
+    });
+
+    // Google Trends for this category (supplementary)
     Object.entries(data.countries).forEach(([code, country]) => {
       country.trends.forEach((trend) => {
         if (trend.category === category) {
@@ -173,6 +234,7 @@ export function getTopGlobalTrends(
         }
       });
     });
+
     return results
       .sort((a, b) => b.temperature - a.temperature)
       .slice(0, limit);

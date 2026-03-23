@@ -163,6 +163,171 @@ def calc_temp(vol, rank, spread):
     return min(100, min(50, int(vol / 200_000)) + max(0, 30 - rank * 2) + min(20, spread * 5))
 
 
+# ============================================================
+# CATEGORY-SPECIFIC CHART COLLECTION
+# ============================================================
+
+def collect_itunes_music(limit=50):
+    """iTunes Top Songs chart (US) — free, no API key."""
+    items = []
+    try:
+        url = f'https://itunes.apple.com/us/rss/topsongs/limit={limit}/json'
+        r = S.get(url, timeout=20)
+        entries = r.json().get('feed', {}).get('entry', [])
+        for rank, entry in enumerate(entries[:limit], 1):
+            name   = (entry.get('im:name', {}).get('label') or '').strip()
+            artist = (entry.get('im:artist', {}).get('label') or '').strip()
+            kw = f"{name} — {artist}" if artist else name
+            if not kw:
+                continue
+            vol_raw = max(500_000 - rank * 9_000, 1_000)
+            items.append({
+                'rank': rank, 'keyword': kw, 'keywordEn': kw,
+                'volume': fmt_vol(vol_raw), 'volumeRaw': vol_raw,
+                'category': 'music', 'temperature': max(90 - rank, 25),
+                'velocity': velocity(rank), 'source': 'Apple Music',
+            })
+        log.info('iTunes Music: %d songs', len(items))
+    except Exception as ex:
+        log.warning('iTunes Music chart failed: %s', ex)
+    return items
+
+
+def collect_itunes_movies(limit=50):
+    """iTunes Top Movies chart (US) — free, no API key."""
+    items = []
+    try:
+        url = f'https://itunes.apple.com/us/rss/topmovies/limit={limit}/json'
+        r = S.get(url, timeout=20)
+        entries = r.json().get('feed', {}).get('entry', [])
+        for rank, entry in enumerate(entries[:limit], 1):
+            name = (entry.get('im:name', {}).get('label') or '').strip()
+            if not name:
+                continue
+            vol_raw = max(200_000 - rank * 3_500, 1_000)
+            items.append({
+                'rank': rank, 'keyword': name, 'keywordEn': name,
+                'volume': fmt_vol(vol_raw), 'volumeRaw': vol_raw,
+                'category': 'movies', 'temperature': max(90 - rank, 25),
+                'velocity': velocity(rank), 'source': 'iTunes Movies',
+            })
+        log.info('iTunes Movies: %d movies', len(items))
+    except Exception as ex:
+        log.warning('iTunes Movies chart failed: %s', ex)
+    return items
+
+
+def collect_hackernews(limit=50):
+    """Hacker News top stories — free, no API key."""
+    items = []
+    try:
+        ids = S.get(
+            'https://hacker-news.firebaseio.com/v0/topstories.json', timeout=10
+        ).json()[:(limit * 2)]
+        rank = 1
+        for story_id in ids:
+            if rank > limit:
+                break
+            try:
+                item = S.get(
+                    f'https://hacker-news.firebaseio.com/v0/item/{story_id}.json', timeout=5
+                ).json()
+                if item.get('type') != 'story':
+                    continue
+                title = (item.get('title') or '').strip()
+                if not title:
+                    continue
+                score = item.get('score', 10)
+                vol_raw = score * 150
+                items.append({
+                    'rank': rank, 'keyword': title, 'keywordEn': title,
+                    'volume': fmt_vol(vol_raw), 'volumeRaw': vol_raw,
+                    'category': 'tech', 'temperature': max(88 - rank, 20),
+                    'velocity': velocity(rank), 'source': 'Hacker News',
+                })
+                rank += 1
+                time.sleep(0.05)
+            except Exception:
+                continue
+        log.info('Hacker News: %d stories', len(items))
+    except Exception as ex:
+        log.warning('Hacker News failed: %s', ex)
+    return items
+
+
+def collect_finance_rss(limit=50):
+    """MarketWatch RSS feeds — free."""
+    items = []
+    seen = set()
+    feeds = [
+        'https://feeds.marketwatch.com/marketwatch/topstories/',
+        'https://feeds.marketwatch.com/marketwatch/realtimeheadlines/',
+        'https://feeds.marketwatch.com/marketwatch/marketpulse/',
+    ]
+    rank = 1
+    for feed_url in feeds:
+        if rank > limit:
+            break
+        try:
+            r = S.get(feed_url, timeout=10)
+            feed = feedparser.parse(r.text)
+            for e in feed.entries:
+                if rank > limit:
+                    break
+                title = (e.get('title') or '').strip()
+                if not title or title in seen:
+                    continue
+                seen.add(title)
+                vol_raw = max(100_000 - rank * 1_800, 500)
+                items.append({
+                    'rank': rank, 'keyword': title, 'keywordEn': title,
+                    'volume': fmt_vol(vol_raw), 'volumeRaw': vol_raw,
+                    'category': 'finance', 'temperature': max(80 - rank, 20),
+                    'velocity': velocity(rank), 'source': 'MarketWatch',
+                })
+                rank += 1
+        except Exception as ex:
+            log.warning('Finance RSS %s failed: %s', feed_url, ex)
+    log.info('Finance RSS: %d stories', len(items))
+    return items
+
+
+def collect_sports_rss(limit=50):
+    """ESPN + BBC Sport RSS — free."""
+    items = []
+    seen = set()
+    feeds = [
+        ('ESPN',      'https://www.espn.com/espn/rss/news'),
+        ('BBC Sport', 'https://feeds.bbci.co.uk/sport/rss.xml'),
+    ]
+    rank = 1
+    for source_name, feed_url in feeds:
+        if rank > limit:
+            break
+        try:
+            r = S.get(feed_url, timeout=10)
+            feed = feedparser.parse(r.text)
+            for e in feed.entries:
+                if rank > limit:
+                    break
+                title = (e.get('title') or '').strip()
+                if not title or title in seen:
+                    continue
+                seen.add(title)
+                vol_raw = max(300_000 - rank * 5_500, 1_000)
+                items.append({
+                    'rank': rank, 'keyword': title, 'keywordEn': title,
+                    'volume': fmt_vol(vol_raw), 'volumeRaw': vol_raw,
+                    'category': 'sports', 'temperature': max(85 - rank, 20),
+                    'velocity': velocity(rank), 'source': source_name,
+                })
+                rank += 1
+        except Exception as ex:
+            log.warning('Sports RSS %s failed: %s', feed_url, ex)
+    log.info('Sports RSS: %d stories', len(items))
+    return items
+
+
 countries_out = {}
 keyword_country_map = {}
 
@@ -249,9 +414,23 @@ if active_countries < 5:
     log.warning('Only %d countries collected — aborting', active_countries)
     sys.exit(0)
 
+# ============================================================
+# CATEGORY CHARTS
+# ============================================================
+log.info('=== Collecting category charts ===')
+category_charts = {
+    'music':   collect_itunes_music(50),
+    'movies':  collect_itunes_movies(50),
+    'tech':    collect_hackernews(50),
+    'finance': collect_finance_rss(50),
+    'sports':  collect_sports_rss(50),
+}
+log.info('Charts: %s', {k: len(v) for k, v in category_charts.items()})
+
 output = {
     'lastUpdated': datetime.now(timezone.utc).isoformat(),
     'countries': countries_out,
+    'categoryCharts': category_charts,
     'global': {
         'temperature':     global_temp,
         'topTrend': {
