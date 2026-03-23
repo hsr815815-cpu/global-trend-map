@@ -82,7 +82,7 @@ function extractHeadings(content: string): Array<{ id: string; text: string; lev
 function renderMarkdown(content: string): string {
   // Convert markdown tables to HTML tables
   const tableRegex = /(\|.+\|\n\|[-| :]+\|\n(?:\|.+\|\n?)+)/gm;
-  let processed = content.replace(tableRegex, (table) => {
+  const processed = content.replace(tableRegex, (table) => {
     const rows = table.trim().split('\n');
     const header = rows[0].split('|').filter(Boolean).map((c) => `<th>${c.trim()}</th>`).join('');
     const body = rows.slice(2).map((row) =>

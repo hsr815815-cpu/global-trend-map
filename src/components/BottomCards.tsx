@@ -80,13 +80,12 @@ export default function BottomCards({ data }: BottomCardsProps) {
             trend={trend}
             color={color}
             icon={icon}
-            t={t}
           />
         );
       })}
 
       {/* Global average card */}
-      <GlobalCard data={data} t={t} />
+      <GlobalCard data={data} />
     </div>
   );
 }
@@ -96,10 +95,9 @@ interface CategoryCardProps {
   trend: (TrendItem & { countryCode: string; flag: string; countryName: string }) | null;
   color: string;
   icon: string;
-  t: (key: string) => string;
 }
 
-function CategoryCard({ category, trend, color, icon, t }: CategoryCardProps) {
+function CategoryCard({ category, trend, color, icon }: CategoryCardProps) {
   const tempColor = trend ? getTemperatureColor(trend.temperature) : '#475569';
 
   return (
@@ -266,7 +264,7 @@ function CategoryCard({ category, trend, color, icon, t }: CategoryCardProps) {
   );
 }
 
-function GlobalCard({ data, t }: { data: TrendsData; t: (key: string) => string }) {
+function GlobalCard({ data }: { data: TrendsData }) {
   const globalTemp = data.global.temperature;
   const tempColor = getTemperatureColor(globalTemp);
 
