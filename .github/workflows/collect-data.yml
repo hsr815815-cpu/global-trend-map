@@ -2,8 +2,13 @@ name: Collect Trend Data
 
 on:
   schedule:
-    - cron: '0 * * * *'   # Every hour at :00
-  workflow_dispatch:        # Manual trigger from GitHub UI
+    - cron: '0 * * * *'    # Every hour at :00
+    - cron: '30 * * * *'   # Every hour at :30 (backup — GitHub sometimes skips :00 runs)
+  workflow_dispatch:         # Manual trigger from GitHub UI
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/collect_trends.py'  # Re-collect when collection logic changes
 
 concurrency:
   group: data-pipeline
