@@ -1,66 +1,120 @@
-# 블로그 포스트 자동 생성
+# 블로그 포스트 자동 생성 태스크
 
-## 작업 순서
+## 1단계: research.json 확인
+`scripts/research.json`을 읽어라.
 
-### 1단계: 데이터 확인
-`public/data/trends.json`을 읽어라.
-- `global.topTrend`에서 오늘의 스포트라이트 키워드를 추출한다
-- 키워드, 카테고리, 진원국, 검색량, 트렌드 온도, youtubeId 확인
-- `countries` 데이터에서 이 키워드가 트렌딩 중인 국가 목록 추출
-- `global.risingFast`에서 상위 5개 추출
-- `global.categoryBreakdown` 추출
+- `status`가 `"skip"`이면 **즉시 중단**하고 skip_reason을 출력한다.
+- `status`가 `"write"`이면 계속 진행한다.
 
-### 2단계: 중복 체크
-`public/data/posts-index.json`을 읽어라.
-- `recentSpotlights` 배열에서 오늘 기준 최근 3일 이내 날짜인 항목 확인
-- 같은 키워드가 있으면 **작업 중단** (이미 발행된 글)
-- 없으면 계속 진행
+## 2단계: 글쓰기 기준 확인
+`scripts/WRITING_GUIDE.md`를 읽어라. 이 기준을 엄격히 따른다.
 
-### 3단계: 글쓰기 기준 확인
-`scripts/WRITING_GUIDE.md`를 읽어라.
-이 기준에 따라 글을 작성한다.
+## 3단계: 영어(EN) 블로그 포스트 작성
 
-### 4단계: 내부링크 후보 확인
-`public/data/posts-index.json`의 `posts` 배열에서
-language가 "en"인 최근 5개 포스트의 slug를 추출한다.
-내부링크 URL 형식: `https://global-trend-map-web.vercel.app/blog/{slug}`
+research.json의 데이터를 바탕으로 **영어 블로그 포스트**를 작성한다.
 
-### 5단계: 블로그 포스트 작성
-WRITING_GUIDE.md 기준에 따라 **8개 언어 MDX 파일**을 작성한다.
+### 핵심 원칙
+- `keyword` 자체에 대한 구체적인 설명과 분석을 작성한다
+- "왜 지금 이 키워드가 트렌딩인가"를 실제로 분석한다 (카테고리 공통 문단 절대 금지)
+- WRITING_GUIDE.md의 9개 섹션 구조를 반드시 따른다
+- 1,500~2,000 단어
 
-각 파일 저장 경로:
-`public/blog/{YYYY-MM-DD}-spotlight-{keyword-slug}-{lang}.mdx`
+### 사용할 데이터
+- `keyword`: 오늘의 주제
+- `category`: 카테고리
+- `top_country_name` + `top_country_flag`: 진원국
+- `volume`: 검색량
+- `temperature`: 트렌드 강도 (0-100)
+- `total_countries`: 모니터링 국가 수
+- `countries`: 트렌딩 중인 국가 목록 (flag + name)
+- `rising_others`: 함께 상승 중인 다른 트렌드
+- `category_breakdown`: 카테고리별 트렌드 수
+- `youtube_url`: YouTube 링크 (있으면 삽입)
+- `google_trends_url`: Google Trends 링크 (반드시 삽입)
+- `site_url`: 사이트 URL (내부링크에 사용)
+- `internal_links`: 기존 발행 포스트 (본문에 1~2개 자연스럽게 삽입)
 
-오늘 날짜: 파일 작성 시점의 UTC 날짜 사용
+### MDX 파일 저장
+파일명: `public/blog/{date}-spotlight-{keyword_slug}-en.mdx`
 
-**중요:**
-- 섹션 3 (Why Trending)은 이 키워드에 대한 실제 분석을 작성한다
-- 카테고리 공통 문단 절대 금지
-- EN 기준 readingTime을 계산해 8개 언어 모두 동일하게 적용
-- 각 언어로 자연스럽게 작성 (기계 번역 말투 금지)
+frontmatter 형식:
+```
+---
+slug: {date}-spotlight-{keyword_slug}-en
+title: "{영어 제목}"
+date: "{date}"
+lastUpdated: "{현재 ISO timestamp}"
+excerpt: "{2-3문장 요약}"
+category: {category}
+language: en
+featured: true
+readingTime: {단어수 / 200, 반올림, 최소 1}
+tags:
+  - {keyword_slug}
+  - {category}
+  - global-trends
+  - trending
+alternates:
+  en: /blog/{date}-spotlight-{keyword_slug}-en
+  zh: /blog/{date}-spotlight-{keyword_slug}-zh
+  es: /blog/{date}-spotlight-{keyword_slug}-es
+  pt: /blog/{date}-spotlight-{keyword_slug}-pt
+  fr: /blog/{date}-spotlight-{keyword_slug}-fr
+  de: /blog/{date}-spotlight-{keyword_slug}-de
+  kr: /blog/{date}-spotlight-{keyword_slug}-kr
+  jp: /blog/{date}-spotlight-{keyword_slug}-jp
+openGraph:
+  title: "{영어 제목}"
+  description: "{excerpt}"
+  locale: en_US
+---
+```
 
-### 6단계: posts-index.json 업데이트
-`public/data/posts-index.json`을 업데이트한다.
+## 4단계: 7개 언어 번역 (EN 기준)
 
-`posts` 배열 앞에 8개 언어 항목 추가:
+작성한 영어 포스트를 아래 7개 언어로 번역한다.
+**구조, 섹션, 정보량이 EN과 완전히 동일**해야 한다.
+readingTime은 EN과 동일한 값을 사용한다.
+
+| 언어 | lang 코드 | locale |
+|---|---|---|
+| 중국어 간체 | zh | zh_CN |
+| 스페인어 | es | es_ES |
+| 포르투갈어 | pt | pt_BR |
+| 프랑스어 | fr | fr_FR |
+| 독일어 | de | de_DE |
+| 한국어 | kr | ko_KR |
+| 일본어 | jp | ja_JP |
+
+각 파일 저장: `public/blog/{date}-spotlight-{keyword_slug}-{lang}.mdx`
+
+frontmatter의 title, excerpt는 해당 언어로 번역한다.
+openGraph locale은 위 표 참조.
+
+## 5단계: posts-index.json 업데이트
+
+`public/data/posts-index.json`을 읽고 업데이트한다.
+
+`posts` 배열 **앞에** 8개 항목 추가 (언어 순서: en, zh, es, pt, fr, de, kr, jp):
 ```json
 {
-  "slug": "{slug}",
-  "title": "{제목}",
-  "date": "{YYYY-MM-DD}",
-  "lastUpdated": "{ISO timestamp}",
-  "excerpt": "{excerpt}",
+  "slug": "{date}-spotlight-{keyword_slug}-{lang}",
+  "title": "{해당 언어 제목}",
+  "date": "{date}",
+  "lastUpdated": "{현재 ISO timestamp}",
+  "excerpt": "{해당 언어 excerpt}",
   "category": "{category}",
   "language": "{lang}",
-  "readingTime": {EN과 동일한 숫자},
+  "readingTime": {EN과 동일},
   "featured": true,
-  "tags": ["{keyword-slug}", "{category}", "global-trends", "trending"]
+  "tags": ["{keyword_slug}", "{category}", "global-trends", "trending"]
 }
 ```
 
-`recentSpotlights` 배열 앞에 추가:
+`recentSpotlights` 배열 **앞에** 추가:
 ```json
-{"keyword": "{키워드 소문자}", "date": "{YYYY-MM-DD}"}
+{"keyword": "{keyword 소문자}", "date": "{date}"}
 ```
+최근 10개만 유지하고 나머지는 제거한다.
 
-3일 이전 항목은 제거한다.
+파일 저장 후 완료 메시지 출력.
