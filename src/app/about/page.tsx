@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About TrendPulse — Real-Time Global Trend Map',
   description:
-    'Learn about TrendPulse, the real-time global trend visualization platform that tracks trending searches across 142 countries. Meet the editorial team and discover our methodology.',
+    'Learn about TrendPulse, the real-time global trend visualization platform that tracks trending searches across 36 countries. Meet the editorial team and discover our methodology.',
   alternates: { canonical: 'https://global-trend-map-web.vercel.app/about' },
 };
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
         </div>
 
         <h2>What We Do</h2>
-        <p>Every hour, TrendPulse collects and processes trending search data from across 142 countries, applying a proprietary temperature scoring system (°T) to quantify how hot a topic is relative to normal search volume. The result is an interactive world map where you can see — at a glance — which countries are experiencing search surges, what topics are driving them, and how quickly they are rising or falling.</p>
+        <p>Every hour, TrendPulse collects and processes trending search data from across 36 countries, applying a proprietary temperature scoring system (°T) to quantify how hot a topic is relative to normal search volume. The result is an interactive world map where you can see — at a glance — which countries are experiencing search surges, what topics are driving them, and how quickly they are rising or falling.</p>
 
         <p>We track trends across six primary categories:</p>
         <ul>
