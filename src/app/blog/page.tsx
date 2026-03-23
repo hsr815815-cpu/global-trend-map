@@ -56,19 +56,25 @@ function formatDate(dateStr: string): string {
   });
 }
 
-const LANG_LABELS: Record<string, { flag: string; label: string }> = {
-  en: { flag: '🇺🇸', label: 'EN' },
-  kr: { flag: '🇰🇷', label: 'KR' },
-  jp: { flag: '🇯🇵', label: 'JP' },
-};
+const LANG_LABELS: { code: string; flag: string; label: string }[] = [
+  { code: 'en', flag: '🇺🇸', label: 'EN' },
+  { code: 'zh', flag: '🇨🇳', label: 'ZH' },
+  { code: 'es', flag: '🇪🇸', label: 'ES' },
+  { code: 'pt', flag: '🇧🇷', label: 'PT' },
+  { code: 'fr', flag: '🇫🇷', label: 'FR' },
+  { code: 'de', flag: '🇩🇪', label: 'DE' },
+  { code: 'kr', flag: '🇰🇷', label: 'KR' },
+  { code: 'jp', flag: '🇯🇵', label: 'JP' },
+];
+
+const VALID_LANGS = LANG_LABELS.map((l) => l.code);
 
 export default async function BlogPage({ searchParams }: { searchParams: { lang?: string } }) {
-  const lang = searchParams.lang && ['en', 'kr', 'jp'].includes(searchParams.lang) ? searchParams.lang : 'en';
+  const lang = searchParams.lang && VALID_LANGS.includes(searchParams.lang) ? searchParams.lang : 'en';
   const allPosts = await loadPostsIndex();
   const posts = allPosts.filter((p) => {
-    if (lang === 'kr') return p.language === 'kr';
-    if (lang === 'jp') return p.language === 'jp';
-    return !p.language || p.language === 'en';
+    const postLang = p.language || 'en';
+    return postLang === lang;
   });
   const featured = posts.filter((p) => p.featured);
   const rest = posts.filter((p) => !p.featured);
@@ -102,9 +108,9 @@ export default async function BlogPage({ searchParams }: { searchParams: { lang?
           <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 20px' }}>
             Deep dives into what 36 countries are searching for — written by the Global Trends Editorial Team.
           </p>
-          {/* Language tabs */}
-          <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
-            {Object.entries(LANG_LABELS).map(([code, { flag, label }]) => (
+          {/* Language tabs — 4×2 grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, auto)', gap: '8px', justifyContent: 'center' }}>
+            {LANG_LABELS.map(({ code, flag, label }) => (
               <Link key={code} href={`?lang=${code}`} className={`lang-tab${lang === code ? ' active' : ''}`}>
                 {flag} {label}
               </Link>

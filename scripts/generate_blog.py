@@ -143,6 +143,151 @@ TRANSLATIONS = {
         "faq_q3":             "「グローバルトレンド」とは何ですか？",
         "faq_a3":             "3か国以上で同時に現れるとグローバルトレンドとしてマークされ、国境を越えた文化的またはニュースの重要性を示しています。",
     },
+    "zh": {
+        "author":             "全球趋势地图",
+        "trending_now":       "正在趋势",
+        "top_global_trend":   "今日全球热门趋势",
+        "country_trending":   "正在趋势",
+        "weekly_roundup":     "每周趋势汇总",
+        "what_is":            "是什么",
+        "why_trending":       "为什么成为趋势？",
+        "global_reach":       "全球影响",
+        "related_news":       "相关新闻",
+        "faq":                "常见问题",
+        "about_section":      "关于此趋势",
+        "data_source":        "数据来源",
+        "wiki_attr":          "来源：Wikipedia (CC BY-SA 4.0)",
+        "yt_attr":            "数据由 YouTube Data API by Google 提供",
+        "disclaimer":         "趋势数据自动收集，每小时更新一次。",
+        "read_more":          "阅读更多",
+        "related_posts":      "相关文章",
+        "volume_label":       "搜索量",
+        "temperature_label":  "趋势温度",
+        "countries_label":    "趋势国家",
+        "category_label":     "类别",
+        "faq_q1":             "趋势温度是如何计算的？",
+        "faq_a1":             "趋势温度（0–100）根据搜索量、速度（增长率）以及跨多个国家的地理分布来计算。",
+        "faq_q2":             "数据多久更新一次？",
+        "faq_a2":             "趋势数据通过使用 Google Trends RSS、YouTube Data API、GDELT 和 Wikipedia 的自动化管道每小时收集和更新。",
+        "faq_q3":             "「全球趋势」是什么意思？",
+        "faq_a3":             "当一个趋势同时出现在3个或更多国家时，它被标记为全球趋势，表明其具有跨境的文化或新闻重要性。",
+    },
+    "es": {
+        "author":             "Mapa Global de Tendencias",
+        "trending_now":       "En tendencia ahora",
+        "top_global_trend":   "Tendencia global del día",
+        "country_trending":   "En tendencia ahora",
+        "weekly_roundup":     "Resumen semanal de tendencias",
+        "what_is":            "¿Qué es",
+        "why_trending":       "¿Por qué está en tendencia?",
+        "global_reach":       "Alcance global",
+        "related_news":       "Noticias relacionadas",
+        "faq":                "Preguntas frecuentes",
+        "about_section":      "Sobre esta tendencia",
+        "data_source":        "Fuentes de datos",
+        "wiki_attr":          "Fuente: Wikipedia (CC BY-SA 4.0)",
+        "yt_attr":            "Datos proporcionados por YouTube Data API de Google",
+        "disclaimer":         "Los datos de tendencias se recopilan automáticamente y se actualizan cada hora.",
+        "read_more":          "Leer más",
+        "related_posts":      "Artículos relacionados",
+        "volume_label":       "Volumen de búsqueda",
+        "temperature_label":  "Temperatura de tendencia",
+        "countries_label":    "Países en tendencia",
+        "category_label":     "Categoría",
+        "faq_q1":             "¿Cómo se calcula la temperatura de tendencia?",
+        "faq_a1":             "La temperatura de tendencia (0–100) se calcula en base al volumen de búsqueda, la velocidad (tasa de crecimiento) y la distribución geográfica en múltiples países.",
+        "faq_q2":             "¿Con qué frecuencia se actualizan los datos?",
+        "faq_a2":             "Los datos de tendencias se recopilan y actualizan cada hora mediante un pipeline automatizado usando Google Trends RSS, YouTube Data API, GDELT y Wikipedia.",
+        "faq_q3":             "¿Qué significa 'Tendencia Global'?",
+        "faq_a3":             "Una tendencia se marca como global cuando aparece simultáneamente en 3 o más países, lo que indica relevancia cultural o informativa transfronteriza.",
+    },
+    "pt": {
+        "author":             "Mapa Global de Tendências",
+        "trending_now":       "Em alta agora",
+        "top_global_trend":   "Principal tendência global do dia",
+        "country_trending":   "Em alta agora",
+        "weekly_roundup":     "Resumo semanal de tendências",
+        "what_is":            "O que é",
+        "why_trending":       "Por que está em alta?",
+        "global_reach":       "Alcance global",
+        "related_news":       "Notícias relacionadas",
+        "faq":                "Perguntas frequentes",
+        "about_section":      "Sobre esta tendência",
+        "data_source":        "Fontes de dados",
+        "wiki_attr":          "Fonte: Wikipedia (CC BY-SA 4.0)",
+        "yt_attr":            "Dados fornecidos pela YouTube Data API do Google",
+        "disclaimer":         "Os dados de tendências são coletados automaticamente e atualizados a cada hora.",
+        "read_more":          "Leia mais",
+        "related_posts":      "Artigos relacionados",
+        "volume_label":       "Volume de pesquisa",
+        "temperature_label":  "Temperatura de tendência",
+        "countries_label":    "Países em alta",
+        "category_label":     "Categoria",
+        "faq_q1":             "Como a temperatura de tendência é calculada?",
+        "faq_a1":             "A temperatura de tendência (0–100) é calculada com base no volume de pesquisa, velocidade (taxa de crescimento) e distribuição geográfica em vários países.",
+        "faq_q2":             "Com que frequência os dados são atualizados?",
+        "faq_a2":             "Os dados de tendências são coletados e atualizados a cada hora por meio de um pipeline automatizado usando Google Trends RSS, YouTube Data API, GDELT e Wikipedia.",
+        "faq_q3":             "O que significa 'Tendência Global'?",
+        "faq_a3":             "Uma tendência é marcada como global quando aparece simultaneamente em 3 ou mais países, indicando relevância cultural ou jornalística transfronteiriça.",
+    },
+    "fr": {
+        "author":             "Carte Mondiale des Tendances",
+        "trending_now":       "En tendance maintenant",
+        "top_global_trend":   "Tendance mondiale du jour",
+        "country_trending":   "En tendance maintenant",
+        "weekly_roundup":     "Récapitulatif hebdomadaire des tendances",
+        "what_is":            "Qu'est-ce que",
+        "why_trending":       "Pourquoi est-ce en tendance ?",
+        "global_reach":       "Portée mondiale",
+        "related_news":       "Actualités associées",
+        "faq":                "Questions fréquentes",
+        "about_section":      "À propos de cette tendance",
+        "data_source":        "Sources de données",
+        "wiki_attr":          "Source : Wikipedia (CC BY-SA 4.0)",
+        "yt_attr":            "Données fournies par YouTube Data API de Google",
+        "disclaimer":         "Les données de tendances sont collectées automatiquement et mises à jour toutes les heures.",
+        "read_more":          "Lire la suite",
+        "related_posts":      "Articles associés",
+        "volume_label":       "Volume de recherche",
+        "temperature_label":  "Température de tendance",
+        "countries_label":    "Pays en tendance",
+        "category_label":     "Catégorie",
+        "faq_q1":             "Comment la température de tendance est-elle calculée ?",
+        "faq_a1":             "La température de tendance (0–100) est calculée en fonction du volume de recherche, de la vitesse (taux de croissance) et de la répartition géographique dans plusieurs pays.",
+        "faq_q2":             "À quelle fréquence les données sont-elles mises à jour ?",
+        "faq_a2":             "Les données de tendances sont collectées et mises à jour toutes les heures via un pipeline automatisé utilisant Google Trends RSS, YouTube Data API, GDELT et Wikipedia.",
+        "faq_q3":             "Que signifie « Tendance Mondiale » ?",
+        "faq_a3":             "Une tendance est marquée comme mondiale lorsqu'elle apparaît simultanément dans 3 pays ou plus, indiquant une importance culturelle ou journalistique transfrontalière.",
+    },
+    "de": {
+        "author":             "Globale Trend-Karte",
+        "trending_now":       "Jetzt im Trend",
+        "top_global_trend":   "Globaler Top-Trend des Tages",
+        "country_trending":   "Jetzt im Trend",
+        "weekly_roundup":     "Wöchentliche Trend-Zusammenfassung",
+        "what_is":            "Was ist",
+        "why_trending":       "Warum liegt es im Trend?",
+        "global_reach":       "Globale Reichweite",
+        "related_news":       "Verwandte Nachrichten",
+        "faq":                "Häufig gestellte Fragen",
+        "about_section":      "Über diesen Trend",
+        "data_source":        "Datenquellen",
+        "wiki_attr":          "Quelle: Wikipedia (CC BY-SA 4.0)",
+        "yt_attr":            "Daten bereitgestellt von YouTube Data API von Google",
+        "disclaimer":         "Trenddaten werden automatisch gesammelt und stündlich aktualisiert.",
+        "read_more":          "Mehr lesen",
+        "related_posts":      "Verwandte Beiträge",
+        "volume_label":       "Suchvolumen",
+        "temperature_label":  "Trend-Temperatur",
+        "countries_label":    "Länder im Trend",
+        "category_label":     "Kategorie",
+        "faq_q1":             "Wie wird die Trend-Temperatur berechnet?",
+        "faq_a1":             "Die Trend-Temperatur (0–100) wird auf Basis von Suchvolumen, Geschwindigkeit (Wachstumsrate) und geografischer Verteilung über mehrere Länder berechnet.",
+        "faq_q2":             "Wie oft werden die Daten aktualisiert?",
+        "faq_a2":             "Trenddaten werden stündlich über eine automatisierte Pipeline mit Google Trends RSS, YouTube Data API, GDELT und Wikipedia gesammelt und aktualisiert.",
+        "faq_q3":             "Was bedeutet 'Globaler Trend'?",
+        "faq_a3":             "Ein Trend wird als global markiert, wenn er gleichzeitig in 3 oder mehr Ländern erscheint, was auf länderübergreifende kulturelle oder nachrichtliche Bedeutung hinweist.",
+    },
 }
 
 COUNTRY_NAMES = {
@@ -161,7 +306,34 @@ COUNTRY_NAMES = {
         "GB": "イギリス", "DE": "ドイツ", "IN": "インド",
         "BR": "ブラジル", "FR": "フランス",
     },
+    "zh": {
+        "US": "美国", "KR": "韩国", "JP": "日本",
+        "GB": "英国", "DE": "德国", "IN": "印度",
+        "BR": "巴西", "FR": "法国",
+    },
+    "es": {
+        "US": "Estados Unidos", "KR": "Corea del Sur", "JP": "Japón",
+        "GB": "Reino Unido", "DE": "Alemania", "IN": "India",
+        "BR": "Brasil", "FR": "Francia",
+    },
+    "pt": {
+        "US": "Estados Unidos", "KR": "Coreia do Sul", "JP": "Japão",
+        "GB": "Reino Unido", "DE": "Alemanha", "IN": "Índia",
+        "BR": "Brasil", "FR": "França",
+    },
+    "fr": {
+        "US": "États-Unis", "KR": "Corée du Sud", "JP": "Japon",
+        "GB": "Royaume-Uni", "DE": "Allemagne", "IN": "Inde",
+        "BR": "Brésil", "FR": "France",
+    },
+    "de": {
+        "US": "Vereinigte Staaten", "KR": "Südkorea", "JP": "Japan",
+        "GB": "Vereinigtes Königreich", "DE": "Deutschland", "IN": "Indien",
+        "BR": "Brasilien", "FR": "Frankreich",
+    },
 }
+
+ALL_LANGS = ["en", "zh", "es", "pt", "fr", "de", "kr", "jp"]
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -252,7 +424,7 @@ def fetch_gdelt_headlines(keyword: str) -> list[dict]:
 
 
 def count_posts_by_lang(index: dict) -> dict:
-    counts = {"en": 0, "kr": 0, "jp": 0}
+    counts = {lang: 0 for lang in ALL_LANGS}
     for p in index.get("posts", []):
         lang = p.get("language", "en")
         counts[lang] = counts.get(lang, 0) + 1
@@ -264,12 +436,41 @@ def count_posts_today(index: dict) -> int:
     return sum(1 for p in index.get("posts", []) if p.get("date", "").startswith(today))
 
 # ---------------------------------------------------------------------------
+# Keyword display helper
+# ---------------------------------------------------------------------------
+
+def get_display_keyword(keyword: str, keyword_en: str, lang: str) -> str:
+    """Return the most appropriate keyword string for the given language.
+
+    - EN posts: always use English translation (keywordEn)
+    - KR posts: keep original if it contains Hangul, else use keywordEn
+    - JP posts: keep original if it contains Hiragana/Katakana, else use keywordEn
+    - Other languages: always use keywordEn
+    """
+    kw_en = keyword_en or keyword
+    if lang == "en":
+        return kw_en
+    if lang == "kr":
+        # Contains Hangul?
+        if any('\uAC00' <= c <= '\uD7A3' or '\u1100' <= c <= '\u11FF' for c in keyword):
+            return keyword
+        return kw_en
+    if lang == "jp":
+        # Contains Hiragana or Katakana?
+        if any('\u3040' <= c <= '\u30FF' for c in keyword):
+            return keyword
+        return kw_en
+    # All other languages (zh, es, pt, fr, de, ...): use English
+    return kw_en
+
+
+# ---------------------------------------------------------------------------
 # MDX generators
 # ---------------------------------------------------------------------------
 
 def build_top_global_post(trends_data: dict, lang: str) -> tuple[str, dict]:
     """Build post type (a): Today's Top Global Trend."""
-    t_str = TRANSLATIONS[lang]
+    t_str = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
     global_sec = trends_data.get("global", {})
     top = global_sec.get("topTrend", {})
     keyword = top.get("keyword", "")
@@ -301,19 +502,32 @@ def build_top_global_post(trends_data: dict, lang: str) -> tuple[str, dict]:
     velocity = trend_detail.get("velocity", "+1000%")
     is_global = trend_detail.get("isGlobal", False)
 
+    kw_display = get_display_keyword(keyword, top.get("keywordEn", keyword), lang)
+
+    t_str = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
     title_map = {
-        "en": f"Today's Top Global Trend: {keyword}",
-        "kr": f"오늘의 글로벌 최고 트렌드: {keyword}",
-        "jp": f"本日のグローバルトップトレンド: {keyword}",
+        "en": f"Today's Top Global Trend: {kw_display}",
+        "zh": f"今日全球热门趋势：{kw_display}",
+        "es": f"Tendencia global del día: {kw_display}",
+        "pt": f"Principal tendência global do dia: {kw_display}",
+        "fr": f"Tendance mondiale du jour : {kw_display}",
+        "de": f"Globaler Top-Trend des Tages: {kw_display}",
+        "kr": f"오늘의 글로벌 최고 트렌드: {kw_display}",
+        "jp": f"本日のグローバルトップトレンド: {kw_display}",
     }
-    title = title_map[lang]
+    title = title_map.get(lang, title_map["en"])
 
     excerpt_map = {
-        "en": f"{keyword} is trending globally with {volume} searches. Discover why this topic is dominating today's conversation.",
-        "kr": f"{keyword}이(가) {volume} 검색으로 전 세계에서 트렌딩 중입니다. 오늘의 화제를 파악해보세요.",
-        "jp": f"{keyword}は{volume}件の検索でグローバルにトレンドしています。今日の話題を探りましょう。",
+        "en": f"{kw_display} is trending globally with {volume} searches. Discover why this topic is dominating today's conversation.",
+        "zh": f"{kw_display} 正以 {volume} 次搜索在全球趋势。了解为何这个话题主导今天的讨论。",
+        "es": f"{kw_display} está en tendencia global con {volume} búsquedas. Descubre por qué este tema domina la conversación de hoy.",
+        "pt": f"{kw_display} está em alta globalmente com {volume} pesquisas. Descubra por que este tema domina a conversa de hoje.",
+        "fr": f"{kw_display} est en tendance mondiale avec {volume} recherches. Découvrez pourquoi ce sujet domine la conversation d'aujourd'hui.",
+        "de": f"{kw_display} ist mit {volume} Suchanfragen weltweit im Trend. Erfahren Sie, warum dieses Thema das Gespräch des Tages dominiert.",
+        "kr": f"{kw_display}이(가) {volume} 검색으로 전 세계에서 트렌딩 중입니다. 오늘의 화제를 파악해보세요.",
+        "jp": f"{kw_display}は{volume}件の検索でグローバルにトレンドしています。今日の話題を探りましょう。",
     }
-    excerpt = excerpt_map[lang]
+    excerpt = excerpt_map.get(lang, excerpt_map["en"])
 
     slug = f"{date}-top-global-trend-{safe_slug(keyword_slug)}-{lang}"
     lang_slug = f"{safe_slug(keyword_slug)}-top-global"
@@ -421,7 +635,7 @@ wikiUrl: "{wiki_url}"
 
 def build_country_post(country_code: str, trends_data: dict, lang: str) -> tuple[str, dict]:
     """Build post type (b): per-country trending post."""
-    t_str = TRANSLATIONS[lang]
+    t_str = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
     countries_data = trends_data.get("countries", {})
     cdata = countries_data.get(country_code, {})
     if not cdata:
@@ -453,19 +667,33 @@ def build_country_post(country_code: str, trends_data: dict, lang: str) -> tuple
     category = top_trend.get("category", "news")
     related_news_in_trend = top_trend.get("relatedNews", [])
 
+    kw_display = get_display_keyword(keyword, top_trend.get("keywordEn", keyword), lang)
+
+    t_str = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
+    tn = t_str["trending_now"]
     title_map = {
-        "en": f"{flag} {cname} Trending Now: {keyword}",
-        "kr": f"{flag} {cname} {t_str['trending_now']}: {keyword}",
-        "jp": f"{flag} {cname} {t_str['trending_now']}: {keyword}",
+        "en": f"{flag} {cname} Trending Now: {kw_display}",
+        "zh": f"{flag} {cname} 热搜：{kw_display}",
+        "es": f"{flag} {cname} En tendencia: {kw_display}",
+        "pt": f"{flag} {cname} Em alta: {kw_display}",
+        "fr": f"{flag} {cname} En tendance : {kw_display}",
+        "de": f"{flag} {cname} Im Trend: {kw_display}",
+        "kr": f"{flag} {cname} {tn}: {kw_display}",
+        "jp": f"{flag} {cname} {tn}: {kw_display}",
     }
-    title = title_map[lang]
+    title = title_map.get(lang, title_map["en"])
 
     excerpt_map = {
-        "en": f"'{keyword}' is the #1 trending search in {cname} right now with {volume} searches.",
-        "kr": f"'{keyword}'이(가) 현재 {cname}에서 {volume} 검색으로 1위 트렌딩 검색어입니다.",
-        "jp": f"'{keyword}'は現在{cname}で{volume}件の検索で第1位のトレンドです。",
+        "en": f"'{kw_display}' is the #1 trending search in {cname} right now with {volume} searches.",
+        "zh": f"'{kw_display}' 目前是 {cname} 的第一热搜，共有 {volume} 次搜索。",
+        "es": f"'{kw_display}' es la búsqueda #1 en tendencia en {cname} ahora mismo con {volume} búsquedas.",
+        "pt": f"'{kw_display}' é a pesquisa #1 em alta em {cname} agora com {volume} pesquisas.",
+        "fr": f"'{kw_display}' est la recherche tendance n°1 en {cname} en ce moment avec {volume} recherches.",
+        "de": f"'{kw_display}' ist aktuell die meistgesuchte Suchanfrage in {cname} mit {volume} Suchen.",
+        "kr": f"'{kw_display}'이(가) 현재 {cname}에서 {volume} 검색으로 1위 트렌딩 검색어입니다.",
+        "jp": f"'{kw_display}'は現在{cname}で{volume}件の検索で第1位のトレンドです。",
     }
-    excerpt = excerpt_map[lang]
+    excerpt = excerpt_map.get(lang, excerpt_map["en"])
 
     slug = f"{date}-{safe_slug(cname_en)}-trending-{safe_slug(keyword_slug)}-{lang}"
 
@@ -571,7 +799,7 @@ wikiUrl: "{wiki_url}"
 
 def build_weekly_roundup(trends_data: dict, lang: str) -> tuple[str, dict]:
     """Build post type (c): weekly trend roundup (Sundays only)."""
-    t_str = TRANSLATIONS[lang]
+    t_str = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
     global_sec = trends_data.get("global", {})
     countries_data = trends_data.get("countries", {})
     date = today_str()
@@ -610,9 +838,10 @@ def build_weekly_roundup(trends_data: dict, lang: str) -> tuple[str, dict]:
             continue
         cname_map = COUNTRY_NAMES.get(lang, COUNTRY_NAMES["en"])
         cname = cname_map.get(cc, cdata.get("name", cc))
+        kw_disp = get_display_keyword(top['keyword'], top.get('keywordEn', top['keyword']), lang)
         country_sections += (
             f"### {cdata['flag']} {cname}\n"
-            f"**#{1} {top['keyword']}** — {top['volume']} ({top['category'].title()})\n\n"
+            f"**#{1} {kw_disp}** — {top['volume']} ({top['category'].title()})\n\n"
         )
 
     body = f"""# {title}
@@ -697,7 +926,7 @@ def main():
     posts_to_write: list[tuple[str, dict]] = []
 
     # --- Post type (a): Top Global Trend ---
-    for lang in ["en", "kr", "jp"]:
+    for lang in ALL_LANGS:
         content, meta = build_top_global_post(trends_data, lang)
         if not content or not meta:
             log.warning("Skipped top global post for lang=%s (no content)", lang)
@@ -710,7 +939,7 @@ def main():
 
     # --- Post type (b): Per-country posts ---
     for cc in MAJOR_COUNTRIES:
-        for lang in ["en", "kr", "jp"]:
+        for lang in ALL_LANGS:
             content, meta = build_country_post(cc, trends_data, lang)
             if not content or not meta:
                 continue
@@ -722,7 +951,7 @@ def main():
 
     # --- Post type (c): Weekly roundup (Sundays) ---
     if is_sunday():
-        for lang in ["en", "kr", "jp"]:
+        for lang in ALL_LANGS:
             content, meta = build_weekly_roundup(trends_data, lang)
             if not content or not meta:
                 continue
@@ -758,9 +987,7 @@ def main():
         td["blogStats"] = {
             "postsToday":   today_count,
             "postsTotal":   total_count,
-            "postsEn":      lang_counts.get("en", 0),
-            "postsKr":      lang_counts.get("kr", 0),
-            "postsJp":      lang_counts.get("jp", 0),
+            **{f"posts_{l}": lang_counts.get(l, 0) for l in ALL_LANGS},
             "lastRun":      now_iso(),
             "duration":     duration,
             "newPostsThisRun": new_posts,
