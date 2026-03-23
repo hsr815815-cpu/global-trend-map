@@ -14,6 +14,69 @@ import logging
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+
+# ---------------------------------------------------------------------------
+# GA4 Reporting API
+# ---------------------------------------------------------------------------
+
+def fetch_ga4_data() -> dict:
+    """Fetch real traffic data from GA4 Data API. Returns {} on any failure."""
+    try:
+        from google.analytics.data_v1beta import BetaAnalyticsDataClient
+        from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
+        from google.oauth2 import service_account
+
+        property_id = os.environ.get("GA4_PROPERTY_ID", "").strip()
+        sa_json_str = os.environ.get("GA4_SERVICE_ACCOUNT_JSON", "").strip()
+
+        if not property_id or not sa_json_str:
+            logging.getLogger("generate_report").warning("GA4_PROPERTY_ID or GA4_SERVICE_ACCOUNT_JSON not set")
+            return {}
+
+        sa_info = json.loads(sa_json_str)
+        credentials = service_account.Credentials.from_service_account_info(
+            sa_info, scopes=["https://www.googleapis.com/auth/analytics.readonly"]
+        )
+        client = BetaAnalyticsDataClient(credentials=credentials)
+
+        def run(start_date, end_date):
+            req = RunReportRequest(
+                property=f"properties/{property_id}",
+                date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+                metrics=[
+                    Metric(name="activeUsers"),
+                    Metric(name="newUsers"),
+                    Metric(name="sessions"),
+                    Metric(name="screenPageViews"),
+                    Metric(name="bounceRate"),
+                    Metric(name="averageSessionDuration"),
+                ],
+            )
+            resp = client.run_report(req)
+            if not resp.rows:
+                return {}
+            v = resp.rows[0].metric_values
+            mins, secs = divmod(int(float(v[5].value)), 60)
+            return {
+                "users":       int(v[0].value),
+                "new_users":   int(v[1].value),
+                "sessions":    int(v[2].value),
+                "pageviews":   int(v[3].value),
+                "bounce_rate": round(float(v[4].value) * 100, 1),
+                "avg_session": f"{mins}m {secs:02d}s",
+            }
+
+        result = {"7d": run("7daysAgo", "today"), "30d": run("30daysAgo", "today")}
+        logging.getLogger("generate_report").info("GA4 fetched: %s", result)
+        return result
+
+    except ImportError:
+        logging.getLogger("generate_report").warning("google-analytics-data not installed — skipping GA4")
+        return {}
+    except Exception as e:
+        logging.getLogger("generate_report").warning("GA4 fetch failed: %s", e)
+        return {}
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -251,6 +314,77 @@ def main():
   </div>
 </div>"""
 
+    # --- GA4 real traffic data ---
+    ga4 = fetch_ga4_data()
+    g7  = ga4.get("7d",  {})
+    g30 = ga4.get("30d", {})
+
+    def fmt_num(v, default="—"):
+        return f"{v:,}" if isinstance(v, int) else default
+
+    ga4_html = f"""
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">📈</span>
+    <h2 class="section-title">GA4 실제 트래픽</h2>
+    <span class="section-badge">실시간 데이터</span>
+  </div>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-value">{fmt_num(g7.get('users'))}</div>
+      <div class="metric-label">활성 사용자 (7일)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">{fmt_num(g7.get('sessions'))}</div>
+      <div class="metric-label">세션 (7일)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">{fmt_num(g7.get('pageviews'))}</div>
+      <div class="metric-label">페이지뷰 (7일)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">{g7.get('bounce_rate', '—')}%</div>
+      <div class="metric-label">이탈률 (7일)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">{g7.get('avg_session', '—')}</div>
+      <div class="metric-label">평균 세션 시간 (7일)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">{fmt_num(g7.get('new_users'))}</div>
+      <div class="metric-label">신규 사용자 (7일)</div>
+    </div>
+  </div>
+  <div class="sub-section" style="margin-top:14px;">
+    <div class="sub-title">30일 누적</div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-value" style="font-size:1.3rem;">{fmt_num(g30.get('users'))}</div>
+        <div class="metric-label">활성 사용자</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" style="font-size:1.3rem;">{fmt_num(g30.get('sessions'))}</div>
+        <div class="metric-label">세션</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" style="font-size:1.3rem;">{fmt_num(g30.get('pageviews'))}</div>
+        <div class="metric-label">페이지뷰</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" style="font-size:1.3rem;">{fmt_num(g30.get('new_users'))}</div>
+        <div class="metric-label">신규 사용자</div>
+      </div>
+    </div>
+  </div>
+</div>""" if g7 else """
+<div class="section">
+  <div class="section-header">
+    <span class="section-icon">📈</span>
+    <h2 class="section-title">GA4 실제 트래픽</h2>
+  </div>
+  <div class="note-box"><span class="note-icon">⚠️</span><span>GA4 데이터 없음 — GA4_PROPERTY_ID / GA4_SERVICE_ACCOUNT_JSON 환경변수 확인</span></div>
+</div>"""
+
     # Automation maturity (rough scoring)
     auto_items = sum([
         sources.get("googleTrends", False),
@@ -301,6 +435,7 @@ def main():
         "{{YT_QUOTA_PCT}}":         str(yt_quota_pct),
         "{{AUTO_SCORE}}":           str(auto_score),
         "{{BENCHMARK_SECTION}}":    bm_html,
+        "{{GA4_TRAFFIC_SECTION}}":  ga4_html,
         "{{ERROR_COUNT_CLASS}}":    "status-error" if error_count > 0 else "status-ok",
         "{{DATA_AGE_CLASS}}":       "status-warn" if data_age > 120 else "status-ok",
         "{{QUOTA_CLASS}}":          "status-warn" if yt_quota_used > 8000 else "status-ok",
