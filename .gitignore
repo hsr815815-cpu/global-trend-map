@@ -47,3 +47,7 @@ public/data/archive/
 # Python cache
 __pycache__/
 *.pyc
+
+# Auto-generated script outputs (local only)
+scripts/research.json
+scripts/daily_report.html

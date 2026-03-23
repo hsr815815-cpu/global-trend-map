@@ -22,6 +22,17 @@ SKIP_RECENT = 5  # 최근 N개 스포트라이트 중복 스킵
 SITE_URL    = "https://global-trend-map-web.vercel.app"
 
 
+def normalize_kw(text: str) -> str:
+    """곡선 따옴표 등 유니코드 변형 문자를 직선 ASCII로 통일 (중복 스킵 비교용)"""
+    return (
+        text.lower()
+        .replace("\u2018", "'").replace("\u2019", "'")  # ' '
+        .replace("\u201c", '"').replace("\u201d", '"')  # " "
+        .replace("\u2032", "'").replace("\u2033", '"')  # ′ ″
+        .strip()
+    )
+
+
 def slugify(text: str) -> str:
     text = text.lower().strip()
     text = re.sub(r"[^\w\s-]", "", text)
@@ -42,7 +53,7 @@ def build_ranked_list(trends_data: dict) -> list:
             kw = t.get("keywordEn") or t.get("keyword", "")
             if not kw:
                 continue
-            kw_lower = kw.lower()
+            kw_lower = normalize_kw(kw)
             temp = t.get("temperature", 0)
 
             if kw_lower not in seen or temp > seen[kw_lower]["temperature"]:
@@ -65,7 +76,7 @@ def build_ranked_list(trends_data: dict) -> list:
 def get_recent_spotlights(index: dict) -> list:
     """최근 SKIP_RECENT개 스포트라이트 키워드(소문자) 반환"""
     spotlights = index.get("recentSpotlights", [])
-    return [s["keyword"].lower() for s in spotlights[:SKIP_RECENT]]
+    return [normalize_kw(s["keyword"]) for s in spotlights[:SKIP_RECENT]]
 
 
 def get_countries_for_keyword(trends_data: dict, kw_lower: str) -> list:
@@ -74,7 +85,7 @@ def get_countries_for_keyword(trends_data: dict, kw_lower: str) -> list:
     result = []
     for code, cdata in countries.items():
         for t in cdata.get("trends", []):
-            kw = (t.get("keywordEn") or t.get("keyword", "")).lower()
+            kw = normalize_kw(t.get("keywordEn") or t.get("keyword", ""))
             if kw == kw_lower:
                 result.append((cdata.get("flag", "🌐"), cdata.get("name", code)))
                 break
@@ -98,7 +109,7 @@ def get_internal_links(index: dict) -> list:
 def main():
     if not TRENDS_FILE.exists():
         result = {"status": "skip", "skip_reason": "trends.json not found"}
-        OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+        OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         print("SKIP: trends.json not found")
         return
 
@@ -122,7 +133,7 @@ def main():
 
     if not selected:
         result = {"status": "skip", "skip_reason": "All top keywords already covered recently"}
-        OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2))
+        OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         print("SKIP: no new keyword found")
         return
 
@@ -178,8 +189,8 @@ def main():
         "internal_links": internal_links,
     }
 
-    OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2))
-    print(f"research.json written → {kw} (rank #{selected['rank']}, {selected['temperature']}°T)")
+    OUTPUT_FILE.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"research.json written -> {kw} (rank #{selected['rank']}, {selected['temperature']}T)")
 
 
 if __name__ == "__main__":
