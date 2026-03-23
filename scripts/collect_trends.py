@@ -255,13 +255,14 @@ def fetch_google_trends(country_code: str, meta: dict) -> list[dict]:
         if not related_news and hasattr(entry, "ht_news_item_title"):
             related_news = [entry.ht_news_item_title]
 
+        keyword_en = translate_to_english(keyword)
         trends.append({
             "rank":        rank,
             "keyword":     keyword,
-            "keywordEn":   translate_to_english(keyword),
+            "keywordEn":   keyword_en,
             "volume":      format_volume(volume_raw),
             "volumeRaw":   volume_raw,
-            "category":    classify_category(keyword),
+            "category":    classify_category(keyword_en),
             "temperature": calculate_temperature(volume_raw, rank, 1),
             "velocity":    calculate_velocity(rank),
             "isGlobal":    False,
@@ -328,13 +329,14 @@ def collect_youtube(country_codes: list[str]) -> tuple[dict, int, bool]:
                 continue
 
             view_count = int(stats.get("viewCount", 0))
+            title_en = translate_to_english(title)
             trends.append({
                 "rank":        rank,
                 "keyword":     title,
-                "keywordEn":   translate_to_english(title),
+                "keywordEn":   title_en,
                 "volume":      format_volume(view_count),
                 "volumeRaw":   view_count,
-                "category":    classify_category(title),
+                "category":    classify_category(title_en),
                 "temperature": calculate_temperature(view_count, rank, 1),
                 "velocity":    calculate_velocity(rank),
                 "isGlobal":    False,
