@@ -487,7 +487,8 @@ sitemap_urls = [_url(loc, today, freq, prio) for loc, freq, prio in static_pages
 
 # Blog posts
 try:
-    posts = json.loads(POSTS_INDEX_FILE.read_text(encoding='utf-8'))
+    raw = json.loads(POSTS_INDEX_FILE.read_text(encoding='utf-8'))
+    posts = raw.get('posts', raw) if isinstance(raw, dict) else raw
     for p in posts:
         sitemap_urls.append(_url(f"{SITE_URL}/blog/{p['slug']}", p.get('date', today), 'weekly', '0.8'))
 except Exception:

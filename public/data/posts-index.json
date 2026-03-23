@@ -1,57 +1,218 @@
-[
-  {
-    "slug": "why-ipл-auction-trends-dominate-global-searches",
-    "title": "Why IPL Auction Trends Dominate Global Searches Every Year",
-    "date": "2026-03-23",
-    "lastUpdated": "2026-03-23",
-    "excerpt": "Every year, the IPL auction creates a global search frenzy that dwarfs nearly every other sporting event. We break down the data showing why cricket's biggest bidding event captivates hundreds of millions of people across 60+ countries.",
-    "category": "sports",
-    "readingTime": 7,
-    "featured": true,
-    "tags": ["IPL", "cricket", "sports trends", "India", "global search"]
-  },
-  {
-    "slug": "ai-agents-2026-what-the-world-is-searching-for",
-    "title": "AI Agents in 2026: What the World Is Searching For",
-    "date": "2026-03-22",
-    "lastUpdated": "2026-03-22",
-    "excerpt": "Search interest in AI agents has surged 340% in Q1 2026. We analyze which countries are most curious, what specific questions people are asking, and what this tells us about the global AI adoption curve.",
-    "category": "tech",
-    "readingTime": 9,
-    "featured": true,
-    "tags": ["AI", "artificial intelligence", "tech trends", "2026", "search data"]
-  },
-  {
-    "slug": "k-pop-world-tour-effect-on-global-trends",
-    "title": "The K-Pop World Tour Effect: How Korean Music Moves Global Search",
-    "date": "2026-03-21",
-    "lastUpdated": "2026-03-21",
-    "excerpt": "When a major K-pop group announces a world tour, search trends shift across dozens of countries simultaneously. Our analysis of the data reveals the anatomy of a K-pop trend wave and how it propagates through 142 monitored countries.",
-    "category": "music",
-    "readingTime": 6,
-    "featured": false,
-    "tags": ["K-pop", "Korean music", "music trends", "South Korea", "fan culture"]
-  },
-  {
-    "slug": "cherry-blossom-front-japan-annual-search-phenomenon",
-    "title": "Cherry Blossom Front: Japan's Annual Search Phenomenon Explained",
-    "date": "2026-03-20",
-    "lastUpdated": "2026-03-20",
-    "excerpt": "Every spring, Japan's Sakura Zensen (cherry blossom front) triggers one of the most predictable and massive search trend spikes in the world. Here's the data behind this beautiful annual phenomenon.",
-    "category": "news",
-    "readingTime": 5,
-    "featured": false,
-    "tags": ["Japan", "cherry blossom", "sakura", "seasonal trends", "tourism"]
-  },
-  {
-    "slug": "march-madness-2026-bracket-search-data-analysis",
-    "title": "March Madness 2026: How Tournament Bracket Searches Reveal America's Obsession",
-    "date": "2026-03-19",
-    "lastUpdated": "2026-03-19",
-    "excerpt": "March Madness generates more bracket-related searches than any other sporting event in North America. Our analysis of search volume data reveals who's searching, when, and what the surprising patterns tell us about fan behavior.",
-    "category": "sports",
-    "readingTime": 8,
-    "featured": false,
-    "tags": ["March Madness", "NCAA", "basketball", "sports trends", "United States"]
-  }
-]
+{
+  "posts": [
+    {
+      "slug": "2026-03-23-top-global-trend-gold-price-en",
+      "title": "Today's Top Global Trend: gold price",
+      "date": "2026-03-23",
+      "excerpt": "gold price is trending globally with 500 searches. Discover why this topic is dominating today's conversation.",
+      "category": "finance",
+      "language": "en",
+      "keyword": "gold price",
+      "type": "top_global",
+      "flag": "🇸🇬"
+    },
+    {
+      "slug": "2026-03-23-top-global-trend-gold-price-kr",
+      "title": "오늘의 글로벌 최고 트렌드: gold price",
+      "date": "2026-03-23",
+      "excerpt": "gold price이(가) 500 검색으로 전 세계에서 트렌딩 중입니다. 오늘의 화제를 파악해보세요.",
+      "category": "finance",
+      "language": "kr",
+      "keyword": "gold price",
+      "type": "top_global",
+      "flag": "🇸🇬"
+    },
+    {
+      "slug": "2026-03-23-top-global-trend-gold-price-jp",
+      "title": "本日のグローバルトップトレンド: gold price",
+      "date": "2026-03-23",
+      "excerpt": "gold priceは500件の検索でグローバルにトレンドしています。今日の話題を探りましょう。",
+      "category": "finance",
+      "language": "jp",
+      "keyword": "gold price",
+      "type": "top_global",
+      "flag": "🇸🇬"
+    },
+    {
+      "slug": "2026-03-23-united-states-trending-bobby-hurley-en",
+      "title": "🇺🇸 United States Trending Now: bobby hurley",
+      "date": "2026-03-23",
+      "excerpt": "'bobby hurley' is the #1 trending search in United States right now with 10K+ searches.",
+      "category": "sports",
+      "language": "en",
+      "keyword": "bobby hurley",
+      "countryCode": "US",
+      "flag": "🇺🇸",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-united-states-trending-bobby-hurley-kr",
+      "title": "🇺🇸 미국 지금 트렌딩: bobby hurley",
+      "date": "2026-03-23",
+      "excerpt": "'bobby hurley'이(가) 현재 미국에서 10K+ 검색으로 1위 트렌딩 검색어입니다.",
+      "category": "sports",
+      "language": "kr",
+      "keyword": "bobby hurley",
+      "countryCode": "US",
+      "flag": "🇺🇸",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-united-states-trending-bobby-hurley-jp",
+      "title": "🇺🇸 アメリカ合衆国 今トレンド中: bobby hurley",
+      "date": "2026-03-23",
+      "excerpt": "'bobby hurley'は現在アメリカ合衆国で10K+件の検索で第1位のトレンドです。",
+      "category": "sports",
+      "language": "jp",
+      "keyword": "bobby hurley",
+      "countryCode": "US",
+      "flag": "🇺🇸",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-south-korea-trending-red-desert-patch-en",
+      "title": "🇰🇷 South Korea Trending Now: 붉은사막 패치",
+      "date": "2026-03-23",
+      "excerpt": "'붉은사막 패치' is the #1 trending search in South Korea right now with 200 searches.",
+      "category": "news",
+      "language": "en",
+      "keyword": "붉은사막 패치",
+      "countryCode": "KR",
+      "flag": "🇰🇷",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-south-korea-trending-red-desert-patch-kr",
+      "title": "🇰🇷 대한민국 지금 트렌딩: 붉은사막 패치",
+      "date": "2026-03-23",
+      "excerpt": "'붉은사막 패치'이(가) 현재 대한민국에서 200 검색으로 1위 트렌딩 검색어입니다.",
+      "category": "news",
+      "language": "kr",
+      "keyword": "붉은사막 패치",
+      "countryCode": "KR",
+      "flag": "🇰🇷",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-south-korea-trending-red-desert-patch-jp",
+      "title": "🇰🇷 韓国 今トレンド中: 붉은사막 패치",
+      "date": "2026-03-23",
+      "excerpt": "'붉은사막 패치'は現在韓国で200件の検索で第1位のトレンドです。",
+      "category": "news",
+      "language": "jp",
+      "keyword": "붉은사막 패치",
+      "countryCode": "KR",
+      "flag": "🇰🇷",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-japan-trending-chuo-university-en",
+      "title": "🇯🇵 Japan Trending Now: 中央大学",
+      "date": "2026-03-23",
+      "excerpt": "'中央大学' is the #1 trending search in Japan right now with 100 searches.",
+      "category": "news",
+      "language": "en",
+      "keyword": "中央大学",
+      "countryCode": "JP",
+      "flag": "🇯🇵",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-japan-trending-chuo-university-kr",
+      "title": "🇯🇵 일본 지금 트렌딩: 中央大学",
+      "date": "2026-03-23",
+      "excerpt": "'中央大学'이(가) 현재 일본에서 100 검색으로 1위 트렌딩 검색어입니다.",
+      "category": "news",
+      "language": "kr",
+      "keyword": "中央大学",
+      "countryCode": "JP",
+      "flag": "🇯🇵",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-japan-trending-chuo-university-jp",
+      "title": "🇯🇵 日本 今トレンド中: 中央大学",
+      "date": "2026-03-23",
+      "excerpt": "'中央大学'は現在日本で100件の検索で第1位のトレンドです。",
+      "category": "news",
+      "language": "jp",
+      "keyword": "中央大学",
+      "countryCode": "JP",
+      "flag": "🇯🇵",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-united-kingdom-trending-gold-price-en",
+      "title": "🇬🇧 United Kingdom Trending Now: gold price",
+      "date": "2026-03-23",
+      "excerpt": "'gold price' is the #1 trending search in United Kingdom right now with 100 searches.",
+      "category": "finance",
+      "language": "en",
+      "keyword": "gold price",
+      "countryCode": "GB",
+      "flag": "🇬🇧",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-united-kingdom-trending-gold-price-kr",
+      "title": "🇬🇧 영국 지금 트렌딩: gold price",
+      "date": "2026-03-23",
+      "excerpt": "'gold price'이(가) 현재 영국에서 100 검색으로 1위 트렌딩 검색어입니다.",
+      "category": "finance",
+      "language": "kr",
+      "keyword": "gold price",
+      "countryCode": "GB",
+      "flag": "🇬🇧",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-united-kingdom-trending-gold-price-jp",
+      "title": "🇬🇧 イギリス 今トレンド中: gold price",
+      "date": "2026-03-23",
+      "excerpt": "'gold price'は現在イギリスで100件の検索で第1位のトレンドです。",
+      "category": "finance",
+      "language": "jp",
+      "keyword": "gold price",
+      "countryCode": "GB",
+      "flag": "🇬🇧",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-germany-trending-aryna-sabalenka-en",
+      "title": "🇩🇪 Germany Trending Now: aryna sabalenka",
+      "date": "2026-03-23",
+      "excerpt": "'aryna sabalenka' is the #1 trending search in Germany right now with 200 searches.",
+      "category": "sports",
+      "language": "en",
+      "keyword": "aryna sabalenka",
+      "countryCode": "DE",
+      "flag": "🇩🇪",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-germany-trending-aryna-sabalenka-kr",
+      "title": "🇩🇪 독일 지금 트렌딩: aryna sabalenka",
+      "date": "2026-03-23",
+      "excerpt": "'aryna sabalenka'이(가) 현재 독일에서 200 검색으로 1위 트렌딩 검색어입니다.",
+      "category": "sports",
+      "language": "kr",
+      "keyword": "aryna sabalenka",
+      "countryCode": "DE",
+      "flag": "🇩🇪",
+      "type": "country"
+    },
+    {
+      "slug": "2026-03-23-germany-trending-aryna-sabalenka-jp",
+      "title": "🇩🇪 ドイツ 今トレンド中: aryna sabalenka",
+      "date": "2026-03-23",
+      "excerpt": "'aryna sabalenka'は現在ドイツで200件の検索で第1位のトレンドです。",
+      "category": "sports",
+      "language": "jp",
+      "keyword": "aryna sabalenka",
+      "countryCode": "DE",
+      "flag": "🇩🇪",
+      "type": "country"
+    }
+  ],
+  "lastUpdated": "2026-03-23T02:40:57.566508+00:00"
+}

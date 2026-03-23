@@ -199,7 +199,11 @@ def load_trends() -> dict:
 def load_index() -> dict:
     if INDEX_FILE.exists():
         with open(INDEX_FILE, encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        # Handle legacy flat-list format
+        if isinstance(data, list):
+            return {"posts": data, "lastUpdated": now_iso()}
+        return data
     return {"posts": [], "lastUpdated": now_iso()}
 
 
@@ -269,6 +273,7 @@ def build_top_global_post(trends_data: dict, lang: str) -> tuple[str, dict]:
     global_sec = trends_data.get("global", {})
     top = global_sec.get("topTrend", {})
     keyword = top.get("keyword", "")
+    keyword_slug = top.get("keywordEn", keyword) or keyword
     country_code = top.get("country", "US")
     countries_data = trends_data.get("countries", {})
     country_meta = countries_data.get(country_code, {})
@@ -310,8 +315,8 @@ def build_top_global_post(trends_data: dict, lang: str) -> tuple[str, dict]:
     }
     excerpt = excerpt_map[lang]
 
-    slug = f"{date}-top-global-trend-{safe_slug(keyword)}-{lang}"
-    lang_slug = f"{safe_slug(keyword)}-top-global"
+    slug = f"{date}-top-global-trend-{safe_slug(keyword_slug)}-{lang}"
+    lang_slug = f"{safe_slug(keyword_slug)}-top-global"
 
     # Related news bullets
     news_section = ""
@@ -428,12 +433,14 @@ def build_country_post(country_code: str, trends_data: dict, lang: str) -> tuple
 
     top_trend = trends[0]
     keyword   = top_trend.get("keyword", "")
+    keyword_slug = top_trend.get("keywordEn", keyword) or keyword
     if not keyword or is_blocked(keyword):
         return "", {}
 
     flag  = cdata.get("flag", "")
     cname_map = COUNTRY_NAMES.get(lang, COUNTRY_NAMES["en"])
     cname = cname_map.get(country_code, cdata.get("name", country_code))
+    cname_en = COUNTRY_NAMES["en"].get(country_code, cdata.get("name", country_code))
 
     wiki_desc, wiki_url = fetch_wiki_description(keyword)
     gdelt_news = fetch_gdelt_headlines(keyword)
@@ -460,7 +467,7 @@ def build_country_post(country_code: str, trends_data: dict, lang: str) -> tuple
     }
     excerpt = excerpt_map[lang]
 
-    slug = f"{date}-{safe_slug(cname)}-trending-{safe_slug(keyword)}-{lang}"
+    slug = f"{date}-{safe_slug(cname_en)}-trending-{safe_slug(keyword_slug)}-{lang}"
 
     # Top 5 trends list
     top5 = "\n".join(
