@@ -14,6 +14,10 @@ import type { TrendsData } from './trend-utils';
 // DATA LOADING (SERVER ONLY)
 // ============================================================
 
+// GitHub raw URL — reflects committed data immediately without Vercel rebuild
+const GITHUB_RAW_URL =
+  'https://raw.githubusercontent.com/hsr815815-cpu/global-trend-map/main/public/data/trends.json';
+
 let cachedData: TrendsData | null = null;
 let cacheTime: number = 0;
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
@@ -26,6 +30,22 @@ export async function loadTrendsData(): Promise<TrendsData> {
     return cachedData;
   }
 
+  // 1. Try GitHub raw URL (always up-to-date with latest commit)
+  try {
+    const res = await fetch(GITHUB_RAW_URL, {
+      next: { revalidate: 300 }, // Next.js fetch cache: 5 minutes
+    });
+    if (res.ok) {
+      const data: TrendsData = await res.json();
+      cachedData = data;
+      cacheTime = now;
+      return data;
+    }
+  } catch {
+    // fall through to local file
+  }
+
+  // 2. Fallback: local file (build-time bundled, used in dev or if GitHub is unreachable)
   try {
     const filePath = path.join(process.cwd(), 'public', 'data', 'trends.json');
     const raw = await fs.readFile(filePath, 'utf-8');

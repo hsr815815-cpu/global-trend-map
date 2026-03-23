@@ -7,8 +7,8 @@ import WorldMap from '@/components/WorldMap';
 import RightPanel from '@/components/RightPanel';
 import BottomCards from '@/components/BottomCards';
 
-// Revalidate every 60 minutes (data updates hourly)
-export const revalidate = 3600;
+// Revalidate every 5 minutes — loadTrendsData fetches from GitHub raw (always latest)
+export const revalidate = 300;
 
 function MapSkeleton() {
   return (

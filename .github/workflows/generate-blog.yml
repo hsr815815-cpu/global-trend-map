@@ -176,6 +176,65 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Submit URLs to search engines
+        run: |
+          SITE_URL="https://global-trend-map-web.vercel.app"
+          SITEMAP_URL="${SITE_URL}/sitemap.xml"
+          INDEXNOW_KEY="7f3a2b9c4e1d8f6a5c2b0e7d4f9a1c3e"
+
+          # 1. Google Sitemap ping
+          echo "=== Pinging Google with sitemap ==="
+          curl -s --max-time 10 "https://www.google.com/ping?sitemap=${SITEMAP_URL}" || echo "Google ping failed (non-critical)"
+
+          # 2. Bing Sitemap ping
+          echo "=== Pinging Bing with sitemap ==="
+          curl -s --max-time 10 "https://www.bing.com/ping?sitemap=${SITEMAP_URL}" || echo "Bing ping failed (non-critical)"
+
+          # 3. IndexNow — submit today's new blog post URLs
+          echo "=== Submitting new blog URLs via IndexNow ==="
+          python3 - <<'EOF'
+          import json, urllib.request, urllib.error
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          SITE_URL = "https://global-trend-map-web.vercel.app"
+          INDEXNOW_KEY = "7f3a2b9c4e1d8f6a5c2b0e7d4f9a1c3e"
+          today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+          try:
+              idx = json.loads(Path('public/data/posts-index.json').read_text(encoding='utf-8'))
+              posts = idx.get('posts', idx) if isinstance(idx, dict) else idx
+              # Only submit posts created today
+              new_urls = [
+                  f"{SITE_URL}/blog/{p['slug']}"
+                  for p in posts
+                  if p.get('date', '')[:10] == today
+              ]
+              if not new_urls:
+                  print("No new posts today — skipping IndexNow submission")
+              else:
+                  payload = json.dumps({
+                      "host": "global-trend-map-web.vercel.app",
+                      "key": INDEXNOW_KEY,
+                      "keyLocation": f"{SITE_URL}/{INDEXNOW_KEY}.txt",
+                      "urlList": new_urls,
+                  }).encode()
+                  req = urllib.request.Request(
+                      "https://api.indexnow.org/indexnow",
+                      data=payload,
+                      headers={"Content-Type": "application/json; charset=utf-8"},
+                      method="POST",
+                  )
+                  with urllib.request.urlopen(req, timeout=10) as res:
+                      print(f"IndexNow response: {res.status} — submitted {len(new_urls)} URLs")
+                      for u in new_urls:
+                          print(f"  {u}")
+          except urllib.error.HTTPError as e:
+              print(f"IndexNow HTTP error: {e.code} {e.reason} (non-critical)")
+          except Exception as e:
+              print(f"IndexNow failed: {e} (non-critical)")
+          EOF
+
       - name: Notify on failure
         if: failure()
         run: |

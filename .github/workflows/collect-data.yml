@@ -80,6 +80,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Ping search engines with updated sitemap
+        run: |
+          SITEMAP="https://global-trend-map-web.vercel.app/sitemap.xml"
+          curl -s --max-time 10 "https://www.google.com/ping?sitemap=${SITEMAP}" || true
+          curl -s --max-time 10 "https://www.bing.com/ping?sitemap=${SITEMAP}" || true
+          echo "Sitemap ping sent"
+
       - name: Notify on failure
         if: failure()
         run: |
