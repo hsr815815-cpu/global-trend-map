@@ -176,9 +176,10 @@ seen_rf = set()
 for t in all_trends[:15]:
     if t['keyword'] not in seen_rf and len(rising_fast) < 3:
         rising_fast.append({
-            'keyword': t['keyword'],
-            'country': t['_country'],
-            'change':  t['volume'],
+            'keyword':   t['keyword'],
+            'keywordEn': t.get('keywordEn', t['keyword']),
+            'country':   t['_country'],
+            'change':    t['volume'],
         })
         seen_rf.add(t['keyword'])
 
@@ -204,11 +205,12 @@ output = {
     'global': {
         'temperature':     global_temp,
         'topTrend': {
-            'keyword':  top.get('keyword', ''),
-            'country':  top.get('_country', ''),
-            'volume':   top.get('volume', ''),
-            'flag':     top.get('_flag', ''),
-            'category': top.get('category', 'news'),
+            'keyword':   top.get('keyword', ''),
+            'keywordEn': top.get('keywordEn', top.get('keyword', '')),
+            'country':   top.get('_country', ''),
+            'volume':    top.get('volume', ''),
+            'flag':      top.get('_flag', ''),
+            'category':  top.get('category', 'news'),
         },
         'totalCountries':   active_countries,
         'totalTrends':      total_trends,
