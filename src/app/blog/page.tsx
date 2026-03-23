@@ -24,6 +24,7 @@ interface PostMeta {
   lastUpdated?: string;
   excerpt: string;
   category?: string;
+  language?: string;
   readingTime?: number;
   featured?: boolean;
   tags?: string[];
@@ -43,7 +44,9 @@ async function loadPostsIndex(): Promise<PostMeta[]> {
   try {
     const filePath = path.join(process.cwd(), 'public', 'data', 'posts-index.json');
     const raw = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(raw) as PostMeta[];
+    const data = JSON.parse(raw);
+    const posts: PostMeta[] = Array.isArray(data) ? data : (data.posts ?? []);
+    return posts.filter((p) => !p.language || p.language === 'en');
   } catch { return []; }
 }
 

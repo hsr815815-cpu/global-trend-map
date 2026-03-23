@@ -88,6 +88,59 @@ jobs:
             "
           fi
 
+      - name: Regenerate sitemap after blog update
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          BASE_DIR = Path('.')
+          SITE_URL = 'https://global-trend-map-web.vercel.app'
+          SITEMAP_FILE = BASE_DIR / 'public' / 'sitemap.xml'
+          TRENDS_FILE = BASE_DIR / 'public' / 'data' / 'trends.json'
+          INDEX_FILE = BASE_DIR / 'public' / 'data' / 'posts-index.json'
+
+          def url(loc, lastmod, changefreq, priority):
+              return f'  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>{changefreq}</changefreq>\n    <priority>{priority}</priority>\n  </url>'
+
+          today = datetime.now(timezone.utc).strftime('%Y-%m-%dT00:00:00Z')
+          static_pages = [
+              (SITE_URL, 'hourly', '1.0'),
+              (f'{SITE_URL}/blog', 'hourly', '0.9'),
+              (f'{SITE_URL}/about', 'monthly', '0.7'),
+              (f'{SITE_URL}/contact', 'monthly', '0.6'),
+              (f'{SITE_URL}/privacy-policy', 'yearly', '0.3'),
+              (f'{SITE_URL}/terms', 'yearly', '0.3'),
+              (f'{SITE_URL}/cookie-policy', 'yearly', '0.3'),
+              (f'{SITE_URL}/dmca', 'yearly', '0.2'),
+              (f'{SITE_URL}/disclaimer', 'yearly', '0.2'),
+              (f'{SITE_URL}/editorial-policy', 'yearly', '0.3'),
+          ]
+
+          urls = [url(loc, today, freq, prio) for loc, freq, prio in static_pages]
+
+          try:
+              raw = json.loads(INDEX_FILE.read_text(encoding='utf-8'))
+              posts = raw.get('posts', raw) if isinstance(raw, dict) else raw
+              for p in posts:
+                  if p.get('language', 'en') == 'en':
+                      urls.append(url(f"{SITE_URL}/blog/{p['slug']}", p.get('date', today), 'weekly', '0.8'))
+          except Exception as e:
+              print(f'Warning: could not read posts-index: {e}')
+
+          try:
+              trends = json.loads(TRENDS_FILE.read_text(encoding='utf-8'))
+              for code in trends.get('countries', {}):
+                  urls.append(url(f'{SITE_URL}/country/{code.lower()}', today, 'hourly', '0.85'))
+          except Exception as e:
+              print(f'Warning: could not read trends: {e}')
+
+          xml = '\n'.join(['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', *urls, '</urlset>'])
+          SITEMAP_FILE.write_text(xml, encoding='utf-8')
+          print(f'Sitemap updated: {len(urls)} URLs')
+          EOF
+
       - name: Commit and push generated blog posts
         run: |
           git config user.name "Vercel Manager Bot"
@@ -95,6 +148,7 @@ jobs:
           git add public/blog/
           git add public/data/posts-index.json
           git add public/data/trends.json
+          git add public/sitemap.xml 2>/dev/null || true
           git diff --staged --quiet || git commit -m "📝 Auto: Generate blog posts $(date -u '+%Y-%m-%d')"
           git push
         env:

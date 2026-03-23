@@ -13,6 +13,10 @@ interface PostMeta {
   lastUpdated?: string;
   excerpt: string;
   category?: string;
+  language?: string;
+  keyword?: string;
+  type?: string;
+  flag?: string;
   readingTime?: number;
   featured?: boolean;
   tags?: string[];
@@ -29,149 +33,24 @@ async function loadPostsIndex(): Promise<PostMeta[]> {
   try {
     const filePath = path.join(process.cwd(), 'public', 'data', 'posts-index.json');
     const raw = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(raw) as PostMeta[];
+    const data = JSON.parse(raw);
+    return Array.isArray(data) ? data : (data.posts ?? []);
   } catch {
     return [];
   }
 }
 
-function getPostContent(slug: string, post: PostMeta): string {
-  // In production, this would load from MDX files or CMS.
-  // For the sample posts, we generate full article content.
-  const contents: Record<string, string> = {
-    'why-ipл-auction-trends-dominate-global-searches': `
-The Indian Premier League auction is, by every metric, one of the most-searched sporting events on the planet. When franchises bid for the world's best cricket talent, hundreds of millions of fans across South Asia, the Caribbean, Australia, the United Kingdom, and beyond are glued to their screens — and their search bars.
-
-## The Scale of IPL Search Interest
-
-According to data collected by TrendPulse across 142 countries, IPL auction days consistently generate search volumes that rival the Super Bowl, the FIFA World Cup final, and the Olympics opening ceremony. In India alone, the 2026 auction generated over 8.4 million searches within the first 24 hours — a figure that eclipses most Hollywood blockbuster release weekends.
-
-What makes this particularly remarkable is the geographic spread. Unlike many sporting events that dominate searches in one country or region, IPL auction interest is genuinely global:
-
-- **India**: 8.4M+ searches (predictably dominant)
-- **Sri Lanka**: 2.1M searches
-- **Pakistan**: 1.9M searches
-- **United Kingdom**: 1.4M searches (large South Asian diaspora)
-- **United States**: 980K searches
-- **Australia**: 760K searches
-- **Canada**: 640K searches
-
-## Why Does the Auction Generate Such Massive Interest?
-
-The auction format itself is a masterpiece of engagement engineering. Unlike a standard transfer window in football, where deals happen quietly over weeks, the IPL auction is a live spectacle. Viewers watch franchise owners deliberate in real time. Every bid is public. Every player unsold is a moment of drama.
-
-Search queries cluster around three themes:
-
-1. **Player valuations** — "How much did [player] go for?" generates enormous search traffic
-2. **Fantasy cricket implications** — IPL fantasy leagues have hundreds of millions of participants
-3. **Team roster analysis** — Fans immediately begin searching for tactical implications
-
-## The Diaspora Effect
-
-One of the most fascinating aspects of IPL auction search trends is the diaspora effect. When we analyze search data from countries like the UK, Canada, Australia, and the UAE, IPL auction searches are disproportionately high relative to those countries' total populations. This directly reflects the large South Asian communities living outside the subcontinent.
-
-TrendPulse data shows that in some UK cities with significant South Asian populations, IPL auction search volume on auction day exceeds searches for Premier League matches played that same day.
-
-## What Happens After the Auction
-
-Search interest doesn't disappear after bidding closes. A secondary wave of searches typically hits 24-48 hours after the auction as:
-
-- Analysis articles are published
-- Fantasy cricket players finalize their teams
-- Fans research newly-acquired foreign players from overseas leagues
-- Social media debates generate curiosity in non-cricket audiences
-
-This secondary wave often reaches 40-60% of the peak auction volume — remarkably high for post-event interest.
-
-## Conclusion
-
-The IPL auction represents a perfect storm of factors that maximize global search interest: live drama, financial spectacle, fantasy sports integration, and a genuinely global sport with a passionate diaspora. For trend analysts and marketers, it remains one of the most predictable and powerful annual search events in the world.
-    `,
-    'ai-agents-2026-what-the-world-is-searching-for': `
-The term "AI agents" has undergone a remarkable transformation in public consciousness. Two years ago, it was a niche technical concept discussed primarily in research papers and developer forums. Today, it's generating 340% more search volume than it did in Q1 2025, driven by a wave of product launches, media coverage, and genuine public curiosity about what autonomous AI systems can actually do.
-
-## What Are People Actually Searching For?
-
-TrendPulse data reveals that "AI agents" searches cluster into distinct query categories:
-
-**Definition and education queries** (38% of traffic):
-- "What is an AI agent"
-- "AI agent vs chatbot difference"
-- "How do AI agents work"
-- "AI agent examples 2026"
-
-**Product and tool queries** (31%):
-- "Best AI agents 2026"
-- "AI agent for coding"
-- "AI agent for business"
-- "OpenAI agents API"
-- "Claude AI agent"
-
-**Concern and safety queries** (18%):
-- "Are AI agents safe"
-- "AI agent risks"
-- "Can AI agents make mistakes"
-- "AI agent security"
-
-**Job and career queries** (13%):
-- "AI agent replace jobs"
-- "Will AI agents take my job"
-- "Jobs affected by AI agents"
-
-## Geographic Patterns
-
-The geographic distribution of AI agent searches reveals interesting patterns about where AI adoption is accelerating fastest.
-
-**United States** leads in absolute volume (3.1M searches), with particularly high concentration in:
-- San Francisco Bay Area
-- Seattle
-- New York City
-- Austin
-
-**South Korea** shows the highest per-capita AI agent search rate among the countries we monitor, reflecting the country's aggressive national AI investment strategy and its highly tech-educated population.
-
-**India** has the fastest growth rate in AI agent searches (+420% year-over-year), driven by the country's massive developer community and strong adoption of AI tools in software outsourcing.
-
-**Japan** searches are notable for focusing heavily on enterprise applications — a reflection of Japan's corporate culture of thorough evaluation before adoption.
-
-## The "Agentic AI" Inflection Point
-
-Our data suggests that Q1 2026 represents a genuine inflection point in public awareness of agentic AI. Several factors converged simultaneously:
-
-1. **Major product launches** from leading AI companies that put autonomous agent capabilities directly in consumer products
-2. **Media coverage** that moved from technical to mainstream, with major publications running explainer pieces
-3. **Business adoption stories** featuring real companies reporting productivity gains from agent deployments
-4. **Regulatory attention** in the EU and US that kept the topic in news cycles
-
-## What This Means
-
-The search data tells us that AI agents are following the classic technology adoption curve but at an accelerated pace. The question mix — definition-seeking combined with product research combined with job anxiety — is exactly what we'd expect at the early majority phase of adoption.
-
-For businesses, the implications are clear: customers and employees are both curious and cautious. Communication that addresses both the opportunity and the safety/reliability concerns will resonate with the current search intent landscape.
-    `,
-  };
-
-  return contents[slug] || `
-This article explores the fascinating trends data captured by TrendPulse from across 142 countries.
-
-## Overview
-
-${post.excerpt}
-
-## Key Findings
-
-Our analysis of global search data reveals several important patterns worth examining. The data shows significant variation across countries and regions, with some areas showing dramatically higher engagement than others.
-
-## Methodology
-
-TrendPulse collects trend data from multiple public sources including Google Trends RSS feeds, YouTube trending data (where available via the YouTube Data API), and GDELT news analysis. All data is filtered through our content moderation pipeline to ensure compliance with advertising policies.
-
-## Conclusion
-
-Understanding global search trends provides unique insights into collective human curiosity — what captures attention, what drives people to search, and how those patterns differ across cultures and geographies. TrendPulse makes this data accessible and visual for everyone.
-
-*Data collected and analyzed by the Global Trends Editorial Team.*
-  `;
+async function getPostContent(slug: string, post: PostMeta): Promise<string> {
+  try {
+    const mdxPath = path.join(process.cwd(), 'public', 'blog', `${slug}.mdx`);
+    const raw = await fs.readFile(mdxPath, 'utf-8');
+    // Strip frontmatter (content between leading --- markers)
+    const stripped = raw.replace(/^---[\s\S]*?---\s*/m, '');
+    // Remove the first H1 heading if it duplicates the title
+    return stripped.replace(/^#\s+.+\n?/, '').trim();
+  } catch {
+    return post.excerpt;
+  }
 }
 
 function formatDate(dateStr: string): string {
@@ -256,7 +135,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound();
 
-  const content = getPostContent(params.slug, post);
+  const content = await getPostContent(params.slug, post);
   const readingTime = post.readingTime || estimateReadingTime(content);
   const headings = extractHeadings(content);
   const relatedPosts = posts.filter((p) => p.slug !== params.slug).slice(0, 3);
