@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: 'About TrendPulse — Real-Time Global Trend Map',
   description:
     'Learn about TrendPulse, the real-time global trend visualization platform that tracks trending searches across 36 countries. Meet the editorial team and discover our methodology.',
+  openGraph: {
+    title: 'About TrendPulse — Real-Time Global Trend Map',
+    description: 'Learn about TrendPulse, the real-time global trend visualization platform that tracks trending searches across 36 countries.',
+    url: 'https://global-trend-map-web.vercel.app/about',
+  },
   alternates: { canonical: 'https://global-trend-map-web.vercel.app/about' },
 };
 
