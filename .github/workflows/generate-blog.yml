@@ -190,7 +190,7 @@ jobs:
           echo "=== Pinging Bing with sitemap ==="
           curl -s --max-time 10 "https://www.bing.com/ping?sitemap=${SITEMAP_URL}" || echo "Bing ping failed (non-critical)"
 
-          # 3. IndexNow — submit today's new blog post URLs
+          # 3. IndexNow — submit today's new blog post URLs (Google + Bing)
           echo "=== Submitting new blog URLs via IndexNow ==="
           python3 - <<'EOF'
           import json, urllib.request, urllib.error
