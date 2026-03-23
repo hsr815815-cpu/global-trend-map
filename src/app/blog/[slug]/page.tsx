@@ -112,11 +112,38 @@ export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
 
+const HREFLANG_MAP: Record<string, string> = {
+  en: 'en',
+  zh: 'zh-CN',
+  es: 'es',
+  pt: 'pt-BR',
+  fr: 'fr',
+  de: 'de',
+  kr: 'ko',
+  jp: 'ja',
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const posts = await loadPostsIndex();
   const post = posts.find((p) => p.slug === params.slug);
 
   if (!post) return { title: 'Article Not Found | TrendPulse Blog' };
+
+  const BASE_URL = 'https://global-trend-map-web.vercel.app';
+  const baseSlug = params.slug.replace(/-(?:en|zh|es|pt|fr|de|kr|jp)$/, '');
+
+  const languages: Record<string, string> = {};
+  for (const [langKey, hreflang] of Object.entries(HREFLANG_MAP)) {
+    const variantSlug = `${baseSlug}-${langKey}`;
+    if (posts.some((p) => p.slug === variantSlug)) {
+      languages[hreflang] = `${BASE_URL}/blog/${variantSlug}`;
+    }
+  }
+  // x-default points to the EN variant
+  const enSlug = `${baseSlug}-en`;
+  if (posts.some((p) => p.slug === enSlug)) {
+    languages['x-default'] = `${BASE_URL}/blog/${enSlug}`;
+  }
 
   return {
     title: `${post.title} | TrendPulse Blog`,
@@ -125,7 +152,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       title: post.title,
       description: post.excerpt,
-      url: `https://global-trend-map-web.vercel.app/blog/${post.slug}`,
+      url: `${BASE_URL}/blog/${post.slug}`,
       publishedTime: post.date,
       modifiedTime: post.lastUpdated || post.date,
       authors: ['Global Trends Editorial Team'],
@@ -137,7 +164,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
     },
     alternates: {
-      canonical: `https://global-trend-map-web.vercel.app/blog/${post.slug}`,
+      canonical: `${BASE_URL}/blog/${post.slug}`,
+      languages,
     },
   };
 }
