@@ -40,7 +40,7 @@ export async function GET(request: Request) {
     default:
       shareUrl = customUrl || SITE_URL;
       title = `Real-Time Global Trend Map | ${SITE_NAME}`;
-      description = `Explore what 142 countries are searching for right now. Interactive world map with live trend data, temperature scores, and velocity indicators.`;
+      description = `Explore what 36 countries are searching for right now. Interactive world map with live trend data, temperature scores, and velocity indicators.`;
   }
 
   // Generate share links for major platforms

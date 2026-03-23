@@ -550,7 +550,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Explore live trends
               </div>
               <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginBottom: '12px' }}>
-                See what 142 countries are searching for right now
+                See what 36 countries are searching for right now
               </div>
               <Link
                 href="/"

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'In-depth analysis of global search trends, viral topics, and what the world is searching for. Written by the Global Trends Editorial Team.',
   openGraph: {
     title: 'Trend Insights Blog — TrendPulse',
-    description: 'Deep dives into global search trends and viral topics from 142 countries.',
+    description: 'Deep dives into global search trends and viral topics from 36 countries.',
     url: 'https://global-trend-map-web.vercel.app/blog',
   },
   alternates: { canonical: 'https://global-trend-map-web.vercel.app/blog' },
@@ -85,7 +85,7 @@ export default async function BlogPage() {
             Global Trend Analysis
           </h1>
           <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-            Deep dives into what 142 countries are searching for — written by the Global Trends Editorial Team.
+            Deep dives into what 36 countries are searching for — written by the Global Trends Editorial Team.
           </p>
         </div>
 

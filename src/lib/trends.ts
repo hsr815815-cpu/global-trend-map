@@ -66,8 +66,8 @@ export function getFallbackData(): TrendsData {
         volume: '1M+',
         category: 'news',
       },
-      totalCountries: 142,
-      totalTrends: 8700,
+      totalCountries: 36,
+      totalTrends: 720,
       risingFast: [],
       categoryBreakdown: {
         sports: 28,

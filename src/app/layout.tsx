@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: '%s | TrendPulse',
   },
   description:
-    'Explore real-time trending searches and viral topics from 142 countries on a live interactive world map. Discover what the world is searching for right now.',
+    'Explore real-time trending searches and viral topics from 36 countries on a live interactive world map. Discover what the world is searching for right now.',
   keywords: [
     'global trends',
     'trending searches',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     siteName: 'TrendPulse',
     title: 'TrendPulse — Real-Time Global Trend Map',
     description:
-      'Explore what 142 countries are searching for right now. Interactive world map with live trend data, temperature scores, and velocity indicators.',
+      'Explore what 36 countries are searching for right now. Interactive world map with live trend data, temperature scores, and velocity indicators.',
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'TrendPulse — Real-Time Global Trend Map',
-    description: 'Explore what 142 countries are searching for right now.',
+    description: 'Explore what 36 countries are searching for right now.',
     images: [`${SITE_URL}/og-image.png`],
     creator: '@trendpulse',
   },

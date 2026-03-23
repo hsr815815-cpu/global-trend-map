@@ -47,7 +47,7 @@ export default function Header({
       try {
         await navigator.share({
           title: 'TrendPulse — Real-Time Global Trend Map',
-          text: 'Explore what 142 countries are searching for right now!',
+          text: 'Explore what 36 countries are searching for right now!',
           url: window.location.href,
         });
         return;
@@ -401,7 +401,7 @@ export default function Header({
                 {
                   name: 'Twitter/X',
                   color: '#000',
-                  url: `https://twitter.com/intent/tweet?text=Explore+what+142+countries+are+searching+for+right+now+on+TrendPulse!&url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`,
+                  url: `https://twitter.com/intent/tweet?text=Explore+what+36+countries+are+searching+for+right+now+on+TrendPulse!&url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`,
                 },
                 {
                   name: 'Facebook',
