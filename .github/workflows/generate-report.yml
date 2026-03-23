@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install requests==2.31.0 feedparser==6.0.11 google-analytics-data==0.18.14
+          pip install requests==2.31.0 feedparser==6.0.11 google-analytics-data==0.18.14 google-api-python-client==2.118.0
 
       - name: Ensure report directory exists
         run: mkdir -p public/report
@@ -66,6 +66,7 @@ jobs:
         env:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
         run: |
           echo "=== Generating manager report ==="
           python scripts/generate_report.py

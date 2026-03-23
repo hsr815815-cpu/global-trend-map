@@ -885,39 +885,12 @@
       <div class="section-header">
         <span class="section-icon">🔍</span>
         <h2 class="section-title">SEO 상태</h2>
-        <span class="section-badge">Search Console — 수동</span>
+        <span class="section-badge">{{GSC_BADGE}}</span>
       </div>
       <div class="section-body">
+        {{GSC_SECTION}}
 
-        <div class="note-box">
-          <span class="note-icon">💡</span>
-          <span>Search Console API 연결 시 SEO 지표 자동화 가능. 현재는 Google Search Console에서 수동 내보내기 필요.</span>
-        </div>
-
-        <div class="metrics-grid" style="margin-top:14px;">
-          <div class="metric-card">
-            <div class="metric-value" style="font-size:1.4rem;">—</div>
-            <div class="metric-label">전체 클릭수</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value" style="font-size:1.4rem;">—</div>
-            <div class="metric-label">노출수</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value" style="font-size:1.4rem;">—%</div>
-            <div class="metric-label">평균 CTR</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value" style="font-size:1.4rem;">#—</div>
-            <div class="metric-label">평균 순위</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value" style="font-size:1.4rem;">{{POSTS_TOTAL}}</div>
-            <div class="metric-label">색인 추정</div>
-          </div>
-        </div>
-
-        <div class="sub-section">
+        <div class="sub-section" style="margin-top:16px;">
           <div class="sub-title">⚡ Core Web Vitals</div>
           <div class="cwv-grid">
             <div class="cwv-item">
@@ -940,23 +913,6 @@
               <div class="cwv-val cwv-ok">양호</div>
               <div style="font-size:0.7rem;color:var(--muted);margin-top:2px;">목표: 800ms 이하</div>
             </div>
-          </div>
-        </div>
-
-        <div class="sub-section">
-          <div class="sub-title">🔎 상위 검색 쿼리 (자동화 후 표시)</div>
-          <div class="table-wrap">
-            <table class="data-table">
-              <thead><tr><th>#</th><th>쿼리</th><th>클릭</th><th>노출수</th><th>CTR</th><th>순위</th></tr></thead>
-              <tbody>
-                <tr><td>1</td><td>전세계 트렌드 지도</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td>2</td><td>전세계 트렌딩 토픽</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td>3</td><td>국가별 구글 트렌드</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td>4</td><td>오늘 트렌딩</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td>5</td><td>실시간 트렌드 맵</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-                <tr><td colspan="6" style="text-align:center;color:var(--dim);font-style:italic;">Search Console API 연결 후 자동 표시</td></tr>
-              </tbody>
-            </table>
           </div>
         </div>
 

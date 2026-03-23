@@ -16,6 +16,97 @@ from pathlib import Path
 
 
 # ---------------------------------------------------------------------------
+# Search Console API
+# ---------------------------------------------------------------------------
+
+def fetch_gsc_data() -> dict:
+    """Fetch SEO data from Google Search Console API. Returns {} on any failure."""
+    try:
+        from googleapiclient.discovery import build
+        from google.oauth2 import service_account
+
+        sa_json_str = os.environ.get("GA4_SERVICE_ACCOUNT_JSON", "").strip()
+        site_url    = os.environ.get("GSC_SITE_URL", "").strip()
+
+        if not sa_json_str or not site_url:
+            logging.getLogger("generate_report").warning("GSC_SITE_URL or GA4_SERVICE_ACCOUNT_JSON not set")
+            return {}
+
+        sa_info = json.loads(sa_json_str)
+        credentials = service_account.Credentials.from_service_account_info(
+            sa_info, scopes=["https://www.googleapis.com/auth/webmasters.readonly"]
+        )
+        service = build("searchconsole", "v1", credentials=credentials, cache_discovery=False)
+
+        from datetime import date, timedelta
+        today     = date.today()
+        end_date  = (today - timedelta(days=3)).isoformat()   # GSC has 3-day lag
+        start_7d  = (today - timedelta(days=10)).isoformat()
+        start_28d = (today - timedelta(days=31)).isoformat()
+
+        def query(start, end, dimensions=None, row_limit=10):
+            body = {"startDate": start, "endDate": end, "rowLimit": row_limit}
+            if dimensions:
+                body["dimensions"] = dimensions
+            return service.searchanalytics().query(siteUrl=site_url, body=body).execute()
+
+        # Summary (no dimension)
+        s7  = query(start_7d,  end_date)
+        s28 = query(start_28d, end_date)
+
+        def parse_summary(r):
+            rows = r.get("rows", [{}])
+            row  = rows[0] if rows else {}
+            return {
+                "clicks":      int(row.get("clicks",      0)),
+                "impressions": int(row.get("impressions", 0)),
+                "ctr":         round(row.get("ctr", 0) * 100, 2),
+                "position":    round(row.get("position", 0), 1),
+            }
+
+        # Top queries
+        q7 = query(start_7d, end_date, dimensions=["query"], row_limit=10)
+        top_queries = []
+        for i, row in enumerate(q7.get("rows", [])[:10], 1):
+            top_queries.append({
+                "rank":        i,
+                "query":       row["keys"][0],
+                "clicks":      int(row.get("clicks", 0)),
+                "impressions": int(row.get("impressions", 0)),
+                "ctr":         round(row.get("ctr", 0) * 100, 1),
+                "position":    round(row.get("position", 0), 1),
+            })
+
+        # Top pages
+        p7 = query(start_7d, end_date, dimensions=["page"], row_limit=5)
+        top_pages = []
+        for i, row in enumerate(p7.get("rows", [])[:5], 1):
+            page = row["keys"][0].replace(site_url, "") or "/"
+            top_pages.append({
+                "rank":    i,
+                "page":    page,
+                "clicks":  int(row.get("clicks", 0)),
+                "ctr":     round(row.get("ctr", 0) * 100, 1),
+            })
+
+        result = {
+            "7d":  parse_summary(s7),
+            "28d": parse_summary(s28),
+            "top_queries": top_queries,
+            "top_pages":   top_pages,
+        }
+        logging.getLogger("generate_report").info("GSC fetched: %s", result.get("7d"))
+        return result
+
+    except ImportError:
+        logging.getLogger("generate_report").warning("google-api-python-client not installed — skipping GSC")
+        return {}
+    except Exception as e:
+        logging.getLogger("generate_report").warning("GSC fetch failed: %s", e)
+        return {}
+
+
+# ---------------------------------------------------------------------------
 # GA4 Reporting API
 # ---------------------------------------------------------------------------
 
@@ -396,6 +487,93 @@ def main():
     ])
     auto_score = min(97, int(auto_items / 6 * 65) + 10)
 
+    # --- Search Console real SEO data ---
+    gsc = fetch_gsc_data()
+    gs7  = gsc.get("7d",  {})
+    gs28 = gsc.get("28d", {})
+    gsc_queries = gsc.get("top_queries", [])
+    gsc_pages   = gsc.get("top_pages",   [])
+
+    def fmt_pos(v, default="—"):
+        return f"#{v}" if isinstance(v, (int, float)) and v > 0 else default
+
+    if gs7:
+        query_rows = "".join(
+            f'<tr><td>{q["rank"]}</td><td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{q["query"]}</td>'
+            f'<td>{q["clicks"]:,}</td><td>{q["impressions"]:,}</td><td>{q["ctr"]}%</td><td>#{q["position"]}</td></tr>'
+            for q in gsc_queries
+        ) or '<tr><td colspan="6" style="color:var(--dim);">데이터 없음 (아직 검색 노출 없음)</td></tr>'
+
+        page_rows = "".join(
+            f'<tr><td>{p["rank"]}</td><td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{p["page"]}</td>'
+            f'<td>{p["clicks"]:,}</td><td>{p["ctr"]}%</td></tr>'
+            for p in gsc_pages
+        ) or '<tr><td colspan="4" style="color:var(--dim);">데이터 없음</td></tr>'
+
+        gsc_html = f"""
+      <div class="note-box" style="background:rgba(16,185,129,0.08);border-color:rgba(16,185,129,0.3);">
+        <span class="note-icon">✅</span>
+        <span>Search Console API 연결됨 — 실제 SEO 데이터 자동 표시 중 (최근 7일 / 28일)</span>
+      </div>
+      <div class="metrics-grid" style="margin-top:14px;">
+        <div class="metric-card">
+          <div class="metric-value" style="font-size:1.4rem;">{gs7.get('clicks', 0):,}</div>
+          <div class="metric-label">클릭수 (7일)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="font-size:1.4rem;">{gs7.get('impressions', 0):,}</div>
+          <div class="metric-label">노출수 (7일)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="font-size:1.4rem;">{gs7.get('ctr', 0)}%</div>
+          <div class="metric-label">평균 CTR (7일)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="font-size:1.4rem;">#{gs7.get('position', '—')}</div>
+          <div class="metric-label">평균 순위 (7일)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="font-size:1.4rem;">{gs28.get('clicks', 0):,}</div>
+          <div class="metric-label">클릭수 (28일)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="font-size:1.4rem;">{gs28.get('impressions', 0):,}</div>
+          <div class="metric-label">노출수 (28일)</div>
+        </div>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">🔎 상위 검색 쿼리 (최근 7일)</div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>#</th><th>쿼리</th><th>클릭</th><th>노출수</th><th>CTR</th><th>순위</th></tr></thead>
+            <tbody>{query_rows}</tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">📄 상위 페이지 (최근 7일)</div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>#</th><th>페이지</th><th>클릭</th><th>CTR</th></tr></thead>
+            <tbody>{page_rows}</tbody>
+          </table>
+        </div>
+      </div>"""
+        gsc_badge = "Search Console — 실시간"
+    else:
+        gsc_html = """
+      <div class="note-box">
+        <span class="note-icon">💡</span>
+        <span>GSC_SITE_URL / GA4_SERVICE_ACCOUNT_JSON 환경변수 확인 필요 — 현재 수동 확인 필요</span>
+      </div>
+      <div class="metrics-grid" style="margin-top:14px;">
+        <div class="metric-card"><div class="metric-value" style="font-size:1.4rem;">—</div><div class="metric-label">전체 클릭수</div></div>
+        <div class="metric-card"><div class="metric-value" style="font-size:1.4rem;">—</div><div class="metric-label">노출수</div></div>
+        <div class="metric-card"><div class="metric-value" style="font-size:1.4rem;">—%</div><div class="metric-label">평균 CTR</div></div>
+        <div class="metric-card"><div class="metric-value" style="font-size:1.4rem;">#—</div><div class="metric-label">평균 순위</div></div>
+      </div>"""
+        gsc_badge = "Search Console — 수동"
+
     # --- Replace template variables ---
     replacements = {
         "{{REPORT_DATE}}":          report_date,
@@ -436,6 +614,8 @@ def main():
         "{{AUTO_SCORE}}":           str(auto_score),
         "{{BENCHMARK_SECTION}}":    bm_html,
         "{{GA4_TRAFFIC_SECTION}}":  ga4_html,
+        "{{GSC_SECTION}}":          gsc_html,
+        "{{GSC_BADGE}}":            gsc_badge,
         "{{ERROR_COUNT_CLASS}}":    "status-error" if error_count > 0 else "status-ok",
         "{{DATA_AGE_CLASS}}":       "status-warn" if data_age > 120 else "status-ok",
         "{{QUOTA_CLASS}}":          "status-warn" if yt_quota_used > 8000 else "status-ok",
