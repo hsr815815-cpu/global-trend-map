@@ -18,18 +18,18 @@ interface TrendListProps {
   data: TrendsData;
 }
 
-const CATEGORIES: { key: TrendCategory; label: string; icon: string }[] = [
-  { key: 'all', label: 'All', icon: '🌍' },
-  { key: 'sports', label: 'Sports', icon: '⚽' },
-  { key: 'tech', label: 'Tech', icon: '💻' },
-  { key: 'music', label: 'Music', icon: '🎵' },
-  { key: 'news', label: 'News', icon: '📰' },
-  { key: 'movies', label: 'Movies', icon: '🎬' },
-  { key: 'finance', label: 'Finance', icon: '📈' },
+const CATEGORY_KEYS: { key: TrendCategory; labelKey: string; icon: string }[] = [
+  { key: 'all', labelKey: 'All', icon: '🌍' },
+  { key: 'sports', labelKey: 'Sports', icon: '⚽' },
+  { key: 'tech', labelKey: 'Tech', icon: '💻' },
+  { key: 'music', labelKey: 'Music', icon: '🎵' },
+  { key: 'news', labelKey: 'News', icon: '📰' },
+  { key: 'movies', labelKey: 'Movies', icon: '🎬' },
+  { key: 'finance', labelKey: 'Finance', icon: '📈' },
 ];
 
 export default function TrendList({ data }: TrendListProps) {
-  const { kw } = useLanguage();
+  const { kw, t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<TrendCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -76,7 +76,7 @@ export default function TrendList({ data }: TrendListProps) {
             marginBottom: '10px',
           }}
         >
-          <span className="panel-title">Global Rankings</span>
+          <span className="panel-title">{t('Global Rankings')}</span>
           <span
             style={{
               padding: '2px 8px',
@@ -110,7 +110,7 @@ export default function TrendList({ data }: TrendListProps) {
           </span>
           <input
             type="text"
-            placeholder="Search trends or countries..."
+            placeholder={t('Search trends or countries...')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             style={{
@@ -153,13 +153,13 @@ export default function TrendList({ data }: TrendListProps) {
             gap: '4px',
           }}
         >
-          {CATEGORIES.map((cat) => (
+          {CATEGORY_KEYS.map((cat) => (
             <button
               key={cat.key}
               onClick={() => setActiveCategory(cat.key)}
               className={`category-chip${activeCategory === cat.key ? ' active' : ''}`}
             >
-              {cat.icon} {cat.label}
+              {cat.icon} {t(cat.labelKey)}
             </button>
           ))}
         </div>
@@ -180,7 +180,7 @@ export default function TrendList({ data }: TrendListProps) {
                 marginBottom: '2px',
               }}
             >
-              Spotlight — #1 Global
+              {t('Spotlight — #1 Global')}
             </div>
             <div
               style={{
@@ -200,7 +200,7 @@ export default function TrendList({ data }: TrendListProps) {
                 color: 'var(--text-secondary)',
               }}
             >
-              <span>{data.global.topTrend.volume} searches</span>
+              <span>{data.global.topTrend.volume} {t('searches')}</span>
               <span>·</span>
               <span>{data.countries[data.global.topTrend.country]?.flag} {data.global.topTrend.country}</span>
             </div>
@@ -232,7 +232,7 @@ export default function TrendList({ data }: TrendListProps) {
             }}
           >
             <div style={{ fontSize: '32px', marginBottom: '8px' }}>🔍</div>
-            No trends match your search
+            {t('No trends match your search')}
           </div>
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>

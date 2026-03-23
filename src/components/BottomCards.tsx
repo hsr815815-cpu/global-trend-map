@@ -8,6 +8,7 @@ import {
   CATEGORY_ICONS,
   CATEGORY_COLORS,
 } from '@/lib/trend-utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BottomCardsProps {
   data: TrendsData;
@@ -16,6 +17,7 @@ interface BottomCardsProps {
 const CARD_CATEGORIES = ['sports', 'tech', 'music', 'news', 'movies', 'finance'];
 
 export default function BottomCards({ data }: BottomCardsProps) {
+  const { t } = useLanguage();
   const topByCategory = useMemo(() => {
     const result: Record<string, (TrendItem & { countryCode: string; flag: string; countryName: string }) | null> = {};
 
@@ -81,12 +83,13 @@ export default function BottomCards({ data }: BottomCardsProps) {
             trend={trend}
             color={color}
             icon={icon}
+            t={t}
           />
         );
       })}
 
       {/* Global average card */}
-      <GlobalCard data={data} />
+      <GlobalCard data={data} t={t} />
     </div>
   );
 }
@@ -96,9 +99,10 @@ interface CategoryCardProps {
   trend: (TrendItem & { countryCode: string; flag: string; countryName: string }) | null;
   color: string;
   icon: string;
+  t: (key: string) => string;
 }
 
-function CategoryCard({ category, trend, color, icon }: CategoryCardProps) {
+function CategoryCard({ category, trend, color, icon, t }: CategoryCardProps) {
   const tempColor = trend ? getTemperatureColor(trend.temperature) : '#475569';
 
   return (
@@ -220,7 +224,7 @@ function CategoryCard({ category, trend, color, icon }: CategoryCardProps) {
                   fontWeight: 600,
                 }}
               >
-                {trend.volume} searches
+                {trend.volume} {t('searches')}
               </div>
               <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
                 {trend.countryName}
@@ -258,14 +262,14 @@ function CategoryCard({ category, trend, color, icon }: CategoryCardProps) {
             fontSize: '12px',
           }}
         >
-          No data
+          {t('No data')}
         </div>
       )}
     </div>
   );
 }
 
-function GlobalCard({ data }: { data: TrendsData }) {
+function GlobalCard({ data, t }: { data: TrendsData; t: (key: string) => string }) {
   const globalTemp = data.global.temperature;
   const tempColor = getTemperatureColor(globalTemp);
 
@@ -331,7 +335,7 @@ function GlobalCard({ data }: { data: TrendsData }) {
             marginTop: '2px',
           }}
         >
-          World Temperature
+          {t('World Temperature')}
         </div>
       </div>
 
@@ -361,7 +365,7 @@ function GlobalCard({ data }: { data: TrendsData }) {
               textAlign: 'center',
             }}
           >
-            Blog
+            {t('Blog')}
           </Link>
           <Link
             href="/about"
@@ -378,7 +382,7 @@ function GlobalCard({ data }: { data: TrendsData }) {
               textAlign: 'center',
             }}
           >
-            About
+            {t('About')}
           </Link>
         </div>
       </div>

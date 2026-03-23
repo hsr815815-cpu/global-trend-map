@@ -22,7 +22,7 @@ export default function Header({
   totalCountries,
   totalTrends,
 }: HeaderProps) {
-  const { lang: activeLang, setLang: setActiveLang } = useLanguage();
+  const { lang: activeLang, setLang: setActiveLang, t } = useLanguage();
   const [updatedAgo, setUpdatedAgo] = useState('');
   const [nextUpdate, setNextUpdate] = useState('');
   const [showLangMenu, setShowLangMenu] = useState(false);
@@ -148,21 +148,21 @@ export default function Header({
           <div className="stats-pill">
             <span>🌐</span>
             <span className="stats-pill-value">{totalCountries}</span>
-            <span>countries</span>
+            <span>{t('countries')}</span>
           </div>
           <div className="stats-pill" style={{ display: 'flex' }}>
             <span>📊</span>
             <span className="stats-pill-value">
               {totalTrends.toLocaleString()}
             </span>
-            <span>trends</span>
+            <span>{t('trends')}</span>
           </div>
           <div
             className="stats-pill"
             style={{ display: 'flex' }}
           >
             <span style={{ color: '#10b981' }}>↻</span>
-            <span>Next update in</span>
+            <span>{t('Next update in')}</span>
             <span className="stats-pill-value">{nextUpdate}</span>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function Header({
               animation: 'pulse-dot 2s ease-in-out infinite',
             }}
           />
-          Updated {updatedAgo}
+          {t('Updated')} {updatedAgo}
         </div>
 
         {/* Right: Actions */}

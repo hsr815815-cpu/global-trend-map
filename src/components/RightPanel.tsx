@@ -9,21 +9,23 @@ import {
   CATEGORY_ICONS,
   CATEGORY_COLORS,
 } from '@/lib/trend-utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface RightPanelProps {
   data: TrendsData;
 }
 
-const CATEGORIES: { key: TrendCategory; label: string }[] = [
-  { key: 'sports', label: 'Sports' },
-  { key: 'music', label: 'Music' },
-  { key: 'tech', label: 'Tech' },
-  { key: 'news', label: 'News' },
-  { key: 'movies', label: 'Movies' },
-  { key: 'finance', label: 'Finance' },
+const CATEGORY_KEYS: { key: TrendCategory; labelKey: string }[] = [
+  { key: 'sports', labelKey: 'Sports' },
+  { key: 'music', labelKey: 'Music' },
+  { key: 'tech', labelKey: 'Tech' },
+  { key: 'news', labelKey: 'News' },
+  { key: 'movies', labelKey: 'Movies' },
+  { key: 'finance', labelKey: 'Finance' },
 ];
 
 export default function RightPanel({ data }: RightPanelProps) {
+  const { t } = useLanguage();
   const globalTemp = data.global.temperature;
   const tempLabel = getTemperatureLabel(globalTemp);
   const tempColor = getTemperatureColor(globalTemp);
@@ -53,7 +55,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">Global Thermometer</span>
+          <span className="panel-title">{t('Global Thermometer')}</span>
           <span
             style={{
               fontFamily: 'Space Mono, monospace',
@@ -195,7 +197,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                   lineHeight: 1.5,
                 }}
               >
-                Global trend intensity across {data.global.totalCountries} countries
+                {t('Global trend intensity across')} {data.global.totalCountries} {t('countries')}
               </div>
             </div>
           </div>
@@ -266,7 +268,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">Trend Share</span>
+          <span className="panel-title">{t('Trend Share')}</span>
         </div>
 
         <div
@@ -277,7 +279,7 @@ export default function RightPanel({ data }: RightPanelProps) {
             gap: '8px',
           }}
         >
-          {CATEGORIES.map((cat) => {
+          {CATEGORY_KEYS.map((cat) => {
             const count = categoryBreakdown[cat.key] || 0;
             const total = Object.values(categoryBreakdown).reduce((a, b) => a + b, 0);
             const pct = total > 0 ? Math.round((count / total) * 100) : 0;
@@ -324,7 +326,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                       marginBottom: '4px',
                     }}
                   >
-                    {cat.label}
+                    {t(cat.labelKey)}
                   </div>
                   <div
                     style={{
@@ -362,7 +364,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">Rising Fast</span>
+          <span className="panel-title">{t('Rising Fast')}</span>
           <span style={{ fontSize: '14px' }}>⚡</span>
         </div>
 
@@ -376,7 +378,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                 fontSize: '12px',
               }}
             >
-              No velocity data yet
+              {t('No velocity data yet')}
             </div>
           ) : (
             risingFast.map((item, i) => (
