@@ -240,6 +240,79 @@ def count_today(posts: list) -> int:
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     return sum(1 for p in posts if p.get("date", "").startswith(today))
 
+
+def build_blog_detail_section(posts: list, index: dict, top_keyword: str) -> str:
+    """Build HTML block showing today's blog status: written/skipped, post list, recent history."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    recent_spotlights = index.get("recentSpotlights", []) if isinstance(index, dict) else []
+
+    # Posts written today
+    today_posts = [p for p in posts if p.get("date", "").startswith(today)]
+    en_post = next((p for p in today_posts if p.get("language") == "en"), None)
+
+    # Determine status
+    spotlight_lower = top_keyword.lower()
+    covered_dates = {r["date"]: r["keyword"] for r in recent_spotlights if r.get("date", "") < today}
+    skipped_on = next((r["date"] for r in recent_spotlights if r.get("keyword", "").lower() == spotlight_lower and r.get("date", "") < today), None)
+
+    if today_posts:
+        slug = en_post.get("slug", "") if en_post else ""
+        title = en_post.get("title", top_keyword) if en_post else top_keyword
+        reading_time = en_post.get("readingTime", "?") if en_post else "?"
+        lang_badges = " ".join(
+            f'<span style="background:var(--cyan);color:#000;padding:2px 6px;border-radius:4px;font-size:0.75rem;">{p.get("language","?").upper()}</span>'
+            for p in sorted(today_posts, key=lambda p: p.get("language",""))
+        )
+        site_url = "https://global-trend-map-web.vercel.app"
+        status_html = f"""
+<div class="health-indicator health-green" style="margin-bottom:12px;">
+  ✅ &nbsp;오늘 블로그 작성 완료 — <strong>{len(today_posts)}개</strong> 언어 포스팅
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;">
+  <div style="font-size:0.8rem;color:var(--dim);margin-bottom:6px;">📄 오늘의 Spotlight 포스트</div>
+  <div style="font-weight:600;font-size:0.95rem;margin-bottom:8px;">{title}</div>
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">{lang_badges}</div>
+  <div style="font-size:0.8rem;color:var(--dim);">⏱ {reading_time}분 읽기 &nbsp;·&nbsp;
+    <a href="{site_url}/blog/{slug}" style="color:var(--cyan);">블로그에서 보기 →</a>
+  </div>
+</div>"""
+    elif skipped_on:
+        status_html = f"""
+<div class="health-indicator health-yellow" style="margin-bottom:12px;">
+  ⏭ &nbsp;오늘 블로그 생성 Skip — <strong>"{top_keyword}"</strong>은 {skipped_on}에 이미 작성됨 (3일 중복 방지)
+</div>"""
+    else:
+        status_html = f"""
+<div class="health-indicator health-red" style="margin-bottom:12px;">
+  ❌ &nbsp;오늘 블로그 미생성 — generate_blog.py 로그 확인 필요
+</div>"""
+
+    # Recent spotlights history (last 7 days)
+    recent_rows = ""
+    for r in sorted(recent_spotlights, key=lambda x: x.get("date", ""), reverse=True)[:7]:
+        kw = r.get("keyword", "")
+        date = r.get("date", "")
+        count = sum(1 for p in posts if p.get("date", "").startswith(date) and p.get("language") == "en")
+        status = "✅ 작성" if count > 0 else "⏭ Skip"
+        recent_rows += f'<tr><td>{date}</td><td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{kw}</td><td>{status}</td></tr>'
+
+    if not recent_rows:
+        recent_rows = '<tr><td colspan="3" style="color:var(--dim);">기록 없음</td></tr>'
+
+    return f"""
+<div class="sub-section" style="margin-top:14px;">
+  <div class="sub-title">📋 오늘의 블로그 생성 현황</div>
+  {status_html}
+  <div class="table-wrap" style="margin-top:12px;">
+    <div class="sub-title" style="font-size:0.8rem;">📅 최근 7일 Spotlight 이력</div>
+    <table class="data-table">
+      <thead><tr><th>날짜</th><th>Spotlight 키워드</th><th>상태</th></tr></thead>
+      <tbody>{recent_rows}</tbody>
+    </table>
+  </div>
+</div>"""
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -596,6 +669,7 @@ def main():
         "{{BLOCKED_KEYWORDS}}":     str(blocked_kw),
         "{{YOUTUBE_QUOTA_USED}}":   str(yt_quota_used),
         "{{YOUTUBE_QUOTA_REMAINING}}": str(yt_quota_remain),
+        "{{BLOG_DETAIL_SECTION}}":  build_blog_detail_section(posts, _index, top_keyword),
         "{{POSTS_TODAY}}":          str(posts_today),
         "{{POSTS_TOTAL}}":          str(posts_total),
         "{{POSTS_EN}}":             str(posts_en),
