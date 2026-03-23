@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import {
   ComposableMap,
   Geographies,
@@ -86,6 +86,7 @@ export default function WorldMap({ data }: WorldMapProps) {
   const [tooltipCountry, setTooltipCountry] = useState<string | null>(null);
   const [zoom, setZoom] = useState(1);
   const [center, setCenter] = useState<[number, number]>([0, 20]);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const getAlpha2FromGeo = useCallback((geo: GeoFeature): string | null => {
     // Try ISO numeric first
@@ -118,6 +119,12 @@ export default function WorldMap({ data }: WorldMapProps) {
     [data, getAlpha2FromGeo]
   );
 
+  const getRelativePos = useCallback((event: React.MouseEvent) => {
+    const rect = containerRef.current?.getBoundingClientRect();
+    if (!rect) return { x: event.clientX, y: event.clientY };
+    return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  }, []);
+
   const handleMouseEnter = useCallback(
     (geo: GeoFeature, event: React.MouseEvent) => {
       const code = getAlpha2FromGeo(geo);
@@ -127,10 +134,10 @@ export default function WorldMap({ data }: WorldMapProps) {
         const name = countryData?.name || (geo.properties?.name as string | undefined) || code;
         const temp = getCountryTemperature(data, code);
         setTooltipCountry(countryData ? `${countryData.flag} ${name} — ${temp}°T` : name);
-        setTooltipPos({ x: event.clientX, y: event.clientY });
+        setTooltipPos(getRelativePos(event));
       }
     },
-    [data, getAlpha2FromGeo]
+    [data, getAlpha2FromGeo, getRelativePos]
   );
 
   const handleMouseLeave = useCallback(() => {
@@ -139,8 +146,10 @@ export default function WorldMap({ data }: WorldMapProps) {
   }, []);
 
   const handleMouseMove = useCallback((event: React.MouseEvent) => {
-    setTooltipPos({ x: event.clientX, y: event.clientY });
-  }, []);
+    if (tooltipCountry) {
+      setTooltipPos(getRelativePos(event));
+    }
+  }, [tooltipCountry, getRelativePos]);
 
   const getFillColor = useCallback(
     (geo: GeoFeature): string => {
@@ -175,6 +184,7 @@ export default function WorldMap({ data }: WorldMapProps) {
 
   return (
     <div
+      ref={containerRef}
       style={{
         height: '100%',
         background: 'var(--bg-card)',
@@ -366,7 +376,7 @@ export default function WorldMap({ data }: WorldMapProps) {
       {tooltipCountry && (
         <div
           style={{
-            position: 'fixed',
+            position: 'absolute',
             left: tooltipPos.x + 12,
             top: tooltipPos.y - 36,
             background: 'var(--bg-elevated)',
@@ -377,7 +387,7 @@ export default function WorldMap({ data }: WorldMapProps) {
             fontWeight: 600,
             color: 'var(--text-primary)',
             pointerEvents: 'none',
-            zIndex: 998,
+            zIndex: 999,
             whiteSpace: 'nowrap',
             boxShadow: '0 4px 20px rgba(0,0,0,0.4)',
           }}
