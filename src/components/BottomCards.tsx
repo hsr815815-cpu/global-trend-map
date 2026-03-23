@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import Link from 'next/link';
-import type { TrendsData, TrendItem } from '@/lib/trend-utils';
+import type { TrendsData, TrendItem, ChartItem } from '@/lib/trend-utils';
 import {
   getTemperatureColor,
   CATEGORY_ICONS,
@@ -19,9 +19,29 @@ export default function BottomCards({ data }: BottomCardsProps) {
   const topByCategory = useMemo(() => {
     const result: Record<string, (TrendItem & { countryCode: string; flag: string; countryName: string }) | null> = {};
 
+    const SOURCE_FLAGS: Record<string, string> = {
+      'Apple Music': '🎵', 'iTunes Movies': '🎬',
+      'Hacker News': '💻', 'MarketWatch': '📈',
+      'ESPN': '⚽', 'BBC Sport': '🏅',
+    };
+
     for (const category of CARD_CATEGORIES) {
       let topTrend: (TrendItem & { countryCode: string; flag: string; countryName: string }) | null = null;
 
+      // Check category charts first
+      const chartItems = data.categoryCharts?.[category] || [];
+      chartItems.forEach((item) => {
+        if (!topTrend || item.temperature > topTrend.temperature) {
+          topTrend = {
+            ...item,
+            countryCode: 'CHART',
+            flag: SOURCE_FLAGS[item.source] || '📊',
+            countryName: item.source,
+          };
+        }
+      });
+
+      // Check Google Trends countries
       Object.entries(data.countries).forEach(([code, country]) => {
         country.trends.forEach((trend) => {
           if (trend.category === category) {
