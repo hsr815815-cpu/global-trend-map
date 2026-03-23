@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { loadTrendsData } from '@/lib/trends';
-import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import TrendList from '@/components/TrendList';
 import WorldMap from '@/components/WorldMap';
@@ -50,7 +49,6 @@ export default async function HomePage() {
   const data = await loadTrendsData();
 
   return (
-    <LanguageProvider>
     <div
       className="page-wrapper"
       style={{
@@ -146,6 +144,5 @@ export default async function HomePage() {
         </span>
       </nav>
     </div>
-    </LanguageProvider>
   );
 }

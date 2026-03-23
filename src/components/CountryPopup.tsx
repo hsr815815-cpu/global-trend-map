@@ -11,7 +11,6 @@ import {
   getVelocityColor,
   CATEGORY_ICONS,
 } from '@/lib/trend-utils';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 interface CountryPopupProps {
   countryCode: string;
@@ -26,7 +25,6 @@ export default function CountryPopup({
   position,
   onClose,
 }: CountryPopupProps) {
-  const { t } = useLanguage();
   const popupRef = useRef<HTMLDivElement>(null);
 
   // X는 클릭 위치 기준, Y는 뷰포트 세로 중앙 고정
@@ -163,7 +161,7 @@ export default function CountryPopup({
                 marginTop: '2px',
               }}
             >
-              {t('avg temp')}
+              avg temp
             </div>
           </div>
         </div>
@@ -188,7 +186,7 @@ export default function CountryPopup({
             marginBottom: '10px',
           }}
         >
-          {t('Top Trends')}
+          Top Trends
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -329,7 +327,7 @@ export default function CountryPopup({
             }}
             onClick={onClose}
           >
-            {t('View All Trends →')}
+            View All Trends →
           </Link>
           <button
             onClick={onClose}

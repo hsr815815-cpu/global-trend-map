@@ -146,8 +146,6 @@ export default function RootLayout({
       <head>
         {/* hreflang alternates */}
         <link rel="alternate" hrefLang="en" href={SITE_URL} />
-        <link rel="alternate" hrefLang="ko" href={`${SITE_URL}/ko`} />
-        <link rel="alternate" hrefLang="ja" href={`${SITE_URL}/ja`} />
         <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
 
         {/* Schema.org structured data */}

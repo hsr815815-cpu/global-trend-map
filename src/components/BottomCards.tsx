@@ -8,8 +8,6 @@ import {
   CATEGORY_ICONS,
   CATEGORY_COLORS,
 } from '@/lib/trend-utils';
-import { useLanguage } from '@/contexts/LanguageContext';
-
 interface BottomCardsProps {
   data: TrendsData;
 }
@@ -17,7 +15,6 @@ interface BottomCardsProps {
 const CARD_CATEGORIES = ['sports', 'tech', 'music', 'news', 'movies', 'finance'];
 
 export default function BottomCards({ data }: BottomCardsProps) {
-  const { t } = useLanguage();
   const topByCategory = useMemo(() => {
     const result: Record<string, (TrendItem & { countryCode: string; flag: string; countryName: string }) | null> = {};
 
@@ -224,7 +221,7 @@ function CategoryCard({ category, trend, color, icon, t }: CategoryCardProps) {
                   fontWeight: 600,
                 }}
               >
-                {trend.volume} {t('searches')}
+                {trend.volume} searches
               </div>
               <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
                 {trend.countryName}
@@ -262,7 +259,7 @@ function CategoryCard({ category, trend, color, icon, t }: CategoryCardProps) {
             fontSize: '12px',
           }}
         >
-          {t('No data')}
+          No data
         </div>
       )}
     </div>
@@ -335,7 +332,7 @@ function GlobalCard({ data, t }: { data: TrendsData; t: (key: string) => string 
             marginTop: '2px',
           }}
         >
-          {t('World Temperature')}
+          World Temperature
         </div>
       </div>
 
@@ -365,7 +362,7 @@ function GlobalCard({ data, t }: { data: TrendsData; t: (key: string) => string 
               textAlign: 'center',
             }}
           >
-            {t('Blog')}
+            Blog
           </Link>
           <Link
             href="/about"
@@ -382,7 +379,7 @@ function GlobalCard({ data, t }: { data: TrendsData; t: (key: string) => string 
               textAlign: 'center',
             }}
           >
-            {t('About')}
+            About
           </Link>
         </div>
       </div>

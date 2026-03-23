@@ -726,6 +726,15 @@ body {
 .panel-right { grid-row: 1 / 2; overflow: hidden; }
 .panel-bottom { grid-column: 1 / -1; grid-row: 2 / 3; overflow: hidden; }
 
+/* Header mobile helpers */
+.header-hide-mobile { display: flex; }
+.header-btn-text { display: inline; }
+
+@media (max-width: 900px) {
+  .header-hide-mobile { display: none !important; }
+  .header-btn-text { display: none !important; }
+}
+
 @media (max-width: 900px) {
   .page-wrapper {
     height: auto;

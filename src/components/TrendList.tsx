@@ -12,8 +12,6 @@ import {
   CATEGORY_ICONS,
   getTrendBadge,
 } from '@/lib/trend-utils';
-import { useLanguage } from '@/contexts/LanguageContext';
-
 interface TrendListProps {
   data: TrendsData;
 }
@@ -29,7 +27,6 @@ const CATEGORY_KEYS: { key: TrendCategory; labelKey: string; icon: string }[] = 
 ];
 
 export default function TrendList({ data }: TrendListProps) {
-  const { kw, t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<TrendCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -76,7 +73,7 @@ export default function TrendList({ data }: TrendListProps) {
             marginBottom: '10px',
           }}
         >
-          <span className="panel-title">{t('Global Rankings')}</span>
+          <span className="panel-title">Global Rankings</span>
           <span
             style={{
               padding: '2px 8px',
@@ -110,7 +107,7 @@ export default function TrendList({ data }: TrendListProps) {
           </span>
           <input
             type="text"
-            placeholder={t('Search trends or countries...')}
+            placeholder="Search trends or countries..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             style={{
@@ -159,7 +156,7 @@ export default function TrendList({ data }: TrendListProps) {
               onClick={() => setActiveCategory(cat.key)}
               className={`category-chip${activeCategory === cat.key ? ' active' : ''}`}
             >
-              {cat.icon} {t(cat.labelKey)}
+              {cat.icon} {cat.labelKey}
             </button>
           ))}
         </div>
@@ -180,7 +177,7 @@ export default function TrendList({ data }: TrendListProps) {
                 marginBottom: '2px',
               }}
             >
-              {t('Spotlight — #1 Global')}
+              Spotlight — #1 Global
             </div>
             <div
               style={{
@@ -189,7 +186,7 @@ export default function TrendList({ data }: TrendListProps) {
                 color: 'var(--text-primary)',
               }}
             >
-              {kw(data.global.topTrend.keyword, data.global.topTrend.keywordEn)}
+              {data.global.topTrend.keywordEn || data.global.topTrend.keyword}
             </div>
             <div
               style={{
@@ -200,7 +197,7 @@ export default function TrendList({ data }: TrendListProps) {
                 color: 'var(--text-secondary)',
               }}
             >
-              <span>{data.global.topTrend.volume} {t('searches')}</span>
+              <span>{data.global.topTrend.volume} searches</span>
               <span>·</span>
               <span>{data.countries[data.global.topTrend.country]?.flag} {data.global.topTrend.country}</span>
             </div>
@@ -232,7 +229,7 @@ export default function TrendList({ data }: TrendListProps) {
             }}
           >
             <div style={{ fontSize: '32px', marginBottom: '8px' }}>🔍</div>
-            {t('No trends match your search')}
+            No trends match your search
           </div>
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
@@ -246,7 +243,7 @@ export default function TrendList({ data }: TrendListProps) {
                   globalRank={index + 1}
                   badge={badge}
                   isTop3={isTop3}
-                  displayKeyword={kw(trend.keyword, trend.keywordEn)}
+                  displayKeyword={trend.keywordEn || trend.keyword}
                 />
               );
             })}

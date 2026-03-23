@@ -391,11 +391,18 @@ def collect_gdelt() -> tuple[list[dict], bool]:
     return headlines, True
 
 
-def get_gdelt_headlines_for_keyword(keyword: str, gdelt_cache: list[dict]) -> list[str]:
-    kw = keyword.lower()
+def get_gdelt_headlines_for_keyword(keyword: str, gdelt_cache: list[dict], keyword_en: str = "") -> list[str]:
+    # Use English keyword for matching if available
+    search_kw = (keyword_en or keyword).lower()
+    # Split into significant words (3+ chars, skip common stop words)
+    stop = {"the", "and", "for", "with", "from", "that", "this", "have", "will", "are", "was", "were"}
+    words = [w for w in re.split(r'\W+', search_kw) if len(w) >= 3 and w not in stop]
+
     matches = []
     for art in gdelt_cache:
-        if kw in art["title"].lower():
+        title_lower = art["title"].lower()
+        # Match if any significant word from keyword appears in the headline
+        if words and any(w in title_lower for w in words):
             matches.append(art["title"])
         if len(matches) >= 3:
             break
@@ -637,7 +644,7 @@ def enrich_trends(
         for new_rank, t in enumerate(merged[:20], start=1):
             t["rank"] = new_rank
             if not t.get("relatedNews"):
-                t["relatedNews"] = get_gdelt_headlines_for_keyword(t["keyword"], gdelt_headlines)
+                t["relatedNews"] = get_gdelt_headlines_for_keyword(t["keyword"], gdelt_headlines, t.get("keywordEn", ""))
             # Track keyword spread
             kw = t["keyword"].lower()
             if kw not in keyword_country_map:
@@ -706,14 +713,15 @@ def build_global_section(
 
     next_update = (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat()
 
-    # risingFast: top 3 trends by temperature
+    # risingFast: top 3 unique trends by temperature
     rising_fast = []
     seen_rf = set()
-    for t in all_trends[:10]:
+    for t in all_trends[:100]:
         kw = t["keyword"]
         if kw not in seen_rf and len(rising_fast) < 3:
             rising_fast.append({
                 "keyword": kw,
+                "keywordEn": t.get("keywordEn", kw),
                 "country": t["_country"],
                 "change": t["volume"],
             })

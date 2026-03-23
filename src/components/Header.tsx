@@ -3,29 +3,19 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { formatUpdatedAgo, getNextUpdateTime } from '@/lib/trend-utils';
-import { useLanguage } from '@/contexts/LanguageContext';
-
 interface HeaderProps {
   lastUpdated: string;
   totalCountries: number;
   totalTrends: number;
 }
 
-const LANGUAGES = [
-  { code: 'en', label: 'EN', name: 'English' },
-  { code: 'ko', label: 'KR', name: '한국어' },
-  { code: 'ja', label: 'JP', name: '日本語' },
-];
-
 export default function Header({
   lastUpdated,
   totalCountries,
   totalTrends,
 }: HeaderProps) {
-  const { lang: activeLang, setLang: setActiveLang, t } = useLanguage();
   const [updatedAgo, setUpdatedAgo] = useState('');
   const [nextUpdate, setNextUpdate] = useState('');
-  const [showLangMenu, setShowLangMenu] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const [showEmbedModal, setShowEmbedModal] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -148,29 +138,26 @@ export default function Header({
           <div className="stats-pill">
             <span>🌐</span>
             <span className="stats-pill-value">{totalCountries}</span>
-            <span>{t('countries')}</span>
+            <span>countries</span>
           </div>
           <div className="stats-pill" style={{ display: 'flex' }}>
             <span>📊</span>
             <span className="stats-pill-value">
               {totalTrends.toLocaleString()}
             </span>
-            <span>{t('trends')}</span>
+            <span>trends</span>
           </div>
-          <div
-            className="stats-pill"
-            style={{ display: 'flex' }}
-          >
+          <div className="stats-pill header-hide-mobile">
             <span style={{ color: '#10b981' }}>↻</span>
-            <span>{t('Next update in')}</span>
+            <span>Next update in</span>
             <span className="stats-pill-value">{nextUpdate}</span>
           </div>
         </div>
 
         {/* Center: Updated time */}
         <div
+          className="header-hide-mobile"
           style={{
-            display: 'flex',
             alignItems: 'center',
             gap: '6px',
             flexShrink: 0,
@@ -190,96 +177,11 @@ export default function Header({
               animation: 'pulse-dot 2s ease-in-out infinite',
             }}
           />
-          {t('Updated')} {updatedAgo}
+          Updated {updatedAgo}
         </div>
 
         {/* Right: Actions */}
         <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexShrink: 0 }}>
-          {/* Language selector */}
-          <div style={{ position: 'relative' }}>
-            <button
-              onClick={() => setShowLangMenu(!showLangMenu)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '4px',
-                padding: '6px 10px',
-                background: 'var(--bg-elevated)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: '8px',
-                color: 'var(--text-secondary)',
-                fontSize: '12px',
-                fontWeight: 600,
-                cursor: 'pointer',
-                fontFamily: 'Space Mono, monospace',
-              }}
-            >
-              🌐 {LANGUAGES.find((l) => l.code === activeLang)?.label}
-              <span style={{ fontSize: '10px' }}>▾</span>
-            </button>
-
-            {showLangMenu && (
-              <div
-                style={{
-                  position: 'absolute',
-                  top: '100%',
-                  right: 0,
-                  marginTop: '4px',
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-normal)',
-                  borderRadius: '10px',
-                  padding: '4px',
-                  minWidth: '120px',
-                  zIndex: 200,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.4)',
-                }}
-              >
-                {LANGUAGES.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => {
-                      setActiveLang(lang.code as import('@/contexts/LanguageContext').Lang);
-                      setShowLangMenu(false);
-                    }}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      width: '100%',
-                      padding: '8px 12px',
-                      background:
-                        activeLang === lang.code
-                          ? 'rgba(99,102,241,0.15)'
-                          : 'transparent',
-                      border: 'none',
-                      borderRadius: '7px',
-                      color:
-                        activeLang === lang.code
-                          ? '#818cf8'
-                          : 'var(--text-secondary)',
-                      fontSize: '13px',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      textAlign: 'left',
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: 'Space Mono, monospace',
-                        fontSize: '11px',
-                        color: 'var(--text-muted)',
-                        width: '24px',
-                      }}
-                    >
-                      {lang.label}
-                    </span>
-                    {lang.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
           {/* Share button */}
           <button
             onClick={handleShare}
@@ -297,7 +199,7 @@ export default function Header({
               cursor: 'pointer',
             }}
           >
-            ↗ Share
+            ↗ <span className="header-btn-text">Share</span>
           </button>
 
           {/* Embed button */}
@@ -317,7 +219,7 @@ export default function Header({
               cursor: 'pointer',
             }}
           >
-            {'</>'}  Embed
+            {'</>'} <span className="header-btn-text">Embed</span>
           </button>
         </div>
       </header>

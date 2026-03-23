@@ -9,8 +9,6 @@ import {
   CATEGORY_ICONS,
   CATEGORY_COLORS,
 } from '@/lib/trend-utils';
-import { useLanguage } from '@/contexts/LanguageContext';
-
 interface RightPanelProps {
   data: TrendsData;
 }
@@ -25,7 +23,6 @@ const CATEGORY_KEYS: { key: TrendCategory; labelKey: string }[] = [
 ];
 
 export default function RightPanel({ data }: RightPanelProps) {
-  const { t } = useLanguage();
   const globalTemp = data.global.temperature;
   const tempLabel = getTemperatureLabel(globalTemp);
   const tempColor = getTemperatureColor(globalTemp);
@@ -55,7 +52,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">{t('Global Thermometer')}</span>
+          <span className="panel-title">Global Thermometer</span>
           <span
             style={{
               fontFamily: 'Space Mono, monospace',
@@ -197,7 +194,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                   lineHeight: 1.5,
                 }}
               >
-                {t('Global trend intensity across')} {data.global.totalCountries} {t('countries')}
+                Global trend intensity across {data.global.totalCountries} countries
               </div>
             </div>
           </div>
@@ -268,7 +265,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">{t('Trend Share')}</span>
+          <span className="panel-title">Trend Share</span>
         </div>
 
         <div
@@ -326,7 +323,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                       marginBottom: '4px',
                     }}
                   >
-                    {t(cat.labelKey)}
+                    {cat.labelKey}
                   </div>
                   <div
                     style={{
@@ -364,7 +361,7 @@ export default function RightPanel({ data }: RightPanelProps) {
         }}
       >
         <div className="panel-header">
-          <span className="panel-title">{t('Rising Fast')}</span>
+          <span className="panel-title">Rising Fast</span>
           <span style={{ fontSize: '14px' }}>⚡</span>
         </div>
 
@@ -378,7 +375,7 @@ export default function RightPanel({ data }: RightPanelProps) {
                 fontSize: '12px',
               }}
             >
-              {t('No velocity data yet')}
+              No velocity data yet
             </div>
           ) : (
             risingFast.map((item, i) => (
