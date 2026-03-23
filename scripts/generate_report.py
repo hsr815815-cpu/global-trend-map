@@ -284,7 +284,6 @@ def main():
     src_google = source_status(sources.get("googleTrends", False))
     src_yt     = source_status(sources.get("youtube", False))
     src_gdelt  = source_status(sources.get("gdelt", False))
-    src_wiki   = source_status(sources.get("wikipedia", False))
     src_apple  = source_status(sources.get("apple", False))
 
     duration         = fmt_duration(pipeline.get("duration", 0))
@@ -481,7 +480,7 @@ def main():
         sources.get("googleTrends", False),
         sources.get("youtube", False),
         sources.get("gdelt", False),
-        sources.get("wikipedia", False),
+
         sources.get("apple", False),
         posts_total > 0,
     ])
@@ -589,7 +588,7 @@ def main():
         "{{SOURCE_GOOGLE_TRENDS}}": src_google,
         "{{SOURCE_YOUTUBE}}":       src_yt,
         "{{SOURCE_GDELT}}":         src_gdelt,
-        "{{SOURCE_WIKI}}":          src_wiki,
+
         "{{SOURCE_APPLE}}":         src_apple,
         "{{PIPELINE_DURATION}}":    duration,
         "{{PIPELINE_SUCCESS}}":     str(success_count),

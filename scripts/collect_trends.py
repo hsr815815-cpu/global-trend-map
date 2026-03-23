@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 collect_trends.py — Global Trend Data Collector
-Collects trending data from Google Trends RSS, YouTube, GDELT, Wikipedia, Apple App Store RSS.
+Collects trending data from Google Trends RSS, YouTube, GDELT, Apple App Store RSS.
 Saves to public/data/trends.json with backup.
 Usage: python scripts/collect_trends.py
 """
@@ -402,49 +402,6 @@ def get_gdelt_headlines_for_keyword(keyword: str, gdelt_cache: list[dict]) -> li
     return matches
 
 # ---------------------------------------------------------------------------
-# Source: Wikipedia
-# ---------------------------------------------------------------------------
-
-_wiki_cache: dict[str, str] = {}
-
-def fetch_wikipedia_description(keyword: str) -> str:
-    if keyword in _wiki_cache:
-        return _wiki_cache[keyword]
-
-    url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + quote(keyword)
-    resp = safe_get(url, timeout=10)
-    if resp is None:
-        _wiki_cache[keyword] = ""
-        return ""
-
-    try:
-        data = resp.json()
-        desc = data.get("extract", "")[:300]
-    except Exception:
-        desc = ""
-
-    _wiki_cache[keyword] = desc
-    time.sleep(0.2)
-    return desc
-
-
-def fetch_wikipedia_views(keyword: str) -> int:
-    """Get total views for the past 7 days from Wikipedia pageviews API."""
-    today = datetime.now(timezone.utc)
-    start = (today - timedelta(days=7)).strftime("%Y%m%d")
-    end   = today.strftime("%Y%m%d")
-    enc   = quote(keyword.replace(" ", "_"))
-    url   = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/{enc}/daily/{start}/{end}"
-    resp  = safe_get(url, timeout=10)
-    if resp is None:
-        return 0
-    try:
-        items = resp.json().get("items", [])
-        return sum(i.get("views", 0) for i in items)
-    except Exception:
-        return 0
-
-# ---------------------------------------------------------------------------
 # Source: Apple App Store RSS
 # ---------------------------------------------------------------------------
 
@@ -501,7 +458,7 @@ def enrich_trends(
     gdelt_headlines: list[dict],
     apple_data: dict,
 ) -> dict:
-    """Merge per-country trends, add Wikipedia descriptions, GDELT headlines."""
+    """Merge per-country trends, enrich with GDELT headlines."""
     countries_out = {}
     keyword_country_map: dict[str, list[str]] = {}
 
@@ -527,7 +484,6 @@ def enrich_trends(
         enriched = []
         for new_rank, t in enumerate(merged[:20], start=1):
             t["rank"] = new_rank
-            # GDELT related news only (skip slow Wikipedia enrichment)
             if not t.get("relatedNews"):
                 t["relatedNews"] = get_gdelt_headlines_for_keyword(t["keyword"], gdelt_headlines)
             # Track keyword spread
@@ -660,7 +616,6 @@ def main():
         "googleTrends": False,
         "youtube":      False,
         "gdelt":        False,
-        "wikipedia":    False,
         "apple":        False,
     }
 
@@ -686,10 +641,9 @@ def main():
     apple_data, apple_ok = collect_apple_rss(APPLE_RSS_COUNTRIES)
     sources_status["apple"] = apple_ok
 
-    # 5. Enrich with Wikipedia (happens inside enrich_trends)
-    log.info("[5/5] Enriching trends with Wikipedia descriptions...")
+    # 5. Enrich and aggregate
+    log.info("[5/5] Enriching and aggregating trends...")
     countries_data, keyword_country_map = enrich_trends(gt_data, yt_data, gdelt_headlines, apple_data)
-    sources_status["wikipedia"] = True   # Wikipedia runs inline; mark true if no exception
 
     # Build global section
     global_section = build_global_section(countries_data, keyword_country_map)
