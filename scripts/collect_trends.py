@@ -672,12 +672,27 @@ def enrich_trends(
 def build_global_section(
     countries_data: dict,
     keyword_country_map: dict,
+    category_charts: dict | None = None,
 ) -> dict:
     """Aggregate global stats and find top trends."""
+    CHART_FLAGS = {
+        "Apple Music": "🎵", "iTunes Movies": "🎬",
+        "Hacker News": "💻", "MarketWatch": "📈",
+        "ESPN": "⚽", "BBC Sport": "🏅",
+    }
     all_trends = []
     for code, cdata in countries_data.items():
         for t in cdata["trends"]:
             all_trends.append({**t, "_country": code, "_flag": cdata["flag"]})
+    # Include categoryCharts so topTrend matches what the UI list shows
+    for cat, items in (category_charts or {}).items():
+        for item in items:
+            src = item.get("source", "")
+            all_trends.append({
+                **item,
+                "_country": src,
+                "_flag": CHART_FLAGS.get(src, "📊"),
+            })
 
     if not all_trends:
         return {}
@@ -748,6 +763,7 @@ def build_global_section(
             "volume":    top["volume"],
             "flag":      top["_flag"],
             "category":  top.get("category", "news"),
+            "source":    top.get("source", "google"),
         },
         "topByCategory":  top_by_category,
         "totalCountries": len(countries_data),
@@ -805,11 +821,11 @@ def main():
     log.info("[5/5] Enriching and aggregating trends...")
     countries_data, keyword_country_map = enrich_trends(gt_data, yt_data, gdelt_headlines, apple_data)
 
-    # Build global section
-    global_section = build_global_section(countries_data, keyword_country_map)
-
-    # 6. Category charts
+    # 6. Category charts (collected before global section so topTrend includes them)
     category_charts = collect_category_charts()
+
+    # Build global section (pass charts so topTrend matches the UI's All-tab #1)
+    global_section = build_global_section(countries_data, keyword_country_map, category_charts)
 
     pipeline_end  = datetime.now(timezone.utc)
     duration_secs = int((pipeline_end - pipeline_start).total_seconds())
