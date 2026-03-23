@@ -143,3 +143,28 @@ cd C:\Users\seheo\global-trend-map && git add public/blog/ public/data/posts-ind
 ```
 
 완료 후 "✅ {keyword} — 8개 언어 포스트 발행 완료" 출력.
+
+## 10단계: 일일 운영 리포트 HTML 생성 & 브라우저 오픈
+
+`public/data/posts-index.json`과 `scripts/research.json`을 읽어서
+아래 내용을 담은 HTML 파일을 `scripts/daily_report.html`에 저장한다.
+
+### 리포트 포함 내용
+
+1. **오늘 발행한 글** — 키워드, 카테고리, 순위, 온도, 8개 언어 슬러그 목록, 블로그 링크
+2. **최근 스포트라이트 히스토리** — recentSpotlights 전체 (키워드 + 날짜)
+3. **자동화 구조 요약** — 지금 돌아가는 파이프라인 설명
+4. **오늘 수행한 작업 로그** — 각 단계 결과 (git pull, 리서치 결과 요약, 번역 완료 등)
+5. **다음 실행 예정** — 내일 09:00
+
+### HTML 디자인 기준
+- 배경 #0f1117 (다크), 텍스트 #e2e8f0
+- 카드 형태 섹션, 섹션마다 색상 구분
+- 발행된 글 링크는 실제 클릭 가능하게
+- 깔끔하고 읽기 쉽게
+
+### 저장 후 브라우저 오픈
+아래 명령어를 실행한다:
+```bash
+python -m webbrowser "file:///C:/Users/seheo/global-trend-map/scripts/daily_report.html"
+```
