@@ -656,15 +656,22 @@ def load_trends() -> dict:
         return json.load(f)
 
 
+SKIP_WINDOW_DAYS = 3  # skip if same topic was published within this many days
+
 def load_index() -> dict:
     if INDEX_FILE.exists():
         with open(INDEX_FILE, encoding="utf-8") as f:
             data = json.load(f)
         if isinstance(data, list):
-            return {"posts": data, "lastUpdated": now_iso(), "lastSpotlight": ""}
-        data.setdefault("lastSpotlight", "")
+            return {"posts": data, "lastUpdated": now_iso(), "recentSpotlights": []}
+        # Migrate legacy lastSpotlight field
+        if "lastSpotlight" in data and "recentSpotlights" not in data:
+            legacy = data.pop("lastSpotlight")
+            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            data["recentSpotlights"] = [{"keyword": legacy, "date": today}] if legacy else []
+        data.setdefault("recentSpotlights", [])
         return data
-    return {"posts": [], "lastUpdated": now_iso(), "lastSpotlight": ""}
+    return {"posts": [], "lastUpdated": now_iso(), "recentSpotlights": []}
 
 
 def save_index(index: dict):
@@ -815,14 +822,21 @@ def main():
     top = g["topTrend"]
     spotlight = (top.get("keywordEn") or top["keyword"]).strip().lower()
 
-    last_spotlight = index.get("lastSpotlight", "").strip().lower()
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    log.info(f"Today's spotlight: '{spotlight}'")
-    log.info(f"Last spotlight: '{last_spotlight}'")
+    # Clean up entries older than SKIP_WINDOW_DAYS
+    from datetime import timedelta
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=SKIP_WINDOW_DAYS)).strftime("%Y-%m-%d")
+    recent = [r for r in index.get("recentSpotlights", []) if r.get("date", "") >= cutoff]
+    index["recentSpotlights"] = recent
 
-    if spotlight == last_spotlight:
-        log.info("Spotlight unchanged — skipping blog generation.")
+    recent_keywords = {r["keyword"].lower() for r in recent}
+    log.info(f"Today's spotlight: '{spotlight}'")
+    log.info(f"Recent spotlights (last {SKIP_WINDOW_DAYS} days): {sorted(recent_keywords) or '(none)'}")
+
+    if spotlight in recent_keywords:
+        matching = next(r for r in recent if r["keyword"].lower() == spotlight)
+        log.info(f"Spotlight '{spotlight}' was already covered on {matching['date']} — skipping.")
         return
 
     log.info(f"New spotlight detected — generating {len(ALL_LANGS)} posts...")
@@ -858,7 +872,10 @@ def main():
     # Prepend new posts to index (newest first)
     existing = index.get("posts", [])
     index["posts"] = new_posts + existing
-    index["lastSpotlight"] = spotlight
+    # Record this spotlight with today's date
+    index["recentSpotlights"] = [{"keyword": spotlight, "date": today}] + [
+        r for r in index.get("recentSpotlights", []) if r["keyword"].lower() != spotlight
+    ]
     save_index(index)
 
     log.info(f"=== Done. {len(new_posts)} posts written. Index updated. ===")
