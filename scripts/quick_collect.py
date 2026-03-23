@@ -458,3 +458,51 @@ with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
 
 log.info('=== DONE — %d countries | %d trends | temp=%d° ===', active_countries, total_trends, global_temp)
 log.info('Top trend: %s (%s)', top.get('keyword'), top.get('_country'))
+
+# ============================================================
+# GENERATE STATIC SITEMAP (avoids Next.js RSC Vary headers)
+# ============================================================
+SITE_URL = 'https://global-trend-map-web.vercel.app'
+SITEMAP_FILE = BASE_DIR / 'public' / 'sitemap.xml'
+POSTS_INDEX_FILE = DATA_DIR / 'posts-index.json'
+
+def _url(loc, lastmod, changefreq, priority):
+    return f'  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>{changefreq}</changefreq>\n    <priority>{priority}</priority>\n  </url>'
+
+today = datetime.now(timezone.utc).strftime('%Y-%m-%dT00:00:00Z')
+static_pages = [
+    (SITE_URL,                        'hourly',  '1.0'),
+    (f'{SITE_URL}/blog',              'hourly',  '0.9'),
+    (f'{SITE_URL}/about',             'monthly', '0.7'),
+    (f'{SITE_URL}/contact',           'monthly', '0.6'),
+    (f'{SITE_URL}/privacy-policy',    'yearly',  '0.3'),
+    (f'{SITE_URL}/terms',             'yearly',  '0.3'),
+    (f'{SITE_URL}/cookie-policy',     'yearly',  '0.3'),
+    (f'{SITE_URL}/dmca',              'yearly',  '0.2'),
+    (f'{SITE_URL}/disclaimer',        'yearly',  '0.2'),
+    (f'{SITE_URL}/editorial-policy',  'yearly',  '0.3'),
+]
+
+sitemap_urls = [_url(loc, today, freq, prio) for loc, freq, prio in static_pages]
+
+# Blog posts
+try:
+    posts = json.loads(POSTS_INDEX_FILE.read_text(encoding='utf-8'))
+    for p in posts:
+        sitemap_urls.append(_url(f"{SITE_URL}/blog/{p['slug']}", p.get('date', today), 'weekly', '0.8'))
+except Exception:
+    pass
+
+# Country pages
+for code in countries_out:
+    sitemap_urls.append(_url(f"{SITE_URL}/country/{code.lower()}", today, 'hourly', '0.85'))
+
+sitemap_xml = '\n'.join([
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    *sitemap_urls,
+    '</urlset>',
+])
+
+SITEMAP_FILE.write_text(sitemap_xml, encoding='utf-8')
+log.info('Sitemap written → %s (%d URLs)', SITEMAP_FILE, len(sitemap_urls))
