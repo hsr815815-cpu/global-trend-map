@@ -148,23 +148,35 @@ export function getTopGlobalTrends(
   limit: number = 10,
   category: TrendCategory = 'all'
 ): Array<TrendItem & { countryCode: string; countryName: string; flag: string }> {
-  // Deduplicate by keyword — keep only the highest-temperature occurrence per keyword
-  const best = new Map<string, TrendItem & { countryCode: string; countryName: string; flag: string }>();
-
-  Object.entries(data.countries).forEach(([code, country]) => {
-    country.trends.forEach((trend) => {
-      if (category !== 'all' && trend.category !== category) return;
-      const key = (trend.keywordEn || trend.keyword).toLowerCase().trim();
-      const existing = best.get(key);
-      if (!existing || trend.temperature > existing.temperature) {
-        best.set(key, { ...trend, countryCode: code, countryName: country.name, flag: country.flag });
-      }
+  if (category === 'all') {
+    // All: deduplicate by keyword, keep highest-temperature per keyword
+    const best = new Map<string, TrendItem & { countryCode: string; countryName: string; flag: string }>();
+    Object.entries(data.countries).forEach(([code, country]) => {
+      country.trends.forEach((trend) => {
+        const key = (trend.keywordEn || trend.keyword).toLowerCase().trim();
+        const existing = best.get(key);
+        if (!existing || trend.temperature > existing.temperature) {
+          best.set(key, { ...trend, countryCode: code, countryName: country.name, flag: country.flag });
+        }
+      });
     });
-  });
-
-  return Array.from(best.values())
-    .sort((a, b) => b.temperature - a.temperature)
-    .slice(0, limit);
+    return Array.from(best.values())
+      .sort((a, b) => b.temperature - a.temperature)
+      .slice(0, limit);
+  } else {
+    // Category view: collect all matching trends from every country, no deduplication
+    const results: Array<TrendItem & { countryCode: string; countryName: string; flag: string }> = [];
+    Object.entries(data.countries).forEach(([code, country]) => {
+      country.trends.forEach((trend) => {
+        if (trend.category === category) {
+          results.push({ ...trend, countryCode: code, countryName: country.name, flag: country.flag });
+        }
+      });
+    });
+    return results
+      .sort((a, b) => b.temperature - a.temperature)
+      .slice(0, limit);
+  }
 }
 
 export function getCountryTemperature(data: TrendsData, countryCode: string): number {
