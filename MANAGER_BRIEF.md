@@ -30,7 +30,7 @@
 ### Vercel 환경변수 (대시보드에 등록 완료)
 | 변수명 | 값 | 용도 |
 |---|---|---|
-| `GITHUB_PAT` | (등록된 PAT) | cron-job.org → GitHub Actions 트리거 |
+| `GITHUB_PAT` | Vercel 대시보드 → global-trend-map-web → Settings → Environment Variables에서 확인 | cron-job.org → GitHub Actions 트리거 |
 | `CRON_SECRET` | `trendpulse2026` | `/api/trigger-collect` 인증 |
 
 ---
@@ -126,20 +126,24 @@ maintenance.yml:
 `public/blog/{date}-spotlight-{keyword_slug}-{lang}.mdx`
 
 ### 최근 스포트라이트 (중복 스킵용)
-```json
-[
-  {"keyword": "body to body", "date": "2026-03-25"},
-  {"keyword": "bts (bulletproof boys) 'swim' official mv", "date": "2026-03-23"}
-]
-```
+`public/data/posts-index.json`의 `recentSpotlights` 배열 참조 (동적으로 업데이트됨).
+최근 5개 키워드를 소문자 정규화해서 비교 — 중복이면 다음 순위 키워드 선택.
 
 ---
 
 ## 7. 로컬 개발 환경
 
+### ⚠️ 블로그 cron 세션 의존성 주의
+Claude Code cron은 **session-only**다. 세션이 끊기면 다음날 09:00 자동 실행이 누락된다.
+- 세션이 끊겼을 경우: 이 채팅을 열고 수동으로 `scripts/blog_prompt.md` 지시사항 실행
+- 근본 해결 (권장): Windows 작업 스케줄러 + `scripts/run_blog.ps1` 등록
+  - 프로그램: `powershell.exe`
+  - 인수: `-ExecutionPolicy Bypass -File "C:\Users\seheo\global-trend-map\scripts\run_blog.ps1"`
+  - 스케줄: 매일 09:00
+
 ### Git 작업 방식
 ```bash
-# 항상 최신 pull 먼저
+# 항상 최신 pull 먼저 (로컬 변경사항 있을 경우 stash)
 git stash && git pull origin main
 
 # 작업 후 push (rebase 방식)

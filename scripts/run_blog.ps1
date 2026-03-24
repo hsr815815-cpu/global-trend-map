@@ -37,7 +37,7 @@ Log "  Keyword: $($research.keyword) (rank #$($research.rank), $($research.tempe
 # 3. Claude로 블로그 생성
 Log "[3/4] claude -p blog_prompt.md..."
 $prompt = Get-Content "$REPO\scripts\blog_prompt.md" -Raw
-claude -p $prompt --allowedTools "Read,Write" 2>&1 | ForEach-Object { Log "  $_" }
+claude -p $prompt --allowedTools "Bash,Read,Write,WebSearch,WebFetch" 2>&1 | ForEach-Object { Log "  $_" }
 
 # 4. 커밋 & 푸시
 Log "[4/4] git commit & push..."
