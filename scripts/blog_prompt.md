@@ -3,7 +3,7 @@
 ## 1단계: 최신 데이터 받기
 아래 명령어를 실행한다:
 ```bash
-cd C:\Users\seheo\global-trend-map && git pull origin main
+cd C:\Users\seheo\global-trend-map && git stash && git pull origin main
 ```
 
 ## 2단계: research.json 생성
@@ -150,7 +150,7 @@ title, excerpt는 해당 언어로 번역. openGraph locale은 위 표 참조.
 ## 9단계: 커밋 & 푸시
 아래 명령어를 실행한다:
 ```bash
-cd C:\Users\seheo\global-trend-map && git add public/blog/ public/data/posts-index.json && git diff --staged --quiet || git commit -m "Auto: Blog - {keyword} ({date})" && git push origin HEAD:main
+cd C:\Users\seheo\global-trend-map && git add public/blog/ public/data/posts-index.json && git diff --staged --quiet || (git commit -m "Auto: Blog - {keyword} ({date})" && git fetch origin main && git rebase origin/main && git push origin HEAD:main)
 ```
 
 완료 후 "✅ {keyword} — 8개 언어 포스트 발행 완료" 출력.
