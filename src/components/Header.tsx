@@ -199,7 +199,11 @@ export default function Header({
               cursor: 'pointer',
             }}
           >
-            ↗ <span className="header-btn-text">Share</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 3v13M7 8l5-5 5 5"/>
+              <path d="M5 16v2a2 2 0 002 2h10a2 2 0 002-2v-2"/>
+            </svg>
+            <span className="header-btn-text">Share</span>
           </button>
 
           {/* Embed button */}
