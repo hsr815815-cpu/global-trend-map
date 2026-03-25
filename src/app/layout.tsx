@@ -102,9 +102,6 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
   },
-  other: {
-    'google-adsense-account': 'ca-pub-XXXXXXXXXX',
-  },
 };
 
 const schemaWebSite = {
