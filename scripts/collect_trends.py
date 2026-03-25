@@ -893,7 +893,7 @@ def main():
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%dT00:00:00Z")
     static_pages = [
-        (SITE_URL,                        "hourly",  "1.0"),
+        (f"{SITE_URL}/",                  "hourly",  "1.0"),
         (f"{SITE_URL}/blog",              "hourly",  "0.9"),
         (f"{SITE_URL}/about",             "monthly", "0.7"),
         (f"{SITE_URL}/contact",           "monthly", "0.6"),
