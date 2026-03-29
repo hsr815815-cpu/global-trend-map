@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-03-29T05:56:03.996424+00:00",
+  "lastUpdated": "2026-03-29T05:59:14.267828+00:00",
   "sources": {
     "googleTrends": true,
     "youtube": true,
-    "gdelt": true,
+    "gdelt": false,
     "apple": true
   },
   "countries": {
@@ -31,8 +31,8 @@
           "rank": 2,
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
-          "volume": "838K+",
-          "volumeRaw": 838091,
+          "volume": "839K+",
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -47,8 +47,8 @@
           "rank": 3,
           "keyword": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
           "keywordEn": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
-          "volume": "784K+",
-          "volumeRaw": 784997,
+          "volume": "786K+",
+          "volumeRaw": 786462,
           "category": "news",
           "temperature": 47,
           "velocity": "rising",
@@ -63,8 +63,8 @@
           "rank": 4,
           "keyword": "Calling All Villains - Announcement Trailer",
           "keywordEn": "Calling All Villains - Announcement Trailer",
-          "volume": "614K+",
-          "volumeRaw": 614484,
+          "volume": "615K+",
+          "volumeRaw": 615424,
           "category": "movies",
           "temperature": 30,
           "velocity": "rising",
@@ -96,7 +96,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 40,
           "velocity": "new",
@@ -111,8 +111,8 @@
           "rank": 7,
           "keyword": "WHERE IS MY HUSBAND!",
           "keywordEn": "WHERE IS MY HUSBAND!",
-          "volume": "169K+",
-          "volumeRaw": 169681,
+          "volume": "170K+",
+          "volumeRaw": 170465,
           "category": "news",
           "temperature": 31,
           "velocity": "steady",
@@ -264,7 +264,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Guardians 6-4 Mariners (Mar 26, 2026) Game Recap"
+            "Rookie Joins Red Sox's Trevor Story In Exclusive Club After Opening Day"
           ]
         },
         {
@@ -354,7 +354,7 @@
           "keyword": "[한글자막] 해리포터 드라마 첫 예고편 공개",
           "keywordEn": "[Korean subtitles] Harry Potter drama first trailer released",
           "volume": "438K+",
-          "volumeRaw": 438877,
+          "volumeRaw": 438977,
           "category": "movies",
           "temperature": 33,
           "velocity": "new",
@@ -385,8 +385,8 @@
           "rank": 4,
           "keyword": "PAJAMA (Prod. by ZICO, Crush)",
           "keywordEn": "PAJAMA (Prod. by ZICO, Crush)",
-          "volume": "370K+",
-          "volumeRaw": 370630,
+          "volume": "371K+",
+          "volumeRaw": 371186,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -417,8 +417,8 @@
           "rank": 6,
           "keyword": "W.I.N. (Prod. by GRAY)",
           "keywordEn": "W.I.N. (Prod. by GRAY)",
-          "volume": "291K+",
-          "volumeRaw": 291818,
+          "volume": "292K+",
+          "volumeRaw": 292074,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -434,7 +434,7 @@
           "keyword": "저티어 남자 탑 플레이 보고 처음으로 놀란 칸",
           "keywordEn": "Khan was surprised for the first time after seeing the top play of a low-tier man.",
           "volume": "203K+",
-          "volumeRaw": 203573,
+          "volumeRaw": 203825,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -450,7 +450,7 @@
           "keyword": "[런닝맨: 라이트 & 쉐도우] 메인 예고편",
           "keywordEn": "[Running Man: Light & Shadow] Main Trailer",
           "volume": "128K+",
-          "volumeRaw": 128532,
+          "volumeRaw": 128617,
           "category": "movies",
           "temperature": 19,
           "velocity": "new",
@@ -464,9 +464,9 @@
         {
           "rank": 9,
           "keyword": "공12 업1 노목 등장+100억대 직작성공 미쳤습니다...",
-          "keywordEn": "Atk 12, up 1, old tree appears + 10 billion direct writing success is crazy...",
-          "volume": "109K+",
-          "volumeRaw": 109341,
+          "keywordEn": "Atk 12, Up 1, Old Tree appeared + 10 billion direct writing success was crazy...",
+          "volume": "110K+",
+          "volumeRaw": 110246,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -482,7 +482,7 @@
           "keyword": "스틸 볼 런: 죠죠의 기묘한 모험 2nd STAGE | 공식 티저 예고편 | 넷플릭스",
           "keywordEn": "Still Ball Run: JoJo's Bizarre Adventure 2nd STAGE | Official Teaser Trailer | netflix",
           "volume": "76K+",
-          "volumeRaw": 76906,
+          "volumeRaw": 76954,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -586,7 +586,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "[사진]한화 슈퍼루키 오재원, '역전 2타점 적시타에 기뻐하며'"
+            "[사진]윤산흠 격려하는 한화 김경문 감독"
           ]
         },
         {
@@ -711,8 +711,8 @@
           "rank": 4,
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
-          "volume": "838K+",
-          "volumeRaw": 838091,
+          "volume": "839K+",
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 46,
           "velocity": "new",
@@ -728,16 +728,14 @@
           "keyword": "【cover】好きすぎて滅！ #VOLTACTION",
           "keywordEn": "[Cover] I love you so much! #VOLTACTION",
           "volume": "600K+",
-          "volumeRaw": 600511,
+          "volumeRaw": 600828,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "「え、好き。」\n\n原曲：M!LK\nhttps://www.youtube.com/watch?v=ZVUxJsPfoX8\n\nProgramming：大沢圭一\nGuitar：大沢圭一\nMixing Engineer：コバヤシタカシ\n\nIllustration：タコすけ 様\nhttps://x.com/gh0467\n\nPixel Art：ロ〜ズ 様\nhttps://x.com/roserose626\n",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "zSj4JuvvmPE",
           "channelTitle": "VOLTACTION"
         },
@@ -745,8 +743,8 @@
           "rank": 6,
           "keyword": "【#10】EIKOがバイオハザード レクイエムを生配信！【ゲーム実況】",
           "keywordEn": "[#10] EIKO will live stream Resident Evil Requiem! [Game commentary]",
-          "volume": "574K+",
-          "volumeRaw": 574508,
+          "volume": "575K+",
+          "volumeRaw": 575155,
           "category": "news",
           "temperature": 25,
           "velocity": "new",
@@ -778,7 +776,7 @@
           "keyword": "TVアニメ『アオのハコ』Season2 ティザーPV│Blue Box Season 2 | Teaser Trailer (2026)",
           "keywordEn": "TV anime “Ao no Hako” Season 2 Teaser PV│Blue Box Season 2 | Teaser Trailer (2026)",
           "volume": "190K+",
-          "volumeRaw": 190016,
+          "volumeRaw": 190283,
           "category": "movies",
           "temperature": 19,
           "velocity": "new",
@@ -793,8 +791,8 @@
           "rank": 9,
           "keyword": "The SILENCE / Vaundy：MUSIC VIDEO",
           "keywordEn": "The SILENCE / Vaundy：MUSIC VIDEO",
-          "volume": "155K+",
-          "volumeRaw": 155716,
+          "volume": "156K+",
+          "volumeRaw": 156857,
           "category": "music",
           "temperature": 17,
           "velocity": "steady",
@@ -810,7 +808,7 @@
           "keyword": "「だんでらいおん」予告編 - Netflix",
           "keywordEn": "\"Dandelion\" Trailer - Netflix",
           "volume": "99K+",
-          "volumeRaw": 99231,
+          "volumeRaw": 99424,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -834,7 +832,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "【競馬予想】高松宮記念は特殊な馬場を読み解くのが馬券的中のカギ 穴党記者が白羽の矢を立てた２頭 (2ページ目)"
+            "【高松宮記念】期待値爆上がり！歌舞伎役者ばりの「襲名」をした3頭にサイン激走の気配アリ"
           ]
         },
         {
@@ -988,17 +986,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -1023,7 +1018,7 @@
           "keyword": "EXTREME HIDE & SEEK in RIVALS..",
           "keywordEn": "EXTREME HIDE & SEEK in RIVALS..",
           "volume": "1M+",
-          "volumeRaw": 1113535,
+          "volumeRaw": 1113878,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -1038,8 +1033,8 @@
           "rank": 4,
           "keyword": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
           "keywordEn": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
-          "volume": "935K+",
-          "volumeRaw": 935622,
+          "volume": "939K+",
+          "volumeRaw": 939532,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -1054,8 +1049,8 @@
           "rank": 5,
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
-          "volume": "838K+",
-          "volumeRaw": 838091,
+          "volume": "839K+",
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 44,
           "velocity": "new",
@@ -1070,8 +1065,8 @@
           "rank": 6,
           "keyword": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
           "keywordEn": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
-          "volume": "784K+",
-          "volumeRaw": 784997,
+          "volume": "786K+",
+          "volumeRaw": 786462,
           "category": "news",
           "temperature": 41,
           "velocity": "new",
@@ -1103,7 +1098,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -1118,10 +1113,10 @@
           "rank": 9,
           "keyword": "Hermitcraft 11: Episode 15 - actually doing it",
           "keywordEn": "Hermitcraft 11: Episode 15 - actually doing it",
-          "volume": "398K+",
-          "volumeRaw": 398473,
+          "volume": "400K+",
+          "volumeRaw": 400034,
           "category": "news",
-          "temperature": 28,
+          "temperature": 29,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
@@ -1135,7 +1130,7 @@
           "keyword": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, London 27 February 2026)",
           "keywordEn": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, London 27 February 2026)",
           "volume": "316K+",
-          "volumeRaw": 316104,
+          "volumeRaw": 316930,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -1191,7 +1186,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Lewis Hamilton, Anya Taylor-Joy Grab Spotlight at Japanese GP"
+            "Chris Pratt attends Japan F1 Grand Prix with family for Super Mario Galaxy premiere"
           ]
         },
         {
@@ -1207,7 +1202,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Saudia Ends Dammam-London Heathrow Dream: Tourism Access Hit After Five months!"
+            "Major Airline Abruptly Drops Heathrow Long-Haul Route"
           ]
         },
         {
@@ -1217,7 +1212,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 10,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -1255,7 +1250,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Sebastian Fundora Batters & Bloodies Keith Thurman in Nasty Beatdown"
+            "'Absurd': Fans can't believe size of tallest world champ as he faces 5ft 8in ace"
           ]
         },
         {
@@ -1332,8 +1327,8 @@
           "rank": 2,
           "keyword": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
           "keywordEn": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
-          "volume": "935K+",
-          "volumeRaw": 935622,
+          "volume": "939K+",
+          "volumeRaw": 939532,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -1348,8 +1343,8 @@
           "rank": 3,
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
-          "volume": "838K+",
-          "volumeRaw": 838091,
+          "volume": "839K+",
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 48,
           "velocity": "rising",
@@ -1364,8 +1359,8 @@
           "rank": 4,
           "keyword": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
           "keywordEn": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
-          "volume": "784K+",
-          "volumeRaw": 784997,
+          "volume": "786K+",
+          "volumeRaw": 786462,
           "category": "news",
           "temperature": 45,
           "velocity": "rising",
@@ -1397,7 +1392,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 40,
           "velocity": "new",
@@ -1413,7 +1408,7 @@
           "keyword": "LACAZETTE x SAMRA x VENTI - TOX",
           "keywordEn": "LACAZETTE x SAMRA x VENTI - TOX",
           "volume": "350K+",
-          "volumeRaw": 350175,
+          "volumeRaw": 350211,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -1429,7 +1424,7 @@
           "keyword": "🔴heute NEUES OSTER OG in Steal a Brainrot!",
           "keywordEn": "🔴NEW EASTER OG today in Steal a Brainrot!",
           "volume": "230K+",
-          "volumeRaw": 230580,
+          "volumeRaw": 230603,
           "category": "news",
           "temperature": 20,
           "velocity": "rising",
@@ -1461,7 +1456,7 @@
           "keyword": "Ich PRANKE 7 YOUTUBER beim BAUMHAUS BUILD BATTLE",
           "keywordEn": "Ich PRANKE 7 YOUTUBER beim BAUMHAUS BUILD BATTLE",
           "volume": "98K+",
-          "volumeRaw": 98527,
+          "volumeRaw": 98547,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -1517,7 +1512,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Formel 1: Mercedes-Sternstunde bei Japan-Quali! Tiefpunkt für Verstappen"
+            "GP Japan: Formel-1-Start wegen Horror-Unfall in Support-Rennen verschoben"
           ]
         },
         {
@@ -1565,7 +1560,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Chris Pratt, Jack Black & Anya Taylor-Joy Attend F1 Grand Prix After ‘Super Mario Galaxy’ Japan Premiere"
+            "Chris Pratt attends Japan F1 Grand Prix with family for Super Mario Galaxy premiere"
           ]
         },
         {
@@ -1629,7 +1624,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Star-Trompeter Toni Maier bricht live im Fernsehen zusammen"
+            "Bei „Mei liabste Weis“ - Schock: Star-Trompeter bricht live im TV zusammen"
           ]
         }
       ]
@@ -1659,7 +1654,7 @@
           "keyword": "Jaiye Sajana (Lyrical): Dhurandhar The Revenge | Shashwat Sachdev | Jasmine Sandlas,Satinder Sartaaj",
           "keywordEn": "Jaiye Sajana (Lyrical): Dhurandhar The Revenge | Shashwat Sachdev | Jasmine Sandlas,Satinder Sartaaj",
           "volume": "4M+",
-          "volumeRaw": 4865568,
+          "volumeRaw": 4866413,
           "category": "news",
           "temperature": 55,
           "velocity": "rising",
@@ -1690,8 +1685,8 @@
           "rank": 4,
           "keyword": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
           "keywordEn": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
-          "volume": "935K+",
-          "volumeRaw": 935622,
+          "volume": "939K+",
+          "volumeRaw": 939532,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -1707,7 +1702,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 44,
           "velocity": "new",
@@ -1723,7 +1718,7 @@
           "keyword": "Sri Rama Navami Special Songs JukeBox | Lord Rama Songs | Telugu Devotional Songs | Aditya Bhakthi",
           "keywordEn": "Sri Rama Navami Special Songs JukeBox | Lord Rama Songs | Telugu Devotional Songs | Aditya Bhakthi",
           "volume": "626K+",
-          "volumeRaw": 626410,
+          "volumeRaw": 626455,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -1738,8 +1733,8 @@
           "rank": 7,
           "keyword": "Doorbin Kids are Missing in Minecraft..",
           "keywordEn": "Doorbin Kids are Missing in Minecraft..",
-          "volume": "613K+",
-          "volumeRaw": 613423,
+          "volume": "614K+",
+          "volumeRaw": 614512,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -1754,8 +1749,8 @@
           "rank": 8,
           "keyword": "TULSI VIVAH I तुलसी विवाह I SANJANA PANDEY I GOLU TIWARI I OFFICIAL TRAILER INEW BHOJPURI MOVIE 2026",
           "keywordEn": "TULSI VIVAH I TULSI VIVAH I SANJANA PANDEY I GOLU TIWARI I OFFICIAL TRAILER INEW BHOJPURI MOVIE",
-          "volume": "603K+",
-          "volumeRaw": 603326,
+          "volume": "604K+",
+          "volumeRaw": 604313,
           "category": "movies",
           "temperature": 22,
           "velocity": "new",
@@ -1770,8 +1765,8 @@
           "rank": 9,
           "keyword": "Testing Scary Minecraft Myths Caught in Screenshots!!",
           "keywordEn": "Testing Scary Minecraft Myths Caught in Screenshots!!",
-          "volume": "568K+",
-          "volumeRaw": 568967,
+          "volume": "573K+",
+          "volumeRaw": 573902,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -1795,7 +1790,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Bihar Board Matric 2026 Results: आज दोपहर 1:15 बजे आएगा रिजल्ट, जानिए चेक करने का आसान तरीका"
+            "BSEB 10th Result 2026 Date Out: 29 मार्च को इतने बजे आएगा बिहार बोर्ड मैट्रिक रिजल्ट, सामने आया ये अपडेट"
           ]
         },
         {
@@ -1803,7 +1798,7 @@
           "keyword": "Nas Nas Kyu Dukhei | पिया मेरी नस नस के हो दुखे | Anjali Raghav & Karan Chaudhary| Braj bhasha Song",
           "keywordEn": "Nas Nas Kyu Dukhei | Piya Meri nas nas ke ho dukhe | Anjali Raghav & Karan Chaudhary| Braj Bhasha Song",
           "volume": "180K+",
-          "volumeRaw": 180133,
+          "volumeRaw": 180892,
           "category": "music",
           "temperature": 13,
           "velocity": "steady",
@@ -1875,7 +1870,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "BITSAT 2026 Slot Booking Starting from March 27: Check to book a slot & important guidelines"
+            "BITSAT City Intimation Slip 2026: How to Check Your Exam City Allotment?"
           ]
         },
         {
@@ -1939,7 +1934,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Aaj Ki Taaza Khabar LIVE Updates: आज विधानसभा चुनाव 2027 का शंखनाद करेंगे अखिलेश यादव, नोएडा के दादरी में विशाल रैली"
+            "आज की ताजा खबर LIVE: दुनिया युद्ध में उलझी हुई, एकजुट होकर इस संकट से निकलना होगा : पीएम मोदी"
           ]
         },
         {
@@ -1985,7 +1980,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -2001,7 +1996,7 @@
           "keyword": "🚨FFWS BR 🏆 RODADA 3 - GRUPOS A, C e D | FREE FIRE AO VIVO🚨 #freefire",
           "keywordEn": "🚨FFWS BR 🏆 ROUND 3 - GROUPS A, C and D | FREE FIRE LIVE🚨 #freefire",
           "volume": "657K+",
-          "volumeRaw": 657347,
+          "volumeRaw": 657433,
           "category": "news",
           "temperature": 32,
           "velocity": "steady",
@@ -2016,8 +2011,8 @@
           "rank": 4,
           "keyword": "Quem Constrói a Torre Mais Alta no Minecraft!",
           "keywordEn": "Who Builds the Tallest Tower in Minecraft!",
-          "volume": "573K+",
-          "volumeRaw": 573806,
+          "volume": "574K+",
+          "volumeRaw": 574120,
           "category": "news",
           "temperature": 29,
           "velocity": "rising",
@@ -2032,8 +2027,8 @@
           "rank": 5,
           "keyword": "NEGOCIEI COM UM FRANCÊS POR UM PET QUE NÃO EXISTE NO BRAINROT… 😳🔥",
           "keywordEn": "I NEGOTIATED WITH A FRENCH FOR A PET THAT DOESN'T EXIST IN BRAINROT... 😳🔥",
-          "volume": "227K+",
-          "volumeRaw": 227666,
+          "volume": "228K+",
+          "volumeRaw": 228215,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -2049,7 +2044,7 @@
           "keyword": "Dance se souber~ {TikTok} 2026🎶💜",
           "keywordEn": "Dance is sober~ {TikTok} 2026🎶💜",
           "volume": "214K+",
-          "volumeRaw": 214513,
+          "volumeRaw": 214633,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -2065,7 +2060,7 @@
           "keyword": "ONE PIECE l Elbaph Arc | Official Trailer",
           "keywordEn": "ONE PIECE l Elbaph Arc | Official Trailer",
           "volume": "165K+",
-          "volumeRaw": 165647,
+          "volumeRaw": 165846,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -2097,7 +2092,7 @@
           "keyword": "NÃO SOU COMPROMETIDO - MC Tuto, MC Ryan SP, MC Meno K, MC Negão Original e MC Lele JP",
           "keywordEn": "I AM NOT COMMITTED - MC Tuto, MC Ryan SP, MC Meno K, MC Negão Original and MC Lele JP",
           "volume": "14K+",
-          "volumeRaw": 14503,
+          "volumeRaw": 14561,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -2113,7 +2108,7 @@
           "keyword": "EU ME APAIXONEI - VITINHO IMPERADOR",
           "keywordEn": "EU ME APAIXONEI - VITINHO IMPERADOR",
           "volume": "11K+",
-          "volumeRaw": 11733,
+          "volumeRaw": 11771,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -2126,28 +2121,12 @@
         },
         {
           "rank": 11,
-          "keyword": "globo play",
-          "keywordEn": "globo play",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 13,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "BBB26: Ana Paula perde favoritismo e brother pode ser o grande campeão do reality; saiba"
-          ]
-        },
-        {
-          "rank": 12,
           "keyword": "tv globo",
           "keywordEn": "tv globo",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 11,
+          "temperature": 13,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -2157,13 +2136,13 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 12,
           "keyword": "globo ao vivo",
           "keywordEn": "globo ao vivo",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 9,
+          "temperature": 11,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -2173,13 +2152,13 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 13,
           "keyword": "assistir globo ao vivo",
           "keywordEn": "assistir globo ao vivo",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 7,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -2189,7 +2168,39 @@
           ]
         },
         {
+          "rank": 14,
+          "keyword": "globo play",
+          "keywordEn": "globo play",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 7,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Assistir Jornal Hoje online gratuitamente neste sábado (21/03/2026)"
+          ]
+        },
+        {
           "rank": 15,
+          "keyword": "f1tv",
+          "keywordEn": "f1tv",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "F1 has a clear priority for post-Japanese GP rule changes"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "jack black",
           "keywordEn": "jack black",
           "volume": "500",
@@ -2201,11 +2212,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "‘SNL’ Sets Colman Domingo as Host With Anitta as Musical Guest"
+            "Israel's campaign to sever southern Lebanon in a new ‘buffer zone’"
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
           "keyword": "yoshiki",
           "keywordEn": "yoshiki",
           "volume": "200",
@@ -2217,23 +2228,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "F1日本グランプリ2026決勝でYOSHIKIが国歌演奏。鈴鹿でピアノ×ドラムの異例パフォーマンス｜自動車交通トピックス"
-          ]
-        },
-        {
-          "rank": 17,
-          "keyword": "tv globo ao vivo",
-          "keywordEn": "tv globo ao vivo",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Assistir Jornal Hoje online gratuitamente neste sábado (21/03/2026)"
+            "YOSHIKIさん＝平成30年12月（酒巻俊介撮影）"
           ]
         },
         {
@@ -2295,7 +2290,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 52,
           "velocity": "rising",
@@ -2325,9 +2320,9 @@
         {
           "rank": 3,
           "keyword": "🔴ADMIN ABUSE de la dernière chance !",
-          "keywordEn": "🔴ADMIN ABUSE of the last chance!",
+          "keywordEn": "🔴ADMIN ABUSE last chance!",
           "volume": "538K+",
-          "volumeRaw": 538032,
+          "volumeRaw": 538127,
           "category": "news",
           "temperature": 31,
           "velocity": "rising",
@@ -2343,7 +2338,7 @@
           "keyword": "4 NULLOS, 1 BARRE DE VIE (Minecraft Hardcore)",
           "keywordEn": "4 NULLOS, 1 BARRE DE VIE (Minecraft Hardcore)",
           "volume": "521K+",
-          "volumeRaw": 521341,
+          "volumeRaw": 521477,
           "category": "news",
           "temperature": 29,
           "velocity": "new",
@@ -2359,7 +2354,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 42,
           "velocity": "new",
@@ -2375,7 +2370,7 @@
           "keyword": "PROMENADE",
           "keywordEn": "PROMENADE",
           "volume": "314K+",
-          "volumeRaw": 314537,
+          "volumeRaw": 314593,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -2423,7 +2418,7 @@
           "keyword": "ON L'APPELAIT ROBIN DES BOIS Bande Annonce VF (2026) Hugh Jackman",
           "keywordEn": "ON L'APPELAIT ROBIN DES BOIS Bande Annonce VF (2026) Hugh Jackman",
           "volume": "147K+",
-          "volumeRaw": 147717,
+          "volumeRaw": 147755,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -2439,7 +2434,7 @@
           "keyword": "Booba - Dolce Camara Solo (Clip Officiel)",
           "keywordEn": "Booba - Dolce Camara Solo (Clip Officiel)",
           "volume": "124K+",
-          "volumeRaw": 124181,
+          "volumeRaw": 124275,
           "category": "news",
           "temperature": 15,
           "velocity": "rising",
@@ -2479,7 +2474,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "C'est un des plus gros flops de 2025 dans les salles : Toutes pour une dès ce vendredi sur myCANAL et Canal+ Cinéma(s)."
+            "Freebox et myCANAL : l’alternative idéale à l’Apple TV"
           ]
         },
         {
@@ -2619,7 +2614,7 @@
           "keyword": "The End of Oak Street | Official Teaser Trailer",
           "keywordEn": "The End of Oak Street | Official Teaser Trailer",
           "volume": "6M+",
-          "volumeRaw": 6833755,
+          "volumeRaw": 6844145,
           "category": "movies",
           "temperature": 67,
           "velocity": "new",
@@ -2635,7 +2630,7 @@
           "keyword": "BALEN - JAY MAHAKAALI (Swapnil, Chronic Beatz, Foeseal)",
           "keywordEn": "BALEN - JAY MAHAKAALI (Swapnil, Chronic Beatz, Foeseal)",
           "volume": "4M+",
-          "volumeRaw": 4845637,
+          "volumeRaw": 4846704,
           "category": "news",
           "temperature": 60,
           "velocity": "rising",
@@ -2651,17 +2646,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 61,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -2670,7 +2662,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 46,
           "velocity": "new",
@@ -2686,7 +2678,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 44,
           "velocity": "rising",
@@ -2701,8 +2693,8 @@
           "rank": 6,
           "keyword": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
           "keywordEn": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
-          "volume": "784K+",
-          "volumeRaw": 784997,
+          "volume": "786K+",
+          "volumeRaw": 786462,
           "category": "news",
           "temperature": 41,
           "velocity": "steady",
@@ -2718,7 +2710,7 @@
           "keyword": "I Gave Zoo Animals My Voice!",
           "keywordEn": "I Gave Zoo Animals My Voice!",
           "volume": "659K+",
-          "volumeRaw": 659347,
+          "volumeRaw": 659960,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -2749,10 +2741,10 @@
           "rank": 9,
           "keyword": "Hermitcraft 11: Episode 15 - actually doing it",
           "keywordEn": "Hermitcraft 11: Episode 15 - actually doing it",
-          "volume": "398K+",
-          "volumeRaw": 398473,
+          "volume": "400K+",
+          "volumeRaw": 400034,
           "category": "news",
-          "temperature": 28,
+          "temperature": 29,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
@@ -2765,8 +2757,8 @@
           "rank": 10,
           "keyword": "WHERE IS MY HUSBAND!",
           "keywordEn": "WHERE IS MY HUSBAND!",
-          "volume": "169K+",
-          "volumeRaw": 169681,
+          "volume": "170K+",
+          "volumeRaw": 170465,
           "category": "news",
           "temperature": 25,
           "velocity": "new",
@@ -2781,11 +2773,11 @@
           "rank": 11,
           "keyword": "f1 live",
           "keywordEn": "f1 live",
-          "volume": "2K+",
-          "volumeRaw": 2000,
+          "volume": "5K+",
+          "volumeRaw": 5000,
           "category": "news",
           "temperature": 28,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -2822,7 +2814,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "YOSHIKIさん＝平成30年12月（酒巻俊介撮影）"
+            "F1日本GPでの国歌演奏後、ヘリで東京へ移動し公式配信番組『YOSHIKI CHANNEL』に出演する予定のYOSHIKI"
           ]
         },
         {
@@ -2838,7 +2830,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Jack Black hosts Saturday Night Live in April, joins spring lineup"
+            "Donald Glover, Jack Black and Anya Taylor-Joy freestyle over ‘Super Mario’ theme"
           ]
         },
         {
@@ -2849,7 +2841,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 15,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -2859,22 +2851,38 @@
         },
         {
           "rank": 16,
-          "keyword": "melbourne vs carlton",
-          "keywordEn": "melbourne vs carlton",
+          "keyword": "f1 live stream",
+          "keywordEn": "f1 live stream",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "‘Chockfull of it’: Epic Blues start sparks brawl as wasteful Dees dealt injury blow — AFL LIVE"
+            "Finish or bust: Why the Japanese Grand Prix could make or break Oscar Piastri's title charge"
           ]
         },
         {
           "rank": 17,
+          "keyword": "ollie bearman",
+          "keywordEn": "ollie bearman",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Chinese GP race results: Full F1 times and standings in Shanghai"
+          ]
+        },
+        {
+          "rank": 18,
           "keyword": "f1 tv",
           "keywordEn": "f1 tv",
           "volume": "100",
@@ -2890,14 +2898,14 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 19,
           "keyword": "fernando alonso",
           "keywordEn": "fernando alonso",
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
           "temperature": 20,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -2906,7 +2914,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "keyword": "cricket australia",
           "keywordEn": "cricket australia",
           "volume": "100",
@@ -2920,22 +2928,6 @@
           "relatedNews": [
             "Mitchell Starc hits back at 'misinformed suggestions' amid confirmation he'll miss the start of the IPL"
           ]
-        },
-        {
-          "rank": 20,
-          "keyword": "natalie pinkham",
-          "keywordEn": "natalie pinkham",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 10,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Sky Sports F1 star makes return at Japanese Grand Prix: 'She's back everyone'"
-          ]
         }
       ]
     },
@@ -2948,17 +2940,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -2983,7 +2972,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 48,
           "velocity": "rising",
@@ -2998,8 +2987,8 @@
           "rank": 4,
           "keyword": "Atrapé a Mis Amigos en un MUNDO PEQUEÑO en Minecraft!",
           "keywordEn": "I Trapped My Friends in a SMALL WORLD in Minecraft!",
-          "volume": "625K+",
-          "volumeRaw": 625096,
+          "volume": "626K+",
+          "volumeRaw": 626234,
           "category": "news",
           "temperature": 40,
           "velocity": "new",
@@ -3014,8 +3003,8 @@
           "rank": 5,
           "keyword": "ROBA UN PAYASO DE FEDEVIGEVANI EN ROBLOX!🤡",
           "keywordEn": "STEAL A CLOWN FROM FEDEVIGEVANI IN ROBLOX!🤡",
-          "volume": "424K+",
-          "volumeRaw": 424257,
+          "volume": "425K+",
+          "volumeRaw": 425557,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -3030,8 +3019,8 @@
           "rank": 6,
           "keyword": "Los Dos De Tamaulipas - Ayúdame (Video Oficial)",
           "keywordEn": "Los Dos De Tamaulipas - Ayúdame (Official Video)",
-          "volume": "352K+",
-          "volumeRaw": 352710,
+          "volume": "353K+",
+          "volumeRaw": 353174,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -3063,7 +3052,7 @@
           "keyword": "ONE PIECE l Elbaph Arc | Official Trailer",
           "keywordEn": "ONE PIECE l Elbaph Arc | Official Trailer",
           "volume": "165K+",
-          "volumeRaw": 165647,
+          "volumeRaw": 165846,
           "category": "movies",
           "temperature": 34,
           "velocity": "new",
@@ -3079,7 +3068,7 @@
           "keyword": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2.ª ETAPA | Avance oficial | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd STAGE | Advance official | Netflix",
           "volume": "64K+",
-          "volumeRaw": 64486,
+          "volumeRaw": 64566,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -3110,8 +3099,8 @@
           "rank": 11,
           "keyword": "f1tv",
           "keywordEn": "f1tv",
-          "volume": "5K+",
-          "volumeRaw": 5000,
+          "volume": "10K+",
+          "volumeRaw": 10000,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -3124,24 +3113,24 @@
         },
         {
           "rank": 12,
-          "keyword": "formula 1",
-          "keywordEn": "formula 1",
-          "volume": "2K+",
-          "volumeRaw": 2000,
-          "category": "sports",
-          "temperature": 16,
-          "velocity": "rising",
+          "keyword": "clima hermosillo",
+          "keywordEn": "clima hermosillo",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 11,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "PLAY: Make Your 2026 Japanese GP Predictions!"
+            "Estado del tiempo 27 de marzo; el fin de semana se pronostica lluvias en la mayor parte de Sonora"
           ]
         },
         {
           "rank": 13,
-          "keyword": "clima hermosillo",
-          "keywordEn": "clima hermosillo",
+          "keyword": "mariners",
+          "keywordEn": "mariners",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
@@ -3151,7 +3140,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Estado del tiempo 27 de marzo; el fin de semana se pronostica lluvias en la mayor parte de Sonora"
+            "Chase DeLauter's home run gives Cleveland the lead"
           ]
         },
         {
@@ -3178,18 +3167,18 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Caiado sanciona reajuste de pensão do Césio após vetar aumento em 2023"
+            "Aumento de valores de pensões especiais relacionadas a acidente radioativo tem 1ª anuência"
           ]
         },
         {
           "rank": 16,
-          "keyword": "seattle mariners",
-          "keywordEn": "seattle mariners",
+          "keyword": "braves - royals",
+          "keywordEn": "braves - royals",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -3199,13 +3188,13 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Israel–Lebanon border security calls for cooperation, not control"
+            "Chris Sale News: Blanks KC for first win"
           ]
         },
         {
           "rank": 17,
-          "keyword": "braves - royals",
-          "keywordEn": "braves - royals",
+          "keyword": "pamela anderson",
+          "keywordEn": "pamela anderson",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -3215,11 +3204,27 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Greg Ward Jr. takes it 66 yards to the house for the Renegades"
+            "Pamela Anderson Goes Makeup-Free for New Aerie Campaign: ‘Nothing Can Replace Human Beings’"
           ]
         },
         {
           "rank": 18,
+          "keyword": "et",
+          "keywordEn": "et",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Baywatch star Erika Eleniak who starred in Spielberg's E.T. flashes tattoos on outing, see her now at 56"
+          ]
+        },
+        {
+          "rank": 19,
           "keyword": "fernando alonso",
           "keywordEn": "fernando alonso",
           "volume": "100",
@@ -3235,22 +3240,6 @@
           ]
         },
         {
-          "rank": 19,
-          "keyword": "gran premio de japon",
-          "keywordEn": "gran premio de japon",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 10,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Gasly explica su avance en Japón y destaca el trabajo de Alpine"
-          ]
-        },
-        {
           "rank": 20,
           "keyword": "diablos rojos",
           "keywordEn": "diablos rojos",
@@ -3258,12 +3247,12 @@
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Jon Singleton y Rio Ruiz comandan a la ofensiva escarlata para vencer a los CTBC Brothers"
+            "Paliza histórica: Diablos Rojos de México ganan 36-13 a Cocodrilos de Matanzas en la Baseball Champions..."
           ]
         }
       ]
@@ -3277,17 +3266,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -3311,8 +3297,8 @@
           "rank": 3,
           "keyword": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
           "keywordEn": "Vaazha 2 - Trailer | Vipin Das | Savin SA | Ankit Menon | Hashir | Alphonse Puthren",
-          "volume": "935K+",
-          "volumeRaw": 935622,
+          "volume": "939K+",
+          "volumeRaw": 939532,
           "category": "movies",
           "temperature": 48,
           "velocity": "new",
@@ -3328,7 +3314,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -3343,8 +3329,8 @@
           "rank": 5,
           "keyword": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
           "keywordEn": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
-          "volume": "784K+",
-          "volumeRaw": 784997,
+          "volume": "786K+",
+          "volumeRaw": 786462,
           "category": "news",
           "temperature": 43,
           "velocity": "rising",
@@ -3376,7 +3362,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 38,
           "velocity": "new",
@@ -3391,10 +3377,10 @@
           "rank": 8,
           "keyword": "Hermitcraft 11: Episode 15 - actually doing it",
           "keywordEn": "Hermitcraft 11: Episode 15 - actually doing it",
-          "volume": "398K+",
-          "volumeRaw": 398473,
+          "volume": "400K+",
+          "volumeRaw": 400034,
           "category": "news",
-          "temperature": 30,
+          "temperature": 31,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
@@ -3423,8 +3409,8 @@
           "rank": 10,
           "keyword": "WHERE IS MY HUSBAND!",
           "keywordEn": "WHERE IS MY HUSBAND!",
-          "volume": "169K+",
-          "volumeRaw": 169681,
+          "volume": "170K+",
+          "volumeRaw": 170465,
           "category": "news",
           "temperature": 25,
           "velocity": "steady",
@@ -3453,34 +3439,34 @@
         },
         {
           "rank": 12,
-          "keyword": "f1tv",
-          "keywordEn": "f1tv",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 26,
-          "velocity": "steady",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "F1 has a clear priority for post-Japanese GP rule changes"
-          ]
-        },
-        {
-          "rank": 13,
           "keyword": "devin cooley",
           "keywordEn": "devin cooley",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 9,
+          "temperature": 11,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Devin Cooley Calls Out NHL’s Overtime Problem"
+          ]
+        },
+        {
+          "rank": 13,
+          "keyword": "f1tv",
+          "keywordEn": "f1tv",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 24,
+          "velocity": "steady",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "F1 has a clear priority for post-Japanese GP rule changes"
           ]
         },
         {
@@ -3528,7 +3514,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "YOSHIKIさん＝平成30年12月（酒巻俊介撮影）"
+            "F1日本グランプリ2026決勝でYOSHIKIが国歌演奏。鈴鹿でピアノ×ドラムの異例パフォーマンス｜自動車交通トピックス"
           ]
         },
         {
@@ -3606,17 +3592,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -3640,8 +3623,8 @@
           "rank": 3,
           "keyword": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
           "keywordEn": "YE - ALL THE LOVE (feat. ANDRÉ TROUTMAN)",
-          "volume": "784K+",
-          "volumeRaw": 784997,
+          "volume": "786K+",
+          "volumeRaw": 786462,
           "category": "news",
           "temperature": 47,
           "velocity": "new",
@@ -3657,7 +3640,7 @@
           "keyword": "😱 Майнкрафт, но Мы Чиним ПОДВАЛ Среди Призраков • [ГостРемонт] + Фиксплей",
           "keywordEn": "😱 Minecraft, but We're Repairing a BASEMENT Among the Ghosts • [GostRepair] + Fixplay",
           "volume": "375K+",
-          "volumeRaw": 375328,
+          "volumeRaw": 375507,
           "category": "news",
           "temperature": 28,
           "velocity": "steady",
@@ -3673,7 +3656,7 @@
           "keyword": "ДВА РАЗНЫХ ПАУКА в трейлере ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ",
           "keywordEn": "TWO DIFFERENT SPIDERS in the trailer for SPIDER-MAN: NEW DAY",
           "volume": "268K+",
-          "volumeRaw": 268726,
+          "volumeRaw": 268872,
           "category": "movies",
           "temperature": 26,
           "velocity": "new",
@@ -3689,17 +3672,14 @@
           "keyword": "Аккаунт за 1$ против 10.000$",
           "keywordEn": "Account for $1 versus $10,000",
           "volume": "204K+",
-          "volumeRaw": 204052,
+          "volumeRaw": 204230,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "🌐 Мой ВПН - https://t.me/bubsvpn_bot?start=yt_main1\n➡️ Мой магазин Bubs Shop - https://t.me/BubsShop_Bot\n➡️ Мой тг канал - https://t.me/bubser_bs\n💝Отзывы Bubs Shop'a - https://t.me/bubsshoprewiew\n  \nС",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "DyQICMLIasQ",
           "channelTitle": "Bubs"
         },
@@ -3707,8 +3687,8 @@
           "rank": 7,
           "keyword": "MUXIBOSH - Burning Inside (Remastered)",
           "keywordEn": "MUXIBOSH - Burning Inside (Remastered)",
-          "volume": "113K+",
-          "volumeRaw": 113998,
+          "volume": "114K+",
+          "volumeRaw": 114059,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -3740,7 +3720,7 @@
           "keyword": "Мортал Комбат 2 - “Нуб Сайбот” Русский трейлер (2026) Карл Урбан",
           "keywordEn": "Mortal Kombat 2 - “Noob Saibot” Russian trailer (2026) Karl Urban",
           "volume": "66K+",
-          "volumeRaw": 66175,
+          "volumeRaw": 66407,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -3756,7 +3736,7 @@
           "keyword": "КАЙФУЮ С ПРЫГУНОВ, НОВОГО ГАРРИ ПОТТЕРА и ДР.",
           "keywordEn": "I LOVE JUMPERS, THE NEW HARRY POTTER, AND OTHER.",
           "volume": "46K+",
-          "volumeRaw": 46175,
+          "volumeRaw": 46256,
           "category": "news",
           "temperature": 15,
           "velocity": "rising",
@@ -3938,7 +3918,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -3954,7 +3934,7 @@
           "keyword": "Harry Potter e la Pietra Filosofale | Teaser Ufficiale | HBO Max",
           "keywordEn": "Harry Potter e la Pietra Filosofale | Teaser Ufficiale | HBO Max",
           "volume": "346K+",
-          "volumeRaw": 346831,
+          "volumeRaw": 346833,
           "category": "movies",
           "temperature": 32,
           "velocity": "rising",
@@ -3970,16 +3950,14 @@
           "keyword": "Diventiamo i cultisi per TROLLARE i giocati su 99 notti su ROBLOX!",
           "keywordEn": "Diventiamo i cultisi per TROLLARE i giocati su 99 notti su ROBLOX!",
           "volume": "238K+",
-          "volumeRaw": 238459,
+          "volumeRaw": 238463,
           "category": "news",
           "temperature": 30,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "🎉 LINK BIGLIETTI ✨\nhttps://www.ticketone.it/artist/roby-jenny-lorenzist/\n\n\n🔥 VIDEO NUOVI OGNI GIORNO! 🔥\n\n💖 Canale adatto a tutte le età! 💖\n\n📍 Dove trovarmi:\n🔹 Gruppo Roblox: https://shorturl.at/QATxa\n",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "ezJCMgnn7j0",
           "channelTitle": "Roby"
         },
@@ -3988,7 +3966,7 @@
           "keyword": "Le-one, NiceKidd - BERLUSCONI",
           "keywordEn": "Le-one, NiceKidd - BERLUSCONI",
           "volume": "168K+",
-          "volumeRaw": 168354,
+          "volumeRaw": 168384,
           "category": "news",
           "temperature": 27,
           "velocity": "rising",
@@ -4004,7 +3982,7 @@
           "keyword": "FINISCO TUTTI i PRESTIGI in MENO di 1H?! BRAWL STARS ITA!!",
           "keywordEn": "FINISCO TUTTI i PRESTIGI in MENO di 1H?! BRAWL STARS ITA!!",
           "volume": "166K+",
-          "volumeRaw": 166821,
+          "volumeRaw": 166870,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -4020,7 +3998,7 @@
           "keyword": "BLANCO, Elisa - Ricordi",
           "keywordEn": "BLANCO, Elisa - Ricordi",
           "volume": "119K+",
-          "volumeRaw": 119969,
+          "volumeRaw": 119973,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -4036,7 +4014,7 @@
           "keyword": "Madame - OK",
           "keywordEn": "Madame - OK",
           "volume": "112K+",
-          "volumeRaw": 112084,
+          "volumeRaw": 112085,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -4052,7 +4030,7 @@
           "keyword": "Niko Pandetta - A ME A STRAD (feat. Baby Gang)",
           "keywordEn": "Niko Pandetta - A ME A STRAD (feat. Baby Gang)",
           "volume": "77K+",
-          "volumeRaw": 77000,
+          "volumeRaw": 77014,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -4068,7 +4046,7 @@
           "keyword": "OPINIONE ACCURATISSIMA ERRIPOTTE - HARRY POTTER TEASER TRAILER SERIE TV",
           "keywordEn": "OPINIONE ACCURATISSIMA ERRIPOTTE - HARRY POTTER TEASER TRAILER SERIE TV",
           "volume": "67K+",
-          "volumeRaw": 67568,
+          "volumeRaw": 67579,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -4084,16 +4062,14 @@
           "keyword": "IO E LA SORELLA DELL'ADMIN ABBIAMO CHIUSO PER SEMPRE..",
           "keywordEn": "IO E LA SORELLA DELL'ADMIN ABBIAMO CHIUSO PER SEMPRE..",
           "volume": "66K+",
-          "volumeRaw": 66363,
+          "volumeRaw": 66366,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "IO E LA SORELLA DELL'ADMIN ABBIAMO CHIUSO PER SEMPRE..\n\nIn questo video @MaxRandom o @MaxeGiginoROBLOX o @MaxHorror_ o @MaxUniverseee o @Maaax-World ha LITIGATO una VOLTA PER TUTTE con LA SORELLA DELL",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "Jxjpk_ysmUY",
           "channelTitle": "Max Random"
         },
@@ -4266,7 +4242,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -4281,8 +4257,8 @@
           "rank": 2,
           "keyword": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
           "keywordEn": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
-          "volume": "782K+",
-          "volumeRaw": 782301,
+          "volume": "783K+",
+          "volumeRaw": 783504,
           "category": "news",
           "temperature": 49,
           "velocity": "new",
@@ -4314,7 +4290,7 @@
           "keyword": "Harry Potter y la Piedra Filosofal | Teaser oficial | HBO Max",
           "keywordEn": "Harry Potter y la Piedra Filosofal | Teaser oficial | HBO Max",
           "volume": "498K+",
-          "volumeRaw": 498828,
+          "volumeRaw": 498856,
           "category": "movies",
           "temperature": 29,
           "velocity": "rising",
@@ -4330,7 +4306,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 42,
           "velocity": "new",
@@ -4346,7 +4322,7 @@
           "keyword": "A POR LAS 5 ESTRELLAS | Waterpark Simulator - Parte 5",
           "keywordEn": "A POR LAS 5 ESTRELLAS | Waterpark Simulator - Parte 5",
           "volume": "336K+",
-          "volumeRaw": 336311,
+          "volumeRaw": 336813,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -4362,16 +4338,14 @@
           "keyword": "VUELVE KOI | VUELVE LA LEC | KOI vs NAVI | GX vs FNC | KC vs VIT | LA MEJOR LIGA DEL MUNDO #WatchLEC",
           "keywordEn": "VUELVE KOI | VUELVE LA LEC | KOI vs NAVI | GX vs FNC | KC vs VIT | LA MEJOR LIGA DEL MUNDO #WatchLEC",
           "volume": "267K+",
-          "volumeRaw": 267044,
+          "volumeRaw": 267096,
           "category": "sports",
           "temperature": 22,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "CANAL PRINCIPAL: https://www.youtube.com/@IbaiLlanos  \nMI PODCAST: https://www.youtube.com/channel/UC6jNDNkoOKQfB5djK2IBDoA\nTWITTER: https://twitter.com/IbaiLlanos/\nINSTAGRAM: https://www.instagram.co",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "zOFrtfU-zOM",
           "channelTitle": "IbaiExtra"
         },
@@ -4425,28 +4399,12 @@
         },
         {
           "rank": 11,
-          "keyword": "obra teatro 1936",
-          "keywordEn": "obra teatro 1936",
-          "volume": "2K+",
-          "volumeRaw": 2000,
-          "category": "news",
-          "temperature": 13,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "La 2 celebra el Día Mundial del Teatro reviviendo la Guerra Civil con Guillermo Toledo"
-          ]
-        },
-        {
-          "rank": 12,
           "keyword": "deportivo cali - deportivo pereira",
           "keywordEn": "deportivo cali - deportivo pereira",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 11,
+          "temperature": 13,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -4456,19 +4414,35 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 12,
           "keyword": "portugal",
           "keywordEn": "portugal",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 14,
+          "temperature": 16,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Así luce el Estadio Banorte a horas de su reinauguración con el partido amistoso entre México y Portugal"
+          ]
+        },
+        {
+          "rank": 13,
+          "keyword": "hora colombia",
+          "keywordEn": "hora colombia",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Resumen y goles México vs Portugal: Una fiesta en el Azteca con falta de gol"
+            "Colombia vs Francia Pronóstico y Apuestas Amistoso Internacional | 29/03/26"
           ]
         },
         {
@@ -4500,7 +4474,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Maycee Barber, two others, transported to the hospital following ultra violent UFC Seattle bloodbath"
+            "Alexa Grasso vs Maycee Barber MMA Betting Odds & Lines"
           ]
         },
         {
@@ -4592,7 +4566,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -4608,7 +4582,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26909847,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 96,
           "velocity": "rising",
@@ -4624,7 +4598,7 @@
           "keyword": "Body to Body",
           "keywordEn": "Body to Body",
           "volume": "26M+",
-          "volumeRaw": 26536346,
+          "volumeRaw": 26539296,
           "category": "news",
           "temperature": 94,
           "velocity": "new",
@@ -4640,7 +4614,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 92,
           "velocity": "new",
@@ -4656,7 +4630,7 @@
           "keyword": "RAYE - 'Click Clack Symphony.' feat. Hans Zimmer (Official Video)",
           "keywordEn": "RAYE - 'Click Clack Symphony.' feat. Hans Zimmer (Official Video)",
           "volume": "4M+",
-          "volumeRaw": 4738238,
+          "volumeRaw": 4738526,
           "category": "news",
           "temperature": 53,
           "velocity": "steady",
@@ -4672,7 +4646,7 @@
           "keyword": "Searching for 100 Players Who Went Missing",
           "keywordEn": "Searching for 100 Players Who Went Missing",
           "volume": "2M+",
-          "volumeRaw": 2395686,
+          "volumeRaw": 2396008,
           "category": "news",
           "temperature": 44,
           "velocity": "steady",
@@ -4688,7 +4662,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 40,
           "velocity": "new",
@@ -4736,7 +4710,7 @@
           "keyword": "Snelle - Laat Het Licht Aan (Official Music Video)",
           "keywordEn": "Snelle - Laat Het Licht Aan (Official Music Video)",
           "volume": "31K+",
-          "volumeRaw": 31421,
+          "volumeRaw": 31423,
           "category": "music",
           "temperature": 15,
           "velocity": "new",
@@ -4776,7 +4750,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "LIVE F1: Laurent Mekies wil met Red Bull leren na tegenvallende kwalificatie Japan"
+            "Dramatische kwalificatie voor Max Verstappen in Japan, Kimi Antonelli maakt weer indruk met pole"
           ]
         },
         {
@@ -4856,7 +4830,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Max Verstappen onthult raceplannen voor april na geannuleerde races in Midden-Oosten"
+            "F1 lijkt oplossing te hebben voor conflict Midden-Oosten: 'Tóch 23 races op kalender'"
           ]
         },
         {
@@ -4918,7 +4892,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -4934,7 +4908,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26909847,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 96,
           "velocity": "rising",
@@ -4950,7 +4924,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 94,
           "velocity": "new",
@@ -4982,7 +4956,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 44,
           "velocity": "new",
@@ -5014,7 +4988,7 @@
           "keyword": "10 Sekunder vs 1 Timme MODERNT BERG HUS Build Battle mot min Crush!",
           "keywordEn": "10 Sekunder vs 1 Timme MODERNT BERG HUS Build Battle mot min Crush!",
           "volume": "70K+",
-          "volumeRaw": 70419,
+          "volumeRaw": 70420,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -5062,7 +5036,7 @@
           "keyword": "Sarettii (5148) - Gore-Tex, Vol. 2 Freestyle (Part III)",
           "keywordEn": "Sarettii (5148) - Gore-Tex, Vol. 2 Freestyle (Part III)",
           "volume": "13K+",
-          "volumeRaw": 13864,
+          "volumeRaw": 13871,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -5171,6 +5145,22 @@
         },
         {
           "rank": 17,
+          "keyword": "goldie hawn",
+          "keywordEn": "goldie hawn",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Kurt Russell Opens Up About His Real Estate Passion With Goldie Hawn. Here's Why Log Cabins Hold A Special Place In His Heart"
+          ]
+        },
+        {
+          "rank": 18,
           "keyword": "f1tv",
           "keywordEn": "f1tv",
           "volume": "100",
@@ -5183,22 +5173,6 @@
           "description": "",
           "relatedNews": [
             "F1 has a clear priority for post-Japanese GP rule changes"
-          ]
-        },
-        {
-          "rank": 18,
-          "keyword": "ufc events",
-          "keywordEn": "ufc events",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "UFC Fight Night 271: Results from the adrenaline-pumping fight night in Seattle..."
           ]
         },
         {
@@ -5225,7 +5199,7 @@
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -5244,7 +5218,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -5260,7 +5234,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26909847,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 96,
           "velocity": "rising",
@@ -5276,7 +5250,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 94,
           "velocity": "new",
@@ -5292,7 +5266,7 @@
           "keyword": "BTS 'SWIM' Dance Practice",
           "keywordEn": "BTS 'SWIM' Dance Practice",
           "volume": "4M+",
-          "volumeRaw": 4917635,
+          "volumeRaw": 4918959,
           "category": "news",
           "temperature": 56,
           "velocity": "steady",
@@ -5308,7 +5282,7 @@
           "keyword": "RAYE - 'Click Clack Symphony.' feat. Hans Zimmer (Official Video)",
           "keywordEn": "RAYE - 'Click Clack Symphony.' feat. Hans Zimmer (Official Video)",
           "volume": "4M+",
-          "volumeRaw": 4738238,
+          "volumeRaw": 4738526,
           "category": "news",
           "temperature": 53,
           "velocity": "new",
@@ -5340,17 +5314,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 53,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -5359,7 +5330,7 @@
           "keyword": "Searching for 100 Players Who Went Missing",
           "keywordEn": "Searching for 100 Players Who Went Missing",
           "volume": "2M+",
-          "volumeRaw": 2395686,
+          "volumeRaw": 2396008,
           "category": "news",
           "temperature": 40,
           "velocity": "new",
@@ -5375,7 +5346,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -5431,7 +5402,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Adrian Newey: Honda president Koji Watanabe says Aston Martin team principal's comments about inexperience were a 'misunderstanding'"
+            "George Russell says he is 'handcuffed' for Japanese GP after failed set-up change allowed Mercedes team-mate Kimi Antonelli to take pole"
           ]
         },
         {
@@ -5573,7 +5544,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -5589,7 +5560,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26909847,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 96,
           "velocity": "rising",
@@ -5605,7 +5576,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 94,
           "velocity": "new",
@@ -5621,7 +5592,7 @@
           "keyword": "BALEN - JAY MAHAKAALI (Swapnil, Chronic Beatz, Foeseal)",
           "keywordEn": "BALEN - JAY MAHAKAALI (Swapnil, Chronic Beatz, Foeseal)",
           "volume": "4M+",
-          "volumeRaw": 4845637,
+          "volumeRaw": 4846704,
           "category": "news",
           "temperature": 56,
           "velocity": "new",
@@ -5653,7 +5624,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 42,
           "velocity": "new",
@@ -5669,7 +5640,7 @@
           "keyword": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, London 27 February 2026)",
           "keywordEn": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, London 27 February 2026)",
           "volume": "316K+",
-          "volumeRaw": 316104,
+          "volumeRaw": 316930,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -5685,7 +5656,7 @@
           "keyword": "Among Us Med Danmarks Største YouTubere",
           "keywordEn": "Among Us With Denmark's Biggest YouTubers",
           "volume": "106K+",
-          "volumeRaw": 106213,
+          "volumeRaw": 106216,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -5701,17 +5672,14 @@
           "keyword": "FINALEN OM 100.000 KR",
           "keywordEn": "FINALEN OM 100.000 KR",
           "volume": "78K+",
-          "volumeRaw": 78069,
+          "volumeRaw": 78074,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Så er vi nået til FINALEN i vores store 2V2 FIFA TUNERING om 100.000 KR!! Tusind tak fordi I har set med - det betyder alt for os. Smid et LIKE og et SUB og så lover vi at der kommer endnu federe og v",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "40iNJbf5g9o",
           "channelTitle": "CREW"
         },
@@ -5749,28 +5717,12 @@
         },
         {
           "rank": 12,
-          "keyword": "vejret",
-          "keywordEn": "vejret",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 11,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Påskevejret driver gæk: Solen kæmper med skyer og byger"
-          ]
-        },
-        {
-          "rank": 13,
           "keyword": "se og hør",
           "keywordEn": "see and hear",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 9,
+          "temperature": 11,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -5780,13 +5732,13 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 13,
           "keyword": "halle berry",
           "keywordEn": "halle berry",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 7,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -5796,14 +5748,14 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 14,
           "keyword": "cecilie liv hansen alder",
           "keywordEn": "cecilie liv hansen alder",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
+          "temperature": 7,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -5812,7 +5764,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "keyword": "formel 1",
           "keywordEn": "formel 1",
           "volume": "200",
@@ -5828,7 +5780,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "f1",
           "keywordEn": "f1",
           "volume": "200",
@@ -5844,14 +5796,14 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "ufc",
           "keywordEn": "ufc",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 20,
-          "velocity": "new",
+          "velocity": "rising",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -5860,7 +5812,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "sabalenka",
           "keywordEn": "sabalenka",
           "volume": "200",
@@ -5872,11 +5824,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Sabalenka equals Swiatek in WTA 1000 titles and they only have Serena ahead of them"
+            "Tennis: Aryna Sabalenka bests home favorite Coco Gauff to claim euphoric Sunshine Double at Miami Open 2026"
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "keyword": "australien",
           "keywordEn": "australien",
           "volume": "200",
@@ -5890,6 +5842,22 @@
           "relatedNews": [
             "Rüstungsindustrie: Australien und Deutschland suchen Partner"
           ]
+        },
+        {
+          "rank": 20,
+          "keyword": "kong frederik",
+          "keywordEn": "kong frederik",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Australierne hylder Mary efter statsbesøg: To øjeblikke har vakt opsigt | Royale | Underholdning"
+          ]
         }
       ]
     },
@@ -5902,7 +5870,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "steady",
@@ -5918,7 +5886,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26909847,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 96,
           "velocity": "rising",
@@ -5934,7 +5902,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 94,
           "velocity": "new",
@@ -5950,7 +5918,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 46,
           "velocity": "new",
@@ -5966,7 +5934,7 @@
           "keyword": "TÄMÄ LELU SAA KARVAT PYSTYYN! | Poppy Playtime: Chapter 5 (KOKO PELI)",
           "keywordEn": "THIS TOY WILL MAKE YOUR HAIR STAKE UP! | Poppy Playtime: Chapter 5 (FULL GAME)",
           "volume": "132K+",
-          "volumeRaw": 132072,
+          "volumeRaw": 132079,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -5982,7 +5950,7 @@
           "keyword": "AHTI - Poitsu (Audiovideo)",
           "keywordEn": "AHTI - Poitsu (Audiovideo)",
           "volume": "36K+",
-          "volumeRaw": 36227,
+          "volumeRaw": 36230,
           "category": "news",
           "temperature": 23,
           "velocity": "rising",
@@ -6070,7 +6038,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "MTV seuraa: Huikea startti Japanissa! Oscar Piastri nappasi kärkipaikan"
+            "Kimi Antonelli oli Japanin aika-ajon nopein – Valtteri Bottas 20:s"
           ]
         },
         {
@@ -6086,7 +6054,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "F1 responds as fans accuse them of hiding ‘super-clipping’ on Antonelli’s pole lap"
+            "Japanese GP Qualifying: Kimi Antonelli beats George Russell to Suzuka pole as Max Verstappen struggles to Q2 exit"
           ]
         },
         {
@@ -6228,7 +6196,7 @@
           "keyword": "MIÜ ft. Pezet, Bedoes 2115 - fantazje (prod. Koder, Miroff)",
           "keywordEn": "MIÜ ft. Pezet, Bedoes 2115 - fantasies (produced by Koder, Miroff)",
           "volume": "3M+",
-          "volumeRaw": 3337536,
+          "volumeRaw": 3337610,
           "category": "news",
           "temperature": 49,
           "velocity": "steady",
@@ -6244,7 +6212,7 @@
           "keyword": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "keywordEn": "‘Harry Potter’: See The 1st Trailer For The New Series!",
           "volume": "826K+",
-          "volumeRaw": 826286,
+          "volumeRaw": 826378,
           "category": "movies",
           "temperature": 50,
           "velocity": "rising",
@@ -6260,7 +6228,7 @@
           "keyword": "HARRY POTTER AND THE PHILOSOPHER'S STONE Official Teaser Trailer (2026)",
           "keywordEn": "HARRY POTTER AND THE PHILOSOPHER'S STONE Official Teaser Trailer (2026)",
           "volume": "593K+",
-          "volumeRaw": 593330,
+          "volumeRaw": 593356,
           "category": "movies",
           "temperature": 31,
           "velocity": "new",
@@ -6292,7 +6260,7 @@
           "keyword": "NIE ŚPIĘ",
           "keywordEn": "I AM NOT SLEEPING",
           "volume": "379K+",
-          "volumeRaw": 379272,
+          "volumeRaw": 379327,
           "category": "news",
           "temperature": 26,
           "velocity": "rising",
@@ -6308,7 +6276,7 @@
           "keyword": "POLSKA VIXA",
           "keywordEn": "POLSKA VIXA",
           "volume": "348K+",
-          "volumeRaw": 348535,
+          "volumeRaw": 348570,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -6324,7 +6292,7 @@
           "keyword": "OTWIERAM MORZE ABY ZDOBYĆ BRAINROTY w Roblox!",
           "keywordEn": "I'M OPENING THE SEA TO GET BRAINROTS in Roblox!",
           "volume": "221K+",
-          "volumeRaw": 221770,
+          "volumeRaw": 221776,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -6340,7 +6308,7 @@
           "keyword": "Odkryłem *BRAT LILY* To \"SEKRETNA POSTAĆ\" w POPPY PLAYTIME CHAPTER 6 ( Nowy Trailer 2026! )",
           "keywordEn": "I discovered *LILY'S BROTHER* This \"SECRET CHARACTER\" in POPPY PLAYTIME CHAPTER 6 (New Trailer 2026!)",
           "volume": "212K+",
-          "volumeRaw": 212091,
+          "volumeRaw": 212095,
           "category": "movies",
           "temperature": 20,
           "velocity": "steady",
@@ -6356,7 +6324,7 @@
           "keyword": "francis, Oskar83, rów babicze - BERLIN2026",
           "keywordEn": "francis, Oskar83, rów babicze - BERLIN2026",
           "volume": "186K+",
-          "volumeRaw": 186661,
+          "volumeRaw": 186687,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -6385,44 +6353,28 @@
         },
         {
           "rank": 11,
-          "keyword": "adesanya",
-          "keywordEn": "adesanya",
+          "keyword": "ufc wyniki",
+          "keywordEn": "ufc wyniki",
           "volume": "5K+",
           "volumeRaw": 5000,
           "category": "news",
-          "temperature": 18,
+          "temperature": 13,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Israel Adesanya shuts down retirement talk: 'I’m not f---ing leaving'"
+            "Źle odczytano werdykt. Polak przez minutę zwycięzcą"
           ]
         },
         {
           "rank": 12,
-          "keyword": "ufc wyniki",
-          "keywordEn": "ufc wyniki",
-          "volume": "2K+",
-          "volumeRaw": 2000,
-          "category": "news",
-          "temperature": 11,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Adesanya znokautowany! Koszmarna seria byłego mistrza UFC (WIDEO)"
-          ]
-        },
-        {
-          "rank": 13,
           "keyword": "f1 tv",
           "keywordEn": "f1 tv",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 24,
+          "temperature": 26,
           "velocity": "rising",
           "isGlobal": true,
           "source": "google_trends",
@@ -6432,19 +6384,35 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 13,
           "keyword": "biedronka",
           "keywordEn": "biedronka",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 7,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Biedronka pilnie poinformowała wszystkich klientów. To stanie się 29 marca"
+          ]
+        },
+        {
+          "rank": 14,
+          "keyword": "adesanya",
+          "keywordEn": "adesanya",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 12,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Israel Adesanya shuts down retirement talk: 'I’m not f---ing leaving'"
           ]
         },
         {
@@ -6471,7 +6439,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -6497,13 +6465,29 @@
         },
         {
           "rank": 18,
+          "keyword": "lipnica murowana",
+          "keywordEn": "lipnica murowana",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Niedziela Palmowa w Małopolsce: konkursy, procesje i wielkanocne zwyczaje"
+          ]
+        },
+        {
+          "rank": 19,
           "keyword": "michael chiesa",
           "keywordEn": "michael chiesa",
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
           "temperature": 20,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -6512,7 +6496,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "keyword": "portugalia",
           "keywordEn": "portugalia",
           "volume": "100",
@@ -6526,22 +6510,6 @@
           "relatedNews": [
             "Meksyk – Portugalia: typy i kursy. Mecz towarzyski pełen goli?"
           ]
-        },
-        {
-          "rank": 20,
-          "keyword": "tt",
-          "keywordEn": "tt",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Betrunkener Pilot verunglückt ein Kleinflugzeug"
-          ]
         }
       ]
     },
@@ -6554,7 +6522,7 @@
           "keyword": "Ömrüm",
           "keywordEn": "My life",
           "volume": "3M+",
-          "volumeRaw": 3028962,
+          "volumeRaw": 3029246,
           "category": "news",
           "temperature": 48,
           "velocity": "steady",
@@ -6586,7 +6554,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 48,
           "velocity": "new",
@@ -6602,16 +6570,14 @@
           "keyword": "Ta Ki Seni Görene Kadar",
           "keywordEn": "Until I See You",
           "volume": "831K+",
-          "volumeRaw": 831031,
+          "volumeRaw": 831191,
           "category": "news",
           "temperature": 31,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Provided to YouTube by DistroKid\n\nTa Ki Seni Görene Kadar · Anadolu Rock Cover · Anadolu Rock Cover · Anadolu Rock Cover\n\nTa Ki Seni Görene Kadar\n\n℗ Anadolu Rock Cover\n\nReleased on: 2026-03-23\n\nAuto-g",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "i5nlVzm7cgk",
           "channelTitle": "Anadolu Rock Cover - Topic"
         },
@@ -6620,7 +6586,7 @@
           "keyword": "4 KARDEŞİN SANAYİ MACERASI | BÖLÜM 1",
           "keywordEn": "INDUSTRIAL ADVENTURE OF 4 BROTHERS | CHAPTER 1",
           "volume": "794K+",
-          "volumeRaw": 794600,
+          "volumeRaw": 794809,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -6636,7 +6602,7 @@
           "keyword": "NEDEN Korkunç Oldum? - Minecraft",
           "keywordEn": "WHY Am I Terrible? -Minecraft",
           "volume": "650K+",
-          "volumeRaw": 650469,
+          "volumeRaw": 650507,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -6652,16 +6618,14 @@
           "keyword": "Ahiyan - Rüya Gibiydin (Official Video)",
           "keywordEn": "Ahiyan - You Were Like a Dream (Official Video)",
           "volume": "465K+",
-          "volumeRaw": 465319,
+          "volumeRaw": 465414,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Ahiyan 'ın Rüya Gibiydin isimli parçası video klibiyle birlikte Ahiyan resmi YouTube kanalında ve tüm dijital platformlarda yayında!\n\nAhiyan 'ın Rüya Gibiydin parçasını şimdi dinle: \nSpotify'da dinlem",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "sNZW_GxwSu0",
           "channelTitle": "Ahiyan"
         },
@@ -6670,7 +6634,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -6693,9 +6657,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Provided to YouTube by DistroKid\n\nTa Ki Seni Görene Kadar (LapMusica) · KAVEANA · Sıla Martin · Mert\n\nTa Ki Seni Görene Kadar (LapMusica)\n\n℗ Narcos Studio\n\nReleased on: 2026-03-27\n\nAuto-generated by Y",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "7T79pODpq74",
           "channelTitle": "KAVEANA - Topic"
         },
@@ -6704,7 +6666,7 @@
           "keyword": "HARRY POTTER DİZİSİ FRAGMANDAKİ TÜM DETAYLAR! ⚡️",
           "keywordEn": "ALL DETAILS IN THE HARRY POTTER SERIES TRAILER! ⚡️",
           "volume": "120K+",
-          "volumeRaw": 120479,
+          "volumeRaw": 120494,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -6728,7 +6690,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "F1 Japonya GP: İlk iki antrenmanda Russell ve Piastri zirvede"
+            "Formula 1 hangi kanalda? 2026 F1 Japonya GP yarışı ne zaman?"
           ]
         },
         {
@@ -6738,7 +6700,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "sports",
-          "temperature": 16,
+          "temperature": 11,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -6774,7 +6736,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "28 Mart 2026 Tunceli'de Hava Durumu"
+            "Hava Sıcaklıkları Mevsim Normalleri Civarında Seyredecek"
           ]
         },
         {
@@ -6894,7 +6856,7 @@
           "keyword": "สุ่มกาชา อุจิวะ อิทาจิ | MLBB",
           "keywordEn": "Random gacha Uchiha Itachi | MLBB",
           "volume": "436K+",
-          "volumeRaw": 436685,
+          "volumeRaw": 436924,
           "category": "news",
           "temperature": 33,
           "velocity": "rising",
@@ -6910,7 +6872,7 @@
           "keyword": "YOUNGOHM - Royal Flush (Official Visualizer)",
           "keywordEn": "YOUNGOHM - Royal Flush (Official Visualizer)",
           "volume": "316K+",
-          "volumeRaw": 316746,
+          "volumeRaw": 316816,
           "category": "news",
           "temperature": 30,
           "velocity": "new",
@@ -6926,7 +6888,7 @@
           "keyword": "SEA. - ครั้งหนึ่ง Feat. Z9 [Official MV]",
           "keywordEn": "SEA. - Once Feat. Z9 [Official MV]",
           "volume": "161K+",
-          "volumeRaw": 161416,
+          "volumeRaw": 161648,
           "category": "music",
           "temperature": 27,
           "velocity": "new",
@@ -6941,8 +6903,8 @@
           "rank": 5,
           "keyword": "เต้ยสั่งลา - ธีร์ ทีเร็กซ์【OFFICIAL MV】",
           "keywordEn": "Toey Says Goodbye - Tee T-Rex【OFFICIAL MV】",
-          "volume": "155K+",
-          "volumeRaw": 155977,
+          "volume": "156K+",
+          "volumeRaw": 156244,
           "category": "music",
           "temperature": 25,
           "velocity": "rising",
@@ -6958,7 +6920,7 @@
           "keyword": "คนแปลกหน้า..แอบเข้าบ้าน 🏡 Brookhaven RP",
           "keywordEn": "Stranger..sneaks into the house 🏡 Brookhaven RP",
           "volume": "146K+",
-          "volumeRaw": 146145,
+          "volumeRaw": 146353,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -6973,8 +6935,8 @@
           "rank": 7,
           "keyword": "ผมใช้ชีวิต 100 วันในชนบทญี่ปุ่น | Japanese Rural Life Adventure",
           "keywordEn": "I spent 100 days in the Japanese countryside | Japanese Rural Life Adventure",
-          "volume": "141K+",
-          "volumeRaw": 141962,
+          "volume": "142K+",
+          "volumeRaw": 142299,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -6990,7 +6952,7 @@
           "keyword": "ชำแหละตัวอย่าง! เกิดอะไรขึ้นบ้างใน Harry Potter and the Philosopher's Stone | บ่นหนัง",
           "keywordEn": "Dissect the specimen! What happened in Harry Potter and the Philosopher's Stone | Movie Complaints",
           "volume": "46K+",
-          "volumeRaw": 46024,
+          "volumeRaw": 46125,
           "category": "movies",
           "temperature": 19,
           "velocity": "new",
@@ -7022,7 +6984,7 @@
           "keyword": "คำสารภาพของหมอผี - Official Teaser",
           "keywordEn": "Confessions of a Witch Doctor - Official Teaser",
           "volume": "22K+",
-          "volumeRaw": 22722,
+          "volumeRaw": 22765,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -7126,7 +7088,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Emiliano Martínez comments on Argentina’s 2-1 win against Mauritania"
+            "Dibu Martínez's blunt words after Argentina's poor display"
           ]
         },
         {
@@ -7156,7 +7118,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "สมุทรสาคร///เจ้าของสวนมะพร้าวน้ำหอมบ้านแพ้ว จ.สมุทรสาคร “แจกมะพร้าวน้ำหอมแลกกับรอยยิ้ม”"
+            "ทำไม \"มะพร้าวไทย\" ยิ่งขาย ยิ่งขาดทุน? ทางออกล่าสุดรัฐบาลไทย"
           ]
         },
         {
@@ -7202,7 +7164,7 @@
           "keyword": "🔴 LIVE | MPL ID S17 | Regular Season Hari 2 Minggu 1 | Bahasa Indonesia",
           "keywordEn": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | Indonesian",
           "volume": "6M+",
-          "volumeRaw": 6750055,
+          "volumeRaw": 6750769,
           "category": "news",
           "temperature": 76,
           "velocity": "rising",
@@ -7234,7 +7196,7 @@
           "keyword": "[ID] 2026 PMPL ID Spring Finals | Day 2",
           "keywordEn": "[ID] 2026 PMPL ID Spring Finals | Day 2",
           "volume": "1M+",
-          "volumeRaw": 1195596,
+          "volumeRaw": 1195711,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -7250,7 +7212,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -7266,7 +7228,7 @@
           "keyword": "MPL S17 AE VS ONIC - BERTEMU KEMBALI DENGAN KAWAN LAMA YANG SUDAH REVAMP",
           "keywordEn": "MPL S17 AE VS ONIC - BERTEMU KEMBALI DENGAN KAWAN LAMA YANG SUDAH REVAMP",
           "volume": "576K+",
-          "volumeRaw": 576753,
+          "volumeRaw": 576818,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -7282,7 +7244,7 @@
           "keyword": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd STAGE | Official Teaser | Netflix",
           "volume": "434K+",
-          "volumeRaw": 434226,
+          "volumeRaw": 434454,
           "category": "movies",
           "temperature": 40,
           "velocity": "new",
@@ -7297,8 +7259,8 @@
           "rank": 7,
           "keyword": "Risk It All - Bruno Mars (Lyrics)",
           "keywordEn": "Risk It All - Bruno Mars (Lyrics)",
-          "volume": "97K+",
-          "volumeRaw": 97972,
+          "volume": "98K+",
+          "volumeRaw": 98062,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -7330,7 +7292,7 @@
           "keyword": "TOTON CARIBO - FITRI (OFFICIAL MUSIC VIDEO )",
           "keywordEn": "TOTON CARIBO - FITRI (OFFICIAL MUSIC VIDEO )",
           "volume": "52K+",
-          "volumeRaw": 52307,
+          "volumeRaw": 52444,
           "category": "music",
           "temperature": 17,
           "velocity": "new",
@@ -7346,7 +7308,7 @@
           "keyword": "MENCINTAI IPAR SENDIRI TRAILER: RAFKA BERHASIL HABISI RAFKI? HENDAR BALASKAN DENDAMNYA KE SHILLA",
           "keywordEn": "MENCINTAI IPAR SENDIRI TRAILER: RAFKA BERHASIL HABISI RAFKI? HENDAR BALASKAN DENDAMNYA KE SHILLA",
           "volume": "24K+",
-          "volumeRaw": 24192,
+          "volumeRaw": 24209,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -7402,7 +7364,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Lengkap! Ini Daftar Hari Besar Nasional dan Internasional April 2026"
+            "3 April Libur Apa? Hari Penting yang Berpotensi Libur Panjang"
           ]
         },
         {
@@ -7482,7 +7444,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "WorldSBK Portugal 2026: Hasil Latihan Jumat dari Sirkuit Portimao"
+            "Klasemen Pembalap WorldSBK 2026"
           ]
         },
         {
@@ -7498,7 +7460,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "John Cena Ungkap Peran Baru Terintegrasi di WWE Pasca Pensiun"
+            "John Cena Ungkap Peran Baru dalam WWE Pasca Pensiun Bertanding"
           ]
         },
         {
@@ -7528,7 +7490,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -7544,7 +7506,7 @@
           "keyword": "Body to Body",
           "keywordEn": "Body to Body",
           "volume": "26M+",
-          "volumeRaw": 26536346,
+          "volumeRaw": 26539296,
           "category": "news",
           "temperature": 96,
           "velocity": "steady",
@@ -7560,7 +7522,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 94,
           "velocity": "rising",
@@ -7576,16 +7538,14 @@
           "keyword": "Fight with you! A Bond Reunited | MLBB × NARUTO | Mobile Legends: Bang Bang",
           "keywordEn": "Fight with you! A Bond Reunited | MLBB × NARUTO | Mobile Legends: Bang Bang",
           "volume": "6M+",
-          "volumeRaw": 6888855,
+          "volumeRaw": 6891617,
           "category": "news",
           "temperature": 61,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "\"Am I late?\"\n\"No, you're just in time!\"\nFather and son united, fists joined, overcoming strong enemies together.\n\"This time, I will fight by your side until the very end!\"\n#MLBBxNARUTO\n#MobileLegendsB",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "dNGem1fY-W4",
           "channelTitle": "Mobile Legends: Bang Bang"
         },
@@ -7594,7 +7554,7 @@
           "keyword": "🔴 LIVE | MPL ID S17 | Regular Season Hari 2 Minggu 1 | Bahasa Indonesia",
           "keywordEn": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | Indonesian",
           "volume": "6M+",
-          "volumeRaw": 6750055,
+          "volumeRaw": 6750769,
           "category": "news",
           "temperature": 68,
           "velocity": "rising",
@@ -7626,7 +7586,7 @@
           "keyword": "Veja Chokh | Eid Special Drama | M M Kamal Raz | Khairul Basar | Tanjim Saiara Totini | New Drama",
           "keywordEn": "Veja Chokh | Eid Special Drama | M M Kamal Raz | Khairul Basar | Tanjim Saiara Totini | New Drama",
           "volume": "2M+",
-          "volumeRaw": 2098050,
+          "volumeRaw": 2099167,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
@@ -7642,7 +7602,7 @@
           "keyword": "那天下雨了",
           "keywordEn": "It rained that day",
           "volume": "1M+",
-          "volumeRaw": 1571913,
+          "volumeRaw": 1572535,
           "category": "news",
           "temperature": 36,
           "velocity": "new",
@@ -7674,7 +7634,7 @@
           "keyword": "*SERAM!* KISAH KELUARGA ANGKAT! ||🔴 Abandoned Stories: Inherited Silence  #HorrorLivestream",
           "keywordEn": "*SPREAK!* AN ADOPTED FAMILY STORY! ||🔴 Abandoned Stories: Inherited Silence #HorrorLivestream",
           "volume": "102K+",
-          "volumeRaw": 102637,
+          "volumeRaw": 102670,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -7703,34 +7663,34 @@
         },
         {
           "rank": 12,
-          "keyword": "f1 japan",
-          "keywordEn": "f1 japan",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 21,
-          "velocity": "steady",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "George Russell says he is 'handcuffed' for Japanese GP after failed set-up change allowed Mercedes team-mate Kimi Antonelli to take pole"
-          ]
-        },
-        {
-          "rank": 13,
           "keyword": "f1 schedule",
           "keywordEn": "f1 schedule",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 14,
+          "temperature": 16,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "What are the strategy options for the Japanese Grand Prix?"
+          ]
+        },
+        {
+          "rank": 13,
+          "keyword": "gta 6",
+          "keywordEn": "gta 6",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 9,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Sony to hike PlayStation 5 prices again as memory chip costs surge"
           ]
         },
         {
@@ -7789,7 +7749,7 @@
           "volumeRaw": 200,
           "category": "sports",
           "temperature": 15,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -7826,7 +7786,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Happy Raj OTT Release: Streaming Options for GV Prakash and Abbas Film Following Its Theatrical Debut"
+            "Kumar's 'Happy Raj' reportedly coming to Amazon Prime Video"
           ]
         },
         {
@@ -7842,7 +7802,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Diamondbacks 2, Billionaire Boys Club 3: The First Broom"
+            "\"That's Not D-backs Baseball\" | Torey Lovullo on baserunning errors & bullpen issues"
           ]
         }
       ]
@@ -7856,7 +7816,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -7872,7 +7832,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26910279,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 96,
           "velocity": "new",
@@ -7888,7 +7848,7 @@
           "keyword": "Body to Body",
           "keywordEn": "Body to Body",
           "volume": "26M+",
-          "volumeRaw": 26536346,
+          "volumeRaw": 26539296,
           "category": "news",
           "temperature": 94,
           "velocity": "new",
@@ -7904,7 +7864,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 92,
           "velocity": "rising",
@@ -7936,7 +7896,7 @@
           "keyword": "🔴 LIVE | MPL ID S17 | Regular Season Hari 2 Minggu 1 | Bahasa Indonesia",
           "keywordEn": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | Indonesian",
           "volume": "6M+",
-          "volumeRaw": 6750055,
+          "volumeRaw": 6750769,
           "category": "news",
           "temperature": 66,
           "velocity": "rising",
@@ -7952,7 +7912,7 @@
           "keyword": "Searching for 100 Players Who Went Missing",
           "keywordEn": "Searching for 100 Players Who Went Missing",
           "volume": "2M+",
-          "volumeRaw": 2395686,
+          "volumeRaw": 2396008,
           "category": "news",
           "temperature": 42,
           "velocity": "new",
@@ -7968,7 +7928,7 @@
           "keyword": "SB19 X JOLIN 'Emoji' Music Video",
           "keywordEn": "SB19 X JOLIN 'Emoji' Music Video",
           "volume": "1M+",
-          "volumeRaw": 1035014,
+          "volumeRaw": 1035517,
           "category": "music",
           "temperature": 34,
           "velocity": "steady",
@@ -7984,7 +7944,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -8000,7 +7960,7 @@
           "keyword": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | English",
           "keywordEn": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | English",
           "volume": "550K+",
-          "volumeRaw": 550068,
+          "volumeRaw": 550222,
           "category": "news",
           "temperature": 22,
           "velocity": "steady",
@@ -8015,8 +7975,8 @@
           "rank": 11,
           "keyword": "f1",
           "keywordEn": "f1",
-          "volume": "1K+",
-          "volumeRaw": 1000,
+          "volume": "2K+",
+          "volumeRaw": 2000,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -8050,9 +8010,9 @@
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 19,
+          "temperature": 14,
           "velocity": "new",
-          "isGlobal": true,
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -8077,6 +8037,22 @@
         },
         {
           "rank": 15,
+          "keyword": "mexico vs portugal",
+          "keywordEn": "mexico vs portugal",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Portugal player ratings vs. Mexico: No Ronaldo, no fun as Selecao settle for frustrating draw with star man injured"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "rsaf repatriation flight projectile",
           "keywordEn": "rsaf repatriation flight projectile",
           "volume": "500",
@@ -8092,35 +8068,19 @@
           ]
         },
         {
-          "rank": 16,
-          "keyword": "mexico vs portugal",
-          "keywordEn": "mexico vs portugal",
+          "rank": 17,
+          "keyword": "sony ps5 prices",
+          "keywordEn": "sony ps5 prices",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Israeli forces intensify attacks on Beirut"
-          ]
-        },
-        {
-          "rank": 17,
-          "keyword": "portugal fc",
-          "keywordEn": "portugal fc",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 10,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Mexico vs. Portugal—International Friendly: Preview, Predictions and Lineups"
+            "PS6 and Xbox Project Helix \"will start at a 50% higher price\" than PS5 and Xbox Series X, predict analysts following Sony price hike – and $999 \"is not impossible\""
           ]
         },
         {
@@ -8136,7 +8096,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "ياسين يفتح أبواب “الأسود” لزميل دياز في الريال"
+            "تياغو يعتذر للجامعة ويقرر رسميا اختيار المنتخب الإسباني"
           ]
         },
         {
@@ -8147,7 +8107,7 @@
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -8182,7 +8142,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "rising",
@@ -8198,7 +8158,7 @@
           "keyword": "Body to Body",
           "keywordEn": "Body to Body",
           "volume": "26M+",
-          "volumeRaw": 26536346,
+          "volumeRaw": 26539296,
           "category": "news",
           "temperature": 96,
           "velocity": "new",
@@ -8214,7 +8174,7 @@
           "keyword": "HIEUTHUHAI - Người Im Lặng Gặp Người Hay Nói (prod. by Kewtiie) l Official Music Video",
           "keywordEn": "HIEUTHUHAI - The Silent Man Meets the Talkative Man (prod. by Kewtiie) l Official Music Video",
           "volume": "10M+",
-          "volumeRaw": 10133810,
+          "volumeRaw": 10134853,
           "category": "music",
           "temperature": 79,
           "velocity": "new",
@@ -8230,7 +8190,7 @@
           "keyword": "Tô Gà Phát Hiện Camera Siêu Dài Theo Dõi Làng Sinh Tố",
           "keywordEn": "Chicken Bowl Detects Super Long Camera to Monitor Smoothie Village",
           "volume": "1M+",
-          "volumeRaw": 1070443,
+          "volumeRaw": 1070856,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -8246,7 +8206,7 @@
           "keyword": "Hiha Bị RORY RED CAPE Ép Yêu LILY LOVE RAIDS trong Minecraft 😱🤯",
           "keywordEn": "Hiha Forced by RORY RED CAPE to Love LILY LOVE RAIDS in Minecraft 😱🤯",
           "volume": "777K+",
-          "volumeRaw": 777333,
+          "volumeRaw": 777882,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -8261,8 +8221,8 @@
           "rank": 6,
           "keyword": "BI HUỲNH HÀNH TRÌNH TỪ CỐT VƯƠNG TRỞ THÀNH NGƯỜI MẬP NHẤT THẾ GIỚI ROBLOX",
           "keywordEn": "BI HUYYY'S JOURNEY FROM COW KING TO BECOMING THE FATEST MAN IN THE WORLD OF ROBLOX",
-          "volume": "755K+",
-          "volumeRaw": 755913,
+          "volume": "756K+",
+          "volumeRaw": 756393,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -8294,7 +8254,7 @@
           "keyword": "Dạo Bước HongKong 1999",
           "keywordEn": "Strolling Hong Kong 1999",
           "volume": "358K+",
-          "volumeRaw": 358125,
+          "volumeRaw": 358405,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -8310,7 +8270,7 @@
           "keyword": "GIÓ VỀ MIỀN XUÔI - BOLERO CÔNG TUẤN ➤ LK Nhạc Lính Xưa Bất Hủ 1975 CỰC ÊM TAI DỄ NGỦ",
           "keywordEn": "THE WIND OF THE DOWNSIDE - BOLERO CONG TUAN ➤ LK Immortal Soldier's Music 1975 EXTREMELY QUIET, EASY TO SLEEP",
           "volume": "290K+",
-          "volumeRaw": 290431,
+          "volumeRaw": 290490,
           "category": "music",
           "temperature": 18,
           "velocity": "steady",
@@ -8326,7 +8286,7 @@
           "keyword": "SPIDER-MAN: BRAND NEW DAY: 28 CHI TIẾT ẨN trong TRAILER ĐẦU TIÊN",
           "keywordEn": "SPIDER-MAN: BRAND NEW DAY: 28 HIDDEN DETAILS IN THE FIRST TRAILER",
           "volume": "184K+",
-          "volumeRaw": 184574,
+          "volumeRaw": 184641,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -8344,7 +8304,7 @@
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 18,
+          "temperature": 13,
           "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
@@ -8366,7 +8326,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Pedro Proença: \"Somos candidatos ao Mundial, há que assumi-lo sem medos\""
+            "AO VIVO: Gonçalo Ramos atira ao poste (26')"
           ]
         },
         {
@@ -8508,7 +8468,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "steady",
@@ -8540,7 +8500,7 @@
           "keyword": "Katy Perry - The One That Got Away (Sub. Español + Lyrics)",
           "keywordEn": "Katy Perry - The One That Got Away (Sub. Español + Lyrics)",
           "volume": "1M+",
-          "volumeRaw": 1698633,
+          "volumeRaw": 1699774,
           "category": "news",
           "temperature": 37,
           "velocity": "new",
@@ -8572,7 +8532,7 @@
           "keyword": "SB19 X JOLIN 'Emoji' Music Video",
           "keywordEn": "SB19 X JOLIN 'Emoji' Music Video",
           "volume": "1M+",
-          "volumeRaw": 1035014,
+          "volumeRaw": 1035517,
           "category": "music",
           "temperature": 40,
           "velocity": "rising",
@@ -8588,7 +8548,7 @@
           "keyword": "🔴 LIVE | MPL PH S17 | FILIPINO - Week 2 Day 2",
           "keywordEn": "🔴 LIVE | MPL PH S17 | FILIPINO - Week 2 Day 2",
           "volume": "1M+",
-          "volumeRaw": 1016310,
+          "volumeRaw": 1016423,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -8604,7 +8564,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 40,
           "velocity": "new",
@@ -8620,7 +8580,7 @@
           "keyword": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | English",
           "keywordEn": "🔴 LIVE | MPL ID S17 | Regular Season Day 2 Week 1 | English",
           "volume": "550K+",
-          "volumeRaw": 550068,
+          "volumeRaw": 550222,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -8636,7 +8596,7 @@
           "keyword": "NOOB VS PRO: Lily LoveBraids Build Battle in Minecraft (Tagalog)",
           "keywordEn": "NOOB VS PRO: Lily LoveBraids Build Battle in Minecraft (Tagalog)",
           "volume": "539K+",
-          "volumeRaw": 539145,
+          "volumeRaw": 539295,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -8651,8 +8611,8 @@
           "rank": 10,
           "keyword": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends March 28th",
           "keywordEn": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends March 28th",
-          "volume": "477K+",
-          "volumeRaw": 477605,
+          "volume": "478K+",
+          "volumeRaw": 478166,
           "category": "music",
           "temperature": 17,
           "velocity": "new",
@@ -8681,24 +8641,24 @@
         },
         {
           "rank": 12,
-          "keyword": "japanese gp",
-          "keywordEn": "japanese gp",
+          "keyword": "f1 live",
+          "keywordEn": "f1 live",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 11,
-          "velocity": "new",
-          "isGlobal": false,
+          "temperature": 26,
+          "velocity": "rising",
+          "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "F1: Kimi Antonelli takes pole for Japanese Grand Prix in Mercedes 1-2"
+            "What are the strategy options for the Japanese Grand Prix?"
           ]
         },
         {
           "rank": 13,
-          "keyword": "philippine airlines flight cuts",
-          "keywordEn": "philippine airlines flight cuts",
+          "keyword": "japanese gp",
+          "keywordEn": "japanese gp",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
@@ -8708,39 +8668,39 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "PAL cancels several flights from Cebu amid rising fuel prices"
+            "F1: Kimi Antonelli takes pole for Japanese Grand Prix in Mercedes 1-2"
           ]
         },
         {
           "rank": 14,
+          "keyword": "philippine airlines flight cuts",
+          "keywordEn": "philippine airlines flight cuts",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 7,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "PAL cancels several flights from Cebu amid rising fuel prices"
+          ]
+        },
+        {
+          "rank": 15,
           "keyword": "maycee barber",
           "keywordEn": "maycee barber",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 12,
+          "temperature": 10,
           "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Alexa Grasso Octagon Interview | UFC Seattle"
-          ]
-        },
-        {
-          "rank": 15,
-          "keyword": "f1 live",
-          "keywordEn": "f1 live",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 20,
-          "velocity": "rising",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "What are the strategy options for the Japanese Grand Prix?"
           ]
         },
         {
@@ -8788,7 +8748,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "NBL’s breakout season fuels top-tier sport ambitions"
+            "NBL Finals Game 2: Sydney Kings vs. Adelaide 36ers"
           ]
         },
         {
@@ -8850,7 +8810,7 @@
           "keyword": "BTS 'SWIM' Dance Practice",
           "keywordEn": "BTS 'SWIM' Dance Practice",
           "volume": "4M+",
-          "volumeRaw": 4917635,
+          "volumeRaw": 4918959,
           "category": "news",
           "temperature": 60,
           "velocity": "steady",
@@ -8866,7 +8826,7 @@
           "keyword": "那天下雨了",
           "keywordEn": "It rained that day",
           "volume": "1M+",
-          "volumeRaw": 1571913,
+          "volumeRaw": 1572535,
           "category": "news",
           "temperature": 46,
           "velocity": "rising",
@@ -8882,7 +8842,7 @@
           "keyword": "SB19 X JOLIN 'Emoji' Music Video",
           "keywordEn": "SB19 X JOLIN 'Emoji' Music Video",
           "volume": "1M+",
-          "volumeRaw": 1035014,
+          "volumeRaw": 1035517,
           "category": "music",
           "temperature": 42,
           "velocity": "new",
@@ -8897,8 +8857,8 @@
           "rank": 5,
           "keyword": "【橡樹街末日】前導預告，今年8月大銀幕鉅獻",
           "keywordEn": "[The Last Day on Oak Street] preview trailer, big screen debut in August this year",
-          "volume": "736K+",
-          "volumeRaw": 736128,
+          "volume": "737K+",
+          "volumeRaw": 737065,
           "category": "movies",
           "temperature": 28,
           "velocity": "new",
@@ -8913,8 +8873,8 @@
           "rank": 6,
           "keyword": "GCS 2026 春季例行賽W5D2－2026/03/28《Garena 傳說對決》",
           "keywordEn": "GCS 2026 Spring Regular Season W5D2-2026/03/28 \"Garena Legend Showdown\"",
-          "volume": "275K+",
-          "volumeRaw": 275968,
+          "volume": "276K+",
+          "volumeRaw": 276018,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -8930,7 +8890,7 @@
           "keyword": "超越電影的神還原? 看懂新版《哈利波特》預告所有原著彩蛋對照 | 超粒方 | Harry Potter and the Philosopher's Stone",
           "keywordEn": "A divine restoration beyond the movies? Understand the comparison of all the original easter eggs in the trailer of the new version of \"Harry Potter\" | Super Granular | Harry Potter and the Philosopher's Stone",
           "volume": "187K+",
-          "volumeRaw": 187748,
+          "volumeRaw": 187848,
           "category": "movies",
           "temperature": 26,
           "velocity": "rising",
@@ -8946,7 +8906,7 @@
           "keyword": "【Sailor Piece】只用刀從0到13000等！一口氣解完所有的刀劍！ 【水手寶石】【機械方塊】",
           "keywordEn": "【Sailor Piece】From 0 to 13000 and more using just a knife! Undo all the swords in one go! 【Sailor Gem】【Mechanical Cube】",
           "volume": "169K+",
-          "volumeRaw": 169331,
+          "volumeRaw": 169417,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -8962,16 +8922,14 @@
           "keyword": "你可以只用岩石系全破《寶可夢 盾》嗎?",
           "keywordEn": "Can you defeat Pokémon Shield using only the Rock type?",
           "volume": "79K+",
-          "volumeRaw": 79047,
+          "volumeRaw": 79262,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "攻略Credits📖：本影片有參考國外@antlerboylive大大的攻略以及排版喔!\n皮卡嚕💖IG➔ https://www.instagram.com/pikalu_game/\n嚕軍團💛DC➔ https://discord.gg/qgt5d9mjBx\nFB粉專💙➔ https://www.facebook.com/PikaLuGame/\nTwitter➔ https://twitter.c",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "9iWCQc6CcLg",
           "channelTitle": "遊戲皮卡嚕 PikaLu"
         },
@@ -8980,18 +8938,14 @@
           "keyword": "《沙丘3》萬字預告解析！最愛的人可能傷害最深！#沙丘3",
           "keywordEn": "\"Dune 3\" 10,000-word trailer analysis! The person you love the most may be hurt the most! #DUNE3",
           "volume": "69K+",
-          "volumeRaw": 69086,
+          "volumeRaw": 69097,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "#沙丘3",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "tTUhjPBu4Pg",
           "channelTitle": "大聪看电影"
         },
@@ -9068,7 +9022,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "走斑馬線遭公車輾壓 桃男大生「股溝腹部被壓出大開口」重傷送ICU"
+            "桃園大學生遭輾重傷三重客運：負完全賠償責任| 社會"
           ]
         },
         {
@@ -9158,7 +9112,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "new",
@@ -9174,7 +9128,7 @@
           "keyword": "Body to Body",
           "keywordEn": "Body to Body",
           "volume": "26M+",
-          "volumeRaw": 26536346,
+          "volumeRaw": 26539296,
           "category": "news",
           "temperature": 96,
           "velocity": "steady",
@@ -9190,7 +9144,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 94,
           "velocity": "new",
@@ -9206,7 +9160,7 @@
           "keyword": "那天下雨了",
           "keywordEn": "It rained that day",
           "volume": "1M+",
-          "volumeRaw": 1571913,
+          "volumeRaw": 1572535,
           "category": "news",
           "temperature": 44,
           "velocity": "rising",
@@ -9222,7 +9176,7 @@
           "keyword": "[中文] G2 vs BLG | Finals | 2026 First Stand",
           "keywordEn": "[Chinese] G2 vs BLG | Finals | 2026 First Stand",
           "volume": "524K+",
-          "volumeRaw": 524431,
+          "volumeRaw": 524432,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -9254,16 +9208,14 @@
           "keyword": "ROBLOX 畫出一個雪撬，滑到山下！但！中間超多障礙.. 你可以畫出最強雪撬到終點?!【Draw A Sleigh & Slide Downhill - 有感筆電】",
           "keywordEn": "ROBLOX draws a sled and slides down the mountain! but! There are so many obstacles in the middle.. Can you draw the strongest sleigh to the end?! [Draw A Sleigh & Slide Downhill - Sensory Notebook]",
           "volume": "277K+",
-          "volumeRaw": 277541,
+          "volumeRaw": 277654,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "訂閱有感筆電【我會非常感謝你😆】 ➔ https://www.youtube.com/user/odavido12345?sub_confirmation=1\n有感筆電的ＩＧ【持續更新】 ➔ https://www.instagram.com/daptoper/\n有感筆電的ＦＢ臉書【持續更新】 ➔ https://www.facebook.com/daptoper/\n有感筆電的Ｔｈｒｅａｄｓ脆【持",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "iA7ESoJXfaQ",
           "channelTitle": "有感筆電 Daptoper"
         },
@@ -9272,7 +9224,7 @@
           "keyword": "超越電影的神還原? 看懂新版《哈利波特》預告所有原著彩蛋對照 | 超粒方 | Harry Potter and the Philosopher's Stone",
           "keywordEn": "A divine restoration beyond the movies? Understand the comparison of all the original easter eggs in the trailer of the new version of \"Harry Potter\" | Super Granular | Harry Potter and the Philosopher's Stone",
           "volume": "187K+",
-          "volumeRaw": 187748,
+          "volumeRaw": 187848,
           "category": "movies",
           "temperature": 24,
           "velocity": "new",
@@ -9288,7 +9240,7 @@
           "keyword": "《蜘蛛俠4》預告解析 | 驚喜&信息量極多！浩克被變種人精神控製？夜魔俠＆制裁者參戰！| 蜘蛛俠英雄重生 蜘蛛人重生日 蜘蛛俠嶄新之日 Spider-Man Brand New Day",
           "keywordEn": "\"Spider-Man 4\" trailer analysis | Surprises and a lot of information! Hulk is mind controlled by mutants? Daredevil & Punisher join the battle! | Spider-Man Hero Reborn Spider-Man Brand New Day Spider-Man Brand New Day",
           "volume": "146K+",
-          "volumeRaw": 146707,
+          "volumeRaw": 146721,
           "category": "movies",
           "temperature": 17,
           "velocity": "rising",
@@ -9304,7 +9256,7 @@
           "keyword": "[JFFLIVE打機精華]  肥貓比叔紅棍爭霸戰 ｜地盤戰 Sun Beyond 勁廢？ | 肥貓首次策劃大茶飯 ｜監獄音樂播台 | GTA RP 肥貓精華 EP5",
           "keywordEn": "[JFFLIVE Fighting Essence] Fat Cat Bi Shu Red Stick Battle | Turf War Is Sun Beyond a waste? | Sha Mao plans a big dinner for the first time | Prison music broadcast station | GTA RP Fat Mao Essence EP5",
           "volume": "36K+",
-          "volumeRaw": 36589,
+          "volumeRaw": 36612,
           "category": "music",
           "temperature": 15,
           "velocity": "rising",
@@ -9402,9 +9354,9 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 15,
+          "temperature": 10,
           "velocity": "rising",
-          "isGlobal": true,
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -9486,7 +9438,7 @@
           "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘SWIM’ Official MV",
           "volume": "76M+",
-          "volumeRaw": 76122351,
+          "volumeRaw": 76127345,
           "category": "music",
           "temperature": 98,
           "velocity": "new",
@@ -9502,7 +9454,7 @@
           "keyword": "Young Jonn - 2 factor (feat. Asake & Focalistic) [Official Music Video]",
           "keywordEn": "Young Jonn - 2 factor (feat. Asake & Focalistic) [Official Music Video]",
           "volume": "1M+",
-          "volumeRaw": 1169642,
+          "volumeRaw": 1169667,
           "category": "music",
           "temperature": 36,
           "velocity": "new",
@@ -9518,7 +9470,7 @@
           "keyword": "WORSHIP",
           "keywordEn": "WORSHIP",
           "volume": "701K+",
-          "volumeRaw": 701500,
+          "volumeRaw": 701534,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -9534,7 +9486,7 @@
           "keyword": "Our First Cup Final…",
           "keywordEn": "Our First Cup Final…",
           "volume": "371K+",
-          "volumeRaw": 371006,
+          "volumeRaw": 371037,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -9550,7 +9502,7 @@
           "keyword": "After 1 Year | 20 + Min. Wiping Teams | Trickster Gameplay",
           "keywordEn": "After 1 Year | 20 + Min. Wiping Teams | Trickster Gameplay",
           "volume": "209K+",
-          "volumeRaw": 209886,
+          "volumeRaw": 209898,
           "category": "news",
           "temperature": 26,
           "velocity": "rising",
@@ -9566,7 +9518,7 @@
           "keyword": "MATAN GIDA TRAILER",
           "keywordEn": "MATAN GIDA TRAILER",
           "volume": "183K+",
-          "volumeRaw": 183677,
+          "volumeRaw": 183681,
           "category": "movies",
           "temperature": 23,
           "velocity": "new",
@@ -9598,7 +9550,7 @@
           "keyword": "OMG !! THIS PLAYER SHOCKED ME !! 🥶 P.O.T.W SERIES EP 12",
           "keywordEn": "OMG !! THIS PLAYER SHOCKED ME !! 🥶 P.O.T.W SERIES EP 12",
           "volume": "110K+",
-          "volumeRaw": 110582,
+          "volumeRaw": 110717,
           "category": "sports",
           "temperature": 19,
           "velocity": "steady",
@@ -9614,7 +9566,7 @@
           "keyword": "ZAFIN NEMA SEASON 4 TRAILER",
           "keywordEn": "ZAFIN NEMA SEASON 4 TRAILER",
           "volume": "63K+",
-          "volumeRaw": 63938,
+          "volumeRaw": 63942,
           "category": "movies",
           "temperature": 17,
           "velocity": "rising",
@@ -9670,7 +9622,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Argentino recibe a San Martín (C) con la obligación de ganar"
+            "San Martín completa la gira bonaerense visitando a Argentino"
           ]
         },
         {
@@ -9812,7 +9764,7 @@
           "keyword": "Dune: Part Three | Official Teaser Trailer",
           "keywordEn": "Dune: Part Three | Official Teaser Trailer",
           "volume": "26M+",
-          "volumeRaw": 26910279,
+          "volumeRaw": 26910303,
           "category": "movies",
           "temperature": 98,
           "velocity": "new",
@@ -9828,7 +9780,7 @@
           "keyword": "Spider-Man: Brand New Day - Official Trailer",
           "keywordEn": "Spider-Man: Brand New Day - Official Trailer",
           "volume": "16M+",
-          "volumeRaw": 16899544,
+          "volumeRaw": 16899831,
           "category": "movies",
           "temperature": 96,
           "velocity": "rising",
@@ -9844,7 +9796,7 @@
           "keyword": "Apex | Official Trailer | Netflix",
           "keywordEn": "Apex | Official Trailer | Netflix",
           "volume": "4M+",
-          "volumeRaw": 4728606,
+          "volumeRaw": 4728908,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -9876,7 +9828,7 @@
           "keyword": "ROBLOX BECOME A LUCKY BLOCK..",
           "keywordEn": "ROBLOX BECOME A LUCKY BLOCK..",
           "volume": "2M+",
-          "volumeRaw": 2862480,
+          "volumeRaw": 2863338,
           "category": "news",
           "temperature": 39,
           "velocity": "steady",
@@ -9924,7 +9876,7 @@
           "keyword": "Benzoo, Bukzin Keyz, Tango Supreme - Mopepe (Official Music Video)",
           "keywordEn": "Benzoo, Bukzin Keyz, Tango Supreme - Mopepe (Official Music Video)",
           "volume": "336K+",
-          "volumeRaw": 336748,
+          "volumeRaw": 336781,
           "category": "music",
           "temperature": 20,
           "velocity": "new",
@@ -9940,7 +9892,7 @@
           "keyword": "Botshelo Ke Eng",
           "keywordEn": "Botshelo Ke Eng",
           "volume": "195K+",
-          "volumeRaw": 195222,
+          "volumeRaw": 195309,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
@@ -9956,7 +9908,7 @@
           "keyword": "Izethembiso",
           "keywordEn": "Izethembiso",
           "volume": "151K+",
-          "volumeRaw": 151355,
+          "volumeRaw": 151430,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -10012,7 +9964,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "SA Lotto + Lotto Plus Results for tonight: Wednesday, 25 March 2026"
+            "South Africans Await R79 Million Lotto Jackpot Results"
           ]
         },
         {
@@ -10028,7 +9980,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Mystery medical episode that left NASA astronaut unable to speak highlights major space risk"
+            "Astronaut’s Condition That Led to Space Station Evacuation Remains a Mystery"
           ]
         },
         {
@@ -10060,7 +10012,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Something Very Bad Is Going To Happen Season 2 Potential Addressed By Netflix Series’ Creator"
+            "Netflix's 'brilliant' new thriller that viewers are staying up all night to binge"
           ]
         },
         {
@@ -10138,7 +10090,7 @@
           "keyword": "BTS (방탄소년단) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "keywordEn": "BTS (Bulletproof Boys) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "volume": "1M+",
-          "volumeRaw": 1668389,
+          "volumeRaw": 1671001,
           "category": "news",
           "temperature": 56,
           "velocity": "rising",
@@ -10154,7 +10106,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 50,
           "velocity": "rising",
@@ -10170,7 +10122,7 @@
           "keyword": "رسميا بولتكس في برشلونة | الطريق الى الكرة الذهبية",
           "keywordEn": "Officially Boltex in Barcelona | The road to the Ballon d'Or",
           "volume": "302K+",
-          "volumeRaw": 302526,
+          "volumeRaw": 302612,
           "category": "news",
           "temperature": 30,
           "velocity": "rising",
@@ -10194,7 +10146,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "هل نعود للبرد والأمطار؟ الأرصاد تكشف عن مفاجأة على تليفزيون اليوم السابع"
+            "الأرصاد تكشف حالة الطقس الآن وأماكن سقوط الأمطار"
           ]
         },
         {
@@ -10202,7 +10154,7 @@
           "keyword": "كونت التشكيله التاريخيه لمنتخب اسبانيا🤯ملوك الاستحواذ بدون هزيمه🔥|efootbal 2026",
           "keywordEn": "The historic formation of the Spanish national team 🤯The kings of possession without defeat 🔥|efootbal 2026",
           "volume": "74K+",
-          "volumeRaw": 74173,
+          "volumeRaw": 74279,
           "category": "news",
           "temperature": 25,
           "velocity": "steady",
@@ -10234,7 +10186,7 @@
           "keyword": "حولونى قاسى حولونى جاني ( لما بتبان الحقايق ) احمد موزه السلطان - توزيع يوسف اوشا Official Video",
           "keywordEn": "They turned me cruel, they turned me crazy (When the truths are revealed) Ahmed Moza Al-Sultan - arranged by Youssef Osha Official Video",
           "volume": "50K+",
-          "volumeRaw": 50824,
+          "volumeRaw": 50836,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -10250,7 +10202,7 @@
           "keyword": "ماين كرافت : حبست ليلي في سجن مستحيل الهروب منه… لكن روري رجع وانتقم! 🔥😱",
           "keywordEn": "Minecraft: Lily was locked in a prison from which it was impossible to escape... but Rory came back and took revenge! 🔥😱",
           "volume": "43K+",
-          "volumeRaw": 43284,
+          "volumeRaw": 43313,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -10273,9 +10225,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Provided to YouTube by DistroKid\n\nRahma Mohsen - Youm Gada3 | رحمه محسن - يوم جدع (دوري بيا يا دنيا دوري) | من مسلسل علي كلاي · سَكينة – Sakina · Rahma Mohsen\n\nRahma Mohsen - Youm Gada3 | رحمه محسن - ",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "80S2jiKmDzQ",
           "channelTitle": "سَكينة – Sakina - Topic"
         },
@@ -10316,7 +10266,7 @@
           "keyword": "شوف رضا البحراوي لما يكون مزاجو رايق - ليه بالله عليكي 2026 - لعشاق السلطنه و الروقان",
           "keywordEn": "Look at Reda Al-Bahrawi when he is in a good mood - Why, for God’s sake, 2026 - for lovers of sultanate and elegance",
           "volume": "7K+",
-          "volumeRaw": 7258,
+          "volumeRaw": 7266,
           "category": "news",
           "temperature": 11,
           "velocity": "new",
@@ -10402,7 +10352,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "الزمالك عن التفاوض مع القندوسي: لا نفكر فى الصفقات الآن"
+            "خبر في الجول - قندوسي يصل مصر ويفاضل بين عرضين"
           ]
         },
         {
@@ -10464,17 +10414,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -10483,7 +10430,7 @@
           "keyword": "BTS (방탄소년단) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "keywordEn": "BTS (Bulletproof Boys) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "volume": "1M+",
-          "volumeRaw": 1668389,
+          "volumeRaw": 1671001,
           "category": "news",
           "temperature": 54,
           "velocity": "steady",
@@ -10499,7 +10446,7 @@
           "keyword": "Maria Becerra, Jere Klein, Lucky Brown, XROSS - QUÉ GANAS DE COMERTE (Official Video)",
           "keywordEn": "Maria Becerra, Jere Klein, Lucky Brown, XROSS - QUE GANAS DE COMERTE (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1290141,
+          "volumeRaw": 1290788,
           "category": "news",
           "temperature": 40,
           "velocity": "rising",
@@ -10514,8 +10461,8 @@
           "rank": 4,
           "keyword": "Ricky Martin, Los Ángeles Azules, TINI - Vuelve (Official Video)",
           "keywordEn": "Ricky Martin, Los Ángeles Azules, TINI - Vuelve (Official Video)",
-          "volume": "984K+",
-          "volumeRaw": 984474,
+          "volume": "985K+",
+          "volumeRaw": 985173,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
@@ -10531,7 +10478,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 44,
           "velocity": "rising",
@@ -10546,8 +10493,8 @@
           "rank": 6,
           "keyword": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
           "keywordEn": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
-          "volume": "782K+",
-          "volumeRaw": 782301,
+          "volume": "784K+",
+          "volumeRaw": 784274,
           "category": "news",
           "temperature": 41,
           "velocity": "steady",
@@ -10562,8 +10509,8 @@
           "rank": 7,
           "keyword": "MANDARINA está POSEÍDA en Brookhaven Roblox",
           "keywordEn": "TANGERINE is POSSESSED in Brookhaven Roblox",
-          "volume": "456K+",
-          "volumeRaw": 456828,
+          "volume": "457K+",
+          "volumeRaw": 457173,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -10579,7 +10526,7 @@
           "keyword": "ONE PIECE l Elbaph Arc | Official Trailer",
           "keywordEn": "ONE PIECE l Elbaph Arc | Official Trailer",
           "volume": "165K+",
-          "volumeRaw": 165647,
+          "volumeRaw": 165846,
           "category": "movies",
           "temperature": 34,
           "velocity": "new",
@@ -10595,7 +10542,7 @@
           "keyword": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2.ª ETAPA | Avance oficial | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd STAGE | Advance official | Netflix",
           "volume": "64K+",
-          "volumeRaw": 64486,
+          "volumeRaw": 64566,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -10611,7 +10558,7 @@
           "keyword": "El Patio De La Nona -  Eugenia Quevedo | Los Nombradores Del Alba (Zamba)",
           "keywordEn": "El Patio De La Nona -  Eugenia Quevedo | Los Nombradores Del Alba (Zamba)",
           "volume": "55K+",
-          "volumeRaw": 55134,
+          "volumeRaw": 55398,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -10651,7 +10598,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "World of ‘Frozen’ Debuts at Disneyland Paris: How Walt Disney Imagineers Brought Olaf and Elsa’s Ice Palace to Life"
+            "Disneyland Paris Welcomes President Macron for the Unveiling of Disney Adventure World, a Transformative Reimagining of the Resort's Second Park"
           ]
         },
         {
@@ -10667,7 +10614,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Anitta to Perform on Saturday Night Live April 24"
+            "Anitta to Perform on Saturday Night Live April 11"
           ]
         },
         {
@@ -10793,17 +10740,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -10812,7 +10756,7 @@
           "keyword": "BTS (방탄소년단) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "keywordEn": "BTS (Bulletproof Boys) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "volume": "1M+",
-          "volumeRaw": 1668389,
+          "volumeRaw": 1671001,
           "category": "news",
           "temperature": 54,
           "velocity": "new",
@@ -10828,7 +10772,7 @@
           "keyword": "Maria Becerra, Jere Klein, Lucky Brown, XROSS - QUÉ GANAS DE COMERTE (Official Video)",
           "keywordEn": "Maria Becerra, Jere Klein, Lucky Brown, XROSS - QUE GANAS DE COMERTE (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1290141,
+          "volumeRaw": 1290788,
           "category": "news",
           "temperature": 40,
           "velocity": "new",
@@ -10844,7 +10788,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -10859,8 +10803,8 @@
           "rank": 5,
           "keyword": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
           "keywordEn": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
-          "volume": "782K+",
-          "volumeRaw": 782301,
+          "volume": "784K+",
+          "volumeRaw": 784274,
           "category": "news",
           "temperature": 43,
           "velocity": "rising",
@@ -10875,8 +10819,8 @@
           "rank": 6,
           "keyword": "MANDARINA está POSEÍDA en Brookhaven Roblox",
           "keywordEn": "TANGERINE is POSSESSED in Brookhaven Roblox",
-          "volume": "456K+",
-          "volumeRaw": 456828,
+          "volume": "457K+",
+          "volumeRaw": 457173,
           "category": "news",
           "temperature": 30,
           "velocity": "steady",
@@ -10892,7 +10836,7 @@
           "keyword": "ONE PIECE l Elbaph Arc | Official Trailer",
           "keywordEn": "ONE PIECE l Elbaph Arc | Official Trailer",
           "volume": "165K+",
-          "volumeRaw": 165647,
+          "volumeRaw": 165846,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -10908,7 +10852,7 @@
           "keyword": "\"FUMO COMO RASTA\" @LOSGREENLANTERS X @ITHANNY X @Piero47Forty-Seven",
           "keywordEn": "\"FUMO COMO RASTA\" @LOSGREENLANTERS X @ITHANNY X @Piero47Forty-Seven",
           "volume": "144K+",
-          "volumeRaw": 144401,
+          "volumeRaw": 144518,
           "category": "news",
           "temperature": 19,
           "velocity": "rising",
@@ -10940,7 +10884,7 @@
           "keyword": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2.ª ETAPA | Avance oficial | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd STAGE | Advance official | Netflix",
           "volume": "64K+",
-          "volumeRaw": 64486,
+          "volumeRaw": 64566,
           "category": "movies",
           "temperature": 30,
           "velocity": "new",
@@ -10980,7 +10924,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Chris Pratt, Jack Black & Anya Taylor-Joy Attend F1 Grand Prix After ‘Super Mario Galaxy’ Japan Premiere"
+            "Lewis Hamilton, Anya Taylor-Joy Grab Spotlight at Japanese GP"
           ]
         },
         {
@@ -11120,17 +11064,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -11139,7 +11080,7 @@
           "keyword": "BTS (방탄소년단) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "keywordEn": "BTS (Bulletproof Boys) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "volume": "1M+",
-          "volumeRaw": 1668389,
+          "volumeRaw": 1671001,
           "category": "news",
           "temperature": 54,
           "velocity": "steady",
@@ -11155,7 +11096,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 48,
           "velocity": "rising",
@@ -11170,8 +11111,8 @@
           "rank": 4,
           "keyword": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
           "keywordEn": "EL DIOS DEL TIEMPO ES IMPOSIBLE (TABS, Episodio 3)",
-          "volume": "782K+",
-          "volumeRaw": 782301,
+          "volume": "784K+",
+          "volumeRaw": 784274,
           "category": "news",
           "temperature": 45,
           "velocity": "steady",
@@ -11186,8 +11127,8 @@
           "rank": 5,
           "keyword": "Atrapé a Mis Amigos en un MUNDO PEQUEÑO en Minecraft!",
           "keywordEn": "I Trapped My Friends in a SMALL WORLD in Minecraft!",
-          "volume": "625K+",
-          "volumeRaw": 625096,
+          "volume": "626K+",
+          "volumeRaw": 626234,
           "category": "news",
           "temperature": 38,
           "velocity": "new",
@@ -11203,7 +11144,7 @@
           "keyword": "Sueños de calle",
           "keywordEn": "Street dreams",
           "volume": "182K+",
-          "volumeRaw": 182057,
+          "volumeRaw": 182439,
           "category": "news",
           "temperature": 23,
           "velocity": "rising",
@@ -11219,7 +11160,7 @@
           "keyword": "ONE PIECE l Elbaph Arc | Official Trailer",
           "keywordEn": "ONE PIECE l Elbaph Arc | Official Trailer",
           "volume": "165K+",
-          "volumeRaw": 165647,
+          "volumeRaw": 165846,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -11234,8 +11175,8 @@
           "rank": 8,
           "keyword": "Grupo Firme, Gerardo Coronel - Qué Onda Perdida (Letra)",
           "keywordEn": "Grupo Firme, Gerardo Coronel - Qué Onda Perdida (Lyrics)",
-          "volume": "83K+",
-          "volumeRaw": 83992,
+          "volume": "84K+",
+          "volumeRaw": 84170,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -11251,7 +11192,7 @@
           "keyword": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2.ª ETAPA | Avance oficial | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd STAGE | Advance official | Netflix",
           "volume": "64K+",
-          "volumeRaw": 64486,
+          "volumeRaw": 64566,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -11349,7 +11290,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 10,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -11447,17 +11388,14 @@
           "keyword": "Press This Button To Win $250,000",
           "keywordEn": "Press This Button To Win $250,000",
           "volume": "3M+",
-          "volumeRaw": 3544704,
+          "volumeRaw": 3552864,
           "category": "news",
           "temperature": 65,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "imagine if you could win $250,000 just by pressing a button lol\n\nBuy MrBeast Lab Battle Fusion Swarms wherever you buy toys! https://www.moosetoys.com/products/mrbeast-lab-swarms-s4-mega-lab-14-pack-a",
-          "relatedNews": [
-            "车主选车牌摇到豹子号苏A0000A _ 百度搜索",
-            "8000元一匹的迷你小马一夜爆火 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "70LOaxzmcg4",
           "channelTitle": "MrBeast Gaming"
         },
@@ -11466,7 +11404,7 @@
           "keyword": "BTS (방탄소년단) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "keywordEn": "BTS (Bulletproof Boys) 'SWIM' Live Clip I. (Sunhyewon ver.)",
           "volume": "1M+",
-          "volumeRaw": 1668389,
+          "volumeRaw": 1671001,
           "category": "news",
           "temperature": 54,
           "velocity": "new",
@@ -11498,7 +11436,7 @@
           "keyword": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "keywordEn": "Elbaph Arc Official Trailer | April 5, 2026 | ONE PIECE",
           "volume": "839K+",
-          "volumeRaw": 839118,
+          "volumeRaw": 839364,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -11513,8 +11451,8 @@
           "rank": 5,
           "keyword": "Atrapé a Mis Amigos en un MUNDO PEQUEÑO en Minecraft!",
           "keywordEn": "I Trapped My Friends in a SMALL WORLD in Minecraft!",
-          "volume": "625K+",
-          "volumeRaw": 625096,
+          "volume": "626K+",
+          "volumeRaw": 626234,
           "category": "news",
           "temperature": 38,
           "velocity": "new",
@@ -11529,17 +11467,15 @@
           "rank": 6,
           "keyword": "Corazón Serrano - Desde Que Te Vi - Estadio San Marcos - 33 Aniversario - Camino A Un Sueño",
           "keywordEn": "Corazón Serrano - Since I Saw You - San Marcos Stadium - 33rd Anniversary - Road To A Dream",
-          "volume": "487K+",
-          "volumeRaw": 487489,
+          "volume": "488K+",
+          "volumeRaw": 488057,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Corazón Serrano - Desde Que Te Vi - Estadio San Marcos - 33 Aniversario - Camino A Un Sueño \n\nDESDE QUE TE VI I ESTADIO SAN MARCOS I 33 ANIVERSARIO\n\nRecordamos la emoción y el sentimiento de Camino A ",
-          "relatedNews": [
-            "香迷糊了 ！ 外交部喊你来贵州吃  刨汤宴 ， 感受浓浓烟火气与年味CHINA MFA Spokesperson invites you to taste  Paotang Feast  in Guizhou"
-          ],
+          "relatedNews": [],
           "youtubeId": "Xjh2CbayUKU",
           "channelTitle": "Corazón Serrano"
         },
@@ -11547,8 +11483,8 @@
           "rank": 7,
           "keyword": "Orquesta La Bella Luz - El Hombre Feliz (Video Oficial)",
           "keywordEn": "Orquesta La Bella Luz - El Hombre Feliz (Video Oficial)",
-          "volume": "280K+",
-          "volumeRaw": 280892,
+          "volume": "281K+",
+          "volumeRaw": 281018,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -11580,7 +11516,7 @@
           "keyword": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2.ª ETAPA | Avance oficial | Netflix",
           "keywordEn": "STEEL BALL RUN JoJo’s Bizarre Adventure: 2nd STAGE | Advance official | Netflix",
           "volume": "64K+",
-          "volumeRaw": 64486,
+          "volumeRaw": 64566,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -11595,8 +11531,8 @@
           "rank": 10,
           "keyword": "Enferma de Amor - Yarita Lizeth Yanarico",
           "keywordEn": "Enferma de Amor - Yarita Lizeth Yanarico",
-          "volume": "39K+",
-          "volumeRaw": 39989,
+          "volume": "40K+",
+          "volumeRaw": 40055,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -11636,7 +11572,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Tacna: 53% de miembros de mesa recogió credenciales para elecciones"
+            "¡Atención, miembros de mesa! ONPE capacitará presencialmente este 29 de marzo y 5 de abril"
           ]
         },
         {
@@ -11668,7 +11604,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "‘No Kings’ Protests Decry Trump and His Agenda"
+            "‘No Kings’ protests erupt across the US, with a Minnesota focus"
           ]
         },
         {
@@ -12879,7 +12815,7 @@
         "keyword": "OpenYak – An open-source Cowork that runs any model and owns your filesystem",
         "keywordEn": "OpenYak – An open-source Cowork that runs any model and owns your filesystem",
         "volume": "5K+",
-        "volumeRaw": 5250,
+        "volumeRaw": 5400,
         "category": "tech",
         "temperature": 87,
         "velocity": "new",
@@ -12890,7 +12826,7 @@
         "keyword": "Founder of GitLab battles cancer by founding companies",
         "keywordEn": "Founder of GitLab battles cancer by founding companies",
         "volume": "127K+",
-        "volumeRaw": 127200,
+        "volumeRaw": 127650,
         "category": "tech",
         "temperature": 86,
         "velocity": "new",
@@ -12900,8 +12836,8 @@
         "rank": 3,
         "keyword": "CSS is DOOMed",
         "keywordEn": "CSS is DOOMed",
-        "volume": "38K+",
-        "volumeRaw": 38700,
+        "volume": "39K+",
+        "volumeRaw": 39150,
         "category": "tech",
         "temperature": 85,
         "velocity": "new",
@@ -12912,7 +12848,7 @@
         "keyword": "AI overly affirms users asking for personal advice",
         "keywordEn": "AI overly affirms users asking for personal advice",
         "volume": "87K+",
-        "volumeRaw": 87600,
+        "volumeRaw": 87750,
         "category": "tech",
         "temperature": 84,
         "velocity": "rising",
@@ -12956,7 +12892,7 @@
         "keyword": "OpenBSD on Motorola 88000 Processors",
         "keywordEn": "OpenBSD on Motorola 88000 Processors",
         "volume": "11K+",
-        "volumeRaw": 11100,
+        "volumeRaw": 11250,
         "category": "tech",
         "temperature": 80,
         "velocity": "rising",
@@ -12967,7 +12903,7 @@
         "keyword": "Further human + AI + proof assistant work on Knuth's \"Claude Cycles\" problem",
         "keywordEn": "Further human + AI + proof assistant work on Knuth's \"Claude Cycles\" problem",
         "volume": "27K+",
-        "volumeRaw": 27150,
+        "volumeRaw": 27300,
         "category": "tech",
         "temperature": 79,
         "velocity": "rising",
@@ -12975,10 +12911,10 @@
       },
       {
         "rank": 10,
-        "keyword": "I decompiled the White House's new app",
-        "keywordEn": "I decompiled the White House's new app",
-        "volume": "68K+",
-        "volumeRaw": 68550,
+        "keyword": "The ANSI art \"telecomics\" of the 1992 election",
+        "keywordEn": "The ANSI art \"telecomics\" of the 1992 election",
+        "volume": "1K+",
+        "volumeRaw": 1350,
         "category": "tech",
         "temperature": 78,
         "velocity": "rising",
@@ -12986,10 +12922,10 @@
       },
       {
         "rank": 11,
-        "keyword": "The 667MHz Machine",
-        "keywordEn": "The 667MHz Machine",
-        "volume": "5K+",
-        "volumeRaw": 5550,
+        "keyword": "I decompiled the White House's new app",
+        "keywordEn": "I decompiled the White House's new app",
+        "volume": "68K+",
+        "volumeRaw": 68700,
         "category": "tech",
         "temperature": 77,
         "velocity": "steady",
@@ -13000,7 +12936,7 @@
         "keyword": "Cat Itecture: Better Cat Window Boxes",
         "keywordEn": "Cat Itecture: Better Cat Window Boxes",
         "volume": "5K+",
-        "volumeRaw": 5700,
+        "volumeRaw": 5850,
         "category": "tech",
         "temperature": 76,
         "velocity": "steady",
@@ -13008,10 +12944,10 @@
       },
       {
         "rank": 13,
-        "keyword": "The ANSI art \"telecomics\" of the 1992 election",
-        "keywordEn": "The ANSI art \"telecomics\" of the 1992 election",
-        "volume": "900",
-        "volumeRaw": 900,
+        "keyword": "The 667MHz Machine",
+        "keywordEn": "The 667MHz Machine",
+        "volume": "5K+",
+        "volumeRaw": 5550,
         "category": "tech",
         "temperature": 75,
         "velocity": "steady",
@@ -13022,7 +12958,7 @@
         "keyword": "The first 40 months of the AI era",
         "keywordEn": "The first 40 months of the AI era",
         "volume": "23K+",
-        "volumeRaw": 23250,
+        "volumeRaw": 23400,
         "category": "tech",
         "temperature": 74,
         "velocity": "steady",
@@ -13077,7 +13013,7 @@
         "keyword": "Google just gave Android power users a sideloading win",
         "keywordEn": "Google just gave Android power users a sideloading win",
         "volume": "10K+",
-        "volumeRaw": 10800,
+        "volumeRaw": 10950,
         "category": "tech",
         "temperature": 69,
         "velocity": "steady",
@@ -13088,7 +13024,7 @@
         "keyword": "South Korea Mandates Solar Panels for Public Parking Lots",
         "keywordEn": "South Korea Mandates Solar Panels for Public Parking Lots",
         "volume": "39K+",
-        "volumeRaw": 39000,
+        "volumeRaw": 39300,
         "category": "tech",
         "temperature": 68,
         "velocity": "steady",
@@ -13098,8 +13034,8 @@
         "rank": 21,
         "keyword": "Meta Partners with Arm to Develop New Class of Data Center Silicon",
         "keywordEn": "Meta Partners with Arm to Develop New Class of Data Center Silicon",
-        "volume": "7K+",
-        "volumeRaw": 7950,
+        "volume": "8K+",
+        "volumeRaw": 8100,
         "category": "tech",
         "temperature": 67,
         "velocity": "steady",
@@ -13121,7 +13057,7 @@
         "keyword": "1929: Inside the Greatest Crash in Wall Street History",
         "keywordEn": "1929: Inside the Greatest Crash in Wall Street History",
         "volume": "9K+",
-        "volumeRaw": 9300,
+        "volumeRaw": 9450,
         "category": "tech",
         "temperature": 65,
         "velocity": "steady",
@@ -13253,7 +13189,7 @@
         "keyword": "Private equity turned vulnerable elderly people into human ATMs",
         "keywordEn": "Private equity turned vulnerable elderly people into human ATMs",
         "volume": "21K+",
-        "volumeRaw": 21000,
+        "volumeRaw": 21150,
         "category": "tech",
         "temperature": 53,
         "velocity": "steady",
@@ -13261,10 +13197,10 @@
       },
       {
         "rank": 36,
-        "keyword": "Wikipedia officially bans AI-generated content",
-        "keywordEn": "Wikipedia officially bans AI-generated content",
-        "volume": "2K+",
-        "volumeRaw": 2100,
+        "keyword": "Paper Tape Is All You Need – Training a Transformer on a 1976 Minicomputer",
+        "keywordEn": "Paper Tape Is All You Need – Training a Transformer on a 1976 Minicomputer",
+        "volume": "20K+",
+        "volumeRaw": 20250,
         "category": "tech",
         "temperature": 52,
         "velocity": "steady",
@@ -13272,10 +13208,10 @@
       },
       {
         "rank": 37,
-        "keyword": "Paper Tape Is All You Need – Training a Transformer on a 1976 Minicomputer",
-        "keywordEn": "Paper Tape Is All You Need – Training a Transformer on a 1976 Minicomputer",
-        "volume": "20K+",
-        "volumeRaw": 20250,
+        "keyword": "Wikipedia officially bans AI-generated content",
+        "keywordEn": "Wikipedia officially bans AI-generated content",
+        "volume": "2K+",
+        "volumeRaw": 2100,
         "category": "tech",
         "temperature": 51,
         "velocity": "steady",
@@ -14112,8 +14048,8 @@
       },
       {
         "rank": 13,
-        "keyword": "Japanese Grand Prix LIVE! Latest updates as Kimi Antonelli leads after Ollie Bearman crashes",
-        "keywordEn": "Japanese Grand Prix LIVE! Latest updates as Kimi Antonelli leads after Ollie Bearman crashes",
+        "keyword": "Japanese Grand Prix LIVE! Latest updates as Oscar Piastri leads early from George Russell",
+        "keywordEn": "Japanese Grand Prix LIVE! Latest updates as Oscar Piastri leads early from George Russell",
         "volume": "228K+",
         "volumeRaw": 228500,
         "category": "sports",
@@ -14588,7 +14524,7 @@
     },
     "totalCountries": 36,
     "totalTrends": 720,
-    "nextUpdate": "2026-03-29T06:56:03.996184+00:00",
+    "nextUpdate": "2026-03-29T06:59:14.267617+00:00",
     "risingFast": [
       {
         "keyword": "BTS (방탄소년단) ‘SWIM’ Official MV",
@@ -14619,9 +14555,9 @@
     }
   },
   "pipelineStats": {
-    "startTime": "2026-03-29T05:54:36.955085+00:00",
-    "endTime": "2026-03-29T05:56:03.996420+00:00",
-    "duration": 87,
+    "startTime": "2026-03-29T05:57:35.867111+00:00",
+    "endTime": "2026-03-29T05:59:14.267825+00:00",
+    "duration": 98,
     "successCount": 36,
     "errorCount": 0,
     "blockedKeywords": 0,
