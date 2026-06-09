@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T05:02:20.992790+00:00",
+  "lastUpdated": "2026-06-09T05:06:37.312839+00:00",
   "sources": {
     "googleTrends": true,
     "youtube": true,
@@ -16,7 +16,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 73,
           "velocity": "rising",
@@ -32,7 +32,7 @@
           "keyword": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
           "keywordEn": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
           "volume": "1M+",
-          "volumeRaw": 1694892,
+          "volumeRaw": 1696708,
           "category": "news",
           "temperature": 49,
           "velocity": "new",
@@ -48,7 +48,7 @@
           "keyword": "Persona 6 — Teaser Trailer",
           "keywordEn": "Persona 6 — Teaser Trailer",
           "volume": "1M+",
-          "volumeRaw": 1284467,
+          "volumeRaw": 1284791,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -63,8 +63,8 @@
           "rank": 4,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -80,7 +80,7 @@
           "keyword": "We Found The Backrooms Blue Tape",
           "keywordEn": "We Found The Backrooms Blue Tape",
           "volume": "688K+",
-          "volumeRaw": 688514,
+          "volumeRaw": 688558,
           "category": "news",
           "temperature": 33,
           "velocity": "new",
@@ -95,8 +95,8 @@
           "rank": 6,
           "keyword": "Streamer University 2026 | Official Enrollment Trailer",
           "keywordEn": "Streamer University 2026 | Official Enrollment Trailer",
-          "volume": "640K+",
-          "volumeRaw": 640642,
+          "volume": "641K+",
+          "volumeRaw": 641969,
           "category": "movies",
           "temperature": 41,
           "velocity": "rising",
@@ -112,7 +112,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 38,
           "velocity": "new",
@@ -127,8 +127,8 @@
           "rank": 8,
           "keyword": "C-Kan - Toma Todo",
           "keywordEn": "C-Kan - Toma Todo",
-          "volume": "339K+",
-          "volumeRaw": 339657,
+          "volume": "345K+",
+          "volumeRaw": 345627,
           "category": "news",
           "temperature": 25,
           "velocity": "new",
@@ -144,7 +144,7 @@
           "keyword": "Jnr Vigi, Liz Vamarasi - Lewa (Official Audio)",
           "keywordEn": "Jnr Vigi, Liz Vamarasi - Lewa (Official Audio)",
           "volume": "35K+",
-          "volumeRaw": 35549,
+          "volumeRaw": 35568,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -157,34 +157,34 @@
         },
         {
           "rank": 10,
+          "keyword": "michael wilbon",
+          "keywordEn": "michael wilbon",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Stacey King, Chicago Bulls legend and 3-time NBA champion with the team, dies at 59"
+          ]
+        },
+        {
+          "rank": 11,
           "keyword": "tom hanks",
           "keywordEn": "tom hanks",
-          "volume": "1K+",
-          "volumeRaw": 1000,
+          "volume": "2K+",
+          "volumeRaw": 2000,
           "category": "news",
-          "temperature": 20,
+          "temperature": 18,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Tom Hanks' Must-Watch WWII Epic Dominates Digital Charts Ahead of Highly-Anticipated War Sequel"
-          ]
-        },
-        {
-          "rank": 11,
-          "keyword": "keaton winn",
-          "keywordEn": "keaton winn",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 13,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Making sense of the lineup’s last 30 days"
           ]
         },
         {
@@ -195,7 +195,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 26,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -211,7 +211,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 9,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -221,8 +221,8 @@
         },
         {
           "rank": 14,
-          "keyword": "joel kuhnel",
-          "keywordEn": "joel kuhnel",
+          "keyword": "taylor lautner",
+          "keywordEn": "taylor lautner",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -232,11 +232,27 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Brewers' rookie left-hander reportedly mulling major decision after recent elbow injury"
+            "It's a Girl! Twilight Actor Taylor Lautner, Wife Announce Gender of First Baby"
           ]
         },
         {
           "rank": 15,
+          "keyword": "joel kuhnel",
+          "keywordEn": "joel kuhnel",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Brewers' rookie left-hander reportedly mulling major decision after recent elbow injury"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "lando norris",
           "keywordEn": "lando norris",
           "volume": "200",
@@ -252,7 +268,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
           "keyword": "nick kurtz",
           "keywordEn": "nick kurtz",
           "volume": "200",
@@ -268,41 +284,9 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 18,
           "keyword": "jase bowen",
           "keywordEn": "jase bowen",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Mets 5-0 Padres (Jun 5, 2026) Game Recap"
-          ]
-        },
-        {
-          "rank": 18,
-          "keyword": "awa fam",
-          "keywordEn": "awa fam",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Lynx dominate second half to sink Storm 88-68 for seventh consecutive victory"
-          ]
-        },
-        {
-          "rank": 19,
-          "keyword": "canva down",
-          "keywordEn": "canva down",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -312,7 +296,23 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Canva Down: Users Unable To Access Graphic Design Platform, Company Says Issue Identified"
+            "Mets 5-0 Padres (Jun 5, 2026) Game Recap"
+          ]
+        },
+        {
+          "rank": 19,
+          "keyword": "awa fam",
+          "keywordEn": "awa fam",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Lynx dominate second half to sink Storm 88-68 for seventh consecutive victory"
           ]
         },
         {
@@ -340,7 +340,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "new",
@@ -388,7 +388,7 @@
           "keyword": "캡틴은 핑크빈이 싫다..",
           "keywordEn": "The Captain hates Pink Bean.",
           "volume": "285K+",
-          "volumeRaw": 285141,
+          "volumeRaw": 285809,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -404,7 +404,7 @@
           "keyword": "와.. 결국 메인 예고편 유출ㄷㄷ ≪스파이더맨: 브랜드뉴데이≫ 메인 예고편 유출 & 떡밥 총정리",
           "keywordEn": "Wow.. In the end, the main trailer was leakedㄷㄷ ≪Spider-Man: Brand New Day≫ Main trailer leaked & summary",
           "volume": "245K+",
-          "volumeRaw": 245703,
+          "volumeRaw": 245866,
           "category": "movies",
           "temperature": 26,
           "velocity": "rising",
@@ -420,7 +420,7 @@
           "keyword": "연마석은 제발 정가치세요 [팡이요,  메이플스토리]",
           "keywordEn": "Please set the correct price for the grinding stone [Pang-iyo, Maple Story]",
           "volume": "222K+",
-          "volumeRaw": 222515,
+          "volumeRaw": 222682,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -435,8 +435,8 @@
           "rank": 7,
           "keyword": "VIRAL",
           "keywordEn": "VIRAL",
-          "volume": "157K+",
-          "volumeRaw": 157901,
+          "volume": "158K+",
+          "volumeRaw": 158267,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -452,7 +452,7 @@
           "keyword": "공격력+47로 시작하는 히어로 시작합니다",
           "keywordEn": "The hero starts with attack power +47.",
           "volume": "150K+",
-          "volumeRaw": 150621,
+          "volumeRaw": 150934,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -467,8 +467,8 @@
           "rank": 9,
           "keyword": "기인vs제우스 이후 최고의 탑 대결..",
           "keywordEn": "The best top battle since Gin vs. Zeus..",
-          "volume": "149K+",
-          "volumeRaw": 149619,
+          "volume": "150K+",
+          "volumeRaw": 150132,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -484,7 +484,7 @@
           "keyword": "Even the day I let you go",
           "keywordEn": "Even the day I let you go",
           "volume": "49K+",
-          "volumeRaw": 49518,
+          "volumeRaw": 49697,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -519,12 +519,12 @@
           "volumeRaw": 5000,
           "category": "news",
           "temperature": 11,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "증시 하루 만에 급반등…투자 고수들은 '하락' 네이버·LG전자 담았다"
+            "'롤러코스터' 코스닥, 하루 만에 5% 급반등…올해 9번째 '매수 사이드카'"
           ]
         },
         {
@@ -535,7 +535,7 @@
           "volumeRaw": 5000,
           "category": "news",
           "temperature": 9,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -551,7 +551,7 @@
           "volumeRaw": 2000,
           "category": "news",
           "temperature": 7,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -561,22 +561,52 @@
         },
         {
           "rank": 15,
-          "keyword": "삼표그룹",
-          "keywordEn": "Sampyo Group",
+          "keyword": "삼육대학교",
+          "keywordEn": "Sahmyook University",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "삼표그룹, 작업복 업사이클링 캠페인…“자원순환 가치 실천”"
+            "삼육대 김일옥·박철주 교수, 교육부장관 표창 영예"
           ]
         },
         {
           "rank": 16,
+          "keyword": "아이오닉 5",
+          "keywordEn": "IONIQ 5",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": []
+        },
+        {
+          "rank": 17,
+          "keyword": "체포",
+          "keywordEn": "arrest",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "이태원서 한국인 폭행한 미군 4명 체포‥미 헌병에 인계"
+          ]
+        },
+        {
+          "rank": 18,
           "keyword": "김태완",
           "keywordEn": "Taewan Kim",
           "volume": "200",
@@ -588,11 +618,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "\"김서현 폼 바꿔야 살아남는다\" 임창용이 꺼낸 조언, 과연 통할까"
+            "\"김서현 얘기, 무엇을 위한 것인지…조회수가 목적인가\" '前 한화' 선배가 안타까운 마음 전했다"
           ]
         },
         {
-          "rank": 17,
+          "rank": 19,
           "keyword": "제일런 브런슨",
           "keywordEn": "Jaylen Brunson",
           "volume": "200",
@@ -608,23 +638,7 @@
           ]
         },
         {
-          "rank": 18,
-          "keyword": "체포",
-          "keywordEn": "arrest",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "이태원서 한국인 폭행한 미군 4명 체포‥미 헌병에 인계"
-          ]
-        },
-        {
-          "rank": 19,
+          "rank": 20,
           "keyword": "디스클로저 데이",
           "keywordEn": "Disclosure Day",
           "volume": "100",
@@ -636,23 +650,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "“연상호 감독과 액션물 한 번 더 하고 싶어요”"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "뉴욕 닉스",
-          "keywordEn": "new york knicks",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "[포토] 보행자 통제하는 뉴욕 경찰"
+            "에밀리 블런트, 촬영 전 한국어 열공…‘디스클로저 데이’ 비하인드 공개"
           ]
         }
       ]
@@ -666,7 +664,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "new",
@@ -682,7 +680,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "new",
@@ -714,7 +712,7 @@
           "keyword": "【LOL】 レオカスにより久々のLOL【しゃかちゃ らむね3 イブラヒム  叶 焼きパン3 ローレン  ひなの3 k4sen代表】",
           "keywordEn": "[LOL] LOL for the first time in a while by Leocas [Shakacha Ramune 3 Ibrahim Kano Yakipan 3 Lauren Hinano 3 K4sen representative]",
           "volume": "356K+",
-          "volumeRaw": 356139,
+          "volumeRaw": 356381,
           "category": "news",
           "temperature": 28,
           "velocity": "steady",
@@ -745,8 +743,8 @@
           "rank": 6,
           "keyword": "櫻坂46 『What's “KAZOKU”?』 MUSIC VIDEO",
           "keywordEn": "Sakurazaka46 『What's “KAZOKU”?』 MUSIC VIDEO",
-          "volume": "171K+",
-          "volumeRaw": 171856,
+          "volume": "172K+",
+          "volumeRaw": 172102,
           "category": "music",
           "temperature": 23,
           "velocity": "steady",
@@ -762,7 +760,7 @@
           "keyword": "『うるわしの宵の月』予告｜2026年10月23日(金)公開",
           "keywordEn": "“Uruwashi no Yoi no Tsuki” preview | Released on Friday, October 23, 2026",
           "volume": "142K+",
-          "volumeRaw": 142121,
+          "volumeRaw": 142291,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -778,7 +776,7 @@
           "keyword": "Castlevania: Belmont‘s Curse（ キャッスルヴァニア ベルモンドカース）Release Date Trailer (CERO) | KONAMI",
           "keywordEn": "Castlevania: Belmont’s Curse Release Date Trailer (CERO) | KONAMI",
           "volume": "131K+",
-          "volumeRaw": 131804,
+          "volumeRaw": 131856,
           "category": "music",
           "temperature": 19,
           "velocity": "new",
@@ -793,8 +791,8 @@
           "rank": 9,
           "keyword": "体力1万しかないゲームで、なんと2万ダメージ出るコンボをリスナーが持ってきた【スト6・カワノ】",
           "keywordEn": "A listener came up with a combo that deals 20,000 damage in a game where your health is only 10,000 [Strike 6 Kawano]",
-          "volume": "127K+",
-          "volumeRaw": 127298,
+          "volume": "130K+",
+          "volumeRaw": 130517,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
@@ -809,8 +807,8 @@
           "rank": 10,
           "keyword": "「ガス人間」 予告編 - Netflix",
           "keywordEn": "\"Gas Man\" Trailer - Netflix",
-          "volume": "73K+",
-          "volumeRaw": 73709,
+          "volume": "74K+",
+          "volumeRaw": 74622,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -834,7 +832,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "中道 立民 公明 “養子案めぐる森衆院議長の発言は不適切”"
+            "存在も皇室入りの意思も 判然としない養子案対象の旧宮家男子"
           ]
         },
         {
@@ -976,7 +974,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "えなこさんが「クローズ」＆「WORST」とコラボ！「月刊少年チャンピオン」7月特大号本日発売"
+            "画像・写真 | えなこ、“カッケー＆カワイイ”グラビア披露 『クローズ×WORST』と異色コラボが実現 1枚目"
           ]
         }
       ]
@@ -990,7 +988,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "steady",
@@ -1006,7 +1004,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "new",
@@ -1038,7 +1036,7 @@
           "keyword": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
           "keywordEn": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
           "volume": "1M+",
-          "volumeRaw": 1694892,
+          "volumeRaw": 1696708,
           "category": "news",
           "temperature": 45,
           "velocity": "new",
@@ -1053,8 +1051,8 @@
           "rank": 5,
           "keyword": "The Dog Stars | Official Trailer | In Theaters Aug 28",
           "keywordEn": "The Dog Stars | Official Trailer | In Theaters Aug 28",
-          "volume": "993K+",
-          "volumeRaw": 993044,
+          "volume": "994K+",
+          "volumeRaw": 994194,
           "category": "movies",
           "temperature": 29,
           "velocity": "new",
@@ -1069,8 +1067,8 @@
           "rank": 6,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 42,
           "velocity": "rising",
@@ -1085,8 +1083,8 @@
           "rank": 7,
           "keyword": "Streamer University 2026 | Official Enrollment Trailer",
           "keywordEn": "Streamer University 2026 | Official Enrollment Trailer",
-          "volume": "640K+",
-          "volumeRaw": 640642,
+          "volume": "641K+",
+          "volumeRaw": 641969,
           "category": "movies",
           "temperature": 39,
           "velocity": "new",
@@ -1101,8 +1099,8 @@
           "rank": 8,
           "keyword": "Hermitcraft 11: Episode 18 - THE WORST DAY ON HERMITCRAFT.",
           "keywordEn": "Hermitcraft 11: Episode 18 - THE WORST DAY ON HERMITCRAFT.",
-          "volume": "532K+",
-          "volumeRaw": 532390,
+          "volume": "533K+",
+          "volumeRaw": 533446,
           "category": "news",
           "temperature": 26,
           "velocity": "rising",
@@ -1118,7 +1116,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 34,
           "velocity": "rising",
@@ -1134,7 +1132,7 @@
           "keyword": "WORLD CUP DRAW DECIDES OUR TEAM!",
           "keywordEn": "WORLD CUP DRAW DECIDES OUR TEAM!",
           "volume": "73K+",
-          "volumeRaw": 73761,
+          "volumeRaw": 73892,
           "category": "sports",
           "temperature": 15,
           "velocity": "steady",
@@ -1195,8 +1193,8 @@
         },
         {
           "rank": 14,
-          "keyword": "ingredion buys tate & lyle",
-          "keywordEn": "ingredion buys tate & lyle",
+          "keyword": "personal independence payment",
+          "keywordEn": "personal independence payment",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -1206,13 +1204,13 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Jobs at risk as Tate & Lyle agrees £2.7bn takeover by US rival"
+            "Labour accused of ‘watering down’ disability benefit checks"
           ]
         },
         {
           "rank": 15,
-          "keyword": "set for life",
-          "keywordEn": "set for life",
+          "keyword": "ingredion buys tate & lyle",
+          "keywordEn": "ingredion buys tate & lyle",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -1222,7 +1220,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "National Lottery Set for Life results on Thursday 4 June"
+            "Jobs at risk as Tate & Lyle agrees £2.7bn takeover by US rival"
           ]
         },
         {
@@ -1270,7 +1268,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "First player since Shaq in 2001 to open the NBA Finals …"
+            "Comparing Wemby to 2007 LeBron"
           ]
         },
         {
@@ -1316,7 +1314,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "new",
@@ -1332,7 +1330,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "rising",
@@ -1347,8 +1345,8 @@
           "rank": 3,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 48,
           "velocity": "rising",
@@ -1363,8 +1361,8 @@
           "rank": 4,
           "keyword": "Waka Waka - Esto es Africa (sub. español + lyrics) Canción Oficial de la Copa Mundial Sudáfrica 2010",
           "keywordEn": "Waka Waka - This is Africa (Spanish sub. + lyrics) Official Song of the South Africa 2010 World Cup",
-          "volume": "597K+",
-          "volumeRaw": 597829,
+          "volume": "598K+",
+          "volumeRaw": 598194,
           "category": "sports",
           "temperature": 29,
           "velocity": "steady",
@@ -1380,7 +1378,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 42,
           "velocity": "new",
@@ -1396,7 +1394,7 @@
           "keyword": "ALLE MINECRAFT MONSTER = 100% ANDERS",
           "keywordEn": "ALLE MINECRAFT MONSTER = 100% ANDERS",
           "volume": "122K+",
-          "volumeRaw": 122215,
+          "volumeRaw": 122342,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -1412,7 +1410,7 @@
           "keyword": "Ich werde REICH durch Krallen!!! | Gothic 1 Remake",
           "keywordEn": "Ich werde REICH durch Krallen!!! | Gothic 1 Remake",
           "volume": "82K+",
-          "volumeRaw": 82619,
+          "volumeRaw": 82703,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -1444,7 +1442,7 @@
           "keyword": "AMONG US Trailer German Deutsch (2026)",
           "keywordEn": "AMONG US Trailer German Deutsch (2026)",
           "volume": "28K+",
-          "volumeRaw": 28114,
+          "volumeRaw": 28122,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -1460,7 +1458,7 @@
           "keyword": "Roy Bianco & Die Abbrunzati Boys - Bella Napoli (LIVE in Augsburg)",
           "keywordEn": "Roy Bianco & Die Abbrunzati Boys - Bella Napoli (LIVE in Augsburg)",
           "volume": "18K+",
-          "volumeRaw": 18950,
+          "volumeRaw": 18956,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -1489,24 +1487,24 @@
         },
         {
           "rank": 12,
-          "keyword": "14. juni",
-          "keywordEn": "14. juni",
-          "volume": "200",
-          "volumeRaw": 200,
+          "keyword": "deutschland wm spiele",
+          "keywordEn": "deutschland wm spiele",
+          "volume": "500",
+          "volumeRaw": 500,
           "category": "news",
           "temperature": 11,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Liebeshoroskop: Aktuelle Woche vom 08.06.2026 bis 14.06.2026"
+            "Nationalmannschaft: 5 große Gewinner & Verlierer unter Nagelsmann"
           ]
         },
         {
           "rank": 13,
-          "keyword": "deutschland wm spiele",
-          "keywordEn": "deutschland wm spiele",
+          "keyword": "14. juni",
+          "keywordEn": "14. juni",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -1516,7 +1514,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Nationalmannschaft: 5 große Gewinner & Verlierer unter Nagelsmann"
+            "Liebeshoroskop: Aktuelle Woche vom 08.06.2026 bis 14.06.2026"
           ]
         },
         {
@@ -1548,13 +1546,13 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Inflation in der Eurozone steigt im Mai auf 3,2 Prozent"
+            "Devisen: Eurokurs legt zum US-Dollar etwas zu"
           ]
         },
         {
           "rank": 16,
-          "keyword": "pokémon go",
-          "keywordEn": "pokémon go",
+          "keyword": "wetter magdeburg",
+          "keywordEn": "wetter magdeburg",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -1564,27 +1562,43 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "How to Maximize Your Pokémon GO Fest Experience at Lincoln Park Zoo"
+            "Wetter-News: MAGDEBURG UND SACHSEN-ANHALT WETTER FÜR MORGEN, DEN 8. JUNI 2026"
           ]
         },
         {
           "rank": 17,
-          "keyword": "nba ergebnisse",
-          "keywordEn": "nba ergebnisse",
+          "keyword": "pokémon go",
+          "keywordEn": "pokémon go",
           "volume": "200",
           "volumeRaw": 200,
-          "category": "sports",
+          "category": "news",
           "temperature": 5,
           "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Er spielte schon als Kind mit Dirk Nowitzki: Nächster deutscher NBA-Star hat schon vor dem Draft große Ziele"
+            "Pokemon GO takes over Chicago's Grant Park | ChicagoLIVE"
           ]
         },
         {
           "rank": 18,
+          "keyword": "karim khan",
+          "keywordEn": "karim khan",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Decision of the Bureau concerning the outcome of disciplinary proceedings involving the Prosecutor of the International Criminal Court | International Criminal Court"
+          ]
+        },
+        {
+          "rank": 19,
           "keyword": "kunsthaus stade",
           "keywordEn": "kunsthaus stade",
           "volume": "100",
@@ -1600,35 +1614,19 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "keyword": "polizei berlin",
           "keywordEn": "polizei berlin",
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Gewalt im Stadion - Hertha-Spiel: Zehn Verdächtige nach Randalen identifiziert - Panorama"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "nikkei",
-          "keywordEn": "nikkei",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "finance",
-          "temperature": 5,
           "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "「断固たる措置用意ある」と財務相"
+            "Gewalt im Stadion - Hertha-Spiel: Zehn Verdächtige nach Randalen identifiziert - Panorama"
           ]
         }
       ]
@@ -1658,7 +1656,7 @@
           "keyword": "#Video | 6 गोली मारव नथुनिया पS | #Khesari Lal Yadav, Srishti Bharti | 6 Goli Marab Nathuniya Pa",
           "keywordEn": "#Video | 6 Goli Marv Nathunia PaS | #Khesari Lal Yadav, Increase Creation | 6 Goals I Hate On",
           "volume": "2M+",
-          "volumeRaw": 2032283,
+          "volumeRaw": 2034307,
           "category": "news",
           "temperature": 41,
           "velocity": "new",
@@ -1674,7 +1672,7 @@
           "keyword": "🔴 GTA 5 LIVE – DON’T BLINK I USED A SECRET GTA 5 MOD ON LIVE STREAM#gtalive #gtaonline",
           "keywordEn": "🔴 GTA 5 LIVE – DON’T BLINK I USED A SECRET GTA 5 MOD ON LIVE STREAM#gtalive #gtaonline",
           "volume": "1M+",
-          "volumeRaw": 1662617,
+          "volumeRaw": 1662621,
           "category": "news",
           "temperature": 37,
           "velocity": "steady",
@@ -1706,7 +1704,7 @@
           "keyword": "SlumDog - 33 Temple Road Teaser (Telugu) | Puri Jagannadh | Vijay Sethupathi | Tabu | Samyuktha",
           "keywordEn": "SlumDog - 33 Temple Road Teaser (Telugu) | Puri Jagannadh | Vijay Sethupathi | Tabu | Samyuktha",
           "volume": "1M+",
-          "volumeRaw": 1126653,
+          "volumeRaw": 1128532,
           "category": "movies",
           "temperature": 30,
           "velocity": "rising",
@@ -1722,7 +1720,7 @@
           "keyword": "How I Became the KING of this Trillionaire Villager City in Minecraft!",
           "keywordEn": "How I Became the KING of this Trillionaire Villager City in Minecraft!",
           "volume": "1M+",
-          "volumeRaw": 1004283,
+          "volumeRaw": 1010187,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -1737,8 +1735,8 @@
           "rank": 7,
           "keyword": "Double Occupancy - Official Trailer | Santhosh, Reshma, Samyuktha, Vinoth | Aswin Kandasamy",
           "keywordEn": "Double Occupancy - Official Trailer | Santhosh, Reshma, Samyuktha, Vinoth | Aswin Kandasamy",
-          "volume": "959K+",
-          "volumeRaw": 959893,
+          "volume": "963K+",
+          "volumeRaw": 963054,
           "category": "movies",
           "temperature": 25,
           "velocity": "new",
@@ -1770,7 +1768,7 @@
           "keyword": "Teri Yaadon Ki Chadar Odhe Official Video Dil Ne Tera Naam Liya #bollywood #hindisong #2026",
           "keywordEn": "Teri Yaadon Ki Chadar Odhe Official Video Dil Ne Tera Naam Liya #bollywood #hindisong #2026",
           "volume": "582K+",
-          "volumeRaw": 582032,
+          "volumeRaw": 582572,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -1785,8 +1783,8 @@
           "rank": 10,
           "keyword": "Nooru Sami - Official Trailer | Vijay Antony | Swasika|Ajay Dhishan|Lijomol Jose| Balaji Sriram|Sasi",
           "keywordEn": "Nooru Sami - Official Trailer | Vijay Antony | Swasika|Ajay Dhishan|Lijomol Jose| Balaji Sriram|Sasi",
-          "volume": "404K+",
-          "volumeRaw": 404373,
+          "volume": "405K+",
+          "volumeRaw": 405070,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -1810,7 +1808,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "BAN vs AUS, ODI Series Preview: Upbeat Bangladesh seeks upset against depleted Australia"
+            "Australia lose key players to injury for Bangladesh series"
           ]
         },
         {
@@ -1833,11 +1831,11 @@
           "rank": 13,
           "keyword": "shafeeq ur rahman hollywood film",
           "keywordEn": "shafeeq ur rahman hollywood film",
-          "volume": "2K+",
-          "volumeRaw": 2000,
+          "volume": "5K+",
+          "volumeRaw": 5000,
           "category": "movies",
           "temperature": 9,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -1847,18 +1845,18 @@
         },
         {
           "rank": 14,
-          "keyword": "बोनस शेयर",
-          "keywordEn": "bonus shares",
+          "keyword": "upsc",
+          "keywordEn": "upsc",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
           "temperature": 7,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Hardwyn India का बड़ा ऐलान! 2:5 के अनुपात में बोनस शेयर, शेयरधारकों को मिलेगा तोहफा"
+            "UPSC Prelims 2026 shocks aspirants: Why Ethics-style questions signal a major shift in civil services testing"
           ]
         },
         {
@@ -1869,7 +1867,7 @@
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -1879,26 +1877,10 @@
         },
         {
           "rank": 16,
-          "keyword": "litton das",
-          "keywordEn": "litton das",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "\"In Pakistan, They Stood Outside Room With Guns\": Bangladesh Cricket Captain Litton's 'Dangerous' Accusation"
-          ]
-        },
-        {
-          "rank": 17,
           "keyword": "कैबिनेट",
           "keywordEn": "cabinet",
-          "volume": "500",
-          "volumeRaw": 500,
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
           "temperature": 5,
           "velocity": "new",
@@ -1910,11 +1892,11 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "மதுபானம்",
           "keywordEn": "Liquor",
-          "volume": "500",
-          "volumeRaw": 500,
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
           "temperature": 5,
           "velocity": "new",
@@ -1926,9 +1908,25 @@
           ]
         },
         {
+          "rank": 18,
+          "keyword": "দেব",
+          "keywordEn": "will give",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "ভূপেন্দ্রর বাড়িতে দেবের গাল টিপে দিলেন শুভেন্দু, মহাকাব্যিক দল বদলে রইলেন মহানায়কও"
+          ]
+        },
+        {
           "rank": 19,
-          "keyword": "கப்பல்",
-          "keywordEn": "the ship",
+          "keyword": "litton das",
+          "keywordEn": "litton das",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
@@ -1938,13 +1936,13 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "பற்றி எரியும் சரக்கு கப்பலில் சிக்கிய இந்தியர்கள்…. ராணுவ ஹெலிகாப்டர் மூலம் மீட்பு"
+            "\"In Pakistan, They Stood Outside Room With Guns\": Bangladesh Cricket Captain Litton's 'Dangerous' Accusation"
           ]
         },
         {
           "rank": 20,
-          "keyword": "কাকলি ঘোষ দস্তিদার",
-          "keywordEn": "Kakali Ghosh Dastidar",
+          "keyword": "கப்பல்",
+          "keywordEn": "the ship",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
@@ -1954,7 +1952,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "লোকসভায় 'অপারেশন লোটাসের' নেপথ্যে কে? নাম সামনে আনলেন 'বিদ্রোহী' কাকলি"
+            "பற்றி எரியும் சரக்கு கப்பலில் சிக்கிய இந்தியர்கள்…. ராணுவ ஹெலிகாப்டர் மூலம் மீட்பு"
           ]
         }
       ]
@@ -1968,7 +1966,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 73,
           "velocity": "new",
@@ -1984,7 +1982,7 @@
           "keyword": "MINECRAFT, MAS EU SÓ POSSO USAR ARMAS!",
           "keywordEn": "MINECRAFT, BUT I CAN ONLY USE WEAPONS!",
           "volume": "1M+",
-          "volumeRaw": 1084978,
+          "volumeRaw": 1086113,
           "category": "news",
           "temperature": 36,
           "velocity": "rising",
@@ -1999,8 +1997,8 @@
           "rank": 3,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 48,
           "velocity": "rising",
@@ -2016,7 +2014,7 @@
           "keyword": "♪ Japão X Nigéria (Blue Lock) | Copa do Mundo PT 1 | AniRap",
           "keywordEn": "♪ Japan X Nigeria (Blue Lock) | World Cup PT 1 | AniRap",
           "volume": "381K+",
-          "volumeRaw": 381226,
+          "volumeRaw": 381418,
           "category": "sports",
           "temperature": 28,
           "velocity": "new",
@@ -2032,7 +2030,7 @@
           "keyword": "SALLY FACE CONTA TODA A VERDADE FINALMENTE! - Capítulo 4",
           "keywordEn": "SALLY FACE FINALLY TELLS THE WHOLE TRUTH! - Chapter 4",
           "volume": "334K+",
-          "volumeRaw": 334033,
+          "volumeRaw": 334890,
           "category": "news",
           "temperature": 26,
           "velocity": "steady",
@@ -2048,7 +2046,7 @@
           "keyword": "TOP GOSPEL 2026 | 100 Louvores Para Gratidão de Deus 🙏 As Mais Tocadas, Adoração, Fé e Esperança",
           "keywordEn": "TOP GOSPEL 2026 | 100 Praises for God's Gratitude 🙏 The Most Played, Worship, Faith and Hope",
           "volume": "31K+",
-          "volumeRaw": 31473,
+          "volumeRaw": 31503,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -2064,7 +2062,7 @@
           "keyword": "COMO VICTOR ESCAPOU! TRAILER EP. 8 DE FROM (ORIGEM) 4ª TEMPORADA EXPLICADO!",
           "keywordEn": "HOW VICTOR ESCAPE! TRAILER EP. 8 FROM (ORIGIN) SEASON 4 EXPLAINED!",
           "volume": "28K+",
-          "volumeRaw": 28084,
+          "volumeRaw": 28224,
           "category": "movies",
           "temperature": 21,
           "velocity": "rising",
@@ -2080,7 +2078,7 @@
           "keyword": "Eis Aí Tua Mãe - Irmã Maria Joana (Instituto Hesed) | GBA Stage",
           "keywordEn": "Behold Your Mother - Sister Maria Joana (Hesed Institute) | GBA Stage",
           "volume": "28K+",
-          "volumeRaw": 28031,
+          "volumeRaw": 28050,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -2096,7 +2094,7 @@
           "keyword": "Descendentes: País das Maravilhas Malvado | Teaser Trailer Dublado | Disney+",
           "keywordEn": "Descendants: Evil Wonderland | Dubbed Teaser Trailer | Disney+",
           "volume": "20K+",
-          "volumeRaw": 20387,
+          "volumeRaw": 20455,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -2112,7 +2110,7 @@
           "keyword": "Ponto Sem Retorno | Trailer Oficial Dublado",
           "keywordEn": "Ponto Sem Retorno | Trailer Oficial Dublado",
           "volume": "13K+",
-          "volumeRaw": 13148,
+          "volumeRaw": 13226,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -2200,7 +2198,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "First player since Shaq in 2001 to open the NBA Finals …"
+            "Victor Wembanyama could become the next Babe Ruth in sports"
           ]
         },
         {
@@ -2274,7 +2272,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 10,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -2294,7 +2292,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "new",
@@ -2310,7 +2308,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "rising",
@@ -2325,8 +2323,8 @@
           "rank": 3,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 48,
           "velocity": "rising",
@@ -2342,7 +2340,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 44,
           "velocity": "new",
@@ -2358,7 +2356,7 @@
           "keyword": "Mariam Ba LAGARÉ Feat Roseline Layo - Saramanba ( Clip Officiel)",
           "keywordEn": "Mariam Ba LAGARÉ Feat Roseline Layo - Saramanba (Officiel Clip)",
           "volume": "439K+",
-          "volumeRaw": 439206,
+          "volumeRaw": 439597,
           "category": "news",
           "temperature": 27,
           "velocity": "new",
@@ -2374,7 +2372,7 @@
           "keyword": "Je Visite la Base de L’enfant TOP 1 Monde qui nous a Dépassé..",
           "keywordEn": "I Visit the Base of the TOP 1 Child World that has passed us by..",
           "volume": "394K+",
-          "volumeRaw": 394788,
+          "volumeRaw": 394873,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -2390,7 +2388,7 @@
           "keyword": "N'OUVREZ JAMAIS LA MAUVAISE PORTE !! - PROJECT: DOORS",
           "keywordEn": "N'OUVREZ JAMAIS LA MAUVAISE PORTE !! - PROJECT: DOORS",
           "volume": "101K+",
-          "volumeRaw": 101304,
+          "volumeRaw": 101398,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -2406,7 +2404,7 @@
           "keyword": "tempête",
           "keywordEn": "storm",
           "volume": "94K+",
-          "volumeRaw": 94428,
+          "volumeRaw": 94460,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -2422,7 +2420,7 @@
           "keyword": "SCOOBY-DOO : LES ORIGINES Bande Annonce Teaser VF (2027)",
           "keywordEn": "SCOOBY-DOO : LES ORIGINES Bande Annonce Teaser VF (2027)",
           "volume": "28K+",
-          "volumeRaw": 28112,
+          "volumeRaw": 28124,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -2438,7 +2436,7 @@
           "keyword": "PERMIS DE DÉTRUIRE Bande Annonce (2026) Kad Merad, Patrick Timsit",
           "keywordEn": "LICENSE TO DESTROY Trailer (2026) Kad Merad, Patrick Timsit",
           "volume": "17K+",
-          "volumeRaw": 17091,
+          "volumeRaw": 17101,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -2558,7 +2556,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Rhône. Brebis égorgée au sud de Lyon : nouvelle attaque imputée au loup"
+            "Rhône. Une nouvelle attaque imputée au loup : une brebis égorgée"
           ]
         },
         {
@@ -2636,7 +2634,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 96,
           "velocity": "new",
@@ -2652,7 +2650,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 65,
           "velocity": "new",
@@ -2684,7 +2682,7 @@
           "keyword": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
           "keywordEn": "Taylor Swift - I Knew It, I Knew You (from Toy Story 5)",
           "volume": "1M+",
-          "volumeRaw": 1694892,
+          "volumeRaw": 1696708,
           "category": "news",
           "temperature": 43,
           "velocity": "new",
@@ -2700,7 +2698,7 @@
           "keyword": "Persona 6 — Teaser Trailer",
           "keywordEn": "Persona 6 — Teaser Trailer",
           "volume": "1M+",
-          "volumeRaw": 1284467,
+          "volumeRaw": 1284791,
           "category": "movies",
           "temperature": 44,
           "velocity": "rising",
@@ -2716,7 +2714,7 @@
           "keyword": "C Walk",
           "keywordEn": "C Walk",
           "volume": "1M+",
-          "volumeRaw": 1183127,
+          "volumeRaw": 1184474,
           "category": "news",
           "temperature": 36,
           "velocity": "rising",
@@ -2731,8 +2729,8 @@
           "rank": 8,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 38,
           "velocity": "steady",
@@ -2748,7 +2746,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 34,
           "velocity": "new",
@@ -2764,7 +2762,7 @@
           "keyword": "Halo: Campaign Evolved - Official 'New Missions' Gameplay Trailer | Xbox Games  Showcase 2026",
           "keywordEn": "Halo: Campaign Evolved - Official 'New Missions' Gameplay Trailer | Xbox Games  Showcase 2026",
           "volume": "384K+",
-          "volumeRaw": 384695,
+          "volumeRaw": 384798,
           "category": "movies",
           "temperature": 16,
           "velocity": "new",
@@ -2916,7 +2914,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "The basketball-crazed Philippines will have a champion when these NBA Finals are over"
+            "The Layup Drill"
           ]
         },
         {
@@ -2946,7 +2944,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 73,
           "velocity": "steady",
@@ -2962,7 +2960,7 @@
           "keyword": "Cartel de Santa - Sapo (Video Oficial) | @elcarteldesantatv",
           "keywordEn": "Cartel de Santa - Sapo (Video Oficial) | @elcarteldesantatv",
           "volume": "2M+",
-          "volumeRaw": 2204029,
+          "volumeRaw": 2206990,
           "category": "news",
           "temperature": 42,
           "velocity": "new",
@@ -2977,8 +2975,8 @@
           "rank": 3,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 48,
           "velocity": "steady",
@@ -2993,8 +2991,8 @@
           "rank": 4,
           "keyword": "Encontré el CUERPO de GUGUGAGA MALDITO en Minecraft!",
           "keywordEn": "I found the DAMN GUGUGAGA BODY in Minecraft!",
-          "volume": "849K+",
-          "volumeRaw": 849613,
+          "volume": "851K+",
+          "volumeRaw": 851442,
           "category": "news",
           "temperature": 46,
           "velocity": "new",
@@ -3009,8 +3007,8 @@
           "rank": 5,
           "keyword": "LOS JUEGOS DE BACKROOMS EN ROBLOX DAN MUCHO MIEDO 💀",
           "keywordEn": "BACKROOM GAMES IN ROBLOX ARE VERY SCARY 💀",
-          "volume": "590K+",
-          "volumeRaw": 590507,
+          "volume": "597K+",
+          "volumeRaw": 597819,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -3026,7 +3024,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 40,
           "velocity": "rising",
@@ -3041,8 +3039,8 @@
           "rank": 7,
           "keyword": "C-Kan - Toma Todo",
           "keywordEn": "C-Kan - Toma Todo",
-          "volume": "339K+",
-          "volumeRaw": 339657,
+          "volume": "345K+",
+          "volumeRaw": 345627,
           "category": "news",
           "temperature": 27,
           "velocity": "rising",
@@ -3057,8 +3055,8 @@
           "rank": 8,
           "keyword": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
           "keywordEn": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
-          "volume": "156K+",
-          "volumeRaw": 156771,
+          "volume": "157K+",
+          "volumeRaw": 157927,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -3074,7 +3072,7 @@
           "keyword": "Tráiler oficial de El Señor de los Cielos 10 | Temporada final",
           "keywordEn": "Official trailer for The Lord of the Skies 10 | Final season",
           "volume": "62K+",
-          "volumeRaw": 62201,
+          "volumeRaw": 62528,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -3090,7 +3088,7 @@
           "keyword": "¡HALO CAMPAIGN EVOLVED | Analisis completo del NUEVO TRAILER! secretos y curiosidades #halo",
           "keywordEn": "HALO CAMPAIGN EVOLVED | Complete analysis of the NEW TRAILER! secrets and curiosities #halo",
           "volume": "28K+",
-          "volumeRaw": 28153,
+          "volumeRaw": 28222,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -3188,9 +3186,9 @@
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 15,
+          "temperature": 10,
           "velocity": "rising",
-          "isGlobal": true,
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -3272,7 +3270,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "steady",
@@ -3288,7 +3286,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "rising",
@@ -3304,7 +3302,7 @@
           "keyword": "Persona 6 — Teaser Trailer",
           "keywordEn": "Persona 6 — Teaser Trailer",
           "volume": "1M+",
-          "volumeRaw": 1284467,
+          "volumeRaw": 1284791,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -3320,7 +3318,7 @@
           "keyword": "C Walk",
           "keywordEn": "C Walk",
           "volume": "1M+",
-          "volumeRaw": 1183127,
+          "volumeRaw": 1184474,
           "category": "news",
           "temperature": 42,
           "velocity": "rising",
@@ -3335,8 +3333,8 @@
           "rank": 5,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 44,
           "velocity": "new",
@@ -3367,8 +3365,8 @@
           "rank": 7,
           "keyword": "Streamer University 2026 | Official Enrollment Trailer",
           "keywordEn": "Streamer University 2026 | Official Enrollment Trailer",
-          "volume": "640K+",
-          "volumeRaw": 640642,
+          "volume": "641K+",
+          "volumeRaw": 641969,
           "category": "movies",
           "temperature": 39,
           "velocity": "new",
@@ -3383,8 +3381,8 @@
           "rank": 8,
           "keyword": "Hermitcraft 11: Episode 18 - THE WORST DAY ON HERMITCRAFT.",
           "keywordEn": "Hermitcraft 11: Episode 18 - THE WORST DAY ON HERMITCRAFT.",
-          "volume": "532K+",
-          "volumeRaw": 532390,
+          "volume": "533K+",
+          "volumeRaw": 533446,
           "category": "news",
           "temperature": 26,
           "velocity": "steady",
@@ -3400,7 +3398,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 34,
           "velocity": "rising",
@@ -3416,7 +3414,7 @@
           "keyword": "K Money - That’s the Least (Official Video) prod. DT Beats & Jupiter | @kingbeeproductions",
           "keywordEn": "K Money - That’s the Least (Official Video) prod. DT Beats & Jupiter | @kingbeeproductions",
           "volume": "14K+",
-          "volumeRaw": 14377,
+          "volumeRaw": 14423,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -3568,7 +3566,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Jeremy Sochan on how to get Victor Wembanyama tired: Give him different looks, be very physical and make him run"
+            "Spurs or Knicks: One former Baylor Bear will be crowned an NBA champion"
           ]
         },
         {
@@ -3598,7 +3596,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 73,
           "velocity": "rising",
@@ -3613,8 +3611,8 @@
           "rank": 2,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -3630,7 +3628,7 @@
           "keyword": "METRO 2039 | Gameplay Reveal - Hunter",
           "keywordEn": "METRO 2039 | Gameplay Reveal - Hunter",
           "volume": "498K+",
-          "volumeRaw": 498822,
+          "volumeRaw": 498957,
           "category": "news",
           "temperature": 36,
           "velocity": "new",
@@ -3662,7 +3660,7 @@
           "keyword": "КАК ОТКРЫТЬ СВОЮ ЕДУ 🐟",
           "keywordEn": "HOW TO OPEN YOUR OWN FOOD 🐟",
           "volume": "305K+",
-          "volumeRaw": 305618,
+          "volumeRaw": 305772,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -3678,7 +3676,7 @@
           "keyword": "БИШКА ЧУТЬ НЕ УМЕР ПОКА МЫ ОТДЫХАЛИ НА ПЛОТУ В МАЙНКРАФТ!",
           "keywordEn": "BISHKA NEARLY DIED WHILE WE WERE RELAXING ON A RAFT IN MINECRAFT!",
           "volume": "244K+",
-          "volumeRaw": 244030,
+          "volumeRaw": 244210,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -3694,7 +3692,7 @@
           "keyword": "Сергей Лазарев и Полина Гагарина - Хэппи энд | Премия Муз-ТВ-2026",
           "keywordEn": "Sergey Lazarev and Polina Gagarina - Happy End | Muz-TV Award 2026",
           "volume": "29K+",
-          "volumeRaw": 29156,
+          "volumeRaw": 29188,
           "category": "movies",
           "temperature": 21,
           "velocity": "rising",
@@ -3726,7 +3724,7 @@
           "keyword": "Approve Please, Genie! - русский кавер - riguruma",
           "keywordEn": "Approve Please, Genie! - Russian cover - riguruma",
           "volume": "21K+",
-          "volumeRaw": 21084,
+          "volumeRaw": 21104,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -3742,7 +3740,7 @@
           "keyword": "Bu dunyo bir ko'hna bozor",
           "keywordEn": "Bu dunyo bir ko'hna bozor",
           "volume": "16K+",
-          "volumeRaw": 16467,
+          "volumeRaw": 16497,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -3761,7 +3759,7 @@
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 13,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -3777,38 +3775,54 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 11,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Гендиректор «Спартака»: «С Барко все хорошо. Есть люди, которые отрезаны от утечки информации из клуба, и они что‑то выдумывают»"
+          ]
+        },
+        {
+          "rank": 13,
+          "keyword": "герман греф",
+          "keywordEn": "German Gref",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 9,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Выиграет «Спартак» свой первый Суперкубок России?"
-          ]
-        },
-        {
-          "rank": 13,
-          "keyword": "emirates",
-          "keywordEn": "emirates",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 9,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Lithium-battery devices on planes are a disaster waiting to happen"
+            "Куда вложить 1 млн рублей?"
           ]
         },
         {
           "rank": 14,
+          "keyword": "квентин тарантино",
+          "keywordEn": "Quentin Tarantino",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 7,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Кинопремьеры июня: расширенная дилогия «Убить Билла» и «Закулисье реальности»"
+          ]
+        },
+        {
+          "rank": 15,
           "keyword": "большая ижора",
           "keywordEn": "Bolshaya Izhora",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 7,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -3818,7 +3832,23 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 16,
+          "keyword": "вьетнам",
+          "keywordEn": "Vietnam",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "AFF 2026: Построение АСЕАН, где малые и средние предприятия смогут развиваться!"
+          ]
+        },
+        {
+          "rank": 17,
           "keyword": "ил-114",
           "keywordEn": "il-114",
           "volume": "200",
@@ -3834,7 +3864,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 18,
           "keyword": "9 июня праздник",
           "keywordEn": "June 9 holiday",
           "volume": "200",
@@ -3850,7 +3880,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 19,
           "keyword": "анапа",
           "keywordEn": "Anapa",
           "volume": "200",
@@ -3866,23 +3896,7 @@
           ]
         },
         {
-          "rank": 18,
-          "keyword": "квентин тарантино",
-          "keywordEn": "Quentin Tarantino",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Кинопремьеры июня: расширенная дилогия «Убить Билла» и «Закулисье реальности»"
-          ]
-        },
-        {
-          "rank": 19,
+          "rank": 20,
           "keyword": "вембаньяма, виктор",
           "keywordEn": "Vembanyama, Victor",
           "volume": "100",
@@ -3894,23 +3908,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Де'Аарон Фокс: «Каждый раз, когда Вембаньяма играет агрессивно, «Сан-Антонио» показывает свою лучшую игру»"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "вьетнам",
-          "keywordEn": "Vietnam",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "AFF 2026: Построение АСЕАН, где малые и средние предприятия смогут развиваться!"
+            "Вембаньяма занимается рисованием в Нью-Йорке перед началом третьей игры финала НБА"
           ]
         }
       ]
@@ -3924,7 +3922,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "steady",
@@ -3940,7 +3938,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "rising",
@@ -3956,7 +3954,7 @@
           "keyword": "Persona 6 — Teaser Trailer",
           "keywordEn": "Persona 6 — Teaser Trailer",
           "volume": "1M+",
-          "volumeRaw": 1284467,
+          "volumeRaw": 1284791,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -3972,7 +3970,7 @@
           "keyword": "Geolier - AUTORITÀ (Official Video)",
           "keywordEn": "Geolier - AUTHORITY (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1041862,
+          "volumeRaw": 1041908,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -3987,8 +3985,8 @@
           "rank": 5,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 44,
           "velocity": "new",
@@ -4004,7 +4002,7 @@
           "keyword": "SFERA EBBASTA, DYSTINCT - AYAYAY",
           "keywordEn": "SFERA EBBASTA, DYSTINCT - AYAYAY",
           "volume": "399K+",
-          "volumeRaw": 399443,
+          "volumeRaw": 399468,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -4020,7 +4018,7 @@
           "keyword": "Brookhaven è SOMMERSA dalla LAVA!",
           "keywordEn": "Brookhaven is SUBMERSIBLE in LAVA!",
           "volume": "154K+",
-          "volumeRaw": 154763,
+          "volumeRaw": 154771,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -4036,7 +4034,7 @@
           "keyword": "HO CREATO LA MAPPA GIGANTE DELL'IMPEROCRAFT - Ep. 262",
           "keywordEn": "HO CREATO LA MAPPA GIGANTE DELL'IMPEROCRAFT - Ep. 262",
           "volume": "98K+",
-          "volumeRaw": 98190,
+          "volumeRaw": 98193,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -4052,7 +4050,7 @@
           "keyword": "Nord Sud Ovest Est - La leggendaria storia degli 883 | Teaser Ufficiale",
           "keywordEn": "Nord Sud Ovest Est - La leggendaria storia degli 883 | Teaser Ufficiale",
           "volume": "22K+",
-          "volumeRaw": 22933,
+          "volumeRaw": 22943,
           "category": "movies",
           "temperature": 17,
           "velocity": "rising",
@@ -4068,7 +4066,7 @@
           "keyword": "Spyro A Realm Beyond: primo trailer ufficiale",
           "keywordEn": "Spyro A Realm Beyond: primo trailer ufficiale",
           "volume": "19K+",
-          "volumeRaw": 19136,
+          "volumeRaw": 19137,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -4103,7 +4101,7 @@
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 26,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -4113,18 +4111,18 @@
         },
         {
           "rank": 13,
-          "keyword": "fifa wc vodds",
-          "keywordEn": "fifa wc vodds",
-          "volume": "500",
-          "volumeRaw": 500,
+          "keyword": "corea del nord",
+          "keywordEn": "corea del nord",
+          "volume": "200",
+          "volumeRaw": 200,
           "category": "news",
           "temperature": 9,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "World Cup 2026 Predictions for Winners for Every Group amid Projected Odds"
+            "Xi abbraccia Kim, missione per sfilare Pyongyang dall'orbita di Putin"
           ]
         },
         {
@@ -4167,7 +4165,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 10,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -4236,7 +4234,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Oyarzabal y Pedri adelantan a España al descanso (0-2)"
+            "Perú vs. España (1-3): minuto a minuto, resumen y goles del amistoso internacional"
           ]
         }
       ]
@@ -4250,7 +4248,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "new",
@@ -4266,7 +4264,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 71,
           "velocity": "rising",
@@ -4282,7 +4280,7 @@
           "keyword": "Persona 6 — Teaser Trailer",
           "keywordEn": "Persona 6 — Teaser Trailer",
           "volume": "1M+",
-          "volumeRaw": 1284467,
+          "volumeRaw": 1284791,
           "category": "movies",
           "temperature": 50,
           "velocity": "rising",
@@ -4297,8 +4295,8 @@
           "rank": 4,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "916K+",
+          "volumeRaw": 916915,
           "category": "movies",
           "temperature": 46,
           "velocity": "rising",
@@ -4313,8 +4311,8 @@
           "rank": 5,
           "keyword": "Fortnite Volvió a CAMBIAR TODO (otra vez)",
           "keywordEn": "Fortnite CHANGE EVERYTHING again (again)",
-          "volume": "719K+",
-          "volumeRaw": 719512,
+          "volume": "721K+",
+          "volumeRaw": 721686,
           "category": "news",
           "temperature": 38,
           "velocity": "steady",
@@ -4330,7 +4328,7 @@
           "keyword": "Prince Royce - La Carretera | Letra",
           "keywordEn": "Prince Royce - La Carretera | Letra",
           "volume": "310K+",
-          "volumeRaw": 310530,
+          "volumeRaw": 310885,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -4362,7 +4360,7 @@
           "keyword": "FOLAGOR y PACHE vs POKEALEX y PEEREIRA | Combate 5 | Pokémon X DuoLocke",
           "keywordEn": "FOLAGOR and PACHE vs POKEALEX and PEEREIRA | Combat 5 | Pokémon X DuoLocke",
           "volume": "205K+",
-          "volumeRaw": 205798,
+          "volumeRaw": 205983,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -4378,7 +4376,7 @@
           "keyword": "TERMINÓ la CUENTA REGRESIVA!! 👉 Análisis del Tráiler Minecraft Dungeons 2",
           "keywordEn": "THE COUNTDOWN IS OVER!! 👉 Analysis of the Minecraft Dungeons 2 Trailer",
           "volume": "157K+",
-          "volumeRaw": 157930,
+          "volumeRaw": 157995,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -4394,7 +4392,7 @@
           "keyword": "35 DETALLES del PRIMER TRÁILER de \"RESIDENT EVIL VERÓNICA\"",
           "keywordEn": "35 DETAILS of the FIRST TRAILER of \"RESIDENT EVIL VERÓNICA\"",
           "volume": "35K+",
-          "volumeRaw": 35237,
+          "volumeRaw": 35312,
           "category": "movies",
           "temperature": 25,
           "velocity": "new",
@@ -4460,7 +4458,7 @@
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 7,
+          "temperature": 12,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -4524,9 +4522,9 @@
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
-          "temperature": 15,
+          "temperature": 10,
           "velocity": "rising",
-          "isGlobal": true,
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -4576,7 +4574,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 98,
           "velocity": "new",
@@ -4608,7 +4606,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 78,
           "velocity": "rising",
@@ -4624,7 +4622,7 @@
           "keyword": "Al Shami x Leen Hayek - Aayesh La Oyounak [Official Video] (2026) / الشامي ولين الحايك - عايش لعيونك",
           "keywordEn": "Al Shami x Leen Hayek - Aayesh La Oyounak [Official Video] (2026) / Al Shami and Leen Hayek - Aayesh La Oyounak",
           "volume": "6M+",
-          "volumeRaw": 6745001,
+          "volumeRaw": 6745219,
           "category": "news",
           "temperature": 65,
           "velocity": "steady",
@@ -4640,7 +4638,7 @@
           "keyword": "BLOK3 x POİZİ - ÇOK GÜZEL GÜLÜYORSUN (Official Music Video)",
           "keywordEn": "BLOK3 x POSITION - YOU SMILE SO BEAUTIFULLY (Official Music Video)",
           "volume": "5M+",
-          "volumeRaw": 5930267,
+          "volumeRaw": 5930804,
           "category": "music",
           "temperature": 59,
           "velocity": "new",
@@ -4656,7 +4654,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 63,
           "velocity": "rising",
@@ -4672,7 +4670,7 @@
           "keyword": "Guild Wars 3 | Announcement Trailer",
           "keywordEn": "Guild Wars 3 | Announcement Trailer",
           "volume": "840K+",
-          "volumeRaw": 840389,
+          "volumeRaw": 840471,
           "category": "movies",
           "temperature": 30,
           "velocity": "new",
@@ -4688,7 +4686,7 @@
           "keyword": "TEAM OF THE SEASON BINGO (2026 editie)",
           "keywordEn": "TEAM OF THE SEASON BINGO (2026 editie)",
           "volume": "302K+",
-          "volumeRaw": 302742,
+          "volumeRaw": 302750,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -4704,7 +4702,7 @@
           "keyword": "1666 Amsterdam - Reveal Trailer  | IGN Summer of Gaming",
           "keywordEn": "1666 Amsterdam - Reveal Trailer  | IGN Summer of Gaming",
           "volume": "292K+",
-          "volumeRaw": 292384,
+          "volumeRaw": 292402,
           "category": "movies",
           "temperature": 18,
           "velocity": "new",
@@ -4720,7 +4718,7 @@
           "keyword": "Dit waren de allerlaatste minuten van de K3 Originals in de AFAS Dome!",
           "keywordEn": "Dit waren de allerlaatste minuten van de K3 Originals in de AFAS Dome!",
           "volume": "244K+",
-          "volumeRaw": 244628,
+          "volumeRaw": 244632,
           "category": "news",
           "temperature": 16,
           "velocity": "rising",
@@ -4744,23 +4742,23 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "Spurs' Victor Wembanyama shakes off Game 2 miss by taking over Game 3 of the NBA Finals"
           ]
         },
         {
           "rank": 12,
-          "keyword": "knicks vs spurs game 3",
-          "keywordEn": "knicks vs spurs game 3",
-          "volume": "1K+",
-          "volumeRaw": 1000,
+          "keyword": "knicks vs spurs",
+          "keywordEn": "knicks vs spurs",
+          "volume": "500",
+          "volumeRaw": 500,
           "category": "news",
-          "temperature": 11,
+          "temperature": 26,
           "velocity": "new",
-          "isGlobal": false,
+          "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "NYC hospitality leaders cheer estimated $465M in economic boost thanks to Knicks run"
+            "The Wall Street Mania Pushing Knicks Tickets to $176,000"
           ]
         },
         {
@@ -4797,22 +4795,6 @@
         },
         {
           "rank": 15,
-          "keyword": "knicks vs spurs",
-          "keywordEn": "knicks vs spurs",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 20,
-          "velocity": "new",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Wembanyama mistake hands Knicks control of NBA Finals"
-          ]
-        },
-        {
-          "rank": 16,
           "keyword": "kylian mbappé",
           "keywordEn": "kylian mbappé",
           "volume": "200",
@@ -4824,11 +4806,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Exclusive: Jose Mourinho told to adjust Real Madrid system for Kylian Mbappe"
+            "Jose Mourinho is prepared to put Kylian Mbappe on notice"
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "mirjam sterk",
           "keywordEn": "mirjam sterk",
           "volume": "200",
@@ -4844,7 +4826,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "112 amersfoort",
           "keywordEn": "112 amersfoort",
           "volume": "200",
@@ -4860,7 +4842,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "prinses",
           "keywordEn": "prinses",
           "volume": "100",
@@ -4876,7 +4858,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "keyword": "spain vs peru",
           "keywordEn": "spain vs peru",
           "volume": "100",
@@ -4890,6 +4872,22 @@
           "relatedNews": [
             "Spain vs. Peru prediction, odds: Best bet for Monday’s World Cup friendly"
           ]
+        },
+        {
+          "rank": 20,
+          "keyword": "knicks vs spurs game 3",
+          "keywordEn": "knicks vs spurs game 3",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "It’s time for Finals Basketball: San Antonio Spurs vs New York Knicks, Game 3"
+          ]
         }
       ]
     },
@@ -4902,7 +4900,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 98,
           "velocity": "rising",
@@ -4950,7 +4948,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 76,
           "velocity": "rising",
@@ -4966,7 +4964,7 @@
           "keyword": "Al Shami x Leen Hayek - Aayesh La Oyounak [Official Video] (2026) / الشامي ولين الحايك - عايش لعيونك",
           "keywordEn": "Al Shami x Leen Hayek - Aayesh La Oyounak [Official Video] (2026) / Al Shami and Leen Hayek - Aayesh La Oyounak",
           "volume": "6M+",
-          "volumeRaw": 6745001,
+          "volumeRaw": 6745219,
           "category": "news",
           "temperature": 63,
           "velocity": "new",
@@ -4982,7 +4980,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 59,
           "velocity": "steady",
@@ -4998,7 +4996,7 @@
           "keyword": "Guild Wars 3 | Announcement Trailer",
           "keywordEn": "Guild Wars 3 | Announcement Trailer",
           "volume": "840K+",
-          "volumeRaw": 840389,
+          "volumeRaw": 840471,
           "category": "movies",
           "temperature": 30,
           "velocity": "new",
@@ -5013,8 +5011,8 @@
           "rank": 8,
           "keyword": "Valheim: 1.0 & Deep North – Release Date Reveal Trailer",
           "keywordEn": "Valheim: 1.0 & Deep North – Release Date Reveal Trailer",
-          "volume": "401K+",
-          "volumeRaw": 401872,
+          "volume": "402K+",
+          "volumeRaw": 402053,
           "category": "music",
           "temperature": 26,
           "velocity": "new",
@@ -5030,7 +5028,7 @@
           "keyword": "Bolaget - Det ligger nåt i luften (Officiell Musikvideo)",
           "keywordEn": "The Company - There's Something in the Air (Official Music Video)",
           "volume": "93K+",
-          "volumeRaw": 93203,
+          "volumeRaw": 93206,
           "category": "music",
           "temperature": 17,
           "velocity": "steady",
@@ -5091,50 +5089,50 @@
         },
         {
           "rank": 13,
-          "keyword": "nba",
-          "keywordEn": "nba",
+          "keyword": "knicks",
+          "keywordEn": "knicks",
           "volume": "1K+",
           "volumeRaw": 1000,
-          "category": "sports",
+          "category": "news",
           "temperature": 24,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Spurs' Victor Wembanyama shakes off Game 2 miss by taking over Game 3 of the NBA Finals"
+            "Live updates: Knicks vs Spurs at NBA Finals game in NY, Trump arrives at MSG"
           ]
         },
         {
           "rank": 14,
-          "keyword": "bränsle",
-          "keywordEn": "fuel",
+          "keyword": "kirby",
+          "keywordEn": "kirby",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
           "temperature": 7,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Bensinpriset snart lägre än före Hormuzkrisen"
-          ]
-        },
-        {
-          "rank": 15,
-          "keyword": "kirby",
-          "keywordEn": "kirby",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Kirby Rawlinson Finds Herself Inside Top 15 as Rookie Year Summer Hits"
+          ]
+        },
+        {
+          "rank": 15,
+          "keyword": "bränsle",
+          "keywordEn": "fuel",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Bensinpriset snart lägre än före Hormuzkrisen"
           ]
         },
         {
@@ -5145,7 +5143,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -5182,23 +5180,23 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "NBA Finals Game 3 predictions: Knicks vs. Spurs best prop bets headlined by Mikal Bridges"
+            "Inside the astronomical ticket prices for sporting events and concerts"
           ]
         },
         {
           "rank": 19,
-          "keyword": "nba finals",
-          "keywordEn": "nba finals",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "sports",
-          "temperature": 20,
-          "velocity": "steady",
-          "isGlobal": true,
+          "keyword": "prins carl philip",
+          "keywordEn": "prins carl philip",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "With Trump attending Game 3, watch party canceled, NYPD says"
+            "Riddarhusets stamtavlor nu digitala – en guldgruva för släktforskare"
           ]
         },
         {
@@ -5228,7 +5226,7 @@
           "keyword": "Shakira, Burna Boy - Dai Dai (Official Video)",
           "keywordEn": "Shakira, Burna Boy - Dai Dai (Official Video)",
           "volume": "102M+",
-          "volumeRaw": 102467222,
+          "volumeRaw": 102467225,
           "category": "news",
           "temperature": 88,
           "velocity": "new",
@@ -5244,7 +5242,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 96,
           "velocity": "rising",
@@ -5276,7 +5274,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 92,
           "velocity": "steady",
@@ -5292,7 +5290,7 @@
           "keyword": "Ariana Grande - hate that i made you love me (official music video)",
           "keywordEn": "Ariana Grande - hate that i made you love me (official music video)",
           "volume": "15M+",
-          "volumeRaw": 15201484,
+          "volumeRaw": 15203532,
           "category": "music",
           "temperature": 85,
           "velocity": "new",
@@ -5308,7 +5306,7 @@
           "keyword": "SUMMER GAME FEST 2026: Official 4K60FPS Livestream, (Resident Evil Veronica, FINAL FANTASY VII)",
           "keywordEn": "SUMMER GAME FEST 2026: Official 4K60FPS Livestream, (Resident Evil Veronica, FINAL FANTASY VII)",
           "volume": "12M+",
-          "volumeRaw": 12057135,
+          "volumeRaw": 12057234,
           "category": "news",
           "temperature": 88,
           "velocity": "rising",
@@ -5324,7 +5322,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 70,
           "velocity": "rising",
@@ -5340,7 +5338,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 55,
           "velocity": "steady",
@@ -5356,7 +5354,7 @@
           "keyword": "No Peace Amongst the Stars | Warhammer 40,000 Official Cinematic Trailer",
           "keywordEn": "No Peace Amongst the Stars | Warhammer 40,000 Official Cinematic Trailer",
           "volume": "4M+",
-          "volumeRaw": 4184572,
+          "volumeRaw": 4184710,
           "category": "movies",
           "temperature": 47,
           "velocity": "new",
@@ -5372,7 +5370,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -5396,7 +5394,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "\"Get to your spot, and if you miss that shot, like, is …"
           ]
         },
         {
@@ -5508,7 +5506,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Trump says he will attend NBA Finals game in New York to root for his hometown Knicks"
+            "President Donald Trump to attend Finals game in New York to root for his hometown Knicks"
           ]
         },
         {
@@ -5570,7 +5568,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 96,
           "velocity": "rising",
@@ -5602,7 +5600,7 @@
           "keyword": "Ariana Grande - hate that i made you love me (official music video)",
           "keywordEn": "Ariana Grande - hate that i made you love me (official music video)",
           "volume": "15M+",
-          "volumeRaw": 15201484,
+          "volumeRaw": 15203532,
           "category": "music",
           "temperature": 87,
           "velocity": "steady",
@@ -5618,7 +5616,7 @@
           "keyword": "SUMMER GAME FEST 2026: Official 4K60FPS Livestream, (Resident Evil Veronica, FINAL FANTASY VII)",
           "keywordEn": "SUMMER GAME FEST 2026: Official 4K60FPS Livestream, (Resident Evil Veronica, FINAL FANTASY VII)",
           "volume": "12M+",
-          "volumeRaw": 12057135,
+          "volumeRaw": 12057234,
           "category": "news",
           "temperature": 90,
           "velocity": "new",
@@ -5634,7 +5632,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 72,
           "velocity": "rising",
@@ -5650,7 +5648,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 57,
           "velocity": "steady",
@@ -5666,7 +5664,7 @@
           "keyword": "No Peace Amongst the Stars | Warhammer 40,000 Official Cinematic Trailer",
           "keywordEn": "No Peace Amongst the Stars | Warhammer 40,000 Official Cinematic Trailer",
           "volume": "4M+",
-          "volumeRaw": 4184572,
+          "volumeRaw": 4184710,
           "category": "movies",
           "temperature": 49,
           "velocity": "new",
@@ -5681,8 +5679,8 @@
           "rank": 9,
           "keyword": "Streamer University 2026 | Official Enrollment Trailer",
           "keywordEn": "Streamer University 2026 | Official Enrollment Trailer",
-          "volume": "640K+",
-          "volumeRaw": 640642,
+          "volume": "641K+",
+          "volumeRaw": 641969,
           "category": "movies",
           "temperature": 35,
           "velocity": "new",
@@ -5770,7 +5768,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Spurs' Victor Wembanyama shakes off Game 2 miss by taking over Game 3 of the NBA Finals"
+            "Live updates: Knicks vs Spurs at NBA Finals game in NY, Trump arrives at MSG"
           ]
         },
         {
@@ -5850,7 +5848,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "2027 Dodge Daytona Scat Pack Hit With A $12,500 Price Increase"
+            "Dodge Is Bringing the Charger Sixpack and Charger Daytona Siblings to Europe"
           ]
         },
         {
@@ -5866,7 +5864,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Top Gun: Maverick Star Addresses Top Gun 3 Return: 'Paramount's Very Excited About It'"
+            "'Top Gun 3' Gets \"Exciting\" Hype in New Update on Tom Cruise Action Sequel"
           ]
         }
       ]
@@ -5880,7 +5878,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 98,
           "velocity": "rising",
@@ -5896,7 +5894,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 96,
           "velocity": "new",
@@ -5912,7 +5910,7 @@
           "keyword": "SUMMER GAME FEST 2026: Official 4K60FPS Livestream, (Resident Evil Veronica, FINAL FANTASY VII)",
           "keywordEn": "SUMMER GAME FEST 2026: Official 4K60FPS Livestream, (Resident Evil Veronica, FINAL FANTASY VII)",
           "volume": "12M+",
-          "volumeRaw": 12057135,
+          "volumeRaw": 12057234,
           "category": "news",
           "temperature": 94,
           "velocity": "rising",
@@ -5928,7 +5926,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 76,
           "velocity": "rising",
@@ -5944,7 +5942,7 @@
           "keyword": "No Peace Amongst the Stars | Warhammer 40,000 Official Cinematic Trailer",
           "keywordEn": "No Peace Amongst the Stars | Warhammer 40,000 Official Cinematic Trailer",
           "volume": "4M+",
-          "volumeRaw": 4184572,
+          "volumeRaw": 4184710,
           "category": "movies",
           "temperature": 55,
           "velocity": "new",
@@ -5959,8 +5957,8 @@
           "rank": 6,
           "keyword": "Valheim: 1.0 & Deep North – Release Date Reveal Trailer",
           "keywordEn": "Valheim: 1.0 & Deep North – Release Date Reveal Trailer",
-          "volume": "401K+",
-          "volumeRaw": 401872,
+          "volume": "402K+",
+          "volumeRaw": 402053,
           "category": "music",
           "temperature": 30,
           "velocity": "new",
@@ -5976,7 +5974,7 @@
           "keyword": "Retropop - Mökkikansa (Official Music Video)",
           "keywordEn": "Retropop - Mökkikansa (Official Music Video)",
           "volume": "79K+",
-          "volumeRaw": 79314,
+          "volumeRaw": 79322,
           "category": "music",
           "temperature": 21,
           "velocity": "new",
@@ -5992,7 +5990,7 @@
           "keyword": "Minecraft, MUTTA Kuution Rikkominen TUHOAA KAIKEN?! w/@Kakkuh & @Applezzi​",
           "keywordEn": "Minecraft, BUT Breaking the Cube DESTROYS EVERYTHING?! w/@Kakkuh & @Applezzi​",
           "volume": "57K+",
-          "volumeRaw": 57826,
+          "volumeRaw": 57829,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -6008,7 +6006,7 @@
           "keyword": "Menin SOTAAN Hardcore Minecraft Palvelimella",
           "keywordEn": "Menin SOTAAN Hardcore Minecraft Palvelimella",
           "volume": "54K+",
-          "volumeRaw": 54877,
+          "volumeRaw": 54880,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -6048,7 +6046,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "FC Lahden ranskalaispuolustaja Romain Sans seuraa vanhoja pelikavereitaan jalkapallon MM-kisoissa"
+            "FC Lahden ranskalaispuolustaja Romain Sans seuraa vanhoja pelikavereitaan jalkapallon MM-kisoissa | Urheilu"
           ]
         },
         {
@@ -6080,7 +6078,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "\"Get to your spot, and if you miss that shot, like, is …"
           ]
         },
         {
@@ -6112,7 +6110,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Knicks Watch Party at MSG Is Canceled as Game 3 Security Ramps Up for Trump"
+            "With Trump attending Game 3, watch party canceled, NYPD says"
           ]
         },
         {
@@ -6192,7 +6190,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Deschamps tips hat-trick man Olise to make big impact at World Cup"
+            "Licensable picture: France V Northern Ireland - International Friendly Game"
           ]
         }
       ]
@@ -6222,7 +6220,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 80,
           "velocity": "rising",
@@ -6238,7 +6236,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5110233,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 69,
           "velocity": "rising",
@@ -6270,7 +6268,7 @@
           "keyword": "METRO 2039 | Gameplay Reveal - Hunter",
           "keywordEn": "METRO 2039 | Gameplay Reveal - Hunter",
           "volume": "498K+",
-          "volumeRaw": 498822,
+          "volumeRaw": 498957,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -6286,7 +6284,7 @@
           "keyword": "Dawid Podsiadło \"na błysk\"",
           "keywordEn": "Dawid Podsiadło \"for a flash\"",
           "volume": "347K+",
-          "volumeRaw": 347252,
+          "volumeRaw": 347265,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -6302,7 +6300,7 @@
           "keyword": "Zbudowałem SKLEP DINO 🛒 z WOJANKAMI na WOJANOWICACH!",
           "keywordEn": "I built a DINO SHOP 🛒 with WOJANKKI in WOJANOWICE!",
           "volume": "332K+",
-          "volumeRaw": 332938,
+          "volumeRaw": 332942,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -6318,7 +6316,7 @@
           "keyword": "KUBAŃCZYK x SENTINO - BABY",
           "keywordEn": "CUBAN x SENTINO - BABY",
           "volume": "245K+",
-          "volumeRaw": 245111,
+          "volumeRaw": 245143,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -6334,7 +6332,7 @@
           "keyword": "FROM Season 4 Episode 8 Trailer \"Heavy Is The Head\"",
           "keywordEn": "FROM Season 4 Episode 8 Trailer \"Heavy Is The Head\"",
           "volume": "217K+",
-          "volumeRaw": 217605,
+          "volumeRaw": 217781,
           "category": "movies",
           "temperature": 18,
           "velocity": "new",
@@ -6350,7 +6348,7 @@
           "keyword": "I nic poza tym",
           "keywordEn": "I nic poza tym",
           "volume": "141K+",
-          "volumeRaw": 141677,
+          "volumeRaw": 141719,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -6438,7 +6436,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "\"Get to your spot, and if you miss that shot, like, is …"
           ]
         },
         {
@@ -6518,7 +6516,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "NBA. 32 punkty w Madison Square Garden na oczach Trumpa. Sochan zaskoczony"
+            "Posłuchaj podcasu: Sport360: New York Knicks o krok od tytułu"
           ]
         }
       ]
@@ -6548,7 +6546,7 @@
           "keyword": "BLOK3 x POİZİ - ÇOK GÜZEL GÜLÜYORSUN (Official Music Video)",
           "keywordEn": "BLOK3 x POSITION - YOU SMILE SO BEAUTIFULLY (Official Music Video)",
           "volume": "5M+",
-          "volumeRaw": 5930267,
+          "volumeRaw": 5930804,
           "category": "music",
           "temperature": 65,
           "velocity": "rising",
@@ -6564,7 +6562,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5114496,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 69,
           "velocity": "new",
@@ -6580,7 +6578,7 @@
           "keyword": "Mebrure | Değilim",
           "keywordEn": "Mebrure | I am not",
           "volume": "1M+",
-          "volumeRaw": 1620478,
+          "volumeRaw": 1620588,
           "category": "news",
           "temperature": 35,
           "velocity": "new",
@@ -6596,7 +6594,7 @@
           "keyword": "BÜTÜN GECE 3 MESLEKLERİNİ YAPTIM - Minecraft",
           "keywordEn": "I DID 3 PROFESSIONS ALL NIGHT - Minecraft",
           "volume": "638K+",
-          "volumeRaw": 638057,
+          "volumeRaw": 638093,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -6628,7 +6626,7 @@
           "keyword": "Buz Devri: Kaynama Noktası | İlk Resmi Fragman | 5 Şubat 2027'de Sinemalarda!",
           "keywordEn": "Ice Age: Boiling Point | First Official Trailer | In Cinemas on February 5, 2027!",
           "volume": "445K+",
-          "volumeRaw": 445167,
+          "volumeRaw": 445175,
           "category": "movies",
           "temperature": 23,
           "velocity": "rising",
@@ -6644,7 +6642,7 @@
           "keyword": "GÜVENMENİN BEDELİ AĞIR OLDU! | THE LAST OF US PART I | @RRaenee BÖLÜM 4",
           "keywordEn": "THE COST OF TRUST WAS HEAVY! | THE LAST OF US PART I | @RRaenee EPISODE 4",
           "volume": "439K+",
-          "volumeRaw": 439728,
+          "volumeRaw": 439801,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -6660,7 +6658,7 @@
           "keyword": "manifest - Zamansızdık & Arıyo & Hayır Mashup (Live Performance) | Ülker Arena",
           "keywordEn": "manifest - We Were Timeless & Ariyo & No Mashup (Live Performance) | Ülker Arena",
           "volume": "118K+",
-          "volumeRaw": 118444,
+          "volumeRaw": 118474,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -6676,7 +6674,7 @@
           "keyword": "ihtiyacım Var (Live)",
           "keywordEn": "I need it (Live)",
           "volume": "116K+",
-          "volumeRaw": 116472,
+          "volumeRaw": 116503,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -6689,18 +6687,18 @@
         },
         {
           "rank": 11,
-          "keyword": "liselere geçiş sistemi",
-          "keywordEn": "high school transition system",
+          "keyword": "kütahya hava durumu",
+          "keywordEn": "kutahya weather",
           "volume": "5K+",
           "volumeRaw": 5000,
           "category": "news",
           "temperature": 13,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "MEB LGS SINAV GİRİŞ BELGESİ SORGULAMA EKRANI! e-OKUL LGS sınav giriş yerleri nereden öğrenilir, LGS sınav giriş belgesi nasıl alınır?"
+            "İçişleri'nden 6 ile 'sarı' alarm! Adeta gök delinecek"
           ]
         },
         {
@@ -6751,22 +6749,6 @@
         },
         {
           "rank": 15,
-          "keyword": "ankara ezan",
-          "keywordEn": "ankara ezan",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Tarkan konseri maratona döndü! Ön sıra için kıran kırana mücadele ettiler"
-          ]
-        },
-        {
-          "rank": 16,
           "keyword": "şok",
           "keywordEn": "shock",
           "volume": "200",
@@ -6782,21 +6764,21 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "alanya hava durumu",
           "keywordEn": "alanya hava durumu",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": []
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "bursa",
           "keywordEn": "bursa",
           "volume": "200",
@@ -6812,7 +6794,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "spain vs peru",
           "keywordEn": "spain vs peru",
           "volume": "200",
@@ -6828,19 +6810,35 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "keyword": "nba finals",
           "keywordEn": "nba finals",
           "volume": "200",
           "volumeRaw": 200,
           "category": "sports",
           "temperature": 20,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Knicks Watch Party at MSG Is Canceled as Game 3 Security Ramps Up for Trump"
+            "President Donald Trump to attend Finals game in New York to root for his hometown Knicks"
+          ]
+        },
+        {
+          "rank": 20,
+          "keyword": "knicks vs spurs",
+          "keywordEn": "knicks vs spurs",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 20,
+          "velocity": "steady",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Are the Knicks the Most Disrespected Team in NBA History?"
           ]
         }
       ]
@@ -6854,7 +6852,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "rising",
@@ -6870,7 +6868,7 @@
           "keyword": "ปริญญาไก่ตี - เม้ก อภิสิทธิ์ Feat. บุ๊ค ศุภกาญจน์ [ Official Mv ] จอนนี่มิวสิค",
           "keywordEn": "Parinya Kai Tee - Meg Abhisit Feat. Book Suphakarn [ Official Mv ] Jonny Music",
           "volume": "1M+",
-          "volumeRaw": 1779559,
+          "volumeRaw": 1780530,
           "category": "music",
           "temperature": 39,
           "velocity": "new",
@@ -6902,7 +6900,7 @@
           "keyword": "🔴LIVE สด! 𝐏𝐔𝐁𝐆 𝐆𝐋𝐎𝐁𝐀𝐋 𝐒𝐄𝐑𝐈𝐄𝐒 𝟐𝟎𝟐𝟔 𝐂𝐈𝐑𝐂𝐔𝐈𝐓 𝟐 𝐒𝐄𝐑𝐈𝐄𝐒 𝟔 | 𝐆𝐑𝐀𝐍𝐃 𝐅𝐈𝐍𝐀𝐋𝐒 วันที่ 𝟑",
           "keywordEn": "🔴LIVE live! 𝐏𝐔𝐁𝐆 𝐆𝐋𝐎𝐁𝐀𝐋 𝐒𝐄𝐑𝐈𝐄𝐒 𝟐𝟎𝟐𝟔 𝐂𝐈𝐑𝐂𝐔𝐈𝐓 Date 𝟑 𝟐 𝐒𝐄𝐑𝐈𝐄𝐒 𝟔 |",
           "volume": "401K+",
-          "volumeRaw": 401253,
+          "volumeRaw": 401273,
           "category": "news",
           "temperature": 29,
           "velocity": "new",
@@ -6918,7 +6916,7 @@
           "keyword": "ครั้งสุดท้าย EP.4/7",
           "keywordEn": "Last time EP.4/7",
           "volume": "198K+",
-          "volumeRaw": 198801,
+          "volumeRaw": 198933,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -6934,7 +6932,7 @@
           "keyword": "ประตูเลือกเส้นทาง ชาย vs หญิง 💄 Roblox",
           "keywordEn": "Door to choose path, male vs female 💄 Roblox",
           "volume": "100K+",
-          "volumeRaw": 100915,
+          "volumeRaw": 100947,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -6950,7 +6948,7 @@
           "keyword": "แกะตัวอย่าง SUPERGIRL สาวแสบจอมพลังแห่งจักรวาล DC Universe | JUSTดูIT.",
           "keywordEn": "Unpacking the trailer of SUPERGIRL, the fierce and powerful girl of the DC Universe | JUST watch IT.",
           "volume": "84K+",
-          "volumeRaw": 84721,
+          "volumeRaw": 84737,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -6966,7 +6964,7 @@
           "keyword": "สิเฮ็ดให้เจ้าภูมิใจในโตอ้าย - เบียร์ พร้อมพงษ์【OFFICIAL MV】",
           "keywordEn": "I'll make you proud of To Ai - Beer Promphong【OFFICIAL MV】",
           "volume": "25K+",
-          "volumeRaw": 25842,
+          "volumeRaw": 25952,
           "category": "music",
           "temperature": 19,
           "velocity": "new",
@@ -6998,7 +6996,7 @@
           "keyword": "The Dog Stars เดอะ ด็อกสตารส์ - Official Trailer [ซับไทย]",
           "keywordEn": "The Dog Stars - Official Trailer [Thai subtitles]",
           "volume": "5K+",
-          "volumeRaw": 5294,
+          "volumeRaw": 5327,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -7011,12 +7009,28 @@
         },
         {
           "rank": 11,
+          "keyword": "สิบห้าหยกๆ",
+          "keywordEn": "Fifteen jade.",
+          "volume": "5K+",
+          "volumeRaw": 5041,
+          "category": "news",
+          "temperature": 13,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "youtube",
+          "description": "Provided to YouTube by Ditto Music\n\nสิบห้าหยกๆ · Noir\n\nKing\n\n℗ Gambreng Luthunge\n\nReleased on: 2026-06-09\n\nChoir: Yugala Na Ayudhya\nProducer: Nualphan Lamsam\nComposer: Pachara Chirathivat\n\nAuto-genera",
+          "relatedNews": [],
+          "youtubeId": "zsK9pfknbsE",
+          "channelTitle": "Noir - Topic"
+        },
+        {
+          "rank": 12,
           "keyword": "nba",
           "keywordEn": "nba",
           "volume": "5K+",
           "volumeRaw": 5000,
           "category": "sports",
-          "temperature": 28,
+          "temperature": 26,
           "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
@@ -7026,13 +7040,13 @@
           ]
         },
         {
-          "rank": 12,
+          "rank": 13,
           "keyword": "ไทยทิคเก็ตเมเจอร์",
           "keywordEn": "Thai Ticket Major",
           "volume": "5K+",
           "volumeRaw": 5000,
           "category": "news",
-          "temperature": 11,
+          "temperature": 9,
           "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
@@ -7040,22 +7054,6 @@
           "relatedNews": [
             "สอดสร้อยมาลาย้อนหลัง EP.15 | วันพุธที่ 10 มิถุนายน 2569"
           ]
-        },
-        {
-          "rank": 13,
-          "keyword": "สิบห้าหยกๆ",
-          "keywordEn": "Fifteen jade.",
-          "volume": "4K+",
-          "volumeRaw": 4961,
-          "category": "news",
-          "temperature": 9,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "youtube",
-          "description": "Provided to YouTube by Ditto Music\n\nสิบห้าหยกๆ · Noir\n\nKing\n\n℗ Gambreng Luthunge\n\nReleased on: 2026-06-09\n\nChoir: Yugala Na Ayudhya\nProducer: Nualphan Lamsam\nComposer: Pachara Chirathivat\n\nAuto-genera",
-          "relatedNews": [],
-          "youtubeId": "zsK9pfknbsE",
-          "channelTitle": "Noir - Topic"
         },
         {
           "rank": 14,
@@ -7075,6 +7073,22 @@
         },
         {
           "rank": 15,
+          "keyword": "ทักษิณ ชินวัตร",
+          "keywordEn": "Thaksin Shinawatra",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "รุทธพล เซ็นตั้ง กก. 3 ฝ่าย พิจารณาปล่อยตัว “ทักษิณ-นักโทษทั่วประเทศ” ด้าน ปลัด ยธ. คาดเสร็จสิ้น ภายใน มิ.ย.นี้"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "livenation",
           "keywordEn": "livenation",
           "volume": "1K+",
@@ -7090,7 +7104,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
           "keyword": "ดูบาสสด",
           "keywordEn": "Watch live basketball",
           "volume": "1K+",
@@ -7102,23 +7116,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "'ทรัมป์' ถูกโห่ไล่ที่สนามกีฬาในนิวยอร์ก ก่อนเกมรอบชิงชนะเลิศ NBA"
-          ]
-        },
-        {
-          "rank": 17,
-          "keyword": "ทักษิณ ชินวัตร",
-          "keywordEn": "Thaksin Shinawatra",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "รุทธพล เซ็นตั้ง กก. 3 ฝ่าย พิจารณาปล่อยตัว “ทักษิณ-นักโทษทั่วประเทศ” ด้าน ปลัด ยธ. คาดเสร็จสิ้น ภายใน มิ.ย.นี้"
+            "สเปอร์สไม่ยอมตาย! บุกทุบ นิกส์ ไล่ซีรีส์ 1-2"
           ]
         },
         {
@@ -7180,7 +7178,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "rising",
@@ -7196,7 +7194,7 @@
           "keyword": "BOYNEXTDOOR (보이넥스트도어) 'VIRAL' Official MV",
           "keywordEn": "BOYNEXTDOOR ‘VIRAL’ Official MV",
           "volume": "2M+",
-          "volumeRaw": 2007671,
+          "volumeRaw": 2008757,
           "category": "music",
           "temperature": 56,
           "velocity": "new",
@@ -7259,8 +7257,8 @@
           "rank": 6,
           "keyword": "Katy Perry - The One That Got Away (Lyrics) (432Hz)",
           "keywordEn": "Katy Perry - The One That Got Away (Lyrics) (432Hz)",
-          "volume": "386K+",
-          "volumeRaw": 386822,
+          "volume": "387K+",
+          "volumeRaw": 387332,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -7276,7 +7274,7 @@
           "keyword": "TERIKAT JANJI TRAILER: SENA PANIK‼️ DAVINA KENAPA BISA PINGSAN? - Arya Saloka, Asha Assuncao",
           "keywordEn": "BOUND TRAILER PROMISE: SENA PANIC!!️ WHY COULD DAVINA FAINT? - Arya Saloka, Asha Assuncao",
           "volume": "103K+",
-          "volumeRaw": 103889,
+          "volumeRaw": 103922,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -7307,8 +7305,8 @@
           "rank": 9,
           "keyword": "Yuta Mio Melihat Penampakan POCONG KETUK PINTU VIRAL, Jangan Dibuka! | ROBLOX",
           "keywordEn": "Yuta Mio Melihat Penampakan POCONG KETUK PINTU VIRAL, Jangan Dibuka! | ROBLOX",
-          "volume": "77K+",
-          "volumeRaw": 77536,
+          "volume": "78K+",
+          "volumeRaw": 78271,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -7324,7 +7322,7 @@
           "keyword": "TRAILER | hilangnya Sanghyang Ananjaya di Gunung Ijen | Syiar Dalam Gelap | M Hakim Bawazier",
           "keywordEn": "TRAILER | hilangnya Sanghyang Ananjaya di Gunung Ijen | Syiar Dalam Gelap | M Hakim Bawazier",
           "volume": "51K+",
-          "volumeRaw": 51331,
+          "volumeRaw": 51418,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -7340,7 +7338,7 @@
           "keyword": "LESTI FULL ALBUM TERBARU 2026/LAGU LESTI PALING ENAK DI DENGAR/SEKALI SEUMUR HIDUP",
           "keywordEn": "LESTI FULL ALBUM TERBARU 2026/LAGU LESTI PALING ENAK DI DENGAR/SEKALI SEUMUR HIDUP",
           "volume": "12K+",
-          "volumeRaw": 12400,
+          "volumeRaw": 12463,
           "category": "music",
           "temperature": 13,
           "velocity": "steady",
@@ -7428,7 +7426,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Spurs vs. Knicks Game 3 SGP: Knicks Win the First Quarter, Spurs Win the Game"
+            "Jalen Brunson, Knicks keep focus ahead of NBA Finals Game 3"
           ]
         },
         {
@@ -7460,7 +7458,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Trump says he will attend NBA Finals game in New York to root for his hometown Knicks"
+            "President Donald Trump to attend Finals game in New York to root for his hometown Knicks"
           ]
         },
         {
@@ -7476,7 +7474,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "🔴 ¡España amplía la ventaja sobre Perú!"
+            "¡Sin Lamine Yamal! Así arrancará España ante Perú en el Cuauhtémoc"
           ]
         },
         {
@@ -7506,7 +7504,7 @@
           "keyword": "TREASURE - ‘IF I’ M/V",
           "keywordEn": "TREASURE - ‘IF I’ M/V",
           "volume": "38M+",
-          "volumeRaw": 38352720,
+          "volumeRaw": 38366353,
           "category": "news",
           "temperature": 83,
           "velocity": "new",
@@ -7522,7 +7520,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 96,
           "velocity": "new",
@@ -7538,7 +7536,7 @@
           "keyword": "aespa 에스파 'LEMONADE' MV",
           "keywordEn": "aespa 'LEMONADE' MV",
           "volume": "22M+",
-          "volumeRaw": 22159873,
+          "volumeRaw": 22161453,
           "category": "news",
           "temperature": 89,
           "velocity": "steady",
@@ -7554,7 +7552,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 92,
           "velocity": "rising",
@@ -7570,7 +7568,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 74,
           "velocity": "rising",
@@ -7586,7 +7584,7 @@
           "keyword": "Gatta Kusthi 2 - Teaser | Vishnu Vishal, Aishwarya Lekshmi | Chella Ayyavu | Sean Roldan | Vels",
           "keywordEn": "Gatta Kusthi 2 - Teaser | Vishnu Vishal, Aishwarya Lekshmi | Chella Ayyavu | Sean Roldan | Vels",
           "volume": "5M+",
-          "volumeRaw": 5258105,
+          "volumeRaw": 5258317,
           "category": "movies",
           "temperature": 54,
           "velocity": "new",
@@ -7602,7 +7600,7 @@
           "keyword": "LIVE | [BM] MPL MY Season 17 Grand Finals",
           "keywordEn": "LIVE | [BM] MPL MY Season 17 Grand Finals",
           "volume": "1M+",
-          "volumeRaw": 1263578,
+          "volumeRaw": 1263625,
           "category": "news",
           "temperature": 27,
           "velocity": "rising",
@@ -7634,7 +7632,7 @@
           "keyword": "LIVE | [BM] MPL MY Season 17 Playoffs Hari 2",
           "keywordEn": "LIVE | [BM] MPL MY Season 17 Playoffs Hari 2",
           "volume": "619K+",
-          "volumeRaw": 619988,
+          "volumeRaw": 619989,
           "category": "news",
           "temperature": 20,
           "velocity": "steady",
@@ -7650,7 +7648,7 @@
           "keyword": "🔴LIVE - GRAND FINALS MPL MY  !",
           "keywordEn": "🔴LIVE - GRAND FINALS MPL MY  !",
           "volume": "321K+",
-          "volumeRaw": 321491,
+          "volumeRaw": 321501,
           "category": "news",
           "temperature": 16,
           "velocity": "new",
@@ -7706,7 +7704,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Two of a kind, one XI"
+            "Eastern Gallery tickets priced at Tk200, Grand Stand Tk2,500"
           ]
         },
         {
@@ -7727,6 +7725,22 @@
         },
         {
           "rank": 15,
+          "keyword": "吴文忻",
+          "keywordEn": "Wu Wenxin",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "new",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "前港姐吴文忻不敌病魔 睡梦中离世 终年51岁"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "nba finals",
           "keywordEn": "nba finals",
           "volume": "1K+",
@@ -7739,22 +7753,6 @@
           "description": "",
           "relatedNews": [
             "Knicks Watch Party at MSG Is Canceled as Game 3 Security Ramps Up for Trump"
-          ]
-        },
-        {
-          "rank": 16,
-          "keyword": "吴文忻",
-          "keywordEn": "Wu Wenxin",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 15,
-          "velocity": "new",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "前港姐吴文忻不敌病魔 睡梦中离世 终年51岁"
           ]
         },
         {
@@ -7830,7 +7828,7 @@
           "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "keywordEn": "IShowSpeed - World Cup (Champions) [Official Music Video]",
           "volume": "34M+",
-          "volumeRaw": 34512607,
+          "volumeRaw": 34517348,
           "category": "sports",
           "temperature": 98,
           "velocity": "rising",
@@ -7862,7 +7860,7 @@
           "keyword": "aespa 에스파 'LEMONADE' MV",
           "keywordEn": "aespa 'LEMONADE' MV",
           "volume": "22M+",
-          "volumeRaw": 22159873,
+          "volumeRaw": 22161453,
           "category": "news",
           "temperature": 89,
           "velocity": "steady",
@@ -7878,7 +7876,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 92,
           "velocity": "new",
@@ -7894,7 +7892,7 @@
           "keyword": "Ariana Grande - hate that i made you love me (official music video)",
           "keywordEn": "Ariana Grande - hate that i made you love me (official music video)",
           "volume": "15M+",
-          "volumeRaw": 15201484,
+          "volumeRaw": 15203532,
           "category": "music",
           "temperature": 85,
           "velocity": "new",
@@ -7910,7 +7908,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 72,
           "velocity": "rising",
@@ -7926,7 +7924,7 @@
           "keyword": "Gatta Kusthi 2 - Teaser | Vishnu Vishal, Aishwarya Lekshmi | Chella Ayyavu | Sean Roldan | Vels",
           "keywordEn": "Gatta Kusthi 2 - Teaser | Vishnu Vishal, Aishwarya Lekshmi | Chella Ayyavu | Sean Roldan | Vels",
           "volume": "5M+",
-          "volumeRaw": 5258105,
+          "volumeRaw": 5258317,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -7942,7 +7940,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5114496,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 59,
           "velocity": "steady",
@@ -7958,7 +7956,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 53,
           "velocity": "new",
@@ -7974,7 +7972,7 @@
           "keyword": "Persona 6 — Teaser Trailer",
           "keywordEn": "Persona 6 — Teaser Trailer",
           "volume": "1M+",
-          "volumeRaw": 1284467,
+          "volumeRaw": 1284791,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -8014,7 +8012,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Trump booed at Knicks-Spurs game as he became first US president at NBA Finals"
+            "Ticketholders boo Trump as NBA Finals security clogs entry to Madison Square Garden"
           ]
         },
         {
@@ -8062,7 +8060,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "West Indies vs Sri Lanka 2nd ODI Abandoned Due to Rain at Sabina Park; Series Moves to Decider"
+            "Alzarri Joseph Steps Away As West Indies Reveal A Bigger Plan For Sri Lanka Series"
           ]
         },
         {
@@ -8126,7 +8124,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "US stocks rebound from sell-off as Nvidia leads Big-Tech gains"
+            "Stock market today: S&P 500, Nasdaq rise on chip stock rebound, Dow slips"
           ]
         },
         {
@@ -8156,7 +8154,7 @@
           "keyword": "SON TUNG M-TP x TYGA | COME MY WAY | OFFICIAL MUSIC VIDEO",
           "keywordEn": "SON TUNG M-TP x TYGA | COME MY WAY | OFFICIAL MUSIC VIDEO",
           "volume": "29M+",
-          "volumeRaw": 29363604,
+          "volumeRaw": 29365508,
           "category": "music",
           "temperature": 83,
           "velocity": "rising",
@@ -8188,7 +8186,7 @@
           "keyword": "07. Em - Binz (feat. SOOBIN) | Gặp Lại Album",
           "keywordEn": "07. Em - Binz (feat. SOOBIN) | Meet The Album Again",
           "volume": "11M+",
-          "volumeRaw": 11082350,
+          "volumeRaw": 11083690,
           "category": "music",
           "temperature": 79,
           "velocity": "new",
@@ -8204,7 +8202,7 @@
           "keyword": "TÓC TIÊN | người  còn  thương  em  không | OFFICIAL MV",
           "keywordEn": "TOC TIEN | Do you still love me? | OFFICIAL MV",
           "volume": "1M+",
-          "volumeRaw": 1755121,
+          "volumeRaw": 1755865,
           "category": "music",
           "temperature": 35,
           "velocity": "new",
@@ -8220,7 +8218,7 @@
           "keyword": "Đừng Mở Cửa Cho GuguGaga Vào 3H Sáng Trong Minecraft",
           "keywordEn": "Don't Open the Door to GuguGaga at 3AM in Minecraft",
           "volume": "1M+",
-          "volumeRaw": 1218648,
+          "volumeRaw": 1219414,
           "category": "news",
           "temperature": 31,
           "velocity": "rising",
@@ -8236,7 +8234,7 @@
           "keyword": "Bình Luận Tiếng Việt: KT vs DK ( BO5 ) | ROAD TO MSI LCK 2026",
           "keywordEn": "Vietnamese Commentary: KT vs DK (BO5) | ROAD TO MSI LCK 2026",
           "volume": "1M+",
-          "volumeRaw": 1097670,
+          "volumeRaw": 1097706,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -8252,7 +8250,7 @@
           "keyword": "24 Giờ Lơ H1h4 Trong Minecraft . . !?🤣",
           "keywordEn": "24 Hours of Silence H1h4 In Minecraft. . !?🤣",
           "volume": "550K+",
-          "volumeRaw": 550245,
+          "volumeRaw": 550745,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -8284,7 +8282,7 @@
           "keyword": "TRAILER | CHUNG KẾT | PSG - ARSENAL | ĐỈNH CAO CỦA BÓNG ĐÁ THẾ GIỚI | CHAMPIONS LEAGUE 25-26",
           "keywordEn": "TRAILER | FINAL | PSG - ARSENAL | THE PEAK OF WORLD FOOTBALL | CHAMPIONS LEAGUE 25-26",
           "volume": "358K+",
-          "volumeRaw": 358025,
+          "volumeRaw": 358065,
           "category": "sports",
           "temperature": 18,
           "velocity": "new",
@@ -8300,7 +8298,7 @@
           "keyword": "[Trailer] Giới thiệu phim NỢ ĐỜI VAY TRẢ - Tuần 5 | Kẻ ác liệu sẽ cam tâm từ bỏ thế cờ đang nắm giữ?",
           "keywordEn": "[Trailer] Introducing the movie DEBT FOR LIFE - Week 5 | Will the wicked be willing to give up the position they are holding?",
           "volume": "87K+",
-          "volumeRaw": 87182,
+          "volumeRaw": 87308,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -8351,12 +8349,12 @@
           "volumeRaw": 2000,
           "category": "news",
           "temperature": 9,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Công an Đà Nẵng mật phục bắt gọn đối tượng truy nã đặc biệt nguy hiểm"
+            "Thông báo danh sách các phương tiện vi phạm quy định về tốc độ trên tuyến Quốc lộ 1, Quốc lộ 45 nối ..."
           ]
         },
         {
@@ -8388,11 +8386,27 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "\"Get to your spot, and if you miss that shot, like, is …"
           ]
         },
         {
           "rank": 16,
+          "keyword": "mạc ly",
+          "keywordEn": "ma ly",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Mạc Ly của Bạch Lộc và Thừa Lỗi lập mốc 6 triệu lượt đặt trước trên Tencent"
+          ]
+        },
+        {
+          "rank": 17,
           "keyword": "spain vs peru",
           "keywordEn": "spain vs peru",
           "volume": "500",
@@ -8408,9 +8422,9 @@
           ]
         },
         {
-          "rank": 17,
-          "keyword": "mạc ly",
-          "keywordEn": "ma ly",
+          "rank": 18,
+          "keyword": "kim mu yeol",
+          "keywordEn": "kim mu yeol",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -8420,18 +8434,18 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Mạc Ly của Bạch Lộc và Thừa Lỗi lập mốc 6 triệu lượt đặt trước trên Tencent"
+            "Teach You a Lesson: Phản diện ở \"map 1\" là diễn viên qua đời khi đang bị điều tra"
           ]
         },
         {
-          "rank": 18,
+          "rank": 19,
           "keyword": "phu nhân thủ tướng lê minh hưng",
           "keywordEn": "Prime Minister Le Minh Hung's wife",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -8440,7 +8454,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "keyword": "lịch thi tốt nghiệp thpt 2026",
           "keywordEn": "High school graduation exam schedule 2026",
           "volume": "100",
@@ -8453,22 +8467,6 @@
           "description": "",
           "relatedNews": [
             "Đang giao lưu trực tuyến tại Báo SGGP: Chuyên gia giải đáp nóng thắc mắc của sĩ tử về kỳ thi THPT 2026"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "xiaomi",
-          "keywordEn": "xiaomi",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Thấy gì từ loạt smartphone Trung Quốc vừa ra mắt tại Việt Nam?"
           ]
         }
       ]
@@ -8498,7 +8496,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 96,
           "velocity": "new",
@@ -8514,7 +8512,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 78,
           "velocity": "new",
@@ -8530,7 +8528,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 63,
           "velocity": "rising",
@@ -8546,7 +8544,7 @@
           "keyword": "teka lang - TJ Monterde | OFFICIAL MUSIC VIDEO",
           "keywordEn": "teka lang - TJ Monterde | OFFICIAL MUSIC VIDEO",
           "volume": "1M+",
-          "volumeRaw": 1395057,
+          "volumeRaw": 1395288,
           "category": "music",
           "temperature": 31,
           "velocity": "new",
@@ -8561,8 +8559,8 @@
           "rank": 6,
           "keyword": "Air Supply - Making Love Out of Nothing at All (Lyrics) Letra en español",
           "keywordEn": "Air Supply - Making Love Out of Nothing at All (Lyrics) Letra en español",
-          "volume": "519K+",
-          "volumeRaw": 519986,
+          "volume": "520K+",
+          "volumeRaw": 520691,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -8578,7 +8576,7 @@
           "keyword": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends June 6th",
           "keywordEn": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends June 6th",
           "volume": "437K+",
-          "volumeRaw": 437843,
+          "volumeRaw": 437875,
           "category": "music",
           "temperature": 23,
           "velocity": "steady",
@@ -8610,7 +8608,7 @@
           "keyword": "Enshrined in Crimson | New Hero Hirara Cinematic Trailer | Mobile Legends: Bang Bang",
           "keywordEn": "Enshrined in Crimson | New Hero Hirara Cinematic Trailer | Mobile Legends: Bang Bang",
           "volume": "227K+",
-          "volumeRaw": 227692,
+          "volumeRaw": 227765,
           "category": "movies",
           "temperature": 18,
           "velocity": "rising",
@@ -8626,7 +8624,7 @@
           "keyword": "Kinulong Ko ang CRUSH Ko sa TINY 99 Nights in the Forest World!",
           "keywordEn": "Kinulong Ko ang CRUSH Ko sa TINY 99 Nights in the Forest World!",
           "volume": "132K+",
-          "volumeRaw": 132202,
+          "volumeRaw": 132288,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -8703,22 +8701,6 @@
         },
         {
           "rank": 15,
-          "keyword": "karl-anthony towns",
-          "keywordEn": "karl-anthony towns",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 10,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "But, What About Jordyn Woods’ Orange Ostrich Bag?"
-          ]
-        },
-        {
-          "rank": 16,
           "keyword": "sports",
           "keywordEn": "sports",
           "volume": "500",
@@ -8730,11 +8712,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Big Ten to discuss league-wide ban on scheduling Texas Tech in all sports - The Athletic"
+            "Texas Tech ‘should be ashamed of itself’ for seeking Brendan Sorsby’s injunction"
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "miles mcbride",
           "keywordEn": "miles mcbride",
           "volume": "500",
@@ -8746,11 +8728,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Spurs vs. Knicks odds, prediction: 2026 NBA Finals picks, Game 3 best bets by model on 26-10 run"
+            "McBride in an NBA spot rarely enjoyed by a former Mountaineer (Preston copy)"
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "aces vs storm",
           "keywordEn": "aces vs storm",
           "volume": "500",
@@ -8762,23 +8744,39 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Final Injury Report for Storm-Aces: Will Chennedy Carter, Ezi Magbegor Play?"
+            "A'ja Wilson continues to stay on top top top"
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "nba result today",
           "keywordEn": "nba result today",
           "volume": "200",
           "volumeRaw": 200,
           "category": "sports",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Spurs Notes: Wembanyama, Castle, Game 2, Biyombo"
+          ]
+        },
+        {
+          "rank": 19,
+          "keyword": "rafael dumlao iii",
+          "keywordEn": "rafael dumlao iii",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Fugitive ex-PNP officer--now long-haired--nabbed in QC over Jee Ick Joo kidnap-slay case"
           ]
         },
         {
@@ -8808,7 +8806,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "rising",
@@ -8824,7 +8822,7 @@
           "keyword": "마마무(MAMAMOO) '4 Flowers' MV",
           "keywordEn": "MAMAMOO ‘4 Flowers’ MV",
           "volume": "5M+",
-          "volumeRaw": 5222477,
+          "volumeRaw": 5226087,
           "category": "news",
           "temperature": 62,
           "velocity": "new",
@@ -8840,7 +8838,7 @@
           "keyword": "BOYNEXTDOOR (보이넥스트도어) 'VIRAL' Official MV",
           "keywordEn": "BOYNEXTDOOR ‘VIRAL’ Official MV",
           "volume": "2M+",
-          "volumeRaw": 2007671,
+          "volumeRaw": 2008757,
           "category": "music",
           "temperature": 54,
           "velocity": "new",
@@ -8856,7 +8854,7 @@
           "keyword": "[中文] KT vs DK | 2026 LCK Road to MSI: Round 2",
           "keywordEn": "[Chinese] KT vs DK | 2026 LCK Road to MSI: Round 2",
           "volume": "483K+",
-          "volumeRaw": 483990,
+          "volumeRaw": 483996,
           "category": "news",
           "temperature": 34,
           "velocity": "rising",
@@ -8872,7 +8870,7 @@
           "keyword": "【有感筆電】我下載了暗網版本的 Roblox 遊戲.. 千萬不要來玩！【Flood Escape V1.7 全破】",
           "keywordEn": "[Sensitive Laptop] I downloaded the darknet version of the Roblox game. Don’t play it! 【Flood Escape V1.7 completely broken】",
           "volume": "349K+",
-          "volumeRaw": 349332,
+          "volumeRaw": 349341,
           "category": "news",
           "temperature": 31,
           "velocity": "steady",
@@ -8888,7 +8886,7 @@
           "keyword": "陳華Hua Chen【如果我很平庸Perfectly Ordinary】Official MV",
           "keywordEn": "Hua Chen【If I am mediocrePerfectly Ordinary】Official MV",
           "volume": "259K+",
-          "volumeRaw": 259655,
+          "volumeRaw": 259765,
           "category": "music",
           "temperature": 24,
           "velocity": "steady",
@@ -8920,7 +8918,7 @@
           "keyword": "《劍星：血雨》又被DEI盯上！抹黑的手法都和上次一模一樣",
           "keywordEn": "\"Sword Star: Blood Rain\" is targeted by DEI again! The smear tactics are exactly the same as last time",
           "volume": "83K+",
-          "volumeRaw": 83211,
+          "volumeRaw": 83236,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -8936,7 +8934,7 @@
           "keyword": "Monster Hunter Wilds: Ascendance - 宣傳預告片",
           "keywordEn": "Monster Hunter Wilds: Ascendance - Promotional Trailer",
           "volume": "78K+",
-          "volumeRaw": 78151,
+          "volumeRaw": 78152,
           "category": "movies",
           "temperature": 17,
           "velocity": "rising",
@@ -8952,7 +8950,7 @@
           "keyword": "『Wo Long 2: Wings of Ember』（臥龍2：鳳火連天）發布預告片",
           "keywordEn": "\"Wo Long 2: Wings of Ember\" trailer released",
           "volume": "33K+",
-          "volumeRaw": 33673,
+          "volumeRaw": 33685,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -8990,7 +8988,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "大潭山錄今年最高溫34.9°C"
+            "天文台料連續9日雨！濕鞋風筒吹或暴曬都錯！專家教速乾4步+除臭"
           ]
         },
         {
@@ -9036,7 +9034,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "道奇主帥讚大谷翔平宛如「頂級跑車」　揭季初低潮原因"
+            "MLB》大谷翔平找回手感Roberts：他就像一台超跑| TSNA"
           ]
         },
         {
@@ -9126,7 +9124,7 @@
           "keyword": "aespa 에스파 'LEMONADE' MV",
           "keywordEn": "aespa 'LEMONADE' MV",
           "volume": "22M+",
-          "volumeRaw": 22159873,
+          "volumeRaw": 22161453,
           "category": "news",
           "temperature": 93,
           "velocity": "new",
@@ -9142,7 +9140,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 96,
           "velocity": "new",
@@ -9158,7 +9156,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 78,
           "velocity": "rising",
@@ -9174,7 +9172,7 @@
           "keyword": "마마무(MAMAMOO) '4 Flowers' MV",
           "keywordEn": "MAMAMOO ‘4 Flowers’ MV",
           "volume": "5M+",
-          "volumeRaw": 5222477,
+          "volumeRaw": 5226087,
           "category": "news",
           "temperature": 58,
           "velocity": "steady",
@@ -9190,7 +9188,7 @@
           "keyword": "Stellar Blade: Blood Rain - Official Reveal Trailer | IGN Summer of Gaming",
           "keywordEn": "Stellar Blade: Blood Rain - Official Reveal Trailer | IGN Summer of Gaming",
           "volume": "1M+",
-          "volumeRaw": 1231141,
+          "volumeRaw": 1231306,
           "category": "movies",
           "temperature": 31,
           "velocity": "new",
@@ -9206,7 +9204,7 @@
           "keyword": "KT vs DK | 2026 LCK Road to MSI: Round 2",
           "keywordEn": "KT vs DK | 2026 LCK Road to MSI: Round 2",
           "volume": "903K+",
-          "volumeRaw": 903107,
+          "volumeRaw": 903130,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -9222,7 +9220,7 @@
           "keyword": "MC 張天賦 - 男人怎可以 What Makes A Man (Official Music Video)",
           "keywordEn": "MC Zhang Tiantian - How can a man What Makes A Man (Official Music Video)",
           "volume": "766K+",
-          "volumeRaw": 766544,
+          "volumeRaw": 766625,
           "category": "music",
           "temperature": 24,
           "velocity": "rising",
@@ -9254,7 +9252,7 @@
           "keyword": "[中文] KT vs DK | 2026 LCK Road to MSI: Round 2",
           "keywordEn": "[Chinese] KT vs DK | 2026 LCK Road to MSI: Round 2",
           "volume": "483K+",
-          "volumeRaw": 483990,
+          "volumeRaw": 483996,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -9270,7 +9268,7 @@
           "keyword": "【有感筆電】我下載了暗網版本的 Roblox 遊戲.. 千萬不要來玩！【Flood Escape V1.7 全破】",
           "keywordEn": "[Sensitive Laptop] I downloaded the darknet version of the Roblox game. Don’t play it! 【Flood Escape V1.7 completely broken】",
           "volume": "349K+",
-          "volumeRaw": 349332,
+          "volumeRaw": 349341,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -9466,7 +9464,7 @@
           "keyword": "Asake - Gratitude (Official Video)",
           "keywordEn": "Asake - Gratitude (Official Video)",
           "volume": "3M+",
-          "volumeRaw": 3129938,
+          "volumeRaw": 3130091,
           "category": "news",
           "temperature": 46,
           "velocity": "new",
@@ -9482,7 +9480,7 @@
           "keyword": "eFootball™ CONNECT (Global) / The Football Festival Campaign",
           "keywordEn": "eFootball™ CONNECT (Global) / The Football Festival Campaign",
           "volume": "729K+",
-          "volumeRaw": 729420,
+          "volumeRaw": 729438,
           "category": "sports",
           "temperature": 32,
           "velocity": "new",
@@ -9498,7 +9496,7 @@
           "keyword": "Mr P - I Can't Look Away (Official Video)",
           "keywordEn": "Mr P - I Can't Look Away (Official Video)",
           "volume": "382K+",
-          "volumeRaw": 382697,
+          "volumeRaw": 382766,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -9530,7 +9528,7 @@
           "keyword": "PORTUGAL PACK | C.RONALDO 105 WILL POWER 🔥 GAMEPLAY REVIEW 🔥 eFootball 26 mobile",
           "keywordEn": "PORTUGAL PACK | C.RONALDO 105 WILL POWER 🔥 GAMEPLAY REVIEW 🔥 eFootball 26 mobile",
           "volume": "282K+",
-          "volumeRaw": 282516,
+          "volumeRaw": 282537,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -9546,7 +9544,7 @@
           "keyword": "ALABOSI (The Hypocrite) - Official Trailer 2026 | Toyin Abraham, Michael Ejoor, Arike of Lagos",
           "keywordEn": "ALABOSI (The Hypocrite) - Official Trailer 2026 | Toyin Abraham, Michael Ejoor, Arike of Lagos",
           "volume": "158K+",
-          "volumeRaw": 158653,
+          "volumeRaw": 158629,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -9594,7 +9592,7 @@
           "keyword": "ABATTOIR SEASON 6 OFFICIAL TRAILER 1 || MOUNT ZION FILMS",
           "keywordEn": "ABATTOIR SEASON 6 OFFICIAL TRAILER 1 || MOUNT ZION FILMS",
           "volume": "50K+",
-          "volumeRaw": 50650,
+          "volumeRaw": 50652,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -9618,7 +9616,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Spain vs. Peru prediction, odds: Best bet for Monday’s World Cup friendly"
+            "Spain to Face Peru in Mexico: Where to Watch and Predicted Lineups"
           ]
         },
         {
@@ -9692,7 +9690,7 @@
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 10,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -9714,7 +9712,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Mbappé, c’est non"
+            "3-1 : Mbappé et Tchouameni, titulaires dans la victoire de la France contre l'Irlande du Nord"
           ]
         },
         {
@@ -9730,7 +9728,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Ivory Coast (W) v Cape Verde (W) Odds"
+            "The Ivory Coast women’s national team officially begins its training camp"
           ]
         },
         {
@@ -9792,7 +9790,7 @@
           "keyword": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "keywordEn": "God of War Laufey - Gameplay Reveal Trailer | PS5 Games",
           "volume": "6M+",
-          "volumeRaw": 6918864,
+          "volumeRaw": 6919247,
           "category": "movies",
           "temperature": 80,
           "velocity": "rising",
@@ -9808,7 +9806,7 @@
           "keyword": "1000 Players Simulate THE PURGE in Minecraft",
           "keywordEn": "1000 Players Simulate THE PURGE in Minecraft",
           "volume": "4M+",
-          "volumeRaw": 4318066,
+          "volumeRaw": 4319006,
           "category": "news",
           "temperature": 65,
           "velocity": "new",
@@ -9824,7 +9822,7 @@
           "keyword": "FALL 2: DEADPOINT (2026) Official Trailer - Harriet Slater, Arsema Thomas",
           "keywordEn": "FALL 2: DEADPOINT (2026) Official Trailer - Harriet Slater, Arsema Thomas",
           "volume": "3M+",
-          "volumeRaw": 3790031,
+          "volumeRaw": 3792419,
           "category": "movies",
           "temperature": 45,
           "velocity": "new",
@@ -9840,7 +9838,7 @@
           "keyword": "Sengithole Omunye (feat. Chulumanco M) (Remix )",
           "keywordEn": "Sengithole Omunye (feat. Chulumanco M) (Remix )",
           "volume": "2M+",
-          "volumeRaw": 2725837,
+          "volumeRaw": 2725935,
           "category": "news",
           "temperature": 38,
           "velocity": "rising",
@@ -9856,7 +9854,7 @@
           "keyword": "ROBLOX BECOME A BILLIONAIRE..",
           "keywordEn": "ROBLOX BECOME A BILLIONAIRE..",
           "volume": "1M+",
-          "volumeRaw": 1948714,
+          "volumeRaw": 1949034,
           "category": "news",
           "temperature": 32,
           "velocity": "steady",
@@ -9871,8 +9869,8 @@
           "rank": 7,
           "keyword": "Streamer University 2026 | Official Enrollment Trailer",
           "keywordEn": "Streamer University 2026 | Official Enrollment Trailer",
-          "volume": "640K+",
-          "volumeRaw": 640642,
+          "volume": "641K+",
+          "volumeRaw": 641969,
           "category": "movies",
           "temperature": 39,
           "velocity": "new",
@@ -9904,7 +9902,7 @@
           "keyword": "U XA",
           "keywordEn": "U XA",
           "volume": "265K+",
-          "volumeRaw": 265731,
+          "volumeRaw": 265778,
           "category": "news",
           "temperature": 18,
           "velocity": "new",
@@ -9949,13 +9947,13 @@
         },
         {
           "rank": 12,
-          "keyword": "knicks vs spurs",
-          "keywordEn": "knicks vs spurs",
-          "volume": "5K+",
-          "volumeRaw": 5000,
+          "keyword": "knicks",
+          "keywordEn": "knicks",
+          "volume": "2K+",
+          "volumeRaw": 2000,
           "category": "news",
           "temperature": 26,
-          "velocity": "steady",
+          "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
@@ -9965,12 +9963,44 @@
         },
         {
           "rank": 13,
+          "keyword": "knicks vs spurs",
+          "keywordEn": "knicks vs spurs",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 24,
+          "velocity": "steady",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Inside the astronomical ticket prices for sporting events and concerts"
+          ]
+        },
+        {
+          "rank": 14,
+          "keyword": "ban vs aus",
+          "keywordEn": "ban vs aus",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 22,
+          "velocity": "rising",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Mosaddek and my roles are different: Mehidy"
+          ]
+        },
+        {
+          "rank": 15,
           "keyword": "panama vs jamaica",
           "keywordEn": "panama vs jamaica",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 9,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -9980,51 +10010,19 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 16,
           "keyword": "nba finals",
           "keywordEn": "nba finals",
           "volume": "500",
           "volumeRaw": 500,
           "category": "sports",
-          "temperature": 22,
-          "velocity": "new",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Knicks Watch Party at MSG Is Canceled as Game 3 Security Ramps Up for Trump"
-          ]
-        },
-        {
-          "rank": 15,
-          "keyword": "john cena",
-          "keywordEn": "john cena",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 10,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "John Cena & Randy Orton Colluded to Get Former WWE Star Fired? New Rumor Emerges"
-          ]
-        },
-        {
-          "rank": 16,
-          "keyword": "ban vs aus",
-          "keywordEn": "ban vs aus",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
           "temperature": 20,
-          "velocity": "rising",
+          "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Mosaddek and my roles are different: Mehidy"
+            "Lockdown in New York as Trump to attend NBA Finals"
           ]
         },
         {
@@ -10040,7 +10038,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "News | Cedric Kaze hints at quick PSL return after Kaizer Chiefs departure"
+            "Kaze In Advanced Talks With PSL Club"
           ]
         },
         {
@@ -10102,7 +10100,7 @@
           "keyword": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "keywordEn": "BABYMONSTER - 'SUGAR HONEY ICE TEA' M/V",
           "volume": "17M+",
-          "volumeRaw": 17430297,
+          "volumeRaw": 17444382,
           "category": "news",
           "temperature": 98,
           "velocity": "steady",
@@ -10133,8 +10131,8 @@
           "rank": 3,
           "keyword": "Nabil - W Olt Salam | نبيل - وقولت سلام",
           "keywordEn": "Nabil - W Olt Salam | Nabil - Greetings",
-          "volume": "642K+",
-          "volumeRaw": 642886,
+          "volume": "643K+",
+          "volumeRaw": 643614,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -10149,8 +10147,8 @@
           "rank": 4,
           "keyword": "Streamer University 2026 | Official Enrollment Trailer",
           "keywordEn": "Streamer University 2026 | Official Enrollment Trailer",
-          "volume": "640K+",
-          "volumeRaw": 640642,
+          "volume": "641K+",
+          "volumeRaw": 641969,
           "category": "movies",
           "temperature": 45,
           "velocity": "new",
@@ -10166,7 +10164,7 @@
           "keyword": "فتحت بكج نجوم كأس العالم 2002🤯عودة الساحر البرازيلي و بيكهام🔥|efootbal 2026",
           "keywordEn": "Opened the 2002 World Cup Stars package🤯The return of the Brazilian magician and Beckham🔥|efootbal 2026",
           "volume": "123K+",
-          "volumeRaw": 123536,
+          "volumeRaw": 123626,
           "category": "sports",
           "temperature": 25,
           "velocity": "new",
@@ -10182,7 +10180,7 @@
           "keyword": "Ramy Sabry - Bafraha’k W Enta Teza’lny | Official Lyrics Video | رامي صبري - بفرحك وانت تزعلني",
           "keywordEn": "Ramy Sabry - Bafraha’k W Enta Teza’lny | Official Lyrics Video | Ramy Sabry - I make you happy and you make me upset",
           "volume": "58K+",
-          "volumeRaw": 58459,
+          "volumeRaw": 58493,
           "category": "news",
           "temperature": 23,
           "velocity": "rising",
@@ -10198,7 +10196,7 @@
           "keyword": "قابلت الحرامى فى محطة البنزين !!",
           "keywordEn": "I met the thief at the gas station!!",
           "volume": "51K+",
-          "volumeRaw": 51162,
+          "volumeRaw": 51179,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -10214,7 +10212,7 @@
           "keyword": "احذر من الهاك المستفز 😂 منشنات التيك توك #88 | ببجي موبايل",
           "keywordEn": "Beware of provocative hacks 😂 Tik Tok posts #88 | PUBG Mobile",
           "volume": "43K+",
-          "volumeRaw": 43833,
+          "volumeRaw": 43916,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -10230,7 +10228,7 @@
           "keyword": "مش مستاهله الدنيا ( يا صاحبي ليك عيوني ) عصام صاصا الكروان - توزيع خالد لولو Official Video",
           "keywordEn": "I don't deserve the world (Oh my friend, you have my eyes) Issam Sasa Al Karawan - distributed by Khaled Lulu Official Video",
           "volume": "42K+",
-          "volumeRaw": 42913,
+          "volumeRaw": 42958,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -10262,7 +10260,7 @@
           "keyword": "موعد الإعلان الثاني لـ Spider-Man Brand New Day و رسميًا Hulk شرير الفيلم مع تسريب جُمل الشخصيات !!",
           "keywordEn": "The second announcement date for Spider-Man Brand New Day and Hulk is officially the villain of the movie, with the character sentences leaked!!",
           "volume": "3K+",
-          "volumeRaw": 3684,
+          "volumeRaw": 3691,
           "category": "movies",
           "temperature": 13,
           "velocity": "rising",
@@ -10334,7 +10332,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "\"Get to your spot, and if you miss that shot, like, is …"
           ]
         },
         {
@@ -10398,7 +10396,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "فستان مجسم.. ريم سامي تستعرض رشاقتها"
+            "لقطة لعمرو دياب مع باسم سمرة تثير الانتقادات ضده من جديد (فيديو)"
           ]
         },
         {
@@ -10427,8 +10425,8 @@
           "rank": 1,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "917K+",
+          "volumeRaw": 917810,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -10443,8 +10441,8 @@
           "rank": 2,
           "keyword": "LOS JUEGOS DE BACKROOMS EN ROBLOX DAN MUCHO MIEDO 💀",
           "keywordEn": "BACKROOM GAMES IN ROBLOX ARE VERY SCARY 💀",
-          "volume": "596K+",
-          "volumeRaw": 596653,
+          "volume": "597K+",
+          "volumeRaw": 597819,
           "category": "news",
           "temperature": 38,
           "velocity": "steady",
@@ -10459,8 +10457,8 @@
           "rank": 3,
           "keyword": "Hicimos una PIJAMADA de COLORES en Brookhaven Roblox con Mandarina",
           "keywordEn": "Hicimos una PIJAMADA de COLORES en Brookhaven Roblox con Mandarina",
-          "volume": "452K+",
-          "volumeRaw": 452974,
+          "volume": "453K+",
+          "volumeRaw": 453701,
           "category": "news",
           "temperature": 36,
           "velocity": "new",
@@ -10476,7 +10474,7 @@
           "keyword": "Romeo Santos - Necio",
           "keywordEn": "Romeo Santos - Necio",
           "volume": "347K+",
-          "volumeRaw": 347311,
+          "volumeRaw": 347724,
           "category": "news",
           "temperature": 38,
           "velocity": "steady",
@@ -10491,8 +10489,8 @@
           "rank": 5,
           "keyword": "VOLVIMOS A CONTENT WARNING 😂💀",
           "keywordEn": "WE ARE BACK TO CONTENT WARNING 😂💀",
-          "volume": "151K+",
-          "volumeRaw": 151917,
+          "volume": "152K+",
+          "volumeRaw": 152054,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -10507,8 +10505,8 @@
           "rank": 6,
           "keyword": "SPIDER-MAN: BRAND NEW DAY Tráiler TV Spot Español (2026)",
           "keywordEn": "SPIDER-MAN: BRAND NEW DAY Trailer TV Spot Español (2026)",
-          "volume": "150K+",
-          "volumeRaw": 150771,
+          "volume": "151K+",
+          "volumeRaw": 151057,
           "category": "movies",
           "temperature": 28,
           "velocity": "rising",
@@ -10524,7 +10522,7 @@
           "keyword": "Descendientes: Un malvado País de las Maravillas | Tráiler Doblado | Disney+",
           "keywordEn": "Descendants: An Evil Wonderland | Dubbed Trailer | Disney+",
           "volume": "74K+",
-          "volumeRaw": 74768,
+          "volumeRaw": 74965,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -10540,7 +10538,7 @@
           "keyword": "Ulises Bueno / Scaloneta Mundial",
           "keywordEn": "Ulises Bueno / Scaloneta Mundial",
           "volume": "57K+",
-          "volumeRaw": 57043,
+          "volumeRaw": 57343,
           "category": "news",
           "temperature": 19,
           "velocity": "rising",
@@ -10572,7 +10570,7 @@
           "keyword": "MARISOLA REMIX (Letra) - CRIS MJ x STANDLY x NICKI NICOLE x DUKI x STARS MUSIC CHILE",
           "keywordEn": "MARISOLA REMIX (Letra) - CRIS MJ x STANDLY x NICKI NICOLE x DUKI x STARS MUSIC CHILE",
           "volume": "48K+",
-          "volumeRaw": 48403,
+          "volumeRaw": 48472,
           "category": "music",
           "temperature": 15,
           "velocity": "new",
@@ -10588,7 +10586,7 @@
           "keyword": "35 DETALLES del PRIMER TRÁILER de \"RESIDENT EVIL VERÓNICA\"",
           "keywordEn": "35 DETAILS of the FIRST TRAILER of \"RESIDENT EVIL VERÓNICA\"",
           "volume": "35K+",
-          "volumeRaw": 35237,
+          "volumeRaw": 35312,
           "category": "movies",
           "temperature": 23,
           "velocity": "new",
@@ -10612,7 +10610,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "NBA Finals: Spurs bounce back from Game 2 disaster, silence Madison Square Garden in Game 3 thriller over Knicks"
           ]
         },
         {
@@ -10660,7 +10658,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Donald Trump given hostile reception as New York crowd boos and jeers president at NBA finals"
+            "President Donald Trump to attend Finals game in New York to root for his hometown Knicks"
           ]
         },
         {
@@ -10676,7 +10674,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Héroe del partido: Victor Wembanyama, concentración y liderazgo"
+            "Los precios exorbitantes de las Finales de la NBA y la queja de uno de los jugadores: \"Es ridículo\""
           ]
         },
         {
@@ -10754,7 +10752,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5114496,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 73,
           "velocity": "rising",
@@ -10769,8 +10767,8 @@
           "rank": 2,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "917K+",
+          "volumeRaw": 917810,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -10785,8 +10783,8 @@
           "rank": 3,
           "keyword": "Encontré el CUERPO de GUGUGAGA MALDITO en Minecraft!",
           "keywordEn": "I found the DAMN GUGUGAGA BODY in Minecraft!",
-          "volume": "849K+",
-          "volumeRaw": 849613,
+          "volume": "851K+",
+          "volumeRaw": 851442,
           "category": "news",
           "temperature": 48,
           "velocity": "steady",
@@ -10818,7 +10816,7 @@
           "keyword": "Q Hubo Amor (Medellín) - Ovy On The Drums, Jere Klein, Blessd (Official Video)",
           "keywordEn": "Q Porque Amor (Medellín) - Ovy On The Drums, Jere Klein, Blessd (Official Video)",
           "volume": "487K+",
-          "volumeRaw": 487678,
+          "volumeRaw": 487984,
           "category": "news",
           "temperature": 27,
           "velocity": "new",
@@ -10834,7 +10832,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 40,
           "velocity": "new",
@@ -10849,8 +10847,8 @@
           "rank": 7,
           "keyword": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
           "keywordEn": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
-          "volume": "156K+",
-          "volumeRaw": 156771,
+          "volume": "157K+",
+          "volumeRaw": 157927,
           "category": "news",
           "temperature": 36,
           "velocity": "rising",
@@ -10866,7 +10864,7 @@
           "keyword": "Maná - En El Muelle de San Blas | Letra",
           "keywordEn": "Maná - At the San Blas Pier | Letter",
           "volume": "126K+",
-          "volumeRaw": 126524,
+          "volumeRaw": 126966,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -10882,7 +10880,7 @@
           "keyword": "Descendientes: Un malvado País de las Maravillas | Tráiler Doblado | Disney+",
           "keywordEn": "Descendants: An Evil Wonderland | Dubbed Trailer | Disney+",
           "volume": "74K+",
-          "volumeRaw": 74768,
+          "volumeRaw": 74965,
           "category": "movies",
           "temperature": 32,
           "velocity": "rising",
@@ -10898,7 +10896,7 @@
           "keyword": "35 DETALLES del PRIMER TRÁILER de \"RESIDENT EVIL VERÓNICA\"",
           "keywordEn": "35 DETAILS of the FIRST TRAILER of \"RESIDENT EVIL VERÓNICA\"",
           "volume": "35K+",
-          "volumeRaw": 35237,
+          "volumeRaw": 35312,
           "category": "movies",
           "temperature": 25,
           "velocity": "new",
@@ -10917,7 +10915,7 @@
           "volumeRaw": 10000,
           "category": "news",
           "temperature": 13,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -10949,12 +10947,12 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 9,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "NBA Finals Game 3 predictions: Knicks vs. Spurs best prop bets headlined by Mikal Bridges"
+            "Spurs vs Knicks Prediction, Picks & Best Bets for Tonight's NBA Finals Game 3"
           ]
         },
         {
@@ -10975,22 +10973,6 @@
         },
         {
           "rank": 15,
-          "keyword": "españa fc",
-          "keywordEn": "españa fc",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 10,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Buba Sangare, incluido en la prelista de la sub-19 para el Europeo"
-          ]
-        },
-        {
-          "rank": 16,
           "keyword": "jalen brunson",
           "keywordEn": "jalen brunson",
           "volume": "200",
@@ -11006,7 +10988,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "luis mateucci",
           "keywordEn": "luis mateucci",
           "volume": "200",
@@ -11022,7 +11004,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "fran maira",
           "keywordEn": "fran maira",
           "volume": "200",
@@ -11038,7 +11020,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "vale roth",
           "keywordEn": "vale roth",
           "volume": "200",
@@ -11054,7 +11036,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "keyword": "jairo vélez",
           "keywordEn": "jairo velez",
           "volume": "100",
@@ -11068,6 +11050,22 @@
           "relatedNews": [
             "Jairo Velez bate a Raya y pone el descuento para Perú ante España"
           ]
+        },
+        {
+          "rank": 20,
+          "keyword": "og anunoby",
+          "keywordEn": "og anunoby",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Knicks’ Anunoby posterizes Spurs’ Wembanyama in Game 2"
+          ]
         }
       ]
     },
@@ -11079,8 +11077,8 @@
           "rank": 1,
           "keyword": "Madonna - \"Confessions II - The Film\"",
           "keywordEn": "Madonna - \"Confessions II - The Film\"",
-          "volume": "915K+",
-          "volumeRaw": 915450,
+          "volume": "917K+",
+          "volumeRaw": 917810,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -11095,8 +11093,8 @@
           "rank": 2,
           "keyword": "Encontré el CUERPO de GUGUGAGA MALDITO en Minecraft!",
           "keywordEn": "I found the DAMN GUGUGAGA BODY in Minecraft!",
-          "volume": "849K+",
-          "volumeRaw": 849613,
+          "volume": "851K+",
+          "volumeRaw": 851442,
           "category": "news",
           "temperature": 50,
           "velocity": "rising",
@@ -11128,7 +11126,7 @@
           "keyword": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "keywordEn": "Halo: Campaign Evolved | Cinematic Story Trailer",
           "volume": "470K+",
-          "volumeRaw": 470500,
+          "volumeRaw": 470974,
           "category": "movies",
           "temperature": 44,
           "velocity": "rising",
@@ -11144,7 +11142,7 @@
           "keyword": "Romeo Santos - Necio",
           "keywordEn": "Romeo Santos - Necio",
           "volume": "347K+",
-          "volumeRaw": 347311,
+          "volumeRaw": 347724,
           "category": "news",
           "temperature": 36,
           "velocity": "rising",
@@ -11159,8 +11157,8 @@
           "rank": 6,
           "keyword": "Pasé de DANOMC NOOB a DANOMC +1000 de AURA en MINECRAFT",
           "keywordEn": "I went from DANOMC NOOB to DANOMC +1000 from AURA in MINECRAFT",
-          "volume": "312K+",
-          "volumeRaw": 312583,
+          "volume": "313K+",
+          "volumeRaw": 313467,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -11176,7 +11174,7 @@
           "keyword": "Ryan Castro, Kapo, Gangsta - LA VILLA (Letra/Lyrics)",
           "keywordEn": "Ryan Castro, Kapo, Gangsta - LA VILLA (Letra/Lyrics)",
           "volume": "295K+",
-          "volumeRaw": 295464,
+          "volumeRaw": 295804,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -11191,8 +11189,8 @@
           "rank": 8,
           "keyword": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
           "keywordEn": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
-          "volume": "156K+",
-          "volumeRaw": 156771,
+          "volume": "157K+",
+          "volumeRaw": 157927,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -11208,7 +11206,7 @@
           "keyword": "Descendientes: Un malvado País de las Maravillas | Tráiler Doblado | Disney+",
           "keywordEn": "Descendants: An Evil Wonderland | Dubbed Trailer | Disney+",
           "volume": "74K+",
-          "volumeRaw": 74768,
+          "volumeRaw": 74965,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -11258,13 +11256,13 @@
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 16,
+          "temperature": 11,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Dónde se concentra España durante en el Mundial 2026: sede e instalaciones de la Selección"
+            "Dónde está Chattanooga y cómo llegar: la sede de la concentración de España durante el Mundial 2026"
           ]
         },
         {
@@ -11344,7 +11342,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Trump booed before Knicks lose to Spurs at Madison Square Garden in NBA Finals Game 3"
+            "President Donald Trump to attend Finals game in New York to root for his hometown Knicks"
           ]
         },
         {
@@ -11406,7 +11404,7 @@
           "keyword": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "keywordEn": "FORMULA BRAWL RACE #1 #FormulaBrawl",
           "volume": "5M+",
-          "volumeRaw": 5114496,
+          "volumeRaw": 5114700,
           "category": "news",
           "temperature": 73,
           "velocity": "new",
@@ -11421,8 +11419,8 @@
           "rank": 2,
           "keyword": "Encontré el CUERPO de GUGUGAGA MALDITO en Minecraft!",
           "keywordEn": "I found the DAMN GUGUGAGA BODY in Minecraft!",
-          "volume": "849K+",
-          "volumeRaw": 849613,
+          "volume": "851K+",
+          "volumeRaw": 851442,
           "category": "news",
           "temperature": 50,
           "velocity": "rising",
@@ -11437,8 +11435,8 @@
           "rank": 3,
           "keyword": "Hicimos una PIJAMADA de COLORES en Brookhaven Roblox con Mandarina",
           "keywordEn": "Hicimos una PIJAMADA de COLORES en Brookhaven Roblox con Mandarina",
-          "volume": "452K+",
-          "volumeRaw": 452974,
+          "volume": "453K+",
+          "volumeRaw": 453701,
           "category": "news",
           "temperature": 36,
           "velocity": "steady",
@@ -11454,7 +11452,7 @@
           "keyword": "Romeo Santos - Necio",
           "keywordEn": "Romeo Santos - Necio",
           "volume": "347K+",
-          "volumeRaw": 347311,
+          "volumeRaw": 347724,
           "category": "news",
           "temperature": 38,
           "velocity": "steady",
@@ -11469,8 +11467,8 @@
           "rank": 5,
           "keyword": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
           "keywordEn": "Mon Laferte - A Pesar De Ti y De Mi (Official Video)",
-          "volume": "156K+",
-          "volumeRaw": 156771,
+          "volume": "157K+",
+          "volumeRaw": 157927,
           "category": "news",
           "temperature": 40,
           "velocity": "rising",
@@ -11485,8 +11483,8 @@
           "rank": 6,
           "keyword": "SPIDER-MAN: BRAND NEW DAY Tráiler TV Spot Español (2026)",
           "keywordEn": "SPIDER-MAN: BRAND NEW DAY Trailer TV Spot Español (2026)",
-          "volume": "150K+",
-          "volumeRaw": 150771,
+          "volume": "151K+",
+          "volumeRaw": 151057,
           "category": "movies",
           "temperature": 28,
           "velocity": "rising",
@@ -11518,7 +11516,7 @@
           "keyword": "Se filtró el Nuevo Trailer Oficial de Spider-Man Brand New Day y Hulk gris es gigante I Noticias",
           "keywordEn": "The New Official Trailer of Spider-Man Brand New Day was leaked and the gray Hulk is giant I News",
           "volume": "99K+",
-          "volumeRaw": 99432,
+          "volumeRaw": 99541,
           "category": "movies",
           "temperature": 19,
           "velocity": "new",
@@ -11534,7 +11532,7 @@
           "keyword": "Descendientes: Un malvado País de las Maravillas | Tráiler Doblado | Disney+",
           "keywordEn": "Descendants: An Evil Wonderland | Dubbed Trailer | Disney+",
           "volume": "74K+",
-          "volumeRaw": 74768,
+          "volumeRaw": 74965,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -11549,8 +11547,8 @@
           "rank": 10,
           "keyword": "Los Prisioneros - Tren Al Sur (Letra/Lyrics)",
           "keywordEn": "Los Prisioneros - Tren Al Sur (Letra/Lyrics)",
-          "volume": "30K+",
-          "volumeRaw": 30745,
+          "volume": "31K+",
+          "volumeRaw": 31078,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -11563,34 +11561,34 @@
         },
         {
           "rank": 11,
-          "keyword": "spurs vs knicks",
-          "keywordEn": "spurs vs knicks",
+          "keyword": "mundial 2026",
+          "keywordEn": "mundial 2026",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 13,
+          "temperature": 18,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "He joins Hakeem Olajuwon and Patrick Ewing as the only …"
+            "Empezó la cuenta regresiva con miras al Mundial Norteamérica 2026"
           ]
         },
         {
           "rank": 12,
-          "keyword": "pedro gallese",
-          "keywordEn": "pedro gallese",
+          "keyword": "spurs vs knicks",
+          "keywordEn": "spurs vs knicks",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 21,
+          "temperature": 11,
           "velocity": "steady",
-          "isGlobal": true,
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Pedro Gallese y un AUTOGOL para el 3-0 de España sobre Perú"
+            "\"Get to your spot, and if you miss that shot, like, is …"
           ]
         },
         {
@@ -12845,8 +12843,8 @@
         "rank": 2,
         "keyword": "Apple reveals new AI architecture built around Google Gemini models",
         "keywordEn": "Apple reveals new AI architecture built around Google Gemini models",
-        "volume": "67K+",
-        "volumeRaw": 67950,
+        "volume": "68K+",
+        "volumeRaw": 68100,
         "category": "tech",
         "temperature": 86,
         "velocity": "new",
@@ -12856,8 +12854,8 @@
         "rank": 3,
         "keyword": "Siri AI",
         "keywordEn": "Siri AI",
-        "volume": "73K+",
-        "volumeRaw": 73800,
+        "volume": "74K+",
+        "volumeRaw": 74100,
         "category": "tech",
         "temperature": 85,
         "velocity": "new",
@@ -12879,7 +12877,7 @@
         "keyword": "xAI is looking more like a datacentre REIT than a frontier lab",
         "keywordEn": "xAI is looking more like a datacentre REIT than a frontier lab",
         "volume": "72K+",
-        "volumeRaw": 72450,
+        "volumeRaw": 72900,
         "category": "tech",
         "temperature": 83,
         "velocity": "rising",
@@ -12889,8 +12887,8 @@
         "rank": 6,
         "keyword": "Show HN: Performative-UI – A react component library of design tropes",
         "keywordEn": "Show HN: Performative-UI – A react component library of design tropes",
-        "volume": "129K+",
-        "volumeRaw": 129750,
+        "volume": "130K+",
+        "volumeRaw": 130050,
         "category": "tech",
         "temperature": 82,
         "velocity": "rising",
@@ -12911,8 +12909,8 @@
         "rank": 8,
         "keyword": "EU-banned pesticides found in rice, tea and spices",
         "keywordEn": "EU-banned pesticides found in rice, tea and spices",
-        "volume": "43K+",
-        "volumeRaw": 43950,
+        "volume": "44K+",
+        "volumeRaw": 44250,
         "category": "tech",
         "temperature": 80,
         "velocity": "rising",
@@ -12922,8 +12920,8 @@
         "rank": 9,
         "keyword": "Apple Core AI Framework",
         "keywordEn": "Apple Core AI Framework",
-        "volume": "35K+",
-        "volumeRaw": 35850,
+        "volume": "36K+",
+        "volumeRaw": 36000,
         "category": "tech",
         "temperature": 79,
         "velocity": "rising",
@@ -12945,7 +12943,7 @@
         "keyword": "Show HN: Gitdot – a better GitHub. Open-source, written in Rust",
         "keywordEn": "Show HN: Gitdot – a better GitHub. Open-source, written in Rust",
         "volume": "29K+",
-        "volumeRaw": 29550,
+        "volumeRaw": 29700,
         "category": "tech",
         "temperature": 77,
         "velocity": "steady",
@@ -12964,10 +12962,10 @@
       },
       {
         "rank": 13,
-        "keyword": "Why are cells small?",
-        "keywordEn": "Why are cells small?",
-        "volume": "18K+",
-        "volumeRaw": 18750,
+        "keyword": "How much do amd64 microarchitecture levels help in Go?",
+        "keywordEn": "How much do amd64 microarchitecture levels help in Go?",
+        "volume": "3K+",
+        "volumeRaw": 3300,
         "category": "tech",
         "temperature": 75,
         "velocity": "steady",
@@ -12975,10 +12973,10 @@
       },
       {
         "rank": 14,
-        "keyword": "How much do amd64 microarchitecture levels help in Go?",
-        "keywordEn": "How much do amd64 microarchitecture levels help in Go?",
-        "volume": "2K+",
-        "volumeRaw": 2850,
+        "keyword": "Why are cells small?",
+        "keywordEn": "Why are cells small?",
+        "volume": "18K+",
+        "volumeRaw": 18750,
         "category": "tech",
         "temperature": 74,
         "velocity": "steady",
@@ -12988,8 +12986,8 @@
         "rank": 15,
         "keyword": "Ask HN: What are tools you have made for yourself since the advent of AI?",
         "keywordEn": "Ask HN: What are tools you have made for yourself since the advent of AI?",
-        "volume": "30K+",
-        "volumeRaw": 30750,
+        "volume": "31K+",
+        "volumeRaw": 31050,
         "category": "tech",
         "temperature": 73,
         "velocity": "steady",
@@ -13000,7 +12998,7 @@
         "keyword": "Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf]",
         "keywordEn": "Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf]",
         "volume": "70K+",
-        "volumeRaw": 70350,
+        "volumeRaw": 70650,
         "category": "tech",
         "temperature": 72,
         "velocity": "steady",
@@ -13011,7 +13009,7 @@
         "keyword": "FrontierCode",
         "keywordEn": "FrontierCode",
         "volume": "19K+",
-        "volumeRaw": 19500,
+        "volumeRaw": 19650,
         "category": "tech",
         "temperature": 71,
         "velocity": "steady",
@@ -13055,7 +13053,7 @@
         "keyword": "AI is slowing down",
         "keywordEn": "AI is slowing down",
         "volume": "68K+",
-        "volumeRaw": 68400,
+        "volumeRaw": 68700,
         "category": "tech",
         "temperature": 67,
         "velocity": "steady",
@@ -13088,7 +13086,7 @@
         "keyword": "1worldflag: A blue dot on a transparent background",
         "keywordEn": "1worldflag: A blue dot on a transparent background",
         "volume": "27K+",
-        "volumeRaw": 27000,
+        "volumeRaw": 27150,
         "category": "tech",
         "temperature": 64,
         "velocity": "steady",
@@ -13109,8 +13107,8 @@
         "rank": 26,
         "keyword": "A Survey of Inlining Heuristics",
         "keywordEn": "A Survey of Inlining Heuristics",
-        "volume": "1K+",
-        "volumeRaw": 1950,
+        "volume": "2K+",
+        "volumeRaw": 2100,
         "category": "tech",
         "temperature": 62,
         "velocity": "steady",
@@ -13121,7 +13119,7 @@
         "keyword": "Federal judge blocks H1B visa $100K fee",
         "keywordEn": "Federal judge blocks H1B visa $100K fee",
         "volume": "17K+",
-        "volumeRaw": 17700,
+        "volumeRaw": 17850,
         "category": "tech",
         "temperature": 61,
         "velocity": "steady",
@@ -13154,7 +13152,7 @@
         "keyword": "We Think the SpaceX IPO Is Overvalued",
         "keywordEn": "We Think the SpaceX IPO Is Overvalued",
         "volume": "26K+",
-        "volumeRaw": 26400,
+        "volumeRaw": 26550,
         "category": "tech",
         "temperature": 58,
         "velocity": "steady",
@@ -13195,10 +13193,10 @@
       },
       {
         "rank": 34,
-        "keyword": "Doing something that’s never been done before (2025)",
-        "keywordEn": "Doing something that’s never been done before (2025)",
-        "volume": "4K+",
-        "volumeRaw": 4800,
+        "keyword": "Thunderbird Littering My Home",
+        "keywordEn": "Thunderbird Littering My Home",
+        "volume": "11K+",
+        "volumeRaw": 11100,
         "category": "tech",
         "temperature": 54,
         "velocity": "steady",
@@ -13206,10 +13204,10 @@
       },
       {
         "rank": 35,
-        "keyword": "Thunderbird Littering My Home",
-        "keywordEn": "Thunderbird Littering My Home",
-        "volume": "11K+",
-        "volumeRaw": 11100,
+        "keyword": "Doing something that’s never been done before (2025)",
+        "keywordEn": "Doing something that’s never been done before (2025)",
+        "volume": "4K+",
+        "volumeRaw": 4800,
         "category": "tech",
         "temperature": 53,
         "velocity": "steady",
@@ -13242,7 +13240,7 @@
         "keyword": "Stop the Apple Music app from launching",
         "keywordEn": "Stop the Apple Music app from launching",
         "volume": "89K+",
-        "volumeRaw": 89400,
+        "volumeRaw": 89550,
         "category": "tech",
         "temperature": 50,
         "velocity": "steady",
@@ -13253,7 +13251,7 @@
         "keyword": "Show HN: Mach – A compiled systems language looking for contributions",
         "keywordEn": "Show HN: Mach – A compiled systems language looking for contributions",
         "volume": "3K+",
-        "volumeRaw": 3000,
+        "volumeRaw": 3150,
         "category": "tech",
         "temperature": 49,
         "velocity": "steady",
@@ -13261,10 +13259,10 @@
       },
       {
         "rank": 40,
-        "keyword": "Apple Watch for Your Kids",
-        "keywordEn": "Apple Watch for Your Kids",
+        "keyword": "Let's Encrypt bans certificate usage in any US sanctioned territory [pdf]",
+        "keywordEn": "Let's Encrypt bans certificate usage in any US sanctioned territory [pdf]",
         "volume": "2K+",
-        "volumeRaw": 2700,
+        "volumeRaw": 2550,
         "category": "tech",
         "temperature": 48,
         "velocity": "steady",
@@ -13283,10 +13281,10 @@
       },
       {
         "rank": 42,
-        "keyword": "Let's Encrypt bans certificate usage in any US sanctioned territory [pdf]",
-        "keywordEn": "Let's Encrypt bans certificate usage in any US sanctioned territory [pdf]",
+        "keyword": "Apple Watch for Your Kids",
+        "keywordEn": "Apple Watch for Your Kids",
         "volume": "2K+",
-        "volumeRaw": 2400,
+        "volumeRaw": 2700,
         "category": "tech",
         "temperature": 46,
         "velocity": "steady",
@@ -14544,7 +14542,7 @@
     },
     "totalCountries": 36,
     "totalTrends": 720,
-    "nextUpdate": "2026-06-09T06:02:20.992574+00:00",
+    "nextUpdate": "2026-06-09T06:06:37.312644+00:00",
     "risingFast": [
       {
         "keyword": "IShowSpeed - World Cup (Champions) [Official Music Video]",
@@ -14570,14 +14568,14 @@
       "movies": 17,
       "sports": 9,
       "music": 8,
-      "finance": 5,
-      "tech": 5
+      "tech": 5,
+      "finance": 5
     }
   },
   "pipelineStats": {
-    "startTime": "2026-06-09T05:00:35.011921+00:00",
-    "endTime": "2026-06-09T05:02:20.992787+00:00",
-    "duration": 105,
+    "startTime": "2026-06-09T05:05:07.095452+00:00",
+    "endTime": "2026-06-09T05:06:37.312834+00:00",
+    "duration": 90,
     "successCount": 36,
     "errorCount": 0,
     "blockedKeywords": 0,
