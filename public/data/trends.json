@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-07-24T12:59:54.740642+00:00",
+  "lastUpdated": "2026-07-24T13:03:32.420667+00:00",
   "sources": {
     "googleTrends": true,
     "youtube": true,
-    "gdelt": true,
+    "gdelt": false,
     "apple": true
   },
   "countries": {
@@ -16,7 +16,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5006974,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 73,
           "velocity": "new",
@@ -32,7 +32,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 65,
           "velocity": "new",
@@ -96,7 +96,7 @@
           "keyword": "🔴LIVE | HALO: CAMPAIGN EVOLVED | 24 HOUR STREAM | CLOAKZY X NICKMERCS X COCONUT | LEGENDARY L.A.S.O",
           "keywordEn": "🔴LIVE | HALO: CAMPAIGN EVOLVED | 24 HOUR STREAM | CLOAKZY X NICKMERCS X COCONUT | LEGENDARY L.A.S.O",
           "volume": "919K+",
-          "volumeRaw": 919402,
+          "volumeRaw": 919547,
           "category": "news",
           "temperature": 27,
           "velocity": "new",
@@ -111,8 +111,8 @@
           "rank": 7,
           "keyword": "Black Ops 2 Zombies - Easter Egg Attempt, Steak Fail, and More! (Mob of the Dead)",
           "keywordEn": "Black Ops 2 Zombies - Easter Egg Attempt, Steak Fail, and More! (Mob of the Dead)",
-          "volume": "730K+",
-          "volumeRaw": 730430,
+          "volume": "731K+",
+          "volumeRaw": 731026,
           "category": "news",
           "temperature": 34,
           "velocity": "rising",
@@ -144,7 +144,7 @@
           "keyword": "Selling Dr*gs at my Job in CHICAGO in GTA 5 RP",
           "keywordEn": "Selling Dr*gs at my Job in CHICAGO in GTA 5 RP",
           "volume": "164K+",
-          "volumeRaw": 164405,
+          "volumeRaw": 164568,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -160,7 +160,7 @@
           "keyword": "Been By Now",
           "keywordEn": "Been By Now",
           "volume": "70K+",
-          "volumeRaw": 70016,
+          "volumeRaw": 70305,
           "category": "news",
           "temperature": 20,
           "velocity": "steady",
@@ -200,7 +200,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "MAGA Columnist Trashes ‘Sensitive Bunny’ JD Vance"
+            "Opinion | Call the Veep, Agent Mulder!"
           ]
         },
         {
@@ -216,7 +216,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Chris Brown pleads guilty to affray over bottle attack"
+            "Singer Chris Brown pleads guilty to affray over London nightclub attack"
           ]
         },
         {
@@ -280,7 +280,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Paula Badosa alarga su buen momento en Hamburgo y Estoril se queda sin españoles"
+            "(Crónica) Paula Badosa avanza a 'semis' en Iasi y Dani Mérida pasa a la final en Umag"
           ]
         },
         {
@@ -342,7 +342,7 @@
           "keyword": "[어벤져스: 둠스데이] 티저 예고편",
           "keywordEn": "[Avengers: Doomsday] Teaser Trailer",
           "volume": "2M+",
-          "volumeRaw": 2584728,
+          "volumeRaw": 2587102,
           "category": "movies",
           "temperature": 45,
           "velocity": "new",
@@ -358,7 +358,7 @@
           "keyword": "[스파이더맨: 브랜드 뉴 데이] 파이널 예고편",
           "keywordEn": "[Spider-Man: Brand New Day] Final Trailer",
           "volume": "1M+",
-          "volumeRaw": 1113861,
+          "volumeRaw": 1114470,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -390,7 +390,7 @@
           "keyword": "고놈 참 잘하네",
           "keywordEn": "He's really good at it",
           "volume": "553K+",
-          "volumeRaw": 553274,
+          "volumeRaw": 553621,
           "category": "news",
           "temperature": 29,
           "velocity": "rising",
@@ -405,8 +405,8 @@
           "rank": 5,
           "keyword": "Please Summer!",
           "keywordEn": "Please Summer!",
-          "volume": "323K+",
-          "volumeRaw": 323992,
+          "volume": "324K+",
+          "volumeRaw": 324246,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -422,7 +422,7 @@
           "keyword": "실시간으로 난리난 스티브의 정체.. ≪어벤져스: 둠스데이≫ 공식 티저 예고편 떡밥 분석 2탄 총정리",
           "keywordEn": "The identity of Steve, who is in chaos in real time... ≪Avengers: Doomsday≫ official teaser trailer analysis part 2 summary",
           "volume": "272K+",
-          "volumeRaw": 272146,
+          "volumeRaw": 272713,
           "category": "movies",
           "temperature": 24,
           "velocity": "rising",
@@ -452,18 +452,16 @@
         {
           "rank": 8,
           "keyword": "똘끼 리니지클래식 멘탈 회복완료                               #솔 인첸트",
-          "keywordEn": "Ddolki Lineage Classic mental recovery complete #Sol Enchant",
+          "keywordEn": "Tdolkki Lineage Classic mental recovery complete #Sol Enchant",
           "volume": "169K+",
-          "volumeRaw": 169248,
+          "volumeRaw": 169818,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "✔카톡 아이디 : josungtae11\n✔인스타 ID : josungtae8282\n✔계좌후원 : 3333215279461 카카오뱅크\n✔투네이션후원 : https://toon.at/donate/josungtae\n✔똘끼100% 채널 맴버쉽 가입하기\n   https://www.youtube.com/channel/UCybKp0O2N9sUZOgIm1j2r_w/joi",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers"
-          ],
+          "relatedNews": [],
           "youtubeId": "N9W-DXt4Ti4",
           "channelTitle": "똘끼100%"
         },
@@ -472,7 +470,7 @@
           "keyword": "Less than a Lover",
           "keywordEn": "Less than a Lover",
           "volume": "152K+",
-          "volumeRaw": 152249,
+          "volumeRaw": 152428,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
@@ -488,7 +486,7 @@
           "keyword": "Summer Returns",
           "keywordEn": "Summer Returns",
           "volume": "130K+",
-          "volumeRaw": 130796,
+          "volumeRaw": 130853,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -608,7 +606,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "한동훈, '사의 표명' 정성호에 \"보완수사 금지 막을 의무 다해야\""
+            "한동훈, 정성호 사의 표명에 \"도망간다고 책임 안 없어져\""
           ]
         },
         {
@@ -686,7 +684,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "new",
@@ -702,7 +700,7 @@
           "keyword": "aespa エスパ 'KISS N TELL' MV",
           "keywordEn": "aespa ESPA 'KISS N TELL' MV",
           "volume": "1M+",
-          "volumeRaw": 1568157,
+          "volumeRaw": 1569699,
           "category": "news",
           "temperature": 51,
           "velocity": "new",
@@ -718,7 +716,7 @@
           "keyword": "誰も見たことがない、新たな──『バイオハザード』＜予告＞10月9日（金）全国の映画館で公開",
           "keywordEn": "A new, never-before-seen version of ``Resident Evil'' <Preview> Released at movie theaters nationwide on Friday, October 9th",
           "volume": "1M+",
-          "volumeRaw": 1433458,
+          "volumeRaw": 1435984,
           "category": "movies",
           "temperature": 34,
           "velocity": "rising",
@@ -750,17 +748,14 @@
           "keyword": "【マインクラフト】100本ノックでボールを連続キャッチできるまで終われません【日常組】",
           "keywordEn": "[Minecraft] It doesn't end until you can catch 100 balls in a row [Everyday Group]",
           "volume": "201K+",
-          "volumeRaw": 201331,
+          "volumeRaw": 201619,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "面白かったら高評価してやって下さい！\n\n俺たち日常組の公式サイトが出来ました!→https://nichijo.world\nチャンネル登録→http://goo.gl/XZDlX0\nfollow me!→https://twitter.com/Nichijo_Gumi\n\n日常メンバー\nぺいんと:https://www.youtube.com/channel/UC_qzqv92T-tY9wMnLnd",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "sYM5DQT_R4Y",
           "channelTitle": "日常組"
         },
@@ -768,8 +763,8 @@
           "rank": 7,
           "keyword": "【映画】すまない先生の過去と死　すまない冒険リメイク【 マイクラ / マインクラフト 】",
           "keywordEn": "[Movie] Sorry Teacher's Past and Death - Sorry Adventure Remake [Minecraft]",
-          "volume": "120K+",
-          "volumeRaw": 120402,
+          "volume": "121K+",
+          "volumeRaw": 121620,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -784,8 +779,8 @@
           "rank": 8,
           "keyword": "【朕は見ちゃダメ】宝を探すのを手伝ってくれたメーメントヴァニタスの為にクイズ施設を作るk4sen【VCR RUST】",
           "keywordEn": "[Don't look at me] k4sen creates a quiz facility for Memento Vanitas who helped me find the treasure [VCR RUST]",
-          "volume": "72K+",
-          "volumeRaw": 72289,
+          "volume": "73K+",
+          "volumeRaw": 73668,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -817,7 +812,7 @@
           "keyword": "Hey! Say! JUMP - DEAR MY LOVER [S say Official Live Video]",
           "keywordEn": "Hey! Say! JUMP - DEAR MY LOVER [S say Official Live Video]",
           "volume": "34K+",
-          "volumeRaw": 34024,
+          "volumeRaw": 34916,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -830,18 +825,18 @@
         },
         {
           "rank": 11,
-          "keyword": "阪神戦",
-          "keywordEn": "Hanshin match",
-          "volume": "2K+",
-          "volumeRaw": 2000,
+          "keyword": "突っ張り棒",
+          "keywordEn": "tension rod",
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
           "temperature": 13,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "【阪神】岡田顧問「福島に代走かあ。経験かな」俊足の福島圭音に俊足の植田海を代走起用"
+            "ベランダの窓の外側に突っ張り棒を設置→目からウロコの暑さ対策に「もっと早く知りたかった」「この手があったかっ！」（1/3） | ライフハック ねとらぼ"
           ]
         },
         {
@@ -852,7 +847,7 @@
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 11,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -862,18 +857,18 @@
         },
         {
           "rank": 13,
-          "keyword": "追悼",
-          "keywordEn": "memorial",
-          "volume": "1K+",
-          "volumeRaw": 1000,
+          "keyword": "それスノ",
+          "keywordEn": "It's Snow",
+          "volume": "500",
+          "volumeRaw": 500,
           "category": "news",
           "temperature": 9,
-          "velocity": "new",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "山田五郎さん、訃報受け著作の注文が殺到 創元社が異例のお詫び「これまでにない反響」"
+            "Snow Manが国民投票で選ばれたテンションぶち上げ曲ベスト3をSPライブで披露「それスノSP」（TVガイドWeb）"
           ]
         },
         {
@@ -884,7 +879,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 7,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -894,13 +889,45 @@
         },
         {
           "rank": 15,
-          "keyword": "ザゼンボーイズ m ステ",
-          "keywordEn": "zazen boys m station",
+          "keyword": "吉田聖弥",
+          "keywordEn": "Seiya Yoshida",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
           "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "【中日】柳裕也、５回２失点の粘投も２カ月ぶりの白星ならず"
+          ]
+        },
+        {
+          "rank": 16,
+          "keyword": "高山本線",
+          "keywordEn": "Takayama Main Line",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "記録的な暑さの影響…JR高山線と飯田線で“レールが異常な高温” 一部区間で運転見合わせ 限度を超えて膨張し曲がる恐れも"
+          ]
+        },
+        {
+          "rank": 17,
+          "keyword": "ザゼンボーイズ m ステ",
+          "keywordEn": "zazenboys m station",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -909,14 +936,14 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 18,
           "keyword": "vivant 監督",
           "keywordEn": "vivant supervision",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -925,7 +952,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 19,
           "keyword": "経済指標",
           "keywordEn": "economic indicators",
           "volume": "200",
@@ -941,49 +968,19 @@
           ]
         },
         {
-          "rank": 18,
-          "keyword": "中村 草 太",
-          "keywordEn": "Sota Nakamura",
-          "volume": "200",
-          "volumeRaw": 200,
+          "rank": 20,
+          "keyword": "巨人 監督",
+          "keywordEn": "giant supervision",
+          "volume": "100",
+          "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
-          "relatedNews": []
-        },
-        {
-          "rank": 19,
-          "keyword": "阪神タイガース 速報",
-          "keywordEn": "Hanshin Tigers breaking news",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
           "relatedNews": [
-            "【八木裕　帰ってきた神眼スコープ】屋外球場での戦いが続く藤川虎　早めの先制が優勝への合言葉"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "サンフレッチェ広島",
-          "keywordEn": "Sanfrecce Hiroshima",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "サンフレッチェ広島 強力新助っ人のアレー選手が入団会見（2026年7月24日掲載）｜日テレNEWS NNN"
+            "【巨人】坂本勇人ら球宴出場の６選手がセ・リーグ監督務める藤川球児にあいさつ 阪神練習中にグラウンドへ"
           ]
         }
       ]
@@ -997,7 +994,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5006974,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 73,
           "velocity": "new",
@@ -1029,7 +1026,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 58,
           "velocity": "rising",
@@ -1076,8 +1073,8 @@
           "rank": 6,
           "keyword": "Black Ops 2 Zombies - Easter Egg Attempt, Steak Fail, and More! (Mob of the Dead)",
           "keywordEn": "Black Ops 2 Zombies - Easter Egg Attempt, Steak Fail, and More! (Mob of the Dead)",
-          "volume": "730K+",
-          "volumeRaw": 730430,
+          "volume": "731K+",
+          "volumeRaw": 731026,
           "category": "news",
           "temperature": 36,
           "velocity": "steady",
@@ -1092,8 +1089,8 @@
           "rank": 7,
           "keyword": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
           "keywordEn": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
-          "volume": "683K+",
-          "volumeRaw": 683842,
+          "volume": "688K+",
+          "volumeRaw": 688512,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -1124,8 +1121,8 @@
           "rank": 9,
           "keyword": "ADÉLA - Ain’t In LA (Official Music Video)",
           "keywordEn": "ADÉLA - Ain’t In LA (Official Music Video)",
-          "volume": "484K+",
-          "volumeRaw": 484542,
+          "volume": "485K+",
+          "volumeRaw": 485097,
           "category": "music",
           "temperature": 29,
           "velocity": "steady",
@@ -1197,7 +1194,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "'Extremely significant' car bomb intercepted near border by Irish police"
+            "Woman and man arrested in Ireland after police intercept ‘highly sophisticated’ bomb"
           ]
         },
         {
@@ -1339,7 +1336,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -1371,7 +1368,7 @@
           "keyword": "DIE SCHLECHTESTE LOBBY ALLER ZEITEN",
           "keywordEn": "DIE SCHLECHTESTE LOBBY ALLER ZEITEN",
           "volume": "214K+",
-          "volumeRaw": 214002,
+          "volumeRaw": 214269,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -1387,7 +1384,7 @@
           "keyword": "Rammel SUSPENDIERT Spieler 🤬 ENDE der Hinrunde 😨 EA FC 26 1860 München Karrieremodus #3",
           "keywordEn": "Rammel SUSPENDS player 🤬 END of the first half of the season 😨 EA FC 26 1860 Munich Career Mode #3",
           "volume": "175K+",
-          "volumeRaw": 175656,
+          "volumeRaw": 175871,
           "category": "sports",
           "temperature": 25,
           "velocity": "rising",
@@ -1403,7 +1400,7 @@
           "keyword": "ich TESTE VERBOTENE TRICKS in Keyboard ESCAPE!",
           "keywordEn": "ich TESTE VERBOTENE TRICKS in Keyboard ESCAPE!",
           "volume": "163K+",
-          "volumeRaw": 163180,
+          "volumeRaw": 163398,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -1418,8 +1415,8 @@
           "rank": 7,
           "keyword": "RESIDENT EVIL Trailer 2 German Deutsch (2026) Zach Cregger",
           "keywordEn": "RESIDENT EVIL Trailer 2 German Deutsch (2026) Zach Cregger",
-          "volume": "129K+",
-          "volumeRaw": 129840,
+          "volume": "130K+",
+          "volumeRaw": 130042,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -1435,7 +1432,7 @@
           "keyword": "SHINDY - HIS & HERS",
           "keywordEn": "SHINDY - HIS & HERS",
           "volume": "52K+",
-          "volumeRaw": 52574,
+          "volumeRaw": 52672,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -1451,7 +1448,7 @@
           "keyword": "Gzuz x Sido x JBS - Seite an Seite",
           "keywordEn": "Gzuz x Sido x JBS - Seite an Seite",
           "volume": "39K+",
-          "volumeRaw": 39252,
+          "volumeRaw": 39369,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -1467,7 +1464,7 @@
           "keyword": "MUCCO - Tonight (Official Video)",
           "keywordEn": "MUCCO - Tonight (Official Video)",
           "volume": "24K+",
-          "volumeRaw": 24715,
+          "volumeRaw": 24786,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -1553,7 +1550,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Exportkontrollen: China setzt Rheinmetall auf Sanktionsliste"
+            "Börsen-Tag: China sanktioniert Rheinmetall und 13 weitere Firmen"
           ]
         },
         {
@@ -1585,7 +1582,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Demirovic-Zukunft offen - VfB will Pejcinovic-Angebot nachbessern!"
+            "VfB Stuttgart: Welche Stars dem VfB schon durch die Lappen gingen: VfB droht Transfer-Stau"
           ]
         },
         {
@@ -1645,7 +1642,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -1661,16 +1658,14 @@
           "keyword": "Aankhon Se Tune 2.0 | Bhai Tera Star Hai | Raghav, Niharika | Lijo, Dev, Palak, Kumar, Alka, Mohsin",
           "keywordEn": "Aankhon Se Tune 2.0 | Bhai Tera Star Hai | Raghav, Niharika | Lijo, Dev, Palak, Kumar, Alka, Mohsin",
           "volume": "7M+",
-          "volumeRaw": 7558731,
+          "volumeRaw": 7565187,
           "category": "news",
           "temperature": 68,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Relive the timeless romance of the '90s with Aankhon Se Tune 2.0 from Bhai Tera Star Hai. ❤️🌧️\n\nInspired by the iconic 90s classic, Aankhon Se Tune 2.0 brings back the charm of evergreen Bollywood rom",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers"
-          ],
+          "relatedNews": [],
           "youtubeId": "LX2zshAgECQ",
           "channelTitle": "Tips Official"
         },
@@ -1695,7 +1690,7 @@
           "keyword": "SPIDER-MAN: BRAND NEW DAY - Final Trailer (Peter’s Journey) - Hindi | Exclusively In Cinemas July 30",
           "keywordEn": "SPIDER-MAN: BRAND NEW DAY - Final Trailer (Peter’s Journey) - Hindi | Exclusively In Cinemas July 30",
           "volume": "1M+",
-          "volumeRaw": 1593699,
+          "volumeRaw": 1594404,
           "category": "movies",
           "temperature": 34,
           "velocity": "new",
@@ -1710,8 +1705,8 @@
           "rank": 5,
           "keyword": "MATCHMAKING with YouTubers After 100 YEARS",
           "keywordEn": "MATCHMAKING with YouTubers After 100 YEARS",
-          "volume": "985K+",
-          "volumeRaw": 985791,
+          "volume": "986K+",
+          "volumeRaw": 986796,
           "category": "news",
           "temperature": 29,
           "velocity": "steady",
@@ -1734,10 +1729,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "►Create Your Reels :- \n\n►Album :- दिल्ली के पुलिस \n►Song :- Delhi Ke Police\n►Singer :- Raushan Rohi & Srishti Bharti\n►Lyrics :- Raja Raushan\n►Music :- Vicky Vox\n►Mix & Mastring :- Ankit Ahir \n►Video D",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "6rF-r_rYo9o",
           "channelTitle": "Raushan Rohi Entertainment"
         },
@@ -1761,8 +1753,8 @@
           "rank": 8,
           "keyword": "I BECAME AN AGENT | FIRST LIGHT 007 #1",
           "keywordEn": "I BECAME AN AGENT | FIRST LIGHT 007 #1",
-          "volume": "517K+",
-          "volumeRaw": 517131,
+          "volume": "523K+",
+          "volumeRaw": 523539,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -1777,8 +1769,8 @@
           "rank": 9,
           "keyword": "Ramayana Trailer - Kyu Hua Cancel? | Deeksha Sharma",
           "keywordEn": "Ramayana Trailer - Kyu Hua Cancel? | Deeksha Sharma",
-          "volume": "478K+",
-          "volumeRaw": 478272,
+          "volume": "479K+",
+          "volumeRaw": 479055,
           "category": "movies",
           "temperature": 19,
           "velocity": "new",
@@ -1794,7 +1786,7 @@
           "keyword": "Tere Ishq Mein Naachenge | Aamir Khan | Karisma Kapoor | Kumar Sanu | 90s Hindi Sad Song",
           "keywordEn": "Tere Ishq Mein Naachenge | Aamir Khan | Karisma Kapoor | Kumar Sanu | 90s Hindi Sad Song",
           "volume": "418K+",
-          "volumeRaw": 418218,
+          "volumeRaw": 418815,
           "category": "music",
           "temperature": 17,
           "velocity": "steady",
@@ -1992,7 +1984,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -2008,7 +2000,7 @@
           "keyword": "aespa エスパ 'KISS N TELL' MV",
           "keywordEn": "aespa ESPA 'KISS N TELL' MV",
           "volume": "1M+",
-          "volumeRaw": 1568157,
+          "volumeRaw": 1569699,
           "category": "news",
           "temperature": 51,
           "velocity": "steady",
@@ -2024,7 +2016,7 @@
           "keyword": "OS INSCRITOS ME AJUDARAM A CHEGAR NO TURNO 10 DO ANIMAL HOSPITAL!",
           "keywordEn": "OS INSCRITOS ME AJUDARAM A CHEGAR NO TURNO 10 DO ANIMAL HOSPITAL!",
           "volume": "1M+",
-          "volumeRaw": 1449479,
+          "volumeRaw": 1450485,
           "category": "news",
           "temperature": 34,
           "velocity": "rising",
@@ -2039,8 +2031,8 @@
           "rank": 5,
           "keyword": "ESSE MERCADO É AMALDIÇOADO! - SHIFT AT MIDNIGHT COM OS AMIGOS",
           "keywordEn": "THIS MARKET IS CURSED! - SHIFT AT MIDNIGHT WITH FRIENDS",
-          "volume": "549K+",
-          "volumeRaw": 549544,
+          "volume": "550K+",
+          "volumeRaw": 550052,
           "category": "finance",
           "temperature": 27,
           "velocity": "new",
@@ -2056,7 +2048,7 @@
           "keyword": "O MENINO NEM ACREDITOU NO QUE A PATRICINHA FEZ EM BROOKHAVEN",
           "keywordEn": "O MENINO NEM ACREDITOU NO QUE A PATRICINHA FEZ EM BROOKHAVEN",
           "volume": "146K+",
-          "volumeRaw": 146744,
+          "volumeRaw": 146934,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -2072,17 +2064,14 @@
           "keyword": "Você Ja Sabe",
           "keywordEn": "You already know",
           "volume": "97K+",
-          "volumeRaw": 97296,
+          "volumeRaw": 97541,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Provided to YouTube by Universal Music Group\n\nVocê Ja Sabe · Anitta · Los Brasileros\n\nEQUILIBRIVM II\n\n℗ 2026 Floresta Records Inc., under exclusive license to Republic Records, a division of UMG Recor",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "b88IQ_G-7JY",
           "channelTitle": "Anitta - Topic"
         },
@@ -2123,7 +2112,7 @@
           "keyword": "Pabllo Vittar, Villano Antillano - ROCKSTAR (Official Lyric Video)",
           "keywordEn": "Pabllo Vittar, Villano Antillano - ROCKSTAR (Official Lyric Video)",
           "volume": "42K+",
-          "volumeRaw": 42823,
+          "volumeRaw": 42838,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -2319,7 +2308,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -2383,7 +2372,7 @@
           "keyword": "Timal - Sicario (Clip Officiel)",
           "keywordEn": "Timal - Sicario (Clip Officiel)",
           "volume": "148K+",
-          "volumeRaw": 148698,
+          "volumeRaw": 148978,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -2415,7 +2404,7 @@
           "keyword": "NE FAIS JAMAIS CONFIANCE À VERITY…",
           "keywordEn": "NEVER TRUST VERITY…",
           "volume": "118K+",
-          "volumeRaw": 118100,
+          "volumeRaw": 118297,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -2431,7 +2420,7 @@
           "keyword": "FANTAISIE",
           "keywordEn": "FANTAISIE",
           "volume": "53K+",
-          "volumeRaw": 53744,
+          "volumeRaw": 53892,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -2447,7 +2436,7 @@
           "keyword": "SCROOGE Bande Annonce VF (2026) Johnny Depp",
           "keywordEn": "SCROOGE Bande Annonce VF (2026) Johnny Depp",
           "volume": "28K+",
-          "volumeRaw": 28624,
+          "volumeRaw": 28761,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -2471,18 +2460,50 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Droits TV : la NFL de retour sur L’Equipe… et France TV !"
+            "Foot américain : France Télévisions diffusera le match de NFL programmé au Stade de France"
           ]
         },
         {
           "rank": 12,
+          "keyword": "lenny martinez",
+          "keywordEn": "lenny martinez",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 11,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "« Comme le Tourmalet, ces lieux sont tout en haut dans l'histoire du Tour de France »: le peloton à l'attaque d'un mythe, l'Alpe d'Huez"
+          ]
+        },
+        {
+          "rank": 13,
+          "keyword": "harry de sussex",
+          "keywordEn": "harry de sussex",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 9,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Meghan Markle partage de rares photos de ses vacances en famille"
+          ]
+        },
+        {
+          "rank": 14,
           "keyword": "seixas tour de france",
           "keywordEn": "seixas tour de france",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "music",
-          "temperature": 11,
-          "velocity": "rising",
+          "temperature": 7,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -2491,14 +2512,14 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 15,
           "keyword": "francetv",
           "keywordEn": "francetv",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 9,
-          "velocity": "new",
+          "temperature": 5,
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -2507,25 +2528,9 @@
           ]
         },
         {
-          "rank": 14,
-          "keyword": "démarchage",
-          "keywordEn": "canvassing",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 7,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Arnaques téléphoniques : que sont les « ping calls », ces appels qui peuvent vous coûter (très) cher"
-          ]
-        },
-        {
-          "rank": 15,
-          "keyword": "reda taliani",
-          "keywordEn": "reda taliani",
+          "rank": 16,
+          "keyword": "france television",
+          "keywordEn": "france television",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -2535,19 +2540,35 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
+            "« Riviera 76 » : un documentaire dévoile des images inédites du « Woodstock varois » 50 ans plus tard"
+          ]
+        },
+        {
+          "rank": 17,
+          "keyword": "reda taliani",
+          "keywordEn": "reda taliani",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
             "La soirée de Reda Taliani finit au commissariat (et peut être en prison)"
           ]
         },
         {
-          "rank": 16,
+          "rank": 18,
           "keyword": "playstation network status",
           "keywordEn": "playstation network status",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 15,
-          "velocity": "rising",
-          "isGlobal": true,
+          "temperature": 10,
+          "velocity": "new",
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -2555,7 +2576,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 19,
           "keyword": "chey tae-won",
           "keywordEn": "chey tae-won",
           "volume": "200",
@@ -2571,51 +2592,19 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 20,
           "keyword": "marco antonelli",
           "keywordEn": "marco antonelli",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "F1 : Mercedes sort les grands moyens pour relancer Kimi Antonelli"
-          ]
-        },
-        {
-          "rank": 19,
-          "keyword": "procureur général de la cour pénale internationale",
-          "keywordEn": "attorney general of the international criminal court",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Affaire d’abus sexuels, sanctions américaines… en pleine crise de la CPI, le sort de son procureur général tranché vendredi"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "exportation",
-          "keywordEn": "exportation",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "La Chine impose des restrictions d'exportation vers 14 entités de l'UE"
           ]
         }
       ]
@@ -2629,7 +2618,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -2645,7 +2634,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 65,
           "velocity": "new",
@@ -2677,7 +2666,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 56,
           "velocity": "new",
@@ -2709,7 +2698,7 @@
           "keyword": "Racing Random Cars Against a Flood",
           "keywordEn": "Racing Random Cars Against a Flood",
           "volume": "1M+",
-          "volumeRaw": 1778062,
+          "volumeRaw": 1778581,
           "category": "news",
           "temperature": 31,
           "velocity": "steady",
@@ -2740,8 +2729,8 @@
           "rank": 8,
           "keyword": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
           "keywordEn": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
-          "volume": "683K+",
-          "volumeRaw": 683842,
+          "volume": "688K+",
+          "volumeRaw": 688512,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -2773,7 +2762,7 @@
           "keyword": "Been By Now",
           "keywordEn": "Been By Now",
           "volume": "70K+",
-          "volumeRaw": 70016,
+          "volumeRaw": 70305,
           "category": "news",
           "temperature": 20,
           "velocity": "steady",
@@ -2877,7 +2866,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Boca 1-0 O'Higgins (24 Jul, 2026) Player Stats"
+            "Boca 1-0 O'Higgins (24 Jul, 2026) Team Stats"
           ]
         },
         {
@@ -2971,7 +2960,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -3002,8 +2991,8 @@
           "rank": 4,
           "keyword": "La TRISTE Historia del PERRO ABANDONADO en Minecraft...",
           "keywordEn": "La TRISTE Historia del PERRO ABANDONADO en Minecraft...",
-          "volume": "853K+",
-          "volumeRaw": 853419,
+          "volume": "854K+",
+          "volumeRaw": 854102,
           "category": "news",
           "temperature": 41,
           "velocity": "steady",
@@ -3019,7 +3008,7 @@
           "keyword": "ESCAPAMOS DE PEPPA PIG MALDITA EN MINECRAFT | Peppa Horror Mod",
           "keywordEn": "ESCAPAMOS DE PEPPA PIG MALDITA EN MINECRAFT | Peppa Horror Mod",
           "volume": "580K+",
-          "volumeRaw": 580356,
+          "volumeRaw": 580522,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -3083,7 +3072,7 @@
           "keyword": "Eden Muñoz, Alfredo Olivas - Recuerdos en Común (Video Oficial)",
           "keywordEn": "Eden Muñoz, Alfredo Olivas - Common Memories (Official Video)",
           "volume": "152K+",
-          "volumeRaw": 152324,
+          "volumeRaw": 152501,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
@@ -3279,7 +3268,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5006974,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 73,
           "velocity": "new",
@@ -3295,7 +3284,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 65,
           "velocity": "new",
@@ -3327,7 +3316,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 56,
           "velocity": "new",
@@ -3374,8 +3363,8 @@
           "rank": 7,
           "keyword": "Black Ops 2 Zombies - Easter Egg Attempt, Steak Fail, and More! (Mob of the Dead)",
           "keywordEn": "Black Ops 2 Zombies - Easter Egg Attempt, Steak Fail, and More! (Mob of the Dead)",
-          "volume": "730K+",
-          "volumeRaw": 730430,
+          "volume": "731K+",
+          "volumeRaw": 731026,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -3406,8 +3395,8 @@
           "rank": 9,
           "keyword": "ADÉLA - Ain’t In LA (Official Music Video)",
           "keywordEn": "ADÉLA - Ain’t In LA (Official Music Video)",
-          "volume": "484K+",
-          "volumeRaw": 484542,
+          "volume": "485K+",
+          "volumeRaw": 485097,
           "category": "music",
           "temperature": 29,
           "velocity": "new",
@@ -3605,7 +3594,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 62,
           "velocity": "rising",
@@ -3621,7 +3610,7 @@
           "keyword": "aespa エスパ 'KISS N TELL' MV",
           "keywordEn": "aespa ESPA 'KISS N TELL' MV",
           "volume": "1M+",
-          "volumeRaw": 1568157,
+          "volumeRaw": 1569699,
           "category": "news",
           "temperature": 53,
           "velocity": "steady",
@@ -3644,10 +3633,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Stray Kids(스트레이 키즈) \"THIS & THAT\" UNVEIL : TRACK \"After You\"\n\nListen to \"RUN IT\" now🏁\nhttps://Stray-Kids.lnk.to/RUNIT\n\n🚚PRE-SAVE & PRE-ORDER \"THIS & THAT\" NOW! \nhttp://stray-kids.lnk.to/THISANDTHAT\n\nS",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "3FJRYHVQVDE",
           "channelTitle": "JYP Entertainment"
         },
@@ -3663,10 +3649,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Играть в Roblox - только с Кислонгами А4 😎\nФармить экспу лучше под клубничные или под малиновые? Мой выбор однозначно синие.\nА вы что берете? Рассказывайте 👇\n\nА где искать такие знают ребята из A4 Foo",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers",
-            "本届世界杯版权费为6000万美元 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "mNH4oW73F98",
           "channelTitle": "ГЛЕНТ"
         },
@@ -3690,8 +3673,8 @@
           "rank": 6,
           "keyword": "😱 Я ПРОШЁЛ ВСЕ ФЕЙКИ +1 KEYBOARD ESCAPE В РОБЛОКС! КАКОЙ ЛУЧШЕ?!",
           "keywordEn": "😱 I COMPLETED ALL THE FAKES +1 KEYBOARD ESCAPE IN ROBLOX! WHICH IS BETTER?!",
-          "volume": "120K+",
-          "volumeRaw": 120889,
+          "volume": "121K+",
+          "volumeRaw": 121187,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -3739,7 +3722,7 @@
           "keyword": "Она Королева",
           "keywordEn": "She's a Queen",
           "volume": "26K+",
-          "volumeRaw": 26078,
+          "volumeRaw": 26125,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -3937,7 +3920,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 67,
           "velocity": "rising",
@@ -3969,7 +3952,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 58,
           "velocity": "rising",
@@ -4001,7 +3984,7 @@
           "keyword": "Avengers: Doomsday | Trailer Ufficiale | Dal 16 Dicembre al Cinema",
           "keywordEn": "Avengers: Doomsday | Trailer Ufficiale | Dal 16 Dicembre al Cinema",
           "volume": "581K+",
-          "volumeRaw": 581882,
+          "volumeRaw": 581933,
           "category": "movies",
           "temperature": 27,
           "velocity": "new",
@@ -4017,7 +4000,7 @@
           "keyword": "HANNO AGGIORNATO la MOD HORROR di VERITY!! MINECRAFT Verity 2.0 ITA",
           "keywordEn": "HANNO AGGIORNATO la MOD HORROR di VERITY!! MINECRAFT Verity 2.0 ITA",
           "volume": "162K+",
-          "volumeRaw": 162078,
+          "volumeRaw": 162339,
           "category": "news",
           "temperature": 23,
           "velocity": "rising",
@@ -4033,7 +4016,7 @@
           "keyword": "Zenar - Te Conoci (Official Lyric Video English)",
           "keywordEn": "Zenar - Te Conoci (Official Lyric Video English)",
           "volume": "118K+",
-          "volumeRaw": 118643,
+          "volumeRaw": 118755,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -4065,7 +4048,7 @@
           "keyword": "Resident Evil | Dal 17 settembre al cinema | Trailer ufficiale",
           "keywordEn": "Resident Evil | Dal 17 settembre al cinema | Trailer ufficiale",
           "volume": "44K+",
-          "volumeRaw": 44830,
+          "volumeRaw": 44928,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -4096,8 +4079,8 @@
           "rank": 11,
           "keyword": "tour de france oggi",
           "keywordEn": "tour de france oggi",
-          "volume": "5K+",
-          "volumeRaw": 5000,
+          "volume": "10K+",
+          "volumeRaw": 10000,
           "category": "music",
           "temperature": 13,
           "velocity": "rising",
@@ -4116,7 +4099,7 @@
           "volumeRaw": 1000,
           "category": "movies",
           "temperature": 11,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -4153,11 +4136,27 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Oroscopo del Giorno segno Ariete del 23 Luglio 2026"
+            "Giovedì 23 Luglio | oroscopo, almanacco e curiosità del giorno"
           ]
         },
         {
           "rank": 15,
+          "keyword": "marco pietraccini",
+          "keywordEn": "marco pietraccini",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Non può lavorare per un tumore, raccolta-fondi per il giovane papà"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "downdetector",
           "keywordEn": "downdetector",
           "volume": "200",
@@ -4173,41 +4172,9 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
           "keyword": "chicago fire",
           "keywordEn": "chicago fire",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Luis Suarez reaches 50 goals in 100 Inter Miami games, only falling short of Lionel Messi’s record"
-          ]
-        },
-        {
-          "rank": 17,
-          "keyword": "evasione fiscale",
-          "keywordEn": "evasione fiscale",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Trani, sequestro da 20 milioni a imprenditori cinesi: avevano in casa 260mila euro e orologi di lusso"
-          ]
-        },
-        {
-          "rank": 18,
-          "keyword": "federazione lavoratori della conoscenza",
-          "keywordEn": "federazione lavoratori della conoscenza",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -4217,13 +4184,29 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Burqa vietato a scuola, passa la risoluzione: “Il volto deve essere sempre riconoscibile”"
+            "Luis Suarez reaches 50 goals in 100 Inter Miami games, only falling short of Lionel Messi’s record"
+          ]
+        },
+        {
+          "rank": 18,
+          "keyword": "evasione fiscale",
+          "keywordEn": "evasione fiscale",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Trani, sequestro da 20 milioni a imprenditori cinesi: avevano in casa 260mila euro e orologi di lusso"
           ]
         },
         {
           "rank": 19,
-          "keyword": "beluga",
-          "keywordEn": "beluga",
+          "keyword": "karwendel",
+          "keywordEn": "karwendel",
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
@@ -4233,23 +4216,23 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "SeaWorld San Antonio welcomes rescued belugas from former Canada marine park"
+            "Tragödie im Bayern-Urlaub: Berliner (76) stürzt 70 Meter in den Tod"
           ]
         },
         {
           "rank": 20,
-          "keyword": "enrico de pedis",
-          "keywordEn": "enrico de pedis",
+          "keyword": "beluga",
+          "keywordEn": "beluga",
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Scomparse Orlandi e Gregori, le rivelazioni (in parte secretate) dell'ex pm Staffa: «C'entrano De Pedis e Marcinkus"
+            "SeaWorld San Antonio welcomes rescued belugas from former Canada marine park"
           ]
         }
       ]
@@ -4263,7 +4246,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 67,
           "velocity": "steady",
@@ -4295,7 +4278,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 58,
           "velocity": "rising",
@@ -4327,7 +4310,7 @@
           "keyword": "Vengadores: Doomsday | Tráiler Oficial | 18 de diciembre solo en cines",
           "keywordEn": "Avengers: Doomsday | Official Trailer | December 18 only in theaters",
           "volume": "1M+",
-          "volumeRaw": 1560474,
+          "volumeRaw": 1564782,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -4375,7 +4358,7 @@
           "keyword": "PRIMER VIDEO OFICIAL FC 27 !!! (MUNDO ABIERTO Y ALEX HUNTER) REACCIONANDO AL TRAILER - DjMaRiiO",
           "keywordEn": "PRIMER VIDEO OFICIAL FC 27 !!! (MUNDO ABIERTO Y ALEX HUNTER) REACCIONANDO AL TRAILER - DjMaRiiO",
           "volume": "434K+",
-          "volumeRaw": 434480,
+          "volumeRaw": 434618,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -4391,7 +4374,7 @@
           "keyword": "Resident Evil | Nuevo Tráiler Oficial en español HD. En cines 18 de septiembre.",
           "keywordEn": "Resident Evil | New Official Trailer in Spanish HD. In theaters September 18.",
           "volume": "39K+",
-          "volumeRaw": 39014,
+          "volumeRaw": 39089,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -4407,7 +4390,7 @@
           "keyword": "El Barrio - Misifú - Vídeo Lyrics",
           "keywordEn": "El Barrio - Misifú - Video Lyrics",
           "volume": "29K+",
-          "volumeRaw": 29512,
+          "volumeRaw": 29654,
           "category": "news",
           "temperature": 15,
           "velocity": "rising",
@@ -4458,7 +4441,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 9,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -4479,7 +4462,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Carlos Sobera presentará el concurso del rosco de Telecinco"
+            "Carlos Sobera presentará ‘Rueda la letra', el nuevo ‘Pasapalabra' de Telecinco con El Rosco"
           ]
         },
         {
@@ -4516,18 +4499,18 @@
         },
         {
           "rank": 17,
-          "keyword": "festival aereo gijon 2026",
-          "keywordEn": "festival aereo gijon 2026",
-          "volume": "200",
-          "volumeRaw": 200,
+          "keyword": "marc bernal",
+          "keywordEn": "marc bernal",
+          "volume": "100",
+          "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "XX Festival Aéreo Internacional de Gijón 2026: el mayor festival de su historia"
+            "La FIFA indemnizará al Barcelona por De Jong"
           ]
         },
         {
@@ -4538,7 +4521,7 @@
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -4589,7 +4572,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -4605,7 +4588,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 65,
           "velocity": "rising",
@@ -4621,7 +4604,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 58,
           "velocity": "new",
@@ -4669,7 +4652,7 @@
           "keyword": "БУНКЕР под ЗЕМЛЕЙ! \"Приключения в Париже\" РАСТ RUST",
           "keywordEn": "BUNKER UNDERGROUND! \"Adventures in Paris\" RAST RUST",
           "volume": "1M+",
-          "volumeRaw": 1885104,
+          "volumeRaw": 1885463,
           "category": "news",
           "temperature": 37,
           "velocity": "steady",
@@ -4733,7 +4716,7 @@
           "keyword": "Job Speelt Animal Hospital, Maar Ze Kunnen Praten!",
           "keywordEn": "Job Speelt Animal Hospital, Maar Ze Kunnen Praten!",
           "volume": "60K+",
-          "volumeRaw": 60003,
+          "volumeRaw": 60061,
           "category": "news",
           "temperature": 15,
           "velocity": "rising",
@@ -4915,7 +4898,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -4931,7 +4914,7 @@
           "keyword": "Clayface | Official Trailer",
           "keywordEn": "Clayface | Official Trailer",
           "volume": "9M+",
-          "volumeRaw": 9226917,
+          "volumeRaw": 9231473,
           "category": "movies",
           "temperature": 82,
           "velocity": "new",
@@ -4947,7 +4930,7 @@
           "keyword": "Al Shami - Baby [Official Music Video] (2026) / الشامي - بي بي",
           "keywordEn": "Al Shami - Baby [Official Music Video] (2026) / Al Shami - BB",
           "volume": "7M+",
-          "volumeRaw": 7679513,
+          "volumeRaw": 7680088,
           "category": "music",
           "temperature": 67,
           "velocity": "new",
@@ -4963,7 +4946,7 @@
           "keyword": "I Became THE Chameleon in Meccha Chameleon",
           "keywordEn": "I Became THE Chameleon in Meccha Chameleon",
           "volume": "3M+",
-          "volumeRaw": 3867946,
+          "volumeRaw": 3868132,
           "category": "news",
           "temperature": 56,
           "velocity": "steady",
@@ -4979,7 +4962,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 59,
           "velocity": "rising",
@@ -5011,7 +4994,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 50,
           "velocity": "new",
@@ -5034,10 +5017,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Stray Kids(스트레이 키즈) \"THIS & THAT\" UNVEIL : TRACK \"After You\"\n\nListen to \"RUN IT\" now🏁\nhttps://Stray-Kids.lnk.to/RUNIT\n\n🚚PRE-SAVE & PRE-ORDER \"THIS & THAT\" NOW! \nhttp://stray-kids.lnk.to/THISANDTHAT\n\nS",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "3FJRYHVQVDE",
           "channelTitle": "JYP Entertainment"
         },
@@ -5046,7 +5026,7 @@
           "keyword": "Jag Prankade Nisse med Verity i Minecraft",
           "keywordEn": "Jag Prankade Nisse med Verity i Minecraft",
           "volume": "68K+",
-          "volumeRaw": 68601,
+          "volumeRaw": 68620,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
@@ -5062,7 +5042,7 @@
           "keyword": "Jag Prankade Mina Vänner Som En Hund På En Sjunkande Flotte..",
           "keywordEn": "I Pranked My Friends Like A Dog On A Sinking Raft..",
           "volume": "40K+",
-          "volumeRaw": 40008,
+          "volumeRaw": 40009,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -5244,7 +5224,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -5260,7 +5240,7 @@
           "keyword": "I Became THE Chameleon in Meccha Chameleon",
           "keywordEn": "I Became THE Chameleon in Meccha Chameleon",
           "volume": "3M+",
-          "volumeRaw": 3867946,
+          "volumeRaw": 3868132,
           "category": "news",
           "temperature": 60,
           "velocity": "new",
@@ -5276,7 +5256,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 63,
           "velocity": "rising",
@@ -5308,7 +5288,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 54,
           "velocity": "new",
@@ -5340,7 +5320,7 @@
           "keyword": "БУНКЕР под ЗЕМЛЕЙ! \"Приключения в Париже\" РАСТ RUST",
           "keywordEn": "BUNKER UNDERGROUND! \"Adventures in Paris\" RAST RUST",
           "volume": "1M+",
-          "volumeRaw": 1885104,
+          "volumeRaw": 1885463,
           "category": "news",
           "temperature": 35,
           "velocity": "steady",
@@ -5363,10 +5343,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Stray Kids(스트레이 키즈) \"THIS & THAT\" UNVEIL : TRACK \"After You\"\n\nListen to \"RUN IT\" now🏁\nhttps://Stray-Kids.lnk.to/RUNIT\n\n🚚PRE-SAVE & PRE-ORDER \"THIS & THAT\" NOW! \nhttp://stray-kids.lnk.to/THISANDTHAT\n\nS",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "3FJRYHVQVDE",
           "channelTitle": "JYP Entertainment"
         },
@@ -5390,8 +5367,8 @@
           "rank": 10,
           "keyword": "ADÉLA - Ain’t In LA (Official Music Video)",
           "keywordEn": "ADÉLA - Ain’t In LA (Official Music Video)",
-          "volume": "484K+",
-          "volumeRaw": 484542,
+          "volume": "485K+",
+          "volumeRaw": 485097,
           "category": "music",
           "temperature": 27,
           "velocity": "steady",
@@ -5495,7 +5472,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "PlayStation Network Down Worldwide, Intermittent Connectivity"
+            "PSN Was Down Due to Amazon Web Services Outage"
           ]
         },
         {
@@ -5527,7 +5504,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Team struggling: Pogacar aims to ‘get through’ Alpe d’Huez"
+            "Tadej Pogačar Short-Handed for Alpe d'Huez After Brandon McNulty Exit"
           ]
         },
         {
@@ -5573,7 +5550,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -5589,7 +5566,7 @@
           "keyword": "Clayface | Official Trailer",
           "keywordEn": "Clayface | Official Trailer",
           "volume": "9M+",
-          "volumeRaw": 9226917,
+          "volumeRaw": 9231473,
           "category": "movies",
           "temperature": 82,
           "velocity": "new",
@@ -5605,7 +5582,7 @@
           "keyword": "I Became THE Chameleon in Meccha Chameleon",
           "keywordEn": "I Became THE Chameleon in Meccha Chameleon",
           "volume": "3M+",
-          "volumeRaw": 3867946,
+          "volumeRaw": 3868132,
           "category": "news",
           "temperature": 58,
           "velocity": "new",
@@ -5621,7 +5598,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 61,
           "velocity": "rising",
@@ -5653,7 +5630,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 52,
           "velocity": "new",
@@ -5717,7 +5694,7 @@
           "keyword": "Jeg Ka' Ik' Mærke Noget",
           "keywordEn": "I Can't Feel Something",
           "volume": "30K+",
-          "volumeRaw": 30077,
+          "volumeRaw": 30079,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -5773,7 +5750,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Lige nu: Rusland angriber Kyiv med ballistiske missiler i sjældent angreb"
+            "Tusindvis evakueret i det sydvestlige Frankrig på grund af skovbrand"
           ]
         },
         {
@@ -5794,6 +5771,22 @@
         },
         {
           "rank": 15,
+          "keyword": "jacob neestrup",
+          "keywordEn": "jacob neestrup",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Neestrup får fin debut"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "playstation",
           "keywordEn": "playstation",
           "volume": "200",
@@ -5805,43 +5798,43 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "'Brick and mortar game retail is doomed' — Analysts report $7.2 billion second-hand game market could be in danger thanks to Sony's plan to retire the production of physical discs"
-          ]
-        },
-        {
-          "rank": 16,
-          "keyword": "jacob neestrup",
-          "keywordEn": "jacob neestrup",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "FCM-skurk er ulykkelig, siger Tullberg"
-          ]
-        },
-        {
-          "rank": 17,
-          "keyword": "playstation network status",
-          "keywordEn": "playstation network status",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 15,
-          "velocity": "rising",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
             "PSN Was Down Due to Amazon Web Services Outage"
           ]
         },
         {
+          "rank": 17,
+          "keyword": "open air varde",
+          "keywordEn": "open air varde",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Nyhed fra udsolgt festival: Her skal du være, hvis du vil sikre dig en billet"
+          ]
+        },
+        {
           "rank": 18,
+          "keyword": "superligaen",
+          "keywordEn": "superligaen",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Inden nøglekamp: Kan blive far når som helst"
+          ]
+        },
+        {
+          "rank": 19,
           "keyword": "aktie",
           "keywordEn": "aktie",
           "volume": "100",
@@ -5854,22 +5847,6 @@
           "description": "",
           "relatedNews": [
             "Rheinmetall Aktie: Kuwait-Auftrag für MASS"
-          ]
-        },
-        {
-          "rank": 19,
-          "keyword": "superligaen",
-          "keywordEn": "superligaen",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Skyderi i Nørresundby"
           ]
         },
         {
@@ -5899,7 +5876,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -5915,7 +5892,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5008077,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 71,
           "velocity": "new",
@@ -5931,7 +5908,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 63,
           "velocity": "rising",
@@ -5947,7 +5924,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 56,
           "velocity": "new",
@@ -5995,7 +5972,7 @@
           "keyword": "PIKKU JUHO PELAA SALAA MINECRAFTIA",
           "keywordEn": "PIKKU JUHO PELAA SALAA MINECRAFTIA",
           "volume": "32K+",
-          "volumeRaw": 32884,
+          "volumeRaw": 32894,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -6011,7 +5988,7 @@
           "keyword": "Elastinen - Kovat Ajat (feat. Sliki) (Official Music Video)",
           "keywordEn": "Elastinen - Kovat Ajat (feat. Sliki) (Official Music Video)",
           "volume": "29K+",
-          "volumeRaw": 29194,
+          "volumeRaw": 29201,
           "category": "music",
           "temperature": 19,
           "velocity": "steady",
@@ -6027,7 +6004,7 @@
           "keyword": "MECCHA CHAMELEON, Mut TUBETTAJAT vs AMMATTILAISPIIRTÄJÄ! #5",
           "keywordEn": "MECCHA CHAMELEON, But TUBERS vs PROFESSIONAL DRAWERS! #5",
           "volume": "27K+",
-          "volumeRaw": 27305,
+          "volumeRaw": 27320,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -6043,7 +6020,7 @@
           "keyword": "Isac Elliot - Kaiken Varalta (Audiovideo)",
           "keywordEn": "Isac Elliot - Kaiken Varalta (Audiovideo)",
           "volume": "4K+",
-          "volumeRaw": 4815,
+          "volumeRaw": 4829,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -6109,9 +6086,9 @@
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
-          "temperature": 17,
+          "temperature": 12,
           "velocity": "rising",
-          "isGlobal": true,
+          "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -6225,7 +6202,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "new",
@@ -6241,7 +6218,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -6257,7 +6234,7 @@
           "keyword": "Żabson - Sopot (feat. Hellfield, Sentino)",
           "keywordEn": "Żabson - Sopot (feat. Hellfield, Sentino)",
           "volume": "222K+",
-          "volumeRaw": 222132,
+          "volumeRaw": 222366,
           "category": "news",
           "temperature": 30,
           "velocity": "rising",
@@ -6289,7 +6266,7 @@
           "keyword": "MINECRAFT ale WSZYSTKO TO PIMPEK ❤️🦴",
           "keywordEn": "MINECRAFT but EVERYTHING IS Pimp ❤️🦴",
           "volume": "176K+",
-          "volumeRaw": 176279,
+          "volumeRaw": 176303,
           "category": "news",
           "temperature": 25,
           "velocity": "new",
@@ -6337,7 +6314,7 @@
           "keyword": "CLEO & SKOLIM - Lubimy (Folk Remix)",
           "keywordEn": "CLEO & SKOLIM - Lubimy (Folk Remix)",
           "volume": "94K+",
-          "volumeRaw": 94608,
+          "volumeRaw": 94694,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -6353,7 +6330,7 @@
           "keyword": "Avengers: Doomsday - co to ma być?",
           "keywordEn": "Avengers: Doomsday - what is it supposed to be?",
           "volume": "66K+",
-          "volumeRaw": 66443,
+          "volumeRaw": 66521,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -6369,7 +6346,7 @@
           "keyword": "RED FLAG",
           "keywordEn": "RED FLAG",
           "volume": "48K+",
-          "volumeRaw": 48816,
+          "volumeRaw": 48860,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -6489,7 +6466,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "PlayStation Network Down Worldwide, Intermittent Connectivity"
+            "PSN Was Down Due to Amazon Web Services Outage"
           ]
         },
         {
@@ -6551,7 +6528,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 62,
           "velocity": "rising",
@@ -6583,7 +6560,7 @@
           "keyword": "manifest & Motive & Pango – pVg (Manifest Live Remix) | Official Music Video",
           "keywordEn": "manifest & Motive & Pango – pVg (Manifest Live Remix) | Official Music Video",
           "volume": "522K+",
-          "volumeRaw": 522827,
+          "volumeRaw": 522941,
           "category": "music",
           "temperature": 31,
           "velocity": "rising",
@@ -6599,7 +6576,7 @@
           "keyword": "Avengers: Doomsday | Dublajlı Yeni Resmi Fragman | 18 Aralık'ta Sadece Sinemalarda!",
           "keywordEn": "Avengers: Doomsday | Dubbed New Official Trailer | Only in Cinemas on December 18!",
           "volume": "505K+",
-          "volumeRaw": 505611,
+          "volumeRaw": 505651,
           "category": "movies",
           "temperature": 29,
           "velocity": "new",
@@ -6615,7 +6592,7 @@
           "keyword": "Geldim Üryan Yangın Her Yan",
           "keywordEn": "I came to Üryan Fire Everywhere",
           "volume": "343K+",
-          "volumeRaw": 343599,
+          "volumeRaw": 343933,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -6631,7 +6608,7 @@
           "keyword": "BÜYÜK HAPİSHANEYE TEHLİKELİ BASKIN! | VEIN | SEZON 2 BÖLÜM 2",
           "keywordEn": "DANGEROUS RAID ON THE BIG PRISON! | VEIN | SEASON 2 EPISODE 2",
           "volume": "341K+",
-          "volumeRaw": 341641,
+          "volumeRaw": 341705,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -6877,7 +6854,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5008077,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 73,
           "velocity": "new",
@@ -6909,7 +6886,7 @@
           "keyword": "🔴 LIVE มายคราฟ 4D ระดับมหากาพย์โนแลน!!!  โดเนทระบบเสียงเซอร์ราว",
           "keywordEn": "🔴 LIVE Minecraft 4D, Nolan's epic level!!!  Donate surround sound system",
           "volume": "281K+",
-          "volumeRaw": 281792,
+          "volumeRaw": 281852,
           "category": "news",
           "temperature": 30,
           "velocity": "rising",
@@ -6932,10 +6909,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "BILLKIN x PURPEECH - See You Somewhere (Live Session) Out Now! 🎵\n\nStreaming Platforms 🎧\n: https://billkin.lnk.to/SeeYouSomewherePURPEECH\n\n#Billkin_SeeYouSomewhere \n#MILKbkkMusicLabel #BillkinEntertain",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "MInvZyjoN-Q",
           "channelTitle": "Billkin Entertainment"
         },
@@ -6944,7 +6918,7 @@
           "keyword": "นี่มันต้นบ้าอะไร! ราคาพุ่งทะลุฟ้า | Grow It RNG Roblox",
           "keywordEn": "What kind of crazy plant is this? Price soars through the sky | Grow It RNG Roblox",
           "volume": "168K+",
-          "volumeRaw": 168373,
+          "volumeRaw": 168478,
           "category": "news",
           "temperature": 25,
           "velocity": "new",
@@ -6960,7 +6934,7 @@
           "keyword": "ขึ้นใจ (3am call)",
           "keywordEn": "Up my heart (3am call)",
           "volume": "146K+",
-          "volumeRaw": 146249,
+          "volumeRaw": 146397,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -6973,28 +6947,12 @@
         },
         {
           "rank": 7,
-          "keyword": "Lovity พยายามกิน ผีพระอาทิตย์สูง 100 เมตร !! แล้วนี่คือสิ่งที่เกิดขึ้น ??  I Minecraft",
-          "keywordEn": "Lovity tries to eat a 100 meter tall sun ghost!! So this is what happened?? I Minecraft",
-          "volume": "132K+",
-          "volumeRaw": 132098,
-          "category": "news",
-          "temperature": 21,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "youtube",
-          "description": "รวมม็อด100 วัน  ที่ผมใช้  พร้อม (Shader & Resource Pack)\nมาเป็นครอบครัวเดียวกันได้ที่นี่:\n👉👉 https://www.youtube.com/channel/UC_f9nreMf8oXduLrz8tY_3A/join\n\nDiscord หลักของช่อง ทะลุ 20,000 คนแล้วว !!!!",
-          "relatedNews": [],
-          "youtubeId": "PK4BBPiWhc4",
-          "channelTitle": "MindK Gaming"
-        },
-        {
-          "rank": 8,
           "keyword": "รัก ร้าง ราด รี (Dragon Jar) - เต๋า ภรัณวัฒน์ Feat.ต้นข้าว สุปรียา (Special Version)",
           "keywordEn": "Rak Eang Rad Ree (Dragon Jar) - Tao Paranawat Feat.Tonkhao Supreeya (Special Version)",
           "volume": "132K+",
-          "volumeRaw": 132097,
+          "volumeRaw": 132252,
           "category": "news",
-          "temperature": 19,
+          "temperature": 21,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
@@ -7004,11 +6962,27 @@
           "channelTitle": "towtao"
         },
         {
+          "rank": 8,
+          "keyword": "Lovity พยายามกิน ผีพระอาทิตย์สูง 100 เมตร !! แล้วนี่คือสิ่งที่เกิดขึ้น ??  I Minecraft",
+          "keywordEn": "Lovity tries to eat a 100 meter tall sun ghost!! So this is what happened?? I Minecraft",
+          "volume": "132K+",
+          "volumeRaw": 132098,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "youtube",
+          "description": "รวมม็อด100 วัน  ที่ผมใช้  พร้อม (Shader & Resource Pack)\nมาเป็นครอบครัวเดียวกันได้ที่นี่:\n👉👉 https://www.youtube.com/channel/UC_f9nreMf8oXduLrz8tY_3A/join\n\nDiscord หลักของช่อง ทะลุ 20,000 คนแล้วว !!!!",
+          "relatedNews": [],
+          "youtubeId": "PK4BBPiWhc4",
+          "channelTitle": "MindK Gaming"
+        },
+        {
           "rank": 9,
           "keyword": "Avengers: Doomsday : บทบาทของโลกิและสตีฟ โรเจอร์ส ( Trailer 1 Part 2)",
           "keywordEn": "Avengers: Doomsday: The roles of Loki and Steve Rogers (Trailer 1 Part 2)",
           "volume": "91K+",
-          "volumeRaw": 91323,
+          "volumeRaw": 91354,
           "category": "movies",
           "temperature": 17,
           "velocity": "rising",
@@ -7024,7 +6998,7 @@
           "keyword": "ตัวอย่างแรกภาพยนตร์ \"HENRY's First Dates จีบซ้ำซ้ำ เฮนรี่จำไม่ได้\"  (Official Teaser)",
           "keywordEn": "First trailer for the movie \"HENRY's First Dates. Flirting all over again. Henry doesn't remember\" (Official Teaser)",
           "volume": "57K+",
-          "volumeRaw": 57216,
+          "volumeRaw": 57265,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -7206,7 +7180,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5008077,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 73,
           "velocity": "new",
@@ -7238,7 +7212,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 58,
           "velocity": "new",
@@ -7254,7 +7228,7 @@
           "keyword": "[LIVE] | Group Stage MSC DI EWC Hari 2 | (ID)",
           "keywordEn": "[LIVE] | Group Stage MSC DI EWC Hari 2 | (ID)",
           "volume": "2M+",
-          "volumeRaw": 2340683,
+          "volumeRaw": 2340782,
           "category": "news",
           "temperature": 38,
           "velocity": "rising",
@@ -7270,7 +7244,7 @@
           "keyword": "aespa エスパ 'KISS N TELL' MV",
           "keywordEn": "aespa ESPA 'KISS N TELL' MV",
           "volume": "1M+",
-          "volumeRaw": 1568157,
+          "volumeRaw": 1569699,
           "category": "news",
           "temperature": 47,
           "velocity": "new",
@@ -7285,8 +7259,8 @@
           "rank": 6,
           "keyword": "From Devil's Womb....",
           "keywordEn": "From Devil's Womb....",
-          "volume": "388K+",
-          "volumeRaw": 388977,
+          "volume": "389K+",
+          "volumeRaw": 389339,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -7301,8 +7275,8 @@
           "rank": 7,
           "keyword": "Tastes Like Home #6 [Pegawai Baru, Bakery Makin Laku] || SAKURA SCHOOL SIMULATOR DRAMA",
           "keywordEn": "Tastes Like Home #6 [Pegawai Baru, Bakery Makin Laku] || SAKURA SCHOOL SIMULATOR DRAMA",
-          "volume": "152K+",
-          "volumeRaw": 152432,
+          "volume": "153K+",
+          "volumeRaw": 153399,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -7334,17 +7308,14 @@
           "keyword": "TERIKAT JANJI TRAILER: SENA ANCAM DIPA⁉️ MULAI TAKUT KEHILANGAN DAVINA? - Arya Saloka, Asha Assuncao",
           "keywordEn": "BOUND BY TRAILER PROMISES: SENA THREATENS DIPA⁉️ ARE YOU STARTING TO AFRAID OF LOSING DAVINA? - Arya Saloka, Asha Assuncao",
           "volume": "75K+",
-          "volumeRaw": 75478,
+          "volumeRaw": 75670,
           "category": "movies",
           "temperature": 17,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Tonton video menarik lainnya dari sinetron TERIKAT JANJI:\n\nhttps://youtu.be/xQiS4gCzP9o\nhttps://youtu.be/O54V4Ua8m9U\nhttps://youtu.be/osOF9Pd2spA\n\n#TerikatJanji #AryaSaloka #AshaAssuncao #FendyChow #Y",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "hRpdk3Tq0fc",
           "channelTitle": "MNC Pictures"
         },
@@ -7382,28 +7353,12 @@
         },
         {
           "rank": 12,
-          "keyword": "harga emas antam hari ini",
-          "keywordEn": "harga emas antam hari ini",
-          "volume": "2K+",
-          "volumeRaw": 2000,
-          "category": "news",
-          "temperature": 11,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Grafik Harga Emas Antam Batangan (24 Juli 2026), Hari Ini Turun atau Naik?"
-          ]
-        },
-        {
-          "rank": 13,
           "keyword": "musim kemarau",
           "keywordEn": "musim kemarau",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 9,
+          "temperature": 11,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -7413,14 +7368,14 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 13,
           "keyword": "cambodia vs singapore",
           "keywordEn": "cambodia vs singapore",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 12,
-          "velocity": "new",
+          "temperature": 14,
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -7429,13 +7384,13 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 14,
           "keyword": "danau batur",
           "keywordEn": "danau batur",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 5,
+          "temperature": 7,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -7445,14 +7400,14 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "keyword": "spider man",
           "keywordEn": "spider man",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -7461,7 +7416,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "wolfsburg vs lyon",
           "keywordEn": "wolfsburg vs lyon",
           "volume": "200",
@@ -7477,7 +7432,39 @@
           ]
         },
         {
+          "rank": 17,
+          "keyword": "vasteras sk",
+          "keywordEn": "vasteras sk",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Prediksi Vasteras vs Orgryte, Allsvenskan 25 Juli 2026"
+          ]
+        },
+        {
           "rank": 18,
+          "keyword": "agent kim reactivated episode 9",
+          "keywordEn": "agent kim reactivated episode 9",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 10,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "4 Drakor SBS tentang Agen Rahasia, Tak Boleh Dilewatkan!"
+          ]
+        },
+        {
+          "rank": 19,
           "keyword": "jurgen klopp",
           "keywordEn": "jurgen klopp",
           "volume": "100",
@@ -7490,22 +7477,6 @@
           "description": "",
           "relatedNews": [
             "Jurgen Klopp: Germany appoint former Liverpool boss as new head coach to replace Julian Nagelsmann"
-          ]
-        },
-        {
-          "rank": 19,
-          "keyword": "vasteras sk",
-          "keywordEn": "vasteras sk",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Prediksi Vasteras vs Orgryte, Allsvenskan 25 Juli 2026"
           ]
         },
         {
@@ -7535,7 +7506,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -7551,7 +7522,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5008077,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 71,
           "velocity": "new",
@@ -7590,10 +7561,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Avengers Doomsday Trailer Frame-by-Frame breakdown and analysis by New Rockstars’ Erik Voss! Head to https://betterhelp.com/newrockstars to get 10% off your first month with our sponsor, BetterHelp. T",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "Nx-e-AaCNPE",
           "channelTitle": "New Rockstars"
         },
@@ -7602,7 +7570,7 @@
           "keyword": "Katy Perry - The One That Got Away (Lyrics)",
           "keywordEn": "Katy Perry - The One That Got Away (Lyrics)",
           "volume": "2M+",
-          "volumeRaw": 2367705,
+          "volumeRaw": 2368409,
           "category": "news",
           "temperature": 41,
           "velocity": "new",
@@ -7618,7 +7586,7 @@
           "keyword": "Bellestrelle ft. Harry Azrul - Jiwa Yang Mengalah (Official Music Video)",
           "keywordEn": "Bellestrelle ft. Harry Azrul - Jiwa Yang Mengalah (Official Music Video)",
           "volume": "563K+",
-          "volumeRaw": 563797,
+          "volumeRaw": 563963,
           "category": "music",
           "temperature": 25,
           "velocity": "rising",
@@ -7650,7 +7618,7 @@
           "keyword": "[SIARAN LANGSUNG] | MSC DI Peringkat Kumpulan EWC Hari Ke-2 | (MY)",
           "keywordEn": "[SIARAN LANGSUNG] | MSC DI Peringkat Kumpulan EWC Hari Ke-2 | (MY)",
           "volume": "397K+",
-          "volumeRaw": 397929,
+          "volumeRaw": 397953,
           "category": "news",
           "temperature": 20,
           "velocity": "rising",
@@ -7666,7 +7634,7 @@
           "keyword": "🔴LIVE - NOBAR EWC SRG !",
           "keywordEn": "🔴LIVE - NOBAR EWC SRG!",
           "volume": "221K+",
-          "volumeRaw": 221814,
+          "volumeRaw": 221826,
           "category": "news",
           "temperature": 18,
           "velocity": "new",
@@ -7722,7 +7690,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Saudi prince found dead at luxury London hotel after party drugs, alcohol overdose"
+            "Saudi prince died at Kensington hotel after taking cocktail of drugs"
           ]
         },
         {
@@ -7786,7 +7754,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Jurgen Klopp Explains Broken Management Promise After Liverpool Exit"
+            "Football: Soccer-Germany appoint Klopp as head coach after World Cup disappointment"
           ]
         },
         {
@@ -7848,7 +7816,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -7864,7 +7832,7 @@
           "keyword": "BTS (방탄소년단) ‘NORMAL’ Official MV",
           "keywordEn": "BTS (Bulletproof Boys) ‘NORMAL’ Official MV",
           "volume": "10M+",
-          "volumeRaw": 10143889,
+          "volumeRaw": 10144755,
           "category": "music",
           "temperature": 81,
           "velocity": "new",
@@ -7880,7 +7848,7 @@
           "keyword": "화사 (HWASA) - ‘Good Goodbye’ at 싸이흠뻑쇼 SUMMERSWAG 2026",
           "keywordEn": "HWASA - ‘Good Goodbye’ at Psy Soaking Show SUMMERSWAG 2026",
           "volume": "5M+",
-          "volumeRaw": 5080439,
+          "volumeRaw": 5081340,
           "category": "news",
           "temperature": 54,
           "velocity": "steady",
@@ -7935,10 +7903,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Avengers Doomsday Trailer Frame-by-Frame breakdown and analysis by New Rockstars’ Erik Voss! Head to https://betterhelp.com/newrockstars to get 10% off your first month with our sponsor, BetterHelp. T",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "Nx-e-AaCNPE",
           "channelTitle": "New Rockstars"
         },
@@ -7954,10 +7919,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Go to https://san.com/screencrush/ to get the unbiased truth on the stories that matter, only on the Straight Arrow app. Let’s exit the echo chamber.\n\nVisit the ScreenCrush Merch Store to find fan mer",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "JjT7hGTRr1E",
           "channelTitle": "ScreenCrush"
         },
@@ -7981,8 +7943,8 @@
           "rank": 9,
           "keyword": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
           "keywordEn": "Starting Over Using ONLY ROBUX In Keyboard Escape..",
-          "volume": "683K+",
-          "volumeRaw": 683842,
+          "volume": "688K+",
+          "volumeRaw": 688512,
           "category": "news",
           "temperature": 30,
           "velocity": "rising",
@@ -8005,9 +7967,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "【纯享版】黄霄雲刘端端把《空心》唱到破防！高音嘶吼搭配细腻情绪 Ending落泪看哭全场 #天赐的声音7 EP6 20260717\n#黄霄雲 #刘端端 #空心 \n\n⏰提档通知！7月17日起每周五20:30（GMT+8)《天赐的声音7》准时开唱🎶\n关注【天赐的声音官方频道】纯享舞台全网首播👉https://www.youtube.com/channel/UCyRy1COnKgKsbJBRHn0YYi",
-          "relatedNews": [
-            "Introducing Google Cloud Fraud Defense , the next evolution of reCAPTCHA"
-          ],
+          "relatedNews": [],
           "youtubeId": "zlAjS20q9pE",
           "channelTitle": "天赐的声音 The Treasured Voice Official Channel"
         },
@@ -8024,7 +7984,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Trump imposes double-digit tariffs on dozens of countries as his 10% levies are set to expire Friday"
+            "Asian stocks slide as Trump hits more than 80 countries with new tariffs – business live"
           ]
         },
         {
@@ -8056,7 +8016,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "And the show begins - Champions Vietnam ready for title defence ahead of the Asean Hyundai Cup 2026"
+            "\"As a Korean leader, my sense of mission remains unchanged; I will repay the support of Vietnamese fans\"... Coach Kim Sang-sik aims for back-to-back titles at the 'Southeast Asian World Cup' Hyundai Cup"
           ]
         },
         {
@@ -8088,7 +8048,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Bento powers into ASEAN Cup battle with Singapore"
+            "Brazilian player set to debut for Cambodia in ASEAN Cup"
           ]
         },
         {
@@ -8182,7 +8142,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -8198,7 +8158,7 @@
           "keyword": "SON TUNG M-TP | COME MY WAY (softer version) | OFFICIAL MUSIC VIDEO",
           "keywordEn": "SON TUNG M-TP | COME MY WAY (softer version) | OFFICIAL MUSIC VIDEO",
           "volume": "3M+",
-          "volumeRaw": 3959945,
+          "volumeRaw": 3960066,
           "category": "music",
           "temperature": 50,
           "velocity": "new",
@@ -8246,7 +8206,7 @@
           "keyword": "XA - ĐÔNG HÙNG, K.O, 14 CASPER | Anh Trai Vượt Ngàn Chông Gai 2026",
           "keywordEn": "FAR - DONG HUNG, K.O, 14 CASPER | Brother Overcoming Thousands of Thorns 2026",
           "volume": "1M+",
-          "volumeRaw": 1481275,
+          "volumeRaw": 1483834,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -8262,7 +8222,7 @@
           "keyword": "TIỆM BÁNH MÌ KHỔ NHẤT VIỆT NAM !! | Bánh Mì Bách Khoa ( The Hust Banh Mi )",
           "keywordEn": "THE WORST BREAD SHOP IN VIETNAM!! | The Hust Banh Mi (The Hust Banh Mi)",
           "volume": "1M+",
-          "volumeRaw": 1301621,
+          "volumeRaw": 1301969,
           "category": "news",
           "temperature": 29,
           "velocity": "new",
@@ -8278,7 +8238,7 @@
           "keyword": "Tô Gà Xây Tháp An Toàn Chống Verity Ball Cruelity Ball Và Falsity Ball!",
           "keywordEn": "Chicken Bowl Building Safe Tower Against Verity Ball Cruelity Ball And Falsity Ball!",
           "volume": "1M+",
-          "volumeRaw": 1059594,
+          "volumeRaw": 1060147,
           "category": "news",
           "temperature": 26,
           "velocity": "rising",
@@ -8326,7 +8286,7 @@
           "keyword": "NGHỈ HÈ SỢ NGHỈ HƯU | TRAILER OFFICIAL | Dự Kiến Khởi Chiếu Tại Rạp 21.08.2026",
           "keywordEn": "SUMMER VACATION FEAR OF RETIREMENT | OFFICIAL TRAILER | Expected to Release in Theaters August 21, 2026",
           "volume": "81K+",
-          "volumeRaw": 81508,
+          "volumeRaw": 81543,
           "category": "music",
           "temperature": 15,
           "velocity": "new",
@@ -8444,7 +8404,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Chuyên gia Hàn Quốc trúng Jackpot hơn 100 tỷ đồng"
+            "Vietlott 24/7/2026 - Kết quả xổ số Vietlott ngày 24/7/2026"
           ]
         },
         {
@@ -8506,7 +8466,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -8545,10 +8505,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Avengers Doomsday Trailer Frame-by-Frame breakdown and analysis by New Rockstars’ Erik Voss! Head to https://betterhelp.com/newrockstars to get 10% off your first month with our sponsor, BetterHelp. T",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "Nx-e-AaCNPE",
           "channelTitle": "New Rockstars"
         },
@@ -8557,7 +8514,7 @@
           "keyword": "Katy Perry - The One That Got Away (Lyrics)",
           "keywordEn": "Katy Perry - The One That Got Away (Lyrics)",
           "volume": "2M+",
-          "volumeRaw": 2367705,
+          "volumeRaw": 2368409,
           "category": "news",
           "temperature": 43,
           "velocity": "steady",
@@ -8589,7 +8546,7 @@
           "keyword": "We Found a Giant Verity Body in Minecraft (Tagalog) | Verity PART 2",
           "keywordEn": "We Found a Giant Verity Body in Minecraft (Tagalog) | Verity PART 2",
           "volume": "785K+",
-          "volumeRaw": 785505,
+          "volumeRaw": 785605,
           "category": "news",
           "temperature": 26,
           "velocity": "steady",
@@ -8621,7 +8578,7 @@
           "keyword": "[LIVE] | MSC SA EWC Group Stage Araw 2 | (PH)",
           "keywordEn": "[LIVE] | MSC SA EWC Group Stage Araw 2 | (PH)",
           "volume": "518K+",
-          "volumeRaw": 518400,
+          "volumeRaw": 518438,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -8677,7 +8634,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Ginebra awaits as Bossing try to get back up from first stumble"
+            "Blackwater hopes to rewrite ending against Ginebra in PBA Govs’ Cup"
           ]
         },
         {
@@ -8767,7 +8724,7 @@
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
-          "temperature": 5,
+          "temperature": 10,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -8851,7 +8808,7 @@
           "keyword": "aespa エスパ 'KISS N TELL' MV",
           "keywordEn": "aespa ESPA 'KISS N TELL' MV",
           "volume": "1M+",
-          "volumeRaw": 1568157,
+          "volumeRaw": 1569699,
           "category": "news",
           "temperature": 53,
           "velocity": "new",
@@ -8865,10 +8822,10 @@
         {
           "rank": 3,
           "keyword": "#最新預告首曝《#復仇者聯盟：#末日崛起》2026/12/16 戲院大銀幕 震撼登場",
-          "keywordEn": "#The latest trailer for the first time reveals that \"#Avengers: # Doomsday Rises\" will make a shocking debut on the big screen in theaters on 2026/12/16",
+          "keywordEn": "#The latest trailer reveals the first release of \"#Avengers: # Doomsday Rises\" 2026/12/16 Shocking debut on the big screen in theaters",
           "volume": "869K+",
-          "volumeRaw": 869496,
-          "category": "movies",
+          "volumeRaw": 869613,
+          "category": "music",
           "temperature": 33,
           "velocity": "new",
           "isGlobal": false,
@@ -8890,9 +8847,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "#復仇者聯盟 #末日崛起 #復仇者聯盟5 #末日降臨\n\n加入我的FB/IG吧! (99% 電影迷因，1% 電影新聞): \nhttps://www.facebook.com/tessereq/\nhttps://www.instagram.com/tesscube/\n慶祝頻道破百萬訂閱，特別找來Pixel Jeff設計限量「超粒方宇宙」T恤周邊!  https://www.u-signal.store",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers"
-          ],
+          "relatedNews": [],
           "youtubeId": "6Y2723j-LY8",
           "channelTitle": "超粒方"
         },
@@ -8917,16 +8872,14 @@
           "keyword": "Minecraft 我語音同時和AI幫手『Verity和Falsity』對話，相信或殺死他們，世界爆紅的黃藍球生存",
           "keywordEn": "Minecraft My voice talks to the AI ​​helpers \"Verity and Falsity\" at the same time. Trust or kill them. Survive the world's popular yellow and blue balls.",
           "volume": "279K+",
-          "volumeRaw": 279523,
+          "volumeRaw": 279634,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "雖然說玩起來蠻好笑的但是\n這小黃球AI安裝不得不說真的超級麻煩，groq額度用完，想買還現在賣太多沒辦法購買額度，然後載什麼LiteLLM什麼Ollama、Python還有c++一堆，建議看別人玩就好別自己玩超級無敵麻煩。\nVerity JE：https://www.curseforge.com/minecraft/mc-mods/verity-je\nFalsity：https://www.cur",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers"
-          ],
+          "relatedNews": [],
           "youtubeId": "VKz-IAEBkyE",
           "channelTitle": "阿斯asu"
         },
@@ -8935,7 +8888,7 @@
           "keyword": "KISS N TELL",
           "keywordEn": "KISS N TELL",
           "volume": "239K+",
-          "volumeRaw": 239417,
+          "volumeRaw": 239613,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -8951,7 +8904,7 @@
           "keyword": "【有感筆電】Roblox 動物醫院的所有秘密與技巧！直接成為高手！所有異常都不怕了！(都有解決方式)【Animal Hospital】",
           "keywordEn": "【Sensitive Notebook】All the secrets and tricks of Roblox Animal Hospital! Become a master directly! Don’t be afraid of any abnormalities! (There are solutions)【Animal Hospital】",
           "volume": "237K+",
-          "volumeRaw": 237362,
+          "volumeRaw": 237587,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -8967,16 +8920,14 @@
           "keyword": "我和管理員衝上 29,000 連勝 (RIVALS)",
           "keywordEn": "The admin and I hit the 29,000 winning streak (RIVALS)",
           "volume": "172K+",
-          "volumeRaw": 172098,
+          "volumeRaw": 172147,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "訂閱我的頻道:  @SlingshotBwai彈弓男孩 \n主頻道:  @SlingshotBwaii \n\n加入彈弓家族官方Discord群:\nhttps://discord.gg/6pKC3yUQbk\n\n加入我的社群：\nRoblox群組：https://www.roblox.com/communities/382403271/Bwai-Gang\nDiscord：https://discord.gg",
-          "relatedNews": [
-            "本届世界杯版权费为6000万美元 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "48dAg6chYsI",
           "channelTitle": "SlingshotBwai 彈弓男孩"
         },
@@ -9014,8 +8965,8 @@
         },
         {
           "rank": 12,
-          "keyword": "台灣 未來 帳戶",
-          "keywordEn": "Taiwan Future Account",
+          "keyword": "大樂透開獎時間",
+          "keywordEn": "Lotto draw time",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
@@ -9025,29 +8976,29 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "藍白版台灣未來帳戶三讀 行政院回應了！"
+            "大樂透衝8億！3生肖星座最旺 穿紅衣超招財 | NOWNEWS今日新聞"
           ]
         },
         {
           "rank": 13,
-          "keyword": "cpbl",
-          "keywordEn": "cpbl",
-          "volume": "1K+",
-          "volumeRaw": 1000,
+          "keyword": "台灣 未來 帳戶",
+          "keywordEn": "Taiwan Future Account",
+          "volume": "2K+",
+          "volumeRaw": 2000,
           "category": "news",
           "temperature": 9,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "CPBL／味全龍大巨蛋龍星大樂開唱 邀KINGJUN與謝金燕嗨翻全場"
+            "藍白版台灣未來帳戶三讀 行政院回應了！"
           ]
         },
         {
           "rank": 14,
-          "keyword": "范 姜彥豐",
-          "keywordEn": "Fan Jiang Yanfeng",
+          "keyword": "cpbl",
+          "keywordEn": "cpbl",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
@@ -9057,11 +9008,27 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "范姜彥豐被通知所住房子賣掉了 緊急搬出昔與粿粿愛巢"
+            "CPBL／味全龍大巨蛋龍星大樂開唱 邀KINGJUN與謝金燕嗨翻全場"
           ]
         },
         {
           "rank": 15,
+          "keyword": "范 姜彥豐",
+          "keywordEn": "Fan Jiang Yanfeng",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "范姜彥豐被通知所住房子賣掉了 緊急搬出昔與粿粿愛巢"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "老高",
           "keywordEn": "Lao Gao",
           "volume": "500",
@@ -9073,22 +9040,6 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": []
-        },
-        {
-          "rank": 16,
-          "keyword": "大樂透開獎時間",
-          "keywordEn": "Lotto draw time",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "大樂透衝8億！3生肖星座最旺 穿紅衣超招財 | NOWNEWS今日新聞"
-          ]
         },
         {
           "rank": 17,
@@ -9133,7 +9084,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "從漫畫美學噩夢到台劇 《聰明鎮》創新：跨越二十年恐怖大師伊藤潤二作品 真人化改編的恐怖與救贖之路"
+            "小S愛演陳姸霏戲份 許曦文曝在家對戲趣事"
           ]
         },
         {
@@ -9149,7 +9100,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "AI熱潮推高股價 SK集團會長天價離婚案週五宣判 | 民視新聞網"
+            "南韓「世紀離婚案」判了！SK會長崔泰源須付前妻超過200億元"
           ]
         }
       ]
@@ -9163,7 +9114,7 @@
           "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
           "volume": "47M+",
-          "volumeRaw": 47311418,
+          "volumeRaw": 47313397,
           "category": "movies",
           "temperature": 98,
           "velocity": "rising",
@@ -9195,7 +9146,7 @@
           "keyword": "仙女座事故",
           "keywordEn": "Andromeda Incident",
           "volume": "579K+",
-          "volumeRaw": 579323,
+          "volumeRaw": 579363,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
@@ -9210,8 +9161,8 @@
           "rank": 4,
           "keyword": "FB愛不完",
           "keywordEn": "FB can’t stop loving it",
-          "volume": "443K+",
-          "volumeRaw": 443989,
+          "volume": "444K+",
+          "volumeRaw": 444018,
           "category": "news",
           "temperature": 29,
           "velocity": "steady",
@@ -9250,9 +9201,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "#復仇者聯盟 #末日崛起 #復仇者聯盟5 #末日降臨\n\n加入我的FB/IG吧! (99% 電影迷因，1% 電影新聞): \nhttps://www.facebook.com/tessereq/\nhttps://www.instagram.com/tesscube/\n慶祝頻道破百萬訂閱，特別找來Pixel Jeff設計限量「超粒方宇宙」T恤周邊!  https://www.u-signal.store",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers"
-          ],
+          "relatedNews": [],
           "youtubeId": "6Y2723j-LY8",
           "channelTitle": "超粒方"
         },
@@ -9261,7 +9210,7 @@
           "keyword": "【有感筆電】Roblox 動物醫院的所有秘密與技巧！直接成為高手！所有異常都不怕了！(都有解決方式)【Animal Hospital】",
           "keywordEn": "【Sensitive Notebook】All the secrets and tricks of Roblox Animal Hospital! Become a master directly! Don’t be afraid of any abnormalities! (There are solutions)【Animal Hospital】",
           "volume": "237K+",
-          "volumeRaw": 237362,
+          "volumeRaw": 237587,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -9277,7 +9226,7 @@
           "keyword": "[JFFLIVE桌遊精華] 三傻合作拆彈 玩到出現醫學奇蹟？ | BOMBANANA! 聾啞盲馬騮拆彈｜多人線上桌遊精華@JFFLiveChannel @JFFTHK",
           "keywordEn": "[JFFLIVE Board Game Highlights] Three idiots collaborate to dismantle bombs and achieve a medical miracle? | BOMBANANA! Deaf, dumb and blind Ma Liu bomb disposal｜The essence of multiplayer online board games @JFFLiveChannel @JFFTHK",
           "volume": "195K+",
-          "volumeRaw": 195314,
+          "volumeRaw": 195316,
           "category": "news",
           "temperature": 19,
           "velocity": "rising",
@@ -9309,17 +9258,14 @@
           "keyword": "《復仇者聯盟5》預告解析！WTF?! 超多容易被忽略的細節！英雄終於要互相犧牲！蜘蛛俠首位被開刀？｜AVENGERS: DOOMSDAY",
           "keywordEn": "\"Avengers 5\" trailer analysis! WTF?! There are so many details that are easily overlooked! The heroes finally sacrifice each other! Is Spider-Man the first to be stabbed? ｜AVENGERS: DOOMSDAY",
           "volume": "53K+",
-          "volumeRaw": 53146,
+          "volumeRaw": 53150,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "🔥《復仇者聯盟5：Doomsday》終極劇情彩蛋解析！\n\n今次唔止係復仇者、X-Men 同神奇四俠首次同台，更可能直接揭開《Secret Wars（秘密戰爭）》嘅序幕。\n\n0:00 片頭\n0:48 電影定位\n2:13 X-Men 開局\n4:15 Doom\n7:12 Marvel Studios logo\n7:39 復仇者大樓集結\n9:21 神奇四俠飛船與 Love\n10:08 Thor 的「出發前",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "IZJk4y4c3qE",
           "channelTitle": "AC Film+ 影評台"
         },
@@ -9336,7 +9282,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "風球紅霞消息｜天文台發出一號風球 預測周日初時高地風力達8級"
+            "熱帶氣旋紅霞‧持續更新︱晚上8時40分發出一號戒備信號 考慮周六改發更高信號"
           ]
         },
         {
@@ -9368,7 +9314,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Pusaran Angin Muncul di Jalan Suratmo Semarang, BMKG Jelaskan Penyebabnya"
+            "Penguatan Monsun Australia picu angin kencang di NTB"
           ]
         },
         {
@@ -9406,7 +9352,7 @@
         {
           "rank": 16,
           "keyword": "愛回家之開心速遞",
-          "keywordEn": "Love home happy express",
+          "keywordEn": "Love Home Happy Express",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -9542,7 +9488,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 56,
           "velocity": "new",
@@ -9558,7 +9504,7 @@
           "keyword": "Asake - MCBH (Official Video)",
           "keywordEn": "Asake - MCBH (Official Video)",
           "volume": "2M+",
-          "volumeRaw": 2656233,
+          "volumeRaw": 2656342,
           "category": "news",
           "temperature": 38,
           "velocity": "new",
@@ -9581,10 +9527,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Davido, NO11 - Gimme Dat Ting (Official Video)\n\nListen to ‘Gimme Dat Ting’ here: https://davido.lnk.to/NO11GimmeDatTing\nPre-save ‘Oriadé’ here: https://Davido.lnk.to/OriadePreOrder \n\n———\n\nFollow David",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "AdAB6oyq_II",
           "channelTitle": "DavidoVEVO"
         },
@@ -9592,8 +9535,8 @@
           "rank": 7,
           "keyword": "I Manage Real Madrid with New Transfers...",
           "keywordEn": "I Manage Real Madrid with New Transfers...",
-          "volume": "595K+",
-          "volumeRaw": 595486,
+          "volume": "596K+",
+          "volumeRaw": 596005,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -9641,7 +9584,7 @@
           "keyword": "🎬The Revenge Begins..🔥HIGH SCHOOL WACKO SEASON 2 – OFFICIAL TRAILER!",
           "keywordEn": "🎬The Revenge Begins..🔥HIGH SCHOOL WACKO SEASON 2 – OFFICIAL TRAILER!",
           "volume": "42K+",
-          "volumeRaw": 42423,
+          "volumeRaw": 42475,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -9745,7 +9688,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Barcelona - CE Europa: horario del partido amistoso de pretemporada"
+            "Oportunidad para La Masia en un estreno 'secreto' del Barça 26-27"
           ]
         },
         {
@@ -9791,7 +9734,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Fulham Bid for Chibuike Nwaiwu Nears Trabzonspor Record Amid Defensive Overhaul"
+            "Chibuike Nwaiwu: Key reason Crystal Palace want to snatch Super Eagles star"
           ]
         },
         {
@@ -9837,7 +9780,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "new",
@@ -9860,10 +9803,7 @@
           "isGlobal": true,
           "source": "youtube",
           "description": "Avengers Doomsday Trailer Frame-by-Frame breakdown and analysis by New Rockstars’ Erik Voss! Head to https://betterhelp.com/newrockstars to get 10% off your first month with our sponsor, BetterHelp. T",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "Nx-e-AaCNPE",
           "channelTitle": "New Rockstars"
         },
@@ -9888,7 +9828,7 @@
           "keyword": "Ama hem hem",
           "keywordEn": "Ama hem hem",
           "volume": "1M+",
-          "volumeRaw": 1533017,
+          "volumeRaw": 1533231,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -9903,18 +9843,15 @@
           "rank": 6,
           "keyword": "We Built GARAGES in Our STATUES! (Minecraft)",
           "keywordEn": "We Built GARAGES in Our STATUES! (Minecraft)",
-          "volume": "484K+",
-          "volumeRaw": 484295,
+          "volume": "485K+",
+          "volumeRaw": 485028,
           "category": "news",
           "temperature": 25,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Instagram: https://www.instagram.com/cashmarcoyt/\nMerch: https://cashandnico.com\n\n#Minecraft #MinecraftMod #Cash #NicoAndCash",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "zJbiRiB9K4c",
           "channelTitle": "Cash"
         },
@@ -9923,7 +9860,7 @@
           "keyword": "Luqale sakudlala",
           "keywordEn": "Luqale sakudlala",
           "volume": "440K+",
-          "volumeRaw": 440781,
+          "volumeRaw": 440910,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -9939,7 +9876,7 @@
           "keyword": "Simi Kanje",
           "keywordEn": "Simi Kanje",
           "volume": "383K+",
-          "volumeRaw": 383855,
+          "volumeRaw": 383976,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -9955,7 +9892,7 @@
           "keyword": "I Busted 157 Myths In GTA 5!",
           "keywordEn": "I Busted 157 Myths In GTA 5!",
           "volume": "332K+",
-          "volumeRaw": 332058,
+          "volumeRaw": 332257,
           "category": "news",
           "temperature": 18,
           "velocity": "steady",
@@ -9971,7 +9908,7 @@
           "keyword": "Sam Deep, Aidah, Njelic feat. Thatohatsi - Rapela (Visualizer)",
           "keywordEn": "Sam Deep, Aidah, Njelic feat. Thatohatsi - Rapela (Visualizer)",
           "volume": "219K+",
-          "volumeRaw": 219494,
+          "volumeRaw": 219539,
           "category": "news",
           "temperature": 16,
           "velocity": "steady",
@@ -9995,7 +9932,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Masondo resigns as PIC chair, warns investigations must not be ‘swept under the carpet’"
+            "Masondo throws in the towel at PIC; opens new front against Godongwana at Parliament"
           ]
         },
         {
@@ -10091,7 +10028,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "PlayStation Network Down Worldwide, Intermittent Connectivity"
+            "PSN Was Down Due to Amazon Web Services Outage"
           ]
         },
         {
@@ -10153,7 +10090,7 @@
           "keyword": "RESIDENT EVIL – Official Trailer (4K)",
           "keywordEn": "RESIDENT EVIL – Official Trailer (4K)",
           "volume": "5M+",
-          "volumeRaw": 5008077,
+          "volumeRaw": 5009706,
           "category": "movies",
           "temperature": 73,
           "velocity": "new",
@@ -10169,7 +10106,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -10208,10 +10145,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Listen now to “Getlak” from “Habeitek” Album on all platforms | اسمع الآن أغنية ”جيتلك” من ألبوم “حبيتِك” على جميع المنصات\nhttps://lnk.to/habeitek\n\n© Sony Music Entertainment Middle East\n\nLyrics: Roza",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "04qaw2nx5qY",
           "channelTitle": "Amr Diab"
         },
@@ -10227,10 +10161,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "النهاردة حدث افضل تشكيلة في كأس العالم وتشكيله ابطال كاس العالم منتخب اسبانيا ونزول مبابي بيوصل 127 و رودري و كوكوريلا وميسي و هالاند و سيمون وكوبارسي واوباميكوانو و لامين يامال وتحدي الوصول لأقوى إجم",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers",
-            "1颗话梅129元有人泡水喝3天 _ 百度搜索"
-          ],
+          "relatedNews": [],
           "youtubeId": "H9psZGqHsig",
           "channelTitle": "Abdo 2xd"
         },
@@ -10238,17 +10169,15 @@
           "rank": 6,
           "keyword": "تفجير بكدجات أبطال كأس العالم أوفر 127 🤯🏆",
           "keywordEn": "Exploding the packages of the World Cup champions over 127 🤯🏆",
-          "volume": "258K+",
-          "volumeRaw": 258923,
+          "volume": "259K+",
+          "volumeRaw": 259132,
           "category": "sports",
           "temperature": 24,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "#HikaSIU #FCMobile #fc26 \n\nلينك قناة الجيمينج👇\n@HikaGaming \n\nلينك قناة الواتس👇\nhttps://www.whatsapp.com/channel/0029VbBMysuDJ6GwnEtae646\n\n🎇للتواصل: hikayt.ads@gmail.com\nصلوا على سيدنا محمد (ص)\n#هيكا #",
-          "relatedNews": [
-            "Fly around the world ( Experimental )  | Google Earth  | Google for Developers"
-          ],
+          "relatedNews": [],
           "youtubeId": "EdrmZqrBoH8",
           "channelTitle": "HikaSIU"
         },
@@ -10257,7 +10186,7 @@
           "keyword": "SHOFT KALAM - MARWAN PABLO x LEGE-CY x HATEM BAS | شُفت كلام - مروان بابلو و ليجي-سي و حاتم بس",
           "keywordEn": "SHOFT KALAM - MARWAN PABLO x LEGE-CY x HATEM BAS | I saw some words from Marwan Pablo, Ligi-C, and Hatem Bas",
           "volume": "243K+",
-          "volumeRaw": 243111,
+          "volumeRaw": 243211,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -10273,7 +10202,7 @@
           "keyword": "Ashan Habeeby",
           "keywordEn": "Ashan Habeeby",
           "volume": "171K+",
-          "volumeRaw": 171397,
+          "volumeRaw": 171566,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -10305,29 +10234,26 @@
           "keyword": "كليب قلبي خف ( الود حبل انت قطعتو ) - محمد الريفي | Clip Alby khaf  - Mohamed Rifi",
           "keywordEn": "My heart is hidden (Love is a rope you cut) clip - Muhammad Al-Rifi | Clip Alby khaf - Mohamed Rifi",
           "volume": "50K+",
-          "volumeRaw": 50870,
+          "volumeRaw": 50943,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "القناة الرسمية لسلطان الشن\nـــــــــــــــــــــــــــــــــــ\nSubscribe to Sultan Elshan | إشترك في قناة سلطان الشن لمشاهدة أحدث الأغاني حصرياً \nhttps://www.youtube.com/@sultanelshanofficial\n\nـــــــ",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "4_QNNRfid74",
           "channelTitle": "سلطان الشن - Sultan Elshan"
         },
         {
           "rank": 11,
-          "keyword": "سعر الذهب اليوم عيار 21",
-          "keywordEn": "Today's gold price is 21 karat",
+          "keyword": "سعر الذهب اليوم عيار 21 الآن 2026",
+          "keywordEn": "Today's gold price is 21 karat now 2026",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 13,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -10337,28 +10263,44 @@
         },
         {
           "rank": 12,
+          "keyword": "الفنان بدوي فهمى",
+          "keywordEn": "Artist Badawi Fahmy",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 11,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "بعد استغاثته: \"بنام في الجراج\".. ياسر جلال يستجيب لطلب بدوي فهمي"
+          ]
+        },
+        {
+          "rank": 13,
           "keyword": "آيفون",
           "keywordEn": "iPhone",
           "volume": "500",
           "volumeRaw": 500,
           "category": "tech",
-          "temperature": 11,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "سر قوة Android 17 .. جوجل تسهل الانتقال من آيفون إلى أندرويد"
+            "iPhone 18 يحصل على 9 جيجابايت رام.. لكنه لن يدعم ميزتين جديدتين في iOS 27"
           ]
         },
         {
-          "rank": 13,
+          "rank": 14,
           "keyword": "المولد النبوي",
           "keywordEn": "The birth of the Prophet",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 9,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -10368,14 +10310,14 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 15,
           "keyword": "نجيب ساويرس",
           "keywordEn": "Naguib Sawiris",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 7,
-          "velocity": "steady",
+          "temperature": 5,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -10384,7 +10326,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 16,
           "keyword": "ملكة جمال مصر",
           "keywordEn": "Miss Egypt",
           "volume": "200",
@@ -10400,23 +10342,23 @@
           ]
         },
         {
-          "rank": 16,
-          "keyword": "الفنان بدوي فهمى",
-          "keywordEn": "Artist Badawi Fahmy",
+          "rank": 17,
+          "keyword": "playstation",
+          "keywordEn": "playstation",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 5,
+          "temperature": 20,
           "velocity": "new",
-          "isGlobal": false,
+          "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "بعد استغاثته: \"بنام في الجراج\".. ياسر جلال يستجيب لطلب بدوي فهمي"
+            "PSN Was Down Due to Amazon Web Services Outage"
           ]
         },
         {
-          "rank": 17,
+          "rank": 18,
           "keyword": "يورغن كلوب",
           "keywordEn": "Jurgen Klopp",
           "volume": "200",
@@ -10432,7 +10374,23 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 19,
+          "keyword": "كريم اديمي برشلونة",
+          "keywordEn": "Karim Adeyemi Barcelona",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "أديمي: دوري الأبطال ليس هدفي الوحيد مع برشلونة"
+          ]
+        },
+        {
+          "rank": 20,
           "keyword": "mayar sherif",
           "keywordEn": "mayar sherif",
           "volume": "100",
@@ -10445,38 +10403,6 @@
           "description": "",
           "relatedNews": [
             "Paula Badosa Apologizes After Iași Open 2026 Final Retirement"
-          ]
-        },
-        {
-          "rank": 19,
-          "keyword": "fc barcelona",
-          "keywordEn": "fc barcelona",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Así fue el shooting de la segunda equipación"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "playstation",
-          "keywordEn": "playstation",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 20,
-          "velocity": "new",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "PlayStation Network Down Worldwide, Intermittent Connectivity"
           ]
         }
       ]
@@ -10506,7 +10432,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -10545,10 +10471,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "MI TIENDA 🧢 ► https://rbls.com.ar\n🔴 DIRECTOS DIARIOS EN: https://www.youtube.com/@RobleisIUTU/\nLike y Sub ayuda muchoo♥\n\nseguime en las redes rey\n► Instagram:  https://instagram.com/robleis\n► Twitter:",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "VycaDcWUuqo",
           "channelTitle": "RobleisJAJA"
         },
@@ -10573,7 +10496,7 @@
           "keyword": "Resident Evil: Noche Cero | Tráiler Oficial | Doblado",
           "keywordEn": "Resident Evil: Zero Night | Official Trailer | Bent",
           "volume": "130K+",
-          "volumeRaw": 130197,
+          "volumeRaw": 130225,
           "category": "movies",
           "temperature": 38,
           "velocity": "new",
@@ -10605,7 +10528,7 @@
           "keyword": "Angela Leiva, Eugenia Quevedo - Mejores Enemigas (En Vivo)",
           "keywordEn": "Angela Leiva, Eugenia Quevedo - Mejores Enemigas (En Vivo)",
           "volume": "40K+",
-          "volumeRaw": 40601,
+          "volumeRaw": 40770,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -10637,7 +10560,7 @@
           "keyword": "Tus Ojos No Mienten (En Vivo)",
           "keywordEn": "Tus Ojos No Mienten (En Vivo)",
           "volume": "22K+",
-          "volumeRaw": 22242,
+          "volumeRaw": 22371,
           "category": "news",
           "temperature": 15,
           "velocity": "rising",
@@ -10703,7 +10626,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 12,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -10789,7 +10712,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Atlético sumó un micro para sus divisiones formativas"
+            "Un club de Santa Fe compró un colectivo con el aporte de ex jugadores que pasaron por la institución"
           ]
         },
         {
@@ -10819,7 +10742,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 62,
           "velocity": "rising",
@@ -10834,8 +10757,8 @@
           "rank": 2,
           "keyword": "GERMAN 2026 VS GERMAN 2014!",
           "keywordEn": "GERMAN 2026 VS GERMAN 2014!",
-          "volume": "626K+",
-          "volumeRaw": 626817,
+          "volume": "627K+",
+          "volumeRaw": 627062,
           "category": "news",
           "temperature": 34,
           "velocity": "rising",
@@ -10851,7 +10774,7 @@
           "keyword": "JERE KLEIN X BLESSD - MILLONETA (VIDEO OFICIAL)",
           "keywordEn": "JERE KLEIN X BLESSD - MILLONETA (VIDEO OFICIAL)",
           "volume": "586K+",
-          "volumeRaw": 586768,
+          "volumeRaw": 586903,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
@@ -10874,10 +10797,7 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "MI TIENDA 🧢 ► https://rbls.com.ar\n🔴 DIRECTOS DIARIOS EN: https://www.youtube.com/@RobleisIUTU/\nLike y Sub ayuda muchoo♥\n\nseguime en las redes rey\n► Instagram:  https://instagram.com/robleis\n► Twitter:",
-          "relatedNews": [
-            "Update your browser to use Google Drive and other apps",
-            "Update your browser to use Google Drive and other apps"
-          ],
+          "relatedNews": [],
           "youtubeId": "VycaDcWUuqo",
           "channelTitle": "RobleisJAJA"
         },
@@ -10886,7 +10806,7 @@
           "keyword": "IMPOSIBLE 🤯 | EXPERTO INFINITO (NO SKIP) - ZetaSSJ",
           "keywordEn": "IMPOSSIBLE 🤯 | INFINITE EXPERT (NO SKIP) - ZetaSSJ",
           "volume": "254K+",
-          "volumeRaw": 254031,
+          "volumeRaw": 254270,
           "category": "news",
           "temperature": 41,
           "velocity": "steady",
@@ -10918,7 +10838,7 @@
           "keyword": "Resident Evil: Noche Cero | Tráiler Oficial | Doblado",
           "keywordEn": "Resident Evil: Zero Night | Official Trailer | Bent",
           "volume": "130K+",
-          "volumeRaw": 130197,
+          "volumeRaw": 130225,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -10966,7 +10886,7 @@
           "keyword": "Celosa - Kidd Voodoo | Video Oficial",
           "keywordEn": "Celosa - Kidd Voodoo | Video Oficial",
           "volume": "52K+",
-          "volumeRaw": 52035,
+          "volumeRaw": 52070,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -11048,7 +10968,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 5,
+          "temperature": 10,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -11148,7 +11068,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 62,
           "velocity": "rising",
@@ -11212,7 +11132,7 @@
           "keyword": "IMPOSIBLE 🤯 | EXPERTO INFINITO (NO SKIP) - ZetaSSJ",
           "keywordEn": "IMPOSSIBLE 🤯 | INFINITE EXPERT (NO SKIP) - ZetaSSJ",
           "volume": "254K+",
-          "volumeRaw": 254031,
+          "volumeRaw": 254270,
           "category": "news",
           "temperature": 41,
           "velocity": "new",
@@ -11228,7 +11148,7 @@
           "keyword": "Yeison Jiménez l Mala de Profesión (Video Oficial)",
           "keywordEn": "Yeison Jiménez l Mala de Profession (Official Video)",
           "volume": "177K+",
-          "volumeRaw": 177544,
+          "volumeRaw": 177858,
           "category": "news",
           "temperature": 23,
           "velocity": "rising",
@@ -11244,7 +11164,7 @@
           "keyword": "Ryan Castro - que te vaya bien (Video Oficial)",
           "keywordEn": "Ryan Castro - que te vaya bien (Video Oficial)",
           "volume": "132K+",
-          "volumeRaw": 132368,
+          "volumeRaw": 132771,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -11276,7 +11196,7 @@
           "keyword": "Romeo Santos - Que Se Mueran | Letra",
           "keywordEn": "Romeo Santos - Que Se Mueran | Letra",
           "volume": "115K+",
-          "volumeRaw": 115551,
+          "volumeRaw": 115709,
           "category": "news",
           "temperature": 22,
           "velocity": "steady",
@@ -11292,7 +11212,7 @@
           "keyword": "ARIA VEGA - TOTOTO (+4) (Video Oficial)",
           "keywordEn": "ARIA VEGA - TOTOTO (+4) (Video Oficial)",
           "volume": "31K+",
-          "volumeRaw": 31229,
+          "volumeRaw": 31279,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -11307,8 +11227,8 @@
           "rank": 11,
           "keyword": "pico y placa medellin",
           "keywordEn": "pico y placa medellin",
-          "volume": "2K+",
-          "volumeRaw": 2000,
+          "volume": "5K+",
+          "volumeRaw": 5000,
           "category": "news",
           "temperature": 13,
           "velocity": "rising",
@@ -11321,12 +11241,28 @@
         },
         {
           "rank": 12,
+          "keyword": "jubilación",
+          "keywordEn": "retirement",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 16,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "IU: «Dignificar el empleo público es también dignificar los servicios públicos» - Engracia Rivera"
+          ]
+        },
+        {
+          "rank": 13,
           "keyword": "snake",
           "keywordEn": "snake",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 11,
+          "temperature": 9,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -11336,35 +11272,19 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 14,
           "keyword": "churo díaz",
           "keywordEn": "churo diaz",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 9,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Cantante Churo Díaz se declara inocente en caso de presunto abuso sexual de menores"
-          ]
-        },
-        {
-          "rank": 14,
-          "keyword": "24 de julio",
-          "keywordEn": "24 de julio",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "news",
-          "temperature": 12,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Petro entregará la espada de Bolívar y la sotana de Camilo Torres a dos museos en Bogotá"
           ]
         },
         {
@@ -11396,7 +11316,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Suspenden audiencia contra Laura Ojeda por falta de competencia de la fiscal del caso"
+            "Los 10 alimentos que favorecen la reducción del colesterol, según expertos"
           ]
         },
         {
@@ -11407,7 +11327,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -11474,7 +11394,7 @@
           "keyword": "KATSEYE (캣츠아이) \"Animal\" Official MV Teaser 2",
           "keywordEn": "KATSEYE \"Animal\" Official MV Teaser 2",
           "volume": "3M+",
-          "volumeRaw": 3805110,
+          "volumeRaw": 3805351,
           "category": "music",
           "temperature": 67,
           "velocity": "steady",
@@ -11506,7 +11426,7 @@
           "keyword": "EA SPORTS FC 27 | Official Reveal Trailer",
           "keywordEn": "EA SPORTS FC 27 | Official Reveal Trailer",
           "volume": "2M+",
-          "volumeRaw": 2916095,
+          "volumeRaw": 2918820,
           "category": "movies",
           "temperature": 58,
           "velocity": "rising",
@@ -11538,7 +11458,7 @@
           "keyword": "ESCAPAMOS DE PEPPA PIG MALDITA EN MINECRAFT | Peppa Horror Mod",
           "keywordEn": "ESCAPAMOS DE PEPPA PIG MALDITA EN MINECRAFT | Peppa Horror Mod",
           "volume": "580K+",
-          "volumeRaw": 580356,
+          "volumeRaw": 580522,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -11554,7 +11474,7 @@
           "keyword": "IMPOSIBLE 🤯 | EXPERTO INFINITO (NO SKIP) - ZetaSSJ",
           "keywordEn": "IMPOSSIBLE 🤯 | INFINITE EXPERT (NO SKIP) - ZetaSSJ",
           "volume": "254K+",
-          "volumeRaw": 254031,
+          "volumeRaw": 254270,
           "category": "news",
           "temperature": 39,
           "velocity": "new",
@@ -11570,7 +11490,7 @@
           "keyword": "Resident Evil: Noche Cero | Tráiler Oficial | Doblado",
           "keywordEn": "Resident Evil: Zero Night | Official Trailer | Bent",
           "volume": "130K+",
-          "volumeRaw": 130197,
+          "volumeRaw": 130225,
           "category": "movies",
           "temperature": 36,
           "velocity": "new",
@@ -11602,7 +11522,7 @@
           "keyword": "Romeo Santos - Que Se Mueran | Letra",
           "keywordEn": "Romeo Santos - Que Se Mueran | Letra",
           "volume": "115K+",
-          "volumeRaw": 115551,
+          "volumeRaw": 115709,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -11618,7 +11538,7 @@
           "keyword": "Gonzalo Genek, Movimiento Original - ME TIENE ENAMORAO (Video Oficial)",
           "keywordEn": "Gonzalo Genek, Movimiento Original - ME TIENE ENAMORAO (Video Oficial)",
           "volume": "12K+",
-          "volumeRaw": 12877,
+          "volumeRaw": 12885,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -11658,7 +11578,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "El Barça 26-27 se estrena con un 'test' a puerta cerrada"
+            "Barça - Europa: Hansi Flick examina la cantera ¿y a Adeyemi? en el primer test de pretemporada"
           ]
         },
         {
@@ -12903,7 +12823,7 @@
         "keyword": "Flux 3 X Mimic: The Next Generation of Video-Action Models",
         "keywordEn": "Flux 3 X Mimic: The Next Generation of Video-Action Models",
         "volume": "25K+",
-        "volumeRaw": 25350,
+        "volumeRaw": 25500,
         "category": "tech",
         "temperature": 87,
         "velocity": "new",
@@ -12914,7 +12834,7 @@
         "keyword": "Flux 3",
         "keywordEn": "Flux 3",
         "volume": "60K+",
-        "volumeRaw": 60450,
+        "volumeRaw": 60600,
         "category": "tech",
         "temperature": 86,
         "velocity": "new",
@@ -12924,8 +12844,8 @@
         "rank": 3,
         "keyword": "It's getting harder to focus every day",
         "keywordEn": "It's getting harder to focus every day",
-        "volume": "32K+",
-        "volumeRaw": 32850,
+        "volume": "33K+",
+        "volumeRaw": 33600,
         "category": "tech",
         "temperature": 85,
         "velocity": "new",
@@ -12935,8 +12855,8 @@
         "rank": 4,
         "keyword": "The case for MUDs in modern times",
         "keywordEn": "The case for MUDs in modern times",
-        "volume": "3K+",
-        "volumeRaw": 3750,
+        "volume": "4K+",
+        "volumeRaw": 4200,
         "category": "tech",
         "temperature": 84,
         "velocity": "rising",
@@ -12969,7 +12889,7 @@
         "keyword": "Claude Cookbook",
         "keywordEn": "Claude Cookbook",
         "volume": "21K+",
-        "volumeRaw": 21600,
+        "volumeRaw": 21900,
         "category": "tech",
         "temperature": 81,
         "velocity": "rising",
@@ -12979,8 +12899,8 @@
         "rank": 8,
         "keyword": "Programming language file extensions that match ISO 3166-1 alpha-2 country code",
         "keywordEn": "Programming language file extensions that match ISO 3166-1 alpha-2 country code",
-        "volume": "450",
-        "volumeRaw": 450,
+        "volume": "750",
+        "volumeRaw": 750,
         "category": "tech",
         "temperature": 80,
         "velocity": "rising",
@@ -12988,10 +12908,10 @@
       },
       {
         "rank": 9,
-        "keyword": "Computational chemistry, Locally? My rant on SSH",
-        "keywordEn": "Computational chemistry, Locally? My rant on SSH",
-        "volume": "3K+",
-        "volumeRaw": 3000,
+        "keyword": "I Tried Building a Real App with AI. It Took a Year",
+        "keywordEn": "I Tried Building a Real App with AI. It Took a Year",
+        "volume": "600",
+        "volumeRaw": 600,
         "category": "tech",
         "temperature": 79,
         "velocity": "rising",
@@ -12999,10 +12919,10 @@
       },
       {
         "rank": 10,
-        "keyword": "Why is programming so captivating, yet so agonizing?",
-        "keywordEn": "Why is programming so captivating, yet so agonizing?",
-        "volume": "450",
-        "volumeRaw": 450,
+        "keyword": "IRGC Claims It Destroyed Amazon's Bahrain Data Center",
+        "keywordEn": "IRGC Claims It Destroyed Amazon's Bahrain Data Center",
+        "volume": "3K+",
+        "volumeRaw": 3600,
         "category": "tech",
         "temperature": 78,
         "velocity": "rising",
@@ -13010,10 +12930,10 @@
       },
       {
         "rank": 11,
-        "keyword": "IRGC Claims It Destroyed Amazon's Bahrain Data Center",
-        "keywordEn": "IRGC Claims It Destroyed Amazon's Bahrain Data Center",
-        "volume": "2K+",
-        "volumeRaw": 2850,
+        "keyword": "Nothing works and everyone is euphoric",
+        "keywordEn": "Nothing works and everyone is euphoric",
+        "volume": "23K+",
+        "volumeRaw": 23100,
         "category": "tech",
         "temperature": 77,
         "velocity": "steady",
@@ -13021,10 +12941,10 @@
       },
       {
         "rank": 12,
-        "keyword": "Tangleflow: Converts GitHub Actions workflows to tangled workflows and back",
-        "keywordEn": "Tangleflow: Converts GitHub Actions workflows to tangled workflows and back",
-        "volume": "1K+",
-        "volumeRaw": 1800,
+        "keyword": "Computational chemistry, Locally? My rant on SSH",
+        "keywordEn": "Computational chemistry, Locally? My rant on SSH",
+        "volume": "3K+",
+        "volumeRaw": 3000,
         "category": "tech",
         "temperature": 76,
         "velocity": "steady",
@@ -13032,10 +12952,10 @@
       },
       {
         "rank": 13,
-        "keyword": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
-        "keywordEn": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
-        "volume": "1K+",
-        "volumeRaw": 1200,
+        "keyword": "Why is programming so captivating, yet so agonizing?",
+        "keywordEn": "Why is programming so captivating, yet so agonizing?",
+        "volume": "450",
+        "volumeRaw": 450,
         "category": "tech",
         "temperature": 75,
         "velocity": "steady",
@@ -13043,10 +12963,10 @@
       },
       {
         "rank": 14,
-        "keyword": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
-        "keywordEn": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
-        "volume": "62K+",
-        "volumeRaw": 62250,
+        "keyword": "Tangleflow: Converts GitHub Actions workflows to tangled workflows and back",
+        "keywordEn": "Tangleflow: Converts GitHub Actions workflows to tangled workflows and back",
+        "volume": "1K+",
+        "volumeRaw": 1950,
         "category": "tech",
         "temperature": 74,
         "velocity": "steady",
@@ -13054,10 +12974,10 @@
       },
       {
         "rank": 15,
-        "keyword": "Nothing works and everyone is euphoric",
-        "keywordEn": "Nothing works and everyone is euphoric",
-        "volume": "22K+",
-        "volumeRaw": 22800,
+        "keyword": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+        "keywordEn": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+        "volume": "62K+",
+        "volumeRaw": 62400,
         "category": "tech",
         "temperature": 73,
         "velocity": "steady",
@@ -13065,10 +12985,10 @@
       },
       {
         "rank": 16,
-        "keyword": "The Beam Engine",
-        "keywordEn": "The Beam Engine",
-        "volume": "65K+",
-        "volumeRaw": 65400,
+        "keyword": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
+        "keywordEn": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
+        "volume": "1K+",
+        "volumeRaw": 1350,
         "category": "tech",
         "temperature": 72,
         "velocity": "steady",
@@ -13076,10 +12996,10 @@
       },
       {
         "rank": 17,
-        "keyword": "I Tried Building a Real App with AI. It Took a Year",
-        "keywordEn": "I Tried Building a Real App with AI. It Took a Year",
-        "volume": "450",
-        "volumeRaw": 450,
+        "keyword": "The Beam Engine",
+        "keywordEn": "The Beam Engine",
+        "volume": "65K+",
+        "volumeRaw": 65400,
         "category": "tech",
         "temperature": 71,
         "velocity": "steady",
@@ -13098,10 +13018,10 @@
       },
       {
         "rank": 19,
-        "keyword": "Game of Trees – Git-based version control from OpenBSD folks",
-        "keywordEn": "Game of Trees – Git-based version control from OpenBSD folks",
-        "volume": "2K+",
-        "volumeRaw": 2700,
+        "keyword": "My security camera shipped a GitHub admin token in its login page",
+        "keywordEn": "My security camera shipped a GitHub admin token in its login page",
+        "volume": "450",
+        "volumeRaw": 450,
         "category": "tech",
         "temperature": 69,
         "velocity": "steady",
@@ -13109,10 +13029,10 @@
       },
       {
         "rank": 20,
-        "keyword": "Launching Health in ChatGPT to US Users",
-        "keywordEn": "Launching Health in ChatGPT to US Users",
-        "volume": "3K+",
-        "volumeRaw": 3300,
+        "keyword": "Game of Trees – Git-based version control from OpenBSD folks",
+        "keywordEn": "Game of Trees – Git-based version control from OpenBSD folks",
+        "volume": "2K+",
+        "volumeRaw": 2700,
         "category": "tech",
         "temperature": 68,
         "velocity": "steady",
@@ -13120,10 +13040,10 @@
       },
       {
         "rank": 21,
-        "keyword": "AMD's Instinct MI455X: Aiming for the Sun",
-        "keywordEn": "AMD's Instinct MI455X: Aiming for the Sun",
-        "volume": "5K+",
-        "volumeRaw": 5400,
+        "keyword": "Launching Health in ChatGPT to US Users",
+        "keywordEn": "Launching Health in ChatGPT to US Users",
+        "volume": "3K+",
+        "volumeRaw": 3300,
         "category": "tech",
         "temperature": 67,
         "velocity": "steady",
@@ -13131,10 +13051,10 @@
       },
       {
         "rank": 22,
-        "keyword": "Writing by hand is good for your brain",
-        "keywordEn": "Writing by hand is good for your brain",
-        "volume": "203K+",
-        "volumeRaw": 203850,
+        "keyword": "AMD's Instinct MI455X: Aiming for the Sun",
+        "keywordEn": "AMD's Instinct MI455X: Aiming for the Sun",
+        "volume": "5K+",
+        "volumeRaw": 5400,
         "category": "tech",
         "temperature": 66,
         "velocity": "steady",
@@ -13142,10 +13062,10 @@
       },
       {
         "rank": 23,
-        "keyword": "The day Steve Jobs dissed me in a keynote (2010)",
-        "keywordEn": "The day Steve Jobs dissed me in a keynote (2010)",
-        "volume": "19K+",
-        "volumeRaw": 19050,
+        "keyword": "Writing by hand is good for your brain",
+        "keywordEn": "Writing by hand is good for your brain",
+        "volume": "204K+",
+        "volumeRaw": 204000,
         "category": "tech",
         "temperature": 65,
         "velocity": "steady",
@@ -13156,7 +13076,7 @@
         "keyword": "Hetzner is working on LLM Inference",
         "keywordEn": "Hetzner is working on LLM Inference",
         "volume": "10K+",
-        "volumeRaw": 10050,
+        "volumeRaw": 10500,
         "category": "tech",
         "temperature": 64,
         "velocity": "steady",
@@ -13164,10 +13084,10 @@
       },
       {
         "rank": 25,
-        "keyword": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
-        "keywordEn": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
-        "volume": "148K+",
-        "volumeRaw": 148950,
+        "keyword": "The day Steve Jobs dissed me in a keynote (2010)",
+        "keywordEn": "The day Steve Jobs dissed me in a keynote (2010)",
+        "volume": "19K+",
+        "volumeRaw": 19350,
         "category": "tech",
         "temperature": 63,
         "velocity": "steady",
@@ -13175,10 +13095,10 @@
       },
       {
         "rank": 26,
-        "keyword": "Why Software Factories Fail (or: harness engineering is not enough)",
-        "keywordEn": "Why Software Factories Fail (or: harness engineering is not enough)",
-        "volume": "52K+",
-        "volumeRaw": 52500,
+        "keyword": "How Do We Stop Vibe Coding?",
+        "keywordEn": "How Do We Stop Vibe Coding?",
+        "volume": "1K+",
+        "volumeRaw": 1050,
         "category": "tech",
         "temperature": 62,
         "velocity": "steady",
@@ -13186,10 +13106,10 @@
       },
       {
         "rank": 27,
-        "keyword": "What happened to TheNumbers.com",
-        "keywordEn": "What happened to TheNumbers.com",
-        "volume": "58K+",
-        "volumeRaw": 58350,
+        "keyword": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+        "keywordEn": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+        "volume": "149K+",
+        "volumeRaw": 149250,
         "category": "tech",
         "temperature": 61,
         "velocity": "steady",
@@ -13197,10 +13117,10 @@
       },
       {
         "rank": 28,
-        "keyword": "I regret migrating to Codeberg",
-        "keywordEn": "I regret migrating to Codeberg",
-        "volume": "58K+",
-        "volumeRaw": 58800,
+        "keyword": "Why Software Factories Fail (or: harness engineering is not enough)",
+        "keywordEn": "Why Software Factories Fail (or: harness engineering is not enough)",
+        "volume": "52K+",
+        "volumeRaw": 52500,
         "category": "tech",
         "temperature": 60,
         "velocity": "steady",
@@ -13208,10 +13128,10 @@
       },
       {
         "rank": 29,
-        "keyword": "What else do people draw on gradient.horse?",
-        "keywordEn": "What else do people draw on gradient.horse?",
-        "volume": "22K+",
-        "volumeRaw": 22800,
+        "keyword": "What happened to TheNumbers.com",
+        "keywordEn": "What happened to TheNumbers.com",
+        "volume": "58K+",
+        "volumeRaw": 58500,
         "category": "tech",
         "temperature": 59,
         "velocity": "steady",
@@ -13219,10 +13139,10 @@
       },
       {
         "rank": 30,
-        "keyword": "Why Sony can't bring back its classic Walkman models",
-        "keywordEn": "Why Sony can't bring back its classic Walkman models",
-        "volume": "24K+",
-        "volumeRaw": 24450,
+        "keyword": "I regret migrating to Codeberg",
+        "keywordEn": "I regret migrating to Codeberg",
+        "volume": "59K+",
+        "volumeRaw": 59100,
         "category": "tech",
         "temperature": 58,
         "velocity": "steady",
@@ -13230,10 +13150,10 @@
       },
       {
         "rank": 31,
-        "keyword": "Show HN: Audio Player with \"Binaural Beats\" tuned to the same key as your music",
-        "keywordEn": "Show HN: Audio Player with \"Binaural Beats\" tuned to the same key as your music",
-        "volume": "600",
-        "volumeRaw": 600,
+        "keyword": "Controlled Burns Have Saved Giant Sequoias",
+        "keywordEn": "Controlled Burns Have Saved Giant Sequoias",
+        "volume": "750",
+        "volumeRaw": 750,
         "category": "tech",
         "temperature": 57,
         "velocity": "steady",
@@ -13241,10 +13161,10 @@
       },
       {
         "rank": 32,
-        "keyword": "Eight Newly Produced MQ-9 Reaper Drones Destroyed in Iranian Strike",
-        "keywordEn": "Eight Newly Produced MQ-9 Reaper Drones Destroyed in Iranian Strike",
-        "volume": "600",
-        "volumeRaw": 600,
+        "keyword": "Why Sony can't bring back its classic Walkman models",
+        "keywordEn": "Why Sony can't bring back its classic Walkman models",
+        "volume": "24K+",
+        "volumeRaw": 24900,
         "category": "tech",
         "temperature": 56,
         "velocity": "steady",
@@ -13252,10 +13172,10 @@
       },
       {
         "rank": 33,
-        "keyword": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
-        "keywordEn": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
-        "volume": "26K+",
-        "volumeRaw": 26250,
+        "keyword": "What else do people draw on gradient.horse?",
+        "keywordEn": "What else do people draw on gradient.horse?",
+        "volume": "22K+",
+        "volumeRaw": 22800,
         "category": "tech",
         "temperature": 55,
         "velocity": "steady",
@@ -13263,10 +13183,10 @@
       },
       {
         "rank": 34,
-        "keyword": "Fields Medals 2026",
-        "keywordEn": "Fields Medals 2026",
-        "volume": "29K+",
-        "volumeRaw": 29550,
+        "keyword": "Show HN: Audio Player with \"Binaural Beats\" tuned to the same key as your music",
+        "keywordEn": "Show HN: Audio Player with \"Binaural Beats\" tuned to the same key as your music",
+        "volume": "900",
+        "volumeRaw": 900,
         "category": "tech",
         "temperature": 54,
         "velocity": "steady",
@@ -13274,10 +13194,10 @@
       },
       {
         "rank": 35,
-        "keyword": "I could do that in a weekend (2016)",
-        "keywordEn": "I could do that in a weekend (2016)",
-        "volume": "2K+",
-        "volumeRaw": 2100,
+        "keyword": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+        "keywordEn": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+        "volume": "26K+",
+        "volumeRaw": 26250,
         "category": "tech",
         "temperature": 53,
         "velocity": "steady",
@@ -13285,10 +13205,10 @@
       },
       {
         "rank": 36,
-        "keyword": "98.css",
-        "keywordEn": "98.css",
-        "volume": "74K+",
-        "volumeRaw": 74850,
+        "keyword": "Fields Medals 2026",
+        "keywordEn": "Fields Medals 2026",
+        "volume": "29K+",
+        "volumeRaw": 29700,
         "category": "tech",
         "temperature": 52,
         "velocity": "steady",
@@ -13296,10 +13216,10 @@
       },
       {
         "rank": 37,
-        "keyword": "How Do We Stop Vibe Coding?",
-        "keywordEn": "How Do We Stop Vibe Coding?",
-        "volume": "750",
-        "volumeRaw": 750,
+        "keyword": "Eight Newly Produced MQ-9 Reaper Drones Destroyed in Iranian Strike",
+        "keywordEn": "Eight Newly Produced MQ-9 Reaper Drones Destroyed in Iranian Strike",
+        "volume": "600",
+        "volumeRaw": 600,
         "category": "tech",
         "temperature": 51,
         "velocity": "steady",
@@ -13307,10 +13227,10 @@
       },
       {
         "rank": 38,
-        "keyword": "German battery maker Varta files insolvency applications",
-        "keywordEn": "German battery maker Varta files insolvency applications",
-        "volume": "7K+",
-        "volumeRaw": 7650,
+        "keyword": "98.css",
+        "keywordEn": "98.css",
+        "volume": "75K+",
+        "volumeRaw": 75000,
         "category": "tech",
         "temperature": 50,
         "velocity": "steady",
@@ -13318,10 +13238,10 @@
       },
       {
         "rank": 39,
-        "keyword": "Quickly rewrite Git repository history",
-        "keywordEn": "Quickly rewrite Git repository history",
-        "volume": "8K+",
-        "volumeRaw": 8250,
+        "keyword": "I could do that in a weekend (2016)",
+        "keywordEn": "I could do that in a weekend (2016)",
+        "volume": "2K+",
+        "volumeRaw": 2100,
         "category": "tech",
         "temperature": 49,
         "velocity": "steady",
@@ -13329,10 +13249,10 @@
       },
       {
         "rank": 40,
-        "keyword": "Projects every RC live races and results",
-        "keywordEn": "Projects every RC live races and results",
-        "volume": "2K+",
-        "volumeRaw": 2700,
+        "keyword": "German battery maker Varta files insolvency applications",
+        "keywordEn": "German battery maker Varta files insolvency applications",
+        "volume": "7K+",
+        "volumeRaw": 7800,
         "category": "tech",
         "temperature": 48,
         "velocity": "steady",
@@ -13340,10 +13260,10 @@
       },
       {
         "rank": 41,
-        "keyword": "The Ever-Receding Pocket",
-        "keywordEn": "The Ever-Receding Pocket",
-        "volume": "2K+",
-        "volumeRaw": 2550,
+        "keyword": "Quickly rewrite Git repository history",
+        "keywordEn": "Quickly rewrite Git repository history",
+        "volume": "8K+",
+        "volumeRaw": 8250,
         "category": "tech",
         "temperature": 47,
         "velocity": "steady",
@@ -13351,10 +13271,10 @@
       },
       {
         "rank": 42,
-        "keyword": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
-        "keywordEn": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
-        "volume": "11K+",
-        "volumeRaw": 11850,
+        "keyword": "Projects every RC live races and results",
+        "keywordEn": "Projects every RC live races and results",
+        "volume": "2K+",
+        "volumeRaw": 2700,
         "category": "tech",
         "temperature": 46,
         "velocity": "steady",
@@ -13362,10 +13282,10 @@
       },
       {
         "rank": 43,
-        "keyword": "Building on ATProto",
-        "keywordEn": "Building on ATProto",
-        "volume": "25K+",
-        "volumeRaw": 25500,
+        "keyword": "The Ever-Receding Pocket",
+        "keywordEn": "The Ever-Receding Pocket",
+        "volume": "2K+",
+        "volumeRaw": 2550,
         "category": "tech",
         "temperature": 45,
         "velocity": "steady",
@@ -13373,10 +13293,10 @@
       },
       {
         "rank": 44,
-        "keyword": "The PImpl idiom and the C++26 std:indirect type",
-        "keywordEn": "The PImpl idiom and the C++26 std:indirect type",
-        "volume": "8K+",
-        "volumeRaw": 8850,
+        "keyword": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
+        "keywordEn": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
+        "volume": "11K+",
+        "volumeRaw": 11850,
         "category": "tech",
         "temperature": 44,
         "velocity": "steady",
@@ -13384,10 +13304,10 @@
       },
       {
         "rank": 45,
-        "keyword": "Mourning Dan Williams",
-        "keywordEn": "Mourning Dan Williams",
-        "volume": "12K+",
-        "volumeRaw": 12600,
+        "keyword": "AWS us-west-2 connectivity issues affecting multiple services",
+        "keywordEn": "AWS us-west-2 connectivity issues affecting multiple services",
+        "volume": "1K+",
+        "volumeRaw": 1200,
         "category": "tech",
         "temperature": 43,
         "velocity": "steady",
@@ -13395,10 +13315,10 @@
       },
       {
         "rank": 46,
-        "keyword": "The arguments against open source AI are bad",
-        "keywordEn": "The arguments against open source AI are bad",
-        "volume": "43K+",
-        "volumeRaw": 43500,
+        "keyword": "Building on ATProto",
+        "keywordEn": "Building on ATProto",
+        "volume": "25K+",
+        "volumeRaw": 25500,
         "category": "tech",
         "temperature": 42,
         "velocity": "steady",
@@ -13406,10 +13326,10 @@
       },
       {
         "rank": 47,
-        "keyword": "Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine",
-        "keywordEn": "Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine",
-        "volume": "900",
-        "volumeRaw": 900,
+        "keyword": "The PImpl idiom and the C++26 std:indirect type",
+        "keywordEn": "The PImpl idiom and the C++26 std:indirect type",
+        "volume": "8K+",
+        "volumeRaw": 8850,
         "category": "tech",
         "temperature": 41,
         "velocity": "steady",
@@ -13417,10 +13337,10 @@
       },
       {
         "rank": 48,
-        "keyword": "Japanese AI Robots Used to Replicate Skilled Confectioners' Abilities",
-        "keywordEn": "Japanese AI Robots Used to Replicate Skilled Confectioners' Abilities",
-        "volume": "1K+",
-        "volumeRaw": 1500,
+        "keyword": "Mourning Dan Williams",
+        "keywordEn": "Mourning Dan Williams",
+        "volume": "12K+",
+        "volumeRaw": 12600,
         "category": "tech",
         "temperature": 40,
         "velocity": "steady",
@@ -13428,10 +13348,10 @@
       },
       {
         "rank": 49,
-        "keyword": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
-        "keywordEn": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
-        "volume": "15K+",
-        "volumeRaw": 15150,
+        "keyword": "The arguments against open source AI are bad",
+        "keywordEn": "The arguments against open source AI are bad",
+        "volume": "43K+",
+        "volumeRaw": 43500,
         "category": "tech",
         "temperature": 39,
         "velocity": "steady",
@@ -13439,10 +13359,10 @@
       },
       {
         "rank": 50,
-        "keyword": "A solid-state “atomic channel” for separating rare earth elements",
-        "keywordEn": "A solid-state “atomic channel” for separating rare earth elements",
-        "volume": "13K+",
-        "volumeRaw": 13800,
+        "keyword": "Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine",
+        "keywordEn": "Mohabi: Disaggregating and Sandboxing the Firefox JavaScript Engine",
+        "volume": "900",
+        "volumeRaw": 900,
         "category": "tech",
         "temperature": 38,
         "velocity": "steady",
@@ -13452,8 +13372,8 @@
     "finance": [
       {
         "rank": 1,
-        "keyword": "A panicking Fed is just what the bond market needs, says Bank of America’s chief strategist",
-        "keywordEn": "A panicking Fed is just what the bond market needs, says Bank of America’s chief strategist",
+        "keyword": "My second husband and I have kids from previous relationships. Should my house go to him or my children if I die first?",
+        "keywordEn": "My second husband and I have kids from previous relationships. Should my house go to him or my children if I die first?",
         "volume": "98K+",
         "volumeRaw": 98200,
         "category": "finance",
@@ -13463,8 +13383,8 @@
       },
       {
         "rank": 2,
-        "keyword": "A ‘generational buying opportunity’ guarantees inflation plus 3% a year, says this hedge-fund manager",
-        "keywordEn": "A ‘generational buying opportunity’ guarantees inflation plus 3% a year, says this hedge-fund manager",
+        "keyword": "A panicking Fed is just what the bond market needs, says Bank of America’s chief strategist",
+        "keywordEn": "A panicking Fed is just what the bond market needs, says Bank of America’s chief strategist",
         "volume": "96K+",
         "volumeRaw": 96400,
         "category": "finance",
@@ -13474,8 +13394,8 @@
       },
       {
         "rank": 3,
-        "keyword": "American Express rides a boom in Platinum cards to its strongest spending growth in years",
-        "keywordEn": "American Express rides a boom in Platinum cards to its strongest spending growth in years",
+        "keyword": "A ‘generational buying opportunity’ guarantees inflation plus 3% a year, says this hedge-fund manager",
+        "keywordEn": "A ‘generational buying opportunity’ guarantees inflation plus 3% a year, says this hedge-fund manager",
         "volume": "94K+",
         "volumeRaw": 94600,
         "category": "finance",
@@ -13485,8 +13405,8 @@
       },
       {
         "rank": 4,
-        "keyword": "Can AI replace your financial adviser? Why bots still can’t match human judgment.",
-        "keywordEn": "Can AI replace your financial adviser? Why bots still can’t match human judgment.",
+        "keyword": "American Express rides a boom in Platinum cards to its strongest spending growth in years",
+        "keywordEn": "American Express rides a boom in Platinum cards to its strongest spending growth in years",
         "volume": "92K+",
         "volumeRaw": 92800,
         "category": "finance",
@@ -13496,8 +13416,8 @@
       },
       {
         "rank": 5,
-        "keyword": "‘It’s nothing personal’: Should I tell my 96-year-old stepmother that I don’t want her inheritance?",
-        "keywordEn": "‘It’s nothing personal’: Should I tell my 96-year-old stepmother that I don’t want her inheritance?",
+        "keyword": "Can AI replace your financial adviser? Why bots still can’t match human judgment.",
+        "keywordEn": "Can AI replace your financial adviser? Why bots still can’t match human judgment.",
         "volume": "91K+",
         "volumeRaw": 91000,
         "category": "finance",
@@ -13507,8 +13427,8 @@
       },
       {
         "rank": 6,
-        "keyword": "Farmers are already set for a $55 billion payday — why does Washington want to give them even more?",
-        "keywordEn": "Farmers are already set for a $55 billion payday — why does Washington want to give them even more?",
+        "keyword": "‘It’s nothing personal’: Should I tell my 96-year-old stepmother that I don’t want her inheritance?",
+        "keywordEn": "‘It’s nothing personal’: Should I tell my 96-year-old stepmother that I don’t want her inheritance?",
         "volume": "89K+",
         "volumeRaw": 89200,
         "category": "finance",
@@ -13518,8 +13438,8 @@
       },
       {
         "rank": 7,
-        "keyword": "Verizon’s stock rises as earnings show the company is no longer a ‘hunting ground’",
-        "keywordEn": "Verizon’s stock rises as earnings show the company is no longer a ‘hunting ground’",
+        "keyword": "Farmers are already set for a $55 billion payday — why does Washington want to give them even more?",
+        "keywordEn": "Farmers are already set for a $55 billion payday — why does Washington want to give them even more?",
         "volume": "87K+",
         "volumeRaw": 87400,
         "category": "finance",
@@ -13529,8 +13449,8 @@
       },
       {
         "rank": 8,
-        "keyword": "‘We are not romantically involved’: I’m marrying my platonic best friend of 20 years. Should I leave him my home?",
-        "keywordEn": "‘We are not romantically involved’: I’m marrying my platonic best friend of 20 years. Should I leave him my home?",
+        "keyword": "Verizon’s stock rises as earnings show the company is no longer a ‘hunting ground’",
+        "keywordEn": "Verizon’s stock rises as earnings show the company is no longer a ‘hunting ground’",
         "volume": "85K+",
         "volumeRaw": 85600,
         "category": "finance",
@@ -13540,8 +13460,8 @@
       },
       {
         "rank": 9,
-        "keyword": "Why fixing the housing crisis for under-40s could trigger 10% Treasury yields",
-        "keywordEn": "Why fixing the housing crisis for under-40s could trigger 10% Treasury yields",
+        "keyword": "‘We are not romantically involved’: I’m marrying my platonic best friend of 20 years. Should I leave him my home?",
+        "keywordEn": "‘We are not romantically involved’: I’m marrying my platonic best friend of 20 years. Should I leave him my home?",
         "volume": "83K+",
         "volumeRaw": 83800,
         "category": "finance",
@@ -13551,8 +13471,8 @@
       },
       {
         "rank": 10,
-        "keyword": "I will definitely claim Social Security early. Why do so few people talk about the elephant in the room?",
-        "keywordEn": "I will definitely claim Social Security early. Why do so few people talk about the elephant in the room?",
+        "keyword": "Why fixing the housing crisis for under-40s could trigger 10% Treasury yields",
+        "keywordEn": "Why fixing the housing crisis for under-40s could trigger 10% Treasury yields",
         "volume": "82K+",
         "volumeRaw": 82000,
         "category": "finance",
@@ -14246,8 +14166,8 @@
       },
       {
         "rank": 23,
-        "keyword": "Why is it so special to be part of Team Scotland?",
-        "keywordEn": "Why is it so special to be part of Team Scotland?",
+        "keyword": "LA Dodgers and MVP Ohtani launch summer of live baseball on BBC",
+        "keywordEn": "LA Dodgers and MVP Ohtani launch summer of live baseball on BBC",
         "volume": "173K+",
         "volumeRaw": 173500,
         "category": "sports",
@@ -14257,8 +14177,8 @@
       },
       {
         "rank": 24,
-        "keyword": "Man Utd bring in Leicester goalkeeper Leitzig",
-        "keywordEn": "Man Utd bring in Leicester goalkeeper Leitzig",
+        "keyword": "Why is it so special to be part of Team Scotland?",
+        "keywordEn": "Why is it so special to be part of Team Scotland?",
         "volume": "168K+",
         "volumeRaw": 168000,
         "category": "sports",
@@ -14268,8 +14188,8 @@
       },
       {
         "rank": 25,
-        "keyword": "Who am I? Guess The Hundred cricket star No 4",
-        "keywordEn": "Who am I? Guess The Hundred cricket star No 4",
+        "keyword": "Man Utd bring in Leicester goalkeeper Leitzig",
+        "keywordEn": "Man Utd bring in Leicester goalkeeper Leitzig",
         "volume": "162K+",
         "volumeRaw": 162500,
         "category": "sports",
@@ -14455,8 +14375,8 @@
       },
       {
         "rank": 42,
-        "keyword": "The feminist netball pioneer who set out to build 'physically perfect' women",
-        "keywordEn": "The feminist netball pioneer who set out to build 'physically perfect' women",
+        "keyword": "Who am I? Guess The Hundred cricket star No 4",
+        "keywordEn": "Who am I? Guess The Hundred cricket star No 4",
         "volume": "69K+",
         "volumeRaw": 69000,
         "category": "sports",
@@ -14466,8 +14386,8 @@
       },
       {
         "rank": 43,
-        "keyword": "Devlin opens up on 'too stressful' Hearts exit for Rangers",
-        "keywordEn": "Devlin opens up on 'too stressful' Hearts exit for Rangers",
+        "keyword": "The feminist netball pioneer who set out to build 'physically perfect' women",
+        "keywordEn": "The feminist netball pioneer who set out to build 'physically perfect' women",
         "volume": "63K+",
         "volumeRaw": 63500,
         "category": "sports",
@@ -14477,8 +14397,8 @@
       },
       {
         "rank": 44,
-        "keyword": "Alonso optimistic about Aston Martin upgrade - will it decide his future?",
-        "keywordEn": "Alonso optimistic about Aston Martin upgrade - will it decide his future?",
+        "keyword": "Devlin opens up on 'too stressful' Hearts exit for Rangers",
+        "keywordEn": "Devlin opens up on 'too stressful' Hearts exit for Rangers",
         "volume": "58K+",
         "volumeRaw": 58000,
         "category": "sports",
@@ -14560,17 +14480,17 @@
     "topTrend": {
       "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
       "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
-      "country": "NG",
+      "country": "IN",
       "volume": "47M+",
-      "flag": "🇳🇬",
+      "flag": "🇮🇳",
       "category": "movies",
       "source": "youtube"
     },
     "topByCategory": {
       "movies": {
         "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
-        "country": "NG",
-        "flag": "🇳🇬",
+        "country": "IN",
+        "flag": "🇮🇳",
         "volume": "47M+",
         "temperature": 98
       },
@@ -14596,7 +14516,7 @@
         "temperature": 84
       },
       "finance": {
-        "keyword": "A panicking Fed is just what the bond market needs, says Bank of America’s chief strategist",
+        "keyword": "My second husband and I have kids from previous relationships. Should my house go to him or my children if I die first?",
         "country": "MarketWatch",
         "flag": "📈",
         "volume": "98K+",
@@ -14612,12 +14532,12 @@
     },
     "totalCountries": 36,
     "totalTrends": 719,
-    "nextUpdate": "2026-07-24T13:59:54.740446+00:00",
+    "nextUpdate": "2026-07-24T14:03:32.420451+00:00",
     "risingFast": [
       {
         "keyword": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
         "keywordEn": "Avengers: Doomsday | Official Trailer | In Theaters December 18",
-        "country": "NG",
+        "country": "IN",
         "change": "47M+"
       },
       {
@@ -14635,7 +14555,7 @@
     ],
     "categoryBreakdown": {
       "news": 57,
-      "movies": 17,
+      "movies": 16,
       "music": 9,
       "sports": 7,
       "tech": 6,
@@ -14643,9 +14563,9 @@
     }
   },
   "pipelineStats": {
-    "startTime": "2026-07-24T12:57:23.240520+00:00",
-    "endTime": "2026-07-24T12:59:54.740638+00:00",
-    "duration": 151,
+    "startTime": "2026-07-24T13:00:45.176702+00:00",
+    "endTime": "2026-07-24T13:03:32.420663+00:00",
+    "duration": 167,
     "successCount": 36,
     "errorCount": 0,
     "blockedKeywords": 0,
