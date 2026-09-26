@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-09-26T23:03:54.760364+00:00",
+  "lastUpdated": "2026-09-26T23:07:24.067403+00:00",
   "sources": {
     "googleTrends": true,
     "youtube": true,
-    "gdelt": false,
+    "gdelt": true,
     "apple": true
   },
   "countries": {
@@ -16,7 +16,7 @@
           "keyword": "The Rescue | Official Trailer (2027 Movie) - Brandon Sklenar, Josh Lucas, Hassie Harrison",
           "keywordEn": "The Rescue | Official Trailer (2027 Movie) - Brandon Sklenar, Josh Lucas, Hassie Harrison",
           "volume": "8M+",
-          "volumeRaw": 8457819,
+          "volumeRaw": 8477309,
           "category": "movies",
           "temperature": 80,
           "velocity": "new",
@@ -32,14 +32,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5861424,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 75,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -48,14 +50,16 @@
           "keyword": "Minecraft LIVE - September 2026",
           "keywordEn": "Minecraft LIVE - September 2026",
           "volume": "2M+",
-          "volumeRaw": 2711438,
+          "volumeRaw": 2724095,
           "category": "news",
           "temperature": 57,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "Game drops! Minecraft Dungeons II! Big news! More!\n \nMinecraft LIVE is back! Watch the community pre-show then learn about everything happening in the wide world of Minecraft in this jam-packed Minecr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9njefMDxzqw",
           "channelTitle": "Minecraft"
         },
@@ -80,7 +84,7 @@
           "keyword": "Taylor Swift - Cleveland! (Official Lyric Video)",
           "keywordEn": "Taylor Swift - Cleveland! (Official Lyric Video)",
           "volume": "1M+",
-          "volumeRaw": 1689496,
+          "volumeRaw": 1690312,
           "category": "news",
           "temperature": 38,
           "velocity": "rising",
@@ -95,8 +99,8 @@
           "rank": 6,
           "keyword": "GTA 6 Collector's Edition is Pathetic",
           "keywordEn": "GTA 6 Collector's Edition is Pathetic",
-          "volume": "709K+",
-          "volumeRaw": 709316,
+          "volume": "717K+",
+          "volumeRaw": 717151,
           "category": "news",
           "temperature": 26,
           "velocity": "steady",
@@ -127,8 +131,8 @@
           "rank": 8,
           "keyword": "Tee Grizzley - Robbery 10 [Official Video]",
           "keywordEn": "Tee Grizzley - Robbery 10 [Official Video]",
-          "volume": "481K+",
-          "volumeRaw": 481769,
+          "volume": "482K+",
+          "volumeRaw": 482188,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -143,8 +147,8 @@
           "rank": 9,
           "keyword": "SLAM TANK - Official Announcement Trailer",
           "keywordEn": "SLAM TANK - Official Announcement Trailer",
-          "volume": "241K+",
-          "volumeRaw": 241437,
+          "volume": "242K+",
+          "volumeRaw": 242149,
           "category": "movies",
           "temperature": 23,
           "velocity": "new",
@@ -160,7 +164,7 @@
           "keyword": "Jarahn - Yu Yah (Audio) feat. Tonton Malele & Nathan Nakikus",
           "keywordEn": "Jarahn - Yu Yah (Audio) feat. Tonton Malele & Nathan Nakikus",
           "volume": "28K+",
-          "volumeRaw": 28515,
+          "volumeRaw": 28522,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -173,61 +177,45 @@
         },
         {
           "rank": 11,
-          "keyword": "guadalajara vs querétaro",
-          "keywordEn": "guadalajara vs querétaro",
-          "volume": "5K+",
-          "volumeRaw": 5000,
+          "keyword": "missouri vs ms state",
+          "keywordEn": "missouri vs ms state",
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
           "temperature": 13,
-          "velocity": "new",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Chivas, con 12 años sin perder en casa ante Gallos"
+            "No. 19 Tigers Prepped for SEC Opener at No. 24 Mississippi State"
           ]
         },
         {
           "rank": 12,
-          "keyword": "texas a&m vs lsu",
-          "keywordEn": "texas a&m vs lsu",
-          "volume": "5K+",
-          "volumeRaw": 5000,
-          "category": "news",
+          "keyword": "uconn football",
+          "keywordEn": "uconn football",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "sports",
           "temperature": 11,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "NO.lsutexasam.092726_5747 MJ.JPG"
+            "American Conference not looking to expand, despite reported interest from schools"
           ]
         },
         {
           "rank": 13,
-          "keyword": "southern miss vs tulane",
-          "keywordEn": "southern miss vs tulane",
+          "keyword": "app state vs nc state",
+          "keywordEn": "app state vs nc state",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 9,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "A look at the most memorable games in Tulane-Southern Miss history"
-          ]
-        },
-        {
-          "rank": 14,
-          "keyword": "app state vs nc state",
-          "keywordEn": "app state vs nc state",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 7,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -236,45 +224,13 @@
           ]
         },
         {
-          "rank": 15,
-          "keyword": "brooklyn",
-          "keywordEn": "brooklyn",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "NYCHA employee killed by falling tree in Brooklyn as nor'easter impacts region"
-          ]
-        },
-        {
-          "rank": 16,
-          "keyword": "angel city fc vs washington spirit",
-          "keywordEn": "angel city fc vs washington spirit",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "(!+!Streams!TV!+!)) Washington Spirit vs Angel City 𝗟𝗶𝘃𝗲 𝗦𝘁𝗿𝗲𝗮𝗺 NWSL 𝗙𝗿𝗲𝗲 𝗼𝗻 𝗧𝗩 Today"
-          ]
-        },
-        {
-          "rank": 17,
+          "rank": 14,
           "keyword": "arizona vs washington st",
           "keywordEn": "arizona vs washington st",
-          "volume": "500",
-          "volumeRaw": 500,
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
-          "temperature": 5,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -284,30 +240,14 @@
           ]
         },
         {
-          "rank": 18,
-          "keyword": "middle tenn. vs jax state",
-          "keywordEn": "middle tenn. vs jax state",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Middle Tennessee Blue Raiders at Jacksonville State Gamecocks Prediction, Picks & Odds for Week 4"
-          ]
-        },
-        {
-          "rank": 19,
+          "rank": 15,
           "keyword": "rinya nakamura",
           "keywordEn": "rinya nakamura",
-          "volume": "500",
-          "volumeRaw": 500,
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -316,9 +256,25 @@
           ]
         },
         {
-          "rank": 20,
-          "keyword": "zavier gozo",
-          "keywordEn": "zavier gozo",
+          "rank": 16,
+          "keyword": "peso mexicano",
+          "keywordEn": "peso mexicano",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "El péndulo cambiario y la ‘resaca’ del peso"
+          ]
+        },
+        {
+          "rank": 17,
+          "keyword": "farm aid 2026",
+          "keywordEn": "farm aid 2026",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
@@ -328,7 +284,55 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "From star to 'worst player': Gozo faces steep learning curve at Crystal Palace"
+            "'Farm Aid 2026' Performers & Set Times: How to Watch Willie Nelson, Neil Young, Dave Matthews & More"
+          ]
+        },
+        {
+          "rank": 18,
+          "keyword": "angel city fc vs washington spirit",
+          "keywordEn": "angel city fc vs washington spirit",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "(!+!Streams!TV!+!)) Washington Spirit vs Angel City 𝗟𝗶𝘃𝗲 𝗦𝘁𝗿𝗲𝗮𝗺 NWSL 𝗙𝗿𝗲𝗲 𝗼𝗻 𝗧𝗩 Today"
+          ]
+        },
+        {
+          "rank": 19,
+          "keyword": "brooklyn",
+          "keywordEn": "brooklyn",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "NYCHA employee killed by falling tree in Brooklyn as nor'easter impacts region"
+          ]
+        },
+        {
+          "rank": 20,
+          "keyword": "miami ohio football",
+          "keywordEn": "miami ohio football",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "sports",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Miami (OH) recovers fumble vs UConn - then hands ball back to Huskies player"
           ]
         }
       ]
@@ -358,7 +362,7 @@
           "keyword": "와.. 진짜 개미쳤습니다.. ≪어벤져스: 엔드게임 앙코르≫ 쿠키 영상 3개 & 모든 떡밥 스포일러 총정리",
           "keywordEn": "와.. 진짜 개미쳤습니다.. ≪어벤져스: 엔드게임 앙코르≫ 쿠키 영상 3개 & 모든 떡밥 스포일러 총정리",
           "volume": "2M+",
-          "volumeRaw": 2535303,
+          "volumeRaw": 2535461,
           "category": "news",
           "temperature": 43,
           "velocity": "rising",
@@ -374,7 +378,7 @@
           "keyword": "Babylon",
           "keywordEn": "Babylon",
           "volume": "2M+",
-          "volumeRaw": 2137248,
+          "volumeRaw": 2138757,
           "category": "news",
           "temperature": 54,
           "velocity": "steady",
@@ -390,7 +394,7 @@
           "keyword": "프로게이머도 두들겨 패고 다닌다는 슈퍼 AI 플루토, 제가 직접 게임해 봤습니다",
           "keywordEn": "프로게이머도 두들겨 패고 다닌다는 슈퍼 AI 플루토, 제가 직접 게임해 봤습니다",
           "volume": "1M+",
-          "volumeRaw": 1395044,
+          "volumeRaw": 1395510,
           "category": "news",
           "temperature": 33,
           "velocity": "rising",
@@ -405,8 +409,8 @@
           "rank": 5,
           "keyword": "감스트 결과 초대박! 2800만원 현질 레전드입니다 FC온라인",
           "keywordEn": "감스트 결과 초대박! 2800만원 현질 레전드입니다 FC온라인",
-          "volume": "668K+",
-          "volumeRaw": 668129,
+          "volume": "669K+",
+          "volumeRaw": 669235,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -437,8 +441,8 @@
           "rank": 7,
           "keyword": "커밍아웃",
           "keywordEn": "커밍아웃",
-          "volume": "426K+",
-          "volumeRaw": 426421,
+          "volume": "427K+",
+          "volumeRaw": 427572,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -454,7 +458,7 @@
           "keyword": "Cover | 晩餐歌 (만찬가) - RIWOO (원곡 : tuki.)",
           "keywordEn": "Cover | 晩餐歌 (만찬가) - RIWOO (원곡 : tuki.)",
           "volume": "376K+",
-          "volumeRaw": 376705,
+          "volumeRaw": 376798,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -486,7 +490,7 @@
           "keyword": "RAIN",
           "keywordEn": "RAIN",
           "volume": "156K+",
-          "volumeRaw": 156076,
+          "volumeRaw": 156098,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -505,22 +509,38 @@
           "volumeRaw": 20000,
           "category": "news",
           "temperature": 13,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "로또 1등 25억씩 12명…자동 선택 명당 10곳 어디"
+          ]
+        },
+        {
+          "rank": 12,
+          "keyword": "왕 즈이",
+          "keywordEn": "왕 즈이",
+          "volume": "10K+",
+          "volumeRaw": 10000,
+          "category": "news",
+          "temperature": 11,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "1243회 로또 1등 12명… 당첨금 각 25.9억원 - 조선비즈"
+            "안세영, 하루 2경기에도 완승…여자 단식 8강 진출"
           ]
         },
         {
-          "rank": 12,
+          "rank": 13,
           "keyword": "심수봉",
           "keywordEn": "심수봉",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 11,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -530,13 +550,13 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 14,
           "keyword": "예금",
           "keywordEn": "예금",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 9,
+          "temperature": 7,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -546,14 +566,14 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 15,
           "keyword": "육상 경기",
           "keywordEn": "육상 경기",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 7,
-          "velocity": "rising",
+          "temperature": 5,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -562,7 +582,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 16,
           "keyword": "100일의 거짓말",
           "keywordEn": "100일의 거짓말",
           "volume": "500",
@@ -578,7 +598,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
           "keyword": "england national football team vs spain national football team standings",
           "keywordEn": "england national football team vs spain national football team standings",
           "volume": "500",
@@ -594,14 +614,14 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 18,
           "keyword": "대통령",
           "keywordEn": "대통령",
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -610,35 +630,19 @@
           ]
         },
         {
-          "rank": 18,
-          "keyword": "박서진",
-          "keywordEn": "박서진",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "첫 친정 방문! 조카 은가은을 위한 가족들의 선물🥰 | KBS 260926 방송"
-          ]
-        },
-        {
           "rank": 19,
-          "keyword": "김혜성",
-          "keywordEn": "김혜성",
-          "volume": "500",
-          "volumeRaw": 500,
+          "keyword": "운수",
+          "keywordEn": "운수",
+          "volume": "100",
+          "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "또 부상자 복귀→김혜성 좌절? 아니 김혜성 편도 있다!…\"이 선수 PS 데려가는 게 합리적일 수도\""
+            "[오늘의 운세] 9월 27일 일요일 (음력 8월 17일) 띠별 운세"
           ]
         },
         {
@@ -649,7 +653,7 @@
           "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -668,7 +672,7 @@
           "keyword": "【地獄】アヌビスが無双しすぎた伝説の配信【パズドラ】",
           "keywordEn": "【地獄】アヌビスが無双しすぎた伝説の配信【パズドラ】",
           "volume": "2M+",
-          "volumeRaw": 2907762,
+          "volumeRaw": 2917412,
           "category": "news",
           "temperature": 47,
           "velocity": "new",
@@ -684,7 +688,7 @@
           "keyword": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "keywordEn": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "volume": "2M+",
-          "volumeRaw": 2547976,
+          "volumeRaw": 2551272,
           "category": "movies",
           "temperature": 58,
           "velocity": "rising",
@@ -707,7 +711,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "◆モンストWebショップ「プレゼントキャンペーン」アクセスはこちら！\nhttps://webshop.monster-strike.com/present/sku-be3fef20-44b8-4309-8dd0-46c51c1459a6/present_20260926\n\n＼モンストの13周年をお祝いする「宴」を配信でお届け！／\n\n「MONST FREAK 2026 13th Anniversar",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "i2PaLdvSESY",
           "channelTitle": "モンスト（モンスターストライク）公式"
         },
@@ -732,7 +738,7 @@
           "keyword": "【Kanaria×葛葉】アイデンティティ【セルフカバー】",
           "keywordEn": "【Kanaria×葛葉】アイデンティティ【セルフカバー】",
           "volume": "1M+",
-          "volumeRaw": 1257313,
+          "volumeRaw": 1257733,
           "category": "news",
           "temperature": 31,
           "velocity": "steady",
@@ -748,7 +754,7 @@
           "keyword": "坂道選抜(乃木坂46×櫻坂46×日向坂46)「Audition」MUSIC VIDEO",
           "keywordEn": "坂道選抜(乃木坂46×櫻坂46×日向坂46)「Audition」MUSIC VIDEO",
           "volume": "861K+",
-          "volumeRaw": 861928,
+          "volumeRaw": 861929,
           "category": "music",
           "temperature": 27,
           "velocity": "new",
@@ -771,7 +777,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "フォートナイト世界大会の日本語生放送は現地からお届けします！\n\n実況：平岩 康佑\n解説：ポルス\n\nフォートナイト最大の対戦イベントが初めてベルギーに上陸。\nアントワープのLotto Arenaにて、観戦チケットが完売となった白熱の戦いが2日間にわたって繰り広げられます。\n\n9月26日から9月27日(米国時間)に、フォートナイトの世界のデュオ50組が、2026年フォートナイト グローバルチャンピオン",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "oZjktuzqQGY",
           "channelTitle": "フォートナイト 公式"
         },
@@ -803,7 +811,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "ベストアルバム「MILESixTONES - Best Tracks -」と同じタイトルを冠し、2026年1〜6月に行われた、グループ史上最多の全国11都市50公演のアリーナツアー\n「MILESixTONES（マイルストーンズ）」。\nそのツアーから、3月26日に行われた「MILESixTONES」横浜アリーナ公演2日目を映像化し、ライブDVD・Blu-rayとしてリリース。\n今回は、ライブ本編から",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "RaveH8rwqoo",
           "channelTitle": "SixTONES"
         },
@@ -992,7 +1002,7 @@
           "keyword": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "keywordEn": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "volume": "7M+",
-          "volumeRaw": 7525986,
+          "volumeRaw": 7525991,
           "category": "music",
           "temperature": 85,
           "velocity": "new",
@@ -1008,14 +1018,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5861424,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 75,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -1024,14 +1036,16 @@
           "keyword": "Minecraft LIVE - September 2026",
           "keywordEn": "Minecraft LIVE - September 2026",
           "volume": "2M+",
-          "volumeRaw": 2711438,
+          "volumeRaw": 2724095,
           "category": "news",
           "temperature": 57,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "Game drops! Minecraft Dungeons II! Big news! More!\n \nMinecraft LIVE is back! Watch the community pre-show then learn about everything happening in the wide world of Minecraft in this jam-packed Minecr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9njefMDxzqw",
           "channelTitle": "Minecraft"
         },
@@ -1056,7 +1070,7 @@
           "keyword": "Taylor Swift - Patient Zero (Official Lyric Video)",
           "keywordEn": "Taylor Swift - Patient Zero (Official Lyric Video)",
           "volume": "1M+",
-          "volumeRaw": 1455407,
+          "volumeRaw": 1458039,
           "category": "news",
           "temperature": 37,
           "velocity": "rising",
@@ -1072,14 +1086,16 @@
           "keyword": "Refugee (Official Music Video) Jordan Sandhu | Latest Punjabi Songs 2026",
           "keywordEn": "Refugee (Official Music Video) Jordan Sandhu | Latest Punjabi Songs 2026",
           "volume": "1M+",
-          "volumeRaw": 1359031,
+          "volumeRaw": 1359982,
           "category": "music",
           "temperature": 34,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "AUDIO CREDITS\nSong: Refugee\nAlbum: God's Favorite \nSinger: Jordan Sandhu\nLyricist & Composer: Kaptaan\n\n\nVIDEO CREDITS\nVideo: Rupan Bal x Dilpreet VFX films \nProduction Producer - Yashvi Mulchandani \nD",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "gYmf-Eqkstw",
           "channelTitle": "Jordan Sandhu"
         },
@@ -1103,8 +1119,8 @@
           "rank": 8,
           "keyword": "The Sidemen Iceberg... But Wider",
           "keywordEn": "The Sidemen Iceberg... But Wider",
-          "volume": "194K+",
-          "volumeRaw": 194423,
+          "volume": "196K+",
+          "volumeRaw": 196268,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -1120,14 +1136,16 @@
           "keyword": "WERWULF Official Trailer 2 (2026) Aaron Taylor-Johnson, Willem Dafoe",
           "keywordEn": "WERWULF Official Trailer 2 (2026) Aaron Taylor-Johnson, Willem Dafoe",
           "volume": "47K+",
-          "volumeRaw": 47276,
+          "volumeRaw": 47605,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "WERWULF Official Trailer 2 (2026) Aaron Taylor-Johnson, Willem Dafoe, Lily-Rose Depp, Robert Eggers\n© 2026 - Focus Features",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "SRCRl1glx8s",
           "channelTitle": "ONE Media"
         },
@@ -1136,7 +1154,7 @@
           "keyword": "Unauthorised Absence | Trailer",
           "keywordEn": "Unauthorised Absence | Trailer",
           "volume": "8K+",
-          "volumeRaw": 8589,
+          "volumeRaw": 8607,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -1181,12 +1199,12 @@
         },
         {
           "rank": 13,
-          "keyword": "josiah harrell",
-          "keywordEn": "josiah harrell",
+          "keyword": "elves brener",
+          "keywordEn": "elves brener",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 14,
+          "temperature": 9,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -1203,7 +1221,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 7,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -1224,7 +1242,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Deacon Phillippe Knows He’s ‘Extremely Lucky’ as He Launches Acting Career — but Vows to ‘Work Extremely Hard’"
+            "Deacon Phillippe Gets Support from Mom Reese Witherspoon & Sister Ava Phillippe at 'Brother Save Us' Premiere in Nashville!"
           ]
         },
         {
@@ -1240,7 +1258,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Four TS postcodes among latest Postcode Lottery winners this week"
+            "The 13 North East postcodes to scoop prizes on the Postcode Lottery last week"
           ]
         },
         {
@@ -1251,7 +1269,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -1277,18 +1295,18 @@
         },
         {
           "rank": 19,
-          "keyword": "justin verlander",
-          "keywordEn": "justin verlander",
-          "volume": "200",
-          "volumeRaw": 200,
+          "keyword": "rodolfo bellato",
+          "keywordEn": "rodolfo bellato",
+          "volume": "100",
+          "volumeRaw": 100,
           "category": "news",
           "temperature": 5,
-          "velocity": "steady",
+          "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Tigers, Astros Legend Justin Verlander Sends Blue Jays Message Just Before Final Start"
+            "Prediction, pick for Rodolfo Bellato vs. Christian Edwards at UFC Vegas 121"
           ]
         },
         {
@@ -1318,14 +1336,16 @@
           "keyword": "Minecraft LIVE - September 2026",
           "keywordEn": "Minecraft LIVE - September 2026",
           "volume": "2M+",
-          "volumeRaw": 2711438,
+          "volumeRaw": 2724095,
           "category": "news",
           "temperature": 61,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "Game drops! Minecraft Dungeons II! Big news! More!\n \nMinecraft LIVE is back! Watch the community pre-show then learn about everything happening in the wide world of Minecraft in this jam-packed Minecr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9njefMDxzqw",
           "channelTitle": "Minecraft"
         },
@@ -1350,7 +1370,7 @@
           "keyword": "Taylor Swift - Patient Zero (Official Lyric Video)",
           "keywordEn": "Taylor Swift - Patient Zero (Official Lyric Video)",
           "volume": "1M+",
-          "volumeRaw": 1455407,
+          "volumeRaw": 1458039,
           "category": "news",
           "temperature": 41,
           "velocity": "rising",
@@ -1382,7 +1402,7 @@
           "keyword": "DAY DRINKER Trailer German Deutsch (2027) Johnny Depp, Penélope Cruz",
           "keywordEn": "DAY DRINKER Trailer German Deutsch (2027) Johnny Depp, Penélope Cruz",
           "volume": "339K+",
-          "volumeRaw": 339436,
+          "volumeRaw": 339737,
           "category": "movies",
           "temperature": 26,
           "velocity": "rising",
@@ -1398,7 +1418,7 @@
           "keyword": "SAMRA x CAPITAL BRA x FINJA – RAUCHEN IST TÖDLICH [Official Video]",
           "keywordEn": "SAMRA x CAPITAL BRA x FINJA – RAUCHEN IST TÖDLICH [Official Video]",
           "volume": "297K+",
-          "volumeRaw": 297223,
+          "volumeRaw": 297525,
           "category": "news",
           "temperature": 24,
           "velocity": "new",
@@ -1414,7 +1434,7 @@
           "keyword": "ICH HABE 10 MIO COINS IN SPIELER INVESTIERT + ERSTES EA FC EVENT, RIVALS GRIND, TALKS & MEHR!🎮🔥",
           "keywordEn": "ICH HABE 10 MIO COINS IN SPIELER INVESTIERT + ERSTES EA FC EVENT, RIVALS GRIND, TALKS & MEHR!🎮🔥",
           "volume": "206K+",
-          "volumeRaw": 206054,
+          "volumeRaw": 206544,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -1430,7 +1450,7 @@
           "keyword": "Ich BANNE meinen BESTEN FREUND PERMANENT in MINECRAFT HELDEN 3!",
           "keywordEn": "Ich BANNE meinen BESTEN FREUND PERMANENT in MINECRAFT HELDEN 3!",
           "volume": "118K+",
-          "volumeRaw": 118552,
+          "volumeRaw": 118807,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -1446,7 +1466,7 @@
           "keyword": "ERNIM x MC KRESHA - MALLI",
           "keywordEn": "ERNIM x MC KRESHA - MALLI",
           "volume": "38K+",
-          "volumeRaw": 38554,
+          "volumeRaw": 38980,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -1462,14 +1482,16 @@
           "keyword": "DIE SCHATZINSEL Trailer German Deutsch (2026) David Oyelowo",
           "keywordEn": "DIE SCHATZINSEL Trailer German Deutsch (2026) David Oyelowo",
           "volume": "13K+",
-          "volumeRaw": 13346,
+          "volumeRaw": 13356,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Offizieller \"Die Schatzinsel Staffel 1\" Trailer Deutsch German 2026 | Abonnieren ➤ https://abo.yt/kch | (OT: Treasure Island) David Oyelowo Serie Trailer | MGM+: 11 Okt 2026 | Filminfos https://KinoCh",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "-y5E9UrbkRw",
           "channelTitle": "KinoCheck Heimkino"
         },
@@ -1486,7 +1508,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "England vs Spain - Prediction, where to watch, kick-off time and line-ups 26-09-2026"
+            "England 2-3 Spain commentary"
           ]
         },
         {
@@ -1523,34 +1545,34 @@
         },
         {
           "rank": 14,
-          "keyword": "serpico",
-          "keywordEn": "serpico",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 7,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Jetzt bei Amazon: In diesem Krimi-Meisterwerk seht ihr eine der besten Hollywood-Leistungen aller Zeiten"
-          ]
-        },
-        {
-          "rank": 15,
           "keyword": "masked singer 2026",
           "keywordEn": "masked singer 2026",
           "volume": "500",
           "volumeRaw": 500,
           "category": "music",
-          "temperature": 5,
-          "velocity": "rising",
+          "temperature": 7,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "The Masked Singer: Stefan Mross fliegt raus und auch DSDS-Sieger wird enthüllt"
+          ]
+        },
+        {
+          "rank": 15,
+          "keyword": "sloop",
+          "keywordEn": "sloop",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 15,
+          "velocity": "rising",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Vissersbond tempert enthousiasme over terugkeer puls"
           ]
         },
         {
@@ -1593,7 +1615,7 @@
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -1676,7 +1698,7 @@
           "keyword": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "keywordEn": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "volume": "7M+",
-          "volumeRaw": 7525986,
+          "volumeRaw": 7525991,
           "category": "music",
           "temperature": 81,
           "velocity": "rising",
@@ -1692,7 +1714,7 @@
           "keyword": "Vibe Venuma - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | VJ Siddhu | Harshath Khan",
           "keywordEn": "Vibe Venuma - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | VJ Siddhu | Harshath Khan",
           "volume": "6M+",
-          "volumeRaw": 6205056,
+          "volumeRaw": 6205449,
           "category": "music",
           "temperature": 68,
           "velocity": "new",
@@ -1724,14 +1746,16 @@
           "keyword": "[HINDI] BMSD 2026 | Qualifiers Week 2 | Day 2 #BGMILIVE",
           "keywordEn": "[HINDI] BMSD 2026 | Qualifiers Week 2 | Day 2 #BGMILIVE",
           "volume": "3M+",
-          "volumeRaw": 3764921,
+          "volumeRaw": 3765094,
           "category": "news",
           "temperature": 41,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Book your tickets now: https://bit.ly/BMSD2026Tickets\n\nThe fight For The Throne begins now. 👑\n\nBMSD 2026 brings 48 teams into a high-stakes battle where every match can change the road ahead.\n\nPlaying",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "kZb2_awelIY",
           "channelTitle": "KRAFTON INDIA ESPORTS"
         },
@@ -1740,14 +1764,16 @@
           "keyword": "🔴 [Hindi] Point Rush - Grand Finals | TEZ FFMIC 2026 Fall",
           "keywordEn": "🔴 [Hindi] Point Rush - Grand Finals | TEZ FFMIC 2026 Fall",
           "volume": "3M+",
-          "volumeRaw": 3031088,
+          "volumeRaw": 3031189,
           "category": "news",
           "temperature": 36,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "GRAND FINALS of TEZ FFMIC 2026 Fall is finally here!\nAfter a long journey that started in May 2026, we have the top 12 teams that have made it to Noida Indoor Stadium, Noida, where they will fight to ",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9ss7yrlMi0o",
           "channelTitle": "Free Fire MAX Esports India Official"
         },
@@ -1756,14 +1782,16 @@
           "keyword": "Teaser | Power Star Pawan Singh & Shilpi Raj | लहंगा लहके लहके | Lehanga Lahke Lahke | New Song 2026",
           "keywordEn": "Teaser | Power Star Pawan Singh & Shilpi Raj | लहंगा लहके लहके | Lehanga Lahke Lahke | New Song 2026",
           "volume": "569K+",
-          "volumeRaw": 569383,
+          "volumeRaw": 569653,
           "category": "music",
           "temperature": 21,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Make Reels Link : \n--------------------------------------------------------------------------------------\n♫ Song Credit ♫\n➤ Album : Lehanga Lahke Lahke\n➤ Singer : Power Star Pawan Singh & Shilpi Raj\n➤",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "3Ndr-aGLKEs",
           "channelTitle": "MMB Records"
         },
@@ -1772,14 +1800,16 @@
           "keyword": "Bappa Chalale Aaplya Gavala | Bappa Chalale | Ganpati Visarjan Song 2026 | गणपती विसर्जन | AKASH HTR",
           "keywordEn": "Bappa Chalale Aaplya Gavala | Bappa Chalale | Ganpati Visarjan Song 2026 | गणपती विसर्जन | AKASH HTR",
           "volume": "394K+",
-          "volumeRaw": 394057,
+          "volumeRaw": 394062,
           "category": "music",
           "temperature": 18,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "Bappa Chalale Aaplya Gavala | Bappa Chalale Aaplya Gavala Song | Bappa Chalale | Bappa Chalale Ganpati Song | Bappa Chalale Visarjan Song | Ganpati Visarjan Song | Ganpati Visarjan Song 2026 | Ganpati",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "31Y2HjF_Wo8",
           "channelTitle": "DJ AKASH HTR"
         },
@@ -1788,14 +1818,16 @@
           "keyword": "RAJINI THE JAILER 2 - Hindi Trailer | Rajinikanth | Sun Pictures | Anirudh | Nelson | 15 Oct 2026",
           "keywordEn": "RAJINI THE JAILER 2 - Hindi Trailer | Rajinikanth | Sun Pictures | Anirudh | Nelson | 15 Oct 2026",
           "volume": "335K+",
-          "volumeRaw": 335422,
+          "volumeRaw": 335740,
           "category": "movies",
           "temperature": 16,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Jailer 2 Hindi Trailer starring Superstar Rajinikanth as Tiger Muthuvel Pandian, directed by Nelson Dilipkumar and featuring music by Anirudh Ravichander.\n\nJailer 2 is the highly anticipated sequel to",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "FCT4hDYZRRY",
           "channelTitle": "Aniket Nikam Creations"
         },
@@ -1812,7 +1844,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Lamine Yamal scores a goal of historic proportions for Spain in England | Goal.com India"
+            "Blaugrana face-off at Wembley"
           ]
         },
         {
@@ -1823,7 +1855,7 @@
           "volumeRaw": 2000,
           "category": "news",
           "temperature": 16,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -1886,9 +1918,9 @@
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 10,
+          "temperature": 15,
           "velocity": "new",
-          "isGlobal": false,
+          "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -1913,6 +1945,22 @@
         },
         {
           "rank": 18,
+          "keyword": "anahat singh",
+          "keywordEn": "anahat singh",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Anahat rallies to storm into final of women”s singles squash"
+          ]
+        },
+        {
+          "rank": 19,
           "keyword": "james garner",
           "keywordEn": "james garner",
           "volume": "200",
@@ -1928,35 +1976,19 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "keyword": "mikel oyarzabal",
           "keywordEn": "mikel oyarzabal",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "Tres descartes de España para enfrentarse a Inglaterra y los dorsales asignados"
-          ]
-        },
-        {
-          "rank": 20,
-          "keyword": "photo",
-          "keywordEn": "photo",
-          "volume": "100",
-          "volumeRaw": 100,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Saginaw CEO in viral 'Lake America' post voices AI concerns"
           ]
         }
       ]
@@ -2002,7 +2034,7 @@
           "keyword": "COMPLETO - FREE FIRE AO VIVO: FFWS BRASIL SPLIT 2 - FASE RUMO AO MUNDIAL | RODADA 17",
           "keywordEn": "COMPLETO - FREE FIRE AO VIVO: FFWS BRASIL SPLIT 2 - FASE RUMO AO MUNDIAL | RODADA 17",
           "volume": "789K+",
-          "volumeRaw": 789094,
+          "volumeRaw": 789477,
           "category": "news",
           "temperature": 32,
           "velocity": "rising",
@@ -2017,8 +2049,8 @@
           "rank": 4,
           "keyword": "7 Minutoz - SOU DEUS | Capitão Pátria (The Boys)",
           "keywordEn": "7 Minutoz - SOU DEUS | Capitão Pátria (The Boys)",
-          "volume": "375K+",
-          "volumeRaw": 375356,
+          "volume": "376K+",
+          "volumeRaw": 376027,
           "category": "news",
           "temperature": 28,
           "velocity": "steady",
@@ -2033,8 +2065,8 @@
           "rank": 5,
           "keyword": "Sobrevivi 100 dias como PEDRA",
           "keywordEn": "Sobrevivi 100 dias como PEDRA",
-          "volume": "285K+",
-          "volumeRaw": 285739,
+          "volume": "287K+",
+          "volumeRaw": 287459,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -2065,8 +2097,8 @@
           "rank": 7,
           "keyword": "Allê no Beat - PERNILONGO (Clipe Oficial)",
           "keywordEn": "Allê no Beat - PERNILONGO (Clipe Oficial)",
-          "volume": "58K+",
-          "volumeRaw": 58900,
+          "volume": "59K+",
+          "volumeRaw": 59044,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -2081,8 +2113,8 @@
           "rank": 8,
           "keyword": "Zé Vaqueiro, Paula Fernandes - Traidor (Clipe Oficial)",
           "keywordEn": "Zé Vaqueiro, Paula Fernandes - Traidor (Clipe Oficial)",
-          "volume": "51K+",
-          "volumeRaw": 51577,
+          "volume": "52K+",
+          "volumeRaw": 52118,
           "category": "news",
           "temperature": 19,
           "velocity": "rising",
@@ -2130,7 +2162,7 @@
           "keyword": "Agora AZEDOU! Quando vai sair o TRAILER de Poppy Playtime 6?",
           "keywordEn": "Agora AZEDOU! Quando vai sair o TRAILER de Poppy Playtime 6?",
           "volume": "26K+",
-          "volumeRaw": 26472,
+          "volumeRaw": 26659,
           "category": "movies",
           "temperature": 13,
           "velocity": "new",
@@ -2154,7 +2186,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Santos e Neymar lamentam morte de Naty Potira, torcedora do clube: 'Torça por nós aí de cima'"
+            "Morre Naty Potira, influenciadora homenageada por Neymar, aos 39 anos"
           ]
         },
         {
@@ -2293,8 +2325,8 @@
           "rank": 1,
           "keyword": "CES JEUX QUI M'ONT MARQUÉ -  SKYRIM..... Mais pas vraiment.",
           "keywordEn": "CES JEUX QUI M'ONT MARQUÉ -  SKYRIM..... Mais pas vraiment.",
-          "volume": "962K+",
-          "volumeRaw": 962856,
+          "volume": "964K+",
+          "volumeRaw": 964138,
           "category": "news",
           "temperature": 37,
           "velocity": "steady",
@@ -2326,7 +2358,7 @@
           "keyword": "Tiakola, Kuluna, TVLM & Nooche - Bottega (Track5)",
           "keywordEn": "Tiakola, Kuluna, TVLM & Nooche - Bottega (Track5)",
           "volume": "314K+",
-          "volumeRaw": 314040,
+          "volumeRaw": 314348,
           "category": "news",
           "temperature": 30,
           "velocity": "new",
@@ -2341,8 +2373,8 @@
           "rank": 4,
           "keyword": "ILS IMITENT MIEUX SQUEEZIE QUE MOI..? (Mimic Party)",
           "keywordEn": "ILS IMITENT MIEUX SQUEEZIE QUE MOI..? (Mimic Party)",
-          "volume": "257K+",
-          "volumeRaw": 257864,
+          "volume": "260K+",
+          "volumeRaw": 260268,
           "category": "news",
           "temperature": 28,
           "velocity": "rising",
@@ -2358,7 +2390,7 @@
           "keyword": "Anouk - Ta peau (Clip officiel)",
           "keywordEn": "Anouk - Ta peau (Clip officiel)",
           "volume": "183K+",
-          "volumeRaw": 183270,
+          "volumeRaw": 183515,
           "category": "news",
           "temperature": 25,
           "velocity": "steady",
@@ -2389,8 +2421,8 @@
           "rank": 7,
           "keyword": "Mariam Ba LAGARÉ - C’est Doux ( Vidéo Clip Officiel)",
           "keywordEn": "Mariam Ba LAGARÉ - C’est Doux ( Vidéo Clip Officiel)",
-          "volume": "90K+",
-          "volumeRaw": 90520,
+          "volume": "91K+",
+          "volumeRaw": 91382,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -2406,14 +2438,16 @@
           "keyword": "HUNGRY Bande Annonce VF (2026)",
           "keywordEn": "HUNGRY Bande Annonce VF (2026)",
           "volume": "65K+",
-          "volumeRaw": 65752,
+          "volumeRaw": 65826,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "✩ Les Films à VOIR ?  Ils sont ICI ► https://www.youtube.com/playlist?list=PL843D2ED8D80FA673\n\nHUNGRY Bande Annonce VF (2026) Hippopotame\n© 2026 - Program Store",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "OuA2Z-DtLtU",
           "channelTitle": "FilmsActu"
         },
@@ -2422,7 +2456,7 @@
           "keyword": "MAHERSHALA ALI défonce KEVIN FEIGE et la bande-annonce du film de l'année ! (polémique IA France...)",
           "keywordEn": "MAHERSHALA ALI défonce KEVIN FEIGE et la bande-annonce du film de l'année ! (polémique IA France...)",
           "volume": "36K+",
-          "volumeRaw": 36421,
+          "volumeRaw": 36476,
           "category": "movies",
           "temperature": 17,
           "velocity": "new",
@@ -2438,14 +2472,16 @@
           "keyword": "Bande-annonce : la semaine du 28 au 2 octobre 2026",
           "keywordEn": "Bande-annonce : la semaine du 28 au 2 octobre 2026",
           "volume": "35K+",
-          "volumeRaw": 35848,
+          "volumeRaw": 35925,
           "category": "news",
           "temperature": 15,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "____________\n\n📺 Tous les épisodes d'#UnSiGrandSoleil sont sur france.tv : https://www.france.tv/france-3/un-si-grand-soleil/\n\n🎧 Notre podcast est disponible sur toutes les plateformes de streaming aud",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "QgM-FNVB3Pk",
           "channelTitle": "Un si grand soleil - France Télévisions"
         },
@@ -2636,7 +2672,7 @@
           "keyword": "GHOSTFACE KILLAH  (Official Video) | Sidhu Moose Wala | Mxrci | Navkaran Brar",
           "keywordEn": "GHOSTFACE KILLAH  (Official Video) | Sidhu Moose Wala | Mxrci | Navkaran Brar",
           "volume": "17M+",
-          "volumeRaw": 17613947,
+          "volumeRaw": 17615222,
           "category": "news",
           "temperature": 81,
           "velocity": "steady",
@@ -2652,7 +2688,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 85,
           "velocity": "rising",
@@ -2668,7 +2704,7 @@
           "keyword": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "keywordEn": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "volume": "7M+",
-          "volumeRaw": 7525986,
+          "volumeRaw": 7525991,
           "category": "music",
           "temperature": 79,
           "velocity": "rising",
@@ -2684,7 +2720,7 @@
           "keyword": "Trapped Until I Get Every Minecraft Advancement",
           "keywordEn": "Trapped Until I Get Every Minecraft Advancement",
           "volume": "3M+",
-          "volumeRaw": 3439960,
+          "volumeRaw": 3442444,
           "category": "news",
           "temperature": 47,
           "velocity": "rising",
@@ -2716,7 +2752,7 @@
           "keyword": "Playing TAG with my Friends is Always Terrifying",
           "keywordEn": "Playing TAG with my Friends is Always Terrifying",
           "volume": "2M+",
-          "volumeRaw": 2167253,
+          "volumeRaw": 2169859,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
@@ -2732,7 +2768,7 @@
           "keyword": "DAY DRINKER Official Trailer (2027) Johnny Depp",
           "keywordEn": "DAY DRINKER Official Trailer (2027) Johnny Depp",
           "volume": "1M+",
-          "volumeRaw": 1620576,
+          "volumeRaw": 1622080,
           "category": "movies",
           "temperature": 32,
           "velocity": "new",
@@ -2748,7 +2784,7 @@
           "keyword": "The Hunt for Minecraft’s Strongest Item",
           "keywordEn": "The Hunt for Minecraft’s Strongest Item",
           "volume": "1M+",
-          "volumeRaw": 1555368,
+          "volumeRaw": 1557072,
           "category": "news",
           "temperature": 24,
           "velocity": "steady",
@@ -2764,7 +2800,7 @@
           "keyword": "5-Year-Old PRODIGY Records \"My Way\" in the Studio! 🎙️✨",
           "keywordEn": "5-Year-Old PRODIGY Records \"My Way\" in the Studio! 🎙️✨",
           "volume": "618K+",
-          "volumeRaw": 618229,
+          "volumeRaw": 618362,
           "category": "news",
           "temperature": 18,
           "velocity": "new",
@@ -2876,7 +2912,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 10,
+          "temperature": 5,
           "velocity": "rising",
           "isGlobal": false,
           "source": "google_trends",
@@ -2944,14 +2980,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5861424,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 77,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -2960,7 +2998,7 @@
           "keyword": "BTS (방탄소년단) ‘Merry Go Round’ Official MV",
           "keywordEn": "BTS (방탄소년단) ‘Merry Go Round’ Official MV",
           "volume": "4M+",
-          "volumeRaw": 4747013,
+          "volumeRaw": 4750721,
           "category": "music",
           "temperature": 64,
           "velocity": "steady",
@@ -2976,7 +3014,7 @@
           "keyword": "Natanael Cano x Tito Double P x Victor Mendivil x Ovi - OLIVIA LA FLAKA [Oficial Video]",
           "keywordEn": "Natanael Cano x Tito Double P x Victor Mendivil x Ovi - OLIVIA LA FLAKA [Oficial Video]",
           "volume": "3M+",
-          "volumeRaw": 3830454,
+          "volumeRaw": 3835978,
           "category": "news",
           "temperature": 48,
           "velocity": "rising",
@@ -3015,7 +3053,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "🐺Minecraft LIVE - Septiembre 26 2026 Español con Bobicraft\nCuenta regresiva de la primera Minecraft Live 2026, 26 de Septiembre10:00 am GMT-6 \n\n🎮 Redes Sociales:\n🟣 Twitch: https://www.twitch.tv/bobicr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "Q0ByOM3APcs",
           "channelTitle": "Bobicraft"
         },
@@ -3037,28 +3077,12 @@
         },
         {
           "rank": 7,
-          "keyword": "Por Esos Ojitos",
-          "keywordEn": "Por Esos Ojitos",
-          "volume": "141K+",
-          "volumeRaw": 141923,
-          "category": "news",
-          "temperature": 21,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "youtube",
-          "description": "Provided to YouTube by Universal Music Group\n\nPor Esos Ojitos · Jorge Duran C · Oswaldo_NR\n\nPor Esos Ojitos\n\n℗ 2026 Universal Music Group México, S.A. de C.V.\n\nReleased on: 2026-09-26\n\nComposer Lyrici",
-          "relatedNews": [],
-          "youtubeId": "WayCzU-nNMc",
-          "channelTitle": "Jorge Duran C - Topic"
-        },
-        {
-          "rank": 8,
           "keyword": "COMPLETÉ TODO MINECRAFT POR PRIMERA VEZ!! pt.1",
           "keywordEn": "COMPLETÉ TODO MINECRAFT POR PRIMERA VEZ!! pt.1",
-          "volume": "141K+",
-          "volumeRaw": 141684,
+          "volume": "143K+",
+          "volumeRaw": 143633,
           "category": "news",
-          "temperature": 19,
+          "temperature": 21,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
@@ -3066,6 +3090,22 @@
           "relatedNews": [],
           "youtubeId": "eh83NV6w2ls",
           "channelTitle": "RazoGames"
+        },
+        {
+          "rank": 8,
+          "keyword": "Por Esos Ojitos",
+          "keywordEn": "Por Esos Ojitos",
+          "volume": "142K+",
+          "volumeRaw": 142379,
+          "category": "news",
+          "temperature": 19,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "youtube",
+          "description": "Provided to YouTube by Universal Music Group\n\nPor Esos Ojitos · Jorge Duran C · Oswaldo_NR\n\nPor Esos Ojitos\n\n℗ 2026 Universal Music Group México, S.A. de C.V.\n\nReleased on: 2026-09-26\n\nComposer Lyrici",
+          "relatedNews": [],
+          "youtubeId": "WayCzU-nNMc",
+          "channelTitle": "Jorge Duran C - Topic"
         },
         {
           "rank": 9,
@@ -3080,7 +3120,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Cruz Azul vs Toluca: alineaciones y probabilidades"
+            "Huiqui sólo piensa en el bicampeonato celeste"
           ]
         },
         {
@@ -3088,7 +3128,7 @@
           "keyword": "Tenzing: conquistando el Everest— Tráiler oficial | Apple TV",
           "keywordEn": "Tenzing: conquistando el Everest— Tráiler oficial | Apple TV",
           "volume": "21K+",
-          "volumeRaw": 21222,
+          "volumeRaw": 21239,
           "category": "tech",
           "temperature": 15,
           "velocity": "new",
@@ -3168,7 +3208,7 @@
           "keyword": "ZAG VENDIÓ MLB | Miracle Power (tráiler) | Discusión | Miraculous Ladybug",
           "keywordEn": "ZAG VENDIÓ MLB | Miracle Power (tráiler) | Discusión | Miraculous Ladybug",
           "volume": "3K+",
-          "volumeRaw": 3661,
+          "volumeRaw": 3703,
           "category": "sports",
           "temperature": 5,
           "velocity": "new",
@@ -3186,7 +3226,7 @@
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 15,
+          "temperature": 20,
           "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
@@ -3270,7 +3310,7 @@
           "keyword": "The Rescue | Official Trailer (2027 Movie) - Brandon Sklenar, Josh Lucas, Hassie Harrison",
           "keywordEn": "The Rescue | Official Trailer (2027 Movie) - Brandon Sklenar, Josh Lucas, Hassie Harrison",
           "volume": "8M+",
-          "volumeRaw": 8457819,
+          "volumeRaw": 8477309,
           "category": "movies",
           "temperature": 80,
           "velocity": "new",
@@ -3286,7 +3326,7 @@
           "keyword": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "keywordEn": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "volume": "7M+",
-          "volumeRaw": 7525986,
+          "volumeRaw": 7525991,
           "category": "music",
           "temperature": 83,
           "velocity": "rising",
@@ -3302,14 +3342,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5861424,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 73,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -3318,14 +3360,16 @@
           "keyword": "Minecraft LIVE - September 2026",
           "keywordEn": "Minecraft LIVE - September 2026",
           "volume": "2M+",
-          "volumeRaw": 2711438,
+          "volumeRaw": 2724095,
           "category": "news",
           "temperature": 55,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "Game drops! Minecraft Dungeons II! Big news! More!\n \nMinecraft LIVE is back! Watch the community pre-show then learn about everything happening in the wide world of Minecraft in this jam-packed Minecr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9njefMDxzqw",
           "channelTitle": "Minecraft"
         },
@@ -3350,7 +3394,7 @@
           "keyword": "Taylor Swift - Cleveland! (Official Lyric Video)",
           "keywordEn": "Taylor Swift - Cleveland! (Official Lyric Video)",
           "volume": "1M+",
-          "volumeRaw": 1689496,
+          "volumeRaw": 1690312,
           "category": "news",
           "temperature": 36,
           "velocity": "new",
@@ -3366,14 +3410,16 @@
           "keyword": "Refugee (Official Music Video) Jordan Sandhu | Latest Punjabi Songs 2026",
           "keywordEn": "Refugee (Official Music Video) Jordan Sandhu | Latest Punjabi Songs 2026",
           "volume": "1M+",
-          "volumeRaw": 1359031,
+          "volumeRaw": 1359982,
           "category": "music",
           "temperature": 32,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "AUDIO CREDITS\nSong: Refugee\nAlbum: God's Favorite \nSinger: Jordan Sandhu\nLyricist & Composer: Kaptaan\n\n\nVIDEO CREDITS\nVideo: Rupan Bal x Dilpreet VFX films \nProduction Producer - Yashvi Mulchandani \nD",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "gYmf-Eqkstw",
           "channelTitle": "Jordan Sandhu"
         },
@@ -3381,8 +3427,8 @@
           "rank": 8,
           "keyword": "No Armor Hardcore - S3 Episode 2 - delirious",
           "keywordEn": "No Armor Hardcore - S3 Episode 2 - delirious",
-          "volume": "426K+",
-          "volumeRaw": 426161,
+          "volume": "428K+",
+          "volumeRaw": 428463,
           "category": "news",
           "temperature": 21,
           "velocity": "steady",
@@ -3397,15 +3443,17 @@
           "rank": 9,
           "keyword": "Halak Gya(Official Video) Gurjas Sidhu Ft Deepak Dhillon | Pooja S Rajput |Latest Punjabi Songs 2026",
           "keywordEn": "Halak Gya(Official Video) Gurjas Sidhu Ft Deepak Dhillon | Pooja S Rajput |Latest Punjabi Songs 2026",
-          "volume": "417K+",
-          "volumeRaw": 417998,
+          "volume": "418K+",
+          "volumeRaw": 418428,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "🎵 HALAK GEYA – Gurjas Sidhu ft. Deepak Dhillon 🎵\n\nPresenting “Halak Geya”, a brand-new Punjabi track by Gurjas Sidhu ft. Deepak Dhillon. Turn up the volume and enjoy the vibes! 🔥\n\n🎤 Singer: Gurjas Sid",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "u10WsRfa7kc",
           "channelTitle": "Gurjas Sidhu"
         },
@@ -3413,8 +3461,8 @@
           "rank": 10,
           "keyword": "SLAM TANK - Official Announcement Trailer",
           "keywordEn": "SLAM TANK - Official Announcement Trailer",
-          "volume": "241K+",
-          "volumeRaw": 241437,
+          "volume": "242K+",
+          "volumeRaw": 242149,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -3486,7 +3534,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "De La Fuente: Spain's success driven by hunger to 'improve'"
+            "Spain are reigning World Cup and European champions. They're just getting started"
           ]
         },
         {
@@ -3596,14 +3644,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5861424,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 77,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -3611,8 +3661,8 @@
           "rank": 2,
           "keyword": "Death Stranding 2 \"Баги, Приколы, Фейлы\"",
           "keywordEn": "Death Stranding 2 \"Баги, Приколы, Фейлы\"",
-          "volume": "594K+",
-          "volumeRaw": 594359,
+          "volume": "597K+",
+          "volumeRaw": 597079,
           "category": "news",
           "temperature": 33,
           "velocity": "new",
@@ -3627,8 +3677,8 @@
           "rank": 3,
           "keyword": "😱 Майнкрафт, но Мы Попали В СТРАШНУЮ ШАХТУ • Улучшения [Полное Прохождение] + Фиксплей",
           "keywordEn": "😱 Майнкрафт, но Мы Попали В СТРАШНУЮ ШАХТУ • Улучшения [Полное Прохождение] + Фиксплей",
-          "volume": "588K+",
-          "volumeRaw": 588248,
+          "volume": "589K+",
+          "volumeRaw": 589406,
           "category": "news",
           "temperature": 31,
           "velocity": "rising",
@@ -3651,7 +3701,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Не знаете, что посмотреть из свежих фильмов? Наш топ-10 новинок уже ждёт вас в отличном качестве! Какой фильм выберете первым?\n\nСамые новые официальные трейлеры к фильмам, сериалам и мультфильмам толь",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "rsrPWXQz36U",
           "channelTitle": "HypeFilms"
         },
@@ -3660,7 +3712,7 @@
           "keyword": "Raikaho - в саду 🎧 Deep Nocter Remix · Desert Soul",
           "keywordEn": "Raikaho - в саду 🎧 Deep Nocter Remix · Desert Soul",
           "volume": "72K+",
-          "volumeRaw": 72561,
+          "volumeRaw": 72592,
           "category": "news",
           "temperature": 25,
           "velocity": "rising",
@@ -3675,8 +3727,8 @@
           "rank": 6,
           "keyword": "Minecraft: THE SIFT UPDATE Official TRAILER Reveal (2027)",
           "keywordEn": "Minecraft: THE SIFT UPDATE Official TRAILER Reveal (2027)",
-          "volume": "57K+",
-          "volumeRaw": 57702,
+          "volume": "58K+",
+          "volumeRaw": 58450,
           "category": "movies",
           "temperature": 23,
           "velocity": "new",
@@ -3692,7 +3744,7 @@
           "keyword": "Широка река (Deep House )",
           "keywordEn": "Широка река (Deep House )",
           "volume": "47K+",
-          "volumeRaw": 47148,
+          "volumeRaw": 47180,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -3708,7 +3760,7 @@
           "keyword": "Ox jonidan",
           "keywordEn": "Ox jonidan",
           "volume": "37K+",
-          "volumeRaw": 37774,
+          "volumeRaw": 37793,
           "category": "news",
           "temperature": 19,
           "velocity": "steady",
@@ -3724,14 +3776,16 @@
           "keyword": "ОБОРОТЕНЬ Русский трейлер 2 (Субтитры, 2026) Вервульф, Роберт Эггерс",
           "keywordEn": "ОБОРОТЕНЬ Русский трейлер 2 (Субтитры, 2026) Вервульф, Роберт Эггерс",
           "volume": "29K+",
-          "volumeRaw": 29400,
+          "volumeRaw": 29724,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Официальный трейлер 2 с русскими субтитрами фильма «Вервульф» (“Оборотень”) 2026 | Новый мрачный исторический хоррор Роберта Эггерса — режиссёра «Маяка»! | В кинотеатрах с 25 декабря 2026 года. | Боль",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "T_y4ex59Yn4",
           "channelTitle": "FRESH Trailers"
         },
@@ -3740,14 +3794,16 @@
           "keyword": "Чеченская песня новая 2026 - ты и я",
           "keywordEn": "Чеченская песня новая 2026 - ты и я",
           "volume": "23K+",
-          "volumeRaw": 23058,
+          "volumeRaw": 23091,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Provided to YouTube by DistroKid\n\nЧеченская песня новая 2026 - ты и я · Nijaradze\n\nЧеченская песня новая 2026 - ты и я\n\n℗ 12098115 Records DK\n\nReleased on: 2026-09-23\n\nBackground Vocals: nijaradze\nAdd",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "TOYXVOdrt_Q",
           "channelTitle": "Nijaradze - Topic"
         },
@@ -3785,12 +3841,28 @@
         },
         {
           "rank": 13,
+          "keyword": "социальный фонд россии",
+          "keywordEn": "социальный фонд россии",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 9,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Соцфонд направит 20 трлн рублей на пенсии и выплаты: сроки индексации в 2027 году"
+          ]
+        },
+        {
+          "rank": 14,
           "keyword": "золотой мяч",
           "keywordEn": "золотой мяч",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 9,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -3800,35 +3872,19 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 15,
           "keyword": "сергей лазарев",
           "keywordEn": "сергей лазарев",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 7,
+          "temperature": 5,
           "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
             "В Ташкенте в экстренном порядке спасали концерт Сергея Лазарева"
-          ]
-        },
-        {
-          "rank": 15,
-          "keyword": "социальный фонд россии",
-          "keywordEn": "социальный фонд россии",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Соцфонд направит 20 трлн рублей на пенсии и выплаты: сроки индексации в 2027 году"
           ]
         },
         {
@@ -3892,7 +3948,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "«Он победит, хоть мне и не нравится». Орловский дал прогноз на бой Росас — Барселос"
+            "Росас — Барселос: когда начало, где смотреть онлайн UFC Fight Night 289, 27 сентября"
           ]
         },
         {
@@ -3922,7 +3978,7 @@
           "keyword": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "keywordEn": "Ashke (Music Video) Karan Aujla  | Mxrci  | Aujla Szn 1",
           "volume": "7M+",
-          "volumeRaw": 7525986,
+          "volumeRaw": 7525991,
           "category": "music",
           "temperature": 85,
           "velocity": "new",
@@ -3954,7 +4010,7 @@
           "keyword": "Sfera Ebbasta - Lontano (Official Video)",
           "keywordEn": "Sfera Ebbasta - Lontano (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1041551,
+          "volumeRaw": 1041885,
           "category": "news",
           "temperature": 34,
           "velocity": "rising",
@@ -3970,7 +4026,7 @@
           "keyword": "Gino Paoli, Paolo Fresu - Quando ti rivedrò (Lyric Video)",
           "keywordEn": "Gino Paoli, Paolo Fresu - Quando ti rivedrò (Lyric Video)",
           "volume": "229K+",
-          "volumeRaw": 229793,
+          "volumeRaw": 229857,
           "category": "news",
           "temperature": 28,
           "velocity": "steady",
@@ -3986,7 +4042,7 @@
           "keyword": "10 SCHERZI da FARE su BROOKHAVEN ROBLOX!",
           "keywordEn": "10 SCHERZI da FARE su BROOKHAVEN ROBLOX!",
           "volume": "185K+",
-          "volumeRaw": 185753,
+          "volumeRaw": 185842,
           "category": "news",
           "temperature": 25,
           "velocity": "steady",
@@ -4017,8 +4073,8 @@
           "rank": 7,
           "keyword": "ROCKY SONO IO | Trailer Ufficiale",
           "keywordEn": "ROCKY SONO IO | Trailer Ufficiale",
-          "volume": "105K+",
-          "volumeRaw": 105905,
+          "volume": "106K+",
+          "volumeRaw": 106350,
           "category": "movies",
           "temperature": 21,
           "velocity": "rising",
@@ -4034,14 +4090,16 @@
           "keyword": "ROCKY SONO IO Trailer Ita Ufficiale (2026)",
           "keywordEn": "ROCKY SONO IO Trailer Ita Ufficiale (2026)",
           "volume": "105K+",
-          "volumeRaw": 105656,
+          "volumeRaw": 105911,
           "category": "movies",
           "temperature": 19,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Non perdetevi questo nuovo trailer ITA ➤ https://www.youtube.com/playlist?list=PL7GV1IWm70gX__Q951sC0oTW-pZZY5ZkA\n\nROCKY SONO IO Trailer Ita Ufficiale (2026)\n© 2026 - Eagle Pictures",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "hRB8Z1PJOIE",
           "channelTitle": "Boxoffice ITALY | Trailers & Clips "
         },
@@ -4066,7 +4124,7 @@
           "keyword": "Confetti",
           "keywordEn": "Confetti",
           "volume": "57K+",
-          "volumeRaw": 57263,
+          "volumeRaw": 57378,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -4295,8 +4353,8 @@
           "rank": 4,
           "keyword": "NADA ES LO QUE PARECE EN ESTE JUEGO... | Super Bear Adventure",
           "keywordEn": "NADA ES LO QUE PARECE EN ESTE JUEGO... | Super Bear Adventure",
-          "volume": "698K+",
-          "volumeRaw": 698556,
+          "volume": "702K+",
+          "volumeRaw": 702265,
           "category": "news",
           "temperature": 40,
           "velocity": "steady",
@@ -4311,15 +4369,17 @@
           "rank": 5,
           "keyword": "DE VUELTA AL BARRIO ✈️ - Grand Theft Auto: San Andreas 2026 #1",
           "keywordEn": "DE VUELTA AL BARRIO ✈️ - Grand Theft Auto: San Andreas 2026 #1",
-          "volume": "350K+",
-          "volumeRaw": 350998,
+          "volume": "353K+",
+          "volumeRaw": 353570,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "Primer día de la nueva serie del mejor GTA que se ha hecho, San Andreas. Esta vez, con mods. Cosas básicas que no cambian la experiencia vanilla. Qué ganas de gozarnos esto durante días jugando tranqu",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "DnZI4hErCho",
           "channelTitle": "IlloJuan"
         },
@@ -4343,8 +4403,8 @@
           "rank": 7,
           "keyword": "GREMLINS 3 Teaser (2028)",
           "keywordEn": "GREMLINS 3 Teaser (2028)",
-          "volume": "150K+",
-          "volumeRaw": 150945,
+          "volume": "151K+",
+          "volumeRaw": 151013,
           "category": "movies",
           "temperature": 21,
           "velocity": "rising",
@@ -4376,7 +4436,7 @@
           "keyword": "Hecky ft Conep, Omar Montes, Geezy Dee - Table Remix (Videolyric Oficial)",
           "keywordEn": "Hecky ft Conep, Omar Montes, Geezy Dee - Table Remix (Videolyric Oficial)",
           "volume": "95K+",
-          "volumeRaw": 95745,
+          "volumeRaw": 95819,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -4392,7 +4452,7 @@
           "keyword": "¡Se viene el HOMBRE LOBO más TERRORÍFICO de la historia! 🌕 WERWULF Tráiler 2 Reacción y Análisis",
           "keywordEn": "¡Se viene el HOMBRE LOBO más TERRORÍFICO de la historia! 🌕 WERWULF Tráiler 2 Reacción y Análisis",
           "volume": "13K+",
-          "volumeRaw": 13269,
+          "volumeRaw": 13387,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -4416,7 +4476,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Spain are reigning World Cup and European champions. They're just getting started"
+            "England vs Spain: Thomas Tuchel faces crucial test against world champions as Nations League campaign begins"
           ]
         },
         {
@@ -4574,14 +4634,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 98,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -4590,7 +4652,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 87,
           "velocity": "new",
@@ -4606,7 +4668,7 @@
           "keyword": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "keywordEn": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "volume": "7M+",
-          "volumeRaw": 7037794,
+          "volumeRaw": 7051200,
           "category": "movies",
           "temperature": 79,
           "velocity": "new",
@@ -4638,14 +4700,16 @@
           "keyword": "Minecraft LIVE - September 2026",
           "keywordEn": "Minecraft LIVE - September 2026",
           "volume": "2M+",
-          "volumeRaw": 2711438,
+          "volumeRaw": 2724095,
           "category": "news",
           "temperature": 53,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "Game drops! Minecraft Dungeons II! Big news! More!\n \nMinecraft LIVE is back! Watch the community pre-show then learn about everything happening in the wide world of Minecraft in this jam-packed Minecr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9njefMDxzqw",
           "channelTitle": "Minecraft"
         },
@@ -4654,14 +4718,16 @@
           "keyword": "ANTONIO x SOFI MARINOVA ft. AZIS - OSTAVI ME NA MIRA | OFFICIAL 4K VIDEO 2026",
           "keywordEn": "ANTONIO x SOFI MARINOVA ft. AZIS - OSTAVI ME NA MIRA | OFFICIAL 4K VIDEO 2026",
           "volume": "893K+",
-          "volumeRaw": 893288,
+          "volumeRaw": 893544,
           "category": "news",
           "temperature": 27,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "#antonio #azis #sofimarinova\nAntonio Official Music Channel\nAll rights reserved | ©️ & ℗  Antonio\nDigital Distributed by Silvernoise / KVZ Music\n\nBOOKING (за участия): 📞 098 898 7119 🎤🔥\n\n🎧 Stream and ",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "I88CohDEvDI",
           "channelTitle": "Antonio Official"
         },
@@ -4670,7 +4736,7 @@
           "keyword": "De eerste Dure Speler gepackt op FC27",
           "keywordEn": "De eerste Dure Speler gepackt op FC27",
           "volume": "249K+",
-          "volumeRaw": 249716,
+          "volumeRaw": 249725,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -4686,14 +4752,16 @@
           "keyword": "CARNAVAL | Official Trailer | 2026",
           "keywordEn": "CARNAVAL | Official Trailer | 2026",
           "volume": "223K+",
-          "volumeRaw": 223617,
+          "volumeRaw": 223631,
           "category": "movies",
           "temperature": 20,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "11-11-26 in de bioscoop\n\nVier beste vrienden uit Brabant zien hun carnavalsfeest in duigen vallen wanneer één van hen plots vader blijkt te zijn en een doorgedraaide Prins Carnaval sinistere plannen m",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "fGA9aMj4XHA",
           "channelTitle": "Flip van der Kuil"
         },
@@ -4718,7 +4786,7 @@
           "keyword": "HVB",
           "keywordEn": "HVB",
           "volume": "30K+",
-          "volumeRaw": 30720,
+          "volumeRaw": 30736,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -4731,18 +4799,18 @@
         },
         {
           "rank": 11,
-          "keyword": "george russell",
-          "keywordEn": "george russell",
-          "volume": "20K+",
-          "volumeRaw": 20000,
-          "category": "news",
-          "temperature": 13,
+          "keyword": "england national football team vs spain national football team standings",
+          "keywordEn": "england national football team vs spain national football team standings",
+          "volume": "500",
+          "volumeRaw": 500,
+          "category": "sports",
+          "temperature": 28,
           "velocity": "new",
-          "isGlobal": false,
+          "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "George Russell geniet van spannendste stint in lange tijd: ‘Elke ronde op de limiet’"
+            "England 2-3 Spain commentary"
           ]
         },
         {
@@ -4774,33 +4842,17 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Twee mensen neergestoken bij confrontatie in Eindhoven"
+            "LIVE 112-nieuws | Steekpartij in Eindhoven, mogelijk ook geschoten: verdachten aangehouden | Grote politie-inzet na ruzie in Oisterwijk, één gewonde, vijf arrestaties"
           ]
         },
         {
           "rank": 14,
-          "keyword": "england national football team vs spain national football team standings",
-          "keywordEn": "england national football team vs spain national football team standings",
-          "volume": "200",
-          "volumeRaw": 200,
-          "category": "sports",
-          "temperature": 22,
-          "velocity": "new",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "England vs Spain: Thomas Tuchel faces crucial test against world champions as Nations League campaign begins"
-          ]
-        },
-        {
-          "rank": 15,
           "keyword": "ridderkerk",
           "keywordEn": "ridderkerk",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 5,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -4810,7 +4862,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "keyword": "stavangerweg",
           "keywordEn": "stavangerweg",
           "volume": "200",
@@ -4822,13 +4874,29 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Politie massaal aanwezig bij gekraakt pand in Groningen"
+            "Eigenaar gekraakt pand gaat met zwaar geschut poolshoogte nemen"
+          ]
+        },
+        {
+          "rank": 16,
+          "keyword": "strijp-s",
+          "keywordEn": "strijp-s",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "new",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "LIVE 112-nieuws | Massale knokpartij tussen 70 voetbalsupporters, politie rukt groots uit | Man loopt brandwonden op nadat hij wordt overgoten met bijtende vloeistof"
           ]
         },
         {
           "rank": 17,
-          "keyword": "strijp-s",
-          "keywordEn": "strijp-s",
+          "keyword": "verkeer",
+          "keywordEn": "verkeer",
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
@@ -4838,7 +4906,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "LIVE 112-nieuws | Massale knokpartij tussen 70 voetbalsupporters, politie rukt groots uit | Man loopt brandwonden op nadat hij wordt overgoten met bijtende vloeistof"
+            "LIVE Verkeer | Avondspits vroeg begonnen • Flinke vertraging op A50"
           ]
         },
         {
@@ -4870,7 +4938,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Vrachtschip loopt vast op de Waal in Nijmegen met ‘schurend’ geluid, dan schiet ander schip te hulp"
+            "Schip vastgelopen op de Waal in Nijmegen, omstanders horen ‘schurend’ geluid"
           ]
         },
         {
@@ -4900,7 +4968,7 @@
           "keyword": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
           "keywordEn": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
           "volume": "18M+",
-          "volumeRaw": 18276467,
+          "volumeRaw": 18278414,
           "category": "news",
           "temperature": 93,
           "velocity": "new",
@@ -4916,14 +4984,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 96,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -4932,7 +5002,7 @@
           "keyword": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix",
           "keywordEn": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH | Official Trailer | Netflix",
           "volume": "11M+",
-          "volumeRaw": 11333806,
+          "volumeRaw": 11335840,
           "category": "movies",
           "temperature": 94,
           "velocity": "new",
@@ -4948,7 +5018,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 83,
           "velocity": "rising",
@@ -5012,14 +5082,16 @@
           "keyword": "Rammstein - Live in Mexico City - Armee der Tristen (Official Video)",
           "keywordEn": "Rammstein - Live in Mexico City - Armee der Tristen (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1811557,
+          "volumeRaw": 1813859,
           "category": "news",
           "temperature": 38,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "\"Rammstein - Live in Mexico City\" – filmed over three sold-out nights at Mexico City’s Foro Sol in front of nearly 200,000 fans!\n\nIn cinemas worldwide from November 4 for a limited time only.\n\nThe liv",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "2n5xssjE_ls",
           "channelTitle": "Rammstein Official"
         },
@@ -5028,7 +5100,7 @@
           "keyword": "Jag Öppnade Ett DJUR DAGIS I Roblox..",
           "keywordEn": "Jag Öppnade Ett DJUR DAGIS I Roblox..",
           "volume": "44K+",
-          "volumeRaw": 44487,
+          "volumeRaw": 44489,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -5057,10 +5129,10 @@
         },
         {
           "rank": 11,
-          "keyword": "falkenberg",
-          "keywordEn": "falkenberg",
-          "volume": "2K+",
-          "volumeRaw": 2000,
+          "keyword": "mauro icardi",
+          "keywordEn": "mauro icardi",
+          "volume": "1K+",
+          "volumeRaw": 1000,
           "category": "news",
           "temperature": 13,
           "velocity": "new",
@@ -5068,15 +5140,15 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Grishuvud dumpat vid moské"
+            "Icardi's Licence Suspended Until 2099; Star Blasts Ministry"
           ]
         },
         {
           "rank": 12,
-          "keyword": "mauro icardi",
-          "keywordEn": "mauro icardi",
-          "volume": "1K+",
-          "volumeRaw": 1000,
+          "keyword": "falkenberg",
+          "keywordEn": "falkenberg",
+          "volume": "500",
+          "volumeRaw": 500,
           "category": "news",
           "temperature": 11,
           "velocity": "new",
@@ -5084,7 +5156,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Icardi's Licence Suspended Until 2099; Star Blasts Ministry"
+            "Grishuvud dumpat vid moské"
           ]
         },
         {
@@ -5226,7 +5298,7 @@
           "keyword": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
           "keywordEn": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
           "volume": "18M+",
-          "volumeRaw": 18276467,
+          "volumeRaw": 18278414,
           "category": "news",
           "temperature": 93,
           "velocity": "new",
@@ -5242,14 +5314,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 96,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -5290,7 +5364,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 81,
           "velocity": "rising",
@@ -5306,7 +5380,7 @@
           "keyword": "BTS (방탄소년단) ‘Merry Go Round’ Official MV",
           "keywordEn": "BTS (방탄소년단) ‘Merry Go Round’ Official MV",
           "volume": "4M+",
-          "volumeRaw": 4747013,
+          "volumeRaw": 4750721,
           "category": "music",
           "temperature": 56,
           "velocity": "steady",
@@ -5338,7 +5412,7 @@
           "keyword": "Trapped Until I Get Every Minecraft Advancement",
           "keywordEn": "Trapped Until I Get Every Minecraft Advancement",
           "volume": "3M+",
-          "volumeRaw": 3439960,
+          "volumeRaw": 3442444,
           "category": "news",
           "temperature": 41,
           "velocity": "new",
@@ -5354,14 +5428,16 @@
           "keyword": "Rammstein - Live in Mexico City - Armee der Tristen (Official Video)",
           "keywordEn": "Rammstein - Live in Mexico City - Armee der Tristen (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1811557,
+          "volumeRaw": 1813859,
           "category": "news",
           "temperature": 36,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "\"Rammstein - Live in Mexico City\" – filmed over three sold-out nights at Mexico City’s Foro Sol in front of nearly 200,000 fans!\n\nIn cinemas worldwide from November 4 for a limited time only.\n\nThe liv",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "2n5xssjE_ls",
           "channelTitle": "Rammstein Official"
         },
@@ -5370,7 +5446,7 @@
           "keyword": "abune anbes-Abrehet Ankere - Brkti Tanki- tsige Teklesenbet/ Abera Beyena- Wedi Sheqa",
           "keywordEn": "abune anbes-Abrehet Ankere - Brkti Tanki- tsige Teklesenbet/ Abera Beyena- Wedi Sheqa",
           "volume": "239K+",
-          "volumeRaw": 239420,
+          "volumeRaw": 239465,
           "category": "news",
           "temperature": 16,
           "velocity": "new",
@@ -5426,7 +5502,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Four-minute madness! Anthony Gordon and Harry Kane punish Williams and Cucurella errors to turn the tables on Spain"
+            "England 2 Spain 3: Guehi howler & Kane penalty miss costs Three Lions"
           ]
         },
         {
@@ -5552,14 +5628,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 98,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -5584,7 +5662,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 85,
           "velocity": "rising",
@@ -5632,14 +5710,16 @@
           "keyword": "Rammstein - Live in Mexico City - Armee der Tristen (Official Video)",
           "keywordEn": "Rammstein - Live in Mexico City - Armee der Tristen (Official Video)",
           "volume": "1M+",
-          "volumeRaw": 1811557,
+          "volumeRaw": 1813859,
           "category": "news",
           "temperature": 42,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "\"Rammstein - Live in Mexico City\" – filmed over three sold-out nights at Mexico City’s Foro Sol in front of nearly 200,000 fans!\n\nIn cinemas worldwide from November 4 for a limited time only.\n\nThe liv",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "2n5xssjE_ls",
           "channelTitle": "Rammstein Official"
         },
@@ -5680,7 +5760,7 @@
           "keyword": "Ny Indtægtsrekord!",
           "keywordEn": "Ny Indtægtsrekord!",
           "volume": "21K+",
-          "volumeRaw": 21913,
+          "volumeRaw": 21937,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -5696,7 +5776,7 @@
           "keyword": "Ude Af Kontrol - Kukuk",
           "keywordEn": "Ude Af Kontrol - Kukuk",
           "volume": "14K+",
-          "volumeRaw": 14881,
+          "volumeRaw": 14886,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -5752,7 +5832,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Tuchel starts Leeds keeper James Trafford, Pickford benched for Spain in Nations League"
+            "Lamine Yamal punishes Marc Guehi mistake to score the third-quickest goal against England at Wembley"
           ]
         },
         {
@@ -5878,7 +5958,7 @@
           "keyword": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
           "keywordEn": "Falling In Reverse - \"Joseph\" (feat. Corey Taylor and Serj Tankian)",
           "volume": "18M+",
-          "volumeRaw": 18276467,
+          "volumeRaw": 18278414,
           "category": "news",
           "temperature": 93,
           "velocity": "steady",
@@ -5894,14 +5974,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 96,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -5926,7 +6008,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 83,
           "velocity": "rising",
@@ -5958,7 +6040,7 @@
           "keyword": "Löysin TIMANTTIA Minecraft Hardcoressa!",
           "keywordEn": "Löysin TIMANTTIA Minecraft Hardcoressa!",
           "volume": "283K+",
-          "volumeRaw": 283276,
+          "volumeRaw": 283296,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -5974,7 +6056,7 @@
           "keyword": "Sliki x Korelon - Kaikki Kunnos",
           "keywordEn": "Sliki x Korelon - Kaikki Kunnos",
           "volume": "84K+",
-          "volumeRaw": 84173,
+          "volumeRaw": 84181,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -6006,7 +6088,7 @@
           "keyword": "Tämä Minecraft-maailma on PELKKIÄ RAKENNUKSIA..",
           "keywordEn": "Tämä Minecraft-maailma on PELKKIÄ RAKENNUKSIA..",
           "volume": "57K+",
-          "volumeRaw": 57942,
+          "volumeRaw": 57944,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -6204,7 +6286,7 @@
           "keyword": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "keywordEn": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "volume": "7M+",
-          "volumeRaw": 7037794,
+          "volumeRaw": 7051200,
           "category": "movies",
           "temperature": 83,
           "velocity": "rising",
@@ -6252,7 +6334,7 @@
           "keyword": "♪ WOJAN - WOJANOWICE feat. PTYŚ, KATI, NOOBEK, ROBCIO ♪",
           "keywordEn": "♪ WOJAN - WOJANOWICE feat. PTYŚ, KATI, NOOBEK, ROBCIO ♪",
           "volume": "635K+",
-          "volumeRaw": 635481,
+          "volumeRaw": 635692,
           "category": "news",
           "temperature": 30,
           "velocity": "rising",
@@ -6268,7 +6350,7 @@
           "keyword": "Kaśka Sochacka, Kortez - „Jak my\" (z filmu „Nasza rewolucja\")",
           "keywordEn": "Kaśka Sochacka, Kortez - „Jak my\" (z filmu „Nasza rewolucja\")",
           "volume": "473K+",
-          "volumeRaw": 473234,
+          "volumeRaw": 473580,
           "category": "news",
           "temperature": 27,
           "velocity": "steady",
@@ -6307,7 +6389,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "🔴 REKLAMA Subuj z dzwonkiem🔔 zostaw like 👍i ✅ Zostań wspierającym (kliknij wesprzyj)\n🟩 Frames Win Games https://www.mediaexpert.pl/lp,23927-nvidia-geforce-rtx-z-serii-50\n🏆 Finały fncs w fortnite to Ja",
-          "relatedNews": [],
+          "relatedNews": [
+            "女生2000元运费给在英男友寄空调 _ 百度搜索"
+          ],
           "youtubeId": "GDFMcfNHnEM",
           "channelTitle": "Jacob"
         },
@@ -6331,8 +6415,8 @@
           "rank": 9,
           "keyword": "Diiya - Czerwone Jagody (Official Music Video)",
           "keywordEn": "Diiya - Czerwone Jagody (Official Music Video)",
-          "volume": "203K+",
-          "volumeRaw": 203844,
+          "volume": "204K+",
+          "volumeRaw": 204192,
           "category": "music",
           "temperature": 18,
           "velocity": "new",
@@ -6348,7 +6432,7 @@
           "keyword": "gdy tu śpisz",
           "keywordEn": "gdy tu śpisz",
           "volume": "90K+",
-          "volumeRaw": 90324,
+          "volumeRaw": 90371,
           "category": "news",
           "temperature": 15,
           "velocity": "new",
@@ -6377,8 +6461,8 @@
         },
         {
           "rank": 12,
-          "keyword": "mistrzostwa świata w siatkówce",
-          "keywordEn": "mistrzostwa świata w siatkówce",
+          "keyword": "tomasz fornal",
+          "keywordEn": "tomasz fornal",
           "volume": "5K+",
           "volumeRaw": 5000,
           "category": "news",
@@ -6388,33 +6472,17 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Finlandia – Słowenia [NA ŻYWO]. Śledź wynik meczu o 3. miejsce ME!"
+            "Grbić znów wyciągnął asa z rękawa. \"Zmiana nieprawdopodobna\""
           ]
         },
         {
           "rank": 13,
-          "keyword": "tomasz fornal",
-          "keywordEn": "tomasz fornal",
-          "volume": "5K+",
-          "volumeRaw": 5000,
-          "category": "news",
-          "temperature": 9,
-          "velocity": "new",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Nerwowe końcówki i... mamy to! Polacy w finale ME"
-          ]
-        },
-        {
-          "rank": 14,
           "keyword": "nikola grbić",
           "keywordEn": "nikola grbić",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 7,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -6424,14 +6492,14 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 14,
           "keyword": "semeniuk",
           "keywordEn": "semeniuk",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
+          "temperature": 7,
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -6440,7 +6508,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "keyword": "wspinaczka",
           "keywordEn": "wspinaczka",
           "volume": "1K+",
@@ -6456,7 +6524,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "minister sportu",
           "keywordEn": "minister sportu",
           "volume": "500",
@@ -6472,7 +6540,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "przez sciane film",
           "keywordEn": "przez sciane film",
           "volume": "500",
@@ -6488,7 +6556,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "marcin komenda",
           "keywordEn": "marcin komenda",
           "volume": "200",
@@ -6501,6 +6569,22 @@
           "description": "",
           "relatedNews": [
             "Kim jest Marcin Komenda, siatkarz reprezentacji Polski?"
+          ]
+        },
+        {
+          "rank": 19,
+          "keyword": "kurek",
+          "keywordEn": "kurek",
+          "volume": "200",
+          "volumeRaw": 200,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "steady",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Tak mieszka Bartosz Kurek z żoną Anną. Tak urządzili się po powrocie do Polski [27.09.2026]"
           ]
         },
         {
@@ -6530,14 +6614,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5895244,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 77,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -6546,7 +6632,7 @@
           "keyword": "BÖYLE BİR OYUN İZLEMEDİNİZ! KAMERALI | GOOSE GOOSE DUCK | BÖLÜM 19",
           "keywordEn": "BÖYLE BİR OYUN İZLEMEDİNİZ! KAMERALI | GOOSE GOOSE DUCK | BÖLÜM 19",
           "volume": "1M+",
-          "volumeRaw": 1432984,
+          "volumeRaw": 1433004,
           "category": "news",
           "temperature": 38,
           "velocity": "rising",
@@ -6562,7 +6648,7 @@
           "keyword": "SAMANLIKTA İGNE ARIYORUZ! | FIND THE NEEDLE l",
           "keywordEn": "SAMANLIKTA İGNE ARIYORUZ! | FIND THE NEEDLE l",
           "volume": "1M+",
-          "volumeRaw": 1335215,
+          "volumeRaw": 1335784,
           "category": "news",
           "temperature": 35,
           "velocity": "new",
@@ -6578,7 +6664,7 @@
           "keyword": "Perma - Bulamazsın | Official Music Video",
           "keywordEn": "Perma - Bulamazsın | Official Music Video",
           "volume": "1M+",
-          "volumeRaw": 1159563,
+          "volumeRaw": 1160003,
           "category": "music",
           "temperature": 32,
           "velocity": "rising",
@@ -6626,7 +6712,7 @@
           "keyword": "Birisi Bizi Oyuna Hapsetti - Minecraft",
           "keywordEn": "Birisi Bizi Oyuna Hapsetti - Minecraft",
           "volume": "464K+",
-          "volumeRaw": 464797,
+          "volumeRaw": 464885,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -6674,7 +6760,7 @@
           "keyword": "Git O Yüzden",
           "keywordEn": "Git O Yüzden",
           "volume": "263K+",
-          "volumeRaw": 263509,
+          "volumeRaw": 263713,
           "category": "news",
           "temperature": 16,
           "velocity": "steady",
@@ -6698,7 +6784,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "MHP Genel Başkanı Bahçeli'den Türk Dil Bayramı mesajı:"
+            "MHP Genel Başkanı Devlet Bahçeli, \"Türkiye’nin varlığı ve geleceği, Türkçenin varlığı ve geleceğiyle doğrudan bağlantılıdır. Türkçemiz, yalnızca bir iletişim ve anlaşma aracı değil; aynı zamanda bizi millet yapan, tarihimizden ve kültürel birikimimizden b İhlas"
           ]
         },
         {
@@ -6778,7 +6864,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Önce Doktorlar Şimdi de Kavak Yelleri: Efe, Aslı, Güven ve Su Tuzlu Kahve'de Yeniden Buluşuyor"
+            "Tuzlu Kahve 4. bölüm Youtube'da neden yok? Tuzlu Kahve son bölüm nereden, hangi platformdan izlenir?"
           ]
         },
         {
@@ -6856,7 +6942,7 @@
           "keyword": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "keywordEn": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "volume": "2M+",
-          "volumeRaw": 2551168,
+          "volumeRaw": 2551272,
           "category": "movies",
           "temperature": 60,
           "velocity": "new",
@@ -6872,7 +6958,7 @@
           "keyword": "LISA - SaWaDiKa | Tuktuk Radio Special",
           "keywordEn": "LISA - SaWaDiKa | Tuktuk Radio Special",
           "volume": "2M+",
-          "volumeRaw": 2155955,
+          "volumeRaw": 2156746,
           "category": "news",
           "temperature": 41,
           "velocity": "new",
@@ -6911,7 +6997,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "🔴𝐋𝐈𝐕𝐄 การแข่งขัน RoV Pro League 2026 Winter🏆\nรอบเก็บคะแนน (Regular Season) Week 6 Day 2\n🎁ดูแข่งผ่าน ValorTV รับเสื้อ RoV และสกินถาวรฟรี!\n\n00:00 START\nตารางแข่งวันนี้ (Bo5)\n🔸 SOLYX Esports 🆚 Tenacity\n3",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "HvmF63aCAB0",
           "channelTitle": "Garena RoV Thailand"
         },
@@ -6920,7 +7008,7 @@
           "keyword": "YOUNGOHM - แค่เธอแค่เธอ ft. KT KRATAE (Official Video)",
           "keywordEn": "YOUNGOHM - แค่เธอแค่เธอ ft. KT KRATAE (Official Video)",
           "volume": "554K+",
-          "volumeRaw": 554065,
+          "volumeRaw": 554131,
           "category": "news",
           "temperature": 27,
           "velocity": "rising",
@@ -6935,8 +7023,8 @@
           "rank": 6,
           "keyword": "แมพมาแรง! ขี่สัตว์ไล่เก็บไข่ | Roblox Ride A Pet",
           "keywordEn": "แมพมาแรง! ขี่สัตว์ไล่เก็บไข่ | Roblox Ride A Pet",
-          "volume": "392K+",
-          "volumeRaw": 392914,
+          "volume": "393K+",
+          "volumeRaw": 393186,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -6952,7 +7040,7 @@
           "keyword": "[ Thai Dubbed ] OFFICIAL TRAILER |  iQIYI Original “Fool in Love คนโง่รักเข(ล)า”",
           "keywordEn": "[ Thai Dubbed ] OFFICIAL TRAILER |  iQIYI Original “Fool in Love คนโง่รักเข(ล)า”",
           "volume": "286K+",
-          "volumeRaw": 286150,
+          "volumeRaw": 286282,
           "category": "movies",
           "temperature": 22,
           "velocity": "rising",
@@ -6968,7 +7056,7 @@
           "keyword": "รักกันตอนเลิกกัน (Too Late)",
           "keywordEn": "รักกันตอนเลิกกัน (Too Late)",
           "volume": "181K+",
-          "volumeRaw": 181700,
+          "volumeRaw": 181733,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -7051,7 +7139,7 @@
           "volumeRaw": 10000,
           "category": "news",
           "temperature": 9,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -7061,26 +7149,12 @@
         },
         {
           "rank": 14,
-          "keyword": "เขตหนองจอก",
-          "keywordEn": "เขตหนองจอก",
-          "volume": "5K+",
-          "volumeRaw": 5000,
-          "category": "news",
-          "temperature": 7,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": []
-        },
-        {
-          "rank": 15,
           "keyword": "england vs spain",
           "keywordEn": "england vs spain",
           "volume": "2K+",
           "volumeRaw": 2000,
           "category": "news",
-          "temperature": 20,
+          "temperature": 22,
           "velocity": "rising",
           "isGlobal": true,
           "source": "google_trends",
@@ -7090,7 +7164,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "keyword": "บอลไทย",
           "keywordEn": "บอลไทย",
           "volume": "2K+",
@@ -7106,14 +7180,14 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "keyword": "ไฟ",
           "keywordEn": "ไฟ",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -7122,7 +7196,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "keyword": "chatgpt",
           "keywordEn": "chatgpt",
           "volume": "1K+",
@@ -7138,7 +7212,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "keyword": "fred astaire",
           "keywordEn": "fred astaire",
           "volume": "1K+",
@@ -7154,7 +7228,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "keyword": "dazn",
           "keywordEn": "dazn",
           "volume": "500",
@@ -7166,7 +7240,23 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Blue Jackets games to air on Spectrum TV in 2026-27 season"
+            "Boxing on DAZN This Weekend: Cejudo vs. Walton Details & Upcoming DAZN Boxing Schedule"
+          ]
+        },
+        {
+          "rank": 20,
+          "keyword": "สรุป เหรียญ เอเชีย น เกมส์ 2026",
+          "keywordEn": "สรุป เหรียญ เอเชีย น เกมส์ 2026",
+          "volume": "100",
+          "volumeRaw": 100,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "เจาะเบื้องหลัง 'โภชนาการ' ทัพนักกีฬาไทย กับ ไทยแลนด์ วิคตอรี่ โปรเจค สู่ความสำเร็จในเอเชียนเกมส์ 2026"
           ]
         }
       ]
@@ -7180,7 +7270,7 @@
           "keyword": "LIVE GAMEPLAY PETUALANGAN UPIN IPIN - BANTU AKU TAMATIN GUYS #upinipin #shorts #horror #live",
           "keywordEn": "LIVE GAMEPLAY PETUALANGAN UPIN IPIN - BANTU AKU TAMATIN GUYS #upinipin #shorts #horror #live",
           "volume": "4M+",
-          "volumeRaw": 4474003,
+          "volumeRaw": 4474005,
           "category": "news",
           "temperature": 55,
           "velocity": "new",
@@ -7196,7 +7286,7 @@
           "keyword": "Babylon",
           "keywordEn": "Babylon",
           "volume": "2M+",
-          "volumeRaw": 2138727,
+          "volumeRaw": 2138757,
           "category": "news",
           "temperature": 56,
           "velocity": "steady",
@@ -7212,14 +7302,16 @@
           "keyword": "100 Hari di Sekolah Berandalan Minecraft",
           "keywordEn": "100 Hari di Sekolah Berandalan Minecraft",
           "volume": "1M+",
-          "volumeRaw": 1396141,
+          "volumeRaw": 1396481,
           "category": "news",
           "temperature": 40,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Kali ini Sando pindah ke sekolah paling brutal di Jayakarta, dia akan menghadapi banyak murid yang jadi penguasanya, dan gak cuman itu, dia akan tau kalau Jayakarta adalah kota yang menyimpan banyak m",
-          "relatedNews": [],
+          "relatedNews": [
+            "六位学子化身国际推荐官 ， 七种语言向世界述说贵州山野滋味 Sharing Guizhou Mountain Flavors in Seven Languages"
+          ],
           "youtubeId": "bU7L9-_cJXs",
           "channelTitle": "ItsSandwich"
         },
@@ -7228,7 +7320,7 @@
           "keyword": "🔴 LIVE | MPL PH S18 | ENGLISH - Week 6 Day 2",
           "keywordEn": "🔴 LIVE | MPL PH S18 | ENGLISH - Week 6 Day 2",
           "volume": "1M+",
-          "volumeRaw": 1007199,
+          "volumeRaw": 1007261,
           "category": "news",
           "temperature": 32,
           "velocity": "steady",
@@ -7244,7 +7336,7 @@
           "keyword": "ENHYPEN (엔하이픈) ‘Stuck’ (Special Clip)",
           "keywordEn": "ENHYPEN (엔하이픈) ‘Stuck’ (Special Clip)",
           "volume": "733K+",
-          "volumeRaw": 733090,
+          "volumeRaw": 733111,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -7276,7 +7368,7 @@
           "keyword": "TERIKAT JANJI TRAILER: ARMAN PANIK‼️ DAVINA TEMUKAN UANG DOLLAR DI APARTEMEN DIPA? - Arya Saloka",
           "keywordEn": "TERIKAT JANJI TRAILER: ARMAN PANIK‼️ DAVINA TEMUKAN UANG DOLLAR DI APARTEMEN DIPA? - Arya Saloka",
           "volume": "116K+",
-          "volumeRaw": 116949,
+          "volumeRaw": 116966,
           "category": "movies",
           "temperature": 21,
           "velocity": "rising",
@@ -7292,7 +7384,7 @@
           "keyword": "HELIKOPTER TURUN KE PADANG (IDOL IDOL) - Difarina Indra Adella - OM ADELLA",
           "keywordEn": "HELIKOPTER TURUN KE PADANG (IDOL IDOL) - Difarina Indra Adella - OM ADELLA",
           "volume": "107K+",
-          "volumeRaw": 107700,
+          "volumeRaw": 107759,
           "category": "news",
           "temperature": 19,
           "velocity": "rising",
@@ -7331,7 +7423,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "TRAILER TERIKAT JANJI HARI INI EPISODE 173 Ketika Rahasia Tersembunyi Di Balik Jurang Dan Hujan Dolar Di Apartemen Dipa.\n\nKetegangan bermula ketika langkah kaki menyusuri tepian tebing yang curam, di ",
-          "relatedNews": [],
+          "relatedNews": [
+            "六位学子化身国际推荐官 ， 七种语言向世界述说贵州山野滋味 Sharing Guizhou Mountain Flavors in Seven Languages"
+          ],
           "youtubeId": "k3iS0pq9pk4",
           "channelTitle": "SENADA Sena Davina"
         },
@@ -7348,7 +7442,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Lamine Yamal punishes Marc Guehi mistake to score the third-quickest goal against England at Wembley"
+            "Fabian Ruiz targets Nations League glory as world champions Spain prepare to face England"
           ]
         },
         {
@@ -7396,7 +7490,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Banyak Pemain Jangkung, Timnas Indonesia Gagal Bikin Gol dari Corner"
+            "Luke Vickery Debut, 1 Pemain Masih Antre Tampil untuk Timnas Indonesia"
           ]
         },
         {
@@ -7438,13 +7532,13 @@
           "volume": "500",
           "volumeRaw": 500,
           "category": "news",
-          "temperature": 15,
+          "temperature": 20,
           "velocity": "steady",
           "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "WatchLive..||📺[FOX~TV!!!] USMNT vs Peru Live Stream ON tv Channel 26 September 2026"
+            "Peru United States Soccer"
           ]
         },
         {
@@ -7538,7 +7632,7 @@
           "keyword": "Vibe Venuma - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | VJ Siddhu | Harshath Khan",
           "keywordEn": "Vibe Venuma - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | VJ Siddhu | Harshath Khan",
           "volume": "6M+",
-          "volumeRaw": 6205056,
+          "volumeRaw": 6205449,
           "category": "music",
           "temperature": 70,
           "velocity": "steady",
@@ -7554,14 +7648,16 @@
           "keyword": "100 Hari di Sekolah Berandalan Minecraft",
           "keywordEn": "100 Hari di Sekolah Berandalan Minecraft",
           "volume": "1M+",
-          "volumeRaw": 1396141,
+          "volumeRaw": 1396481,
           "category": "news",
           "temperature": 38,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "Kali ini Sando pindah ke sekolah paling brutal di Jayakarta, dia akan menghadapi banyak murid yang jadi penguasanya, dan gak cuman itu, dia akan tau kalau Jayakarta adalah kota yang menyimpan banyak m",
-          "relatedNews": [],
+          "relatedNews": [
+            "六位学子化身国际推荐官 ， 七种语言向世界述说贵州山野滋味 Sharing Guizhou Mountain Flavors in Seven Languages"
+          ],
           "youtubeId": "bU7L9-_cJXs",
           "channelTitle": "ItsSandwich"
         },
@@ -7586,14 +7682,16 @@
           "keyword": "TAKLUK 2: OP DAULAT (TEASER TRAILER) DI PAWAGAM 26 NOVEMBER 2026",
           "keywordEn": "TAKLUK 2: OP DAULAT (TEASER TRAILER) DI PAWAGAM 26 NOVEMBER 2026",
           "volume": "252K+",
-          "volumeRaw": 252446,
+          "volumeRaw": 252448,
           "category": "movies",
           "temperature": 24,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "TAKLUK KEMBALI DENGAN PERJUANGAN YANG LEBIH BESAR. \n\nKali ini, setiap langkah membawa mereka lebih dekat kepada ancaman yang tidak terduga.\n\nNantikan TAKLUK 2: OP DAULAT di pawagam bermula 26 November",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "PPG6kaLC3iM",
           "channelTitle": "GSC Movies"
         },
@@ -7602,7 +7700,7 @@
           "keyword": "Takkan Pernah - Hussain (Official Music Video)",
           "keywordEn": "Takkan Pernah - Hussain (Official Music Video)",
           "volume": "207K+",
-          "volumeRaw": 207409,
+          "volumeRaw": 207410,
           "category": "music",
           "temperature": 22,
           "velocity": "new",
@@ -7618,7 +7716,7 @@
           "keyword": "*SERAM!* MISTERI BUKIT SENYAP KEMBALI! ||🔴 Silent Hill: Townfall (Malaysia) #HorrorLivestream",
           "keywordEn": "*SERAM!* MISTERI BUKIT SENYAP KEMBALI! ||🔴 Silent Hill: Townfall (Malaysia) #HorrorLivestream",
           "volume": "170K+",
-          "volumeRaw": 170104,
+          "volumeRaw": 170171,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -7634,7 +7732,7 @@
           "keyword": "WOI HANTU DATANG KUNCI PINTU 😭 KEEP THE DOOR LOCKED 😈",
           "keywordEn": "WOI HANTU DATANG KUNCI PINTU 😭 KEEP THE DOOR LOCKED 😈",
           "volume": "102K+",
-          "volumeRaw": 102712,
+          "volumeRaw": 102713,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -7650,7 +7748,7 @@
           "keyword": "ASKAR, POLIS TAK SEBULU | TEASER TAKLUK 2 : OP DAULAT",
           "keywordEn": "ASKAR, POLIS TAK SEBULU | TEASER TAKLUK 2 : OP DAULAT",
           "volume": "70K+",
-          "volumeRaw": 70275,
+          "volumeRaw": 70289,
           "category": "movies",
           "temperature": 15,
           "velocity": "new",
@@ -7674,7 +7772,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "England aim to win over Wembley and revive Wonderwall in Spain glamour fixture"
+            "England 2-3 Spain commentary"
           ]
         },
         {
@@ -7848,14 +7946,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 96,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -7864,7 +7964,7 @@
           "keyword": "You Can See Everything | Official Trailer HD | A24",
           "keywordEn": "You Can See Everything | Official Trailer HD | A24",
           "volume": "8M+",
-          "volumeRaw": 8277745,
+          "volumeRaw": 8289467,
           "category": "movies",
           "temperature": 85,
           "velocity": "rising",
@@ -7896,7 +7996,7 @@
           "keyword": "Vibe Venuma - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | VJ Siddhu | Harshath Khan",
           "keywordEn": "Vibe Venuma - Music Video | Meesaya Murukku 2 | Hiphop Tamizha | VJ Siddhu | Harshath Khan",
           "volume": "6M+",
-          "volumeRaw": 6205056,
+          "volumeRaw": 6205449,
           "category": "music",
           "temperature": 66,
           "velocity": "new",
@@ -7912,7 +8012,7 @@
           "keyword": "Escaping the Minecraft Underworld",
           "keywordEn": "Escaping the Minecraft Underworld",
           "volume": "5M+",
-          "volumeRaw": 5491968,
+          "volumeRaw": 5492822,
           "category": "news",
           "temperature": 50,
           "velocity": "steady",
@@ -7928,7 +8028,7 @@
           "keyword": "BTS (방탄소년단) ‘Merry Go Round’ Official MV",
           "keywordEn": "BTS (방탄소년단) ‘Merry Go Round’ Official MV",
           "volume": "4M+",
-          "volumeRaw": 4747013,
+          "volumeRaw": 4750721,
           "category": "music",
           "temperature": 54,
           "velocity": "steady",
@@ -7960,7 +8060,7 @@
           "keyword": "VALORANT Champions Shanghai — Opening Day",
           "keywordEn": "VALORANT Champions Shanghai — Opening Day",
           "volume": "1M+",
-          "volumeRaw": 1800381,
+          "volumeRaw": 1800405,
           "category": "news",
           "temperature": 26,
           "velocity": "new",
@@ -7976,7 +8076,7 @@
           "keyword": "Baththa Trailer | Vijay Sethupathi | Lijo Mol | Atlee | ‪@SaiAbhyankkar‬ | Balaji Tharaneetharan",
           "keywordEn": "Baththa Trailer | Vijay Sethupathi | Lijo Mol | Atlee | ‪@SaiAbhyankkar‬ | Balaji Tharaneetharan",
           "volume": "1M+",
-          "volumeRaw": 1783684,
+          "volumeRaw": 1783777,
           "category": "movies",
           "temperature": 23,
           "velocity": "new",
@@ -8138,9 +8238,9 @@
           "volume": "100",
           "volumeRaw": 100,
           "category": "news",
-          "temperature": 10,
+          "temperature": 15,
           "velocity": "new",
-          "isGlobal": false,
+          "isGlobal": true,
           "source": "google_trends",
           "description": "",
           "relatedNews": [
@@ -8158,7 +8258,7 @@
           "keyword": "(DailyStream) Ngày đầu làm streamer",
           "keywordEn": "(DailyStream) Ngày đầu làm streamer",
           "volume": "1M+",
-          "volumeRaw": 1891088,
+          "volumeRaw": 1891101,
           "category": "news",
           "temperature": 42,
           "velocity": "new",
@@ -8174,7 +8274,7 @@
           "keyword": "SAU HÌNH BÓNG ẤY - Dương Domic, CAPTAIN BOY, Jaysonlei, CODY NAM VÕ ft. LYHAN | TINH HÀ SAY HI",
           "keywordEn": "SAU HÌNH BÓNG ẤY - Dương Domic, CAPTAIN BOY, Jaysonlei, CODY NAM VÕ ft. LYHAN | TINH HÀ SAY HI",
           "volume": "1M+",
-          "volumeRaw": 1824050,
+          "volumeRaw": 1824103,
           "category": "news",
           "temperature": 40,
           "velocity": "rising",
@@ -8190,7 +8290,7 @@
           "keyword": "(Goose Goose Duck #85) Những chú Đa Đa lên ngôi và màn thể hiện siêu nhạy bén của binh lính Độ Mixi.",
           "keywordEn": "(Goose Goose Duck #85) Những chú Đa Đa lên ngôi và màn thể hiện siêu nhạy bén của binh lính Độ Mixi.",
           "volume": "1M+",
-          "volumeRaw": 1789731,
+          "volumeRaw": 1789854,
           "category": "news",
           "temperature": 37,
           "velocity": "rising",
@@ -8206,7 +8306,7 @@
           "keyword": "Quốc Thiên - Kẻ Say Tình 3 ( Ngày Gió Giông ) | Official MV Visualizer",
           "keywordEn": "Quốc Thiên - Kẻ Say Tình 3 ( Ngày Gió Giông ) | Official MV Visualizer",
           "volume": "1M+",
-          "volumeRaw": 1730834,
+          "volumeRaw": 1730863,
           "category": "music",
           "temperature": 35,
           "velocity": "new",
@@ -8222,7 +8322,7 @@
           "keyword": "BI HUỲNH KHỞI ĐẦU LẠI VỚI TRỨNG DIVINE AETHERON 3T$/S KỶ LỤC THẾ GIỚI STEAL AN EGG",
           "keywordEn": "BI HUỲNH KHỞI ĐẦU LẠI VỚI TRỨNG DIVINE AETHERON 3T$/S KỶ LỤC THẾ GIỚI STEAL AN EGG",
           "volume": "1M+",
-          "volumeRaw": 1430513,
+          "volumeRaw": 1430524,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -8254,14 +8354,16 @@
           "keyword": "[TRỰC TIẾP] TAG, NK NGHÊNH CHIẾN QUỐC TẾ | INVITATIONAL CUP 2026 - DAY 1",
           "keywordEn": "[TRỰC TIẾP] TAG, NK NGHÊNH CHIẾN QUỐC TẾ | INVITATIONAL CUP 2026 - DAY 1",
           "volume": "1M+",
-          "volumeRaw": 1175929,
+          "volumeRaw": 1175938,
           "category": "news",
           "temperature": 26,
           "velocity": "steady",
           "isGlobal": false,
           "source": "youtube",
           "description": "[TRỰC TIẾP] TAG, NK NGHÊNH CHIẾN QUỐC TẾ | INVITATIONAL CUP 2026 - DAY 1\n\n🌎 INVITATIONAL CUP 2026 chính thức khởi tranh, mở màn cho hành trình hội tụ của những đội tuyển hàng đầu khu vực. NK FC Online",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "RgQnlxs1cKY",
           "channelTitle": "EA Sports FC Online Vietnam"
         },
@@ -8270,7 +8372,7 @@
           "keyword": "LƯU NIÊN - NGUYỄN ĐÌNH VŨ | JACK J97 | TAM THÁI TỬ | COVER",
           "keywordEn": "LƯU NIÊN - NGUYỄN ĐÌNH VŨ | JACK J97 | TAM THÁI TỬ | COVER",
           "volume": "789K+",
-          "volumeRaw": 789362,
+          "volumeRaw": 789426,
           "category": "news",
           "temperature": 22,
           "velocity": "steady",
@@ -8293,7 +8395,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "CẢM ƠN TÌNH YÊU TÔI - HOÀNG DŨNG, HÀ AN HUY, HOÀNG ROB, THUẬN NGUYỄN, ĐÔNG HÙNG, OSAD | Anh Trai Vượt Ngàn Chông Gai 2026\n#anhtraivuotnganchonggai2026  #ATVNCG2026 #CallMeByFire #YeaH1\n\n#Mangoplus\n#Re",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "7rWEqGTE4YY",
           "channelTitle": "YEAH1 MUSIC"
         },
@@ -8302,7 +8406,7 @@
           "keyword": "Sơn Tùng M-TP \"Come My Way” (Live Performance) | Open Mic",
           "keywordEn": "Sơn Tùng M-TP \"Come My Way” (Live Performance) | Open Mic",
           "volume": "563K+",
-          "volumeRaw": 563541,
+          "volumeRaw": 563691,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -8326,7 +8430,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Yamal on his goal in England: sometimes I steal the ball"
+            "~$$!!【TRANSMIInglaterraES EN VIVO】 España vs Inglaterra En Vivo y En Directo Online TV 26 de septiembre de 2026"
           ]
         },
         {
@@ -8374,7 +8478,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Bất ngờ hai cầu thủ Việt Nam bị kiểm tra doping ở FIFA ASEAN Cup"
+            "Xuân Son chấn thương, nguy cơ nghỉ hết FIFA ASEAN Cup"
           ]
         },
         {
@@ -8470,7 +8574,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Tạm giữ đối tượng giả danh Cảnh sát cơ động cưỡng đoạt tài sản"
+            "Giả danh Cảnh sát cơ động chặn xe khiến một người tử vong"
           ]
         }
       ]
@@ -8484,14 +8588,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16123984,
           "category": "news",
           "temperature": 98,
           "velocity": "steady",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -8500,7 +8606,7 @@
           "keyword": "Babylon",
           "keywordEn": "Babylon",
           "volume": "2M+",
-          "volumeRaw": 2138727,
+          "volumeRaw": 2138757,
           "category": "news",
           "temperature": 56,
           "velocity": "new",
@@ -8516,7 +8622,7 @@
           "keyword": "🔴 LIVE | MPL PH S18 | FILIPINO - Week 6 Day 2",
           "keywordEn": "🔴 LIVE | MPL PH S18 | FILIPINO - Week 6 Day 2",
           "volume": "986K+",
-          "volumeRaw": 986251,
+          "volumeRaw": 986343,
           "category": "news",
           "temperature": 33,
           "velocity": "rising",
@@ -8532,14 +8638,16 @@
           "keyword": "Janine Berdin - What if I miss you for the rest of my life? (Live at the 39th Awit Awards 2026)",
           "keywordEn": "Janine Berdin - What if I miss you for the rest of my life? (Live at the 39th Awit Awards 2026)",
           "volume": "953K+",
-          "volumeRaw": 953144,
+          "volumeRaw": 953340,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "#JanineBerdin #39thAwitAwards #WhatifImissyoufortherestofmylife #GoLiveAsia \n\nFollow Janine: Berdin: https://janineberdin.lnk.to/SocialMediaPages \n\nJanine Berdin - What if I miss you for the rest of m",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "3ku3TxWAo1A",
           "channelTitle": "janine berdin"
         },
@@ -8564,14 +8672,16 @@
           "keyword": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends September 25th",
           "keywordEn": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends September 25th",
           "volume": "502K+",
-          "volumeRaw": 502335,
+          "volumeRaw": 502372,
           "category": "music",
           "temperature": 25,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "New Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends September 25th\n\nNew Tiktok Mashup 2026 Philippines Party Music Viral Dance Trends March 12th\n\nConnect with me:\nFacebook: https://faceb",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "hcgxvfJV_RU",
           "channelTitle": "Kuya Magik"
         },
@@ -8612,7 +8722,7 @@
           "keyword": "James Reid - Attention (Official Music Video)",
           "keywordEn": "James Reid - Attention (Official Music Video)",
           "volume": "93K+",
-          "volumeRaw": 93472,
+          "volumeRaw": 93643,
           "category": "music",
           "temperature": 17,
           "velocity": "steady",
@@ -8628,7 +8738,7 @@
           "keyword": "'Always Yours, Never Mine' Official Trailer | Joshua Garcia, Julia Barretto",
           "keywordEn": "'Always Yours, Never Mine' Official Trailer | Joshua Garcia, Julia Barretto",
           "volume": "65K+",
-          "volumeRaw": 65436,
+          "volumeRaw": 65481,
           "category": "movies",
           "temperature": 15,
           "velocity": "rising",
@@ -8652,7 +8762,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "dragon casino"
+            "top 10 casino"
           ]
         },
         {
@@ -8684,7 +8794,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Mets at Nationals: Lineups, broadcast info, and open thread, 9/26/26"
+            "New York Mets vs. Washington Nationals: Game Highlights"
           ]
         },
         {
@@ -8810,7 +8920,7 @@
           "keyword": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "keywordEn": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "volume": "2M+",
-          "volumeRaw": 2551168,
+          "volumeRaw": 2551272,
           "category": "movies",
           "temperature": 60,
           "velocity": "rising",
@@ -8842,14 +8952,16 @@
           "keyword": "GCS 2026 夏季例行賽W6D1－2026/09/25《Garena 傳說對決》",
           "keywordEn": "GCS 2026 夏季例行賽W6D1－2026/09/25《Garena 傳說對決》",
           "volume": "424K+",
-          "volumeRaw": 424940,
+          "volumeRaw": 424950,
           "category": "news",
           "temperature": 31,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "#GCS #2026 #夏季賽 #頂天立地GOAT\n\n🔥GCS 2026 夏季例行賽W6D1 | ［BO5］雙循環賽制\n#15:00｜MATCH 25：ONE  vs. BMG\n#18:00｜MATCH 26：ANK  vs. FW\n\n📍 播報陣容\n主持人：曾甜\n\n。上半場\n主播：俊杰   |   賽評：阿比\n［分析台］\n嘉賓：XiXi、KUNCHI  |  賽評：枕頭\n\n。下半場\n主播：RABY",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "GlkezEHLhQo",
           "channelTitle": "Garena 傳說對決"
         },
@@ -8874,7 +8986,7 @@
           "keyword": "我可以逃離1000名警察的追捕?! 超刺激！用火箭筒打爆警察的直升機！(全破5星通緝+沒車到終點的結局?🤯)【Roblox 逃跑者 RUNAWAYS - 有感筆電】",
           "keywordEn": "我可以逃離1000名警察的追捕?! 超刺激！用火箭筒打爆警察的直升機！(全破5星通緝+沒車到終點的結局?🤯)【Roblox 逃跑者 RUNAWAYS - 有感筆電】",
           "volume": "300K+",
-          "volumeRaw": 300529,
+          "volumeRaw": 300543,
           "category": "news",
           "temperature": 31,
           "velocity": "new",
@@ -8906,7 +9018,7 @@
           "keyword": "【騎寵物】從最弱到最強寵物！獲得九尾狐和飛龍！【Ride a Pet】【Roblox】",
           "keywordEn": "【騎寵物】從最弱到最強寵物！獲得九尾狐和飛龍！【Ride a Pet】【Roblox】",
           "volume": "184K+",
-          "volumeRaw": 184692,
+          "volumeRaw": 184708,
           "category": "news",
           "temperature": 21,
           "velocity": "new",
@@ -8938,7 +9050,7 @@
           "keyword": "《新手上路》 | 正式預告 | Netflix",
           "keywordEn": "《新手上路》 | 正式預告 | Netflix",
           "volume": "85K+",
-          "volumeRaw": 85153,
+          "volumeRaw": 85201,
           "category": "movies",
           "temperature": 22,
           "velocity": "new",
@@ -8954,7 +9066,7 @@
           "keyword": "忘了怎麼天晴",
           "keywordEn": "忘了怎麼天晴",
           "volume": "62K+",
-          "volumeRaw": 62460,
+          "volumeRaw": 62470,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -9118,7 +9230,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "「２番ＤＨ」大谷翔平８０打席連続本塁打なし、ドジャース移籍後ワースト更新中でＡＢＳも失敗…１番ベッツの２３号で先取点"
+            "【MLB】大谷翔平、直近10打席で6三振　フォロースイングで〝危険信号〟　強襲安打もスイング安定感欠く　打撃コーチ語っていた『兆候』"
           ]
         }
       ]
@@ -9132,7 +9244,7 @@
           "keyword": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "keywordEn": "アニメ「コードギアス 星追いのアスパル」ティザーPV｜Official Teaser Trailer \"CODE GEASS Star Chaser Aspal\"",
           "volume": "2M+",
-          "volumeRaw": 2551168,
+          "volumeRaw": 2551272,
           "category": "movies",
           "temperature": 60,
           "velocity": "new",
@@ -9148,7 +9260,7 @@
           "keyword": "《我阿爹想旅行》GOOD TRIP｜香港正式預告｜10月15日 行得㗎啦",
           "keywordEn": "《我阿爹想旅行》GOOD TRIP｜香港正式預告｜10月15日 行得㗎啦",
           "volume": "532K+",
-          "volumeRaw": 532875,
+          "volumeRaw": 532912,
           "category": "news",
           "temperature": 33,
           "velocity": "rising",
@@ -9187,7 +9299,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "-----------------------------------------------------\n\n『Novel Fergus - Live Session 2026』\nTrack 01: 萍湖客棧 00:00\nTrack 02: 娜娜 ft. 床哥 02:56\nTrack 03: Inside Joke ft. Jaime Cheung 07:24\nTrack 04: 哪個原來寂寞 1",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "rKebBPTVBNQ",
           "channelTitle": "Novel Fergus"
         },
@@ -9196,7 +9310,7 @@
           "keyword": "陳柏宇 Jason Chan - 尚有愛的資格 Worthy to love | Official Music Video",
           "keywordEn": "陳柏宇 Jason Chan - 尚有愛的資格 Worthy to love | Official Music Video",
           "volume": "195K+",
-          "volumeRaw": 195399,
+          "volumeRaw": 195430,
           "category": "music",
           "temperature": 25,
           "velocity": "steady",
@@ -9228,7 +9342,7 @@
           "keyword": "baby pink",
           "keywordEn": "baby pink",
           "volume": "132K+",
-          "volumeRaw": 132865,
+          "volumeRaw": 132892,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -9244,7 +9358,7 @@
           "keyword": "陽光普照",
           "keywordEn": "陽光普照",
           "volume": "108K+",
-          "volumeRaw": 108645,
+          "volumeRaw": 108657,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -9260,7 +9374,7 @@
           "keyword": "《新手上路》 | 正式預告 | Netflix",
           "keywordEn": "《新手上路》 | 正式預告 | Netflix",
           "volume": "85K+",
-          "volumeRaw": 85153,
+          "volumeRaw": 85201,
           "category": "movies",
           "temperature": 22,
           "velocity": "new",
@@ -9454,7 +9568,7 @@
           "keyword": "FC Mobile LIVE - FC Mobile 27 Update & Anniversary",
           "keywordEn": "FC Mobile LIVE - FC Mobile 27 Update & Anniversary",
           "volume": "2M+",
-          "volumeRaw": 2144755,
+          "volumeRaw": 2144786,
           "category": "news",
           "temperature": 43,
           "velocity": "steady",
@@ -9502,7 +9616,7 @@
           "keyword": "Online",
           "keywordEn": "Online",
           "volume": "397K+",
-          "volumeRaw": 397081,
+          "volumeRaw": 397088,
           "category": "news",
           "temperature": 28,
           "velocity": "new",
@@ -9517,8 +9631,8 @@
           "rank": 5,
           "keyword": "Ilome",
           "keywordEn": "Ilome",
-          "volume": "335K+",
-          "volumeRaw": 335944,
+          "volume": "336K+",
+          "volumeRaw": 336014,
           "category": "news",
           "temperature": 26,
           "velocity": "rising",
@@ -9534,7 +9648,7 @@
           "keyword": "MATAN GIDA SEASON 3 TRAILER",
           "keywordEn": "MATAN GIDA SEASON 3 TRAILER",
           "volume": "330K+",
-          "volumeRaw": 330542,
+          "volumeRaw": 330646,
           "category": "movies",
           "temperature": 24,
           "velocity": "rising",
@@ -9550,7 +9664,7 @@
           "keyword": "MINE — OFFICIAL TRAILER - Momma Dessy, jamal elegushi, anti ABIBA , Rufai bukky , Ashabi, Wunmi Star",
           "keywordEn": "MINE — OFFICIAL TRAILER - Momma Dessy, jamal elegushi, anti ABIBA , Rufai bukky , Ashabi, Wunmi Star",
           "volume": "187K+",
-          "volumeRaw": 187386,
+          "volumeRaw": 187440,
           "category": "movies",
           "temperature": 21,
           "velocity": "new",
@@ -9589,7 +9703,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Oba Femi vs. Goldberg\n\nWATCH LIVE: Oba Femi vs. Goldberg\nFULL MATCH: Oba Femi vs. Goldberg\n\nWWE Gameplay",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "u_Yj99hjlV8",
           "channelTitle": "MainEventGames"
         },
@@ -9598,7 +9714,7 @@
           "keyword": "Malaria",
           "keywordEn": "Malaria",
           "volume": "60K+",
-          "volumeRaw": 60803,
+          "volumeRaw": 60563,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -9622,7 +9738,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Do England have a problem against top-10 teams?"
+            "England vs Spain predictions: 6-1 Bet Builder tip, team news and odds"
           ]
         },
         {
@@ -9680,7 +9796,7 @@
           "volume": "200",
           "volumeRaw": 200,
           "category": "news",
-          "temperature": 15,
+          "temperature": 20,
           "velocity": "new",
           "isGlobal": true,
           "source": "google_trends",
@@ -9780,14 +9896,16 @@
           "keyword": "How I Saved the World's Largest Minecraft Server",
           "keywordEn": "How I Saved the World's Largest Minecraft Server",
           "volume": "16M+",
-          "volumeRaw": 16123948,
+          "volumeRaw": 16126364,
           "category": "news",
           "temperature": 98,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "saving the Unstable SMP\n\nHow I Saved the World's Largest Minecraft Server\n\nUnstable SMP:\n➜  ⁨@Spokeishere \n➜  @FlameFragsMC \n➜  ⁨@ParrotX2 \n➜  @wemmbumc \n\nminor spoilers below\n\nfeaturing: spoilers\n\nmu",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "5hG_nAYEC2g",
           "channelTitle": "Wemmbu"
         },
@@ -9812,7 +9930,7 @@
           "keyword": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "keywordEn": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "volume": "7M+",
-          "volumeRaw": 7037794,
+          "volumeRaw": 7051200,
           "category": "movies",
           "temperature": 79,
           "velocity": "new",
@@ -9876,7 +9994,7 @@
           "keyword": "I Pretended to be a NOOB, Then used 0.01% MOG...",
           "keywordEn": "I Pretended to be a NOOB, Then used 0.01% MOG...",
           "volume": "571K+",
-          "volumeRaw": 571659,
+          "volumeRaw": 571901,
           "category": "news",
           "temperature": 23,
           "velocity": "steady",
@@ -9907,8 +10025,8 @@
           "rank": 9,
           "keyword": "Imbali (feat. Shwi noMtekhala)",
           "keywordEn": "Imbali (feat. Shwi noMtekhala)",
-          "volume": "171K+",
-          "volumeRaw": 171935,
+          "volume": "172K+",
+          "volumeRaw": 172032,
           "category": "news",
           "temperature": 17,
           "velocity": "new",
@@ -9948,7 +10066,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Lamine Yamal scores a goal of historic proportions for Spain in England | Goal.com South Africa"
+            "England 2-3 Spain commentary"
           ]
         },
         {
@@ -9964,7 +10082,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Alineación confirmada de Estados Unidos ante Perú: Cavan Sullivan de 16 años TITULAR"
+            "Perú comenzó su gira amistosa con una dura goleada en contra ante Estados Unidos en Orlando"
           ]
         },
         {
@@ -10106,7 +10224,7 @@
           "keyword": "Clayface | Final Trailer",
           "keywordEn": "Clayface | Final Trailer",
           "volume": "8M+",
-          "volumeRaw": 8872217,
+          "volumeRaw": 8887108,
           "category": "movies",
           "temperature": 87,
           "velocity": "new",
@@ -10122,7 +10240,7 @@
           "keyword": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "keywordEn": "Day Drinker (2027) Official Teaser – Johnny Depp, Madelyn Cline, and Penélope Cruz",
           "volume": "7M+",
-          "volumeRaw": 7037794,
+          "volumeRaw": 7051200,
           "category": "movies",
           "temperature": 81,
           "velocity": "new",
@@ -10186,7 +10304,7 @@
           "keyword": "Amira Adeeb x Arsenik - 3ayzeen Mena Eh  (Official Music Video)",
           "keywordEn": "Amira Adeeb x Arsenik - 3ayzeen Mena Eh  (Official Music Video)",
           "volume": "218K+",
-          "volumeRaw": 218640,
+          "volumeRaw": 218905,
           "category": "music",
           "temperature": 24,
           "velocity": "steady",
@@ -10234,7 +10352,7 @@
           "keyword": "وحش غامض ظهر فجأة في مدينة GTA 5! 😱🐲 الشرطة تحاول القبض علية",
           "keywordEn": "وحش غامض ظهر فجأة في مدينة GTA 5! 😱🐲 الشرطة تحاول القبض علية",
           "volume": "43K+",
-          "volumeRaw": 43370,
+          "volumeRaw": 43464,
           "category": "news",
           "temperature": 17,
           "velocity": "rising",
@@ -10250,7 +10368,7 @@
           "keyword": "انا سجقق اسكندراني بحاول اوصل الي اماكن مستحيله (لعبه تموت من هبل )😱 | A Weird Game About Sausage",
           "keywordEn": "انا سجقق اسكندراني بحاول اوصل الي اماكن مستحيله (لعبه تموت من هبل )😱 | A Weird Game About Sausage",
           "volume": "27K+",
-          "volumeRaw": 27115,
+          "volumeRaw": 27323,
           "category": "news",
           "temperature": 15,
           "velocity": "steady",
@@ -10370,7 +10488,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "بعد سنوات من الواقعة... تشاكا يعترف بخطأ أبعده عن سويسرا"
+            "سويسرا تكتسح مقدونيا الشمالية بثلاثية في دوري الأمم الأوروبية"
           ]
         },
         {
@@ -10432,14 +10550,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5895244,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 77,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -10448,7 +10568,7 @@
           "keyword": "Intenté ELIMINAR a Verity en Minecraft",
           "keywordEn": "Intenté ELIMINAR a Verity en Minecraft",
           "volume": "3M+",
-          "volumeRaw": 3610343,
+          "volumeRaw": 3614259,
           "category": "news",
           "temperature": 64,
           "velocity": "steady",
@@ -10480,7 +10600,7 @@
           "keyword": "WERWULF - Official Trailer 2 [HD] - Only In Theaters This Christmas",
           "keywordEn": "WERWULF - Official Trailer 2 [HD] - Only In Theaters This Christmas",
           "volume": "2M+",
-          "volumeRaw": 2346581,
+          "volumeRaw": 2388034,
           "category": "movies",
           "temperature": 53,
           "velocity": "rising",
@@ -10511,8 +10631,8 @@
           "rank": 6,
           "keyword": "Luck Ra, Thalia - A QUIEN LE IMPORTA (VERSION CUARTETO)",
           "keywordEn": "Luck Ra, Thalia - A QUIEN LE IMPORTA (VERSION CUARTETO)",
-          "volume": "609K+",
-          "volumeRaw": 609559,
+          "volume": "610K+",
+          "volumeRaw": 610634,
           "category": "news",
           "temperature": 26,
           "velocity": "rising",
@@ -10527,8 +10647,8 @@
           "rank": 7,
           "keyword": "GANO EL MEJOR PARTIDO EN CHAMPIONS LEAGUE CON EL MANCHESTER UNITED Y VOY POR TODO... EPISODIO 6",
           "keywordEn": "GANO EL MEJOR PARTIDO EN CHAMPIONS LEAGUE CON EL MANCHESTER UNITED Y VOY POR TODO... EPISODIO 6",
-          "volume": "410K+",
-          "volumeRaw": 410654,
+          "volume": "412K+",
+          "volumeRaw": 412599,
           "category": "news",
           "temperature": 23,
           "velocity": "new",
@@ -10543,8 +10663,8 @@
           "rank": 8,
           "keyword": "Trabajamos en una GUARDERÍA de ANIMALES BEBÉS con ANOMALÍAS en Roblox",
           "keywordEn": "Trabajamos en una GUARDERÍA de ANIMALES BEBÉS con ANOMALÍAS en Roblox",
-          "volume": "275K+",
-          "volumeRaw": 275360,
+          "volume": "277K+",
+          "volumeRaw": 277419,
           "category": "news",
           "temperature": 30,
           "velocity": "rising",
@@ -10568,7 +10688,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Video Así fue el choque de Colapinto a Gasly y Norris en Bakú"
+            "Colapinto sabía que el objetivo era sumar puntos, pero equivocó su batalla y lo pagó caro"
           ]
         },
         {
@@ -10592,7 +10712,7 @@
           "keyword": "Me Preocupa, Sin Ti",
           "keywordEn": "Me Preocupa, Sin Ti",
           "volume": "25K+",
-          "volumeRaw": 25226,
+          "volumeRaw": 25427,
           "category": "news",
           "temperature": 13,
           "velocity": "new",
@@ -10621,8 +10741,8 @@
         },
         {
           "rank": 13,
-          "keyword": "ufc",
-          "keywordEn": "ufc",
+          "keyword": "lluvia",
+          "keywordEn": "lluvia",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
@@ -10632,17 +10752,49 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "UFC Vegas 121: Montel Jackson vs. Ricky Simon Predictions & Odds"
+            "Llega un cambio de tiempo al AMBA: 72 horas de inestabilidad con tormentas, ráfagas y el regreso a las mañanas frías"
           ]
         },
         {
           "rank": 14,
+          "keyword": "canadá - chile",
+          "keywordEn": "canadá - chile",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 22,
+          "velocity": "rising",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Where to watch Canada vs. Chile live stream, TV channel, start time for CanMNT international friendly match"
+          ]
+        },
+        {
+          "rank": 15,
+          "keyword": "ufc",
+          "keywordEn": "ufc",
+          "volume": "1K+",
+          "volumeRaw": 1000,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "UFC Vegas 121: Montel Jackson vs. Ricky Simon Predictions & Odds"
+          ]
+        },
+        {
+          "rank": 16,
           "keyword": "deportivo madryn - central norte",
           "keywordEn": "deportivo madryn - central norte",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 7,
+          "temperature": 5,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -10652,7 +10804,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 17,
           "keyword": "cristina fernández de kirchner",
           "keywordEn": "cristina fernández de kirchner",
           "volume": "1K+",
@@ -10668,38 +10820,6 @@
           ]
         },
         {
-          "rank": 16,
-          "keyword": "club ciudad de bolívar - chaco for ever",
-          "keywordEn": "club ciudad de bolívar - chaco for ever",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Ciudad de Bolívar irá por el triunfo ante Chaco For Ever"
-          ]
-        },
-        {
-          "rank": 17,
-          "keyword": "canadá - chile",
-          "keywordEn": "canadá - chile",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 20,
-          "velocity": "rising",
-          "isGlobal": true,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Where to watch Canada vs. Chile live stream, TV channel, start time for CanMNT international friendly match"
-          ]
-        },
-        {
           "rank": 18,
           "keyword": "fabiana araujo",
           "keywordEn": "fabiana araujo",
@@ -10707,7 +10827,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 5,
-          "velocity": "rising",
+          "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -10739,7 +10859,7 @@
           "volumeRaw": 500,
           "category": "news",
           "temperature": 5,
-          "velocity": "new",
+          "velocity": "steady",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
@@ -10758,7 +10878,7 @@
           "keyword": "Clayface | Final Trailer",
           "keywordEn": "Clayface | Final Trailer",
           "volume": "8M+",
-          "volumeRaw": 8872217,
+          "volumeRaw": 8887108,
           "category": "movies",
           "temperature": 87,
           "velocity": "new",
@@ -10774,14 +10894,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5895244,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 75,
           "velocity": "new",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -10790,7 +10912,7 @@
           "keyword": "Intenté ELIMINAR a Verity en Minecraft",
           "keywordEn": "Intenté ELIMINAR a Verity en Minecraft",
           "volume": "3M+",
-          "volumeRaw": 3610343,
+          "volumeRaw": 3614259,
           "category": "news",
           "temperature": 62,
           "velocity": "rising",
@@ -10806,7 +10928,7 @@
           "keyword": "WERWULF - Official Trailer 2 [HD] - Only In Theaters This Christmas",
           "keywordEn": "WERWULF - Official Trailer 2 [HD] - Only In Theaters This Christmas",
           "volume": "2M+",
-          "volumeRaw": 2346581,
+          "volumeRaw": 2388034,
           "category": "movies",
           "temperature": 53,
           "velocity": "rising",
@@ -10821,8 +10943,8 @@
           "rank": 5,
           "keyword": "NADA ES LO QUE PARECE EN ESTE JUEGO... | Super Bear Adventure",
           "keywordEn": "NADA ES LO QUE PARECE EN ESTE JUEGO... | Super Bear Adventure",
-          "volume": "698K+",
-          "volumeRaw": 698556,
+          "volume": "702K+",
+          "volumeRaw": 702265,
           "category": "news",
           "temperature": 38,
           "velocity": "steady",
@@ -10869,15 +10991,17 @@
           "rank": 8,
           "keyword": "Marc Anthony - Tu Amor Me Hace Bien (Letra/Lyrics)",
           "keywordEn": "Marc Anthony - Tu Amor Me Hace Bien (Letra/Lyrics)",
-          "volume": "84K+",
-          "volumeRaw": 84703,
+          "volume": "85K+",
+          "volumeRaw": 85103,
           "category": "news",
           "temperature": 19,
           "velocity": "rising",
           "isGlobal": false,
           "source": "youtube",
           "description": "🩷 ¡Gracias por escuchar en LoveTrip! 🩷\nNo olvides suscribirte y activar la campanita 🔔 para no perderte ninguna playlist.\n\n🪄 Apoya a los artistas 🪄\nSigue al creador de esta canción en sus redes social",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "YKxlYYdgzGo",
           "channelTitle": "Love Trip"
         },
@@ -10886,7 +11010,7 @@
           "keyword": "JAIRO VERA - BILLETES (Video Oficial)",
           "keywordEn": "JAIRO VERA - BILLETES (Video Oficial)",
           "volume": "58K+",
-          "volumeRaw": 58629,
+          "volumeRaw": 58714,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -10910,7 +11034,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "La Roja salta a la cancha para enfrentar a Canadá y lo puedes ver en vivo por las pantallas de Mega y MegaGo"
+            "La formación de La Roja para afrontar su amistoso con Canadá"
           ]
         },
         {
@@ -10926,7 +11050,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Primera B: Cobreloa ganó una ’batalla’ a Wanderers en Calama, alcanza el liderato y sueña con ascenso"
+            "Cobreloa - Wanderers en vivo hoy: goles, resultado y resumen del partido | Primera B 2026"
           ]
         },
         {
@@ -10981,6 +11105,22 @@
           "rank": 15,
           "keyword": "u. católica - u. la calera",
           "keywordEn": "u. católica - u. la calera",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 5,
+          "velocity": "rising",
+          "isGlobal": false,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "Daniel Garnero tras el empate 1-1 de visita ante Unión La Calera"
+          ]
+        },
+        {
+          "rank": 16,
+          "keyword": "mega",
+          "keywordEn": "mega",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
@@ -10990,11 +11130,11 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Martín Gómez y Vasco León tras la igualdad de visita ante Unión La Calera"
+            "Danilo21 confirma su salida de Mega: “Estoy bien, tengo hartas cosas que hacer” - m360.cl"
           ]
         },
         {
-          "rank": 16,
+          "rank": 17,
           "keyword": "ñublense vs",
           "keywordEn": "ñublense vs",
           "volume": "1K+",
@@ -11010,7 +11150,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 18,
           "keyword": "presidente de chile",
           "keywordEn": "presidente de chile",
           "volume": "1K+",
@@ -11023,22 +11163,6 @@
           "description": "",
           "relatedNews": [
             "Panel Ciudadano: En medio de controversia interna, mayoría respalda adhesión de Chile al Escudo de las Américas"
-          ]
-        },
-        {
-          "rank": 18,
-          "keyword": "mega",
-          "keywordEn": "mega",
-          "volume": "500",
-          "volumeRaw": 500,
-          "category": "news",
-          "temperature": 5,
-          "velocity": "rising",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Danilo21 confirma su salida de Mega: “Estoy bien, tengo hartas cosas que hacer” - m360.cl"
           ]
         },
         {
@@ -11070,7 +11194,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Yamal on his goal in England: sometimes I steal the ball"
+            "+*+[EN VIVO y EN DIRECTO] Dónde ver España vs. Inglaterra ＥＮ ＤＩＲＥＣＴＯ ＨＯＹ ＥＮ ＶＩＶＯ 26 septiembre 2026"
           ]
         }
       ]
@@ -11084,14 +11208,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5895244,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 77,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -11100,7 +11226,7 @@
           "keyword": "Intenté ELIMINAR a Verity en Minecraft",
           "keywordEn": "Intenté ELIMINAR a Verity en Minecraft",
           "volume": "3M+",
-          "volumeRaw": 3610343,
+          "volumeRaw": 3614259,
           "category": "news",
           "temperature": 64,
           "velocity": "new",
@@ -11116,7 +11242,7 @@
           "keyword": "WERWULF - Official Trailer 2 [HD] - Only In Theaters This Christmas",
           "keywordEn": "WERWULF - Official Trailer 2 [HD] - Only In Theaters This Christmas",
           "volume": "2M+",
-          "volumeRaw": 2346581,
+          "volumeRaw": 2388034,
           "category": "movies",
           "temperature": 55,
           "velocity": "rising",
@@ -11131,8 +11257,8 @@
           "rank": 4,
           "keyword": "NADA ES LO QUE PARECE EN ESTE JUEGO... | Super Bear Adventure",
           "keywordEn": "NADA ES LO QUE PARECE EN ESTE JUEGO... | Super Bear Adventure",
-          "volume": "698K+",
-          "volumeRaw": 698556,
+          "volume": "702K+",
+          "volumeRaw": 702265,
           "category": "news",
           "temperature": 40,
           "velocity": "new",
@@ -11147,8 +11273,8 @@
           "rank": 5,
           "keyword": "Te Pintaron Pajaritos",
           "keywordEn": "Te Pintaron Pajaritos",
-          "volume": "571K+",
-          "volumeRaw": 571509,
+          "volume": "572K+",
+          "volumeRaw": 572686,
           "category": "news",
           "temperature": 32,
           "velocity": "new",
@@ -11163,8 +11289,8 @@
           "rank": 6,
           "keyword": "Yeison Jiménez & Nico Hernández l Bandido Retirado (Video Oficial)",
           "keywordEn": "Yeison Jiménez & Nico Hernández l Bandido Retirado (Video Oficial)",
-          "volume": "291K+",
-          "volumeRaw": 291911,
+          "volume": "292K+",
+          "volumeRaw": 292471,
           "category": "news",
           "temperature": 24,
           "velocity": "rising",
@@ -11180,7 +11306,7 @@
           "keyword": "FANTA ROSARIO, Kris R. - DE MEDALLO PA MOROVIS (Visualizer)",
           "keywordEn": "FANTA ROSARIO, Kris R. - DE MEDALLO PA MOROVIS (Visualizer)",
           "volume": "286K+",
-          "volumeRaw": 286273,
+          "volumeRaw": 286665,
           "category": "news",
           "temperature": 22,
           "velocity": "new",
@@ -11195,8 +11321,8 @@
           "rank": 8,
           "keyword": "Trabajamos en una GUARDERÍA de ANIMALES BEBÉS con ANOMALÍAS en Roblox",
           "keywordEn": "Trabajamos en una GUARDERÍA de ANIMALES BEBÉS con ANOMALÍAS en Roblox",
-          "volume": "275K+",
-          "volumeRaw": 275360,
+          "volume": "277K+",
+          "volumeRaw": 277419,
           "category": "news",
           "temperature": 30,
           "velocity": "steady",
@@ -11219,7 +11345,9 @@
           "isGlobal": false,
           "source": "youtube",
           "description": "Music video by Galy Galiano performing Amor De Primavera (Pseudo Video 2026).(C) 2026 Sony Music Entertainment Colombia S.A.S.",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "9albxU_c360",
           "channelTitle": "GalyGalianoVEVO"
         },
@@ -11227,8 +11355,8 @@
           "rank": 10,
           "keyword": "Tony Dize - El Doctorado | Letra",
           "keywordEn": "Tony Dize - El Doctorado | Letra",
-          "volume": "40K+",
-          "volumeRaw": 40820,
+          "volume": "41K+",
+          "volumeRaw": 41063,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -11316,7 +11444,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Perú vs Estados Unidos EN VIVO HOY: minuto a minuto del partido amistoso por fecha FIFA 2026"
+            "La formación titular de Perú vs. Estados Unidos en la fecha FIFA"
           ]
         },
         {
@@ -11410,14 +11538,16 @@
           "keyword": "I Found My 13 Year Old Minecraft World",
           "keywordEn": "I Found My 13 Year Old Minecraft World",
           "volume": "5M+",
-          "volumeRaw": 5895244,
+          "volumeRaw": 5896778,
           "category": "news",
           "temperature": 77,
           "velocity": "rising",
           "isGlobal": true,
           "source": "youtube",
           "description": "I finally made the Minecraft world I always wanted to make, 13 years later\n\nCheck out our new MrBeast Lab MEGA Mutators at Walmart! 👉 https://www.walmart.com/ip/MEGA-PNTHR/19203372461?classType=REGULA",
-          "relatedNews": [],
+          "relatedNews": [
+            "长征精神世界共鸣 ， 外交部关注国际友人寻路贵州 The spirit of the Long March transcends borders and resonates with the world"
+          ],
           "youtubeId": "PyLGTmWz37U",
           "channelTitle": "MrBeast Gaming"
         },
@@ -11426,7 +11556,7 @@
           "keyword": "Intenté ELIMINAR a Verity en Minecraft",
           "keywordEn": "Intenté ELIMINAR a Verity en Minecraft",
           "volume": "3M+",
-          "volumeRaw": 3610343,
+          "volumeRaw": 3614259,
           "category": "news",
           "temperature": 64,
           "velocity": "steady",
@@ -11441,15 +11571,17 @@
           "rank": 3,
           "keyword": "🔴 MINECRAFT LIVE 2026 - Español Septiembre",
           "keywordEn": "🔴 MINECRAFT LIVE 2026 - Español Septiembre",
-          "volume": "662K+",
-          "volumeRaw": 662521,
+          "volume": "663K+",
+          "volumeRaw": 663238,
           "category": "news",
           "temperature": 37,
           "velocity": "new",
           "isGlobal": false,
           "source": "youtube",
           "description": "🐺Minecraft LIVE - Septiembre 26 2026 Español con Bobicraft\nCuenta regresiva de la primera Minecraft Live 2026, 26 de Septiembre10:00 am GMT-6 \n\n🎮 Redes Sociales:\n🟣 Twitch: https://www.twitch.tv/bobicr",
-          "relatedNews": [],
+          "relatedNews": [
+            "《 功夫女足 》 进入2026年度票房榜前5 _ 百度搜索"
+          ],
           "youtubeId": "Q0ByOM3APcs",
           "channelTitle": "Bobicraft"
         },
@@ -11457,8 +11589,8 @@
           "rank": 4,
           "keyword": "Te Pintaron Pajaritos",
           "keywordEn": "Te Pintaron Pajaritos",
-          "volume": "571K+",
-          "volumeRaw": 571509,
+          "volume": "572K+",
+          "volumeRaw": 572686,
           "category": "news",
           "temperature": 34,
           "velocity": "rising",
@@ -11473,8 +11605,8 @@
           "rank": 5,
           "keyword": "La Noche Mas Linda",
           "keywordEn": "La Noche Mas Linda",
-          "volume": "426K+",
-          "volumeRaw": 426699,
+          "volume": "427K+",
+          "volumeRaw": 427971,
           "category": "news",
           "temperature": 27,
           "velocity": "new",
@@ -11489,8 +11621,8 @@
           "rank": 6,
           "keyword": "Trabajamos en una GUARDERÍA de ANIMALES BEBÉS con ANOMALÍAS en Roblox",
           "keywordEn": "Trabajamos en una GUARDERÍA de ANIMALES BEBÉS con ANOMALÍAS en Roblox",
-          "volume": "275K+",
-          "volumeRaw": 275360,
+          "volume": "277K+",
+          "volumeRaw": 277419,
           "category": "news",
           "temperature": 34,
           "velocity": "new",
@@ -11505,8 +11637,8 @@
           "rank": 7,
           "keyword": "KAROL G, Judeline, rusowsky - BbY WOW (Letra)",
           "keywordEn": "KAROL G, Judeline, rusowsky - BbY WOW (Letra)",
-          "volume": "124K+",
-          "volumeRaw": 124570,
+          "volume": "125K+",
+          "volumeRaw": 125148,
           "category": "news",
           "temperature": 21,
           "velocity": "rising",
@@ -11521,8 +11653,8 @@
           "rank": 8,
           "keyword": "AHORA CAEN METEORITOS!! | DEDsafioMinecraft4💀 Día 4",
           "keywordEn": "AHORA CAEN METEORITOS!! | DEDsafioMinecraft4💀 Día 4",
-          "volume": "117K+",
-          "volumeRaw": 117507,
+          "volume": "118K+",
+          "volumeRaw": 118736,
           "category": "news",
           "temperature": 19,
           "velocity": "new",
@@ -11537,8 +11669,8 @@
           "rank": 9,
           "keyword": "José José - La Nave Del Olvido (Letra/Lyrics)",
           "keywordEn": "José José - La Nave Del Olvido (Letra/Lyrics)",
-          "volume": "51K+",
-          "volumeRaw": 51714,
+          "volume": "52K+",
+          "volumeRaw": 52056,
           "category": "news",
           "temperature": 17,
           "velocity": "steady",
@@ -11553,8 +11685,8 @@
           "rank": 10,
           "keyword": "Tony Dize - El Doctorado | Letra",
           "keywordEn": "Tony Dize - El Doctorado | Letra",
-          "volume": "40K+",
-          "volumeRaw": 40820,
+          "volume": "41K+",
+          "volumeRaw": 41063,
           "category": "news",
           "temperature": 20,
           "velocity": "new",
@@ -11578,17 +11710,33 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "¿En qué canal ver Chile vs. Canadá y a qué hora se juega partido amistoso por fecha FIFA?"
+            "Canadá vs Chile: ¡Gana un Volkswagen Nivus 0 km con Meridianbet y Kashio!"
           ]
         },
         {
           "rank": 12,
+          "keyword": "usa vs",
+          "keywordEn": "usa vs",
+          "volume": "2K+",
+          "volumeRaw": 2000,
+          "category": "news",
+          "temperature": 26,
+          "velocity": "steady",
+          "isGlobal": true,
+          "source": "google_trends",
+          "description": "",
+          "relatedNews": [
+            "‘I’m pretty sure I didn’t imagine it’: the little-known trio of high schoolers who made USMNT history"
+          ]
+        },
+        {
+          "rank": 13,
           "keyword": "giovanni reyna",
           "keywordEn": "giovanni reyna",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 11,
+          "temperature": 9,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
@@ -11598,34 +11746,18 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 14,
           "keyword": "diego kochen",
           "keywordEn": "diego kochen",
           "volume": "1K+",
           "volumeRaw": 1000,
           "category": "news",
-          "temperature": 9,
+          "temperature": 7,
           "velocity": "new",
           "isGlobal": false,
           "source": "google_trends",
           "description": "",
           "relatedNews": []
-        },
-        {
-          "rank": 14,
-          "keyword": "cavan sullivan",
-          "keywordEn": "cavan sullivan",
-          "volume": "1K+",
-          "volumeRaw": 1000,
-          "category": "news",
-          "temperature": 7,
-          "velocity": "steady",
-          "isGlobal": false,
-          "source": "google_trends",
-          "description": "",
-          "relatedNews": [
-            "Cavan Sullivan, 16, to start for United States against Peru"
-          ]
         },
         {
           "rank": 15,
@@ -11704,7 +11836,7 @@
           "source": "google_trends",
           "description": "",
           "relatedNews": [
-            "Bencinas: alzas suman $309 desde el inicio de la guerra y expertos anticipan nuevos aumentos"
+            "Otro triste récord: Norte Grande sigue con los mayores precios en los combustibles / ¿El diesel subirá $110 por litro el 1 de octubre?"
           ]
         },
         {
@@ -12837,7 +12969,7 @@
         "keyword": "PipePipe: NewPipe hard fork implementing SponsorBlock",
         "keywordEn": "PipePipe: NewPipe hard fork implementing SponsorBlock",
         "volume": "43K+",
-        "volumeRaw": 43050,
+        "volumeRaw": 43200,
         "category": "tech",
         "temperature": 87,
         "velocity": "new",
@@ -12847,8 +12979,8 @@
         "rank": 2,
         "keyword": "DeepSeek Elastic Compute (DSec)",
         "keywordEn": "DeepSeek Elastic Compute (DSec)",
-        "volume": "15K+",
-        "volumeRaw": 15900,
+        "volume": "16K+",
+        "volumeRaw": 16050,
         "category": "tech",
         "temperature": 86,
         "velocity": "new",
@@ -12859,7 +12991,7 @@
         "keyword": "Show HN: Reladraw – A diagram language where you decide where to place things",
         "keywordEn": "Show HN: Reladraw – A diagram language where you decide where to place things",
         "volume": "19K+",
-        "volumeRaw": 19650,
+        "volumeRaw": 19950,
         "category": "tech",
         "temperature": 85,
         "velocity": "new",
@@ -12870,7 +13002,7 @@
         "keyword": "LA Metro has some of the slowest escalators on Earth",
         "keywordEn": "LA Metro has some of the slowest escalators on Earth",
         "volume": "8K+",
-        "volumeRaw": 8250,
+        "volumeRaw": 8400,
         "category": "tech",
         "temperature": 84,
         "velocity": "rising",
@@ -12947,7 +13079,7 @@
         "keyword": "Japan moves to tighten rules for foreigners",
         "keywordEn": "Japan moves to tighten rules for foreigners",
         "volume": "13K+",
-        "volumeRaw": 13200,
+        "volumeRaw": 13350,
         "category": "tech",
         "temperature": 77,
         "velocity": "steady",
@@ -12969,7 +13101,7 @@
         "keyword": "ASML says it sold 'absolutely nothing' in Europe in 2026",
         "keywordEn": "ASML says it sold 'absolutely nothing' in Europe in 2026",
         "volume": "16K+",
-        "volumeRaw": 16350,
+        "volumeRaw": 16500,
         "category": "tech",
         "temperature": 75,
         "velocity": "steady",
@@ -12988,10 +13120,10 @@
       },
       {
         "rank": 15,
-        "keyword": "How to keep enjoying programming in a world of LLMs",
-        "keywordEn": "How to keep enjoying programming in a world of LLMs",
-        "volume": "19K+",
-        "volumeRaw": 19650,
+        "keyword": "The Rise of Audio AR",
+        "keywordEn": "The Rise of Audio AR",
+        "volume": "3K+",
+        "volumeRaw": 3750,
         "category": "tech",
         "temperature": 73,
         "velocity": "steady",
@@ -12999,10 +13131,10 @@
       },
       {
         "rank": 16,
-        "keyword": "Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia",
-        "keywordEn": "Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia",
-        "volume": "7K+",
-        "volumeRaw": 7650,
+        "keyword": "How to keep enjoying programming in a world of LLMs",
+        "keywordEn": "How to keep enjoying programming in a world of LLMs",
+        "volume": "19K+",
+        "volumeRaw": 19800,
         "category": "tech",
         "temperature": 72,
         "velocity": "steady",
@@ -13010,10 +13142,10 @@
       },
       {
         "rank": 17,
-        "keyword": "The Rise of Audio AR",
-        "keywordEn": "The Rise of Audio AR",
-        "volume": "3K+",
-        "volumeRaw": 3450,
+        "keyword": "Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia",
+        "keywordEn": "Analyzing Frontier Model Progress with My Favourite Game: Prince of Persia",
+        "volume": "7K+",
+        "volumeRaw": 7650,
         "category": "tech",
         "temperature": 71,
         "velocity": "steady",
@@ -13164,10 +13296,10 @@
       },
       {
         "rank": 31,
-        "keyword": "Probing picosecond depairing currents in type-II superconductors",
-        "keywordEn": "Probing picosecond depairing currents in type-II superconductors",
-        "volume": "900",
-        "volumeRaw": 900,
+        "keyword": "Is your Postgres migration safe or not safe?",
+        "keywordEn": "Is your Postgres migration safe or not safe?",
+        "volume": "17K+",
+        "volumeRaw": 17700,
         "category": "tech",
         "temperature": 57,
         "velocity": "steady",
@@ -13175,10 +13307,10 @@
       },
       {
         "rank": 32,
-        "keyword": "Is your Postgres migration safe or not safe?",
-        "keywordEn": "Is your Postgres migration safe or not safe?",
-        "volume": "17K+",
-        "volumeRaw": 17700,
+        "keyword": "Ask HN: Who's still keeping a DOS machine up because the business depends on it?",
+        "keywordEn": "Ask HN: Who's still keeping a DOS machine up because the business depends on it?",
+        "volume": "36K+",
+        "volumeRaw": 36000,
         "category": "tech",
         "temperature": 56,
         "velocity": "steady",
@@ -13186,10 +13318,10 @@
       },
       {
         "rank": 33,
-        "keyword": "Ask HN: Who's still keeping a DOS machine up because the business depends on it?",
-        "keywordEn": "Ask HN: Who's still keeping a DOS machine up because the business depends on it?",
-        "volume": "36K+",
-        "volumeRaw": 36000,
+        "keyword": "Probing picosecond depairing currents in type-II superconductors",
+        "keywordEn": "Probing picosecond depairing currents in type-II superconductors",
+        "volume": "900",
+        "volumeRaw": 900,
         "category": "tech",
         "temperature": 55,
         "velocity": "steady",
@@ -13241,10 +13373,10 @@
       },
       {
         "rank": 38,
-        "keyword": "I'm the mom in that viral Giants clip. Let me tell you about my husband",
-        "keywordEn": "I'm the mom in that viral Giants clip. Let me tell you about my husband",
-        "volume": "59K+",
-        "volumeRaw": 59700,
+        "keyword": "Calculating atmospheric drag on satellites for a Cubesat [pdf]",
+        "keywordEn": "Calculating atmospheric drag on satellites for a Cubesat [pdf]",
+        "volume": "5K+",
+        "volumeRaw": 5100,
         "category": "tech",
         "temperature": 50,
         "velocity": "steady",
@@ -13252,10 +13384,10 @@
       },
       {
         "rank": 39,
-        "keyword": "Calculating atmospheric drag on satellites for a Cubesat [pdf]",
-        "keywordEn": "Calculating atmospheric drag on satellites for a Cubesat [pdf]",
-        "volume": "5K+",
-        "volumeRaw": 5100,
+        "keyword": "I'm the mom in that viral Giants clip. Let me tell you about my husband",
+        "keywordEn": "I'm the mom in that viral Giants clip. Let me tell you about my husband",
+        "volume": "59K+",
+        "volumeRaw": 59850,
         "category": "tech",
         "temperature": 49,
         "velocity": "steady",
@@ -13285,10 +13417,10 @@
       },
       {
         "rank": 42,
-        "keyword": "AI Data Center Are Monkey Business [video]",
-        "keywordEn": "AI Data Center Are Monkey Business [video]",
-        "volume": "450",
-        "volumeRaw": 450,
+        "keyword": "I built my daughter a custom alarm clock because everything on Amazon sucked",
+        "keywordEn": "I built my daughter a custom alarm clock because everything on Amazon sucked",
+        "volume": "3K+",
+        "volumeRaw": 3450,
         "category": "tech",
         "temperature": 46,
         "velocity": "steady",
@@ -13296,10 +13428,10 @@
       },
       {
         "rank": 43,
-        "keyword": "Show HN: Spivak's Calculus formalized in Lean 4 – every theorem, every problem",
-        "keywordEn": "Show HN: Spivak's Calculus formalized in Lean 4 – every theorem, every problem",
-        "volume": "1K+",
-        "volumeRaw": 1050,
+        "keyword": "AI Data Center Are Monkey Business [video]",
+        "keywordEn": "AI Data Center Are Monkey Business [video]",
+        "volume": "450",
+        "volumeRaw": 450,
         "category": "tech",
         "temperature": 45,
         "velocity": "steady",
@@ -13307,10 +13439,10 @@
       },
       {
         "rank": 44,
-        "keyword": "I built my daughter a custom alarm clock because everything on Amazon sucked",
-        "keywordEn": "I built my daughter a custom alarm clock because everything on Amazon sucked",
-        "volume": "3K+",
-        "volumeRaw": 3300,
+        "keyword": "Show HN: Spivak's Calculus formalized in Lean 4 – every theorem, every problem",
+        "keywordEn": "Show HN: Spivak's Calculus formalized in Lean 4 – every theorem, every problem",
+        "volume": "1K+",
+        "volumeRaw": 1050,
         "category": "tech",
         "temperature": 44,
         "velocity": "steady",
@@ -14494,17 +14626,17 @@
     "topTrend": {
       "keyword": "How I Saved the World's Largest Minecraft Server",
       "keywordEn": "How I Saved the World's Largest Minecraft Server",
-      "country": "NL",
+      "country": "ZA",
       "volume": "16M+",
-      "flag": "🇳🇱",
+      "flag": "🇿🇦",
       "category": "news",
       "source": "youtube"
     },
     "topByCategory": {
       "news": {
         "keyword": "How I Saved the World's Largest Minecraft Server",
-        "country": "NL",
-        "flag": "🇳🇱",
+        "country": "ZA",
+        "flag": "🇿🇦",
         "volume": "16M+",
         "temperature": 98
       },
@@ -14546,12 +14678,12 @@
     },
     "totalCountries": 36,
     "totalTrends": 720,
-    "nextUpdate": "2026-09-27T00:03:54.760146+00:00",
+    "nextUpdate": "2026-09-27T00:07:24.067187+00:00",
     "risingFast": [
       {
         "keyword": "How I Saved the World's Largest Minecraft Server",
         "keywordEn": "How I Saved the World's Largest Minecraft Server",
-        "country": "NL",
+        "country": "ZA",
         "change": "16M+"
       },
       {
@@ -14577,9 +14709,9 @@
     }
   },
   "pipelineStats": {
-    "startTime": "2026-09-26T23:00:46.589639+00:00",
-    "endTime": "2026-09-26T23:03:54.760360+00:00",
-    "duration": 188,
+    "startTime": "2026-09-26T23:04:13.860559+00:00",
+    "endTime": "2026-09-26T23:07:24.067399+00:00",
+    "duration": 190,
     "successCount": 36,
     "errorCount": 0,
     "blockedKeywords": 0,
